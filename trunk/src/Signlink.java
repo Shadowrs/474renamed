@@ -23,8 +23,8 @@ public class Signlink implements Runnable {
     public boolean aBoolean1043 = false;
     public Applet anApplet1045;
     public Class70[] aClass70Array1046;
-    public SignlinkResourceNode aClass23_1047;
-    public SignlinkResourceNode aClass23_1048;
+    public Resource aClass23_1047;
+    public Resource aClass23_1048;
 
     public Signlink(boolean bool, Applet applet, int i, String string, int i_20_) {
         aClass70_1034 = null;
@@ -105,7 +105,7 @@ public class Signlink implements Runnable {
 
     public void run() {
         for (;;) {
-            SignlinkResourceNode class23;
+            Resource class23;
 
             synchronized (this) {
                 for (;;) {
@@ -177,44 +177,44 @@ public class Signlink implements Runnable {
         return anInterface2_1030;
     }
 
-    public SignlinkResourceNode method1117(String string, int i, boolean bool) {
+    public Resource createResourceString(String string, int i, boolean bool) {
         if (bool != true) {
             return null;
         }
 
-        return method1121(0, string, i, (byte) -112, 1);
+        return createResource(0, string, i, (byte) -112, 1);
     }
 
-    public SignlinkResourceNode method1118(byte i, String string, Class var_class,
-        Class[] var_classes) {
-        if (i <= 59) {
-            aBoolean1043 = false;
-        }
+    public Resource method1118(byte i, String string, Class var_class,
+    		Class[] var_classes) {
+    	if (i <= 59) {
+    		aBoolean1043 = false;
+    	}
 
-        return method1121(0, new Object[] { var_class, string, var_classes },
-            0, (byte) -93, 8);
+    	return createResource(0, new Object[] { var_class, string, var_classes },
+    			0, (byte) -93, 8);
     }
 
-    public SignlinkResourceNode method1119(Runnable runnable, int i, byte i_0_) {
+    public Resource createResourceThread(Runnable runnable, int i, byte i_0_) {
         if (i_0_ != 65) {
             aFile1032 = null;
         }
 
-        return method1121(0, runnable, i, (byte) -110, 2);
+        return createResource(0, runnable, i, (byte) -110, 2);
     }
 
-    public SignlinkResourceNode method1120(int i, byte i_1_) {
+    public Resource createResourceInteger(int i, byte i_1_) {
         if (i_1_ < 6) {
             aString1033 = null;
         }
 
-        return method1121(0, null, i, (byte) -108, 3);
+        return createResource(0, null, i, (byte) -108, 3);
     }
 
-    public SignlinkResourceNode method1121(int i, Object object, int i_2_, byte i_3_,
+    public Resource createResource(int i, Object object, int i_2_, byte i_3_,
         int i_4_) {
         int i_5_ = -117 / ((-7 - i_3_) / 50);
-        SignlinkResourceNode class23 = new SignlinkResourceNode();
+        Resource class23 = new Resource();
         class23.resourceType = i_4_;
         class23.value = i_2_;
         class23.resourceBase = object;
@@ -237,10 +237,10 @@ public class Signlink implements Runnable {
 	return "cache/.jagex_cache_32/runescape";
     }
 
-    public SignlinkResourceNode method1122(byte i, URL url) {
+    public Resource createResourceURL(byte i, URL url) {
         int i_6_ = -113 / ((-59 - i) / 41);
 
-        return method1121(0, url, 0, (byte) 122, 4);
+        return createResource(0, url, 0, (byte) 122, 4);
     }
 
     public void loadCache(int i, int i_7_, int i_8_, String string) {
@@ -363,12 +363,12 @@ public class Signlink implements Runnable {
         }
     }
 
-    public SignlinkResourceNode method1124(Class var_class, int i, String string) {
+    public Resource method1124(Class var_class, int i, String string) {
         if (i >= -71) {
             aMethod1044 = null;
         }
 
-        return method1121(0, new Object[] { var_class, string }, 0, (byte) 114,
+        return createResource(0, new Object[] { var_class, string }, 0, (byte) 114,
             9);
     }
 

@@ -288,7 +288,7 @@ public class Class15_Sub1 extends Class15 {
                         int i_23_ = 0;
 
                         if (i_22_ >= 6) {
-                            i_23_ = stream.method933(-32);
+                            i_23_ = stream.readInt(-32);
                         }
 
                         if (((anInt1758 ^ 0xffffffff) != (i_21_ ^ 0xffffffff)) ||

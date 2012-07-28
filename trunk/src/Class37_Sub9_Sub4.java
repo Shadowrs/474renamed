@@ -2319,7 +2319,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                             (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993 != null)) {
                                                                                         jstring = Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993;
                                                                                     } else {
-                                                                                        jstring = Class37_Sub9_Sub33.aJString_3526;
+                                                                                        jstring = Class37_Sub9_Sub33.playerName;
                                                                                     }
 
                                                                                     Class60.aJStringArray1148[i_21_++] = jstring;

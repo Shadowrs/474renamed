@@ -88,9 +88,9 @@ public class Class83 {
         if (Class37_Sub9_Sub27.aStream_3399 != null) {
             Class37_Sub9_Sub27.aStream_3399.currentIndex = 5 + (i_11_ * 8);
 
-            int i_12_ = Class37_Sub9_Sub27.aStream_3399.method933(i ^
+            int i_12_ = Class37_Sub9_Sub27.aStream_3399.readInt(i ^
                     ~0x29e4);
-            int i_13_ = Class37_Sub9_Sub27.aStream_3399.method933(-36);
+            int i_13_ = Class37_Sub9_Sub27.aStream_3399.readInt(-36);
             class15_sub1.method139((byte) -70, i_12_, i_13_);
         } else {
             if (i != 10684) {

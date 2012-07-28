@@ -14,7 +14,7 @@ public class Class55 implements Runnable {
     public static boolean aBoolean1071 = false;
     public static int anInt1074;
     public static int anInt1075;
-    public static SignlinkResourceNode aClass23_1076;
+    public static Resource aClass23_1076;
     public static JString aJString_1077 = (Class37_Sub2.method332((byte) 107,
             "Sie befinden sich in einem Mitglieder)2Gebiet(Q"));
 
@@ -57,16 +57,16 @@ public class Class55 implements Runnable {
 
             Class37_Sub20 class37_sub20 = new Class37_Sub20();
             class37_sub20.anInt2205 = stream.method978(118);
-            class37_sub20.anInt2207 = stream.method933(-76);
+            class37_sub20.anInt2207 = stream.readInt(-76);
 
             class37_sub20.aByteArrayArrayArray2213 = new byte[class37_sub20.anInt2205][][];
 
-            class37_sub20.aClass23Array2206 = new SignlinkResourceNode[class37_sub20.anInt2205];
+            class37_sub20.aClass23Array2206 = new Resource[class37_sub20.anInt2205];
             class37_sub20.anIntArray2204 = new int[class37_sub20.anInt2205];
             class37_sub20.anIntArray2214 = new int[class37_sub20.anInt2205];
             class37_sub20.anIntArray2212 = new int[class37_sub20.anInt2205];
 
-            class37_sub20.aClass23Array2209 = new SignlinkResourceNode[class37_sub20.anInt2205];
+            class37_sub20.aClass23Array2209 = new Resource[class37_sub20.anInt2205];
 
             if (i == -37) {
                 for (int i_1_ = 0; class37_sub20.anInt2205 > i_1_; i_1_++) {
@@ -82,7 +82,7 @@ public class Class55 implements Runnable {
                             int i_4_ = 0;
 
                             if (i_2_ == 1) {
-                                i_4_ = stream.method933(-74);
+                                i_4_ = stream.readInt(-74);
                             }
 
                             class37_sub20.anIntArray2214[i_1_] = i_2_;
@@ -109,7 +109,7 @@ public class Class55 implements Runnable {
 
                             if ((i_2_ ^ 0xffffffff) == -4) {
                                 for (int i_8_ = 0; i_8_ < i_6_; i_8_++) {
-                                    int i_9_ = stream.method933(-90);
+                                    int i_9_ = stream.readInt(-90);
                                     is[i_8_] = new byte[i_9_];
                                     stream.method968(0, i_9_, is[i_8_],
                                         (byte) -53);

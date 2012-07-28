@@ -1562,7 +1562,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             stream.method980(-122);
             stream.method980(-123);
             stream.method980(-10);
-            stream.method933(-119);
+            stream.readInt(-119);
         }
     }
 

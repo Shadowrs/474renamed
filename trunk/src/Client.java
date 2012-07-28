@@ -403,7 +403,7 @@ public class Client extends Applet_Sub1 {
                 do {
                     try {
                         if (Login.anInt782 == 0) {
-                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.aClass51_1508.method1117(Class37_Sub8.address,
+                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.aClass51_1508.createResourceString(Class37_Sub8.address,
                                     Class37_Sub4_Sub7_Sub1.anInt3700, true));
                             Login.anInt782++;
                         }
@@ -494,9 +494,9 @@ public class Client extends Applet_Sub1 {
 
         Class37_Sub9_Sub27.aClass55_3417 = null;
 
-        if (Applet_Sub1.aClass19_38 != null) {
-            Applet_Sub1.aClass19_38.killThread((byte) -128);
-            Applet_Sub1.aClass19_38 = null;
+        if (Applet_Sub1.activeSocket != null) {
+            Applet_Sub1.activeSocket.killThread((byte) -128);
+            Applet_Sub1.activeSocket = null;
         }
 
         Class33.method305(true);

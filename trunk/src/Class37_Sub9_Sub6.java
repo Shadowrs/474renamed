@@ -373,7 +373,7 @@ while_54_:
                                 (new JString[] {
                                     aJString_3009,
                                     (Class37_Sub4_Sub9_Sub2.method605(
-                                        Class37_Sub9_Sub33.aJString_3526))
+                                        Class37_Sub9_Sub33.playerName))
                                 }))), 272, i_12_, 16777215, 0);
                         i_12_ += 15;
                         class37_sub4_sub9_sub2_sub1_9_.method607((Class37_Sub9_Sub27.method881(
@@ -463,7 +463,7 @@ while_54_:
                                     (new JString[] {
                                         aJString_3009,
                                         (Class37_Sub4_Sub9_Sub2.method605(
-                                            Class37_Sub9_Sub33.aJString_3526)),
+                                            Class37_Sub9_Sub33.playerName)),
                                         ((!bool)
                                         ? Class37_Sub9_Sub33.aJString_3524
                                         : Class25.aJString_647)

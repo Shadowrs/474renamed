@@ -636,10 +636,10 @@ public class ObjectDef extends Class37_Sub4 {
                                                             if (objectProperties == 69) {
                                                                 anInt2708 = (stream.method978(19276 - 19150));
                                                             } else if (objectProperties == 70) {
-                                                                anInt2713 = (stream.method931((byte) -38));
+                                                                anInt2713 = (stream.readSignedWord((byte) -38));
                                                             } else if (objectProperties != 71) {
                                                                 if (objectProperties == 72) {
-                                                                    anInt2749 = (stream.method931((byte) 110));
+                                                                    anInt2749 = (stream.readSignedWord((byte) 110));
                                                                 } else if (objectProperties == 73) {
                                                                     aBoolean2728 = true;
                                                                 } else if (objectProperties != 74) {
@@ -692,7 +692,7 @@ public class ObjectDef extends Class37_Sub4 {
                                                                     aBoolean2744 = true;
                                                                 }
                                                             } else {
-                                                                anInt2738 = (stream.method931((byte) -52));
+                                                                anInt2738 = (stream.readSignedWord((byte) -52));
                                                             }
                                                         } else {
                                                             anInt2706 = (stream.method980(-124));

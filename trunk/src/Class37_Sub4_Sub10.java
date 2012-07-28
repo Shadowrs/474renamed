@@ -191,7 +191,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                 anInt2682 = stream.method978(118);
             } else if (i != 3) {
                 if (i == 4) {
-                    anInt2680 = stream.method933(-56);
+                    anInt2680 = stream.readInt(-56);
                 } else if (i != 5) {
                     if (i == 6) {
                         anInt2676 = stream.method980(54);
@@ -201,9 +201,9 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                         for (int i_21_ = 0;
                                 (anInt2676 ^ 0xffffffff) < (i_21_ ^ 0xffffffff);
                                 i_21_++) {
-                            anIntArray2683[i_21_] = stream.method933(-70);
+                            anIntArray2683[i_21_] = stream.readInt(-70);
 
-                            anIntArray2684[i_21_] = stream.method933(-73);
+                            anIntArray2684[i_21_] = stream.readInt(-73);
                         }
                     }
                 } else {
@@ -212,7 +212,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                     aJStringArray2675 = new JString[anInt2676];
 
                     for (int i_22_ = 0; anInt2676 > i_22_; i_22_++) {
-                        anIntArray2683[i_22_] = stream.method933(-31);
+                        anIntArray2683[i_22_] = stream.readInt(-31);
 
                         aJStringArray2675[i_22_] = stream.method944((byte) -61);
                     }

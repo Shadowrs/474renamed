@@ -274,7 +274,7 @@ public class Class37_Sub4_Sub12 extends Class37_Sub4 {
                                 anIntArray2757 = new int[i_8_];
 
                                 for (int i_9_ = 0; i_9_ < i_8_; i_9_++)
-                                    anIntArray2757[i_9_] = (stream.method935(Class37_Sub4_Sub7_Sub1_Sub1.method502(
+                                    anIntArray2757[i_9_] = (stream.read3Bytes(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                                 i_7_, -26256533)));
                             }
                         } else {
