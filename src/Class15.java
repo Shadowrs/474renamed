@@ -73,7 +73,7 @@ public abstract class Class15 {
         }
 
         if (i_1_ >= 6) {
-            stream.method933(-56);
+            stream.readInt(-56);
         }
 
         int i_2_ = stream.method978(i ^ 0x746a);
@@ -112,17 +112,17 @@ public abstract class Class15 {
                 for (int i_7_ = 0;
                         (anInt254 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
                         i_7_++)
-                    anIntArray260[anIntArray290[i_7_]] = stream.method933(-85);
+                    anIntArray260[anIntArray290[i_7_]] = stream.readInt(-85);
 
                 aClass60_284 = new Class60(anIntArray260);
             }
 
             for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > (anInt254 ^ 0xffffffff);
                     i_8_++)
-                anIntArray277[anIntArray290[i_8_]] = stream.method933(-122);
+                anIntArray277[anIntArray290[i_8_]] = stream.readInt(-122);
 
             for (int i_9_ = 0; anInt254 > i_9_; i_9_++)
-                anIntArray263[anIntArray290[i_9_]] = stream.method933(-83);
+                anIntArray263[anIntArray290[i_9_]] = stream.readInt(-83);
 
             for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > (anInt254 ^ 0xffffffff);
                     i_10_++)
@@ -170,7 +170,7 @@ public abstract class Class15 {
                     for (int i_21_ = 0;
                             (i_19_ ^ 0xffffffff) < (i_21_ ^ 0xffffffff);
                             i_21_++)
-                        anIntArrayArray294[i_18_][(anIntArrayArray270[i_18_][i_21_])] = stream.method933(-87);
+                        anIntArrayArray294[i_18_][(anIntArrayArray270[i_18_][i_21_])] = stream.readInt(-87);
 
                     aClass60Array276[i_18_] = new Class60(anIntArrayArray294[i_18_]);
                 }
@@ -527,12 +527,12 @@ public abstract class Class15 {
 
             do {
                 if (!Class37_Sub18.aBoolean2201 &&
-                        (Applet_Sub1.aClass19_38 != null)) {
+                        (Applet_Sub1.activeSocket != null)) {
                     Class37_Sub16.anInt2153++;
                     Class42.aStream_Sub1_936.method989(-1494101117, 186);
 
                     try {
-                        Applet_Sub1.aClass19_38.write(0, (byte) 116,
+                        Applet_Sub1.activeSocket.write(0, (byte) 116,
                             Class42.aStream_Sub1_936.buffer,
                             Class42.aStream_Sub1_936.currentIndex);
                         Class42.aStream_Sub1_936.currentIndex = 0;
@@ -755,7 +755,7 @@ public abstract class Class15 {
 
                 for (int i_74_ = 0;
                         (i_74_ ^ 0xffffffff) > (i_65_ ^ 0xffffffff); i_74_++) {
-                    i_73_ += stream.method933(-43);
+                    i_73_ += stream.readInt(-43);
                     is_71_[i_74_] += i_73_;
                 }
             }
@@ -775,7 +775,7 @@ public abstract class Class15 {
                 int i_79_ = 0;
 
                 for (int i_80_ = 0; i_80_ < i_65_; i_80_++) {
-                    i_79_ += stream.method933(-74);
+                    i_79_ += stream.readInt(-74);
                     Class53.method1135(is_68_, i_77_, is_75_[i_80_],
                         is_71_[i_80_], i_79_);
                     i_77_ += i_79_;

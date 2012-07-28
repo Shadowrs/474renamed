@@ -59,7 +59,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
     public static JString aJString_35;
     public static Class37_Sub4_Sub7_Sub4[] aClass37_Sub4_Sub7_Sub4Array36;
     public static int anInt37;
-    public static RSSocket aClass19_38;
+    public static RSSocket activeSocket;
     public static int anInt39;
     public static int anInt40;
     public static int anInt41;
@@ -258,7 +258,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         this, i_2_, "runescape", 16);
-            Class80.aClass51_1508.method1119(this, 1, (byte) 65);              
+            Class80.aClass51_1508.createResourceThread(this, 1, (byte) 65);              
                 
                 /*if (Class80.aClass51_1508 == null) {
                     Class43.aClass51_958 = Class80.aClass51_1508 = new Class51(false,
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                 insets.bottom + insets.top + i);
             Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         null, i_7_, string, i_6_);
-            Class80.aClass51_1508.method1119(this, 1, (byte) 65);
+            Class80.aClass51_1508.createResourceThread(this, 1, (byte) 65);
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-92, null, exception);
         }
@@ -457,7 +457,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         int i_12_ = 39 % ((-51 - i) / 49);
         aJString_35 = null;
-        aClass19_38 = null;
+        activeSocket = null;
         aJString_24 = null;
         anIntArray30 = null;
         aJString_4 = null;

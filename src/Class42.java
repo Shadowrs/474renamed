@@ -369,7 +369,7 @@ public class Class42 {
                                             -i_23_)));
                                         Class37_Sub9_Sub16.anInt3192 = 0;
                                     } else if (Class37_Sub9_Sub16.anInt3192 < 8) {
-                                        aStream_Sub1_936.method930((i_21_ +
+                                        aStream_Sub1_936.write3Bytes((i_21_ +
                                             8388608 +
                                             (Class37_Sub9_Sub16.anInt3192 << -1247144301)),
                                             i ^ ~0x7c);
@@ -883,12 +883,12 @@ public class Class42 {
 
                         do {
                             try {
-                                if ((Applet_Sub1.aClass19_38 == null) ||
+                                if ((Applet_Sub1.activeSocket == null) ||
                                         (aStream_Sub1_936.currentIndex <= 0)) {
                                     break;
                                 }
 
-                                Applet_Sub1.aClass19_38.write(0, (byte) 97,
+                                Applet_Sub1.activeSocket.write(0, (byte) 97,
                                     aStream_Sub1_936.buffer,
                                     aStream_Sub1_936.currentIndex);
                                 Class25.anInt637 = 0;

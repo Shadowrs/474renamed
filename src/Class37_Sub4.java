@@ -452,7 +452,7 @@ public class Class37_Sub4 extends Class37 {
                 try {
                     Stream stream = new Stream(4);
                     stream.method964(100, (!bool) ? 3 : 2);
-                    stream.method930(0, -110);
+                    stream.write3Bytes(0, -110);
                     Class43.aClass19_950.write(0, (byte) 126,
                         (stream.buffer), 4);
                 } catch (java.io.IOException ioexception) {

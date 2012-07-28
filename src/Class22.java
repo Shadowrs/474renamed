@@ -15,7 +15,7 @@ public class Class22 {
     public static int anInt576;
     public static int anInt578;
     public static int anInt579 = 0;
-    public static int anInt580;
+    public static int loginStage;
     public static int anInt581;
     public static JString aJString_583 = Class37_Sub2.method332((byte) 125,
             "Loading title screen )2 ");
@@ -26,21 +26,21 @@ public class Class22 {
 
     static {
         aJString_575 = aJString_583;
-        anInt580 = 0;
+        loginStage = 0;
     }
 
     public long aLong571;
     public int anInt572;
     public int anInt573;
     public byte[] aByteArray574;
-    public SignlinkResourceNode aClass23_577;
+    public Resource aClass23_577;
     public byte[] aByteArray582 = new byte[4];
     public int anInt584;
     public DataInputStream aDataInputStream587;
 
     public Class22(Signlink class51, URL url) {
         try {
-            aClass23_577 = class51.method1122((byte) -110, url);
+            aClass23_577 = class51.createResourceURL((byte) -110, url);
             anInt584 = 0;
             aLong571 = 30000L + Class71.method1263((byte) -80);
         } catch (RuntimeException runtimeexception) {
@@ -144,7 +144,7 @@ public class Class22 {
                     i_2_);
 
                 if (anInt573 == 4) {
-                    int i_3_ = new Stream(aByteArray582).method933(-45);
+                    int i_3_ = new Stream(aByteArray582).readInt(-45);
                     anInt584 = 2;
                     aByteArray574 = new byte[i_3_];
                 }
@@ -300,7 +300,7 @@ public class Class22 {
 
                 class37_sub4_sub7_sub1_sub2.anInt3692 = Class83.packetStream.method967(255);
 
-                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.method932((byte) 25);
+                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.readByteS((byte) 25);
             }
 
             if ((i_6_ & 0x80) != 0) {
@@ -390,13 +390,13 @@ public class Class22 {
 
             if ((i_6_ & 0x400) != 0) {
 
-                class37_sub4_sub7_sub1_sub2.anInt3684 = Class83.packetStream.method932((byte) 21);
+                class37_sub4_sub7_sub1_sub2.anInt3684 = Class83.packetStream.readByteS((byte) 21);
 
                 class37_sub4_sub7_sub1_sub2.anInt3639 = Class83.packetStream.method967(255);
 
                 class37_sub4_sub7_sub1_sub2.anInt3688 = Class83.packetStream.method967(255);
 
-                class37_sub4_sub7_sub1_sub2.anInt3643 = Class83.packetStream.method932((byte) 101);
+                class37_sub4_sub7_sub1_sub2.anInt3643 = Class83.packetStream.readByteS((byte) 101);
 
                 class37_sub4_sub7_sub1_sub2.anInt3648 = (Class83.packetStream.method980(-37) -
                     -Class37_Sub7.anInt1898);

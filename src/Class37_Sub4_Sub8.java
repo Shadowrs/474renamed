@@ -126,7 +126,7 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
             } else if (i_8_ != 3) {
                 if ((i_8_ ^ 0xffffffff) != -6) {
                     if (i_8_ == 7) {
-                        anInt2656 = stream.method935(-26256544);
+                        anInt2656 = stream.read3Bytes(-26256544);
                     }
                 } else {
                     aBoolean2658 = false;
@@ -139,7 +139,7 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
                 }
             }
         } else {
-            anInt2649 = stream.method935(-26256544);
+            anInt2649 = stream.read3Bytes(-26256544);
         }
 
         int i_9_ = 49 % ((i - 44) / 43);

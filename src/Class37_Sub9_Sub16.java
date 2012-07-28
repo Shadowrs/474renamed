@@ -406,7 +406,7 @@ while_72_:
                                 break while_76_;
                             } while (false);
 
-                            anInt3190 = stream.method931((byte) 101);
+                            anInt3190 = stream.readSignedWord((byte) 101);
 
                             if ((anInt3190 ^ 0xffffffff) > -1) {
                                 anIntArray3188 = new int[anInt3186];
@@ -414,7 +414,7 @@ while_72_:
                                 for (i_53_ = 0;
                                         ((anInt3186 ^ 0xffffffff) < (i_53_ ^
                                         0xffffffff)); i_53_++)
-                                    anIntArray3188[i_53_] = stream.method931((byte) 110);
+                                    anIntArray3188[i_53_] = stream.readSignedWord((byte) 110);
                             }
 
                             break while_76_;

@@ -832,7 +832,7 @@ public class Class37_Sub15 extends Class37 {
                     Class37_Sub9_Sub16.anIntArray3199 = new int[32768];
                     Class47.method1109(-4999, null);
 
-                    Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3524;
+                    Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.aJString_3524;
                     Class37_Sub4_Sub13.aBoolean2799 = false;
 
                     if ((Class37_Sub9_Sub17.anInt3223 ^ 0xffffffff) != -1) {

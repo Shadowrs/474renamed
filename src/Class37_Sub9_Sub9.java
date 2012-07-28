@@ -314,7 +314,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
 
                         class56.aJString_1081 = stream.method944((byte) -58);
 
-                        class56.anInt1093 = stream.method931((byte) 122);
+                        class56.anInt1093 = stream.readSignedWord((byte) 122);
                         class56.anInt1086 = i_44_;
 
                         class56.anInt1090 = Class36.method316(i ^ 0x11f5,
@@ -399,7 +399,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                 Class37_Sub4_Sub13 class37_sub4_sub13 = (Class37_Sub4_Sub13) Class6.aClass13_139.method94(127);
                 Stream stream = new Stream(4);
                 stream.method964(i ^ 0x619f, 1);
-                stream.method930((int) class37_sub4_sub13.aLong818, -114);
+                stream.write3Bytes((int) class37_sub4_sub13.aLong818, -114);
                 Class43.aClass19_950.write(0, (byte) 115,
                     stream.buffer, 4);
                 Class17.aClass13_316.method101(class37_sub4_sub13, false,
@@ -413,7 +413,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                 Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class4.aClass77_92.method1291((byte) 108));
                 Stream stream = new Stream(4);
                 stream.method964(100, 0);
-                stream.method930((int) class37_sub4_sub13.aLong818, -121);
+                stream.write3Bytes((int) class37_sub4_sub13.aLong818, -121);
                 Class43.aClass19_950.write(0, (byte) 110,
                     stream.buffer, 4);
                 class37_sub4_sub13.method438(false);
@@ -487,9 +487,9 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                                     Class37_Sub9_Sub27.aStream_3399.currentIndex = 5 +
                                         (i_53_ * 8);
 
-                                    int i_54_ = Class37_Sub9_Sub27.aStream_3399.method933(i +
+                                    int i_54_ = Class37_Sub9_Sub27.aStream_3399.readInt(i +
                                             -25190);
-                                    int i_55_ = Class37_Sub9_Sub27.aStream_3399.method933(-23);
+                                    int i_55_ = Class37_Sub9_Sub27.aStream_3399.readInt(-23);
                                     class15_sub1.method139((byte) -122, i_54_,
                                         i_55_);
                                 }
@@ -583,7 +583,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         int i_61_ = Class37_Sub9_Sub17.aStream_3224.method978(i ^
                                 0x6187);
                         long l_62_ = (long) ((i_59_ << 1962296592) + i_60_);
-                        int i_63_ = Class37_Sub9_Sub17.aStream_3224.method933(-57);
+                        int i_63_ = Class37_Sub9_Sub17.aStream_3224.readInt(-57);
                         Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class17.aClass13_316.method100((byte) 52,
                                 l_62_));
                         RSSocket.aBoolean474 = true;

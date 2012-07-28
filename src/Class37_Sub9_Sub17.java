@@ -124,7 +124,7 @@ while_77_:
                 return;
             } while (false);
 
-            int i_2_ = stream.method935(-26256544);
+            int i_2_ = stream.read3Bytes(-26256544);
 
             anIntArray3212[2] = Class37_Sub4_Sub7.method490(i_2_, 255) >> 1851507628;
 

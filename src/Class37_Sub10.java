@@ -75,7 +75,7 @@ public class Class37_Sub10 extends Class37 {
 
         synchronized (Class37_Sub4_Sub10.anObject2686) {
             if (Class37_Sub9_Sub22.anInt3327 == 0) {
-                Class80.aClass51_1508.method1119(new Class8(), 5, (byte) 65);
+                Class80.aClass51_1508.createResourceThread(new Class8(), 5, (byte) 65);
             }
 
             Class37_Sub9_Sub22.anInt3327 = 600;
@@ -352,7 +352,7 @@ public class Class37_Sub10 extends Class37 {
                 Class83.packetStream.method982((byte) 116));
             int i_33_ = (Class83.packetStream.method982((byte) 116) +
                 i_30_);
-            int i_34_ = Class83.packetStream.method931((byte) 116);
+            int i_34_ = Class83.packetStream.readSignedWord((byte) 116);
             int i_35_ = Class83.packetStream.method980(-13);
             int i_36_ = 4 * Class83.packetStream.method978(125);
             int i_37_ = 4 * Class83.packetStream.method978(124);
@@ -491,11 +491,11 @@ public class Class37_Sub10 extends Class37 {
                     }
                 }
             } else if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -87) {
-                int i_68_ = Class83.packetStream.method932((byte) 77);
+                int i_68_ = Class83.packetStream.readByteS((byte) 77);
                 int i_69_ = i_68_ >> 1029027554;
                 int i_70_ = 0x3 & i_68_;
                 int i_71_ = Class30.anIntArray719[i_69_];
-                int i_72_ = Class83.packetStream.method932((byte) 112);
+                int i_72_ = Class83.packetStream.readByteS((byte) 112);
                 int i_73_ = (i_72_ & 0x7) + Class65.anInt1231;
                 int i_74_ = ((i_72_ >> -1873767228) & 0x7) + Class50.anInt1028;
 
@@ -544,7 +544,7 @@ public class Class37_Sub10 extends Class37 {
                 int i_91_ = Class83.packetStream.method984(-1739943584);
                 int i_92_ = Class83.packetStream.method975(i + 30);
                 int i_93_ = Class83.packetStream.method941((byte) 101);
-                int i_94_ = Class83.packetStream.method938(112);
+                int i_94_ = Class83.packetStream.readSignedByte(112);
                 Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2;
 
                 if ((i_91_ ^ 0xffffffff) == (Class37_Sub9_Sub5.anInt2998 ^

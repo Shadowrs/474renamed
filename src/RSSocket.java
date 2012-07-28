@@ -125,7 +125,7 @@ public class RSSocket implements Runnable {
     public boolean threadDead = false;
     public int bufferLocation = 0;
     public boolean close = false;
-    public SignlinkResourceNode activeThread;
+    public Resource activeThread;
 
     public RSSocket(Socket socket, Signlink class51) throws IOException {
         try {
@@ -721,7 +721,7 @@ while_19_:
                     }
                 }
 
-                if ((i_2_ ^ 0xffffffff) < -1) {
+                if (i_2_ > 0) {
                     try {
                         outputStream.write(buffer, i, i_2_);
                     } catch (IOException ioexception) {
@@ -791,7 +791,7 @@ while_19_:
                 }
 
                 if (activeThread == null) {
-                    activeThread = signlink.method1119(this, 3, (byte) 65);
+                    activeThread = signlink.createResourceThread(this, 3, (byte) 65);
                 }
 
                 this.notifyAll();
@@ -813,6 +813,7 @@ while_19_:
         return inputStream.read();
     }
 
+    //I didn't name this method
     public void finalize() {
         killThread((byte) -128);
         anInt465++;
@@ -845,34 +846,34 @@ while_19_:
         }
     }
 
-    public void read(int length, int offset, int dummy, byte[] dest)
-        throws IOException {
-        anInt476++;
+	public void read(int length, int offset, int dummy, byte[] dest)
+			throws IOException {
+		anInt476++;
 
-        if (dummy != 122) {
-            resetStaticVariables(126);
-        }
+		if (dummy != 122) {
+			resetStaticVariables(126);
+		}
 
-        if (!threadDead) {
-            while ((length ^ 0xffffffff) < -1) {
+		if (!threadDead) {
+			while (length > 0) {
 
-                int i_8_ = inputStream.read(dest, offset, length);
+				int i_8_ = inputStream.read(dest, offset, length);
 
-                if (i_8_ <= 0) {
-                    throw new EOFException();
-                }
-try {
-//throw new Exception("tracking");
-}
-catch (Exception ex) {
-ex.printStackTrace();
-}
-                length -= i_8_;
-                offset += i_8_;
-            }
-        }
-    }
+				if (i_8_ <= 0) {
+					throw new EOFException();
+				}
+				try {
+					// throw new Exception("tracking");
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+				length -= i_8_;
+				offset += i_8_;
+			}
+		}
+	}
 
+    //Not entirely sure the naming on threadDead and killThread is right.
     public void killThread(byte dummy) {
         if (dummy < -127) {
             anInt478++;

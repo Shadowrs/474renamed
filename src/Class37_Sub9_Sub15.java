@@ -334,10 +334,10 @@ while_71_:
                                 0xffffffff)) &&
                                 ((i_41_ ^ 0xffffffff) >= ((20 + i_47_) ^
                                 0xffffffff))) {
-                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.method167(-1)
+                            Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.playerName.method167(-1)
                                                                                                .method164(70);
 
-                            if ((Class37_Sub9_Sub33.aJString_3526.method172(
+                            if ((Class37_Sub9_Sub33.playerName.method172(
                                         (byte) 38) ^ 0xffffffff) == -1) {
                                 Class32_Sub1.method293((byte) -126,
                                     (ItemDef.aJString_2438),
@@ -367,7 +367,7 @@ while_71_:
                                     0xffffffff)) &&
                                     (((20 + i_47_) ^ 0xffffffff) <= (i_41_ ^
                                     0xffffffff))) {
-                                Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3524;
+                                Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.aJString_3524;
                                 Class18.anInt339 = 0;
 
                                 Class37_Sub9_Sub33.aJString_3525 = Class37_Sub9_Sub33.aJString_3524;
@@ -411,10 +411,10 @@ while_71_:
                                                 0xffffffff) != -1) &&
                                                 ((Class37_Sub4_Sub3.anInt2560 ^
                                                 0xffffffff) == -85)) {
-                                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.method167(i ^
+                                            Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.playerName.method167(i ^
                                                     0xffffffff).method164(70);
 
-                                            if (Class37_Sub9_Sub33.aJString_3526.method172(
+                                            if (Class37_Sub9_Sub33.playerName.method172(
                                                         (byte) 38) == 0) {
                                                 Class32_Sub1.method293((byte) -125,
                                                     (ItemDef.aJString_2438),
@@ -455,11 +455,11 @@ while_71_:
                                 } else {
                                     if (((Class37_Sub4_Sub3.anInt2560 ^
                                             0xffffffff) == -86) &&
-                                            (Class37_Sub9_Sub33.aJString_3526.method172(
+                                            (Class37_Sub9_Sub33.playerName.method172(
                                                 (byte) 38) > 0)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.method169(0,
+                                        Class37_Sub9_Sub33.playerName = (Class37_Sub9_Sub33.playerName.method169(0,
                                                 0,
-                                                (Class37_Sub9_Sub33.aJString_3526.method172(
+                                                (Class37_Sub9_Sub33.playerName.method172(
                                                     (byte) 38) - 1)));
                                     }
 
@@ -470,9 +470,9 @@ while_71_:
                                     }
 
                                     if (bool &&
-                                            ((Class37_Sub9_Sub33.aJString_3526.method172(
+                                            ((Class37_Sub9_Sub33.playerName.method172(
                                                 (byte) 38) ^ 0xffffffff) > -13)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.method144(Class88.anInt1600,
+                                        Class37_Sub9_Sub33.playerName = (Class37_Sub9_Sub33.playerName.method144(Class88.anInt1600,
                                                 false));
                                     }
                                 }

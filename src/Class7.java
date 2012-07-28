@@ -64,8 +64,8 @@ public class Class7 {
         int i_2_ = 0;
 
         while (i_2_ < i) {
-            int i_3_ = aStream_148.method933(-89);
-            int i_4_ = aStream_148.method933(-40);
+            int i_3_ = aStream_148.readInt(-89);
+            int i_4_ = aStream_148.readInt(-40);
 
             if (i_3_ == 1297379947) {
                 anIntArray155[i_2_] = aStream_148.currentIndex;
@@ -97,7 +97,7 @@ public class Class7 {
             }
 
             if (i_7_ == 81) {
-                int i_9_ = aStream_148.method935(-26256544);
+                int i_9_ = aStream_148.read3Bytes(-26256544);
                 i_8_ -= 3;
 
                 int i_10_ = anIntArray156[i];
