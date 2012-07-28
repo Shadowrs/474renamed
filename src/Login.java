@@ -137,7 +137,7 @@ public class Login {
         try {
             if ((Class22.anInt580 ^ 0xffffffff) == -1) {
                 if (Applet_Sub1.aClass19_38 != null) {
-                    Applet_Sub1.aClass19_38.method209((byte) -128);
+                    Applet_Sub1.aClass19_38.killThread((byte) -128);
                     Applet_Sub1.aClass19_38 = null;
                 }
 
@@ -153,12 +153,12 @@ public class Login {
                             Class37_Sub4_Sub7_Sub1.anInt3700, true));
                 }
 
-                if ((Class55.aClass23_1076.anInt591 ^ 0xffffffff) == -3) {
+                if ((Class55.aClass23_1076.state ^ 0xffffffff) == -3) {
                     throw new IOException();
                 }
 
-                if (Class55.aClass23_1076.anInt591 == 1) {
-                    Applet_Sub1.aClass19_38 = new Class19(((Socket) Class55.aClass23_1076.anObject595),
+                if (Class55.aClass23_1076.state == 1) {
+                    Applet_Sub1.aClass19_38 = new RSSocket(((Socket) Class55.aClass23_1076.resource),
                             Class80.aClass51_1508);
                     Class22.anInt580 = 2;
                     Class55.aClass23_1076 = null;
@@ -175,7 +175,7 @@ public class Login {
                 Class42.aStream_Sub1_936.currentIndex = 0;
                 Class42.aStream_Sub1_936.method964(101, 14);
                 Class42.aStream_Sub1_936.method964(99, i_6_);
-                Applet_Sub1.aClass19_38.method204(0, (byte) 101,
+                Applet_Sub1.aClass19_38.write(0, (byte) 101,
                     (Class42.aStream_Sub1_936.buffer), 2);
                 Class83.packetStream.currentIndex = 0;
                 Class22.anInt580 = 3;
@@ -190,7 +190,7 @@ public class Login {
                     Class37_Sub4_Sub7.aClass24_2638.method243(false);
                 }
 
-                int i_7_ = Applet_Sub1.aClass19_38.method205(false);
+                int i_7_ = Applet_Sub1.aClass19_38.read(false);
 
                 if (Class88.aClass24_1605 != null) {
                     Class88.aClass24_1605.method243(false);
@@ -212,7 +212,7 @@ public class Login {
 
             if ((Class22.anInt580 ^ 0xffffffff) == -5) {
                 if (Class83.packetStream.currentIndex < 8) {
-                    int i_8_ = Applet_Sub1.aClass19_38.method206(-106);
+                    int i_8_ = Applet_Sub1.aClass19_38.available(-106);
 
                     if ((i_8_ ^ 0xffffffff) < ((8 -
                             Class83.packetStream.currentIndex) ^
@@ -221,7 +221,7 @@ public class Login {
                     }
 
                     if ((i_8_ ^ 0xffffffff) < -1) {
-                        Applet_Sub1.aClass19_38.method208(i_8_,
+                        Applet_Sub1.aClass19_38.read(i_8_,
                             Class83.packetStream.currentIndex, 122,
                             Class83.packetStream.buffer);
                         Class83.packetStream.currentIndex += i_8_;
@@ -301,7 +301,7 @@ public class Login {
                     (Class37_Sub17.aClass15_Sub1_2164.anInt255));
                 Class58.aStream_Sub1_1106.method954(Class42.aStream_Sub1_936.currentIndex,
                     0, i + 21486, Class42.aStream_Sub1_936.buffer);
-                Applet_Sub1.aClass19_38.method204(0, (byte) 102,
+                Applet_Sub1.aClass19_38.write(0, (byte) 102,
                     Class58.aStream_Sub1_1106.buffer,
                     Class58.aStream_Sub1_1106.currentIndex);
                 Class42.aStream_Sub1_936.method990(false, is);
@@ -314,8 +314,8 @@ public class Login {
             }
 
             if (((Class22.anInt580 ^ 0xffffffff) == -7) &&
-                    ((Applet_Sub1.aClass19_38.method206(-112) ^ 0xffffffff) < -1)) {
-                int i_10_ = Applet_Sub1.aClass19_38.method205(false);
+                    ((Applet_Sub1.aClass19_38.available(-112) ^ 0xffffffff) < -1)) {
+                int i_10_ = Applet_Sub1.aClass19_38.read(false);
 
                 if (((i_10_ ^ 0xffffffff) == -22) && (Class32.anInt740 == 20)) {
                     Class22.anInt580 = 7;
@@ -341,8 +341,8 @@ public class Login {
             }
 
             if ((Class22.anInt580 == 7) &&
-                    (Applet_Sub1.aClass19_38.method206(-107) > 0)) {
-                RSApplet.anInt178 = (60 * Applet_Sub1.aClass19_38.method205(false)) +
+                    (Applet_Sub1.aClass19_38.available(-107) > 0)) {
+                RSApplet.anInt178 = (60 * Applet_Sub1.aClass19_38.read(false)) +
                     180;
                 Class22.anInt580 = 8;
             }
@@ -362,26 +362,26 @@ public class Login {
                 }
             } else {
                 if ((Class22.anInt580 == 9) &&
-                        (Applet_Sub1.aClass19_38.method206(-110) >= 8)) {
+                        (Applet_Sub1.aClass19_38.available(-110) >= 8)) {
 
-                    Class37_Sub9_Sub20.anInt3301 = Applet_Sub1.aClass19_38.method205(false);
+                    Class37_Sub9_Sub20.anInt3301 = Applet_Sub1.aClass19_38.read(false);
 
-                    Class37_Sub13.aBoolean2109 = (Applet_Sub1.aClass19_38.method205(false) ^
+                    Class37_Sub13.aBoolean2109 = (Applet_Sub1.aClass19_38.read(false) ^
                         0xffffffff) == -2;
 
-                    Class37_Sub9_Sub5.anInt2998 = Applet_Sub1.aClass19_38.method205(false);
+                    Class37_Sub9_Sub5.anInt2998 = Applet_Sub1.aClass19_38.read(false);
                     Class37_Sub9_Sub5.anInt2998 <<= 8;
 
-                    Class37_Sub9_Sub5.anInt2998 += Applet_Sub1.aClass19_38.method205(false);
+                    Class37_Sub9_Sub5.anInt2998 += Applet_Sub1.aClass19_38.read(false);
 
-                    Class37_Sub12.anInt2077 = Applet_Sub1.aClass19_38.method205(false);
-                    Applet_Sub1.aClass19_38.method208(1, 0, 122,
+                    Class37_Sub12.anInt2077 = Applet_Sub1.aClass19_38.read(false);
+                    Applet_Sub1.aClass19_38.read(1, 0, 122,
                         Class83.packetStream.buffer);
                     Class83.packetStream.currentIndex = 0;
 
                     Class37_Sub9_Sub17.packetId = Class83.packetStream.method986(7);
 
-                    Applet_Sub1.aClass19_38.method208(2, 0, i + 21604,
+                    Applet_Sub1.aClass19_38.read(2, 0, i + 21604,
                         Class83.packetStream.buffer);
                     Class83.packetStream.currentIndex = 0;
                     Class37_Sub4.packetSize = Class83.packetStream.method980(i +
@@ -391,10 +391,10 @@ public class Login {
 
                 if ((Class22.anInt580 ^ 0xffffffff) == -11) {
 
-                    if ((Applet_Sub1.aClass19_38.method206(-124) ^ 0xffffffff) <= (Class37_Sub4.packetSize ^
+                    if ((Applet_Sub1.aClass19_38.available(-124) ^ 0xffffffff) <= (Class37_Sub4.packetSize ^
                             0xffffffff)) {
                         Class83.packetStream.currentIndex = 0;
-                        Applet_Sub1.aClass19_38.method208(Class37_Sub4.packetSize,
+                        Applet_Sub1.aClass19_38.read(Class37_Sub4.packetSize,
                             0, 122,
                             Class83.packetStream.buffer);
 

@@ -400,7 +400,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                 Stream stream = new Stream(4);
                 stream.method964(i ^ 0x619f, 1);
                 stream.method930((int) class37_sub4_sub13.aLong818, -114);
-                Class43.aClass19_950.method204(0, (byte) 115,
+                Class43.aClass19_950.write(0, (byte) 115,
                     stream.buffer, 4);
                 Class17.aClass13_316.method101(class37_sub4_sub13, false,
                     class37_sub4_sub13.aLong818);
@@ -414,7 +414,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                 Stream stream = new Stream(4);
                 stream.method964(100, 0);
                 stream.method930((int) class37_sub4_sub13.aLong818, -121);
-                Class43.aClass19_950.method204(0, (byte) 110,
+                Class43.aClass19_950.write(0, (byte) 110,
                     stream.buffer, 4);
                 class37_sub4_sub13.method438(false);
                 Class37_Sub9_Sub20.aClass13_3297.method101(class37_sub4_sub13,
@@ -423,7 +423,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             }
 
             for (int i_47_ = 0; (i_47_ ^ 0xffffffff) > -101; i_47_++) {
-                int i_48_ = Class43.aClass19_950.method206(-116);
+                int i_48_ = Class43.aClass19_950.available(-116);
 
                 if ((i_48_ ^ 0xffffffff) > -1) {
                     throw new IOException();
@@ -457,7 +457,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         i_50_ = i_48_;
                     }
 
-                    Class43.aClass19_950.method208(i_50_,
+                    Class43.aClass19_950.read(i_50_,
                         Class49.aStream_1006.currentIndex, 122,
                         Class49.aStream_1006.buffer);
 
@@ -503,7 +503,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
 
                             if (i_56_ != (Class60.aClass37_Sub4_Sub13_1152.anInt2790)) {
                                 try {
-                                    Class43.aClass19_950.method209((byte) -128);
+                                    Class43.aClass19_950.killThread((byte) -128);
                                 } catch (Exception exception) {
                                     /* empty */
                                 }
@@ -524,12 +524,12 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                                 Class49.aStream_1006.buffer,
                                 ((0xff0000L &
                                 Class60.aClass37_Sub4_Sub13_1152.aLong818) == 16711680L),
-                                Class19.aBoolean474);
+                                RSSocket.aBoolean474);
                         }
 
                         Class60.aClass37_Sub4_Sub13_1152.method322(false);
 
-                        if (Class19.aBoolean474) {
+                        if (RSSocket.aBoolean474) {
                             Class37_Sub9_Sub12.anInt3121--;
                         } else {
                             Class45.anInt974--;
@@ -553,7 +553,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         i_57_ = i_48_;
                     }
 
-                    Class43.aClass19_950.method208(i_57_,
+                    Class43.aClass19_950.read(i_57_,
                         (Class37_Sub9_Sub17.aStream_3224.currentIndex),
                         122,
                         (Class37_Sub9_Sub17.aStream_3224.buffer));
@@ -586,12 +586,12 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         int i_63_ = Class37_Sub9_Sub17.aStream_3224.method933(-57);
                         Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class17.aClass13_316.method100((byte) 52,
                                 l_62_));
-                        Class19.aBoolean474 = true;
+                        RSSocket.aBoolean474 = true;
 
                         if (class37_sub4_sub13 == null) {
                             class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class37_Sub9_Sub20.aClass13_3297.method100((byte) 108,
                                     l_62_));
-                            Class19.aBoolean474 = false;
+                            RSSocket.aBoolean474 = false;
                         }
 
                         if (class37_sub4_sub13 == null) {
@@ -622,7 +622,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             return true;
         } catch (IOException ioexception) {
             try {
-                Class43.aClass19_950.method209((byte) -128);
+                Class43.aClass19_950.killThread((byte) -128);
             } catch (Exception exception) {
                 /* empty */
             }

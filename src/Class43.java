@@ -3,7 +3,7 @@
  */
 public class Class43 {
     public static JString aJString_949;
-    public static Class19 aClass19_950;
+    public static RSSocket aClass19_950;
     public static int anInt951;
     public static int anInt952;
     public static int[][] anIntArrayArray953 = {

@@ -172,7 +172,7 @@ public class Class17 {
 
                     Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method363(127);
                     Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method357(-1);
-                    Class19.aClass73_489 = null;
+                    RSSocket.aClass73_489 = null;
                     ObjectDef.aClass37_Sub19_2735 = null;
 
                     if (Class84.aClass15_1534 == null) {
@@ -190,7 +190,7 @@ public class Class17 {
             } catch (Exception exception) {
                 exception.printStackTrace();
                 Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method363(127);
-                Class19.aClass73_489 = null;
+                RSSocket.aClass73_489 = null;
                 ObjectDef.aClass37_Sub19_2735 = null;
                 Class84.aClass15_1534 = null;
                 Class37_Sub7.anInt1904 = 0;

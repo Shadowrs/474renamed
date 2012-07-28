@@ -224,7 +224,7 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
                 }
             }
 
-            Class26.anIntArray657[Class19.anInt487++] = i;
+            Class26.anIntArray657[RSSocket.anInt487++] = i;
 
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[i];
             class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;

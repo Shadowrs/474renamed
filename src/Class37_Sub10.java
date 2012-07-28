@@ -405,7 +405,7 @@ public class Class37_Sub10 extends Class37 {
                         JString.method153(Class37_Sub9_Sub1.anInt2916,
                             -169496123, i_44_, i_43_), i_47_,
                         Class37_Sub7.anInt1898));
-                Class19.aClass58_481.method1149((byte) -105,
+                RSSocket.aClass58_481.method1149((byte) -105,
                     class37_sub4_sub7_sub7);
             }
         } else {

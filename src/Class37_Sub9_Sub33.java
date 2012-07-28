@@ -19,7 +19,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
     public static JString aJString_3524;
     public static JString aJString_3525;
     public static JString aJString_3526;
-    public static Class23 aClass23_3527;
+    public static SignlinkResourceNode aClass23_3527;
     public static JString aJString_3528;
 
     static {
@@ -162,7 +162,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
 
     public static void method905(int i) {
         for (int i_11_ = -1;
-                (Class19.anInt487 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
+                (RSSocket.anInt487 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
                 i_11_++) {
             int i_12_;
 

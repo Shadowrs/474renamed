@@ -71,7 +71,7 @@ public class Class37_Sub4_Sub13 extends Class37_Sub4 {
 
             if ((Class13.anInt230 ^ 0xffffffff) > -1) {
                 for (int i_6_ = 0; i_6_ < 112; i_6_++)
-                    Class19.aBooleanArray484[i_6_] = false;
+                    RSSocket.aBooleanArray484[i_6_] = false;
 
                 Class13.anInt230 = Class37_Sub9_Sub26.anInt3390;
             } else {
@@ -82,9 +82,9 @@ public class Class37_Sub4_Sub13 extends Class37_Sub4 {
                         -1) & 0x7f;
 
                     if (i_7_ < 0) {
-                        Class19.aBooleanArray484[i_7_ ^ 0xffffffff] = false;
+                        RSSocket.aBooleanArray484[i_7_ ^ 0xffffffff] = false;
                     } else {
-                        Class19.aBooleanArray484[i_7_] = true;
+                        RSSocket.aBooleanArray484[i_7_] = true;
                     }
                 }
             }

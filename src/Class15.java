@@ -532,7 +532,7 @@ public abstract class Class15 {
                     Class42.aStream_Sub1_936.method989(-1494101117, 186);
 
                     try {
-                        Applet_Sub1.aClass19_38.method204(0, (byte) 116,
+                        Applet_Sub1.aClass19_38.write(0, (byte) 116,
                             Class42.aStream_Sub1_936.buffer,
                             Class42.aStream_Sub1_936.currentIndex);
                         Class42.aStream_Sub1_936.currentIndex = 0;

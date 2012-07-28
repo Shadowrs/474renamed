@@ -636,7 +636,7 @@ while_58_:
                                     (Class37_Sub4_Sub7_Sub7.anInt3851 < i_13_) &&
                                     ((Class37_Sub9_Sub1.anInt2914 ^ 0xffffffff) > (i_11_ ^
                                     0xffffffff))) {
-                                Class19.aClass18_491 = class18;
+                                RSSocket.aClass18_491 = class18;
                             }
 
                             if (class18.anInt348 > class18.anInt353) {

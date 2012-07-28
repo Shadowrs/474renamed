@@ -103,7 +103,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                 true, 2, i_6_ - -1, 0, i_5_, i_1_, 0, 0);
         }
 
-        Class19.anInt490 = 2;
+        RSSocket.anInt490 = 2;
         Class37_Sub9_Sub8.anInt3057 = 0;
         Class27.anInt676 = Class37_Sub13.anInt2113;
         Applet_Sub1.anInt8 = Class33.anInt764;
@@ -125,7 +125,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
             i_13_ -= Class37_Sub25.anInt2286;
 
             int i_14_ = (Class37_Sub4_Sub9_Sub4.anIntArray3910[Class37_Sub4_Sub7_Sub1_Sub2.anInt3969]);
-            i_10_ -= Class19.anInt483;
+            i_10_ -= RSSocket.anInt483;
             i_11_ -= Class37_Sub6.anInt1888;
 
             int i_15_ = (Class37_Sub4_Sub9_Sub4.anIntArray3910[Class37_Sub17.anInt2188]);
@@ -159,7 +159,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
         anInt2670++;
 
         if (Class43.aClass19_950 != null) {
-            Class43.aClass19_950.method209((byte) -128);
+            Class43.aClass19_950.killThread((byte) -128);
         }
 
         if (i != 17242) {
