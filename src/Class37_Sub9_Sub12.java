@@ -93,7 +93,7 @@ while_63_:
 
     public static void method810(int i) {
         for (int i_1_ = -1;
-                (i_1_ ^ 0xffffffff) > (RSSocket.anInt487 ^ 0xffffffff);
+                (i_1_ ^ 0xffffffff) > (Class19.anInt487 ^ 0xffffffff);
                 i_1_++) {
             int i_2_;
 

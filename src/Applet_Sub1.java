@@ -59,7 +59,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
     public static JString aJString_35;
     public static Class37_Sub4_Sub7_Sub4[] aClass37_Sub4_Sub7_Sub4Array36;
     public static int anInt37;
-    public static RSSocket activeSocket;
+    public static Class19 aClass19_38;
     public static int anInt39;
     public static int anInt40;
     public static int anInt41;
@@ -258,7 +258,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         this, i_2_, "runescape", 16);
-            Class80.aClass51_1508.createResourceThread(this, 1, (byte) 65);              
+            Class80.aClass51_1508.method1119(this, 1, (byte) 65);              
                 
                 /*if (Class80.aClass51_1508 == null) {
                     Class43.aClass51_958 = Class80.aClass51_1508 = new Class51(false,
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                 insets.bottom + insets.top + i);
             Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         null, i_7_, string, i_6_);
-            Class80.aClass51_1508.createResourceThread(this, 1, (byte) 65);
+            Class80.aClass51_1508.method1119(this, 1, (byte) 65);
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-92, null, exception);
         }
@@ -457,7 +457,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         int i_12_ = 39 % ((-51 - i) / 49);
         aJString_35 = null;
-        activeSocket = null;
+        aClass19_38 = null;
         aJString_24 = null;
         anIntArray30 = null;
         aJString_4 = null;
@@ -470,8 +470,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
     public static void method26(boolean bool) {
         anInt39++;
 
-        if (!RSSocket.aBooleanArray484[98]) {
-            if (RSSocket.aBooleanArray484[99]) {
+        if (!Class19.aBooleanArray484[98]) {
+            if (Class19.aBooleanArray484[99]) {
                 Class20.anInt542 += ((-12 - Class20.anInt542) / 2);
             } else {
                 Class20.anInt542 /= 2;
@@ -482,8 +482,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         Class76.anInt1439 += (Class20.anInt542 / 2);
 
-        if (!RSSocket.aBooleanArray484[96]) {
-            if (!RSSocket.aBooleanArray484[97]) {
+        if (!Class19.aBooleanArray484[96]) {
+            if (!Class19.aBooleanArray484[97]) {
                 Class37_Sub6.anInt1890 /= 2;
             } else {
                 Class37_Sub6.anInt1890 += ((24 - Class37_Sub6.anInt1890) / 2);

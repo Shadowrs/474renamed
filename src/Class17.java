@@ -172,7 +172,7 @@ public class Class17 {
 
                     Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method363(127);
                     Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method357(-1);
-                    RSSocket.aClass73_489 = null;
+                    Class19.aClass73_489 = null;
                     ObjectDef.aClass37_Sub19_2735 = null;
 
                     if (Class84.aClass15_1534 == null) {
@@ -190,7 +190,7 @@ public class Class17 {
             } catch (Exception exception) {
                 exception.printStackTrace();
                 Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method363(127);
-                RSSocket.aClass73_489 = null;
+                Class19.aClass73_489 = null;
                 ObjectDef.aClass37_Sub19_2735 = null;
                 Class84.aClass15_1534 = null;
                 Class37_Sub7.anInt1904 = 0;
@@ -468,7 +468,7 @@ public class Class17 {
                         (Class2.aClass47_77 == null)) {
                     Class2.aClass47_77 = new Class47();
                     Class2.aClass47_77.aClass51_991 = class51;
-                    class51.createResourceThread(Class2.aClass47_77,
+                    class51.method1119(Class2.aClass47_77,
                         Class37_Sub4_Sub6.anInt2622, (byte) 65);
                 }
 
@@ -496,7 +496,7 @@ public class Class17 {
                             (Class2.aClass47_77 == null)) {
                         Class2.aClass47_77 = new Class47();
                         Class2.aClass47_77.aClass51_991 = class51;
-                        class51.createResourceThread(Class2.aClass47_77,
+                        class51.method1119(Class2.aClass47_77,
                             Class37_Sub4_Sub6.anInt2622, (byte) 65);
                     }
 

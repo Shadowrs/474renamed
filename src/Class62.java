@@ -32,10 +32,10 @@ public class Class62 {
     public Class62(Stream stream) {
         aByte1179 = stream.method982((byte) 97);
         anInt1182 = stream.method980(103);
-        anInt1173 = stream.readInt(-27);
-        anInt1186 = stream.readInt(-59);
-        anInt1184 = stream.readInt(-115);
-        anInt1178 = stream.readInt(-69);
+        anInt1173 = stream.method933(-27);
+        anInt1186 = stream.method933(-59);
+        anInt1184 = stream.method933(-115);
+        anInt1178 = stream.method933(-69);
     }
 
     public static void method1170(int i) {

@@ -420,17 +420,17 @@ public class Class37_Sub24 extends Class37 {
 
     public void method1038(byte[] is) {
         Stream stream = new Stream(is);
-        anInt2246 = stream.readInt(-107);
-        anInt2254 = stream.readInt(-124);
-        anInt2250 = stream.readInt(-97);
-        anInt2247 = stream.readInt(-96);
+        anInt2246 = stream.method933(-107);
+        anInt2254 = stream.method933(-124);
+        anInt2250 = stream.method933(-97);
+        anInt2247 = stream.method933(-96);
 
         if (anInt2247 < 0) {
             anInt2247 = anInt2247 ^ 0xffffffff;
             aBoolean2257 = true;
         }
 
-        int i = stream.readInt(-88);
+        int i = stream.method933(-88);
         aByteArrayArray2263 = new byte[i][];
 
         for (int i_85_ = 0; i_85_ < i; i_85_++) {

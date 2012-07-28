@@ -46,13 +46,13 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
 
             if ((i == 20) || (i == 40)) {
                 Class37_Sub9_Sub23.anInt3355 = 0;
-                Class22.loginStage = 0;
+                Class22.anInt580 = 0;
                 Login.anInt781 = 0;
             }
 
             if ((i != 20) && (i != 40) &&
                     (PacketStream.aClass19_3613 != null)) {
-                PacketStream.aClass19_3613.killThread((byte) -128);
+                PacketStream.aClass19_3613.method209((byte) -128);
                 PacketStream.aClass19_3613 = null;
             }
 
@@ -186,7 +186,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
     public void method464(int i, Stream stream, boolean bool,
         int i_9_) {
         if ((i ^ 0xffffffff) == -2) {
-            anInt2556 = stream.read3Bytes(-26256544);
+            anInt2556 = stream.method935(-26256544);
         } else if ((i ^ 0xffffffff) == -3) {
             anInt2554 = stream.method980(-125);
 

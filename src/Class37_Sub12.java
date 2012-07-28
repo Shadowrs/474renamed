@@ -44,18 +44,18 @@ public class Class37_Sub12 extends Class37 {
 
         int i_0_ = Class83.packetStream.method996(8, 103);
 
-        if ((RSSocket.anInt487 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
+        if ((Class19.anInt487 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
             for (int i_1_ = i_0_;
-                    (RSSocket.anInt487 ^ 0xffffffff) < (i_1_ ^ 0xffffffff);
+                    (Class19.anInt487 ^ 0xffffffff) < (i_1_ ^ 0xffffffff);
                     i_1_++)
                 Applet_Sub1.anIntArray30[Class37_Sub9_Sub21.anInt3306++] = Class26.anIntArray657[i_1_];
         }
 
-        if ((RSSocket.anInt487 ^ 0xffffffff) > (i_0_ ^ 0xffffffff)) {
+        if ((Class19.anInt487 ^ 0xffffffff) > (i_0_ ^ 0xffffffff)) {
             throw new RuntimeException("gppov1");
         }
 
-        RSSocket.anInt487 = 0;
+        Class19.anInt487 = 0;
 
         for (int i_2_ = 0; i_2_ < i_0_; i_2_++) {
             int i_3_ = Class26.anIntArray657[i_2_];
@@ -63,19 +63,19 @@ public class Class37_Sub12 extends Class37 {
             int i_4_ = Class83.packetStream.method996(1, 97);
 
             if ((i_4_ ^ 0xffffffff) == -1) {
-                Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
+                Class26.anIntArray657[Class19.anInt487++] = i_3_;
                 class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
             } else {
                 int i_5_ = Class83.packetStream.method996(2, 83);
 
                 if (i_5_ == 0) {
-                    Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
+                    Class26.anIntArray657[Class19.anInt487++] = i_3_;
 
                     class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 
                     Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i_3_;
                 } else if (i_5_ == 1) {
-                    Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
+                    Class26.anIntArray657[Class19.anInt487++] = i_3_;
 
                     class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 
@@ -88,7 +88,7 @@ public class Class37_Sub12 extends Class37 {
                         Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i_3_;
                     }
                 } else if ((i_5_ ^ 0xffffffff) == -3) {
-                    Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
+                    Class26.anIntArray657[Class19.anInt487++] = i_3_;
 
                     class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 

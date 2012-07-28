@@ -70,25 +70,25 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
                 string_0_ = string_0_.replace('#', '_');
 
                 if (Class43.aClass51_958.anApplet1045 != null) {
-                    Resource class23 = (Class43.aClass51_958.createResourceURL((byte) 40,
+                    Class23 class23 = (Class43.aClass51_958.method1122((byte) 40,
                             new URL(Class43.aClass51_958.anApplet1045.getCodeBase(),
                                 ("clienterror.ws?c=" + Class85.anInt1552 +
                                 "&u=" + Class37_Sub9_Sub34.aLong3556 + "&v1=" +
                                 Signlink.aString1039 + "&v2=" +
                                 Signlink.aString1033 + "&e=" + string_0_))));
 
-                    while (class23.state == 0)
+                    while (class23.anInt591 == 0)
                         Class37_Sub9_Sub20.method846(1L, (byte) 58);
 
                     if (i > -48) {
                         aClass65_2940 = null;
                     }
 
-                    if (class23.state != 1) {
+                    if (class23.anInt591 != 1) {
                         break;
                     }
 
-                    DataInputStream datainputstream = (DataInputStream) class23.resource;
+                    DataInputStream datainputstream = (DataInputStream) class23.anObject595;
                     datainputstream.read();
                     datainputstream.close();
                 }
@@ -195,7 +195,7 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
 
         int i = stream.method978(121);
         int i_5_ = stream.method978(117);
-        Class var_class = RSSocket.classFromInt(i_5_, !bool);
+        Class var_class = Class19.method203(i_5_, !bool);
 
         try {
             Class37_Sub9 class37_sub9 = (Class37_Sub9) var_class.newInstance();

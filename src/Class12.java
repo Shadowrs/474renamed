@@ -57,8 +57,8 @@ public class Class12 {
 
     public void method92(Stream stream) {
         anInt209 = stream.method978(119);
-        anInt206 = stream.readInt(-80);
-        anInt210 = stream.readInt(-88);
+        anInt206 = stream.method933(-80);
+        anInt210 = stream.method933(-88);
         method90(stream);
     }
 

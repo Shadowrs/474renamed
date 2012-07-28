@@ -3,7 +3,7 @@
  */
 public class Class43 {
     public static JString aJString_949;
-    public static RSSocket aClass19_950;
+    public static Class19 aClass19_950;
     public static int anInt951;
     public static int anInt952;
     public static int[][] anIntArrayArray953 = {
@@ -462,7 +462,7 @@ public class Class43 {
                 }
             } else if ((Client.anInt1719 ^ 0xffffffff) == -111) {
                 Class37_Sub9_Sub27.aClass55_3417 = new Class55();
-                Class80.aClass51_1508.createResourceThread((Class37_Sub9_Sub27.aClass55_3417),
+                Class80.aClass51_1508.method1119((Class37_Sub9_Sub27.aClass55_3417),
                     10, (byte) 65);
                 Class37_Sub9_Sub27.anInt3400 = 94;
 

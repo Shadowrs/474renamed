@@ -122,7 +122,7 @@ public class Class37_Sub18 extends Class37 {
         Class20.aJString_543 = Class37_Sub9_Sub1.aJString_2917;
         Class37_Sub9_Sub28.aJString_3439 = Class50.aJString_1014;
         Class37_Sub9_Sub13.aJString_3131 = Class69.aJString_1347;
-        Class88.aJString_1607 = RSSocket.aJString_480;
+        Class88.aJString_1607 = Class19.aJString_480;
 
         ObjectDef.aJString_2704 = Class37_Sub4_Sub7_Sub3.aJString_3754;
         Class37_Sub4_Sub5.aJString_2606 = Class4.aJString_91;

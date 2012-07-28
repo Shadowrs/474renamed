@@ -29,9 +29,9 @@ public class Class37_Sub20 extends Class37 {
 
     public int[] anIntArray2204;
     public int anInt2205;
-    public Resource[] aClass23Array2206;
+    public Class23[] aClass23Array2206;
     public int anInt2207;
-    public Resource[] aClass23Array2209;
+    public Class23[] aClass23Array2209;
     public int[] anIntArray2212;
     public byte[][][] aByteArrayArrayArray2213;
     public int[] anIntArray2214;

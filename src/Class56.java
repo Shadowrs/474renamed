@@ -42,7 +42,7 @@ public class Class56 {
 
             if ((i_2_ & 0x10) != 0) {
                 int i_3_ = Class83.packetStream.method956(2);
-                int i_4_ = Class83.packetStream.readByteS((byte) 35);
+                int i_4_ = Class83.packetStream.method932((byte) 35);
 
                 if (i_3_ == 65535) {
                     i_3_ = -1;
@@ -149,7 +149,7 @@ public class Class56 {
             if ((i_2_ & 0x8) != 0) {
                 class37_sub4_sub7_sub1_sub1.anInt3636 = Class83.packetStream.method984(-1739943584);
 
-                int i_10_ = Class83.packetStream.readInt1(i +
+                int i_10_ = Class83.packetStream.method936(i +
                         8100);
                 class37_sub4_sub7_sub1_sub1.anInt3664 = 0;
 
