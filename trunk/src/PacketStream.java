@@ -6,7 +6,7 @@ public class PacketStream extends Stream {
     public static int anInt3610;
     public static int[] anIntArray3611 = new int[100];
     public static int anInt3612;
-    public static Class19 aClass19_3613;
+    public static RSSocket aClass19_3613;
     public static JString aJString_3614;
     public static int anInt3615;
     public static int anInt3616;
@@ -192,7 +192,7 @@ public class PacketStream extends Stream {
 
         return Class37_Sub9_Sub27.method881(-63,
             (new JString[] {
-                Class19.aJString_471, jstring,
+                RSSocket.aJString_471, jstring,
                 (Class37_Sub9_Sub22.aJString_3332)
             }));
     }

@@ -49,7 +49,7 @@ public class Class76 {
 
     public static void method1284(byte i) {
         if (Applet_Sub1.aClass19_38 != null) {
-            Applet_Sub1.aClass19_38.method209((byte) -128);
+            Applet_Sub1.aClass19_38.killThread((byte) -128);
             Applet_Sub1.aClass19_38 = null;
         }
 

@@ -6,7 +6,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3276;
     public static int anInt3277;
     public static int anInt3280;
-    public static Class23 aClass23_3281;
+    public static SignlinkResourceNode aClass23_3281;
     public static int anInt3284;
     public static int anInt3288;
     public static int anInt3289;
@@ -16,7 +16,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3294;
     public static Class58 aClass58_3296 = new Class58();
     public static Class13 aClass13_3297;
-    public static Class19 aClass19_3298;
+    public static RSSocket aClass19_3298;
     public static JString aJString_3299 = Class37_Sub2.method332((byte) 102,
             "Ihr Charakter)2Profil wird in:");
     public static int[] anIntArray3300 = new int[500];

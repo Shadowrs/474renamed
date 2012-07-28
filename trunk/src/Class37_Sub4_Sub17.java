@@ -57,24 +57,24 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
 
             for (int i_1_ = 0; class37_sub20.anInt2205 > i_1_; i_1_++) {
                 if (class37_sub20.aClass23Array2209[i_1_] != null) {
-                    if ((class37_sub20.aClass23Array2209[i_1_].anInt591 ^
+                    if ((class37_sub20.aClass23Array2209[i_1_].state ^
                             0xffffffff) == -3) {
                         class37_sub20.anIntArray2212[i_1_] = -5;
                     }
 
-                    if ((class37_sub20.aClass23Array2209[i_1_].anInt591 ^
+                    if ((class37_sub20.aClass23Array2209[i_1_].state ^
                             0xffffffff) == -1) {
                         bool = true;
                     }
                 }
 
                 if (class37_sub20.aClass23Array2206[i_1_] != null) {
-                    if ((class37_sub20.aClass23Array2206[i_1_].anInt591 ^
+                    if ((class37_sub20.aClass23Array2206[i_1_].state ^
                             0xffffffff) == -3) {
                         class37_sub20.anIntArray2212[i_1_] = -6;
                     }
 
-                    if (class37_sub20.aClass23Array2206[i_1_].anInt591 == 0) {
+                    if (class37_sub20.aClass23Array2206[i_1_].state == 0) {
                         bool = true;
                     }
                 }
@@ -100,18 +100,18 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
 
                         if (i_4_ != 0) {
                             if ((i_4_ ^ 0xffffffff) == -2) {
-                                Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].anObject595);
+                                Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                                 field.setInt(null,
                                     (class37_sub20.anIntArray2204[i_3_]));
                                 stream_sub1.method964(i_0_ ^ ~0x68, 0);
                             } else if ((i_4_ ^ 0xffffffff) == -3) {
-                                Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].anObject595);
+                                Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                                 int i_5_ = field.getModifiers();
                                 stream_sub1.method964(100, 0);
                                 stream_sub1.method947((byte) -117, i_5_);
                             }
                         } else {
-                            Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].anObject595);
+                            Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                             int i_6_ = field.getInt(null);
                             stream_sub1.method964(116, 0);
                             stream_sub1.method947((byte) 81, i_6_);
@@ -119,13 +119,13 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
 
                         if ((i_4_ ^ 0xffffffff) != -4) {
                             if ((i_4_ ^ 0xffffffff) == -5) {
-                                Method method = (Method) (class37_sub20.aClass23Array2206[i_3_].anObject595);
+                                Method method = (Method) (class37_sub20.aClass23Array2206[i_3_].resource);
                                 int i_7_ = method.getModifiers();
                                 stream_sub1.method964(111, 0);
                                 stream_sub1.method947((byte) -124, i_7_);
                             }
                         } else {
-                            Method method = (Method) (class37_sub20.aClass23Array2206[i_3_].anObject595);
+                            Method method = (Method) (class37_sub20.aClass23Array2206[i_3_].resource);
                             byte[][] is = class37_sub20.aByteArrayArrayArray2213[i_3_];
                             Object[] objects = new Object[is.length];
 
