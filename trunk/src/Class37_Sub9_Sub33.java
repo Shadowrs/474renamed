@@ -18,14 +18,14 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
     public static Class37_Sub4_Sub9_Sub1[] aClass37_Sub4_Sub9_Sub1Array3523;
     public static JString aJString_3524;
     public static JString aJString_3525;
-    public static JString playerName;
-    public static Resource aClass23_3527;
+    public static JString aJString_3526;
+    public static Class23 aClass23_3527;
     public static JString aJString_3528;
 
     static {
         aClass65_3512 = new Class65(200);
         aJString_3524 = Class37_Sub2.method332((byte) 126, "");
-        playerName = aJString_3524;
+        aJString_3526 = aJString_3524;
         aJString_3522 = aJString_3524;
         aJString_3525 = aJString_3524;
         aJString_3520 = aJString_3524;
@@ -137,7 +137,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
         }
 
         aClass65_3512 = null;
-        playerName = null;
+        aJString_3526 = null;
         aJString_3520 = null;
         aJString_3528 = null;
     }
@@ -162,7 +162,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
 
     public static void method905(int i) {
         for (int i_11_ = -1;
-                (RSSocket.anInt487 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
+                (Class19.anInt487 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
                 i_11_++) {
             int i_12_;
 

@@ -56,7 +56,7 @@ public class Class84 {
             Class79.anInt1474 = 0;
         }
 
-        int i = RSSocket.anInt487;
+        int i = Class19.anInt487;
 
         if (bool_0_) {
             i = 1;
@@ -83,8 +83,8 @@ public class Class84 {
                 int i_4_ = class37_sub4_sub7_sub1_sub2.anInt3642 >> 2058286279;
 
                 if (((Class37_Sub4_Sub6.aBoolean2613 &&
-                        (RSSocket.anInt487 > 50)) ||
-                        ((RSSocket.anInt487 ^ 0xffffffff) < -201)) && !bool_0_ &&
+                        (Class19.anInt487 > 50)) ||
+                        ((Class19.anInt487 ^ 0xffffffff) < -201)) && !bool_0_ &&
                         ((class37_sub4_sub7_sub1_sub2.anInt3647 ^ 0xffffffff) == (class37_sub4_sub7_sub1_sub2.anInt3701 ^
                         0xffffffff))) {
                     class37_sub4_sub7_sub1_sub2.aBoolean3983 = true;

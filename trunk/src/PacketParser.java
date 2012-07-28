@@ -193,7 +193,7 @@ public class PacketParser extends Class37_Sub9 {
                         JString jstring = (Class37_Sub9_Sub27.method881(i ^
                                 ~0x3534,
                                 (new JString[] {
-                                    RSSocket.aJString_488, class56.aJString_1081,
+                                    Class19.aJString_488, class56.aJString_1081,
                                     Class37_Sub4_Sub7_Sub1_Sub2.aJString_3971,
                                     Class37_Sub9_Sub8.aJString_3056,
                                     Class73.aJString_1384,
@@ -249,12 +249,12 @@ public class PacketParser extends Class37_Sub9 {
     public static boolean method840(int i) {
         anInt3264++;
 
-        if (Applet_Sub1.activeSocket == null) {
+        if (Applet_Sub1.aClass19_38 == null) {
             return false;
         }
 
         try {
-            int i_4_ = Applet_Sub1.activeSocket.available(-106);
+            int i_4_ = Applet_Sub1.aClass19_38.method206(-106);
 
             if ((i_4_ ^ 0xffffffff) == -1) {
                 return false;
@@ -262,7 +262,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == 0) {
                 i_4_--;
-                Applet_Sub1.activeSocket.read(1, 0, 122,
+                Applet_Sub1.aClass19_38.method208(1, 0, 122,
                     (Class83.packetStream.buffer));
                 Class83.packetStream.currentIndex = 0;
 
@@ -273,7 +273,7 @@ public class PacketParser extends Class37_Sub9 {
             if (i == Class37_Sub4.packetSize) {
                 if ((i_4_ ^ 0xffffffff) < -1) {
                     i_4_--;
-                    Applet_Sub1.activeSocket.read(1, 0, 122,
+                    Applet_Sub1.aClass19_38.method208(1, 0, 122,
                         Class83.packetStream.buffer);
 
                     Class37_Sub4.packetSize = (Class83.packetStream.buffer[0] &
@@ -288,7 +288,7 @@ public class PacketParser extends Class37_Sub9 {
                     return false;
                 }
 
-                Applet_Sub1.activeSocket.read(2, 0, i + 123,
+                Applet_Sub1.aClass19_38.method208(2, 0, i + 123,
                     (Class83.packetStream.buffer));
                 i_4_ -= 2;
                 Class83.packetStream.currentIndex = 0;
@@ -301,7 +301,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             Class83.packetStream.currentIndex = 0;
-            Applet_Sub1.activeSocket.read(Class37_Sub4.packetSize, 0, 122,
+            Applet_Sub1.aClass19_38.method208(Class37_Sub4.packetSize, 0, 122,
                 (Class83.packetStream.buffer));
             Class37_Sub9_Sub27.anInt3418 = Class37_Sub16.anInt2151;
             Class37_Sub9_Sub30.anInt3480 = 0;
@@ -338,12 +338,12 @@ public class PacketParser extends Class37_Sub9 {
                     if (jstring.method161(i_5_, 56) == 115) {
                         objects[1 + i_5_] = Class83.packetStream.method944((byte) -66);
                     } else {
-                        objects[1 + i_5_] = new Integer(Class83.packetStream.readInt(
+                        objects[1 + i_5_] = new Integer(Class83.packetStream.method933(
                                     -62));
                     }
                 }
 
-                objects[0] = new Integer(Class83.packetStream.readInt(
+                objects[0] = new Integer(Class83.packetStream.method933(
                             -51));
 
                 Class37_Sub8 class37_sub8 = new Class37_Sub8();
@@ -374,9 +374,9 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -237) {
-                int i_7_ = Class83.packetStream.readInt(-56);
+                int i_7_ = Class83.packetStream.method933(-56);
 
-                Class37_Sub9_Sub33.aClass23_3527 = Class80.aClass51_1508.createResourceInteger(i_7_,
+                Class37_Sub9_Sub33.aClass23_3527 = Class80.aClass51_1508.method1120(i_7_,
                         (byte) 111);
                 Class37_Sub9_Sub17.packetId = -1;
 
@@ -530,7 +530,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -23) {
-                int i_20_ = Class83.packetStream.readInt(-34);
+                int i_20_ = Class83.packetStream.method933(-34);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_20_, 4096);
                 class18.anInt408 = 3;
 
@@ -544,7 +544,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -18) {
                 int i_21_ = Class83.packetStream.method967(255);
                 int i_22_ = Class83.packetStream.method975(2);
-                int i_23_ = Class83.packetStream.readInt1(8191);
+                int i_23_ = Class83.packetStream.method936(8191);
 
                 Class37_Sub6 class37_sub6 = ((Class37_Sub6) Class76.aClass13_1423.method100((byte) 96,
                         (long) i_23_));
@@ -573,7 +573,7 @@ public class PacketParser extends Class37_Sub9 {
 
                 long l_24_ = Class83.packetStream.method971(false);
                 long l_25_ = (long) Class83.packetStream.method980(-124);
-                long l_26_ = (long) Class83.packetStream.read3Bytes(-26256544);
+                long l_26_ = (long) Class83.packetStream.method935(-26256544);
                 int i_27_ = Class83.packetStream.method978(119);
                 long l_28_ = (l_25_ << -908022624) + l_26_;
                 boolean bool = false;
@@ -656,7 +656,7 @@ public class PacketParser extends Class37_Sub9 {
                 }
 
                 while (i_33_-- > 0) {
-                    int i_35_ = Class83.packetStream.readInt(-57);
+                    int i_35_ = Class83.packetStream.method933(-57);
                     int i_36_ = Class83.packetStream.method980(-120);
                     int i_37_ = Class83.packetStream.method978(124);
                     Class37_Sub6 class37_sub6 = ((Class37_Sub6) Class76.aClass13_1423.method100((byte) 97,
@@ -693,10 +693,10 @@ public class PacketParser extends Class37_Sub9 {
 
                 while ((i_31_ ^ 0xffffffff) < (Class83.packetStream.currentIndex ^
                         0xffffffff)) {
-                    int i_38_ = Class83.packetStream.readInt(-118);
+                    int i_38_ = Class83.packetStream.method933(-118);
                     int i_39_ = Class83.packetStream.method980(104);
                     int i_40_ = Class83.packetStream.method980(28);
-                    int i_41_ = Class83.packetStream.readInt(i +
+                    int i_41_ = Class83.packetStream.method933(i +
                             -78);
 
                     for (int i_42_ = i_39_; i_40_ >= i_42_; i_42_++) {
@@ -762,10 +762,10 @@ public class PacketParser extends Class37_Sub9 {
                 if (Class76.anInt1438 >= 100) {
                     Class37_Sub6.anInt1888 = (ObjectDef.anInt2697 * 128) +
                         64;
-                    RSSocket.anInt483 = (128 * Class37_Sub9.anInt1948) + 64;
+                    Class19.anInt483 = (128 * Class37_Sub9.anInt1948) + 64;
 
                     Class37_Sub25.anInt2286 = (JString.method153(Class37_Sub9_Sub1.anInt2916,
-                            -169496123, Class37_Sub6.anInt1888, RSSocket.anInt483) -
+                            -169496123, Class37_Sub6.anInt1888, Class19.anInt483) -
                         Class37_Sub9_Sub11.anInt3106);
                 }
 
@@ -782,7 +782,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -175) {
-                int i_45_ = Class83.packetStream.readInt(i + -97);
+                int i_45_ = Class83.packetStream.method933(i + -97);
                 Class37_Sub6 class37_sub6 = ((Class37_Sub6) Class76.aClass13_1423.method100((byte) 88,
                         (long) i_45_));
 
@@ -814,7 +814,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if (Class37_Sub9_Sub17.packetId == 71) {
-                int i_47_ = Class83.packetStream.read3Bytes1(-22591);
+                int i_47_ = Class83.packetStream.method939(-22591);
                 int i_48_ = Class83.packetStream.method975(2);
 
                 if (i_48_ == 65535) {
@@ -886,7 +886,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if (Class37_Sub9_Sub17.packetId == 114) {
                 int i_51_ = Class83.packetStream.method980(-120);
-                int i_52_ = Class83.packetStream.readInt1(i ^
+                int i_52_ = Class83.packetStream.method936(i ^
                         ~0x1fff);
                 int i_53_ = (i_51_ & 0x7e09) >> 652661258;
                 int i_54_ = 0x1f & i_51_;
@@ -915,7 +915,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if (Class37_Sub9_Sub17.packetId == 127) {
                 int i_57_ = Class83.packetStream.method956(2);
-                int i_58_ = Class83.packetStream.readInt(i + -23);
+                int i_58_ = Class83.packetStream.method933(i + -23);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_58_, 4096);
 
                 if ((class18.anInt408 != 2) ||
@@ -951,7 +951,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -108) {
                 int i_60_ = Class83.packetStream.method969(94);
-                int i_61_ = Class83.packetStream.readSignedWordLE(i ^
+                int i_61_ = Class83.packetStream.method942(i ^
                         ~0x2);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_60_, 4096);
 
@@ -970,7 +970,7 @@ public class PacketParser extends Class37_Sub9 {
             if (Class37_Sub9_Sub17.packetId == 117) {
                 long l = Class83.packetStream.method971(false);
                 long l_62_ = (long) Class83.packetStream.method980(-119);
-                long l_63_ = (long) Class83.packetStream.read3Bytes(-26256544);
+                long l_63_ = (long) Class83.packetStream.method935(-26256544);
                 long l_64_ = l_63_ + (l_62_ << 2100974816);
                 int i_65_ = Class83.packetStream.method978(116);
                 boolean bool = false;
@@ -1102,7 +1102,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if (Class37_Sub9_Sub17.packetId == 187) {
-                int i_68_ = Class83.packetStream.readInt(-44);
+                int i_68_ = Class83.packetStream.method933(-44);
                 int i_69_ = Class83.packetStream.method980(-8);
 
                 if ((i_68_ ^ 0xffffffff) > 69999) {
@@ -1127,7 +1127,7 @@ public class PacketParser extends Class37_Sub9 {
                         i_72_ = Class83.packetStream.method978(125);
 
                         if ((i_72_ ^ 0xffffffff) == -256) {
-                            i_72_ = Class83.packetStream.readInt(-68);
+                            i_72_ = Class83.packetStream.method933(-68);
                         }
                     }
 
@@ -1232,7 +1232,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -231) {
-                int i_83_ = Class83.packetStream.readByteS((byte) 50);
+                int i_83_ = Class83.packetStream.method932((byte) 50);
                 int i_84_ = Class83.packetStream.method967(i + 256);
                 int i_85_ = Class83.packetStream.method967(255);
                 Class37_Sub9_Sub1.anInt2916 = i_84_ >> 953413153;
@@ -1346,7 +1346,7 @@ public class PacketParser extends Class37_Sub9 {
                     int i_93_ = (JString.method153(Class37_Sub9_Sub1.anInt2916,
                             -169496123, i_91_, i_92_) -
                         Class37_Sub9_Sub22.anInt3333);
-                    int i_94_ = i_92_ + -RSSocket.anInt483;
+                    int i_94_ = i_92_ + -Class19.anInt483;
                     int i_95_ = i_91_ - Class37_Sub6.anInt1888;
                     int i_96_ = i_93_ + -Class37_Sub25.anInt2286;
                     int i_97_ = (int) Math.sqrt((double) ((i_94_ * i_94_) +
@@ -1396,7 +1396,7 @@ public class PacketParser extends Class37_Sub9 {
             if (Class37_Sub9_Sub17.packetId == 66) {
                 Class37_Sub9_Sub15.method822((byte) 96);
 
-                Class33.anInt761 = Class83.packetStream.readSignedWord((byte) 111);
+                Class33.anInt761 = Class83.packetStream.method931((byte) 111);
                 Class37_Sub9_Sub17.packetId = -1;
                 Class37_Sub9_Sub37.anInt3602 = Class83.anInt1515;
 
@@ -1561,7 +1561,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -154) {
-                int i_111_ = Class83.packetStream.readInt1(i ^
+                int i_111_ = Class83.packetStream.method936(i ^
                         ~0x1fff);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_111_, 4096);
 
@@ -1611,7 +1611,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if (Class37_Sub9_Sub17.packetId == 33) {
                 int i_117_ = Class83.packetStream.method956(2);
-                int i_118_ = Class83.packetStream.readInt1(i ^
+                int i_118_ = Class83.packetStream.method936(i ^
                         ~0x1fff);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_118_, 4096);
 
@@ -1628,7 +1628,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -120) {
-                int i_119_ = Class83.packetStream.readInt(-31);
+                int i_119_ = Class83.packetStream.method933(-31);
                 int i_120_ = Class83.packetStream.method980(-7);
 
                 Class18 class18;
@@ -1659,7 +1659,7 @@ public class PacketParser extends Class37_Sub9 {
                 for (int i_123_ = 0;
                         (i_123_ ^ 0xffffffff) > (i_122_ ^ 0xffffffff);
                         i_123_++) {
-                    int i_124_ = Class83.packetStream.readByteS((byte) 75);
+                    int i_124_ = Class83.packetStream.method932((byte) 75);
 
                     if ((i_124_ ^ 0xffffffff) == -256) {
                         i_124_ = Class83.packetStream.method979(-52131576);
@@ -1694,7 +1694,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -37) {
                 int i_126_ = Class83.packetStream.method980(-128);
                 int i_127_ = Class83.packetStream.method975(2);
-                int i_128_ = Class83.packetStream.readInt(-89);
+                int i_128_ = Class83.packetStream.method933(-89);
                 int i_129_ = Class83.packetStream.method956(2);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_128_, 4096);
 
@@ -1717,7 +1717,7 @@ public class PacketParser extends Class37_Sub9 {
             if (Class37_Sub9_Sub17.packetId == 184) {
                 boolean bool = ((Class83.packetStream.method952((byte) -113) ^
                     0xffffffff) == -2);
-                int i_130_ = Class83.packetStream.readInt(-83);
+                int i_130_ = Class83.packetStream.method933(-83);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_130_, i +
                         4097);
 
@@ -1883,7 +1883,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -134) {
                 int i_145_ = Class83.packetStream.method979(-52131576);
                 int i_146_ = Class83.packetStream.method956(2);
-                int i_147_ = Class83.packetStream.readInt(-28);
+                int i_147_ = Class83.packetStream.method933(-28);
 
                 if ((i_146_ ^ 0xffffffff) == -65536) {
                     i_146_ = -1;
@@ -1916,7 +1916,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -226) {
                 int i_150_ = Class83.packetStream.method967(255);
                 JString jstring = Class83.packetStream.method944((byte) 73);
-                int i_151_ = Class83.packetStream.readByteS((byte) 66);
+                int i_151_ = Class83.packetStream.method932((byte) 66);
 
                 if (((i_151_ ^ 0xffffffff) <= -2) &&
                         ((i_151_ ^ 0xffffffff) >= -9)) {
@@ -1993,7 +1993,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if (Class37_Sub9_Sub17.packetId == 76) {
-                int i_155_ = Class83.packetStream.readSignedWordLE(2);
+                int i_155_ = Class83.packetStream.method942(2);
                 int i_156_ = Class83.packetStream.method979(i +
                         -52131575);
                 int i_157_ = Class83.packetStream.method970(-2453);
@@ -2026,8 +2026,8 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -250) {
-                int i_160_ = Class83.packetStream.readInt1(8191);
-                int i_161_ = Class83.packetStream.readInt(i +
+                int i_160_ = Class83.packetStream.method936(8191);
+                int i_161_ = Class83.packetStream.method933(i +
                         -55);
                 int i_162_ = Class83.packetStream.method980(-123);
 
@@ -2375,8 +2375,8 @@ public class PacketParser extends Class37_Sub9 {
                 aJString_3273 = null;
             }
 
-            PacketStream.aClass19_3613 = Applet_Sub1.activeSocket;
-            Applet_Sub1.activeSocket = null;
+            PacketStream.aClass19_3613 = Applet_Sub1.aClass19_38;
+            Applet_Sub1.aClass19_38 = null;
         }
     }
 }

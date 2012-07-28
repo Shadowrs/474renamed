@@ -106,42 +106,44 @@ public class Stream extends Class37 {
         buffer = is;
     }
 
-    public void write3Bytes(int value, int dummy) {
-        buffer[currentIndex++] = (byte) (value >> 16);
+    public void method930(int i, int i_0_) {
+        buffer[currentIndex++] = (byte) (i >> 515509680);
 
-        if (dummy > -93) {
+        if (i_0_ > -93) {
             anInt2014 = 31;
         }
 
-        buffer[currentIndex++] = (byte) (value >> 8);
-        buffer[currentIndex++] = (byte) value;
+        buffer[currentIndex++] = (byte) (i >> 1197722312);
+        buffer[currentIndex++] = (byte) i;
         anInt2019++;
     }
 
-    public int readSignedWord(byte i) {
+    public int method931(byte i) {
+        int i_1_ = 66 % ((i - 43) / 58);
         currentIndex += 2;
         anInt2069++;
 
-        int i_2_ = ((0xff & buffer[-1 + currentIndex]) + (0xff00 & (buffer[-2 + currentIndex] << 16)));
+        int i_2_ = ((0xff & buffer[-1 + currentIndex]) +
+            (0xff00 & (buffer[-2 + currentIndex] << -964924952)));
 
-        if (i_2_> -32767) {
+        if ((i_2_ ^ 0xffffffff) < -32768) {
             i_2_ -= 65536;
         }
 
         return i_2_;
     }
 
-    public int readByteS(byte dummy) {
+    public int method932(byte i) {
         anInt2003++;
 
-        if (dummy <= 14) {
+        if (i <= 14) {
             return 86;
         }
 
         return 0xff & -buffer[currentIndex++];
     }
 
-    public int readInt(int i) {
+    public int method933(int i) {
         currentIndex += 4;
         anInt2010++;
 
@@ -150,9 +152,9 @@ public class Stream extends Class37 {
         }
 
         return ((buffer[-1 + currentIndex] & 0xff) +
-        ((0xff00 & (buffer[currentIndex - 2] << 8)) +
-        ((0xff & buffer[currentIndex + -4]) << 24) +
-        ((buffer[-3 + currentIndex] << 16) & 0xff0000)));
+        ((0xff00 & (buffer[currentIndex - 2] << -2041557112)) +
+        ((0xff & buffer[currentIndex + -4]) << 1916375896) +
+        ((buffer[-3 + currentIndex] << -647192592) & 0xff0000)));
     }
 
     public static void method934(int i, boolean bool) {
@@ -350,21 +352,21 @@ public class Stream extends Class37 {
         anInt2017++;
     }
 
-    public int read3Bytes(int dummy) {
+    public int method935(int i) {
         currentIndex += 3;
         anInt2008++;
 
-        if (dummy != -26256544) {
+        if (i != -26256544) {
             aJStringArray2041 = null;
         }
 
         return ((0xff & buffer[-1 + currentIndex]) +
-        (((buffer[currentIndex + -2] << 24) & 0xff00) +
-        ((buffer[-3 + currentIndex] & 0xff) << -16)));
+        (((buffer[currentIndex + -2] << -2586040) & 0xff00) +
+        ((buffer[-3 + currentIndex] & 0xff) << -943002096)));
     }
 
-    public int readInt1(int dummy) {
-        if (dummy != 8191) {
+    public int method936(int i) {
+        if (i != 8191) {
             method970(-10);
         }
 
@@ -372,9 +374,9 @@ public class Stream extends Class37 {
         currentIndex += 4;
 
         return ((buffer[-3 + currentIndex] & 0xff) +
-        ((0xff & buffer[currentIndex + -2]) << 8) +
-        ((buffer[-1 + currentIndex] << 16) & 0xff0000) +
-        ((buffer[currentIndex + -4] << 8) & 0xff00));
+        ((0xff & buffer[currentIndex + -2]) << -1350129768) +
+        ((buffer[-1 + currentIndex] << -1185122512) & 0xff0000) +
+        ((buffer[currentIndex + -4] << -118330680) & 0xff00));
     }
 
     public int method937(int i, byte i_37_) {
@@ -390,25 +392,27 @@ public class Stream extends Class37 {
         return i_38_;
     }
 
-    public byte readSignedByte(int i) {
+    public byte method938(int i) {
         if (i < 67) {
             return (byte) -45;
         }
 
+        anInt2035++;
+
         return (byte) -buffer[currentIndex++];
     }
 
-    public int read3Bytes1(int dummy) {
+    public int method939(int i) {
         anInt2013++;
 
-        if (dummy != -22591) {
+        if (i != -22591) {
             return 119;
         }
 
         currentIndex += 3;
 
-        return (((0xff & buffer[-3 + currentIndex]) << 16) -
-        (-((0xff & buffer[-1 + currentIndex]) << 8) -
+        return (((0xff & buffer[-3 + currentIndex]) << 1935007024) -
+        (-((0xff & buffer[-1 + currentIndex]) << -1972202808) -
         (buffer[-2 + currentIndex] & 0xff)));
     }
 
@@ -432,11 +436,11 @@ public class Stream extends Class37 {
         return (byte) (-128 + buffer[currentIndex++]);
     }
 
-    public int readSignedWordLE(int dummy) {
+    public int method942(int i) {
         anInt2028++;
-        currentIndex += dummy;
+        currentIndex += i;
 
-        int i_39_ = (((buffer[currentIndex + -1] & 0xff) << 8) +
+        int i_39_ = (((buffer[currentIndex + -1] & 0xff) << 975321608) +
             (buffer[currentIndex - 2] & 0xff));
 
         if (i_39_ > 32767) {
@@ -606,7 +610,7 @@ public class Stream extends Class37 {
 
     public JString method955(int i) {
         if (i != 255) {
-            readSignedWord((byte) 126);
+            method931((byte) 126);
         }
 
         anInt2026++;
@@ -748,7 +752,7 @@ public class Stream extends Class37 {
 
     public void method966(boolean bool, int i) {
         if (bool != false) {
-            read3Bytes1(108);
+            method939(108);
         }
 
         anInt2037++;
@@ -814,8 +818,8 @@ public class Stream extends Class37 {
     public long method971(boolean bool) {
         anInt2066++;
 
-        long l = 0xffffffffL & (long) readInt(-59);
-        long l_76_ = 0xffffffffL & (long) readInt(-30);
+        long l = 0xffffffffL & (long) method933(-59);
+        long l_76_ = 0xffffffffL & (long) method933(-30);
 
         if (bool != false) {
             return 29L;
@@ -944,8 +948,8 @@ public class Stream extends Class37 {
         currentIndex = i_83_;
 
         for (int i_87_ = 0; i_86_ > i_87_; i_87_++) {
-            int i_88_ = readInt(-112);
-            int i_89_ = readInt(-86);
+            int i_88_ = method933(-112);
+            int i_89_ = method933(-86);
             int i_90_ = -957401312;
             int i_91_ = -1640531527;
             int i_92_ = 32;
@@ -1004,7 +1008,7 @@ public class Stream extends Class37 {
         anInt2002++;
 
         if (i != -1739943584) {
-            write3Bytes(107, -126);
+            method930(107, -126);
         }
 
         return (((buffer[-2 + currentIndex] << -1277201944) & 0xff00) +

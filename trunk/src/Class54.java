@@ -895,7 +895,7 @@ public class Class54 {
                                     }
 
                                     if (((class18.anInt354 ^ 0xffffffff) == -9) &&
-                                            (RSSocket.aClass18_491 == class18) &&
+                                            (Class19.aClass18_491 == class18) &&
                                             ((Class65.anInt1241 ^ 0xffffffff) == (Class37_Sub9_Sub2.anInt2935 ^
                                             0xffffffff))) {
                                         int i_61_ = 0;
@@ -1229,7 +1229,7 @@ public class Class54 {
         Class72.anInt1373 = 0;
         Class62.anInt1176 = 0;
         Class15_Sub1.anInt1759 = 0;
-        RSSocket.anInt477 = 0;
+        Class19.anInt477 = 0;
         Class37_Sub9_Sub26.anInt3393 = 0;
         Class37_Sub9_Sub34.anInt3534 = 0;
         Class29.anInt703 = 0;
@@ -1299,7 +1299,7 @@ public class Class54 {
         Class37_Sub4.anInt1854 = 0;
         Class37_Sub9_Sub36.anInt3575 = 0;
         JString.anInt1662 = 0;
-        RSSocket.anInt482 = 0;
+        Class19.anInt482 = 0;
         ItemDef.anInt2432 = 0;
         Class37_Sub9_Sub29.anInt3446 = 0;
         Class37_Sub9_Sub4.anInt2974 = 0;
@@ -1431,7 +1431,7 @@ public class Class54 {
         Class38.anInt848 = 0;
         JString.anInt1670 = 0;
         Class37_Sub9_Sub27.anInt3398 = 0;
-        RSSocket.anInt461 = 0;
+        Class19.anInt461 = 0;
         Class37_Sub4_Sub7_Sub1.anInt3656 = 0;
         Applet_Sub1.anInt2 = 0;
         JString.anInt1675 = 0;
@@ -1497,7 +1497,7 @@ public class Class54 {
         Class82.anInt1704 = 0;
         Class37_Sub9_Sub31.anInt3481 = 0;
         Class76.anInt1424 = 0;
-        RSSocket.anInt465 = 0;
+        Class19.anInt465 = 0;
         Class64.anInt1215 = 0;
         anInt1062 = 0;
         Class13.anInt223 = 0;
@@ -1575,7 +1575,7 @@ public class Class54 {
         JString.anInt1672 = 0;
         Class66.anInt1257 = 0;
         Class65.anInt1227 = 0;
-        RSSocket.anInt464 = 0;
+        Class19.anInt464 = 0;
         JString.anInt1640 = 0;
         Class30.anInt722 = 0;
         Class26.anInt653 = 0;
@@ -1591,7 +1591,7 @@ public class Class54 {
         Class24.anInt601 = 0;
         Class37_Sub9.anInt1965 = 0;
         Class37_Sub9_Sub3.anInt2953 = 0;
-        RSSocket.anInt467 = 0;
+        Class19.anInt467 = 0;
         Class37_Sub4_Sub5.anInt2600 = 0;
         Class15.anInt279 = 0;
         Class15.anInt291 = 0;
@@ -1788,7 +1788,7 @@ public class Class54 {
         Class37_Sub9_Sub23.anInt3352 = 0;
         Class37_Sub9_Sub6.anInt3007 = 0;
         Applet_Sub1.anInt31 = 0;
-        RSSocket.anInt478 = 0;
+        Class19.anInt478 = 0;
         Stream.anInt2024 = 0;
         Class37_Sub1.anInt1805 = 0;
         Class37_Sub9_Sub10.anInt3084 = 0;
@@ -1856,7 +1856,7 @@ public class Class54 {
         Class15.anInt272 = 0;
         Class37_Sub1.anInt1800 = 0;
         Class37_Sub9_Sub13.anInt3136 = 0;
-        RSSocket.anInt476 = 0;
+        Class19.anInt476 = 0;
         Class37_Sub4_Sub7_Sub1_Sub2.anInt3976 = 0;
         Class82.anInt1709 = 0;
         Class37_Sub23.anInt2223 = 0;
@@ -2029,7 +2029,7 @@ public class Class54 {
         Class37_Sub9.anInt1972 = 0;
         Class37_Sub9_Sub30.anInt3467 = 0;
         Class37_Sub9_Sub15.anInt3173 = 0;
-        RSSocket.anInt469 = 0;
+        Class19.anInt469 = 0;
         Class37_Sub9.anInt1952 = 0;
         Class37_Sub3_Sub3.anInt2399 = 0;
         Class37_Sub9_Sub14.anInt3153 = 0;
@@ -2068,7 +2068,7 @@ public class Class54 {
         Class37_Sub9_Sub7.anInt3035 = 0;
         Stream.anInt2035 = 0;
         Class17.anInt306 = 0;
-        RSSocket.anInt473 = 0;
+        Class19.anInt473 = 0;
         Class37_Sub9_Sub10.anInt3085 = 0;
         Class37_Sub4_Sub15.anInt2812 = 0;
         Class37_Sub9_Sub32.anInt3499 = 0;
@@ -2195,7 +2195,7 @@ public class Class54 {
         for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -101; i_90_++)
             Stream.aJStringArray2041[i_90_] = null;
 
-        RSSocket.anInt487 = 0;
+        Class19.anInt487 = 0;
         Class37_Sub9_Sub36.anInt3584 = 0;
         Class37_Sub3_Sub1.anInt2329 = 0;
         Class37_Sub14.anInt2122 = 0;
@@ -2222,7 +2222,7 @@ public class Class54 {
 
         Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234 = Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[2047] = new Class37_Sub4_Sub7_Sub1_Sub2();
         Class37_Sub9_Sub5.aClass58_2994.method1154(64);
-        RSSocket.aClass58_481.method1154(64);
+        Class19.aClass58_481.method1154(64);
 
         for (int i_93_ = 0; i_93_ < 4; i_93_++) {
             for (int i_94_ = 0; (i_94_ ^ 0xffffffff) > -105; i_94_++) {

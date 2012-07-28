@@ -103,7 +103,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                 true, 2, i_6_ - -1, 0, i_5_, i_1_, 0, 0);
         }
 
-        RSSocket.anInt490 = 2;
+        Class19.anInt490 = 2;
         Class37_Sub9_Sub8.anInt3057 = 0;
         Class27.anInt676 = Class37_Sub13.anInt2113;
         Applet_Sub1.anInt8 = Class33.anInt764;
@@ -125,7 +125,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
             i_13_ -= Class37_Sub25.anInt2286;
 
             int i_14_ = (Class37_Sub4_Sub9_Sub4.anIntArray3910[Class37_Sub4_Sub7_Sub1_Sub2.anInt3969]);
-            i_10_ -= RSSocket.anInt483;
+            i_10_ -= Class19.anInt483;
             i_11_ -= Class37_Sub6.anInt1888;
 
             int i_15_ = (Class37_Sub4_Sub9_Sub4.anIntArray3910[Class37_Sub17.anInt2188]);
@@ -159,7 +159,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
         anInt2670++;
 
         if (Class43.aClass19_950 != null) {
-            Class43.aClass19_950.killThread((byte) -128);
+            Class43.aClass19_950.method209((byte) -128);
         }
 
         if (i != 17242) {
@@ -191,7 +191,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                 anInt2682 = stream.method978(118);
             } else if (i != 3) {
                 if (i == 4) {
-                    anInt2680 = stream.readInt(-56);
+                    anInt2680 = stream.method933(-56);
                 } else if (i != 5) {
                     if (i == 6) {
                         anInt2676 = stream.method980(54);
@@ -201,9 +201,9 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                         for (int i_21_ = 0;
                                 (anInt2676 ^ 0xffffffff) < (i_21_ ^ 0xffffffff);
                                 i_21_++) {
-                            anIntArray2683[i_21_] = stream.readInt(-70);
+                            anIntArray2683[i_21_] = stream.method933(-70);
 
-                            anIntArray2684[i_21_] = stream.readInt(-73);
+                            anIntArray2684[i_21_] = stream.method933(-73);
                         }
                     }
                 } else {
@@ -212,7 +212,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                     aJStringArray2675 = new JString[anInt2676];
 
                     for (int i_22_ = 0; anInt2676 > i_22_; i_22_++) {
-                        anIntArray2683[i_22_] = stream.readInt(-31);
+                        anIntArray2683[i_22_] = stream.method933(-31);
 
                         aJStringArray2675[i_22_] = stream.method944((byte) -61);
                     }

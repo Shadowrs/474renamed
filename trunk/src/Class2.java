@@ -35,7 +35,7 @@ public class Class2 {
         boolean bool = false;
         JString jstring_1_ = jstring.method167(-1).method164(70);
 
-        for (int i_2_ = 0; i_2_ < RSSocket.anInt487; i_2_++) {
+        for (int i_2_ = 0; i_2_ < Class19.anInt487; i_2_++) {
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_2_]]);
 
             if ((class37_sub4_sub7_sub1_sub2 != null) &&

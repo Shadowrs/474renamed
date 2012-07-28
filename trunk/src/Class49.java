@@ -51,7 +51,7 @@ public class Class49 {
         Class37_Sub9_Sub1.anIntArray2919 = new int[i];
 
         for (int i_4_ = 1; (i_4_ ^ 0xffffffff) > (i ^ 0xffffffff); i_4_++) {
-            Class37_Sub9_Sub1.anIntArray2919[i_4_] = stream.read3Bytes(-26256544);
+            Class37_Sub9_Sub1.anIntArray2919[i_4_] = stream.method935(-26256544);
 
             if (Class37_Sub9_Sub1.anIntArray2919[i_4_] == 0) {
                 Class37_Sub9_Sub1.anIntArray2919[i_4_] = 1;

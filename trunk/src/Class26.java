@@ -17,7 +17,7 @@ public class Class26 {
     public static int[] anIntArray657;
     public static JString aJString_658 = (Class37_Sub2.method332((byte) 120,
             "Press (Wchange your password(W on front page)3"));
-    public static long serverSessionKey;
+    public static long aLong659;
     public static JString aJString_660;
     public static JString aJString_661;
     public static JString aJString_662;
@@ -35,7 +35,7 @@ public class Class26 {
 
         aJString_661 = Class37_Sub2.method332((byte) 103,
                 "Suche nach Updates )2 ");
-        serverSessionKey = 0L;
+        aLong659 = 0L;
         aJString_665 = aJString_658;
         anIntArray664 = new int[5];
         aJString_666 = Class37_Sub2.method332((byte) 126, "gleiten:");
@@ -53,7 +53,7 @@ public class Class26 {
         aJString_649 = null;
 
         if (i != 28345) {
-            serverSessionKey = 99L;
+            aLong659 = 99L;
         }
 
         aBigInteger652 = null;
@@ -636,7 +636,7 @@ while_58_:
                                     (Class37_Sub4_Sub7_Sub7.anInt3851 < i_13_) &&
                                     ((Class37_Sub9_Sub1.anInt2914 ^ 0xffffffff) > (i_11_ ^
                                     0xffffffff))) {
-                                RSSocket.aClass18_491 = class18;
+                                Class19.aClass18_491 = class18;
                             }
 
                             if (class18.anInt348 > class18.anInt353) {

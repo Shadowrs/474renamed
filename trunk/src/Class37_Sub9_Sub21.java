@@ -61,11 +61,11 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
 
         if (i == -25828) {
             for (int i_2_ = 0;
-                    (i_2_ ^ 0xffffffff) > (RSSocket.anInt487 ^ 0xffffffff);
+                    (i_2_ ^ 0xffffffff) > (Class19.anInt487 ^ 0xffffffff);
                     i_2_++) {
                 if ((Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_2_]]) == null) {
                     throw new RuntimeException("gpp2 pos:" + i_2_ + " size:" +
-                        RSSocket.anInt487);
+                        Class19.anInt487);
                 }
             }
         }
@@ -147,10 +147,10 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
         anInt3303++;
 
         int i_13_ = JString.method153(Class37_Sub9_Sub1.anInt2916, -169496123,
-                Class37_Sub6.anInt1888, RSSocket.anInt483);
+                Class37_Sub6.anInt1888, Class19.anInt483);
 
         if ((((-Class37_Sub25.anInt2286 + i_13_) ^ 0xffffffff) > -801) &&
-                ((((Class1.aByteArrayArrayArray63[Class37_Sub9_Sub1.anInt2916][RSSocket.anInt483 >> -205117753][Class37_Sub6.anInt1888 >> -1000517785]) &
+                ((((Class1.aByteArrayArrayArray63[Class37_Sub9_Sub1.anInt2916][Class19.anInt483 >> -205117753][Class37_Sub6.anInt1888 >> -1000517785]) &
                 0x4) ^ 0xffffffff) != -1)) {
             return Class37_Sub9_Sub1.anInt2916;
         }

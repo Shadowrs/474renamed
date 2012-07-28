@@ -23,8 +23,8 @@ public class Signlink implements Runnable {
     public boolean aBoolean1043 = false;
     public Applet anApplet1045;
     public Class70[] aClass70Array1046;
-    public Resource aClass23_1047;
-    public Resource aClass23_1048;
+    public Class23 aClass23_1047;
+    public Class23 aClass23_1048;
 
     public Signlink(boolean bool, Applet applet, int i, String string, int i_20_) {
         aClass70_1034 = null;
@@ -93,7 +93,7 @@ public class Signlink implements Runnable {
         }
 
         if (bool) {
-            loadCache(i, i_20_, -19218, string);
+            method1123(i, i_20_, -19218, string);
         }
 
         aBoolean1043 = false;
@@ -105,7 +105,7 @@ public class Signlink implements Runnable {
 
     public void run() {
         for (;;) {
-            Resource class23;
+            Class23 class23;
 
             synchronized (this) {
                 for (;;) {
@@ -115,7 +115,7 @@ public class Signlink implements Runnable {
 
                     if (aClass23_1047 != null) {
                         class23 = aClass23_1047;
-                        aClass23_1047 = aClass23_1047.linkedResource;
+                        aClass23_1047 = aClass23_1047.aClass23_592;
 
                         if (aClass23_1047 == null) {
                             aClass23_1048 = null;
@@ -133,38 +133,38 @@ public class Signlink implements Runnable {
             }
 
             try {
-                int i = class23.resourceType;
+                int i = class23.anInt593;
 
                 if (i == 1) {
-                    class23.resource = new Socket(InetAddress.getByName(
-                                (String) (class23.resourceBase)),
-                            class23.value);
+                    class23.anObject595 = new Socket(InetAddress.getByName(
+                                (String) (class23.anObject594)),
+                            class23.anInt590);
                 } else if (i == 2) {
-                    Thread thread = new Thread((Runnable) class23.resourceBase);
+                    Thread thread = new Thread((Runnable) class23.anObject594);
                     thread.setDaemon(true);
                     thread.start();
-                    thread.setPriority(class23.value);
-                    class23.resource = thread;
+                    thread.setPriority(class23.anInt590);
+                    class23.anObject595 = thread;
                 } else if ((i ^ 0xffffffff) == -5) {
-                    class23.resource = new DataInputStream(((URL) class23.resourceBase).openStream());
+                    class23.anObject595 = new DataInputStream(((URL) class23.anObject594).openStream());
                 } else if (i != 8) {
                     if (i != 9) {
                         throw new Exception();
                     }
 
-                    Object[] objects = (Object[]) class23.resourceBase;
+                    Object[] objects = (Object[]) class23.anObject594;
 
-                    class23.resource = ((Class) objects[0]).getDeclaredField((String) objects[1]);
+                    class23.anObject595 = ((Class) objects[0]).getDeclaredField((String) objects[1]);
                 } else {
-                    Object[] objects = (Object[]) class23.resourceBase;
+                    Object[] objects = (Object[]) class23.anObject594;
 
-                    class23.resource = ((Class) objects[0]).getDeclaredMethod(((String) objects[1]),
+                    class23.anObject595 = ((Class) objects[0]).getDeclaredMethod(((String) objects[1]),
                             ((Class[]) objects[2]));
                 }
 
-                class23.state = 1;
+                class23.anInt591 = 1;
             } catch (Throwable throwable) {
-                class23.state = 2;
+                class23.anInt591 = 2;
             }
         }
     }
@@ -177,51 +177,51 @@ public class Signlink implements Runnable {
         return anInterface2_1030;
     }
 
-    public Resource createResourceString(String string, int i, boolean bool) {
+    public Class23 method1117(String string, int i, boolean bool) {
         if (bool != true) {
             return null;
         }
 
-        return createResource(0, string, i, (byte) -112, 1);
+        return method1121(0, string, i, (byte) -112, 1);
     }
 
-    public Resource method1118(byte i, String string, Class var_class,
-    		Class[] var_classes) {
-    	if (i <= 59) {
-    		aBoolean1043 = false;
-    	}
+    public Class23 method1118(byte i, String string, Class var_class,
+        Class[] var_classes) {
+        if (i <= 59) {
+            aBoolean1043 = false;
+        }
 
-    	return createResource(0, new Object[] { var_class, string, var_classes },
-    			0, (byte) -93, 8);
+        return method1121(0, new Object[] { var_class, string, var_classes },
+            0, (byte) -93, 8);
     }
 
-    public Resource createResourceThread(Runnable runnable, int i, byte i_0_) {
+    public Class23 method1119(Runnable runnable, int i, byte i_0_) {
         if (i_0_ != 65) {
             aFile1032 = null;
         }
 
-        return createResource(0, runnable, i, (byte) -110, 2);
+        return method1121(0, runnable, i, (byte) -110, 2);
     }
 
-    public Resource createResourceInteger(int i, byte i_1_) {
+    public Class23 method1120(int i, byte i_1_) {
         if (i_1_ < 6) {
             aString1033 = null;
         }
 
-        return createResource(0, null, i, (byte) -108, 3);
+        return method1121(0, null, i, (byte) -108, 3);
     }
 
-    public Resource createResource(int i, Object object, int i_2_, byte i_3_,
+    public Class23 method1121(int i, Object object, int i_2_, byte i_3_,
         int i_4_) {
         int i_5_ = -117 / ((-7 - i_3_) / 50);
-        Resource class23 = new Resource();
-        class23.resourceType = i_4_;
-        class23.value = i_2_;
-        class23.resourceBase = object;
+        Class23 class23 = new Class23();
+        class23.anInt593 = i_4_;
+        class23.anInt590 = i_2_;
+        class23.anObject594 = object;
 
         synchronized (this) {
             if (aClass23_1048 != null) {
-                aClass23_1048.linkedResource = class23;
+                aClass23_1048.aClass23_592 = class23;
                 aClass23_1048 = class23;
             } else {
                 aClass23_1048 = aClass23_1047 = class23;
@@ -237,18 +237,18 @@ public class Signlink implements Runnable {
 	return "cache/.jagex_cache_32/runescape";
     }
 
-    public Resource createResourceURL(byte i, URL url) {
+    public Class23 method1122(byte i, URL url) {
         int i_6_ = -113 / ((-59 - i) / 41);
 
-        return createResource(0, url, 0, (byte) 122, 4);
+        return method1121(0, url, 0, (byte) 122, 4);
     }
 
-    public void loadCache(int i, int i_7_, int i_8_, String string) {
+    public void method1123(int i, int i_7_, int i_8_, String string) {
         if (((i ^ 0xffffffff) > -33) || ((i ^ 0xffffffff) < -35)) {
             i = 32;
         }
 
-        String[] strings = {"./bin/cache/"};
+        String[] strings = {"./cache/"};
 
         if (i_8_ == -19218) {
             String[] strings_9_ = { ".jagex_cache_" + i, ".file_store_" + i };
@@ -363,12 +363,12 @@ public class Signlink implements Runnable {
         }
     }
 
-    public Resource method1124(Class var_class, int i, String string) {
+    public Class23 method1124(Class var_class, int i, String string) {
         if (i >= -71) {
             aMethod1044 = null;
         }
 
-        return createResource(0, new Object[] { var_class, string }, 0, (byte) 114,
+        return method1121(0, new Object[] { var_class, string }, 0, (byte) 114,
             9);
     }
 

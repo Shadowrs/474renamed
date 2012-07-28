@@ -22,10 +22,10 @@ public class Class64 {
         aClass65_1210 = new Class65(64);
     }
 
-    public static void method1175(RSSocket class19, int i, boolean bool) {
+    public static void method1175(Class19 class19, int i, boolean bool) {
         if (Class43.aClass19_950 != null) {
             try {
-                Class43.aClass19_950.killThread((byte) -128);
+                Class43.aClass19_950.method209((byte) -128);
             } catch (Exception exception) {
                 /* empty */
             }
@@ -74,11 +74,11 @@ public class Class64 {
                 stream.method964(124, 4);
                 stream.method964(126, Class75.aByte1409);
                 stream.method965(848881960, 0);
-                Class43.aClass19_950.write(0, (byte) 126,
+                Class43.aClass19_950.method204(0, (byte) 126,
                     stream.buffer, 4);
             } catch (java.io.IOException ioexception) {
                 try {
-                    Class43.aClass19_950.killThread((byte) -128);
+                    Class43.aClass19_950.method209((byte) -128);
                 } catch (Exception exception) {
                     /* empty */
                 }

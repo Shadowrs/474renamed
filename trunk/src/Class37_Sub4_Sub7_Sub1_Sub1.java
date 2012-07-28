@@ -141,7 +141,7 @@ public class Class37_Sub4_Sub7_Sub1_Sub1 extends Class37_Sub4_Sub7_Sub1 {
         int i_3_ = 3;
 
         if (Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 < 310) {
-            int i_4_ = RSSocket.anInt483 >> 1856091623;
+            int i_4_ = Class19.anInt483 >> 1856091623;
             int i_5_ = Class37_Sub6.anInt1888 >> 873819015;
             int i_6_ = (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3666 >> -1650489017);
             int i_7_ = (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3642 >> 1954378439);

@@ -115,13 +115,13 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
                     }
                 }
 
-                if (RSSocket.aClass73_489 == null) {
-                    RSSocket.aClass73_489 = new Class73(Class37_Sub4_Sub15.aClass15_2835,
+                if (Class19.aClass73_489 == null) {
+                    Class19.aClass73_489 = new Class73(Class37_Sub4_Sub15.aClass15_2835,
                             Class37_Sub17.aClass15_2160);
                 }
 
                 if (Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method386(
-                            RSSocket.aClass73_489,
+                            Class19.aClass73_489,
                             ObjectDef.aClass37_Sub19_2735,
                             PacketParser.aClass15_3263, true, 22050)) {
                     Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method385(114);
@@ -132,7 +132,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
                     Class84.aClass15_1534 = null;
                     ObjectDef.aClass37_Sub19_2735 = null;
                     Class37_Sub7.anInt1904 = 0;
-                    RSSocket.aClass73_489 = null;
+                    Class19.aClass73_489 = null;
 
                     return true;
                 }
@@ -141,7 +141,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
             exception.printStackTrace();
             Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635.method363(127);
             Class37_Sub7.anInt1904 = 0;
-            RSSocket.aClass73_489 = null;
+            Class19.aClass73_489 = null;
             ObjectDef.aClass37_Sub19_2735 = null;
             Class84.aClass15_1534 = null;
         }

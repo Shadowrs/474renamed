@@ -6,7 +6,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3276;
     public static int anInt3277;
     public static int anInt3280;
-    public static Resource aClass23_3281;
+    public static Class23 aClass23_3281;
     public static int anInt3284;
     public static int anInt3288;
     public static int anInt3289;
@@ -16,7 +16,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3294;
     public static Class58 aClass58_3296 = new Class58();
     public static Class13 aClass13_3297;
-    public static RSSocket aClass19_3298;
+    public static Class19 aClass19_3298;
     public static JString aJString_3299 = Class37_Sub2.method332((byte) 102,
             "Ihr Charakter)2Profil wird in:");
     public static int[] anIntArray3300 = new int[500];
@@ -247,7 +247,7 @@ while_85_:
                         break while_85_;
                     }
                 } else {
-                    anInt3295 = stream.readSignedWord((byte) 121);
+                    anInt3295 = stream.method931((byte) 121);
 
                     break while_85_;
                 }
@@ -611,7 +611,7 @@ while_85_:
         Stream stream = new Stream(is);
         stream.currentIndex = stream.buffer.length - 12;
 
-        int i_44_ = stream.readInt(-64);
+        int i_44_ = stream.method933(-64);
         int i_45_ = 0;
         class37_sub4_sub6.anInt2614 = stream.method980(-127);
         class37_sub4_sub6.anInt2616 = stream.method980(-16);
@@ -632,7 +632,7 @@ while_85_:
             } else if ((i_46_ < 100) && (i_46_ != 21) &&
                     ((i_46_ ^ 0xffffffff) != -39) &&
                     ((i_46_ ^ 0xffffffff) != -40)) {
-                class37_sub4_sub6.anIntArray2611[i_45_] = stream.readInt(-73);
+                class37_sub4_sub6.anIntArray2611[i_45_] = stream.method933(-73);
             } else {
                 class37_sub4_sub6.anIntArray2611[i_45_] = stream.method978(123);
             }

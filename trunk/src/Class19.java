@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 
-public class RSSocket implements Runnable {
+public class Class19 implements Runnable {
     public static int anInt461;
     public static int anInt464;
     public static int anInt465;
@@ -116,25 +116,25 @@ public class RSSocket implements Runnable {
         anInt490 = 0;
     }
 
-    public byte[] buffer;
-    public OutputStream outputStream;
-    public int writeOffset = 0; //I'm honestly not 100% sure what this is, but it's used as the offset variable in the outputStream.write method
-    public InputStream inputStream;
-    public Signlink signlink;
-    public Socket underlyingSocket;
-    public boolean threadDead = false;
-    public int bufferLocation = 0;
-    public boolean close = false;
-    public Resource activeThread;
+    public byte[] aByteArray460;
+    public OutputStream anOutputStream462;
+    public int anInt463 = 0;
+    public InputStream anInputStream466;
+    public Signlink aClass51_468;
+    public Socket aSocket470;
+    public boolean aBoolean475 = false;
+    public int anInt479 = 0;
+    public boolean aBoolean485 = false;
+    public Class23 aClass23_486;
 
-    public RSSocket(Socket socket, Signlink class51) throws IOException {
+    public Class19(Socket socket, Signlink class51) throws IOException {
         try {
-            underlyingSocket = socket;
-            signlink = class51;
-            underlyingSocket.setSoTimeout(30000);
-            underlyingSocket.setTcpNoDelay(true);
-            inputStream = underlyingSocket.getInputStream();
-            outputStream = underlyingSocket.getOutputStream();
+            aSocket470 = socket;
+            aClass51_468 = class51;
+            aSocket470.setSoTimeout(30000);
+            aSocket470.setTcpNoDelay(true);
+            anInputStream466 = aSocket470.getInputStream();
+            anOutputStream462 = aSocket470.getOutputStream();
         } catch (RuntimeException runtimeexception) {
             throw Class37_Sub4_Sub7_Sub3.method516(runtimeexception,
                 ("fd.<init>(" + ((socket != null) ? "{...}" : "null") + ',' +
@@ -142,7 +142,7 @@ public class RSSocket implements Runnable {
         }
     }
 
-    public static boolean withinRange(int i, int i_0_) {
+    public static boolean method202(int i, int i_0_) {
         anInt461++;
 
         if (i_0_ != 65) {
@@ -156,7 +156,7 @@ public class RSSocket implements Runnable {
         return true;
     }
 
-    public static Class classFromInt(int i, boolean bool) {
+    public static Class method203(int i, boolean bool) {
         anInt477++;
 
         if (bool != false) {
@@ -401,7 +401,7 @@ while_19_:
                                                                                                                                                                 return aClass492;
                                                                                                                                                             }
 
-                                                                                                                                                            return aClass492 = classFromName(
+                                                                                                                                                            return aClass492 = method210(
                                                                                                                                                                     "Class37_Sub9_Sub14");
                                                                                                                                                         }
 
@@ -409,7 +409,7 @@ while_19_:
                                                                                                                                                             return aClass493;
                                                                                                                                                         }
 
-                                                                                                                                                        return aClass493 = classFromName(
+                                                                                                                                                        return aClass493 = method210(
                                                                                                                                                                 "Class37_Sub9_Sub7");
                                                                                                                                                     } while (false);
 
@@ -417,7 +417,7 @@ while_19_:
                                                                                                                                                         return aClass494;
                                                                                                                                                     }
 
-                                                                                                                                                    return aClass494 = classFromName(
+                                                                                                                                                    return aClass494 = method210(
                                                                                                                                                             "Class37_Sub9_Sub25");
                                                                                                                                                 } while (false);
 
@@ -425,7 +425,7 @@ while_19_:
                                                                                                                                                     return aClass495;
                                                                                                                                                 }
 
-                                                                                                                                                return aClass495 = classFromName(
+                                                                                                                                                return aClass495 = method210(
                                                                                                                                                         "Class37_Sub9_Sub35");
                                                                                                                                             } while (false);
 
@@ -433,7 +433,7 @@ while_19_:
                                                                                                                                                 return aClass496;
                                                                                                                                             }
 
-                                                                                                                                            return aClass496 = classFromName(
+                                                                                                                                            return aClass496 = method210(
                                                                                                                                                     "Class37_Sub9_Sub4");
                                                                                                                                         } while (false);
 
@@ -441,7 +441,7 @@ while_19_:
                                                                                                                                             return aClass497;
                                                                                                                                         }
 
-                                                                                                                                        return aClass497 = classFromName(
+                                                                                                                                        return aClass497 = method210(
                                                                                                                                                 "Class37_Sub9_Sub18");
                                                                                                                                     } while (false);
 
@@ -449,7 +449,7 @@ while_19_:
                                                                                                                                         return aClass498;
                                                                                                                                     }
 
-                                                                                                                                    return aClass498 = classFromName(
+                                                                                                                                    return aClass498 = method210(
                                                                                                                                             "Class37_Sub9_Sub31");
                                                                                                                                 } while (false);
 
@@ -457,7 +457,7 @@ while_19_:
                                                                                                                                     return aClass499;
                                                                                                                                 }
 
-                                                                                                                                return aClass499 = classFromName(
+                                                                                                                                return aClass499 = method210(
                                                                                                                                         "Class37_Sub9_Sub29");
                                                                                                                             } while (false);
 
@@ -465,7 +465,7 @@ while_19_:
                                                                                                                                 return aClass500;
                                                                                                                             }
 
-                                                                                                                            return aClass500 = classFromName(
+                                                                                                                            return aClass500 = method210(
                                                                                                                                     "Class37_Sub9_Sub15");
                                                                                                                         } while (false);
 
@@ -473,7 +473,7 @@ while_19_:
                                                                                                                             return aClass501;
                                                                                                                         }
 
-                                                                                                                        return aClass501 = classFromName(
+                                                                                                                        return aClass501 = method210(
                                                                                                                                 "Class37_Sub9_Sub27");
                                                                                                                     } while (false);
 
@@ -481,7 +481,7 @@ while_19_:
                                                                                                                         return aClass502;
                                                                                                                     }
 
-                                                                                                                    return aClass502 = classFromName(
+                                                                                                                    return aClass502 = method210(
                                                                                                                             "Class37_Sub9_Sub13");
                                                                                                                 } while (false);
 
@@ -489,7 +489,7 @@ while_19_:
                                                                                                                     return aClass503;
                                                                                                                 }
 
-                                                                                                                return aClass503 = classFromName(
+                                                                                                                return aClass503 = method210(
                                                                                                                         "Class37_Sub9_Sub28");
                                                                                                             } while (false);
 
@@ -497,7 +497,7 @@ while_19_:
                                                                                                                 return aClass504;
                                                                                                             }
 
-                                                                                                            return aClass504 = classFromName(
+                                                                                                            return aClass504 = method210(
                                                                                                                     "Class37_Sub9_Sub11");
                                                                                                         } while (false);
 
@@ -505,7 +505,7 @@ while_19_:
                                                                                                             return aClass505;
                                                                                                         }
 
-                                                                                                        return aClass505 = classFromName(
+                                                                                                        return aClass505 = method210(
                                                                                                                 "Class37_Sub9_Sub33");
                                                                                                     } while (false);
 
@@ -513,7 +513,7 @@ while_19_:
                                                                                                         return aClass506;
                                                                                                     }
 
-                                                                                                    return aClass506 = classFromName(
+                                                                                                    return aClass506 = method210(
                                                                                                             "Class37_Sub9_Sub19");
                                                                                                 } while (false);
 
@@ -521,7 +521,7 @@ while_19_:
                                                                                                     return aClass507;
                                                                                                 }
 
-                                                                                                return aClass507 = classFromName(
+                                                                                                return aClass507 = method210(
                                                                                                         "Class37_Sub9_Sub34");
                                                                                             } while (false);
 
@@ -529,7 +529,7 @@ while_19_:
                                                                                                 return aClass508;
                                                                                             }
 
-                                                                                            return aClass508 = classFromName(
+                                                                                            return aClass508 = method210(
                                                                                                     "Class37_Sub9_Sub24");
                                                                                         } while (false);
 
@@ -537,7 +537,7 @@ while_19_:
                                                                                             return aClass509;
                                                                                         }
 
-                                                                                        return aClass509 = classFromName(
+                                                                                        return aClass509 = method210(
                                                                                                 "Class37_Sub9_Sub20");
                                                                                     } while (false);
 
@@ -545,7 +545,7 @@ while_19_:
                                                                                         return aClass510;
                                                                                     }
 
-                                                                                    return aClass510 = classFromName(
+                                                                                    return aClass510 = method210(
                                                                                             "Class37_Sub9_Sub10");
                                                                                 } while (false);
 
@@ -553,7 +553,7 @@ while_19_:
                                                                                     return aClass511;
                                                                                 }
 
-                                                                                return aClass511 = classFromName(
+                                                                                return aClass511 = method210(
                                                                                         "Class37_Sub9_Sub9");
                                                                             } while (false);
 
@@ -561,7 +561,7 @@ while_19_:
                                                                                 return aClass512;
                                                                             }
 
-                                                                            return aClass512 = classFromName(
+                                                                            return aClass512 = method210(
                                                                                     "Class37_Sub9_Sub1");
                                                                         } while (false);
 
@@ -569,7 +569,7 @@ while_19_:
                                                                             return aClass513;
                                                                         }
 
-                                                                        return aClass513 = classFromName(
+                                                                        return aClass513 = method210(
                                                                                 "Class37_Sub9_Sub26");
                                                                     } while (false);
 
@@ -577,7 +577,7 @@ while_19_:
                                                                         return aClass514;
                                                                     }
 
-                                                                    return (aClass514 = classFromName(
+                                                                    return (aClass514 = method210(
                                                                             "Class37_Sub9_Sub32"));
                                                                 } while (false);
 
@@ -585,7 +585,7 @@ while_19_:
                                                                     return aClass515;
                                                                 }
 
-                                                                return (aClass515 = (classFromName(
+                                                                return (aClass515 = (method210(
                                                                         "Class37_Sub9_Sub22")));
                                                             } while (false);
 
@@ -593,7 +593,7 @@ while_19_:
                                                                 return aClass516;
                                                             }
 
-                                                            return (aClass516 = (classFromName(
+                                                            return (aClass516 = (method210(
                                                                     "Class37_Sub9_Sub17")));
                                                         } while (false);
 
@@ -601,7 +601,7 @@ while_19_:
                                                             return aClass517;
                                                         }
 
-                                                        return (aClass517 = (classFromName(
+                                                        return (aClass517 = (method210(
                                                                 "Class37_Sub9_Sub36")));
                                                     } while (false);
 
@@ -609,7 +609,7 @@ while_19_:
                                                         return aClass518;
                                                     }
 
-                                                    return (aClass518 = (classFromName(
+                                                    return (aClass518 = (method210(
                                                             "Class37_Sub9_Sub8")));
                                                 } while (false);
 
@@ -617,7 +617,7 @@ while_19_:
                                                     return aClass519;
                                                 }
 
-                                                return (aClass519 = (classFromName(
+                                                return (aClass519 = (method210(
                                                         "Class37_Sub9_Sub5")));
                                             } while (false);
 
@@ -625,7 +625,7 @@ while_19_:
                                                 return aClass520;
                                             }
 
-                                            return (aClass520 = (classFromName(
+                                            return (aClass520 = (method210(
                                                     "Class37_Sub9_Sub3")));
                                         } while (false);
 
@@ -633,7 +633,7 @@ while_19_:
                                             return aClass521;
                                         }
 
-                                        return (aClass521 = (classFromName(
+                                        return (aClass521 = (method210(
                                                 "Class37_Sub9_Sub6")));
                                     } while (false);
 
@@ -641,7 +641,7 @@ while_19_:
                                         return aClass522;
                                     }
 
-                                    return (aClass522 = classFromName(
+                                    return (aClass522 = method210(
                                             "Class37_Sub9_Sub2"));
                                 } while (false);
 
@@ -649,7 +649,7 @@ while_19_:
                                     return aClass523;
                                 }
 
-                                return (aClass523 = classFromName(
+                                return (aClass523 = method210(
                                         "Class37_Sub9_Sub16"));
                             } while (false);
 
@@ -657,35 +657,35 @@ while_19_:
                                 return aClass524;
                             }
 
-                            return aClass524 = classFromName("Class37_Sub9_Sub23");
+                            return aClass524 = method210("Class37_Sub9_Sub23");
                         } while (false);
 
                         if (aClass525 != null) {
                             return aClass525;
                         }
 
-                        return aClass525 = classFromName("Class37_Sub9_Sub37");
+                        return aClass525 = method210("Class37_Sub9_Sub37");
                     } while (false);
 
                     if (aClass526 != null) {
                         return aClass526;
                     }
 
-                    return aClass526 = classFromName("Class37_Sub9_Sub30");
+                    return aClass526 = method210("Class37_Sub9_Sub30");
                 } while (false);
 
                 if (aClass527 != null) {
                     return aClass527;
                 }
 
-                return aClass527 = classFromName("Class37_Sub9_Sub12");
+                return aClass527 = method210("Class37_Sub9_Sub12");
             } while (false);
 
             if (aClass528 != null) {
                 return aClass528;
             }
 
-            return aClass528 = classFromName("Class37_Sub9_Sub21");
+            return aClass528 = method210("Class37_Sub9_Sub21");
         } while (false);
 
         return null;
@@ -700,8 +700,8 @@ while_19_:
                 int i_2_;
 
                 synchronized (this) {
-                    if (bufferLocation == writeOffset) {
-                        if (threadDead) {
+                    if (anInt479 == anInt463) {
+                        if (aBoolean475) {
                             break;
                         }
 
@@ -712,86 +712,86 @@ while_19_:
                         }
                     }
 
-                    i = writeOffset;
+                    i = anInt463;
 
-                    if (writeOffset <= bufferLocation) {
-                        i_2_ = -writeOffset + bufferLocation;
+                    if (anInt463 <= anInt479) {
+                        i_2_ = -anInt463 + anInt479;
                     } else {
-                        i_2_ = -writeOffset + 5000;
+                        i_2_ = -anInt463 + 5000;
                     }
                 }
 
-                if (i_2_ > 0) {
+                if ((i_2_ ^ 0xffffffff) < -1) {
                     try {
-                        outputStream.write(buffer, i, i_2_);
+                        anOutputStream462.write(aByteArray460, i, i_2_);
                     } catch (IOException ioexception) {
-                        close = true;
+                        aBoolean485 = true;
                     }
 
-                    writeOffset = (i_2_ + writeOffset) % 5000;
+                    anInt463 = (i_2_ + anInt463) % 5000;
 
                     try {
-                        if (bufferLocation == writeOffset) {
-                            outputStream.flush();
+                        if (anInt479 == anInt463) {
+                            anOutputStream462.flush();
                         }
                     } catch (IOException ioexception) {
-                        close = true;
+                        aBoolean485 = true;
                     }
                 }
             }
 
             try {
-                if (inputStream != null) {
-                    inputStream.close();
+                if (anInputStream466 != null) {
+                    anInputStream466.close();
                 }
 
-                if (outputStream != null) {
-                    outputStream.close();
+                if (anOutputStream462 != null) {
+                    anOutputStream462.close();
                 }
 
-                if (underlyingSocket != null) {
-                    underlyingSocket.close();
+                if (aSocket470 != null) {
+                    aSocket470.close();
                 }
             } catch (IOException ioexception) {
                 /* empty */
             }
 
-            buffer = null;
+            aByteArray460 = null;
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-92, null, exception);
         }
     }
 
-    public void write(int offset, byte dummy, byte[] bytes, int length)
+    public void method204(int i, byte i_3_, byte[] is, int i_4_)
         throws IOException {
-        if (dummy < 95) {
+        if (i_3_ < 95) {
             anInt490 = -56;
         }
 
         anInt467++;
 
-        if (!threadDead) {
-            if (close) {
-                close = false;
+        if (!aBoolean475) {
+            if (aBoolean485) {
+                aBoolean485 = false;
                 throw new IOException();
             }
 
-            if (buffer == null) {
-                buffer = new byte[5000];
+            if (aByteArray460 == null) {
+                aByteArray460 = new byte[5000];
             }
 
             synchronized (this) {
-                for (int i_5_ = 0; i_5_ < length; i_5_++) {
-                    buffer[bufferLocation] = bytes[offset + i_5_];
-                    bufferLocation = (bufferLocation + 1) % 5000;
+                for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
+                    aByteArray460[anInt479] = is[i + i_5_];
+                    anInt479 = (anInt479 + 1) % 5000;
 
-                    if (bufferLocation == ((4900 + writeOffset) % 5000)) {
+                    if (anInt479 == ((4900 + anInt463) % 5000)) {
                         throw new IOException();
                     }
                 }
 
-                if (activeThread == null) {
-                    activeThread = signlink.createResourceThread(this, 3, (byte) 65);
+                if (aClass23_486 == null) {
+                    aClass23_486 = aClass51_468.method1119(this, 3, (byte) 65);
                 }
 
                 this.notifyAll();
@@ -799,40 +799,39 @@ while_19_:
         }
     }
 
-    public int read(boolean dummy) throws IOException {
+    public int method205(boolean bool) throws IOException {
         anInt469++;
 
-        if (threadDead) {
+        if (aBoolean475) {
             return 0;
         }
 
-        if (dummy != false) {
+        if (bool != false) {
             aClass73_489 = null;
         }
 
-        return inputStream.read();
+        return anInputStream466.read();
     }
 
-    //I didn't name this method
     public void finalize() {
-        killThread((byte) -128);
+        method209((byte) -128);
         anInt465++;
     }
 
-    public int available(int dummy) throws IOException {
+    public int method206(int i) throws IOException {
         anInt482++;
 
-        if (dummy > -104) {
+        if (i > -104) {
             finalize();
         }
 
-        if (threadDead) {
+        if (aBoolean475) {
             return 0;
         }
-        return inputStream.available();
+        return anInputStream466.available();
     }
 
-    public static void resetStaticVariables(int i) {
+    public static void method207(int i) {
         aBooleanArray484 = null;
 
         if (i == -3) {
@@ -846,63 +845,63 @@ while_19_:
         }
     }
 
-	public void read(int length, int offset, int dummy, byte[] dest)
-			throws IOException {
-		anInt476++;
+    public void method208(int i, int i_6_, int i_7_, byte[] is)
+        throws IOException {
+        anInt476++;
 
-		if (dummy != 122) {
-			resetStaticVariables(126);
-		}
+        if (i_7_ != 122) {
+            method207(126);
+        }
 
-		if (!threadDead) {
-			while (length > 0) {
+        if (!aBoolean475) {
+            while ((i ^ 0xffffffff) < -1) {
 
-				int i_8_ = inputStream.read(dest, offset, length);
+                int i_8_ = anInputStream466.read(is, i_6_, i);
 
-				if (i_8_ <= 0) {
-					throw new EOFException();
-				}
-				try {
-					// throw new Exception("tracking");
-				} catch (Exception ex) {
-					ex.printStackTrace();
-				}
-				length -= i_8_;
-				offset += i_8_;
-			}
-		}
-	}
+                if (i_8_ <= 0) {
+                    throw new EOFException();
+                }
+try {
+//throw new Exception("tracking");
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+                i -= i_8_;
+                i_6_ += i_8_;
+            }
+        }
+    }
 
-    //Not entirely sure the naming on threadDead and killThread is right.
-    public void killThread(byte dummy) {
-        if (dummy < -127) {
+    public void method209(byte i) {
+        if (i < -127) {
             anInt478++;
 
-            if (!threadDead) {
+            if (!aBoolean475) {
                 synchronized (this) {
-                    threadDead = true;
+                    aBoolean475 = true;
                     this.notifyAll();
                 }
 
-                if (activeThread != null) {
-                    while (activeThread.state == 0)
+                if (aClass23_486 != null) {
+                    while (aClass23_486.anInt591 == 0)
                         Class37_Sub9_Sub20.method846(1L, (byte) 58);
 
-                    if (activeThread.state == 1) {
+                    if (aClass23_486.anInt591 == 1) {
                         try {
-                            ((Thread) activeThread.resource).join();
+                            ((Thread) aClass23_486.anObject595).join();
                         } catch (InterruptedException interruptedexception) {
                             /* empty */
                         }
                     }
                 }
 
-                activeThread = null;
+                aClass23_486 = null;
             }
         }
     }
 
-    /*synthetic*/ public static Class classFromName(String string) {
+    /*synthetic*/ public static Class method210(String string) {
         try {
             return Class.forName(string);
         } catch (ClassNotFoundException classnotfoundexception) {

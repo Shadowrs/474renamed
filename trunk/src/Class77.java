@@ -153,7 +153,7 @@ public class Class77 {
                 }
             }
 
-            for (int i_19_ = 0; RSSocket.anInt487 > i_19_; i_19_++) {
+            for (int i_19_ = 0; Class19.anInt487 > i_19_; i_19_++) {
                 Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_19_]]);
 
                 if ((class37_sub4_sub7_sub1_sub2 != null) &&

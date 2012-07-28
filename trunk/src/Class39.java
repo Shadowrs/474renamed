@@ -580,7 +580,7 @@ public class Class39 {
                         }
 
                         for (int i_33_ = 0;
-                                ((i_33_ ^ 0xffffffff) > (RSSocket.anInt487 ^
+                                ((i_33_ ^ 0xffffffff) > (Class19.anInt487 ^
                                 0xffffffff)); i_33_++) {
                             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 =
                                 (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_33_]]);
@@ -628,7 +628,7 @@ public class Class39 {
                         }
 
                         for (int i_35_ = 0;
-                                ((i_35_ ^ 0xffffffff) > (RSSocket.anInt487 ^
+                                ((i_35_ ^ 0xffffffff) > (Class19.anInt487 ^
                                 0xffffffff)); i_35_++) {
                             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2_36_ =
                                 (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_35_]]);
