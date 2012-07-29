@@ -124,7 +124,7 @@ public class Class37_Sub9_Sub26 extends Class37_Sub9 {
 
         if (bool == true) {
             if (i == 0) {
-                aBoolean1943 = (stream.method978(122) ^ 0xffffffff) == -2;
+                aBoolean1943 = (stream.readByte(122) ^ 0xffffffff) == -2;
             }
         }
     }

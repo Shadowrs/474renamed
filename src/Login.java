@@ -49,10 +49,10 @@ public class Login {
             method315(25);
         }
 
-        int i_0_ = stream.method978(i + 12);
+        int i_0_ = stream.readByte(i + 12);
         anInt792++;
 
-        int i_1_ = stream.method933(-89);
+        int i_1_ = stream.readInt(-89);
 
         if (((i_1_ ^ 0xffffffff) > -1) ||
                 ((Class15_Sub1.anInt1762 != 0) &&
@@ -60,7 +60,7 @@ public class Login {
             throw new RuntimeException();
         }
         if (i_0_ != 0) {
-            int i_2_ = stream.method933(-42);
+            int i_2_ = stream.readInt(-42);
 
             if ((i_2_ < 0) ||
                     (((Class15_Sub1.anInt1762 ^ 0xffffffff) != -1) &&
@@ -84,7 +84,7 @@ public class Login {
         }
 
         byte[] is_4_ = new byte[i_1_];
-        stream.method968(0, i_1_, is_4_, (byte) -53);
+        stream.readBytes(0, i_1_, is_4_, (byte) -53);
 	
         return is_4_;
     }
@@ -172,12 +172,12 @@ public class Login {
             if (Class22.anInt580 == 2) {
                 long l = (Class37_Sub9_Sub34.aLong3556 = Class37_Sub9_Sub33.aJString_3526.method152(-53));
                 int i_6_ = (int) (0x1fL & (l >> -356845744));
-                Class42.aStream_Sub1_936.currentIndex = 0;
-                Class42.aStream_Sub1_936.method964(101, 14);
-                Class42.aStream_Sub1_936.method964(99, i_6_);
+                Class42.aStream_Sub1_936.bufferLocation = 0;
+                Class42.aStream_Sub1_936.writeSignedByte(101, 14);
+                Class42.aStream_Sub1_936.writeSignedByte(99, i_6_);
                 Applet_Sub1.aClass19_38.write(0, (byte) 101,
                     (Class42.aStream_Sub1_936.buffer), 2);
-                Class83.packetStream.currentIndex = 0;
+                Class83.packetStream.bufferLocation = 0;
                 Class22.anInt580 = 3;
             }
 
@@ -206,32 +206,32 @@ public class Login {
                     return;
                 }
 
-                Class83.packetStream.currentIndex = 0;
+                Class83.packetStream.bufferLocation = 0;
                 Class22.anInt580 = 4;
             }
 
             if ((Class22.anInt580 ^ 0xffffffff) == -5) {
-                if (Class83.packetStream.currentIndex < 8) {
+                if (Class83.packetStream.bufferLocation < 8) {
                     int i_8_ = Applet_Sub1.aClass19_38.available(-106);
 
                     if ((i_8_ ^ 0xffffffff) < ((8 -
-                            Class83.packetStream.currentIndex) ^
+                            Class83.packetStream.bufferLocation) ^
                             0xffffffff)) {
-                        i_8_ = 8 + -Class83.packetStream.currentIndex;
+                        i_8_ = 8 + -Class83.packetStream.bufferLocation;
                     }
 
                     if ((i_8_ ^ 0xffffffff) < -1) {
                         Applet_Sub1.aClass19_38.read(i_8_,
-                            Class83.packetStream.currentIndex, 122,
+                            Class83.packetStream.bufferLocation, 122,
                             Class83.packetStream.buffer);
-                        Class83.packetStream.currentIndex += i_8_;
+                        Class83.packetStream.bufferLocation += i_8_;
                     }
                 }
 
-                if (Class83.packetStream.currentIndex == 8) {
-                    Class83.packetStream.currentIndex = 0;
+                if (Class83.packetStream.bufferLocation == 8) {
+                    Class83.packetStream.bufferLocation = 0;
 
-                    Class26.aLong659 = Class83.packetStream.method971(false);
+                    Class26.aLong659 = Class83.packetStream.readLongDuplicate(false);
                     Class22.anInt580 = 5;
                 }
             }
@@ -241,69 +241,53 @@ public class Login {
                 is[0] = (int) (Math.random() * 9.9999999E7);
                 is[3] = (int) Class26.aLong659;
                 is[2] = (int) (Class26.aLong659 >> -311437664);
-                Class42.aStream_Sub1_936.currentIndex = 0;
+                Class42.aStream_Sub1_936.bufferLocation = 0;
                 is[1] = (int) (9.9999999E7 * Math.random());
-                Class42.aStream_Sub1_936.method964(i ^ ~0x5394, 10);
-                Class42.aStream_Sub1_936.method947((byte) 108, is[0]);
-                Class42.aStream_Sub1_936.method947((byte) -121, is[1]);
-                Class42.aStream_Sub1_936.method947((byte) 94, is[2]);
-                Class42.aStream_Sub1_936.method947((byte) -108, is[3]);
-                Class42.aStream_Sub1_936.method949(Class37_Sub9_Sub33.aJString_3526.method152(i ^
-                        0x53be), (byte) 108);
-                Class42.aStream_Sub1_936.method977(Class37_Sub9_Sub33.aJString_3525, 0);
+                Class42.aStream_Sub1_936.writeSignedByte(i ^ ~0x5394, 10);
+                Class42.aStream_Sub1_936.writeInt(is[0]);
+                Class42.aStream_Sub1_936.writeInt(is[1]);
+                Class42.aStream_Sub1_936.writeInt(is[2]);
+                Class42.aStream_Sub1_936.writeInt(is[3]);
+                Class42.aStream_Sub1_936.writeLong(Class37_Sub9_Sub33.aJString_3526.method152(i ^
+                        0x53be));
+                Class42.aStream_Sub1_936.writeString(Class37_Sub9_Sub33.aJString_3525, 0);
                 //Class42.aStream_Sub1_936.method958((byte) -91,
                 //    (Class37_Sub20.aBigInteger2210), (Class26.aBigInteger652));
-                Class58.aStream_Sub1_1106.currentIndex = 0;
+                Class58.aStream_Sub1_1106.bufferLocation = 0;
 
                 if (Class32.anInt740 != 40) {
-                    Class58.aStream_Sub1_1106.method964(118, 16);
+                    Class58.aStream_Sub1_1106.writeSignedByte(118, 16);
                 } else {
-                    Class58.aStream_Sub1_1106.method964(i ^ ~0x5383, 18);
+                    Class58.aStream_Sub1_1106.writeSignedByte(i ^ ~0x5383, 18);
                 }
 
-                Class58.aStream_Sub1_1106.method964(106,
-                    Class42.aStream_Sub1_936.currentIndex + 93);
-                Class58.aStream_Sub1_1106.method947((byte) 54, 474);
-                Class58.aStream_Sub1_1106.method964(124,
+                Class58.aStream_Sub1_1106.writeSignedByte(106,
+                    Class42.aStream_Sub1_936.bufferLocation + 93);
+                Class58.aStream_Sub1_1106.writeInt(474);
+                Class58.aStream_Sub1_1106.writeSignedByte(124,
                     Class37_Sub4_Sub6.aBoolean2613 ? 1 : 0);
                 Class25.method253(Class58.aStream_Sub1_1106, -107);
-                Class58.aStream_Sub1_1106.method947((byte) 84,
-                    Class69.aClass15_Sub1_1335.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) 29,
-                    Class69.aClass15_Sub1_1330.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) 66,
-                    Class14.aClass15_Sub1_242.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) -104,
-                    (Canvas_Sub1.aClass15_Sub1_46.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -118,
-                    (Class37_Sub4.aClass15_Sub1_1862.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -115,
-                    Class37_Sub4_Sub7_Sub3.aClass15_Sub1_3740.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) 89,
-                    Class54.aClass15_Sub1_1060.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) 23,
-                    Class29.aClass15_Sub1_711.anInt255);
-                Class58.aStream_Sub1_1106.method947((byte) -113,
-                    (Class60.aClass15_Sub1_1151.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -101,
-                    (PacketStream.aClass15_Sub1_3609.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) 48,
-                    (Class52_Sub1.aClass15_Sub1_2309.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -109,
-                    (Class36.aClass15_Sub1_796.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -109,
-                    (Class37_Sub9_Sub34.aClass15_Sub1_3555.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -113,
-                    (Class37_Sub9_Sub2.aClass15_Sub1_2932.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) 124,
-                    (Class37_Sub20.aClass15_Sub1_2216.anInt255));
-                Class58.aStream_Sub1_1106.method947((byte) -96,
-                    (Class37_Sub17.aClass15_Sub1_2164.anInt255));
-                Class58.aStream_Sub1_1106.method954(Class42.aStream_Sub1_936.currentIndex,
+                Class58.aStream_Sub1_1106.writeInt(Class69.aClass15_Sub1_1335.anInt255);
+                Class58.aStream_Sub1_1106.writeInt(Class69.aClass15_Sub1_1330.anInt255);
+                Class58.aStream_Sub1_1106.writeInt(Class14.aClass15_Sub1_242.anInt255);
+                Class58.aStream_Sub1_1106.writeInt((Canvas_Sub1.aClass15_Sub1_46.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class37_Sub4.aClass15_Sub1_1862.anInt255));
+                Class58.aStream_Sub1_1106.writeInt(Class37_Sub4_Sub7_Sub3.aClass15_Sub1_3740.anInt255);
+                Class58.aStream_Sub1_1106.writeInt(Class54.aClass15_Sub1_1060.anInt255);
+                Class58.aStream_Sub1_1106.writeInt(Class29.aClass15_Sub1_711.anInt255);
+                Class58.aStream_Sub1_1106.writeInt((Class60.aClass15_Sub1_1151.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((PacketStream.aClass15_Sub1_3609.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class52_Sub1.aClass15_Sub1_2309.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class36.aClass15_Sub1_796.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class37_Sub9_Sub34.aClass15_Sub1_3555.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class37_Sub9_Sub2.aClass15_Sub1_2932.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class37_Sub20.aClass15_Sub1_2216.anInt255));
+                Class58.aStream_Sub1_1106.writeInt((Class37_Sub17.aClass15_Sub1_2164.anInt255));
+                Class58.aStream_Sub1_1106.writeBytes(Class42.aStream_Sub1_936.bufferLocation,
                     0, i + 21486, Class42.aStream_Sub1_936.buffer);
                 Applet_Sub1.aClass19_38.write(0, (byte) 102,
                     Class58.aStream_Sub1_1106.buffer,
-                    Class58.aStream_Sub1_1106.currentIndex);
+                    Class58.aStream_Sub1_1106.bufferLocation);
                 Class42.aStream_Sub1_936.method990(false, is);
 
                 for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -5; i_9_++)
@@ -377,14 +361,14 @@ public class Login {
                     Class37_Sub12.anInt2077 = Applet_Sub1.aClass19_38.read(false);
                     Applet_Sub1.aClass19_38.read(1, 0, 122,
                         Class83.packetStream.buffer);
-                    Class83.packetStream.currentIndex = 0;
+                    Class83.packetStream.bufferLocation = 0;
 
                     Class37_Sub9_Sub17.packetId = Class83.packetStream.method986(7);
 
                     Applet_Sub1.aClass19_38.read(2, 0, i + 21604,
                         Class83.packetStream.buffer);
-                    Class83.packetStream.currentIndex = 0;
-                    Class37_Sub4.packetSize = Class83.packetStream.method980(i +
+                    Class83.packetStream.bufferLocation = 0;
+                    Class37_Sub4.packetSize = Class83.packetStream.readShort(i +
                             21363);
                     Class22.anInt580 = 10;
                 }
@@ -393,7 +377,7 @@ public class Login {
 
                     if ((Applet_Sub1.aClass19_38.available(-124) ^ 0xffffffff) <= (Class37_Sub4.packetSize ^
                             0xffffffff)) {
-                        Class83.packetStream.currentIndex = 0;
+                        Class83.packetStream.bufferLocation = 0;
                         Applet_Sub1.aClass19_38.read(Class37_Sub4.packetSize,
                             0, 122,
                             Class83.packetStream.buffer);

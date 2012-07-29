@@ -56,8 +56,8 @@ public class Class55 implements Runnable {
             anInt1074++;
 
             Class37_Sub20 class37_sub20 = new Class37_Sub20();
-            class37_sub20.anInt2205 = stream.method978(118);
-            class37_sub20.anInt2207 = stream.method933(-76);
+            class37_sub20.anInt2205 = stream.readByte(118);
+            class37_sub20.anInt2207 = stream.readInt(-76);
 
             class37_sub20.aByteArrayArrayArray2213 = new byte[class37_sub20.anInt2205][][];
 
@@ -71,18 +71,16 @@ public class Class55 implements Runnable {
             if (i == -37) {
                 for (int i_1_ = 0; class37_sub20.anInt2205 > i_1_; i_1_++) {
                     try {
-                        int i_2_ = stream.method978(119);
+                        int i_2_ = stream.readByte(119);
 
                         if (((i_2_ ^ 0xffffffff) == -1) ||
                                 ((i_2_ ^ 0xffffffff) == -2) || (i_2_ == 2)) {
-                            String string = new String(stream.method944(
-                                        (byte) 46).getString());
-                            String string_3_ = new String(stream.method944(
-                                        (byte) -81).getString());
+                            String string = new String(stream.readString().getString());
+                            String string_3_ = new String(stream.readString().getString());
                             int i_4_ = 0;
 
                             if (i_2_ == 1) {
-                                i_4_ = stream.method933(-74);
+                                i_4_ = stream.readInt(-74);
                             }
 
                             class37_sub20.anIntArray2214[i_1_] = i_2_;
@@ -92,26 +90,23 @@ public class Class55 implements Runnable {
                                         95, string), -89, string_3_));
                         } else if (((i_2_ ^ 0xffffffff) == -4) ||
                                 ((i_2_ ^ 0xffffffff) == -5)) {
-                            String string = new String(stream.method944(
-                                        (byte) -110).getString());
-                            String string_5_ = new String(stream.method944(
-                                        (byte) 98).getString());
-                            int i_6_ = stream.method978(123);
+                            String string = new String(stream.readString().getString());
+                            String string_5_ = new String(stream.readString().getString());
+                            int i_6_ = stream.readByte(123);
                             String[] strings = new String[i_6_];
 
                             for (int i_7_ = 0;
                                     (i_7_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff);
                                     i_7_++)
-                                strings[i_7_] = new String(stream.method944(
-                                            (byte) 70).getString());
+                                strings[i_7_] = new String(stream.readString().getString());
 
                             byte[][] is = new byte[i_6_][];
 
                             if ((i_2_ ^ 0xffffffff) == -4) {
                                 for (int i_8_ = 0; i_8_ < i_6_; i_8_++) {
-                                    int i_9_ = stream.method933(-90);
+                                    int i_9_ = stream.readInt(-90);
                                     is[i_8_] = new byte[i_9_];
-                                    stream.method968(0, i_9_, is[i_8_],
+                                    stream.readBytes(0, i_9_, is[i_8_],
                                         (byte) -53);
                                 }
                             }

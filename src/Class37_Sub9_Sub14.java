@@ -121,7 +121,7 @@ public class Class37_Sub9_Sub14 extends Class37_Sub9 {
         int i_4_ = i;
 
         if (i_4_ == 0) {
-            anInt3154 = (stream.method978(123) << 904088684) / 255;
+            anInt3154 = (stream.readByte(123) << 904088684) / 255;
         }
     }
 

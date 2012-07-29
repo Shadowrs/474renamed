@@ -515,12 +515,12 @@ while_71_:
 
     public void method750(Stream stream, int i, boolean bool) {
         if ((i ^ 0xffffffff) == -1) {
-            anInt3161 = stream.method978(126);
-            anIntArrayArray3157 = new int[stream.method978(125)][2];
+            anInt3161 = stream.readByte(126);
+            anIntArrayArray3157 = new int[stream.readByte(125)][2];
 
             for (int i_55_ = 0; anIntArrayArray3157.length > i_55_; i_55_++) {
-                anIntArrayArray3157[i_55_][0] = stream.method980(-125);
-                anIntArrayArray3157[i_55_][1] = stream.method980(-119);
+                anIntArrayArray3157[i_55_][0] = stream.readShort(-125);
+                anIntArrayArray3157[i_55_][1] = stream.readShort(-119);
             }
         }
 

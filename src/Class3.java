@@ -681,7 +681,7 @@ while_5_:
 
             if (l != 0L) {
                 Class42.aStream_Sub1_936.method989(-1494101117, 163);
-                Class42.aStream_Sub1_936.method949(l, (byte) 40);
+                Class42.aStream_Sub1_936.writeLong(l);
                 Class37_Sub9_Sub15.anInt3177++;
             }
         } catch (RuntimeException runtimeexception) {

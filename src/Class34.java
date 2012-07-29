@@ -93,30 +93,30 @@ public class Class34 {
     }
 
     public void method311(Stream stream, Class12 class12) {
-        int i = stream.method978(120);
+        int i = stream.readByte(120);
         anIntArray774[0] = i >> 4;
         anIntArray774[1] = i & 0xf;
 
         if (i != 0) {
-            anIntArray775[0] = stream.method980(-121);
-            anIntArray775[1] = stream.method980(-123);
+            anIntArray775[0] = stream.readShort(-121);
+            anIntArray775[1] = stream.readShort(-123);
 
-            int i_13_ = stream.method978(119);
+            int i_13_ = stream.readByte(119);
 
             for (int i_14_ = 0; i_14_ < 2; i_14_++) {
                 for (int i_15_ = 0; i_15_ < anIntArray774[i_14_]; i_15_++) {
-                    anIntArrayArrayArray770[i_14_][0][i_15_] = stream.method980(-127);
+                    anIntArrayArrayArray770[i_14_][0][i_15_] = stream.readShort(-127);
 
-                    anIntArrayArrayArray768[i_14_][0][i_15_] = stream.method980(-1);
+                    anIntArrayArrayArray768[i_14_][0][i_15_] = stream.readShort(-1);
                 }
             }
 
             for (int i_16_ = 0; i_16_ < 2; i_16_++) {
                 for (int i_17_ = 0; i_17_ < anIntArray774[i_16_]; i_17_++) {
                     if ((i_13_ & (1 << (i_16_ * 4) << i_17_)) != 0) {
-                        anIntArrayArrayArray770[i_16_][1][i_17_] = stream.method980(9);
+                        anIntArrayArrayArray770[i_16_][1][i_17_] = stream.readShort(9);
 
-                        anIntArrayArrayArray768[i_16_][1][i_17_] = stream.method980(-128);
+                        anIntArrayArrayArray768[i_16_][1][i_17_] = stream.readShort(-128);
                     } else {
                         anIntArrayArrayArray770[i_16_][1][i_17_] = anIntArrayArrayArray770[i_16_][0][i_17_];
 

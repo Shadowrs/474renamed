@@ -62,7 +62,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
 
                     int i_7_ = i_5_ & 0x3f;
                     int i_8_ = (0xfed & i_5_) >> 1518628070;
-                    int i_9_ = stream.method978(127);
+                    int i_9_ = stream.readByte(127);
                     int i_10_ = i_5_ >> -2047489876;
                     int i_11_ = i_9_ >> 1047838978;
                     int i_12_ = i + i_7_;
@@ -148,7 +148,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
         }
 
         if (i == 0) {
-            anInt3351 = stream.method980(-127);
+            anInt3351 = stream.readShort(-127);
         }
 
         anInt3352++;

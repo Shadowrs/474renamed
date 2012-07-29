@@ -319,30 +319,30 @@ public class Class5 {
         aClass12_126 = new Class12();
         aClass12_126.method92(stream);
 
-        int i = stream.method978(127);
+        int i = stream.readByte(127);
 
         if (i != 0) {
-            stream.currentIndex--;
+            stream.bufferLocation--;
             aClass12_121 = new Class12();
             aClass12_121.method92(stream);
             aClass12_116 = new Class12();
             aClass12_116.method92(stream);
         }
 
-        i = stream.method978(121);
+        i = stream.readByte(121);
 
         if (i != 0) {
-            stream.currentIndex--;
+            stream.bufferLocation--;
             aClass12_122 = new Class12();
             aClass12_122.method92(stream);
             aClass12_113 = new Class12();
             aClass12_113.method92(stream);
         }
 
-        i = stream.method978(116);
+        i = stream.readByte(116);
 
         if (i != 0) {
-            stream.currentIndex--;
+            stream.bufferLocation--;
             aClass12_115 = new Class12();
             aClass12_115.method92(stream);
             aClass12_124 = new Class12();
@@ -363,8 +363,8 @@ public class Class5 {
 
         anInt119 = stream.method961(255);
         anInt110 = stream.method961(255);
-        anInt111 = stream.method980(-122);
-        anInt112 = stream.method980(104);
+        anInt111 = stream.readShort(-122);
+        anInt112 = stream.readShort(104);
         aClass34_114 = new Class34();
         aClass12_109 = new Class12();
         aClass34_114.method311(stream, aClass12_109);

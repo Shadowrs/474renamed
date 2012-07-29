@@ -68,13 +68,13 @@ public class Class39 {
             try {
                 Class71.aClass42_1363.method1081(0L, 0);
                 Class71.aClass42_1363.method1082(stream.buffer,
-                    stream.currentIndex, -119, 24);
+                    stream.bufferLocation, -119, 24);
             } catch (Exception exception) {
                 /* empty */
             }
         }
 
-        stream.currentIndex += 24;
+        stream.bufferLocation += 24;
         anInt870++;
     }
 

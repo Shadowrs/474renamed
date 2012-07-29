@@ -164,14 +164,14 @@ public class Class37_Sub10 extends Class37 {
     public static void method929(byte i) {
 
         if (Class37_Sub9_Sub17.packetId == 205) {
-            int i_6_ = Class83.packetStream.method978(117);
+            int i_6_ = Class83.packetStream.readByte(117);
             int i_7_ = ((i_6_ >> -2133359132) & 0x7) + Class50.anInt1028;
             int i_8_ = Class65.anInt1231 - -(0x7 & i_6_);
-            int i_9_ = Class83.packetStream.method980(-119);
-            int i_10_ = Class83.packetStream.method978(i ^ ~0x62);
+            int i_9_ = Class83.packetStream.readShort(-119);
+            int i_10_ = Class83.packetStream.readByte(i ^ ~0x62);
             int i_11_ = 0xf & (i_10_ >> 540681572);
             int i_12_ = 0x7 & i_10_;
-            int i_13_ = Class83.packetStream.method978(125);
+            int i_13_ = Class83.packetStream.readByte(125);
 
             if (((i_7_ ^ 0xffffffff) <= -1) && ((i_8_ ^ 0xffffffff) <= -1) &&
                     (i_7_ < 104) && ((i_8_ ^ 0xffffffff) > -105)) {
@@ -204,8 +204,8 @@ public class Class37_Sub10 extends Class37 {
         anInt1992++;
 
         if (Class37_Sub9_Sub17.packetId == 28) {
-            int i_15_ = Class83.packetStream.method984(-1739943584);
-            int i_16_ = Class83.packetStream.method952((byte) -118);
+            int i_15_ = Class83.packetStream.readShortA(-1739943584);
+            int i_16_ = Class83.packetStream.readByteA();
             int i_17_ = Class50.anInt1028 + ((i_16_ & 0x7c) >> 13196612);
             int i_18_ = Class65.anInt1231 - -(0x7 & i_16_);
 
@@ -234,14 +234,14 @@ public class Class37_Sub10 extends Class37 {
                 }
             }
         } else if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -56) {
-            int i_19_ = Class83.packetStream.method952((byte) 92);
+            int i_19_ = Class83.packetStream.readByteA();
             int i_20_ = 0x3 & i_19_;
             int i_21_ = i_19_ >> 2081610338;
             int i_22_ = Class30.anIntArray719[i_21_];
-            int i_23_ = Class83.packetStream.method978(123);
+            int i_23_ = Class83.packetStream.readByte(123);
             int i_24_ = Class50.anInt1028 + ((0x73 & i_23_) >> 1094297092);
             int i_25_ = (i_23_ & 0x7) + Class65.anInt1231;
-            int i_26_ = Class83.packetStream.method980(-123);
+            int i_26_ = Class83.packetStream.readShort(-123);
 
             if (((i_24_ ^ 0xffffffff) <= -1) && ((i_25_ ^ 0xffffffff) <= -1) &&
                     ((i_24_ ^ 0xffffffff) > -104) && (i_25_ < 103)) {
@@ -345,21 +345,21 @@ public class Class37_Sub10 extends Class37 {
                 }
             }
         } else if (Class37_Sub9_Sub17.packetId == 38) {
-            int i_29_ = Class83.packetStream.method978(i ^ ~0x65);
+            int i_29_ = Class83.packetStream.readByte(i ^ ~0x65);
             int i_30_ = Class65.anInt1231 - -(0x7 & i_29_);
             int i_31_ = (0x7 & (i_29_ >> -1232710396)) + Class50.anInt1028;
             int i_32_ = (i_31_ +
-                Class83.packetStream.method982((byte) 116));
-            int i_33_ = (Class83.packetStream.method982((byte) 116) +
+                Class83.packetStream.readSignedByte((byte) 116));
+            int i_33_ = (Class83.packetStream.readSignedByte((byte) 116) +
                 i_30_);
-            int i_34_ = Class83.packetStream.method931((byte) 116);
-            int i_35_ = Class83.packetStream.method980(-13);
-            int i_36_ = 4 * Class83.packetStream.method978(125);
-            int i_37_ = 4 * Class83.packetStream.method978(124);
-            int i_38_ = Class83.packetStream.method980(-121);
-            int i_39_ = Class83.packetStream.method980(105);
-            int i_40_ = Class83.packetStream.method978(i + 146);
-            int i_41_ = Class83.packetStream.method978(i ^ ~0x67);
+            int i_34_ = Class83.packetStream.readSignedShort((byte) 116);
+            int i_35_ = Class83.packetStream.readShort(-13);
+            int i_36_ = 4 * Class83.packetStream.readByte(125);
+            int i_37_ = 4 * Class83.packetStream.readByte(124);
+            int i_38_ = Class83.packetStream.readShort(-121);
+            int i_39_ = Class83.packetStream.readShort(105);
+            int i_40_ = Class83.packetStream.readByte(i + 146);
+            int i_41_ = Class83.packetStream.readByte(i ^ ~0x67);
 
             if ((i_31_ >= 0) && (i_30_ >= 0) && (i_31_ < 104) && (i_30_ < 104) &&
                     (i_32_ >= 0) && ((i_33_ ^ 0xffffffff) <= -1) &&
@@ -387,12 +387,12 @@ public class Class37_Sub10 extends Class37 {
                     class37_sub4_sub7_sub2);
             }
         } else if (Class37_Sub9_Sub17.packetId == 49) {
-            int i_42_ = Class83.packetStream.method978(127);
+            int i_42_ = Class83.packetStream.readByte(127);
             int i_43_ = Class50.anInt1028 - -((0x72 & i_42_) >> -849112764);
             int i_44_ = (i_42_ & 0x7) + Class65.anInt1231;
-            int i_45_ = Class83.packetStream.method980(-127);
-            int i_46_ = Class83.packetStream.method978(118);
-            int i_47_ = Class83.packetStream.method980(i + 129);
+            int i_45_ = Class83.packetStream.readShort(-127);
+            int i_46_ = Class83.packetStream.readByte(118);
+            int i_47_ = Class83.packetStream.readShort(i + 129);
 
             if ((i_43_ >= 0) && ((i_44_ ^ 0xffffffff) <= -1) && (i_43_ < 104) &&
                     ((i_44_ ^ 0xffffffff) > -105)) {
@@ -414,12 +414,12 @@ public class Class37_Sub10 extends Class37 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -189) {
-                int i_48_ = Class83.packetStream.method978(126);
+                int i_48_ = Class83.packetStream.readByte(126);
                 int i_49_ = i_48_ >> -2064302590;
                 int i_50_ = 0x3 & i_48_;
                 int i_51_ = Class30.anIntArray719[i_49_];
-                int i_52_ = Class83.packetStream.method984(-1739943584);
-                int i_53_ = Class83.packetStream.method967(255);
+                int i_52_ = Class83.packetStream.readShortA(-1739943584);
+                int i_53_ = Class83.packetStream.readByteS(255);
                 int i_54_ = (0x7 & (i_53_ >> 1788275460)) + Class50.anInt1028;
                 int i_55_ = Class65.anInt1231 + (i_53_ & 0x7);
 
@@ -430,14 +430,14 @@ public class Class37_Sub10 extends Class37 {
                         0);
                 }
             } else if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -192) {
-                int i_56_ = Class83.packetStream.method978(120);
+                int i_56_ = Class83.packetStream.readByte(120);
                 int i_57_ = Class50.anInt1028 -
                     -((i_56_ & 0x75) >> -1746747516);
                 int i_58_ = (0x7 & i_56_) + Class65.anInt1231;
-                int i_59_ = Class83.packetStream.method980(i ^
+                int i_59_ = Class83.packetStream.readShort(i ^
                         ~0x53);
-                int i_60_ = Class83.packetStream.method980(i ^ 0x5);
-                int i_61_ = Class83.packetStream.method984(-1739943584);
+                int i_60_ = Class83.packetStream.readShort(i ^ 0x5);
+                int i_61_ = Class83.packetStream.readShortA(-1739943584);
 
                 if (((i_57_ ^ 0xffffffff) <= -1) &&
                         ((i_58_ ^ 0xffffffff) <= -1) &&
@@ -458,12 +458,12 @@ public class Class37_Sub10 extends Class37 {
                     Class37_Sub2.method335(i_58_, i_57_, i + 19966);
                 }
             } else if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -221) {
-                int i_62_ = Class83.packetStream.method978(127);
+                int i_62_ = Class83.packetStream.readByte(127);
                 int i_63_ = (0x7 & i_62_) + Class65.anInt1231;
                 int i_64_ = ((i_62_ & 0x74) >> 1408189316) + Class50.anInt1028;
-                int i_65_ = Class83.packetStream.method980(-120);
-                int i_66_ = Class83.packetStream.method980(117);
-                int i_67_ = Class83.packetStream.method980(i ^
+                int i_65_ = Class83.packetStream.readShort(-120);
+                int i_66_ = Class83.packetStream.readShort(117);
+                int i_67_ = Class83.packetStream.readShort(i ^
                         0x66);
 
                 if (((i_64_ ^ 0xffffffff) <= -1) &&
@@ -491,11 +491,11 @@ public class Class37_Sub10 extends Class37 {
                     }
                 }
             } else if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -87) {
-                int i_68_ = Class83.packetStream.method932((byte) 77);
+                int i_68_ = Class83.packetStream.readByteC((byte) 77);
                 int i_69_ = i_68_ >> 1029027554;
                 int i_70_ = 0x3 & i_68_;
                 int i_71_ = Class30.anIntArray719[i_69_];
-                int i_72_ = Class83.packetStream.method932((byte) 112);
+                int i_72_ = Class83.packetStream.readByteC((byte) 112);
                 int i_73_ = (i_72_ & 0x7) + Class65.anInt1231;
                 int i_74_ = ((i_72_ >> -1873767228) & 0x7) + Class50.anInt1028;
 
@@ -506,12 +506,12 @@ public class Class37_Sub10 extends Class37 {
                         Class37_Sub9_Sub1.anInt2916, 92, i_73_, -1, i_74_, 0);
                 }
             } else if (Class37_Sub9_Sub17.packetId == 7) {
-                int i_75_ = Class83.packetStream.method978(127);
+                int i_75_ = Class83.packetStream.readByte(127);
                 int i_76_ = (0x7 & i_75_) + Class65.anInt1231;
                 int i_77_ = Class50.anInt1028 + ((0x74 & i_75_) >> 923973252);
-                int i_78_ = Class83.packetStream.method980(i ^
+                int i_78_ = Class83.packetStream.readShort(i ^
                         0x6c);
-                int i_79_ = Class83.packetStream.method956(i ^
+                int i_79_ = Class83.packetStream.readShortLEA(i ^
                         ~0x19);
 
                 if (((i_77_ ^ 0xffffffff) <= -1) && (i_76_ >= 0) &&
@@ -529,22 +529,22 @@ public class Class37_Sub10 extends Class37 {
                     Class37_Sub2.method335(i_76_, i_77_, i + 19966);
                 }
             } else if (Class37_Sub9_Sub17.packetId == 18) {
-                int i_80_ = Class83.packetStream.method978(118);
+                int i_80_ = Class83.packetStream.readByte(118);
                 int i_81_ = 0x3 & i_80_;
                 int i_82_ = i_80_ >> -1030237918;
                 int i_83_ = Class30.anIntArray719[i_82_];
-                int i_84_ = Class83.packetStream.method940(true);
-                int i_85_ = Class83.packetStream.method982((byte) 116);
-                int i_86_ = Class83.packetStream.method952((byte) 105);
+                int i_84_ = Class83.packetStream.readSignedByteS(true);
+                int i_85_ = Class83.packetStream.readSignedByte((byte) 116);
+                int i_86_ = Class83.packetStream.readByteA();
                 int i_87_ = Class50.anInt1028 + ((i_86_ & 0x7c) >> 1745254660);
                 int i_88_ = (i_86_ & 0x7) + Class65.anInt1231;
-                int i_89_ = Class83.packetStream.method984(i +
+                int i_89_ = Class83.packetStream.readShortA(i +
                         -1739943556);
-                int i_90_ = Class83.packetStream.method980(-119);
-                int i_91_ = Class83.packetStream.method984(-1739943584);
-                int i_92_ = Class83.packetStream.method975(i + 30);
-                int i_93_ = Class83.packetStream.method941((byte) 101);
-                int i_94_ = Class83.packetStream.method938(112);
+                int i_90_ = Class83.packetStream.readShort(-119);
+                int i_91_ = Class83.packetStream.readShortA(-1739943584);
+                int i_92_ = Class83.packetStream.readShortLE(i + 30);
+                int i_93_ = Class83.packetStream.readSignedByteA((byte) 101);
+                int i_94_ = Class83.packetStream.readSignedByteC(112);
                 Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2;
 
                 if ((i_91_ ^ 0xffffffff) == (Class37_Sub9_Sub5.anInt2998 ^

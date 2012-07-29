@@ -142,17 +142,17 @@ while_54_:
                         break while_54_;
                     }
                 } else {
-                    anInt3020 = stream.method980(-122);
+                    anInt3020 = stream.readShort(-122);
 
                     break while_54_;
                 }
 
-                anInt3023 = stream.method980(-127);
+                anInt3023 = stream.readShort(-127);
 
                 break while_54_;
             } while (false);
 
-            anInt3013 = stream.method980(-125);
+            anInt3013 = stream.readShort(-125);
         } while (false);
 
         anInt3021++;

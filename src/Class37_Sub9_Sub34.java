@@ -90,37 +90,37 @@ while_113_:
                                         break while_113_;
                                     }
                                 } else {
-                                    anInt3545 = anInt3549 = stream.method978(125);
+                                    anInt3545 = anInt3549 = stream.readByte(125);
 
                                     break while_117_;
                                 }
 
-                                anInt3538 = stream.method978(116);
+                                anInt3538 = stream.readByte(116);
 
                                 break while_117_;
                             } while (false);
 
-                            anInt3539 = stream.method980(-127);
+                            anInt3539 = stream.readShort(-127);
 
                             break while_117_;
                         } while (false);
 
-                        anInt3533 = stream.method978(121);
+                        anInt3533 = stream.readByte(121);
 
                         break while_117_;
                     } while (false);
 
-                    anInt3552 = stream.method978(127);
+                    anInt3552 = stream.readByte(127);
 
                     break while_117_;
                 } while (false);
 
-                anInt3545 = stream.method978(117);
+                anInt3545 = stream.readByte(117);
 
                 break while_117_;
             } while (false);
 
-            anInt3549 = stream.method978(126);
+            anInt3549 = stream.readByte(126);
         } while (false);
 
         if (bool != true) {
@@ -237,10 +237,10 @@ while_113_:
         for (int i_18_ = 0; i_18_ < Class37_Sub9_Sub11.anInt3098; i_18_++) {
             int i_19_ = Class36.anIntArray809[i_18_];
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[i_19_];
-            int i_20_ = Class83.packetStream.method978(117);
+            int i_20_ = Class83.packetStream.readByte(117);
 
             if ((0x20 & i_20_) != 0) {
-                i_20_ += (Class83.packetStream.method978(117) << -2098354520);
+                i_20_ += (Class83.packetStream.readByte(117) << -2098354520);
             }
 
             Class22.method234(88, class37_sub4_sub7_sub1_sub2, i_20_, i_19_);

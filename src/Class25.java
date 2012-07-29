@@ -62,7 +62,7 @@ public class Class25 {
             }
         }
 
-        stream.method954(24, 0, 4, is);
+        stream.writeBytes(24, 0, 4, is);
     }
 
     public static void method254(int i) {

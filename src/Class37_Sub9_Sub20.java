@@ -247,17 +247,17 @@ while_85_:
                         break while_85_;
                     }
                 } else {
-                    anInt3295 = stream.method931((byte) 121);
+                    anInt3295 = stream.readSignedShort((byte) 121);
 
                     break while_85_;
                 }
 
-                anInt3278 = (stream.method982((byte) 92) << 1097188876) / 100;
+                anInt3278 = (stream.readSignedByte((byte) 92) << 1097188876) / 100;
 
                 break while_85_;
             } while (false);
 
-            anInt3282 = (stream.method982((byte) 96) << 260563564) / 100;
+            anInt3282 = (stream.readSignedByte((byte) 96) << 260563564) / 100;
         } while (false);
 
         anInt3276++;
@@ -609,32 +609,32 @@ while_85_:
         class37_sub4_sub6 = new Class37_Sub4_Sub6();
 
         Stream stream = new Stream(is);
-        stream.currentIndex = stream.buffer.length - 12;
+        stream.bufferLocation = stream.buffer.length - 12;
 
-        int i_44_ = stream.method933(-64);
+        int i_44_ = stream.readInt(-64);
         int i_45_ = 0;
-        class37_sub4_sub6.anInt2614 = stream.method980(-127);
-        class37_sub4_sub6.anInt2616 = stream.method980(-16);
-        class37_sub4_sub6.anInt2623 = stream.method980(-128);
-        class37_sub4_sub6.anInt2618 = stream.method980(84);
-        stream.currentIndex = 0;
-        class37_sub4_sub6.aJString_2620 = stream.method955(255);
+        class37_sub4_sub6.anInt2614 = stream.readShort(-127);
+        class37_sub4_sub6.anInt2616 = stream.readShort(-16);
+        class37_sub4_sub6.anInt2623 = stream.readShort(-128);
+        class37_sub4_sub6.anInt2618 = stream.readShort(84);
+        stream.bufferLocation = 0;
+        class37_sub4_sub6.aJString_2620 = stream.tryReadString(255);
         class37_sub4_sub6.aJStringArray2617 = new JString[i_44_];
         class37_sub4_sub6.anIntArray2611 = new int[i_44_];
         class37_sub4_sub6.anIntArray2615 = new int[i_44_];
 
-        while (((-12 + stream.buffer.length) ^ 0xffffffff) < (stream.currentIndex ^
+        while (((-12 + stream.buffer.length) ^ 0xffffffff) < (stream.bufferLocation ^
                 0xffffffff)) {
-            int i_46_ = stream.method980(24);
+            int i_46_ = stream.readShort(24);
 
             if (i_46_ == 3) {
-                class37_sub4_sub6.aJStringArray2617[i_45_] = stream.method944((byte) 85);
+                class37_sub4_sub6.aJStringArray2617[i_45_] = stream.readString();
             } else if ((i_46_ < 100) && (i_46_ != 21) &&
                     ((i_46_ ^ 0xffffffff) != -39) &&
                     ((i_46_ ^ 0xffffffff) != -40)) {
-                class37_sub4_sub6.anIntArray2611[i_45_] = stream.method933(-73);
+                class37_sub4_sub6.anIntArray2611[i_45_] = stream.readInt(-73);
             } else {
-                class37_sub4_sub6.anIntArray2611[i_45_] = stream.method978(123);
+                class37_sub4_sub6.anIntArray2611[i_45_] = stream.readByte(123);
             }
 
             class37_sub4_sub6.anIntArray2615[i_45_++] = i_46_;

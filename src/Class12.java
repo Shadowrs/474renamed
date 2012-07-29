@@ -23,13 +23,13 @@ public class Class12 {
     }
 
     public void method90(Stream stream) {
-        anInt207 = stream.method978(125);
+        anInt207 = stream.readByte(125);
         anIntArray208 = new int[anInt207];
         anIntArray205 = new int[anInt207];
 
         for (int i = 0; i < anInt207; i++) {
-            anIntArray208[i] = stream.method980(37);
-            anIntArray205[i] = stream.method980(78);
+            anIntArray208[i] = stream.readShort(37);
+            anIntArray205[i] = stream.readShort(78);
         }
     }
 
@@ -56,9 +56,9 @@ public class Class12 {
     }
 
     public void method92(Stream stream) {
-        anInt209 = stream.method978(119);
-        anInt206 = stream.method933(-80);
-        anInt210 = stream.method933(-88);
+        anInt209 = stream.readByte(119);
+        anInt206 = stream.readInt(-80);
+        anInt210 = stream.readInt(-88);
         method90(stream);
     }
 

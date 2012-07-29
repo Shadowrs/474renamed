@@ -164,17 +164,17 @@ while_90_:
                             break while_90_;
                         }
                     } else {
-                        anInt3367 = stream.method978(126);
+                        anInt3367 = stream.readByte(126);
 
                         break while_90_;
                     }
 
-                    anInt3360 = stream.method978(126);
+                    anInt3360 = stream.readByte(126);
 
                     break while_90_;
                 } while (false);
 
-                anInt3369 = stream.method980(-119);
+                anInt3369 = stream.readShort(-119);
             } while (false);
 
             anInt3373++;

@@ -319,9 +319,9 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
         }
 
         Class42.aStream_Sub1_936.method989(-1494101117, 202);
-        Class42.aStream_Sub1_936.method964(99,
+        Class42.aStream_Sub1_936.writeSignedByte(99,
             jstring.method172((byte) 38) + -1);
-        Class42.aStream_Sub1_936.method977(jstring.method158(2, -1), 0);
+        Class42.aStream_Sub1_936.writeString(jstring.method158(2, -1), 0);
         Class62.anInt1172++;
 
         if (bool != false) {

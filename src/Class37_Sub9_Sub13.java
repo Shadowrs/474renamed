@@ -114,23 +114,23 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
 
     public void method750(Stream stream, int i, boolean bool) {
         if ((i ^ 0xffffffff) == -1) {
-            int i_16_ = stream.method978(124);
+            int i_16_ = stream.readByte(124);
 
             if ((i_16_ ^ 0xffffffff) != -1) {
                 method815(3, i_16_);
             } else {
-                anIntArrayArray3135 = new int[stream.method978(121)][4];
+                anIntArrayArray3135 = new int[stream.readByte(121)][4];
 
                 for (int i_17_ = 0;
                         ((anIntArrayArray3135.length ^ 0xffffffff) < (i_17_ ^
                         0xffffffff)); i_17_++) {
-                    anIntArrayArray3135[i_17_][0] = stream.method980(-120);
+                    anIntArrayArray3135[i_17_][0] = stream.readShort(-120);
 
-                    anIntArrayArray3135[i_17_][1] = stream.method978(127) << -1731286492;
+                    anIntArrayArray3135[i_17_][1] = stream.readByte(127) << -1731286492;
 
-                    anIntArrayArray3135[i_17_][2] = stream.method978(116) << -1044437340;
+                    anIntArrayArray3135[i_17_][2] = stream.readByte(116) << -1044437340;
 
-                    anIntArrayArray3135[i_17_][3] = stream.method978(117) << 1581911812;
+                    anIntArrayArray3135[i_17_][3] = stream.readByte(117) << 1581911812;
                 }
             }
         }

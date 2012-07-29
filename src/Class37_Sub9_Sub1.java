@@ -32,7 +32,7 @@ public class Class37_Sub9_Sub1 extends Class37_Sub9 {
 
     public void method750(Stream stream, int i, boolean bool) {
         if (i == 0) {
-            aBoolean1943 = (stream.method978(122) ^ 0xffffffff) == -2;
+            aBoolean1943 = (stream.readByte(122) ^ 0xffffffff) == -2;
         }
 
         anInt2921++;

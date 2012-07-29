@@ -137,14 +137,14 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
                 return -41;
             }
 
-            int i_15_ = stream.currentIndex;
+            int i_15_ = stream.bufferLocation;
             stream.method951((byte) 37, jstring.anInt1650);
 
-            stream.currentIndex += (Class15_Sub1.aClass14_1746.method105(32,
-                stream.buffer, 0, stream.currentIndex,
+            stream.bufferLocation += (Class15_Sub1.aClass14_1746.method105(32,
+                stream.buffer, 0, stream.bufferLocation,
                 jstring.anInt1650, jstring.aByteArray1669));
 
-            return stream.currentIndex + -i_15_;
+            return stream.bufferLocation + -i_15_;
         } catch (RuntimeException runtimeexception) {
             throw Class37_Sub4_Sub7_Sub3.method516(runtimeexception,
                 ("nf.D(" + ((stream != null) ? "{...}" : "null") + ',' +
@@ -170,17 +170,17 @@ while_80_:
                         break while_80_;
                     }
                 } else {
-                    anInt3244 = stream.method978(116);
+                    anInt3244 = stream.readByte(116);
 
                     break while_80_;
                 }
 
-                anInt3228 = stream.method978(127);
+                anInt3228 = stream.readByte(127);
 
                 break while_80_;
             } while (false);
 
-            aBoolean1943 = stream.method978(119) == 1;
+            aBoolean1943 = stream.readByte(119) == 1;
         } while (false);
 
         anInt3229++;

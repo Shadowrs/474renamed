@@ -22,7 +22,7 @@ public class Class37_Sub4_Sub14 extends Class37_Sub4 {
 
     public void method709(byte i, Stream stream) {
         for (;;) {
-            int i_0_ = stream.method978(124);
+            int i_0_ = stream.readByte(124);
 
             if ((i_0_ ^ 0xffffffff) == -1) {
                 break;
@@ -38,7 +38,7 @@ public class Class37_Sub4_Sub14 extends Class37_Sub4 {
 
     public void method710(Stream stream, int i, int i_1_) {
         if ((i ^ 0xffffffff) == -6) {
-            anInt2808 = stream.method980(-2);
+            anInt2808 = stream.readShort(-2);
         }
 
         anInt2807++;

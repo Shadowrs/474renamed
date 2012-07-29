@@ -15,18 +15,18 @@ public class Class49 {
     public static void method1111(boolean bool, byte[] is) {
         Stream stream = new Stream(is);
         anInt1009++;
-        stream.currentIndex = -2 + is.length;
-        Class10.anInt194 = stream.method980(20);
+        stream.bufferLocation = -2 + is.length;
+        Class10.anInt194 = stream.readShort(20);
         Class10.aByteArrayArray198 = new byte[Class10.anInt194][];
         Class37_Sub9_Sub23.anIntArray3357 = new int[Class10.anInt194];
         Class14.anIntArray250 = new int[Class10.anInt194];
         Class62.anIntArray1180 = new int[Class10.anInt194];
         Class37_Sub9_Sub28.anIntArray3434 = new int[Class10.anInt194];
-        stream.currentIndex = (-7 + is.length) - (8 * Class10.anInt194);
-        Class37_Sub4_Sub7.anInt2637 = stream.method980(-123);
-        Class46.anInt989 = stream.method980(-123);
+        stream.bufferLocation = (-7 + is.length) - (8 * Class10.anInt194);
+        Class37_Sub4_Sub7.anInt2637 = stream.readShort(-123);
+        Class46.anInt989 = stream.readShort(-123);
 
-        int i = 1 + (stream.method978(120) & 0xff);
+        int i = 1 + (stream.readByte(120) & 0xff);
 
         if (bool != false) {
             aStream_1006 = null;
@@ -35,30 +35,30 @@ public class Class49 {
         for (int i_0_ = 0;
                 (Class10.anInt194 ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
                 i_0_++)
-            Class62.anIntArray1180[i_0_] = stream.method980(-123);
+            Class62.anIntArray1180[i_0_] = stream.readShort(-123);
 
         for (int i_1_ = 0; i_1_ < Class10.anInt194; i_1_++)
-            Class37_Sub9_Sub23.anIntArray3357[i_1_] = stream.method980(-6);
+            Class37_Sub9_Sub23.anIntArray3357[i_1_] = stream.readShort(-6);
 
         for (int i_2_ = 0; Class10.anInt194 > i_2_; i_2_++)
-            Class14.anIntArray250[i_2_] = stream.method980(-6);
+            Class14.anIntArray250[i_2_] = stream.readShort(-6);
 
         for (int i_3_ = 0; Class10.anInt194 > i_3_; i_3_++)
-            Class37_Sub9_Sub28.anIntArray3434[i_3_] = stream.method980(-121);
+            Class37_Sub9_Sub28.anIntArray3434[i_3_] = stream.readShort(-121);
 
-        stream.currentIndex = -(Class10.anInt194 * 8) +
+        stream.bufferLocation = -(Class10.anInt194 * 8) +
             (-7 + (is.length + -(3 * i))) + 3;
         Class37_Sub9_Sub1.anIntArray2919 = new int[i];
 
         for (int i_4_ = 1; (i_4_ ^ 0xffffffff) > (i ^ 0xffffffff); i_4_++) {
-            Class37_Sub9_Sub1.anIntArray2919[i_4_] = stream.method935(-26256544);
+            Class37_Sub9_Sub1.anIntArray2919[i_4_] = stream.read3Bytes(-26256544);
 
             if (Class37_Sub9_Sub1.anIntArray2919[i_4_] == 0) {
                 Class37_Sub9_Sub1.anIntArray2919[i_4_] = 1;
             }
         }
 
-        stream.currentIndex = 0;
+        stream.bufferLocation = 0;
 
         for (int i_5_ = 0; i_5_ < Class10.anInt194; i_5_++) {
             int i_6_ = Class14.anIntArray250[i_5_];
@@ -67,17 +67,17 @@ public class Class49 {
             byte[] is_9_ = new byte[i_8_];
             Class10.aByteArrayArray198[i_5_] = is_9_;
 
-            int i_10_ = stream.method978(125);
+            int i_10_ = stream.readByte(125);
 
             if ((i_10_ ^ 0xffffffff) == -1) {
                 for (int i_11_ = 0; i_8_ > i_11_; i_11_++)
-                    is_9_[i_11_] = stream.method982((byte) 106);
+                    is_9_[i_11_] = stream.readSignedByte((byte) 106);
             } else if ((i_10_ ^ 0xffffffff) == -2) {
                 for (int i_12_ = 0; i_6_ > i_12_; i_12_++) {
                     for (int i_13_ = 0;
                             (i_7_ ^ 0xffffffff) < (i_13_ ^ 0xffffffff);
                             i_13_++)
-                        is_9_[i_12_ + (i_13_ * i_6_)] = stream.method982((byte) 106);
+                        is_9_[i_12_ + (i_13_ * i_6_)] = stream.readSignedByte((byte) 106);
                 }
             }
         }

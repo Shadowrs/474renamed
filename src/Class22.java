@@ -144,7 +144,7 @@ public class Class22 {
                     i_2_);
 
                 if (anInt573 == 4) {
-                    int i_3_ = new Stream(aByteArray582).method933(-45);
+                    int i_3_ = new Stream(aByteArray582).readInt(-45);
                     anInt584 = 2;
                     aByteArray574 = new byte[i_3_];
                 }
@@ -206,11 +206,11 @@ public class Class22 {
 
         if ((i_6_ & 0x10) != 0) { // i_6_ >= 16
 
-            int i_8_ = Class83.packetStream.method952((byte) 45);
+            int i_8_ = Class83.packetStream.readByteA();
 
             byte[] is = new byte[i_8_];
             Stream stream = new Stream(is);
-            Class83.packetStream.method963(i_8_, is, 110, 0);
+            Class83.packetStream.readBytesReversed(i_8_, is, 110, 0);
 
             Class37_Sub9_Sub15.aStreamArray3175[i_7_] = stream;
             class37_sub4_sub7_sub1_sub2.method509(stream, 65535);
@@ -219,9 +219,9 @@ public class Class22 {
         anInt589++;
 
         if ((0x100 & i_6_) != 0) { // i_6_ >= 256
-            class37_sub4_sub7_sub1_sub2.anInt3636 = Class83.packetStream.method984(-1739943584);
+            class37_sub4_sub7_sub1_sub2.anInt3636 = Class83.packetStream.readShortA(-1739943584);
 
-            int i_9_ = Class83.packetStream.method969(127);
+            int i_9_ = Class83.packetStream.readInt2(127);
             class37_sub4_sub7_sub1_sub2.anInt3693 = i_9_ >> -292312848;
 
             class37_sub4_sub7_sub1_sub2.anInt3652 = Class37_Sub7.anInt1898 +
@@ -241,14 +241,14 @@ public class Class22 {
 
         if ((0x1 & i_6_) != 0) { //i_6_ >= 9
 
-            class37_sub4_sub7_sub1_sub2.anInt3687 = Class83.packetStream.method975(2);
+            class37_sub4_sub7_sub1_sub2.anInt3687 = Class83.packetStream.readShortLE(2);
 
-            class37_sub4_sub7_sub1_sub2.anInt3679 = Class83.packetStream.method956(2);
+            class37_sub4_sub7_sub1_sub2.anInt3679 = Class83.packetStream.readShortLEA(2);
         }
 
         if ((0x40 & i_6_) != 0) {
 
-            class37_sub4_sub7_sub1_sub2.aJString_3694 = Class83.packetStream.method944((byte) -116);
+            class37_sub4_sub7_sub1_sub2.aJString_3694 = Class83.packetStream.readString();
 
             if ((class37_sub4_sub7_sub1_sub2.aJString_3694.method161(0, -103) ^
                     0xffffffff) != -127) {
@@ -270,8 +270,8 @@ public class Class22 {
 
         if ((i_6_ & 0x8) != 0) { // i_6_ >= 8
 
-            int i_10_ = Class83.packetStream.method984(-1739943584);
-            int i_11_ = Class83.packetStream.method978(126);
+            int i_10_ = Class83.packetStream.readShortA(-1739943584);
+            int i_11_ = Class83.packetStream.readByte(126);
 
             if (i_10_ == 65535) {
                 i_10_ = -1;
@@ -281,7 +281,7 @@ public class Class22 {
         }
 
         if ((i_6_ & 0x2) != 0) { // i_6_ >=2
-            class37_sub4_sub7_sub1_sub2.anInt3653 = Class83.packetStream.method980(-124);
+            class37_sub4_sub7_sub1_sub2.anInt3653 = Class83.packetStream.readShort(-124);
             if (class37_sub4_sub7_sub1_sub2.anInt3653 == 65535) {
                 class37_sub4_sub7_sub1_sub2.anInt3653 = -1;
             }
@@ -290,25 +290,25 @@ public class Class22 {
         if (i >= 43) {
 
             if (((i_6_ & 0x4) ^ 0xffffffff) != -1) {
-                int i_12_ = Class83.packetStream.method978(121);
-                int i_13_ = Class83.packetStream.method952((byte) 3);
+                int i_12_ = Class83.packetStream.readByte(121);
+                int i_13_ = Class83.packetStream.readByteA();
                 class37_sub4_sub7_sub1_sub2.method496(Class37_Sub7.anInt1898,
                     i_12_, (byte) 109, i_13_);
 
                 class37_sub4_sub7_sub1_sub2.anInt3697 = Class37_Sub7.anInt1898 -
                     -300;
 
-                class37_sub4_sub7_sub1_sub2.anInt3692 = Class83.packetStream.method967(255);
+                class37_sub4_sub7_sub1_sub2.anInt3692 = Class83.packetStream.readByteS(255);
 
-                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.method932((byte) 25);
+                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.readByteC((byte) 25);
             }
 
             if ((i_6_ & 0x80) != 0) {
 
-                int i_14_ = Class83.packetStream.method956(2);
-                int i_15_ = Class83.packetStream.method952((byte) -124);
-                int i_16_ = Class83.packetStream.method967(255);
-                int i_17_ = Class83.packetStream.currentIndex;
+                int i_14_ = Class83.packetStream.readShortLEA(2);
+                int i_15_ = Class83.packetStream.readByteA();
+                int i_16_ = Class83.packetStream.readByteS(255);
+                int i_17_ = Class83.packetStream.bufferLocation;
 
                 if ((class37_sub4_sub7_sub1_sub2.aJString_3993 != null) &&
                         (class37_sub4_sub7_sub1_sub2.aClass29_3985 != null)) {
@@ -330,11 +330,11 @@ public class Class22 {
 
                     if (!bool /*&& ((Class52_Sub1.anInt2303 ^ 0xffffffff) == -1)*/) {
 
-                        Class37_Sub9_Sub13.aStream_3140.currentIndex = 0;
-                        Class83.packetStream.method968(0, i_16_,
+                        Class37_Sub9_Sub13.aStream_3140.bufferLocation = 0;
+                        Class83.packetStream.readBytes(0, i_16_,
                             (Class37_Sub9_Sub13.aStream_3140.buffer),
                             (byte) -53);
-                        Class37_Sub9_Sub13.aStream_3140.currentIndex = 0;
+                        Class37_Sub9_Sub13.aStream_3140.bufferLocation = 0;
 
                         JString jstring = (Class37_Sub4_Sub9_Sub2.method605(Class36.method319(
                                     Class37_Sub9_Sub13.aStream_3140, -53)
@@ -370,41 +370,41 @@ public class Class22 {
                     }
                 }
 
-                Class83.packetStream.currentIndex = i_16_ + i_17_;
+                Class83.packetStream.bufferLocation = i_16_ + i_17_;
             }
 
             if (((0x200 & i_6_) ^ 0xffffffff) != -1) {
 
-                int i_19_ = Class83.packetStream.method967(255);
-                int i_20_ = Class83.packetStream.method967(255);
+                int i_19_ = Class83.packetStream.readByteS(255);
+                int i_20_ = Class83.packetStream.readByteS(255);
                 class37_sub4_sub7_sub1_sub2.method496(Class37_Sub7.anInt1898,
                     i_19_, (byte) 126, i_20_);
 
                 class37_sub4_sub7_sub1_sub2.anInt3697 = Class37_Sub7.anInt1898 -
                     -300;
 
-                class37_sub4_sub7_sub1_sub2.anInt3692 = Class83.packetStream.method978(124);
+                class37_sub4_sub7_sub1_sub2.anInt3692 = Class83.packetStream.readByte(124);
 
-                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.method978(127);
+                class37_sub4_sub7_sub1_sub2.anInt3690 = Class83.packetStream.readByte(127);
             }
 
             if ((i_6_ & 0x400) != 0) {
 
-                class37_sub4_sub7_sub1_sub2.anInt3684 = Class83.packetStream.method932((byte) 21);
+                class37_sub4_sub7_sub1_sub2.anInt3684 = Class83.packetStream.readByteC((byte) 21);
 
-                class37_sub4_sub7_sub1_sub2.anInt3639 = Class83.packetStream.method967(255);
+                class37_sub4_sub7_sub1_sub2.anInt3639 = Class83.packetStream.readByteS(255);
 
-                class37_sub4_sub7_sub1_sub2.anInt3688 = Class83.packetStream.method967(255);
+                class37_sub4_sub7_sub1_sub2.anInt3688 = Class83.packetStream.readByteS(255);
 
-                class37_sub4_sub7_sub1_sub2.anInt3643 = Class83.packetStream.method932((byte) 101);
+                class37_sub4_sub7_sub1_sub2.anInt3643 = Class83.packetStream.readByteC((byte) 101);
 
-                class37_sub4_sub7_sub1_sub2.anInt3648 = (Class83.packetStream.method980(-37) -
+                class37_sub4_sub7_sub1_sub2.anInt3648 = (Class83.packetStream.readShort(-37) -
                     -Class37_Sub7.anInt1898);
 
-                class37_sub4_sub7_sub1_sub2.anInt3667 = (Class83.packetStream.method984(-1739943584) +
+                class37_sub4_sub7_sub1_sub2.anInt3667 = (Class83.packetStream.readShortA(-1739943584) +
                     Class37_Sub7.anInt1898);
 
-                class37_sub4_sub7_sub1_sub2.anInt3661 = Class83.packetStream.method978(118);
+                class37_sub4_sub7_sub1_sub2.anInt3661 = Class83.packetStream.readByte(118);
                 class37_sub4_sub7_sub1_sub2.anInt3640 = 0;
                 class37_sub4_sub7_sub1_sub2.anInt3645 = 1;
             }

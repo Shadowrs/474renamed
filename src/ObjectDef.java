@@ -569,39 +569,39 @@ public class ObjectDef extends Class37_Sub4 {
 
     public void method690(int objectProperties, Stream stream) {
         if (objectProperties == 1) {
-            int i_36_ = stream.method978(121);
+            int i_36_ = stream.readByte(121);
 
             if (i_36_ > 0) {
                 if ((anIntArray2701 != null) && !Class79.aBoolean1469) {
-                    stream.currentIndex += (i_36_ * 3);
+                    stream.bufferLocation += (i_36_ * 3);
                 } else {
                     anIntArray2701 = new int[i_36_];
                     anIntArray2732 = new int[i_36_];
 
                     for (int i_37_ = 0; (i_37_ ^ 0xffffffff) > (i_36_ ^ 0xffffffff); i_37_++) {
-                        anIntArray2701[i_37_] = (stream.method980(Class37_Sub4_Sub7_Sub1_Sub1.method502(19276, 19265)));
-                        anIntArray2732[i_37_] = stream.method978(120);
+                        anIntArray2701[i_37_] = (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(19276, 19265)));
+                        anIntArray2732[i_37_] = stream.readByte(120);
                     }
                 }
             }
         } else if (objectProperties != 2) {
             if (objectProperties == 5) {
-                int i_38_ = stream.method978(117);
+                int i_38_ = stream.readByte(117);
 		
                 if ((i_38_ ^ 0xffffffff) < -1) {
                     if ((anIntArray2701 != null) && !Class79.aBoolean1469) {
-                        stream.currentIndex += (i_38_ * 2);
+                        stream.bufferLocation += (i_38_ * 2);
                     } else {
                         anIntArray2732 = null;
                         anIntArray2701 = new int[i_38_];
 
                         for (int i_39_ = 0; i_39_ < i_38_; i_39_++)
-                            anIntArray2701[i_39_] = stream.method980(-123);
+                            anIntArray2701[i_39_] = stream.readShort(-123);
                     }
                 }
             } else if (objectProperties != 14) {
                 if (objectProperties == 15) {
-                    tileDepth = stream.method978(118);
+                    tileDepth = stream.readByte(118);
                 } else if (objectProperties != 17) {
                     if (objectProperties == 18) {
                         ProjectileBlocked = false;
@@ -615,15 +615,15 @@ public class ObjectDef extends Class37_Sub4 {
                                 if (objectProperties == 27) {
                                     anInt2740 = 1;
                                 } else if (objectProperties == 28) {
-                                    anInt2725 = stream.method978(126);
+                                    anInt2725 = stream.readByte(126);
                                 } else if (objectProperties == 29) {
-                                    anInt2717 = stream.method982((byte) 124);
+                                    anInt2717 = stream.readSignedByte((byte) 124);
                                 } else if (objectProperties != 39) {
                                     if (((objectProperties ^ 0xffffffff) > -31) || (objectProperties >= 35)) {
                                         if (objectProperties != 40) {
                                             if (objectProperties != 41) {
                                                 if (objectProperties == 60) {
-                                                    anInt2699 = stream.method980(-124);
+                                                    anInt2699 = stream.readShort(-124);
                                                 } else if (objectProperties == 62) {
                                                     aBoolean2750 = true;
                                                 } else if (objectProperties == 64) {
@@ -631,56 +631,56 @@ public class ObjectDef extends Class37_Sub4 {
                                                 } else if (objectProperties != 65) {
                                                     if (objectProperties != 66) {
                                                         if (objectProperties == 67) {
-                                                            scaleFactor_X = (stream.method980(-127));
+                                                            scaleFactor_X = (stream.readShort(-127));
                                                         } else if (objectProperties != 68) {
                                                             if (objectProperties == 69) {
-                                                                anInt2708 = (stream.method978(19276 - 19150));
+                                                                anInt2708 = (stream.readByte(19276 - 19150));
                                                             } else if (objectProperties == 70) {
-                                                                anInt2713 = (stream.method931((byte) -38));
+                                                                anInt2713 = (stream.readSignedShort((byte) -38));
                                                             } else if (objectProperties != 71) {
                                                                 if (objectProperties == 72) {
-                                                                    anInt2749 = (stream.method931((byte) 110));
+                                                                    anInt2749 = (stream.readSignedShort((byte) 110));
                                                                 } else if (objectProperties == 73) {
                                                                     aBoolean2728 = true;
                                                                 } else if (objectProperties != 74) {
                                                                     if (objectProperties == 75) {
-                                                                        anInt2719 = stream.method978(119);
+                                                                        anInt2719 = stream.readByte(119);
                                                                     } else if (objectProperties != 77) {
                                                                         if (objectProperties == 78) {
-                                                                            soundId = stream.method980(19276 - 19401);
-                                                                            soundRange = stream.method978(119);
+                                                                            soundId = stream.readShort(19276 - 19401);
+                                                                            soundRange = stream.readByte(119);
                                                                         } else if (objectProperties == 79) {
-                                                                            anInt2727 = stream.method980(88);
-                                                                            anInt2692 = stream.method980(19276 ^ ~0x4b53);
-                                                                            soundRange = stream.method978(126);
+                                                                            anInt2727 = stream.readShort(88);
+                                                                            anInt2692 = stream.readShort(19276 ^ ~0x4b53);
+                                                                            soundRange = stream.readByte(126);
 
-                                                                            int i_40_ = stream.method978(19276 ^ 0x4b34);
+                                                                            int i_40_ = stream.readByte(19276 ^ 0x4b34);
                                                                             anIntArray2714 = new int[i_40_];
 
                                                                             for (int i_41_ = 0; (i_40_ ^ 0xffffffff) < (i_41_ ^ 0xffffffff); i_41_++)
-                                                                                anIntArray2714[i_41_] = stream.method980(-123);
+                                                                                anIntArray2714[i_41_] = stream.readShort(-123);
                                                                         } else if (objectProperties == 81) {
-                                                                            anInt2698 = 256 * stream.method978(121);
+                                                                            anInt2698 = 256 * stream.readByte(121);
                                                                         }
                                                                     } else {
-                                                                        anInt2707 = stream.method980(-121);
+                                                                        anInt2707 = stream.readShort(-121);
 
                                                                         if (anInt2707 == 65535) {
                                                                             anInt2707 = -1;
                                                                         }
 
-                                                                        anInt2693 = stream.method980(-124);
+                                                                        anInt2693 = stream.readShort(-124);
 
                                                                         if (anInt2693 == 65535) {
                                                                             anInt2693 = -1;
                                                                         }
 
-                                                                        int i_42_ = stream.method978(125);
+                                                                        int i_42_ = stream.readByte(125);
 
                                                                         anIntArray2702 = new int[i_42_ + 1];
 
                                                                         for (int i_43_ = 0; (i_42_ ^ 0xffffffff) <= (i_43_ ^ 0xffffffff); i_43_++) {
-                                                                            anIntArray2702[i_43_] = stream.method980(9);
+                                                                            anIntArray2702[i_43_] = stream.readShort(9);
 
                                                                             if ((anIntArray2702[i_43_] ^
                                                                                     0xffffffff) == -65536) {
@@ -692,54 +692,54 @@ public class ObjectDef extends Class37_Sub4 {
                                                                     aBoolean2744 = true;
                                                                 }
                                                             } else {
-                                                                anInt2738 = (stream.method931((byte) -52));
+                                                                anInt2738 = (stream.readSignedShort((byte) -52));
                                                             }
                                                         } else {
-                                                            anInt2706 = (stream.method980(-124));
+                                                            anInt2706 = (stream.readShort(-124));
                                                         }
                                                     } else {
-                                                        scaleFactor_Z = (stream.method980(19276 +
+                                                        scaleFactor_Z = (stream.readShort(19276 +
                                                                 -19305));
                                                     }
                                                 } else {
-                                                    scaleFactor_Y = stream.method980(-127);
+                                                    scaleFactor_Y = stream.readShort(-127);
                                                 }
                                             } else {
-                                                int i_44_ = stream.method978(119);
+                                                int i_44_ = stream.readByte(119);
 
                                                 aShortArray2711 = new short[i_44_];
 
                                                 aShortArray2741 = new short[i_44_];
 
                                                 for (int i_45_ = 0; ((i_44_ ^ 0xffffffff) < (i_45_ ^ 0xffffffff)); i_45_++) {
-                                                    aShortArray2741[i_45_] = (short) (stream.method980(-120));
+                                                    aShortArray2741[i_45_] = (short) (stream.readShort(-120));
 
-                                                    aShortArray2711[i_45_] = (short) (stream.method980(Class37_Sub4_Sub7_Sub1_Sub1.method502(
+                                                    aShortArray2711[i_45_] = (short) (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                                                 19276, -19276)));
                                                 }
                                             }
                                         } else {
-                                            int i_46_ = stream.method978(117);
+                                            int i_46_ = stream.readByte(117);
                                             aShortArray2715 = new short[i_46_];
                                             aShortArray2718 = new short[i_46_];
 
                                             for (int i_47_ = 0; ((i_47_ ^ 0xffffffff) > (i_46_ ^ 0xffffffff)); i_47_++) {
-                                                aShortArray2718[i_47_] = (short) (stream.method980(-125));
-                                                aShortArray2715[i_47_] = (short) (stream.method980(14));
+                                                aShortArray2718[i_47_] = (short) (stream.readShort(-125));
+                                                aShortArray2715[i_47_] = (short) (stream.readShort(14));
                                             }
                                         }
                                     } else {
-                                        contextMenu[objectProperties - 30] = stream.method944((byte) 107);
+                                        contextMenu[objectProperties - 30] = stream.readString();
 
                                         if (contextMenu[objectProperties - 30].method159(Stream.aJString_2059,(byte) 113)) {
                                             contextMenu[objectProperties - 30] = null;
                                         }
                                     }
                                 } else {
-                                    anInt2739 = 5 * stream.method982((byte) 100);
+                                    anInt2739 = 5 * stream.readSignedByte((byte) 100);
                                 }
                             } else {
-                                animation = stream.method980(-128);
+                                animation = stream.readShort(-128);
 
                                 if ((animation ^ 0xffffffff) == -65536) {
                                     animation = -1;
@@ -749,17 +749,17 @@ public class ObjectDef extends Class37_Sub4 {
                             aBoolean2747 = true;
                         }
                     } else {
-                        anInt2726 = stream.method978(119);
+                        anInt2726 = stream.readByte(119);
                     }
                 } else {
                     ProjectileBlocked = false;
                     anInt2740 = 0;
                 }
             } else {
-                tileWidth = stream.method978(19276 - 19158);
+                tileWidth = stream.readByte(19276 - 19158);
             }
         } else {
-            name = stream.method944((byte) -84);
+            name = stream.readString();
         }
         totalObjectsLoaded++;
     }
@@ -994,7 +994,7 @@ public class ObjectDef extends Class37_Sub4 {
     public void method691(Stream stream) {
         
 	for (;;) {
-            int objectProperties = stream.method978(118);
+            int objectProperties = stream.readByte(118);
 
             if (objectProperties == 0) {
                 break;

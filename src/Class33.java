@@ -208,7 +208,7 @@ public class Class33 {
 
                         i_22_ += (i_23_ + -1);
 
-                        int i_24_ = stream.method978(117);
+                        int i_24_ = stream.readByte(117);
                         int i_25_ = i_22_ >> 467110028;
                         int i_26_ = 0x3f & i_22_;
                         int i_27_ = 0x3f & (i_22_ >> 1114178406);
