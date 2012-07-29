@@ -14,15 +14,15 @@ public class Signlink implements Runnable {
     public static Method aMethod1044;
     public Interface2 anInterface2_1030;
     public File aFile1032 = null;
-    public Class70 cacheDataFile;
+    public RSFile cacheDataFile;
     public EventQueue anEventQueue1036;
-    public Class70 randomFile = null;
+    public RSFile randomFile = null;
     public Thread aThread1038;
     public File aFile1040;
-    public Class70 cacheIndex255;
+    public RSFile cacheIndex255;
     public boolean aBoolean1043 = false;
     public Applet anApplet1045;
-    public Class70[] cacheIndexFiles;
+    public RSFile[] cacheIndexFiles;
     public Class23 nextResource;
     public Class23 aClass23_1048;
 
@@ -277,7 +277,7 @@ public class Signlink implements Runnable {
                                     File file0 = new File(file, "random.dat");
 
                                     if ((i_10_ == 1) || file0.exists()) {
-                                        randomFile = new Class70(file0, "rw", 25L);
+                                        randomFile = new RSFile(file0, "rw", 25L);
                                     }
                                 } catch (Exception exception) {
                                     randomFile = null;
@@ -302,23 +302,23 @@ public class Signlink implements Runnable {
                                         continue;
                                     }
 
-                                    cacheDataFile = new Class70(file_15_, "rw", 52428800L);
-                                    cacheIndexFiles = new Class70[i_7_];
+                                    cacheDataFile = new RSFile(file_15_, "rw", 52428800L);
+                                    cacheIndexFiles = new RSFile[i_7_];
 
                                     for (int i_16_ = 0; i_16_< i_7_; i_16_++)
-                                        cacheIndexFiles[i_16_] = (new Class70(new File(file, ("main_file_cache.idx" + i_16_)), "rw", 1048576L));
+                                        cacheIndexFiles[i_16_] = (new RSFile(new File(file, ("main_file_cache.idx" + i_16_)), "rw", 1048576L));
 
-                                    cacheIndex255 = (new Class70(new File(file, "main_file_cache.idx255"), "rw", 1048576L));
+                                    cacheIndex255 = (new RSFile(new File(file, "main_file_cache.idx255"), "rw", 1048576L));
 
                                     aFile1032 = aFile1040 = file;
                                 } catch (Exception exception) {
                                     try {
-                                        cacheDataFile.method1257(12);
+                                        cacheDataFile.close(12);
 
 										for (int i_17_ = 0; i_17_ < i_7_; i_17_++)
-                                            cacheIndexFiles[i_17_].method1257(i_8_ + 19282);
+                                            cacheIndexFiles[i_17_].close(i_8_ + 19282);
 
-                                        cacheIndex255.method1257(-121);
+                                        cacheIndex255.close(-121);
                                     } catch (Exception exception_18_) {
                                         /* empty */
                                     }
@@ -367,7 +367,7 @@ public class Signlink implements Runnable {
 
         if (cacheDataFile != null) {
             try {
-                cacheDataFile.method1257(111);
+                cacheDataFile.close(111);
             } catch (java.io.IOException ioexception) {
                 /* empty */
             }
@@ -375,7 +375,7 @@ public class Signlink implements Runnable {
 
         if (cacheIndex255 != null) {
             try {
-                cacheIndex255.method1257(-123);
+                cacheIndex255.close(-123);
             } catch (java.io.IOException ioexception) {
                 /* empty */
             }
@@ -386,7 +386,7 @@ public class Signlink implements Runnable {
 				for (int i_19_ = 0; i_19_ < cacheIndexFiles.length; i_19_++) {
                     if (cacheIndexFiles[i_19_] != null) {
                         try {
-                            cacheIndexFiles[i_19_].method1257(-118);
+                            cacheIndexFiles[i_19_].close(-118);
                         } catch (java.io.IOException ioexception) {
                             /* empty */
                         }
@@ -397,7 +397,7 @@ public class Signlink implements Runnable {
             do {
                 if (randomFile != null) {
                     try {
-                        randomFile.method1257(52);
+                        randomFile.close(52);
                     } catch (java.io.IOException ioexception) {
                         break;
                     }
