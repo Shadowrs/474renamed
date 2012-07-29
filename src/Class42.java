@@ -467,8 +467,8 @@ public class Class42 {
                     Class43.anInt956 = 20;
                     Class37_Sub9_Sub28.aBoolean3422 = false;
                     aStream_Sub1_936.method989(-1494101117, 169);
-                    aStream_Sub1_936.method962(Class76.anInt1439, false);
-                    aStream_Sub1_936.method962(Class37_Sub14.anInt2127,
+                    aStream_Sub1_936.writeShortLE(Class76.anInt1439, false);
+                    aStream_Sub1_936.writeShortLE(Class37_Sub14.anInt2127,
                         false);
                 }
 
@@ -604,7 +604,7 @@ public class Class42 {
                                             i_30_);
                                         aStream_Sub1_936.writeInt2(false,
                                             (Class37_Sub25.aClass18_2285.anInt402));
-                                        aStream_Sub1_936.method962(Class37_Sub9.anInt1979,
+                                        aStream_Sub1_936.writeShortLE(Class37_Sub9.anInt1979,
                                             false);
                                     }
                                 } else if ((((Class37_Sub2.anInt1825 ^

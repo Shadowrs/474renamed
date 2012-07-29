@@ -253,7 +253,7 @@ public class Class37_Sub5 extends Class37 {
                     RSSocket.anInt490 = 2;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class42.aStream_Sub1_936.method989(-1494101117, 160);
-                    Class42.aStream_Sub1_936.method962(i_20_, false);
+                    Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
                 }
             }
 
@@ -304,12 +304,12 @@ public class Class37_Sub5 extends Class37 {
                     i_17_ + Class37_Sub18.anInt2200);
                 Class42.aStream_Sub1_936.writeShortA(19058, RSApplet.anInt174);
                 Class37_Sub9_Sub7.anInt3028++;
-                Class42.aStream_Sub1_936.method962(0x7fff &
+                Class42.aStream_Sub1_936.writeShortLE(0x7fff &
                     (i_20_ >> 196251534), false);
                 Class42.aStream_Sub1_936.writeShortLEA(true,
                     i_18_ + Class15_Sub1.anInt1738);
                 Class42.aStream_Sub1_936.writeInt1(Class37_Sub9_Sub21.anInt3317);
-                Class42.aStream_Sub1_936.method962(Class57.anInt1101,
+                Class42.aStream_Sub1_936.writeShortLE(Class57.anInt1101,
                     false);
             }
 
@@ -318,7 +318,7 @@ public class Class37_Sub5 extends Class37 {
                 Class42.aStream_Sub1_936.method989(-1494101117, 55);
                 Class42.aStream_Sub1_936.writeShort(848881960, i_17_);
                 Class42.aStream_Sub1_936.writeInt2(false, i_18_);
-                Class42.aStream_Sub1_936.method962(i_20_, false);
+                Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
                 Class42.anInt939 = 0;
 
                 Class37_Sub4_Sub13.aClass18_2797 = Class37_Sub9_Sub14.method820(i_18_,
@@ -439,9 +439,9 @@ public class Class37_Sub5 extends Class37 {
                 Class27.anInt676 = Class37_Sub13.anInt2113;
                 Class42.aStream_Sub1_936.method989(-1494101117, 105);
                 Class42.aStream_Sub1_936.writeShortA(19058, i_20_);
-                Class42.aStream_Sub1_936.method962(Class37_Sub18.anInt2200 +
+                Class42.aStream_Sub1_936.writeShortLE(Class37_Sub18.anInt2200 +
                     i_17_, false);
-                Class42.aStream_Sub1_936.method962(i_18_ +
+                Class42.aStream_Sub1_936.writeShortLE(i_18_ +
                     Class15_Sub1.anInt1738, false);
             }
 
@@ -466,7 +466,7 @@ public class Class37_Sub5 extends Class37 {
                 Class37_Sub9_Sub8.anInt3057 = 0;
                 Class42.aStream_Sub1_936.method989(-1494101117, 230);
                 Class42.aStream_Sub1_936.writeShortA(19058, i_20_);
-                Class42.aStream_Sub1_936.method962(i_17_ +
+                Class42.aStream_Sub1_936.writeShortLE(i_17_ +
                     Class37_Sub18.anInt2200, false);
                 Class42.aStream_Sub1_936.writeShortA(19058,
                     i_18_ + Class15_Sub1.anInt1738);
@@ -499,7 +499,7 @@ public class Class37_Sub5 extends Class37 {
                 Class42.aStream_Sub1_936.writeIntLE(i_18_, -1629130328);
                 Class42.aStream_Sub1_936.writeShortLEA(true, i_20_);
                 ItemDef.anInt2513++;
-                Class42.aStream_Sub1_936.method962(i_17_, false);
+                Class42.aStream_Sub1_936.writeShortLE(i_17_, false);
                 Class42.anInt939 = 0;
 
                 Class37_Sub4_Sub13.aClass18_2797 = Class37_Sub9_Sub14.method820(i_18_,
@@ -555,7 +555,7 @@ public class Class37_Sub5 extends Class37 {
                 Class42.aStream_Sub1_936.writeInt1(i_18_);
                 Class42.aStream_Sub1_936.writeShortLEA(true,
                     Class57.anInt1101);
-                Class42.aStream_Sub1_936.method962(i_17_, false);
+                Class42.aStream_Sub1_936.writeShortLE(i_17_, false);
                 Class42.aStream_Sub1_936.writeInt1(Class37_Sub9_Sub21.anInt3317);
                 Class42.aStream_Sub1_936.writeShortLEA(true, i_20_);
                 Class42.anInt939 = 0;
@@ -590,9 +590,9 @@ public class Class37_Sub5 extends Class37 {
                 Class42.aStream_Sub1_936.method989(-1494101117, 4);
                 Class42.aStream_Sub1_936.writeShortLEA(true,
                     Class37_Sub18.anInt2200 + i_17_);
-                Class42.aStream_Sub1_936.method962((i_20_ >> -1202336402) &
+                Class42.aStream_Sub1_936.writeShortLE((i_20_ >> -1202336402) &
                     0x7fff, false);
-                Class42.aStream_Sub1_936.method962(Class15_Sub1.anInt1738 +
+                Class42.aStream_Sub1_936.writeShortLE(Class15_Sub1.anInt1738 +
                     i_18_, false);
             }
 
@@ -709,7 +709,7 @@ public class Class37_Sub5 extends Class37 {
                     RSApplet.anInt174);
                 Class42.aStream_Sub1_936.writeShortA(19058,
                     Class15_Sub1.anInt1738 + i_18_);
-                Class42.aStream_Sub1_936.method962(i_20_, false);
+                Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
                 Class42.aStream_Sub1_936.writeShortLEA(true,
                     i_17_ + Class37_Sub18.anInt2200);
                 Class42.aStream_Sub1_936.writeInt2(false,
@@ -724,7 +724,7 @@ public class Class37_Sub5 extends Class37 {
                 Class42.aStream_Sub1_936.method989(-1494101117, 145);
                 Class42.aStream_Sub1_936.writeShort(848881960,
                     i_17_ - -Class37_Sub18.anInt2200);
-                Class42.aStream_Sub1_936.method962(i_18_ -
+                Class42.aStream_Sub1_936.writeShortLE(i_18_ -
                     -Class15_Sub1.anInt1738, false);
                 Class42.aStream_Sub1_936.writeShort(848881960,
                     (0x1fffd1cc & i_20_) >> 169262414);
@@ -856,7 +856,7 @@ public class Class37_Sub5 extends Class37 {
                         Applet_Sub1.anInt8 = Class33.anInt764;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             196);
-                        Class42.aStream_Sub1_936.method962(i_20_, false);
+                        Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
                     }
                 }
 
@@ -891,7 +891,7 @@ public class Class37_Sub5 extends Class37 {
                     Class42.aStream_Sub1_936.method989(-1494101117, 203);
                     Class42.aStream_Sub1_936.writeShort(848881960,
                         i_17_ - -Class37_Sub18.anInt2200);
-                    Class42.aStream_Sub1_936.method962((i_20_ >> -2083371858) &
+                    Class42.aStream_Sub1_936.writeShortLE((i_20_ >> -2083371858) &
                         0x7fff, false);
                     Class42.aStream_Sub1_936.writeShortA(19058,
                         Class15_Sub1.anInt1738 + i_18_);
@@ -929,7 +929,7 @@ public class Class37_Sub5 extends Class37 {
                         Applet_Sub1.anInt8 = Class33.anInt764;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             56);
-                        Class42.aStream_Sub1_936.method962(i_20_, false);
+                        Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
                     }
                 }
 
@@ -937,8 +937,8 @@ public class Class37_Sub5 extends Class37 {
                     Class42.aStream_Sub1_936.method989(-1494101117, 238);
                     Class37_Sub1.anInt1800++;
                     Class42.aStream_Sub1_936.writeInt2(false, i_18_);
-                    Class42.aStream_Sub1_936.method962(i_20_, false);
-                    Class42.aStream_Sub1_936.method962(Class21.anInt558,
+                    Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
+                    Class42.aStream_Sub1_936.writeShortLE(Class21.anInt558,
                         false);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_17_);
                     Class42.aStream_Sub1_936.writeInt(Class32.anInt737);
@@ -1032,10 +1032,10 @@ public class Class37_Sub5 extends Class37 {
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 8);
-                    Class42.aStream_Sub1_936.method962(i_20_, false);
-                    Class42.aStream_Sub1_936.method962(i_18_ -
+                    Class42.aStream_Sub1_936.writeShortLE(i_20_, false);
+                    Class42.aStream_Sub1_936.writeShortLE(i_18_ -
                         -Class15_Sub1.anInt1738, false);
-                    Class42.aStream_Sub1_936.method962(i_17_ +
+                    Class42.aStream_Sub1_936.writeShortLE(i_17_ +
                         Class37_Sub18.anInt2200, false);
                 }
 
@@ -1046,7 +1046,7 @@ public class Class37_Sub5 extends Class37 {
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class42.aStream_Sub1_936.method989(-1494101117, 226);
-                    Class42.aStream_Sub1_936.method962((i_20_ >> 938302542) &
+                    Class42.aStream_Sub1_936.writeShortLE((i_20_ >> 938302542) &
                         0x7fff, false);
                 }
 
@@ -1089,11 +1089,11 @@ public class Class37_Sub5 extends Class37 {
                             Class27.anInt676 = Class37_Sub13.anInt2113;
                             Class42.aStream_Sub1_936.method989(-1494101117,
                                 13);
-                            Class42.aStream_Sub1_936.method962(i_20_,
+                            Class42.aStream_Sub1_936.writeShortLE(i_20_,
                                 false);
                             Class42.aStream_Sub1_936.writeIntLE(Class37_Sub9_Sub21.anInt3317,
                                 -1629130328);
-                            Class42.aStream_Sub1_936.method962(RSApplet.anInt174,
+                            Class42.aStream_Sub1_936.writeShortLE(RSApplet.anInt174,
                                 false);
                             Class42.aStream_Sub1_936.writeShortA(19058,
                                 Class57.anInt1101);
@@ -1230,9 +1230,9 @@ public class Class37_Sub5 extends Class37 {
                             174);
                         Class42.aStream_Sub1_936.writeShortLEA(true,
                             i_17_ - -Class37_Sub18.anInt2200);
-                        Class42.aStream_Sub1_936.method962((i_20_ >> -771723058) &
+                        Class42.aStream_Sub1_936.writeShortLE((i_20_ >> -771723058) &
                             0x7fff, false);
-                        Class42.aStream_Sub1_936.method962(Class15_Sub1.anInt1738 +
+                        Class42.aStream_Sub1_936.writeShortLE(Class15_Sub1.anInt1738 +
                             i_18_, false);
                     }
 
@@ -1259,7 +1259,7 @@ public class Class37_Sub5 extends Class37 {
                         Class42.aStream_Sub1_936.writeShortA(19058,
                             Class37_Sub18.anInt2200 + i_17_);
                         Class42.aStream_Sub1_936.writeShortA(19058, i_20_);
-                        Class42.aStream_Sub1_936.method962(Class15_Sub1.anInt1738 +
+                        Class42.aStream_Sub1_936.writeShortLE(Class15_Sub1.anInt1738 +
                             i_18_, false);
                         Class42.aStream_Sub1_936.writeIntLE(Class32.anInt737,
                             -1629130328);

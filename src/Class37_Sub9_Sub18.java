@@ -138,7 +138,7 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
             }
 
             int i_15_ = stream.bufferLocation;
-            stream.method951((byte) 37, jstring.anInt1650);
+            stream.writeSignedByteOrShort((byte) 37, jstring.anInt1650);
 
             stream.bufferLocation += (Class15_Sub1.aClass14_1746.method105(32,
                 stream.buffer, 0, stream.bufferLocation,

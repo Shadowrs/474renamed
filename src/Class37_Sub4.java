@@ -390,7 +390,7 @@ public class Class37_Sub4 extends Class37 {
 
             Class42.aStream_Sub1_936.writeShortA(19058,
                 i_35_ + Class37_Sub18.anInt2200);
-            Class42.aStream_Sub1_936.method962(i_36_ +
+            Class42.aStream_Sub1_936.writeShortLE(i_36_ +
                 Class15_Sub1.anInt1738, false);
             Class42.aStream_Sub1_936.writeSignedByte(i_14_ + 126,
                 (!RSSocket.aBooleanArray484[82]) ? 0 : 1);

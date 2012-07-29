@@ -555,7 +555,7 @@ public class Client extends Applet_Sub1 {
         Class32.method288(20);
         anInt1730++;
         Class55.method1142((byte) -67);
-        Stream.method985(false);
+        Stream.resetStaticVariables(false);
         RSSocket.resetStaticVariables(-3);
         Class15_Sub1.method138(11729);
         Class42.method1086((byte) -120);

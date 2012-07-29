@@ -711,7 +711,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -11) {
-                int i_43_ = Class83.packetStream.method979(i +
+                int i_43_ = Class83.packetStream.readIntLE(i +
                         -52131575);
                 int i_44_ = Class83.packetStream.readShort();
                 Class80.anIntArray1503[i_44_] = i_43_;
@@ -1189,7 +1189,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -256) {
                 int i_79_ = Class83.packetStream.readShortLEA(i ^
                         ~0x2);
-                int i_80_ = Class83.packetStream.method979(-52131576);
+                int i_80_ = Class83.packetStream.readIntLE(-52131576);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_80_, 4096);
 
                 if ((class18 != null) &&
@@ -1658,7 +1658,7 @@ public class PacketParser extends Class37_Sub9 {
                     int i_124_ = Class83.packetStream.readByteC((byte) 75);
 
                     if ((i_124_ ^ 0xffffffff) == -256) {
-                        i_124_ = Class83.packetStream.method979(-52131576);
+                        i_124_ = Class83.packetStream.readIntLE(-52131576);
                     }
                     int i_125_ = Class83.packetStream.readShortLEA(2);
 
@@ -1866,7 +1866,7 @@ public class PacketParser extends Class37_Sub9 {
                 int i_142_ = Class83.packetStream.readShortLEA(i ^
                         ~0x2);
                 int i_143_ = Class83.packetStream.readShortLEA(2);
-                int i_144_ = Class83.packetStream.method979(i ^
+                int i_144_ = Class83.packetStream.readIntLE(i ^
                         0x31b76f7);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_144_, i +
                         4097);
@@ -1877,7 +1877,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -134) {
-                int i_145_ = Class83.packetStream.method979(-52131576);
+                int i_145_ = Class83.packetStream.readIntLE(-52131576);
                 int i_146_ = Class83.packetStream.readShortLEA(2);
                 int i_147_ = Class83.packetStream.readInt(-28);
 
@@ -1990,7 +1990,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if (Class37_Sub9_Sub17.packetId == 76) {
                 int i_155_ = Class83.packetStream.readSignedShortLE(2);
-                int i_156_ = Class83.packetStream.method979(i +
+                int i_156_ = Class83.packetStream.readIntLE(i +
                         -52131575);
                 int i_157_ = Class83.packetStream.readSignedShortA(-2453);
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_156_, 4096);
