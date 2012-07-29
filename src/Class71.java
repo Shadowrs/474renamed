@@ -83,7 +83,7 @@ public class Class71 {
         anInt1368++;
 
         if (Class8.aLong157 > l) {
-            Class4.aLong108 += (-l + Class8.aLong157);
+            ISAAC.aLong108 += (-l + Class8.aLong157);
         }
 
         Class8.aLong157 = l;
@@ -92,7 +92,7 @@ public class Class71 {
             return -70L;
         }
 
-        return l - -Class4.aLong108;
+        return l - -ISAAC.aLong108;
     }
 
     public static void method1264(byte i) {

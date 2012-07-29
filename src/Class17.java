@@ -352,7 +352,7 @@ public class Class17 {
                             false, l);
                         Class37_Sub4_Sub7_Sub1_Sub1.anInt3953++;
                     } else {
-                        Class4.aClass77_92.method1293(464, class37_sub4_sub13);
+                        ISAAC.aClass77_92.method1293(464, class37_sub4_sub13);
                         Class37_Sub4_Sub18.aClass13_2905.method101(class37_sub4_sub13,
                             false, l);
                         Class37_Sub9_Sub26.anInt3396++;

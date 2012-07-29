@@ -1607,7 +1607,7 @@ public class Class54 {
         Class15_Sub1.anInt1748 = 0;
         RuntimeException_Sub1.anInt1630 = 0;
         RuntimeException_Sub1.anInt1631 = 0;
-        Class4.anInt106 = 0;
+        ISAAC.anInt106 = 0;
         Class32_Sub1.anInt1781 = 0;
         Class37_Sub9_Sub37.anInt3600 = 0;
         Class37_Sub3_Sub1.anInt2318 = 0;
@@ -1818,11 +1818,11 @@ public class Class54 {
         Class37_Sub20.anInt2208 = 0;
         Class82.anInt1716 = 0;
         Class66.anInt1253 = 0;
-        Class4.anInt99 = 0;
+        ISAAC.anInt99 = 0;
         Class37_Sub3_Sub3.anInt2392 = 0;
         Class37_Sub9_Sub7.anInt3038 = 0;
         Class37_Sub9_Sub30.anInt3469 = 0;
-        Class4.anInt95 = 0;
+        ISAAC.anInt95 = 0;
         Class15_Sub1.anInt1739 = 0;
         Class37_Sub9_Sub29.anInt3456 = 0;
         Class37_Sub4_Sub12.anInt2779 = 0;
@@ -2130,7 +2130,7 @@ public class Class54 {
         Class66.anInt1246 = 0;
         JString.anInt1648 = 0;
         Class29.anInt712 = 0;
-        Class4.anInt100 = 0;
+        ISAAC.anInt100 = 0;
         Class37_Sub4_Sub10.anInt2679 = 0;
         Class32_Sub1.anInt1791 = 0;
         Class65.anInt1230 = 0;
@@ -2176,7 +2176,7 @@ public class Class54 {
         Class37_Sub23.anInt2230 = 0;
         Class60.anInt1157 = 0;
         Class37_Sub4_Sub7.anInt2632 = 0;
-        Class4.anInt101 = 0;
+        ISAAC.anInt101 = 0;
         Class37_Sub3_Sub3.anInt2341 = 0;
         Applet_Sub1.anInt16 = 0;
         Class37_Sub9_Sub12.anInt3118 = 0;

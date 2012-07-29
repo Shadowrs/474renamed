@@ -580,7 +580,7 @@ public class Client extends Applet_Sub1 {
         Class37_Sub4_Sub15.method713((byte) -26);
         Class37_Sub6.method739(0);
         Class37.method327(-23867);
-        Class4.method49(i + -43587);
+        ISAAC.resetStaticVariables(i + -43587);
         Class88.method1334(false);
         Class65.method1178(115);
         Class37_Sub4_Sub7_Sub6.method554();
@@ -890,7 +890,7 @@ public class Client extends Applet_Sub1 {
         }
 
         if ((Class32.anInt740 == 30) && (Class37_Sub4_Sub13.anInt2793 == 0) &&
-                !Class4.aBoolean93) {
+                !ISAAC.aBoolean93) {
             try {
                 Graphics graphics = Class37_Sub9.aCanvas1967.getGraphics();
 
@@ -914,7 +914,7 @@ public class Client extends Applet_Sub1 {
                     try {
                         Graphics graphics = Class37_Sub9.aCanvas1967.getGraphics();
                         Class21.aClass32_568.method290(0, graphics, 0, false);
-                        Class4.aBoolean93 = false;
+                        ISAAC.aBoolean93 = false;
 
                         for (int i_18_ = 0;
                                 ((i_18_ ^ 0xffffffff) > (Class37_Sub9_Sub37.anInt3597 ^

@@ -71,7 +71,7 @@ public class Class37_Sub18 extends Class37 {
 
         Class37_Sub4_Sub7_Sub1_Sub1.aJString_3959 = Class37_Sub9_Sub4.aJString_2975;
         Class37_Sub13.aJString_2105 = Class8.aJString_158;
-        Class37_Sub4_Sub5.aJString_2601 = Class4.aJString_91;
+        Class37_Sub4_Sub5.aJString_2601 = ISAAC.aJString_91;
         Class65.aJString_1228 = RuntimeException_Sub1.aJString_1634;
         Class37_Sub4_Sub7_Sub3.aJString_3745 = Class37_Sub3_Sub1.aJString_2324;
         ItemDef.aJString_2461 = Class17.aJString_317;
@@ -125,7 +125,7 @@ public class Class37_Sub18 extends Class37 {
         Class88.aJString_1607 = RSSocket.aJString_480;
 
         ObjectDef.aJString_2704 = Class37_Sub4_Sub7_Sub3.aJString_3754;
-        Class37_Sub4_Sub5.aJString_2606 = Class4.aJString_91;
+        Class37_Sub4_Sub5.aJString_2606 = ISAAC.aJString_91;
         Class37_Sub4.aJString_1849 = Class37_Sub9_Sub2.aJString_2933;
         Class89.aJString_1616 = Class77.aJString_1450;
         Class27.aJString_682 = Class41.aJString_895;
@@ -176,7 +176,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub9_Sub35.aJString_3568 = Class56.aJString_1083;
         ItemDef.aJString_2444 = Class17.aJString_317;
         Class26.aJString_663 = Class37_Sub9_Sub12.aJString_3119;
-        JString.aJString_1682 = Class4.aJString_98;
+        JString.aJString_1682 = ISAAC.aJString_98;
         Class37_Sub9_Sub6.aJString_3009 = Class3.aJString_86;
         Class37_Sub9_Sub18.aJString_3234 = Login.aJString_786;
         Class37_Sub9_Sub10.aJString_3090 = Class37_Sub9_Sub2.aJString_2930;
@@ -218,7 +218,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub10.aJString_1998 = Class37_Sub4_Sub7_Sub1_Sub2.aJString_3991;
         Class37_Sub2.aJString_1821 = Class8.aJString_160;
         Login.aJString_791 = Class37_Sub2.aJString_1831;
-        ItemDef.aJString_2496 = Class4.aJString_107;
+        ItemDef.aJString_2496 = ISAAC.aJString_107;
         Class22.aJString_575 = Class37_Sub9_Sub16.aJString_3195;
         Class66.aJString_1263 = Login.aJString_784;
         Class37_Sub9_Sub30.aJString_3462 = Class1.aJString_72;
