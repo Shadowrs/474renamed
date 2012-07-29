@@ -115,7 +115,7 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
                         RuntimeException_Sub1.method1339(class18, 25),
                         (byte) -126)) {
                 if ((i ^ 0xffffffff) == -2) {
-                    Class42.aStream_Sub1_936.method989(-1494101117, 234);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 234);
                     Class41.anInt901++;
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(i_4_ + 848881852,
@@ -123,7 +123,7 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
                 }
 
                 if (i == 2) {
-                    Class42.aStream_Sub1_936.method989(-1494101117, 87);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 87);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     RSApplet.anInt179++;
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
@@ -131,20 +131,20 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
 
                 if ((i ^ 0xffffffff) == -4) {
                     Class60.anInt1157++;
-                    Class42.aStream_Sub1_936.method989(-1494101117, 37);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 37);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                 }
 
                 if (i == 4) {
-                    Class42.aStream_Sub1_936.method989(-1494101117, 3);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 3);
                     Class25.anInt639++;
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                 }
 
                 if (i == 5) {
-                    Class42.aStream_Sub1_936.method989(-1494101117, 70);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 70);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                     Class37.anInt823++;
@@ -152,20 +152,20 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
 
                 if ((i ^ 0xffffffff) == -7) {
                     Class32_Sub1.anInt1777++;
-                    Class42.aStream_Sub1_936.method989(-1494101117, 29);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 29);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                 }
 
                 if (i == 7) {
                     Class76.anInt1434++;
-                    Class42.aStream_Sub1_936.method989(-1494101117, 192);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 192);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                 }
 
                 if (i == 8) {
-                    Class42.aStream_Sub1_936.method989(i_4_ +
+                    Class42.aStream_Sub1_936.writePacket(i_4_ +
                         -1494101225, 154);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class55.anInt1065++;
@@ -175,7 +175,7 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
 
                 if ((i ^ 0xffffffff) == -10) {
                     Class37_Sub8.anInt1934++;
-                    Class42.aStream_Sub1_936.method989(i_4_ +
+                    Class42.aStream_Sub1_936.writePacket(i_4_ +
                         -1494101225, 65);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(i_4_ ^
@@ -184,7 +184,7 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
 
                 if (i == 10) {
                     Class58.anInt1124++;
-                    Class42.aStream_Sub1_936.method989(-1494101117, 156);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 156);
                     Class42.aStream_Sub1_936.writeInt(i_2_);
                     Class42.aStream_Sub1_936.writeShort(848881960, i_3_);
                 }

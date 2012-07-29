@@ -42,7 +42,7 @@ public class Class37_Sub12 extends Class37 {
     public static void method997(int i) {
         anInt2089++;
 
-        int i_0_ = Class83.packetStream.method996(8, 103);
+        int i_0_ = Class83.packetStream.readBits(8, 103);
 
         if ((RSSocket.anInt487 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
             for (int i_1_ = i_0_;
@@ -60,13 +60,13 @@ public class Class37_Sub12 extends Class37 {
         for (int i_2_ = 0; i_2_ < i_0_; i_2_++) {
             int i_3_ = Class26.anIntArray657[i_2_];
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[i_3_];
-            int i_4_ = Class83.packetStream.method996(1, 97);
+            int i_4_ = Class83.packetStream.readBits(1, 97);
 
             if ((i_4_ ^ 0xffffffff) == -1) {
                 Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
                 class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
             } else {
-                int i_5_ = Class83.packetStream.method996(2, 83);
+                int i_5_ = Class83.packetStream.readBits(2, 83);
 
                 if (i_5_ == 0) {
                     Class26.anIntArray657[RSSocket.anInt487++] = i_3_;
@@ -79,10 +79,10 @@ public class Class37_Sub12 extends Class37 {
 
                     class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 
-                    int i_6_ = Class83.packetStream.method996(3, 19);
+                    int i_6_ = Class83.packetStream.readBits(3, 19);
                     class37_sub4_sub7_sub1_sub2.method495(false, -3523, i_6_);
 
-                    int i_7_ = Class83.packetStream.method996(1, 43);
+                    int i_7_ = Class83.packetStream.readBits(1, 43);
 
                     if ((i_7_ ^ 0xffffffff) == -2) {
                         Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i_3_;
@@ -92,13 +92,13 @@ public class Class37_Sub12 extends Class37 {
 
                     class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 
-                    int i_8_ = Class83.packetStream.method996(3, 122);
+                    int i_8_ = Class83.packetStream.readBits(3, 122);
                     class37_sub4_sub7_sub1_sub2.method495(true, -3523, i_8_);
 
-                    int i_9_ = Class83.packetStream.method996(3, 116);
+                    int i_9_ = Class83.packetStream.readBits(3, 116);
                     class37_sub4_sub7_sub1_sub2.method495(true, -3523, i_9_);
 
-                    int i_10_ = Class83.packetStream.method996(1, 63);
+                    int i_10_ = Class83.packetStream.readBits(1, 63);
 
                     if ((i_10_ ^ 0xffffffff) == -2) {
                         Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i_3_;

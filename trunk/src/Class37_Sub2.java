@@ -305,7 +305,7 @@ public class Class37_Sub2 extends Class37 {
             method333(false);
         }
 
-        Class42.aStream_Sub1_936.method989(i ^ ~0x590e5701, 250);
+        Class42.aStream_Sub1_936.writePacket(i ^ ~0x590e5701, 250);
         Class36.anInt804++;
         anInt1820++;
         Class42.aStream_Sub1_936.writeByteC(8, i_14_);

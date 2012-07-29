@@ -318,7 +318,7 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             }
         }
 
-        Class42.aStream_Sub1_936.method989(-1494101117, 202);
+        Class42.aStream_Sub1_936.writePacket(-1494101117, 202);
         Class42.aStream_Sub1_936.writeSignedByte(99,
             jstring.method172((byte) 38) + -1);
         Class42.aStream_Sub1_936.writeString(jstring.method158(2, -1), 0);
@@ -391,9 +391,9 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             method860(null, true);
         }
 
-        while ((Class83.packetStream.method991(
+        while ((Class83.packetStream.availableBits(
                     Class37_Sub4.packetSize, i + -1435) ^ 0xffffffff) <= -28) {
-            int i_51_ = Class83.packetStream.method996(15, 17);
+            int i_51_ = Class83.packetStream.readBits(15, 17);
             if ((i_51_ ^ 0xffffffff) == -32768) {
                 break;
             }
@@ -409,19 +409,19 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             Class37_Sub4_Sub16.anIntArray2869[Class76.anInt1436++] = i_51_;
             class37_sub4_sub7_sub1_sub1.anInt3641 = Class37_Sub7.anInt1898;
 
-            int i_52_ = Class83.packetStream.method996(5, i ^ 0x14);
+            int i_52_ = Class83.packetStream.readBits(5, i ^ 0x14);
 
             class37_sub4_sub7_sub1_sub1.aClass37_Sub4_Sub15_3955 = Class37_Sub9_Sub34.method912(i +
                     -15,
-                    Class83.packetStream.method996(14, i ^ 0x19));
+                    Class83.packetStream.readBits(14, i ^ 0x19));
 
-            int i_53_ = Class83.packetStream.method996(5, 87);
+            int i_53_ = Class83.packetStream.readBits(5, 87);
 
             if (i_52_ > 15) {
                 i_52_ -= 32;
             }
 
-            int i_54_ = Class83.packetStream.method996(1, 18);
+            int i_54_ = Class83.packetStream.readBits(1, 18);
 
             if ((i_54_ ^ 0xffffffff) == -2) {
                 Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i_51_;
@@ -431,14 +431,14 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
                 i_53_ -= 32;
             }
 
-            int i_55_ = (Class37_Sub9_Sub18.anIntArray3233[Class83.packetStream.method996(3,
+            int i_55_ = (Class37_Sub9_Sub18.anIntArray3233[Class83.packetStream.readBits(3,
                     64)]);
 
             if (bool) {
                 class37_sub4_sub7_sub1_sub1.anInt3681 = class37_sub4_sub7_sub1_sub1.anInt3663 = i_55_;
             }
 
-            int i_56_ = Class83.packetStream.method996(1, 86);
+            int i_56_ = Class83.packetStream.readBits(1, 86);
 
             class37_sub4_sub7_sub1_sub1.anInt3678 = (class37_sub4_sub7_sub1_sub1.aClass37_Sub4_Sub15_3955.anInt2844);
 
@@ -468,6 +468,6 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
         }
 
         anInt3328++;
-        Class83.packetStream.method988(true);
+        Class83.packetStream.finishBitAccess(true);
     }
 }

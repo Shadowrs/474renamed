@@ -253,7 +253,7 @@ while_107_:
                         }
 
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
-                        Class42.aStream_Sub1_936.method989(-1494101117, 1);
+                        Class42.aStream_Sub1_936.writePacket(-1494101117, 1);
                         Class42.aStream_Sub1_936.writeLong(l);
 
                         break;

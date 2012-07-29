@@ -302,7 +302,7 @@ public class Class42 {
                         if ((Class37_Sub9_Sub28.anInt3440 != 0) ||
                                 ((Class37_Sub9_Sub27.aClass55_3417.anInt1079 ^
                                 0xffffffff) <= -41)) {
-                            aStream_Sub1_936.method989(-1494101117, 121);
+                            aStream_Sub1_936.writePacket(-1494101117, 121);
                             Class10.anInt192++;
                             aStream_Sub1_936.writeSignedByte(104, 0);
 
@@ -445,7 +445,7 @@ public class Class42 {
                         i_28_ = 1;
                     }
 
-                    aStream_Sub1_936.method989(-1494101117, 167);
+                    aStream_Sub1_936.writePacket(-1494101117, 167);
                     aStream_Sub1_936.writeIntLE((i_27_ +
                         ((i_29_ << -1805390380) - -(i_28_ << 731042931))),
                         i + -1629130328);
@@ -466,7 +466,7 @@ public class Class42 {
                     Class14.anInt236++;
                     Class43.anInt956 = 20;
                     Class37_Sub9_Sub28.aBoolean3422 = false;
-                    aStream_Sub1_936.method989(-1494101117, 169);
+                    aStream_Sub1_936.writePacket(-1494101117, 169);
                     aStream_Sub1_936.writeShortLE(Class76.anInt1439, false);
                     aStream_Sub1_936.writeShortLE(Class37_Sub14.anInt2127,
                         false);
@@ -476,7 +476,7 @@ public class Class42 {
                         (Class37_Sub20.aBoolean2217 == false)) {
                     Class37_Sub20.aBoolean2217 = true;
                     Class37_Sub9_Sub22.anInt3322++;
-                    aStream_Sub1_936.method989(-1494101117, 34);
+                    aStream_Sub1_936.writePacket(-1494101117, 34);
                     aStream_Sub1_936.writeSignedByte(120, 1);
                 }
 
@@ -484,7 +484,7 @@ public class Class42 {
                         (Class37_Sub20.aBoolean2217 != false)) {
                     Class37_Sub9_Sub22.anInt3322++;
                     Class37_Sub20.aBoolean2217 = false;
-                    aStream_Sub1_936.method989(-1494101117, 34);
+                    aStream_Sub1_936.writePacket(-1494101117, 34);
                     aStream_Sub1_936.writeSignedByte(i + 119, 0);
                 }
 
@@ -596,7 +596,7 @@ public class Class42 {
                                             class18.anIntArray422[i_34_] = 0;
                                         }
 
-                                        aStream_Sub1_936.method989(-1494101117,
+                                        aStream_Sub1_936.writePacket(-1494101117,
                                             166);
                                         aStream_Sub1_936.writeShortLEA(true,
                                             Class37_Sub4_Sub7_Sub7.anInt3850);
@@ -796,7 +796,7 @@ public class Class42 {
                             ObjectDef.anInt2734 = 250;
                             Class43.anInt960++;
                             Class58.method1156(8, 4000);
-                            aStream_Sub1_936.method989(-1494101117, 236);
+                            aStream_Sub1_936.writePacket(-1494101117, 236);
                         }
 
                         Class37_Sub4_Sub7_Sub7.anInt3849++;
@@ -877,7 +877,7 @@ public class Class42 {
 
                         if (Class25.anInt637 > 50) {
                             Class37_Sub16.anInt2153++;
-                            aStream_Sub1_936.method989(-1494101117, 186);
+                            aStream_Sub1_936.writePacket(-1494101117, 186);
                         }
 
                         do {

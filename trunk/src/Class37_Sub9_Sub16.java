@@ -116,7 +116,7 @@ public class Class37_Sub9_Sub16 extends Class37_Sub9 {
         }
 
         anInt3196++;
-        Class42.aStream_Sub1_936.method989(-1494101117, 163);
+        Class42.aStream_Sub1_936.writePacket(-1494101117, 163);
         Class37_Sub9_Sub15.anInt3177++;
         Class42.aStream_Sub1_936.writeLong(0L);
     }

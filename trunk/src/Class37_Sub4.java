@@ -355,14 +355,14 @@ public class Class37_Sub4 extends Class37 {
             int i_36_ = Class37_Sub9_Sub36.anIntArray3572[i_20_];
 
             if (i_9_ == 0) {
-                Class42.aStream_Sub1_936.method989(-1494101117, 46);
+                Class42.aStream_Sub1_936.writePacket(-1494101117, 46);
                 Class42.aStream_Sub1_936.writeSignedByte(102,
                     i_22_ - (-i_22_ + -3));
                 Class37_Sub9.anInt1961++;
             }
 
             if (i_9_ == 1) {
-                Class42.aStream_Sub1_936.method989(-1494101117, 11);
+                Class42.aStream_Sub1_936.writePacket(-1494101117, 11);
                 Class49.anInt1004++;
                 Class42.aStream_Sub1_936.writeSignedByte(i_14_ ^ 0x6e,
                     (i_22_ + i_22_) - -17);
@@ -370,7 +370,7 @@ public class Class37_Sub4 extends Class37 {
 
             if (i_9_ == 2) {
                 Class24.anInt598++;
-                Class42.aStream_Sub1_936.method989(-1494101117, 59);
+                Class42.aStream_Sub1_936.writePacket(-1494101117, 59);
                 Class42.aStream_Sub1_936.writeSignedByte(99,
                     3 + (i_22_ + i_22_));
             }

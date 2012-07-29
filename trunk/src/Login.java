@@ -288,12 +288,12 @@ public class Login {
                 Applet_Sub1.aClass19_38.write(0, (byte) 102,
                     Class58.aStream_Sub1_1106.buffer,
                     Class58.aStream_Sub1_1106.bufferLocation);
-                Class42.aStream_Sub1_936.method990(false, is);
+                Class42.aStream_Sub1_936.initISAAC(false, is);
 
                 for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -5; i_9_++)
                     is[i_9_] += 50;
 
-                Class83.packetStream.method990(false, is);
+                Class83.packetStream.initISAAC(false, is);
                 Class22.anInt580 = 6;
             }
 
@@ -363,7 +363,7 @@ public class Login {
                         Class83.packetStream.buffer);
                     Class83.packetStream.bufferLocation = 0;
 
-                    Class37_Sub9_Sub17.packetId = Class83.packetStream.method986(7);
+                    Class37_Sub9_Sub17.packetId = Class83.packetStream.readPacket(7);
 
                     Applet_Sub1.aClass19_38.read(2, 0, i + 21604,
                         Class83.packetStream.buffer);

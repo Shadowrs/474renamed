@@ -76,7 +76,7 @@ public class Class62 {
     }
 
     public static void method1173(int i) {
-        Class42.aStream_Sub1_936.method989(-1494101117, 151);
+        Class42.aStream_Sub1_936.writePacket(-1494101117, 151);
         Class37_Sub9_Sub34.anInt3542++;
 
         if (i != -9) {

@@ -266,7 +266,7 @@ public class PacketParser extends Class37_Sub9 {
                     (Class83.packetStream.buffer));
                 Class83.packetStream.bufferLocation = 0;
 
-                Class37_Sub9_Sub17.packetId = Class83.packetStream.method986(7);
+                Class37_Sub9_Sub17.packetId = Class83.packetStream.readPacket(7);
                 Class37_Sub4.packetSize = (Class37_Sub9_Sub4.anIntArray2981[Class37_Sub9_Sub17.packetId]);
             }
 

@@ -680,7 +680,7 @@ while_5_:
             anInt85++;
 
             if (l != 0L) {
-                Class42.aStream_Sub1_936.method989(-1494101117, 163);
+                Class42.aStream_Sub1_936.writePacket(-1494101117, 163);
                 Class42.aStream_Sub1_936.writeLong(l);
                 Class37_Sub9_Sub15.anInt3177++;
             }

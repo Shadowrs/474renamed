@@ -561,7 +561,7 @@ public class Client extends Applet_Sub1 {
         Class42.method1086((byte) -120);
         Class69.method1251(false);
         Class37_Sub4_Sub7_Sub1_Sub1.method504(1954378439);
-        PacketStream.method995(-128);
+        PacketStream.setStaticVariables(-128);
         Class67.method1237();
         Class20.method220(1);
         Class18.method189(i ^ ~0xaa12);

@@ -968,7 +968,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             i_57_ = jstring.method175(8109);
                                                                         }
 
-                                                                        Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             249);
                                                                         Class42.aStream_Sub1_936.writeInt(i_57_);
                                                                     } else if (i_24_ == 3105) {
@@ -976,7 +976,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                         JString jstring =
                                                                             Class60.aJStringArray1148[--i_21_];
-                                                                        Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             82);
                                                                         Class42.aStream_Sub1_936.writeLong(jstring.method152(
                                                                                 -69));
@@ -985,7 +985,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                         JString jstring =
                                                                             Class60.aJStringArray1148[--i_21_];
-                                                                        Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             88);
                                                                         Class42.aStream_Sub1_936.writeSignedByte(126,
                                                                             jstring.method172(
@@ -1048,7 +1048,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                         int i_64_ =
                                                                             Class14.anIntArray248[--i_20_];
-                                                                        Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             171);
                                                                         Class42.aStream_Sub1_936.writeShort(848881960,
                                                                             i_64_);
@@ -1875,7 +1875,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         i_20_];
                                                                                     Class37_Sub9_Sub15.anInt3169 = Class14.anIntArray248[i_20_ +
                                                                                         2];
-                                                                                    Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                                         251);
                                                                                     Class42.aStream_Sub1_936.writeSignedByte(119,
                                                                                         Class37_Sub9_Sub24.anInt3361);
@@ -1896,7 +1896,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                                     int i_137_ =
                                                                                         Class14.anIntArray248[i_20_];
-                                                                                    Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                                         198);
                                                                                     Class42.aStream_Sub1_936.writeLong(jstring.method152(
                                                                                             -96));
@@ -2234,7 +2234,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                                     -1);
                                                                                         }
 
-                                                                                        Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                                             52);
                                                                                         Class42.aStream_Sub1_936.writeSignedByte(124,
                                                                                             0);
@@ -2262,7 +2262,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     JString jstring_145_ =
                                                                                         Class60.aJStringArray1148[i_21_];
                                                                                     Class37_Sub9_Sub36.anInt3581++;
-                                                                                    Class42.aStream_Sub1_936.method989(-1494101117,
+                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                                         252);
                                                                                     Class42.aStream_Sub1_936.writeSignedByte(101,
                                                                                         0);

@@ -408,10 +408,10 @@ public class Class38 {
     }
 
     public static void method1055(byte i) {
-        Class83.packetStream.method993(false);
+        Class83.packetStream.initBitAccess(false);
         anInt833++;
 
-        int i_29_ = Class83.packetStream.method996(8, 14);
+        int i_29_ = Class83.packetStream.readBits(8, 14);
 
         if ((i_29_ ^ 0xffffffff) > (Class76.anInt1436 ^ 0xffffffff)) {
             for (int i_30_ = i_29_; Class76.anInt1436 > i_30_; i_30_++)
@@ -429,7 +429,7 @@ public class Class38 {
                     i_31_++) {
                 int i_32_ = Class37_Sub4_Sub16.anIntArray2869[i_31_];
                 Class37_Sub4_Sub7_Sub1_Sub1 class37_sub4_sub7_sub1_sub1 = (Class37_Sub13.aClass37_Sub4_Sub7_Sub1_Sub1Array2111[i_32_]);
-                int i_33_ = Class83.packetStream.method996(1,
+                int i_33_ = Class83.packetStream.readBits(1,
                         i ^ ~0x39);
 
                 if ((i_33_ ^ 0xffffffff) == -1) {
@@ -437,7 +437,7 @@ public class Class38 {
 
                     class37_sub4_sub7_sub1_sub1.anInt3641 = Class37_Sub7.anInt1898;
                 } else {
-                    int i_34_ = Class83.packetStream.method996(2, 60);
+                    int i_34_ = Class83.packetStream.readBits(2, 60);
 
                     if ((i_34_ ^ 0xffffffff) == -1) {
                         Class37_Sub4_Sub16.anIntArray2869[Class76.anInt1436++] = i_32_;
@@ -450,12 +450,12 @@ public class Class38 {
 
                         class37_sub4_sub7_sub1_sub1.anInt3641 = Class37_Sub7.anInt1898;
 
-                        int i_35_ = Class83.packetStream.method996(3,
+                        int i_35_ = Class83.packetStream.readBits(3,
                                 99);
                         class37_sub4_sub7_sub1_sub1.method495(false, i + -3511,
                             i_35_);
 
-                        int i_36_ = Class83.packetStream.method996(1,
+                        int i_36_ = Class83.packetStream.readBits(1,
                                 118);
 
                         if (i_36_ == 1) {
@@ -466,16 +466,16 @@ public class Class38 {
 
                         class37_sub4_sub7_sub1_sub1.anInt3641 = Class37_Sub7.anInt1898;
 
-                        int i_37_ = Class83.packetStream.method996(3,
+                        int i_37_ = Class83.packetStream.readBits(3,
                                 i ^ ~0x3e);
                         class37_sub4_sub7_sub1_sub1.method495(true, i ^ 0xdc9,
                             i_37_);
 
-                        int i_38_ = Class83.packetStream.method996(3,
+                        int i_38_ = Class83.packetStream.readBits(3,
                                 43);
                         class37_sub4_sub7_sub1_sub1.method495(true, -3523, i_38_);
 
-                        int i_39_ = Class83.packetStream.method996(1,
+                        int i_39_ = Class83.packetStream.readBits(1,
                                 98);
 
                         if ((i_39_ ^ 0xffffffff) == -2) {
