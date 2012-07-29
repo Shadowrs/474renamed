@@ -72,7 +72,7 @@ public class Class80 {
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             152);
-                        Class42.aStream_Sub1_936.method949(l, (byte) -103);
+                        Class42.aStream_Sub1_936.writeLong(l);
                     }
                 }
             }

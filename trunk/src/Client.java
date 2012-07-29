@@ -427,8 +427,8 @@ public class Client extends Applet_Sub1 {
                                         Class80.aClass51_1508);
 
                                 Stream stream = new Stream(5);
-                                stream.method964(110, 15);
-                                stream.method947((byte) -123, 474);
+                                stream.writeSignedByte(110, 15);
+                                stream.writeInt(474);
                                 Class37_Sub9_Sub20.aClass19_3298.write(0,
                                     (byte) 99, stream.buffer, 5);
                                 Login.anInt782++;

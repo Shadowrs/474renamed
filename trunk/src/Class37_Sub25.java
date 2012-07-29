@@ -36,21 +36,21 @@ public class Class37_Sub25 extends Class37 {
         anInt2278 = i;
 
         Stream stream = new Stream(is);
-        anInt2282 = stream.method978(117);
+        anInt2282 = stream.readByte(117);
         anIntArrayArray2283 = new int[anInt2282][];
         anIntArray2277 = new int[anInt2282];
 
         for (int i_49_ = 0; i_49_ < anInt2282; i_49_++)
-            anIntArray2277[i_49_] = stream.method978(116);
+            anIntArray2277[i_49_] = stream.readByte(116);
 
         for (int i_50_ = 0; i_50_ < anInt2282; i_50_++)
-            anIntArrayArray2283[i_50_] = new int[stream.method978(123)];
+            anIntArrayArray2283[i_50_] = new int[stream.readByte(123)];
 
         for (int i_51_ = 0; anInt2282 > i_51_; i_51_++) {
             for (int i_52_ = 0;
                     ((i_52_ ^ 0xffffffff) > (anIntArrayArray2283[i_51_].length ^
                     0xffffffff)); i_52_++)
-                anIntArrayArray2283[i_51_][i_52_] = stream.method978(124);
+                anIntArrayArray2283[i_51_][i_52_] = stream.readByte(124);
         }
     }
 

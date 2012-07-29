@@ -61,7 +61,7 @@ public class Class17 {
     }
 
     public Class17(Stream stream) {
-        int i = stream.method978(123);
+        int i = stream.readByte(123);
         Class13 class13 = new Class13(64);
         Class13 class13_28_ = new Class13(64);
         Class13 class13_29_ = new Class13(64);
@@ -99,7 +99,7 @@ public class Class17 {
             is[i_30_] = new int[i_35_];
 
             for (int i_36_ = 0; i_35_ > i_36_; i_36_++)
-                is[i_30_][i_36_] = stream.method978(120);
+                is[i_30_][i_36_] = stream.readByte(120);
 
             class13.method101(class37_sub9, false, (long) class37_sub9.anInt1955);
             aClass37_Sub9Array314[i_30_] = class37_sub9;
@@ -119,10 +119,10 @@ public class Class17 {
         }
 
         aClass37_Sub9_301 = ((Class37_Sub9) class13.method100((byte) 108,
-                (long) stream.method978(118)));
+                (long) stream.readByte(118)));
 
         aClass37_Sub9_298 = ((Class37_Sub9) class13.method100((byte) 47,
-                (long) stream.method978(118)));
+                (long) stream.readByte(118)));
 
         Object object = null;
         Object object_41_ = null;

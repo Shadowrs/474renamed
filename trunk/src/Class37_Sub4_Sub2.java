@@ -32,24 +32,24 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
     public Class37_Sub4_Sub2(Stream stream) {
         aClass17_2527 = new Class17(stream);
 
-        int i = stream.method978(127);
+        int i = stream.readByte(127);
         aBoolean2540 = ((0x2 & i) ^ 0xffffffff) != -1;
         aBoolean2536 = (0x1 & i) != 0;
-        anInt2531 = stream.method978(124);
-        anInt2519 = stream.method980(79);
-        anInt2523 = stream.method978(121);
+        anInt2531 = stream.readByte(124);
+        anInt2519 = stream.readShort(79);
+        anInt2523 = stream.readByte(121);
 
         if (anInt2523 == 255) {
             anInt2523 = 256;
         }
 
-        int i_23_ = stream.method978(126);
-        int i_24_ = stream.method978(125);
+        int i_23_ = stream.readByte(126);
+        int i_24_ = stream.readByte(125);
         anInt2520 = (i_23_ >> -118381690) & 0x3;
         anInt2535 = 0x3 & (i_24_ >> 1604718438);
         anInt2524 = (0x3f & i_24_) - 6;
-        stream.method978(121);
-        stream.method978(126);
+        stream.readByte(121);
+        stream.readByte(126);
     }
 
     public Class37_Sub4_Sub2() {

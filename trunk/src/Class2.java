@@ -54,13 +54,13 @@ public class Class2 {
                         Class37_Sub9_Sub13.anInt3127++;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             247);
-                        Class42.aStream_Sub1_936.method945(19058,
+                        Class42.aStream_Sub1_936.writeShortA(19058,
                             Class26.anIntArray657[i_2_]);
                     } else if ((i ^ 0xffffffff) != -7) {
                         if (i == 7) {
                             Class42.aStream_Sub1_936.method989(-1494101117,
                                 211);
-                            Class42.aStream_Sub1_936.method957(true,
+                            Class42.aStream_Sub1_936.writeShortLEA(true,
                                 Class26.anIntArray657[i_2_]);
                             Class37_Sub9_Sub4.anInt2960++;
                         }
@@ -68,13 +68,13 @@ public class Class2 {
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             244);
                         Class62.anInt1174++;
-                        Class42.aStream_Sub1_936.method945(19058,
+                        Class42.aStream_Sub1_936.writeShortA(19058,
                             Class26.anIntArray657[i_2_]);
                     }
                 } else {
                     RSApplet.anInt184++;
                     Class42.aStream_Sub1_936.method989(-1494101117, 96);
-                    Class42.aStream_Sub1_936.method957(true,
+                    Class42.aStream_Sub1_936.writeShortLEA(true,
                         Class26.anIntArray657[i_2_]);
                 }
 

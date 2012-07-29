@@ -25,7 +25,7 @@ public class Class87 {
             Class1.aByteArrayArrayArray63[i_3_][i_2_][i_5_] = (byte) 0;
 
             for (;;) {
-                int i_6_ = stream.method978(120);
+                int i_6_ = stream.readByte(120);
                 if ((i_6_ ^ 0xffffffff) == -1) {
                     if ((i_3_ ^ 0xffffffff) != -1) {
                         Class64.anIntArrayArrayArray1217[i_3_][i_2_][i_5_] = -240 +
@@ -41,7 +41,7 @@ public class Class87 {
                 }
 
                 if (i_6_ == 1) {
-                    int i_7_ = stream.method978(120);
+                    int i_7_ = stream.readByte(120);
 
                     if ((i_7_ ^ 0xffffffff) == -2) {
                         i_7_ = 0;
@@ -58,7 +58,7 @@ public class Class87 {
                 }
 
                 if (i_6_ <= 49) {
-                    Class15.aByteArrayArrayArray283[i_3_][i_2_][i_5_] = stream.method982((byte) 110);//grindys, vanduo, takai ir stuff :)
+                    Class15.aByteArrayArrayArray283[i_3_][i_2_][i_5_] = stream.readSignedByte((byte) 110);//grindys, vanduo, takai ir stuff :)
 
                     Class52_Sub1.aByteArrayArrayArray2306[i_3_][i_2_][i_5_] = (byte) ((-2 + i_6_) / 4);//kazkas su grindu kvadrateliu karpymu (kad neislystu is sienu)
 
@@ -71,20 +71,20 @@ public class Class87 {
             }
         } else {
             for (;;) {
-                int i_8_ = stream.method978(120);
+                int i_8_ = stream.readByte(120);
 
                 if (i_8_ == 0) {
                     break;
                 }
 
                 if ((i_8_ ^ 0xffffffff) == -2) {
-                    stream.method978(i_4_ + 10012);
+                    stream.readByte(i_4_ + 10012);
 
                     break;
                 }
 
                 if ((i_8_ ^ 0xffffffff) >= -50) {
-                    stream.method978(122);
+                    stream.readByte(122);
                 }
             }
         }

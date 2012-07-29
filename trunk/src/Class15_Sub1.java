@@ -278,7 +278,7 @@ public class Class15_Sub1 extends Class15 {
                         int i_21_ = (int) aCRC32_1741.getValue();
                         Stream stream = new Stream(Login.method312(
                                     is, (byte) 106));
-                        int i_22_ = stream.method978(116);
+                        int i_22_ = stream.readByte(116);
 
                         if ((i_22_ != 5) && (i_22_ != 6)) {
                             throw new RuntimeException(
@@ -288,7 +288,7 @@ public class Class15_Sub1 extends Class15 {
                         int i_23_ = 0;
 
                         if (i_22_ >= 6) {
-                            i_23_ = stream.method933(-32);
+                            i_23_ = stream.readInt(-32);
                         }
 
                         if (((anInt1758 ^ 0xffffffff) != (i_21_ ^ 0xffffffff)) ||

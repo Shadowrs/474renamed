@@ -46,9 +46,9 @@ public class Class6 {
         try {
             anInt136++;
 
-            if (((stream.buffer[stream.currentIndex] ^
+            if (((stream.buffer[stream.bufferLocation] ^
                     0xffffffff) != -32) ||
-                    ((stream.buffer[stream.currentIndex -
+                    ((stream.buffer[stream.bufferLocation -
                     -1] ^ 0xffffffff) != 116)) {
                 throw new RuntimeException("Invalid GZIP header!");
             }
@@ -59,9 +59,9 @@ public class Class6 {
 
             try {
                 anInflater138.setInput(stream.buffer,
-                    stream.currentIndex + 10,
+                    stream.bufferLocation + 10,
                     -18 +
-                    (-stream.currentIndex +
+                    (-stream.bufferLocation +
                     (stream.buffer).length));
                 anInflater138.inflate(is);
 

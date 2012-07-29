@@ -114,17 +114,17 @@ while_112_:
                         break while_112_;
                     }
                 } else {
-                    anInt3488 = stream.method980(57);
+                    anInt3488 = stream.readShort(57);
 
                     break while_112_;
                 }
 
-                anInt3482 = stream.method980(54);
+                anInt3482 = stream.readShort(54);
 
                 break while_112_;
             } while (false);
 
-            aBoolean1943 = stream.method978(120) == 1;
+            aBoolean1943 = stream.readByte(120) == 1;
         } while (false);
 
         if (bool != true) {

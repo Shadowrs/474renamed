@@ -171,7 +171,7 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
 
     public void method732(Stream stream, int i) {
         for (;;) {
-            int i_4_ = stream.method978(i ^ ~0xcd);
+            int i_4_ = stream.readByte(i ^ ~0xcd);
 
             if ((i_4_ ^ 0xffffffff) == -1) {
                 break;
@@ -191,49 +191,49 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
         int i_6_ = -83 % ((28 - i) / 58);
 
         if (i_5_ == 1) {
-            anInt2901 = stream.method980(-120);
+            anInt2901 = stream.readShort(-120);
         } else if ((i_5_ ^ 0xffffffff) == -3) {
-            anInt2897 = stream.method980(-128);
+            anInt2897 = stream.readShort(-128);
         } else if ((i_5_ ^ 0xffffffff) != -5) {
             if ((i_5_ ^ 0xffffffff) == -6) {
-                anInt2893 = stream.method980(-119);
+                anInt2893 = stream.readShort(-119);
             } else if ((i_5_ ^ 0xffffffff) == -7) {
-                anInt2885 = stream.method980(63);
+                anInt2885 = stream.readShort(63);
             } else if (i_5_ != 7) {
                 if (i_5_ != 8) {
                     if (i_5_ != 40) {
                         if (i_5_ == 41) {
-                            int i_7_ = stream.method978(116);
+                            int i_7_ = stream.readByte(116);
                             aShortArray2890 = new short[i_7_];
                             aShortArray2889 = new short[i_7_];
 
                             for (int i_8_ = 0;
                                     (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff);
                                     i_8_++) {
-                                aShortArray2890[i_8_] = (short) stream.method980(-125);
+                                aShortArray2890[i_8_] = (short) stream.readShort(-125);
 
-                                aShortArray2889[i_8_] = (short) stream.method980(99);
+                                aShortArray2889[i_8_] = (short) stream.readShort(99);
                             }
                         }
                     } else {
-                        int i_9_ = stream.method978(117);
+                        int i_9_ = stream.readByte(117);
                         aShortArray2904 = new short[i_9_];
                         aShortArray2903 = new short[i_9_];
 
                         for (int i_10_ = 0; i_10_ < i_9_; i_10_++) {
-                            aShortArray2904[i_10_] = (short) stream.method980(112);
+                            aShortArray2904[i_10_] = (short) stream.readShort(112);
 
-                            aShortArray2903[i_10_] = (short) stream.method980(-128);
+                            aShortArray2903[i_10_] = (short) stream.readShort(-128);
                         }
                     }
                 } else {
-                    anInt2887 = stream.method978(120);
+                    anInt2887 = stream.readByte(120);
                 }
             } else {
-                anInt2900 = stream.method978(125);
+                anInt2900 = stream.readByte(125);
             }
         } else {
-            anInt2895 = stream.method980(88);
+            anInt2895 = stream.readShort(88);
         }
 
         anInt2898++;

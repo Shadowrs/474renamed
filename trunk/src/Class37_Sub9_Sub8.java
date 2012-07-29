@@ -86,17 +86,17 @@ while_59_:
                         break while_59_;
                     }
                 } else {
-                    anInt3052 = stream.method978(123);
+                    anInt3052 = stream.readByte(123);
 
                     return;
                 }
 
-                anInt3064 = stream.method980(-119);
+                anInt3064 = stream.readShort(-119);
 
                 return;
             } while (false);
 
-            anInt3053 = stream.method978(121);
+            anInt3053 = stream.readByte(121);
         } while (false);
     }
  
@@ -339,7 +339,7 @@ while_60_:
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             131);
-                        Class42.aStream_Sub1_936.method949(l, (byte) -86);
+                        Class42.aStream_Sub1_936.writeLong(l);
                     }
                 }
             }

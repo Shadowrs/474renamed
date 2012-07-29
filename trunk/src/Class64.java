@@ -37,7 +37,7 @@ public class Class64 {
         Class37_Sub4.method437(151, bool);
         Class37_Sub9.anInt1956 = i;
         Class49.aStream_1006 = null;
-        Class37_Sub9_Sub17.aStream_3224.currentIndex = 0;
+        Class37_Sub9_Sub17.aStream_3224.bufferLocation = 0;
         Class60.aClass37_Sub4_Sub13_1152 = null;
         anInt1211++;
 
@@ -71,9 +71,9 @@ public class Class64 {
         if (Class75.aByte1409 != 0) {
             try {
                 Stream stream = new Stream(4);
-                stream.method964(124, 4);
-                stream.method964(126, Class75.aByte1409);
-                stream.method965(848881960, 0);
+                stream.writeSignedByte(124, 4);
+                stream.writeSignedByte(126, Class75.aByte1409);
+                stream.writeShort(848881960, 0);
                 Class43.aClass19_950.write(0, (byte) 126,
                     stream.buffer, 4);
             } catch (java.io.IOException ioexception) {

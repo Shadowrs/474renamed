@@ -55,26 +55,26 @@ public class Class83 {
                                 true, 1, 0, 0, 0, i_9_, 0, 0));
 
                         if (bool) {
-                            Class42.aStream_Sub1_936.method964(110, i_2_);
-                            Class42.aStream_Sub1_936.method964(104, i_3_);
-                            Class42.aStream_Sub1_936.method965(848881960,
+                            Class42.aStream_Sub1_936.writeSignedByte(110, i_2_);
+                            Class42.aStream_Sub1_936.writeSignedByte(104, i_3_);
+                            Class42.aStream_Sub1_936.writeShort(848881960,
                                 Class37_Sub14.anInt2127);
-                            Class42.aStream_Sub1_936.method964(i_0_ ^
+                            Class42.aStream_Sub1_936.writeSignedByte(i_0_ ^
                                 0x25, 57);
-                            Class42.aStream_Sub1_936.method964(113,
+                            Class42.aStream_Sub1_936.writeSignedByte(113,
                                 Class37_Sub9_Sub37.anInt3590);
-                            Class42.aStream_Sub1_936.method964(123,
+                            Class42.aStream_Sub1_936.writeSignedByte(123,
                                 Class78.anInt1458);
-                            Class42.aStream_Sub1_936.method964(i_0_ +
+                            Class42.aStream_Sub1_936.writeSignedByte(i_0_ +
                                 31, 89);
-                            Class42.aStream_Sub1_936.method965(848881960,
+                            Class42.aStream_Sub1_936.writeShort(848881960,
                                 (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3666));
-                            Class42.aStream_Sub1_936.method965(i_0_ ^
+                            Class42.aStream_Sub1_936.writeShort(i_0_ ^
                                 0x3298e963,
                                 (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3642));
-                            Class42.aStream_Sub1_936.method964(i_0_ ^
+                            Class42.aStream_Sub1_936.writeSignedByte(i_0_ ^
                                 0x37, Class37_Sub9_Sub6.anInt3018);
-                            Class42.aStream_Sub1_936.method964(121, 63);
+                            Class42.aStream_Sub1_936.writeSignedByte(121, 63);
                         }
                     }
                 }
@@ -86,11 +86,11 @@ public class Class83 {
         anInt1517++;
 
         if (Class37_Sub9_Sub27.aStream_3399 != null) {
-            Class37_Sub9_Sub27.aStream_3399.currentIndex = 5 + (i_11_ * 8);
+            Class37_Sub9_Sub27.aStream_3399.bufferLocation = 5 + (i_11_ * 8);
 
-            int i_12_ = Class37_Sub9_Sub27.aStream_3399.method933(i ^
+            int i_12_ = Class37_Sub9_Sub27.aStream_3399.readInt(i ^
                     ~0x29e4);
-            int i_13_ = Class37_Sub9_Sub27.aStream_3399.method933(-36);
+            int i_13_ = Class37_Sub9_Sub27.aStream_3399.readInt(-36);
             class15_sub1.method139((byte) -70, i_12_, i_13_);
         } else {
             if (i != 10684) {
@@ -113,37 +113,36 @@ public class Class83 {
         packetStream = null;
     }
 
-    public static synchronized byte[] method1314(byte i, int i_14_) {
-        anInt1512++;
+	public static synchronized byte[] method1314(byte i, int i_14_) {
+		anInt1512++;
 
-        if (i != 17) {
-            method1313(18);
-        }
+		if (i != 17) {
+			method1313(18);
+		}
 
-        if ((i_14_ == 100) &&
-                ((PacketStream.anInt3625 ^ 0xffffffff) < -1)) {
-            byte[] is = (Class37_Sub4_Sub5.aByteArrayArray2604[--PacketStream.anInt3625]);
+		if ((i_14_ == 100) && (PacketStream.anInt3625 > 0)) {
+			byte[] is = (Class37_Sub4_Sub5.aByteArrayArray2604[--PacketStream.anInt3625]);
 
-            Class37_Sub4_Sub5.aByteArrayArray2604[PacketStream.anInt3625] = null;
+			Class37_Sub4_Sub5.aByteArrayArray2604[PacketStream.anInt3625] = null;
 
-            return is;
-        }
+			return is;
+		}
 
-        if (((i_14_ ^ 0xffffffff) == -5001) && (Class37_Sub10.anInt1986 > 0)) {
-            byte[] is = Class25.aByteArrayArray646[--Class37_Sub10.anInt1986];
-            Class25.aByteArrayArray646[Class37_Sub10.anInt1986] = null;
+		if ((i_14_ == 5000) && (Class37_Sub10.anInt1986 > 0)) {
+			byte[] is = Class25.aByteArrayArray646[--Class37_Sub10.anInt1986];
+			Class25.aByteArrayArray646[Class37_Sub10.anInt1986] = null;
 
-            return is;
-        }
+			return is;
+		}
 
-        if ((i_14_ == 30000) && (Class37_Sub4_Sub7_Sub2.anInt3703 > 0)) {
-            byte[] is = (Class37_Sub4_Sub7.aByteArrayArray2626[--Class37_Sub4_Sub7_Sub2.anInt3703]);
+		if ((i_14_ == 30000) && (Class37_Sub4_Sub7_Sub2.anInt3703 > 0)) {
+			byte[] is = (Class37_Sub4_Sub7.aByteArrayArray2626[--Class37_Sub4_Sub7_Sub2.anInt3703]);
 
-            Class37_Sub4_Sub7.aByteArrayArray2626[(Class37_Sub4_Sub7_Sub2.anInt3703)] = null;
+			Class37_Sub4_Sub7.aByteArrayArray2626[(Class37_Sub4_Sub7_Sub2.anInt3703)] = null;
 
-            return is;
-        }
+			return is;
+		}
 
-        return new byte[i_14_];
-    }
+		return new byte[i_14_];
+	}
 }

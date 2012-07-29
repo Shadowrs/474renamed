@@ -122,24 +122,24 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
 
         if (i_8_ != 1) {
             if ((i_8_ ^ 0xffffffff) == -3) {
-                anInt2645 = stream.method978(119);
+                anInt2645 = stream.readByte(119);
             } else if (i_8_ != 3) {
                 if ((i_8_ ^ 0xffffffff) != -6) {
                     if (i_8_ == 7) {
-                        anInt2656 = stream.method935(-26256544);
+                        anInt2656 = stream.read3Bytes(-26256544);
                     }
                 } else {
                     aBoolean2658 = false;
                 }
             } else {
-                anInt2645 = stream.method980(117);
+                anInt2645 = stream.readShort(117);
 
                 if ((anInt2645 ^ 0xffffffff) == -65536) {
                     anInt2645 = -1;
                 }
             }
         } else {
-            anInt2649 = stream.method935(-26256544);
+            anInt2649 = stream.read3Bytes(-26256544);
         }
 
         int i_9_ = 49 % ((i - 44) / 43);
@@ -165,7 +165,7 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
         anInt2644++;
 
         for (;;) {
-            int i_13_ = stream.method978(116);
+            int i_13_ = stream.readByte(116);
 
             if (i_13_ == 0) {
                 break;

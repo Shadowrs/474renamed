@@ -120,15 +120,15 @@ public class Class29 {
     }
 
     public void method264(Stream stream, int i) {
-        stream.method964(98, aBoolean700 ? 1 : 0);
+        stream.writeSignedByte(98, aBoolean700 ? 1 : 0);
 
         for (int i_5_ = 0; i_5_ < 7; i_5_++) {
             int i_6_ = anIntArray702[Class83.anIntArray1521[i_5_]];
 
             if ((i_6_ ^ 0xffffffff) != -1) {
-                stream.method964(i ^ ~0x7c, -256 + i_6_);
+                stream.writeSignedByte(i ^ ~0x7c, -256 + i_6_);
             } else {
-                stream.method964(107, -1);
+                stream.writeSignedByte(107, -1);
             }
         }
 
@@ -139,7 +139,7 @@ public class Class29 {
         }
 
         for (; (i_7_ ^ 0xffffffff) > -6; i_7_++)
-            stream.method964(i + 101, anIntArray697[i_7_]);
+            stream.writeSignedByte(i + 101, anIntArray697[i_7_]);
 
         anInt715++;
     }
@@ -179,7 +179,7 @@ public class Class29 {
 
                     int i_15_ = (i_12_ >> 749388806) & 0x3f;
                     int i_16_ = i_15_ + i_8_;
-                    int i_17_ = stream.method978(124) >> -191501438;
+                    int i_17_ = stream.readByte(124) >> -191501438;
                     int i_18_ = i_12_ & 0x3f;
                     int i_19_ = i + i_18_;
 
@@ -207,7 +207,7 @@ public class Class29 {
                         break;
                     }
 
-                    stream.method978(116);
+                    stream.readByte(116);
                 }
             }
         }

@@ -193,8 +193,8 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
         boolean bool) {
         anInt2948++;
 
-        int i = stream.method978(121);
-        int i_5_ = stream.method978(117);
+        int i = stream.readByte(121);
+        int i_5_ = stream.readByte(117);
         Class var_class = RSSocket.classFromInt(i_5_, !bool);
 
         try {
@@ -206,13 +206,13 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
 
             if (class37_sub9 != null) {
                 class37_sub9.anInt1955 = i;
-                class37_sub9.anInt1949 = stream.method978(116);
+                class37_sub9.anInt1949 = stream.readByte(116);
 
-                int i_6_ = stream.method978(120);
+                int i_6_ = stream.readByte(120);
 
                 for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff);
                         i_7_++) {
-                    int i_8_ = stream.method978(118);
+                    int i_8_ = stream.readByte(118);
                     class37_sub9.method750(stream, i_8_, true);
                 }
             }
@@ -436,22 +436,22 @@ while_6_:
                             break while_6_;
                         }
                     } else {
-                        anInt2944 = stream.method980(121);
+                        anInt2944 = stream.readShort(121);
 
                         break while_7_;
                     }
 
-                    anInt2941 = stream.method980(-123);
+                    anInt2941 = stream.readShort(-123);
 
                     break while_7_;
                 } while (false);
 
-                anInt2943 = stream.method980(59);
+                anInt2943 = stream.readShort(59);
 
                 break while_7_;
             } while (false);
 
-            anInt2942 = stream.method980(75);
+            anInt2942 = stream.readShort(75);
         } while (false);
 
         if (bool != true) {

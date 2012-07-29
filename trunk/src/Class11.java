@@ -10,17 +10,17 @@ public class Class11 {
         aClass5Array204 = new Class5[10];
 
         for (int i = 0; i < 10; i++) {
-            int i_8_ = stream.method978(120);
+            int i_8_ = stream.readByte(120);
 
             if (i_8_ != 0) {
-                stream.currentIndex--;
+                stream.bufferLocation--;
                 aClass5Array204[i] = new Class5();
                 aClass5Array204[i].method57(stream);
             }
         }
 
-        anInt202 = stream.method980(-19);
-        anInt203 = stream.method980(105);
+        anInt202 = stream.readShort(-19);
+        anInt203 = stream.readShort(105);
     }
 
     public Class11() {

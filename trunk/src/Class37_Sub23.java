@@ -57,8 +57,7 @@ public class Class37_Sub23 extends Class37 {
                         (Class14.aClass37_Sub18Array240[i_0_] != null)) {
                     Class42.aStream_Sub1_936.method989(-1494101117, 22);
                     Class68.anInt1321++;
-                    Class42.aStream_Sub1_936.method949(Class14.aClass37_Sub18Array240[i_0_].aLong818,
-                        (byte) 44);
+                    Class42.aStream_Sub1_936.writeLong(Class14.aClass37_Sub18Array240[i_0_].aLong818);
                 }
             }
         }

@@ -66,10 +66,10 @@ public class Class37_Sub9_Sub7 extends Class37_Sub9 {
             }
         }
 
-        if ((Class83.packetStream.currentIndex ^ 0xffffffff) != (Class37_Sub4.packetSize ^
+        if ((Class83.packetStream.bufferLocation ^ 0xffffffff) != (Class37_Sub4.packetSize ^
                 0xffffffff)) {
             throw new RuntimeException("gnp1 pos:" +
-                (Class83.packetStream.currentIndex) + " psize:" +
+                (Class83.packetStream.bufferLocation) + " psize:" +
                 Class37_Sub4.packetSize);
         }
 
@@ -117,7 +117,7 @@ public class Class37_Sub9_Sub7 extends Class37_Sub9 {
         int i_7_ = i;
 
         if (i_7_ == 0) {
-            method791(255, stream.method935(-26256544));
+            method791(255, stream.read3Bytes(-26256544));
         }
 
         if (bool != true) {

@@ -27,15 +27,15 @@ public class Class61 {
 
         Stream stream = new Stream(is);
         Stream stream_0_ = new Stream(is);
-        stream.currentIndex = 2;
+        stream.bufferLocation = 2;
 
-        int i = stream.method978(119);
+        int i = stream.readByte(119);
         int i_1_ = -1;
         int i_2_ = 0;
-        stream_0_.currentIndex = stream.currentIndex + i;
+        stream_0_.bufferLocation = stream.bufferLocation + i;
 
         for (int i_3_ = 0; i_3_ < i; i_3_++) {
-            int i_4_ = stream.method978(116);
+            int i_4_ = stream.readByte(116);
 
             if (i_4_ > 0) {
                 if (aClass37_Sub25_1168.anIntArray2277[i_3_] != 0) {
@@ -87,7 +87,7 @@ public class Class61 {
             }
         }
 
-        if (stream_0_.currentIndex != is.length) {
+        if (stream_0_.bufferLocation != is.length) {
             throw new RuntimeException();
         }
 

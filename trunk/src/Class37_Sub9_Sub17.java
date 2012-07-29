@@ -104,27 +104,27 @@ while_77_:
                                 break while_77_;
                             }
                         } else {
-                            anInt3217 = stream.method980(-121);
+                            anInt3217 = stream.readShort(-121);
 
                             return;
                         }
 
-                        anInt3211 = stream.method980(-123);
+                        anInt3211 = stream.readShort(-123);
 
                         return;
                     } while (false);
 
-                    anInt3222 = stream.method980(102);
+                    anInt3222 = stream.readShort(102);
 
                     return;
                 } while (false);
 
-                anInt3216 = stream.method980(-123);
+                anInt3216 = stream.readShort(-123);
 
                 return;
             } while (false);
 
-            int i_2_ = stream.method935(-26256544);
+            int i_2_ = stream.read3Bytes(-26256544);
 
             anIntArray3212[2] = Class37_Sub4_Sub7.method490(i_2_, 255) >> 1851507628;
 

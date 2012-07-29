@@ -154,7 +154,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
         anInt3096++;
         Class42.aStream_Sub1_936.method989(-1494101117, 64);
         Class42.aStream_Sub1_936.method962(i, false);
-        Class42.aStream_Sub1_936.method966(bool, i_8_);
+        Class42.aStream_Sub1_936.writeInt2(bool, i_8_);
     }
 
     public static void method809(int i) {
@@ -188,17 +188,17 @@ while_62_:
                         break while_62_;
                     }
                 } else {
-                    anInt3093 = stream.method978(116);
+                    anInt3093 = stream.readByte(116);
 
                     break while_62_;
                 }
 
-                anInt3108 = stream.method978(118);
+                anInt3108 = stream.readByte(118);
 
                 break while_62_;
             } while (false);
 
-            anInt3101 = stream.method978(124);
+            anInt3101 = stream.readByte(124);
         } while (false);
 
         anInt3097++;

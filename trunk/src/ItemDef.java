@@ -188,7 +188,7 @@ public class ItemDef extends Class37_Sub4 {
         anInt2423++;
 
         for (;;) {
-            int i_0_ = stream.method978(i ^ 0x7a5);
+            int i_0_ = stream.readByte(i ^ 0x7a5);
 
             if ((i_0_ ^ 0xffffffff) == -1) {
                 break;
@@ -307,36 +307,36 @@ public class ItemDef extends Class37_Sub4 {
 
         if (i_7_ == -30167) {
             if (i == 1) {
-                anInt2465 = stream.method980(i_7_ + 30041);
+                anInt2465 = stream.readShort(i_7_ + 30041);
             } else if (i == 2) {
-                aJString_2458 = stream.method944((byte) -46);
+                aJString_2458 = stream.readString();
             } else if (i != 4) {
                 if (i == 5) {
-                    anInt2433 = stream.method980(79);
+                    anInt2433 = stream.readShort(79);
                 } else if ((i ^ 0xffffffff) == -7) {
-                    anInt2431 = stream.method980(-119);
+                    anInt2431 = stream.readShort(-119);
                 } else if ((i ^ 0xffffffff) != -8) {
                     if ((i ^ 0xffffffff) == -9) {
-                        anInt2507 = stream.method980(i_7_ + 30204);
+                        anInt2507 = stream.readShort(i_7_ + 30204);
 
                         if ((anInt2507 ^ 0xffffffff) < -32768) {
                             anInt2507 -= 65536;
                         }
                     } else if (i != 11) {
                         if (i == 12) {
-                            anInt2447 = stream.method933(-73);
+                            anInt2447 = stream.readInt(-73);
                         } else if ((i ^ 0xffffffff) != -17) {
                             if ((i ^ 0xffffffff) != -24) {
                                 if ((i ^ 0xffffffff) == -25) {
-                                    anInt2479 = stream.method980(-12);
+                                    anInt2479 = stream.readShort(-12);
                                 } else if (i == 25) {
-                                    anInt2453 = stream.method980(i_7_ +
+                                    anInt2453 = stream.readShort(i_7_ +
                                             30145);
-                                    anInt2499 = stream.method978(126);
+                                    anInt2499 = stream.readByte(126);
                                 } else if (i != 26) {
                                     if (((i ^ 0xffffffff) <= -31) &&
                                             ((i ^ 0xffffffff) > -36)) {
-                                        aJStringArray2459[i - 30] = stream.method944((byte) 93);
+                                        aJStringArray2459[i - 30] = stream.readString();
 
                                         if (aJStringArray2459[i + -30].method159(
                                                     Stream.aJString_2059,
@@ -345,27 +345,27 @@ public class ItemDef extends Class37_Sub4 {
                                         }
                                     } else if (((i ^ 0xffffffff) <= -36) &&
                                             (i < 40)) {
-                                        aJStringArray2435[i - 35] = stream.method944((byte) -79);
+                                        aJStringArray2435[i - 35] = stream.readString();
                                     } else if (i != 40) {
                                         if (i != 41) {
                                             if ((i ^ 0xffffffff) != -66) {
                                                 if (i != 78) {
                                                     if (i == 79) {
-                                                        anInt2498 = (stream.method980(i_7_ ^
+                                                        anInt2498 = (stream.readShort(i_7_ ^
                                                                 0x75dc));
                                                     } else if (i == 90) {
-                                                        anInt2505 = (stream.method980(81));
+                                                        anInt2505 = (stream.readShort(81));
                                                     } else if ((i ^ 0xffffffff) != -92) {
                                                         if ((i ^ 0xffffffff) == -93) {
-                                                            anInt2502 = (stream.method980(-120));
+                                                            anInt2502 = (stream.readShort(-120));
                                                         } else if (i == 93) {
-                                                            anInt2466 = (stream.method980(i_7_ +
+                                                            anInt2466 = (stream.readShort(i_7_ +
                                                                     30133));
                                                         } else if (i == 95) {
-                                                            anInt2517 = (stream.method980(48));
+                                                            anInt2517 = (stream.readShort(48));
                                                         } else if ((i ^
                                                                 0xffffffff) == -98) {
-                                                            anInt2424 = (stream.method980(-127));
+                                                            anInt2424 = (stream.readShort(-127));
                                                         } else if ((i ^
                                                                 0xffffffff) != -99) {
                                                             if (((i ^
@@ -375,25 +375,25 @@ public class ItemDef extends Class37_Sub4 {
                                                                 if ((i ^
                                                                         0xffffffff) != -111) {
                                                                     if (i == 111) {
-                                                                        anInt2482 = stream.method980(83);
+                                                                        anInt2482 = stream.readShort(83);
                                                                     } else if ((i ^
                                                                             0xffffffff) != -113) {
                                                                         if ((i ^
                                                                                 0xffffffff) != -114) {
                                                                             if (i == 114) {
-                                                                                anInt2464 = stream.method982((byte) 116) * 5;
+                                                                                anInt2464 = stream.readSignedByte((byte) 116) * 5;
                                                                             } else if ((i ^
                                                                                     0xffffffff) == -116) {
-                                                                                anInt2504 = stream.method978(123);
+                                                                                anInt2504 = stream.readByte(123);
                                                                             }
                                                                         } else {
-                                                                            anInt2484 = stream.method982((byte) 110);
+                                                                            anInt2484 = stream.readSignedByte((byte) 110);
                                                                         }
                                                                     } else {
-                                                                        anInt2514 = stream.method980(7);
+                                                                        anInt2514 = stream.readShort(7);
                                                                     }
                                                                 } else {
-                                                                    anInt2467 = (stream.method980(i_7_ ^
+                                                                    anInt2467 = (stream.readShort(i_7_ ^
                                                                             ~0x7590));
                                                                 }
                                                             } else {
@@ -404,60 +404,60 @@ public class ItemDef extends Class37_Sub4 {
                                                                 }
 
                                                                 anIntArray2475[i +
-                                                                -100] = (stream.method980(Class37_Sub4_Sub7_Sub1_Sub1.method502(
+                                                                -100] = (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                                                             i_7_,
                                                                             30113)));
 
                                                                 anIntArray2478[-100 +
-                                                                i] = (stream.method980(i_7_ +
+                                                                i] = (stream.readShort(i_7_ +
                                                                         30040));
                                                             }
                                                         } else {
-                                                            anInt2462 = (stream.method980(-125));
+                                                            anInt2462 = (stream.readShort(-125));
                                                         }
                                                     } else {
-                                                        anInt2452 = (stream.method980(-119));
+                                                        anInt2452 = (stream.readShort(-119));
                                                     }
                                                 } else {
-                                                    anInt2429 = stream.method980(24);
+                                                    anInt2429 = stream.readShort(24);
                                                 }
                                             } else {
                                                 aBoolean2421 = true;
                                             }
                                         } else {
-                                            int i_8_ = stream.method978(120);
+                                            int i_8_ = stream.readByte(120);
                                             aShortArray2426 = new short[i_8_];
                                             aShortArray2510 = new short[i_8_];
 
                                             for (int i_9_ = 0;
                                                     ((i_9_ ^ 0xffffffff) > (i_8_ ^
                                                     0xffffffff)); i_9_++) {
-                                                aShortArray2426[i_9_] = (short) (stream.method980(-125));
+                                                aShortArray2426[i_9_] = (short) (stream.readShort(-125));
 
-                                                aShortArray2510[i_9_] = (short) (stream.method980(45));
+                                                aShortArray2510[i_9_] = (short) (stream.readShort(45));
                                             }
                                         }
                                     } else {
-                                        int i_10_ = stream.method978(121);
+                                        int i_10_ = stream.readByte(121);
                                         aShortArray2515 = new short[i_10_];
                                         aShortArray2487 = new short[i_10_];
 
                                         for (int i_11_ = 0; i_11_ < i_10_;
                                                 i_11_++) {
-                                            aShortArray2487[i_11_] = (short) stream.method980(-128);
+                                            aShortArray2487[i_11_] = (short) stream.readShort(-128);
 
-                                            aShortArray2515[i_11_] = (short) (stream.method980(i_7_ +
+                                            aShortArray2515[i_11_] = (short) (stream.readShort(i_7_ +
                                                     30217));
                                         }
                                     }
                                 } else {
-                                    anInt2446 = stream.method980(i_7_ ^
+                                    anInt2446 = stream.readShort(i_7_ ^
                                             ~0x75e2);
                                 }
                             } else {
-                                anInt2449 = stream.method980(i_7_ ^
+                                anInt2449 = stream.readShort(i_7_ ^
                                         0x75ab);
-                                anInt2497 = stream.method978(116);
+                                anInt2497 = stream.readByte(116);
                             }
                         } else {
                             aBoolean2509 = true;
@@ -466,14 +466,14 @@ public class ItemDef extends Class37_Sub4 {
                         anInt2493 = 1;
                     }
                 } else {
-                    anInt2440 = stream.method980(107);
+                    anInt2440 = stream.readShort(107);
 
                     if ((anInt2440 ^ 0xffffffff) < -32768) {
                         anInt2440 -= 65536;
                     }
                 }
             } else {
-                anInt2469 = stream.method980(i_7_ + 30045);
+                anInt2469 = stream.readShort(i_7_ + 30045);
             }
         }
     }

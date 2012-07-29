@@ -606,15 +606,15 @@ public class Class18 {
     public void method196(byte i, Stream stream) {
         anInt361++;
         aBoolean374 = false;
-        anInt354 = stream.method978(i ^ 0x79);
-        anInt381 = stream.method978(126);
-        anInt376 = stream.method980(56);
-        anInt326 = anInt329 = stream.method931((byte) -67);
-        anInt397 = anInt415 = stream.method931((byte) 102);
-        anInt441 = stream.method980(-127);
-        anInt353 = stream.method980(5);
-        anInt320 = stream.method978(126);
-        anInt394 = stream.method980(-125);
+        anInt354 = stream.readByte(i ^ 0x79);
+        anInt381 = stream.readByte(126);
+        anInt376 = stream.readShort(56);
+        anInt326 = anInt329 = stream.readSignedShort((byte) -67);
+        anInt397 = anInt415 = stream.readSignedShort((byte) 102);
+        anInt441 = stream.readShort(-127);
+        anInt353 = stream.readShort(5);
+        anInt320 = stream.readByte(126);
+        anInt394 = stream.readShort(-125);
 
         if (anInt394 == 65535) {
             anInt394 = -1;
@@ -622,13 +622,13 @@ public class Class18 {
             anInt394 = anInt394 + (~0xffff & anInt402);
         }
 
-        anInt414 = stream.method980(i + -121);
+        anInt414 = stream.readShort(i + -121);
 
         if (anInt414 == 65535) {
             anInt414 = -1;
         }
 
-        int i_19_ = stream.method978(i + 117);
+        int i_19_ = stream.readByte(i + 117);
 
         if ((i_19_ ^ 0xffffffff) < -1) {
             anIntArray451 = new int[i_19_];
@@ -636,23 +636,23 @@ public class Class18 {
 
             for (int i_20_ = 0; (i_19_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff);
                     i_20_++) {
-                anIntArray370[i_20_] = stream.method978(121);
-                anIntArray451[i_20_] = stream.method980(i + -125);
+                anIntArray370[i_20_] = stream.readByte(121);
+                anIntArray451[i_20_] = stream.readShort(i + -125);
             }
         }
 
-        int i_21_ = stream.method978(127);
+        int i_21_ = stream.readByte(127);
 
         if (i_21_ > 0) {
             anIntArrayArray434 = new int[i_21_][];
 
             for (int i_22_ = 0; (i_21_ ^ 0xffffffff) < (i_22_ ^ 0xffffffff);
                     i_22_++) {
-                int i_23_ = stream.method980(-119);
+                int i_23_ = stream.readShort(-119);
                 anIntArrayArray434[i_22_] = new int[i_23_];
 
                 for (int i_24_ = 0; i_24_ < i_23_; i_24_++) {
-                    anIntArrayArray434[i_22_][i_24_] = stream.method980(i +
+                    anIntArrayArray434[i_22_][i_24_] = stream.readShort(i +
                             -120);
 
                     if ((anIntArrayArray434[i_22_][i_24_] ^ 0xffffffff) == -65536) {
@@ -663,66 +663,66 @@ public class Class18 {
         }
 
         if ((anInt354 ^ 0xffffffff) == -1) {
-            anInt348 = stream.method980(98);
+            anInt348 = stream.readShort(98);
 
-            aBoolean445 = (stream.method978(i + 126) ^ 0xffffffff) == -2;
+            aBoolean445 = (stream.readByte(i + 126) ^ 0xffffffff) == -2;
         }
 
         if ((anInt354 ^ 0xffffffff) == -2) {
-            stream.method980(i ^ 0x6e);
-            stream.method978(125);
+            stream.readShort(i ^ 0x6e);
+            stream.readByte(125);
         }
 
         if (anInt354 == 2) {
             anIntArray356 = new int[anInt353 * anInt441];
             anIntArray422 = new int[anInt353 * anInt441];
 
-            int i_25_ = stream.method978(121);
+            int i_25_ = stream.readByte(121);
 
             if ((i_25_ ^ 0xffffffff) == -2) {
                 anInt322 |= 0x10000000;
             }
 
-            int i_26_ = stream.method978(i ^ 0x75);
+            int i_26_ = stream.readByte(i ^ 0x75);
 
             if (i_26_ == 1) {
                 anInt322 |= 0x40000000;
             }
 
-            int i_27_ = stream.method978(i + 125);
+            int i_27_ = stream.readByte(i + 125);
 
             if ((i_27_ ^ 0xffffffff) == -2) {
                 anInt322 |= ~0x7fffffff;
             }
 
-            int i_28_ = stream.method978(i + 118);
+            int i_28_ = stream.readByte(i + 118);
 
             if (i_28_ == 1) {
                 anInt322 |= 0x20000000;
             }
 
-            anInt423 = stream.method978(117);
-            anInt426 = stream.method978(117);
+            anInt423 = stream.readByte(117);
+            anInt426 = stream.readByte(117);
             anIntArray424 = new int[20];
             anIntArray448 = new int[20];
             anIntArray342 = new int[20];
 
             for (int i_29_ = 0; (i_29_ ^ 0xffffffff) > -21; i_29_++) {
-                int i_30_ = stream.method978(119);
+                int i_30_ = stream.readByte(119);
 
                 if (i_30_ != 1) {
                     anIntArray342[i_29_] = -1;
                 } else {
-                    anIntArray448[i_29_] = stream.method931((byte) -105);
-                    anIntArray424[i_29_] = stream.method931((byte) 103);
-                    anIntArray342[i_29_] = stream.method933(-53);
+                    anIntArray448[i_29_] = stream.readSignedShort((byte) -105);
+                    anIntArray424[i_29_] = stream.readSignedShort((byte) 103);
+                    anIntArray342[i_29_] = stream.readInt(-53);
                 }
             }
 
             aJStringArray383 = new JString[5];
 
             for (int i_31_ = 0; i_31_ < 5; i_31_++) {
-                JString jstring = stream.method944((byte) -80);
+                JString jstring = stream.readString();
 
                 if (jstring.method172((byte) 38) > 0) {
                     aJStringArray383[i_31_] = jstring;
@@ -732,91 +732,91 @@ public class Class18 {
         }
 
         if (anInt354 == 3) {
-            aBoolean321 = (stream.method978(i + 120) ^ 0xffffffff) == -2;
+            aBoolean321 = (stream.readByte(i + 120) ^ 0xffffffff) == -2;
         }
 
         if ((anInt354 == 4) || ((anInt354 ^ 0xffffffff) == -2)) {
-            anInt406 = stream.method978(117);
-            anInt379 = stream.method978(122);
-            anInt420 = stream.method978(127);
-            anInt338 = stream.method980(-120);
+            anInt406 = stream.readByte(117);
+            anInt379 = stream.readByte(122);
+            anInt420 = stream.readByte(127);
+            anInt338 = stream.readShort(-120);
 
             if ((anInt338 ^ 0xffffffff) == -65536) {
                 anInt338 = -1;
             }
 
-            aBoolean403 = (stream.method978(120) ^ 0xffffffff) == -2;
+            aBoolean403 = (stream.readByte(120) ^ 0xffffffff) == -2;
         }
 
         if ((anInt354 ^ 0xffffffff) == -5) {
-            aJString_411 = stream.method944((byte) 88);
-            aJString_377 = stream.method944((byte) -47);
+            aJString_411 = stream.readString();
+            aJString_377 = stream.readString();
         }
 
         if ((anInt354 == 1) || (anInt354 == 3) ||
                 ((anInt354 ^ 0xffffffff) == -5)) {
-            anInt442 = stream.method933(i ^ ~0x3b);
+            anInt442 = stream.readInt(i ^ ~0x3b);
         }
 
         if ((anInt354 == 3) || (anInt354 == 4)) {
-            anInt404 = stream.method933(i + -94);
-            anInt396 = stream.method933(-27);
-            anInt417 = stream.method933(-109);
+            anInt404 = stream.readInt(i + -94);
+            anInt396 = stream.readInt(-27);
+            anInt417 = stream.readInt(-109);
         }
 
         if (anInt354 == 5) {
-            anInt385 = stream.method933(-76);
-            anInt400 = stream.method933(-30);
+            anInt385 = stream.readInt(-76);
+            anInt400 = stream.readInt(-30);
         }
 
         if (anInt354 == 6) {
             anInt408 = 1;
-            anInt369 = stream.method980(-121);
+            anInt369 = stream.readShort(-121);
             anInt325 = 1;
 
             if ((anInt369 ^ 0xffffffff) == -65536) {
                 anInt369 = -1;
             }
 
-            anInt457 = stream.method980(-120);
+            anInt457 = stream.readShort(-120);
 
             if (anInt457 == 65535) {
                 anInt457 = -1;
             }
 
-            anInt390 = stream.method980(-26);
+            anInt390 = stream.readShort(-26);
 
             if ((anInt390 ^ 0xffffffff) == -65536) {
                 anInt390 = -1;
             }
 
-            anInt419 = stream.method980(-126);
+            anInt419 = stream.readShort(-126);
 
             if (anInt419 == 65535) {
                 anInt419 = -1;
             }
 
-            anInt387 = stream.method980(-120);
-            anInt319 = stream.method980(-125);
-            anInt405 = stream.method980(-127);
+            anInt387 = stream.readShort(-120);
+            anInt319 = stream.readShort(-125);
+            anInt405 = stream.readShort(-127);
         }
 
         if (anInt354 == 7) {
             anIntArray356 = new int[anInt353 * anInt441];
             anIntArray422 = new int[anInt353 * anInt441];
-            anInt406 = stream.method978(118);
-            anInt338 = stream.method980(-124);
+            anInt406 = stream.readByte(118);
+            anInt338 = stream.readShort(-124);
 
             if (anInt338 == 65535) {
                 anInt338 = -1;
             }
 
-            aBoolean403 = (stream.method978(116) ^ 0xffffffff) == -2;
-            anInt442 = stream.method933(-73);
-            anInt423 = stream.method931((byte) 103);
-            anInt426 = stream.method931((byte) 107);
+            aBoolean403 = (stream.readByte(116) ^ 0xffffffff) == -2;
+            anInt442 = stream.readInt(-73);
+            anInt423 = stream.readSignedShort((byte) 103);
+            anInt426 = stream.readSignedShort((byte) 107);
 
-            int i_32_ = stream.method978(123);
+            int i_32_ = stream.readByte(123);
 
             if ((i_32_ ^ 0xffffffff) == -2) {
                 anInt322 |= 0x40000000;
@@ -825,7 +825,7 @@ public class Class18 {
             aJStringArray383 = new JString[5];
 
             for (int i_33_ = 0; i_33_ < 5; i_33_++) {
-                JString jstring = stream.method944((byte) 89);
+                JString jstring = stream.readString();
 
                 if (jstring.method172((byte) 38) > 0) {
                     aJStringArray383[i_33_] = jstring;
@@ -835,22 +835,22 @@ public class Class18 {
         }
 
         if ((anInt354 ^ 0xffffffff) == -9) {
-            aJString_411 = stream.method944((byte) 108);
+            aJString_411 = stream.readString();
         }
 
         if (i == 0) {
             if ((anInt381 == 2) || (anInt354 == 2)) {
-                aJString_360 = stream.method944((byte) -62);
-                aJString_436 = stream.method944((byte) -79);
+                aJString_360 = stream.readString();
+                aJString_436 = stream.readString();
 
-                int i_34_ = stream.method980(112) & 0x3f;
+                int i_34_ = stream.readShort(112) & 0x3f;
                 anInt322 |= (i_34_ << -1376464757);
             }
 
             if ((anInt381 == 1) || (anInt381 == 4) ||
                     ((anInt381 ^ 0xffffffff) == -6) ||
                     ((anInt381 ^ 0xffffffff) == -7)) {
-                aJString_421 = stream.method944((byte) -82);
+                aJString_421 = stream.readString();
 
                 if (aJString_421.method172((byte) 38) == 0) {
                     if ((anInt381 ^ 0xffffffff) == -2) {
@@ -885,7 +885,7 @@ public class Class18 {
     public Object[] method197(Stream stream, int i) {
         anInt392++;
 
-        int i_35_ = stream.method978(125);
+        int i_35_ = stream.readByte(125);
 
         if (i_35_ == 0) {
             return null;
@@ -899,14 +899,14 @@ public class Class18 {
 
         for (int i_36_ = 0; (i_35_ ^ 0xffffffff) < (i_36_ ^ 0xffffffff);
                 i_36_++) {
-            int i_37_ = stream.method978(124);
+            int i_37_ = stream.readByte(124);
 
             if ((i_37_ ^ 0xffffffff) != -1) {
                 if (i_37_ == 1) {
-                    objects[i_36_] = stream.method944((byte) -97);
+                    objects[i_36_] = stream.readString();
                 }
             } else {
-                objects[i_36_] = new Integer(stream.method933(-120));
+                objects[i_36_] = new Integer(stream.readInt(-120));
             }
         }
 
@@ -957,7 +957,7 @@ public class Class18 {
     public int[] method199(int i, Stream stream) {
         anInt412++;
 
-        int i_40_ = stream.method978(120);
+        int i_40_ = stream.readByte(120);
 
         if (i_40_ == 0) {
             return null;
@@ -966,7 +966,7 @@ public class Class18 {
         int[] is = new int[i_40_];
 
         for (int i_41_ = i; i_41_ < i_40_; i_41_++)
-            is[i_41_] = stream.method933(-44);
+            is[i_41_] = stream.readInt(-44);
 
         return is;
     }
@@ -1004,22 +1004,22 @@ public class Class18 {
     }
 
     public void method201(boolean bool, Stream stream) {
-        stream.method978(125);
+        stream.readByte(125);
         anInt373++;
         aBoolean374 = true;
-        anInt354 = stream.method978(126);
-        anInt376 = stream.method980(17);
-        anInt326 = anInt329 = stream.method931((byte) -41);
-        anInt397 = anInt415 = stream.method931((byte) 120);
-        anInt441 = stream.method980(-16);
+        anInt354 = stream.readByte(126);
+        anInt376 = stream.readShort(17);
+        anInt326 = anInt329 = stream.readSignedShort((byte) -41);
+        anInt397 = anInt415 = stream.readSignedShort((byte) 120);
+        anInt441 = stream.readShort(-16);
 
         if ((anInt354 ^ 0xffffffff) != -10) {
-            anInt353 = stream.method980(-126);
+            anInt353 = stream.readShort(-126);
         } else {
-            anInt353 = stream.method931((byte) 102);
+            anInt353 = stream.readSignedShort((byte) 102);
         }
 
-        anInt394 = stream.method980(-128);
+        anInt394 = stream.readShort(-128);
 
         if ((anInt394 ^ 0xffffffff) != -65536) {
             anInt394 = (anInt402 & ~0xffff) + anInt394;
@@ -1027,89 +1027,89 @@ public class Class18 {
             anInt394 = -1;
         }
 
-        aBoolean445 = stream.method978(117) == 1;
+        aBoolean445 = stream.readByte(117) == 1;
 
         if (anInt354 == 0) {
-            anInt324 = stream.method980(16);
-            anInt348 = stream.method980(-127);
+            anInt324 = stream.readShort(16);
+            anInt348 = stream.readShort(-127);
         }
 
         if ((anInt354 ^ 0xffffffff) == -6) {
-            anInt385 = stream.method933(-65);
-            anInt398 = stream.method980(-127);
-            aBoolean336 = stream.method978(122) == 1;
-            anInt320 = stream.method978(127);
-            anInt449 = stream.method978(125);
-            anInt335 = stream.method933(-45);
-            aBoolean389 = stream.method978(120) == 1;
-            aBoolean401 = stream.method978(117) == 1;
+            anInt385 = stream.readInt(-65);
+            anInt398 = stream.readShort(-127);
+            aBoolean336 = stream.readByte(122) == 1;
+            anInt320 = stream.readByte(127);
+            anInt449 = stream.readByte(125);
+            anInt335 = stream.readInt(-45);
+            aBoolean389 = stream.readByte(120) == 1;
+            aBoolean401 = stream.readByte(117) == 1;
         }
 
         if ((anInt354 ^ 0xffffffff) == -7) {
             anInt408 = 1;
-            anInt369 = stream.method980(-121);
+            anInt369 = stream.readShort(-121);
 
             if (anInt369 == 65535) {
                 anInt369 = -1;
             }
 
-            anInt380 = stream.method931((byte) 127);
-            anInt431 = stream.method931((byte) -28);
-            anInt319 = stream.method980(41);
-            anInt405 = stream.method980(-127);
-            anInt359 = stream.method980(-120);
-            anInt387 = stream.method980(-123);
-            anInt390 = stream.method980(-35);
+            anInt380 = stream.readSignedShort((byte) 127);
+            anInt431 = stream.readSignedShort((byte) -28);
+            anInt319 = stream.readShort(41);
+            anInt405 = stream.readShort(-127);
+            anInt359 = stream.readShort(-120);
+            anInt387 = stream.readShort(-123);
+            anInt390 = stream.readShort(-35);
 
             if (anInt390 == 65535) {
                 anInt390 = -1;
             }
 
-            aBoolean364 = stream.method978(120) == 1;
+            aBoolean364 = stream.readByte(120) == 1;
         }
 
         if ((anInt354 ^ 0xffffffff) == -5) {
-            anInt338 = stream.method980(113);
+            anInt338 = stream.readShort(113);
 
             if (anInt338 == 65535) {
                 anInt338 = -1;
             }
 
-            aJString_411 = stream.method944((byte) -84);
-            anInt420 = stream.method978(124);
-            anInt406 = stream.method978(116);
-            anInt379 = stream.method978(126);
-            aBoolean403 = stream.method978(126) == 1;
-            anInt442 = stream.method933(-118);
+            aJString_411 = stream.readString();
+            anInt420 = stream.readByte(124);
+            anInt406 = stream.readByte(116);
+            anInt379 = stream.readByte(126);
+            aBoolean403 = stream.readByte(126) == 1;
+            anInt442 = stream.readInt(-118);
         }
 
         if ((anInt354 ^ 0xffffffff) == -4) {
-            anInt442 = stream.method933(-113);
-            aBoolean321 = (stream.method978(124) ^ 0xffffffff) == -2;
-            anInt320 = stream.method978(123);
+            anInt442 = stream.readInt(-113);
+            aBoolean321 = (stream.readByte(124) ^ 0xffffffff) == -2;
+            anInt320 = stream.readByte(123);
         }
 
         if ((anInt354 ^ 0xffffffff) == -10) {
-            anInt337 = stream.method978(118);
-            anInt442 = stream.method933(-91);
+            anInt337 = stream.readByte(118);
+            anInt442 = stream.readInt(-91);
         }
 
-        anInt322 = stream.method935(-26256544);
-        aJString_391 = stream.method944((byte) 111);
+        anInt322 = stream.read3Bytes(-26256544);
+        aJString_391 = stream.readString();
 
-        int i = stream.method978(122);
+        int i = stream.readByte(122);
 
         if ((i ^ 0xffffffff) < -1) {
             aJStringArray453 = new JString[i];
 
             for (int i_42_ = 0; i_42_ < i; i_42_++)
-                aJStringArray453[i_42_] = stream.method944((byte) -101);
+                aJStringArray453[i_42_] = stream.readString();
         }
 
-        anInt378 = stream.method978(119);
-        anInt350 = stream.method978(122);
-        aBoolean372 = stream.method978(117) == 1;
-        aJString_360 = stream.method944((byte) 50);
+        anInt378 = stream.readByte(119);
+        anInt350 = stream.readByte(122);
+        aBoolean372 = stream.readByte(117) == 1;
+        aJString_360 = stream.readString();
         anObjectArray433 = method197(stream, 29002);
         anObjectArray429 = method197(stream, 29002);
         anObjectArray355 = method197(stream, 29002);

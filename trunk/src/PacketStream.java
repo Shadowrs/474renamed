@@ -46,7 +46,7 @@ public class PacketStream extends Stream {
         }
 
         anInt3612++;
-        return ((buffer[currentIndex++] - aClass4_3628.method50(true)) & 0xff);
+        return ((buffer[bufferLocation++] - aClass4_3628.method50(true)) & 0xff);
     }
 
     public static void method987(int i, int i_0_, int i_1_, int i_2_) {
@@ -74,7 +74,7 @@ public class PacketStream extends Stream {
 
     public void method988(boolean bool) {
         anInt3619++;
-        currentIndex = (7 + anInt3626) / 8;
+        bufferLocation = (7 + anInt3626) / 8;
 
         if (bool != true) {
             aClass19_3613 = null;
@@ -86,7 +86,7 @@ public class PacketStream extends Stream {
             method990(false, null);
         }
 
-        buffer[currentIndex++] = (byte) (i_3_ +
+        buffer[bufferLocation++] = (byte) (i_3_ +
             aClass4_3628.method50(true));
         anInt3621++;
     }
@@ -144,7 +144,7 @@ public class PacketStream extends Stream {
     }
 
     public void method993(boolean bool) {
-        anInt3626 = 8 * currentIndex;
+        anInt3626 = 8 * bufferLocation;
         anInt3615++;
 
         if (bool != false) {

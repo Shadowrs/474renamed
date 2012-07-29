@@ -36,9 +36,9 @@ public class Class7 {
         for (int i_0_ = 0; i_0_ < i; i_0_++) {
             anIntArray156[i_0_] = 0;
             anIntArray154[i_0_] = 0;
-            aStream_148.currentIndex = anIntArray155[i_0_];
+            aStream_148.bufferLocation = anIntArray155[i_0_];
             method74(i_0_);
-            anIntArray153[i_0_] = aStream_148.currentIndex;
+            anIntArray153[i_0_] = aStream_148.bufferLocation;
         }
     }
 
@@ -54,25 +54,25 @@ public class Class7 {
 
     public void method65(byte[] is) {
         aStream_148.buffer = is;
-        aStream_148.currentIndex = 10;
+        aStream_148.bufferLocation = 10;
 
-        int i = aStream_148.method980(-121);
-        anInt150 = aStream_148.method980(12);
+        int i = aStream_148.readShort(-121);
+        anInt150 = aStream_148.readShort(12);
         anInt152 = 500000;
         anIntArray155 = new int[i];
 
         int i_2_ = 0;
 
         while (i_2_ < i) {
-            int i_3_ = aStream_148.method933(-89);
-            int i_4_ = aStream_148.method933(-40);
+            int i_3_ = aStream_148.readInt(-89);
+            int i_4_ = aStream_148.readInt(-40);
 
             if (i_3_ == 1297379947) {
-                anIntArray155[i_2_] = aStream_148.currentIndex;
+                anIntArray155[i_2_] = aStream_148.bufferLocation;
                 i_2_++;
             }
 
-            aStream_148.currentIndex += i_4_;
+            aStream_148.bufferLocation += i_4_;
         }
 
         aLong149 = 0L;
@@ -87,28 +87,28 @@ public class Class7 {
 
     public int method66(int i, int i_6_) {
         if (i_6_ == 255) {
-            int i_7_ = aStream_148.method978(118);
+            int i_7_ = aStream_148.readByte(118);
             int i_8_ = aStream_148.method974((byte) -89);
 
             if (i_7_ == 47) {
-                aStream_148.currentIndex += i_8_;
+                aStream_148.bufferLocation += i_8_;
 
                 return 1;
             }
 
             if (i_7_ == 81) {
-                int i_9_ = aStream_148.method935(-26256544);
+                int i_9_ = aStream_148.read3Bytes(-26256544);
                 i_8_ -= 3;
 
                 int i_10_ = anIntArray156[i];
                 aLong149 += ((long) i_10_ * (long) (anInt152 - i_9_));
                 anInt152 = i_9_;
-                aStream_148.currentIndex += i_8_;
+                aStream_148.bufferLocation += i_8_;
 
                 return 2;
             }
 
-            aStream_148.currentIndex += i_8_;
+            aStream_148.bufferLocation += i_8_;
 
             return 3;
         }
@@ -117,11 +117,11 @@ public class Class7 {
         int i_12_ = i_6_;
 
         if (i_11_ >= 1) {
-            i_12_ |= (aStream_148.method978(127) << 8);
+            i_12_ |= (aStream_148.readByte(127) << 8);
         }
 
         if (i_11_ >= 2) {
-            i_12_ |= (aStream_148.method978(120) << 16);
+            i_12_ |= (aStream_148.readByte(120) << 16);
         }
 
         return i_12_;
@@ -148,7 +148,7 @@ public class Class7 {
     }
 
     public void method69(int i) {
-        anIntArray153[i] = aStream_148.currentIndex;
+        anIntArray153[i] = aStream_148.bufferLocation;
     }
 
     public static void method70() {
@@ -156,7 +156,7 @@ public class Class7 {
     }
 
     public void method71(int i) {
-        aStream_148.currentIndex = anIntArray153[i];
+        aStream_148.bufferLocation = anIntArray153[i];
     }
 
     public int method72() {
@@ -164,12 +164,12 @@ public class Class7 {
     }
 
     public int method73(int i) {
-        int i_14_ = aStream_148.buffer[aStream_148.currentIndex];
+        int i_14_ = aStream_148.buffer[aStream_148.bufferLocation];
 
         if (i_14_ < 0) {
             i_14_ &= 0xff;
             anIntArray154[i] = i_14_;
-            aStream_148.currentIndex++;
+            aStream_148.bufferLocation++;
         } else {
             i_14_ = anIntArray154[i];
         }
@@ -178,20 +178,20 @@ public class Class7 {
             int i_15_ = aStream_148.method974((byte) -109);
 
             if ((i_14_ == 247) && (i_15_ > 0)) {
-                int i_16_ = ((aStream_148.buffer[aStream_148.currentIndex]) &
+                int i_16_ = ((aStream_148.buffer[aStream_148.bufferLocation]) &
                     0xff);
 
                 if (((i_16_ >= 241) && (i_16_ <= 243)) || (i_16_ == 246) ||
                         (i_16_ == 248) || ((i_16_ >= 250) && (i_16_ <= 252)) ||
                         (i_16_ == 254)) {
-                    aStream_148.currentIndex++;
+                    aStream_148.bufferLocation++;
                     anIntArray154[i] = i_16_;
 
                     return method66(i, i_16_);
                 }
             }
 
-            aStream_148.currentIndex += i_15_;
+            aStream_148.bufferLocation += i_15_;
 
             return 0;
         }
@@ -205,7 +205,7 @@ public class Class7 {
     }
 
     public void method75() {
-        aStream_148.currentIndex = -1;
+        aStream_148.bufferLocation = -1;
     }
 
     public boolean method76() {

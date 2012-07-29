@@ -112,12 +112,12 @@ public class Class37_Sub9_Sub2 extends Class37_Sub9 {
                     break;
                 }
             } else {
-                anInt2931 = stream.method980(64);
+                anInt2931 = stream.readShort(64);
 
                 break;
             }
 
-            aBoolean2927 = stream.method978(121) == 1;
+            aBoolean2927 = stream.readByte(121) == 1;
         } while (false);
     }
 

@@ -970,8 +970,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                         Class42.aStream_Sub1_936.method989(-1494101117,
                                                                             249);
-                                                                        Class42.aStream_Sub1_936.method947((byte) 97,
-                                                                            i_57_);
+                                                                        Class42.aStream_Sub1_936.writeInt(i_57_);
                                                                     } else if (i_24_ == 3105) {
                                                                         Class83.anInt1516++;
 
@@ -979,9 +978,8 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             Class60.aJStringArray1148[--i_21_];
                                                                         Class42.aStream_Sub1_936.method989(-1494101117,
                                                                             82);
-                                                                        Class42.aStream_Sub1_936.method949(jstring.method152(
-                                                                                -69),
-                                                                            (byte) -57);
+                                                                        Class42.aStream_Sub1_936.writeLong(jstring.method152(
+                                                                                -69));
                                                                     } else if (i_24_ == 3106) {
                                                                         Class82.anInt1709++;
 
@@ -989,11 +987,11 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             Class60.aJStringArray1148[--i_21_];
                                                                         Class42.aStream_Sub1_936.method989(-1494101117,
                                                                             88);
-                                                                        Class42.aStream_Sub1_936.method964(126,
+                                                                        Class42.aStream_Sub1_936.writeSignedByte(126,
                                                                             jstring.method172(
                                                                                 (byte) 38) -
                                                                             -1);
-                                                                        Class42.aStream_Sub1_936.method977(jstring,
+                                                                        Class42.aStream_Sub1_936.writeString(jstring,
                                                                             0);
                                                                     } else if ((i_24_ ^
                                                                             0xffffffff) == -3108) {
@@ -1052,7 +1050,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             Class14.anIntArray248[--i_20_];
                                                                         Class42.aStream_Sub1_936.method989(-1494101117,
                                                                             171);
-                                                                        Class42.aStream_Sub1_936.method965(848881960,
+                                                                        Class42.aStream_Sub1_936.writeShort(848881960,
                                                                             i_64_);
                                                                     }
                                                                 } else if (i_24_ >= 3300) {
@@ -1879,12 +1877,12 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         2];
                                                                                     Class42.aStream_Sub1_936.method989(-1494101117,
                                                                                         251);
-                                                                                    Class42.aStream_Sub1_936.method964(119,
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(119,
                                                                                         Class37_Sub9_Sub24.anInt3361);
                                                                                     Class2.anInt73++;
-                                                                                    Class42.aStream_Sub1_936.method964(105,
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(105,
                                                                                         Class8.anInt165);
-                                                                                    Class42.aStream_Sub1_936.method964(108,
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(108,
                                                                                         Class37_Sub9_Sub15.anInt3169);
                                                                                 } else if (i_24_ == 5002) {
                                                                                     i_20_ -= 2;
@@ -1900,13 +1898,12 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         Class14.anIntArray248[i_20_];
                                                                                     Class42.aStream_Sub1_936.method989(-1494101117,
                                                                                         198);
-                                                                                    Class42.aStream_Sub1_936.method949(jstring.method152(
-                                                                                            -96),
-                                                                                        (byte) -93);
-                                                                                    Class42.aStream_Sub1_936.method964(124,
+                                                                                    Class42.aStream_Sub1_936.writeLong(jstring.method152(
+                                                                                            -96));
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(124,
                                                                                         i_137_ -
                                                                                         1);
-                                                                                    Class42.aStream_Sub1_936.method964(108,
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(108,
                                                                                         i_136_);
                                                                                 } else if ((i_24_ ^
                                                                                         0xffffffff) == -5004) {
@@ -2239,20 +2236,20 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                                         Class42.aStream_Sub1_936.method989(-1494101117,
                                                                                             52);
-                                                                                        Class42.aStream_Sub1_936.method964(124,
+                                                                                        Class42.aStream_Sub1_936.writeSignedByte(124,
                                                                                             0);
 
                                                                                         int i_144_ =
-                                                                                            Class42.aStream_Sub1_936.currentIndex;
-                                                                                        Class42.aStream_Sub1_936.method964(103,
+                                                                                            Class42.aStream_Sub1_936.bufferLocation;
+                                                                                        Class42.aStream_Sub1_936.writeSignedByte(103,
                                                                                             i_142_);
-                                                                                        Class42.aStream_Sub1_936.method964(120,
+                                                                                        Class42.aStream_Sub1_936.writeSignedByte(120,
                                                                                             i_143_);
                                                                                         Class37_Sub9_Sub18.method837(Class42.aStream_Sub1_936,
                                                                                             1,
                                                                                             jstring);
                                                                                         Class42.aStream_Sub1_936.method948(-i_144_ +
-                                                                                            Class42.aStream_Sub1_936.currentIndex,
+                                                                                            Class42.aStream_Sub1_936.bufferLocation,
                                                                                             128);
                                                                                     }
                                                                                 } else if ((i_24_ ^
@@ -2267,19 +2264,18 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     Class37_Sub9_Sub36.anInt3581++;
                                                                                     Class42.aStream_Sub1_936.method989(-1494101117,
                                                                                         252);
-                                                                                    Class42.aStream_Sub1_936.method964(101,
+                                                                                    Class42.aStream_Sub1_936.writeSignedByte(101,
                                                                                         0);
 
                                                                                     int i_146_ =
-                                                                                        Class42.aStream_Sub1_936.currentIndex;
-                                                                                    Class42.aStream_Sub1_936.method949(jstring_145_.method152(
-                                                                                            -89),
-                                                                                        (byte) -104);
+                                                                                        Class42.aStream_Sub1_936.bufferLocation;
+                                                                                    Class42.aStream_Sub1_936.writeLong(jstring_145_.method152(
+                                                                                            -89));
                                                                                     Class37_Sub9_Sub18.method837(Class42.aStream_Sub1_936,
                                                                                         1,
                                                                                         jstring);
                                                                                     Class42.aStream_Sub1_936.method948(-i_146_ +
-                                                                                        Class42.aStream_Sub1_936.currentIndex,
+                                                                                        Class42.aStream_Sub1_936.bufferLocation,
                                                                                         128);
                                                                                 } else if (i_24_ == 5010) {
                                                                                     int i_147_ =
@@ -3426,42 +3422,42 @@ while_8_:
                                             break while_8_;
                                         }
                                     } else {
-                                        anInt2971 = stream.method978(121);
+                                        anInt2971 = stream.readByte(121);
 
                                         break while_13_;
                                     }
 
-                                    anInt2965 = stream.method978(126);
+                                    anInt2965 = stream.readByte(126);
 
                                     break while_13_;
                                 } while (false);
 
-                                anInt2958 = stream.method980(-119);
+                                anInt2958 = stream.readShort(-119);
 
                                 break while_13_;
                             } while (false);
 
-                            anInt2966 = stream.method980(-125);
+                            anInt2966 = stream.readShort(-125);
 
                             break while_13_;
                         } while (false);
 
-                        anInt2977 = stream.method980(73);
+                        anInt2977 = stream.readShort(73);
 
                         break while_13_;
                     } while (false);
 
-                    anInt2978 = stream.method980(-21);
+                    anInt2978 = stream.readShort(-21);
 
                     break while_13_;
                 } while (false);
 
-                anInt2972 = stream.method980(-122);
+                anInt2972 = stream.readShort(-122);
 
                 break while_13_;
             } while (false);
 
-            anInt2979 = stream.method980(-123);
+            anInt2979 = stream.readShort(-123);
         } while (false);
 
         if (bool != true) {

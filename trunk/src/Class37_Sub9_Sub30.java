@@ -97,37 +97,37 @@ while_107_:
                                             break while_107_;
                                         }
                                     } else {
-                                        anInt3459 = stream.method980(71);
+                                        anInt3459 = stream.readShort(71);
 
                                         return;
                                     }
 
-                                    anInt3468 = stream.method980(8);
+                                    anInt3468 = stream.readShort(8);
 
                                     return;
                                 } while (false);
 
-                                anInt3470 = stream.method980(-126);
+                                anInt3470 = stream.readShort(-126);
 
                                 return;
                             } while (false);
 
-                            anInt3461 = stream.method980(26);
+                            anInt3461 = stream.readShort(26);
 
                             return;
                         } while (false);
 
-                        anInt3465 = stream.method980(-125);
+                        anInt3465 = stream.readShort(-125);
 
                         return;
                     } while (false);
 
-                    anInt3464 = stream.method980(-127);
+                    anInt3464 = stream.readShort(-127);
 
                     return;
                 } while (false);
 
-                anInt3460 = stream.method980(-123);
+                anInt3460 = stream.readShort(-123);
             } while (false);
         }
     }
@@ -254,7 +254,7 @@ while_107_:
 
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
                         Class42.aStream_Sub1_936.method989(-1494101117, 1);
-                        Class42.aStream_Sub1_936.method949(l, (byte) -82);
+                        Class42.aStream_Sub1_936.writeLong(l);
 
                         break;
                     }

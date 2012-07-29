@@ -53,9 +53,9 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
             }
         }
 
-        if (Class37_Sub4.packetSize != Class83.packetStream.currentIndex) {
+        if (Class37_Sub4.packetSize != Class83.packetStream.bufferLocation) {
             throw new RuntimeException("gpp1 pos:" +
-                (Class83.packetStream.currentIndex) + " psize:" +
+                (Class83.packetStream.bufferLocation) + " psize:" +
                 Class37_Sub4.packetSize);
         }
 
@@ -83,7 +83,7 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
 
     public void method750(Stream stream, int i, boolean bool) {
         if ((i ^ 0xffffffff) == -1) {
-            anInt3315 = stream.method980(-124);
+            anInt3315 = stream.readShort(-124);
         }
 
         if (bool != true) {
@@ -209,7 +209,7 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
             return 0;
         }
 
-        return (((Class49.aStream_1006.currentIndex * 99) / (-Class60.aClass37_Sub4_Sub13_1152.aByte2788 +
+        return (((Class49.aStream_1006.bufferLocation * 99) / (-Class60.aClass37_Sub4_Sub13_1152.aByte2788 +
         Class49.aStream_1006.buffer.length)) + 1);
     }
 }

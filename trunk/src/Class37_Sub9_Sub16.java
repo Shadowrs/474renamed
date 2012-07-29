@@ -118,7 +118,7 @@ public class Class37_Sub9_Sub16 extends Class37_Sub9 {
         anInt3196++;
         Class42.aStream_Sub1_936.method989(-1494101117, 163);
         Class37_Sub9_Sub15.anInt3177++;
-        Class42.aStream_Sub1_936.method949(0L, (byte) -108);
+        Class42.aStream_Sub1_936.writeLong(0L);
     }
 
     public static void method828(int i, int i_11_, int i_12_, int i_13_,
@@ -396,17 +396,17 @@ while_72_:
                                         break while_72_;
                                     }
                                 } else {
-                                    aBoolean3207 = stream.method978(125) == 1;
+                                    aBoolean3207 = stream.readByte(125) == 1;
 
                                     break while_76_;
                                 }
 
-                                anInt3186 = stream.method978(117);
+                                anInt3186 = stream.readByte(117);
 
                                 break while_76_;
                             } while (false);
 
-                            anInt3190 = stream.method931((byte) 101);
+                            anInt3190 = stream.readSignedShort((byte) 101);
 
                             if ((anInt3190 ^ 0xffffffff) > -1) {
                                 anIntArray3188 = new int[anInt3186];
@@ -414,28 +414,28 @@ while_72_:
                                 for (i_53_ = 0;
                                         ((anInt3186 ^ 0xffffffff) < (i_53_ ^
                                         0xffffffff)); i_53_++)
-                                    anIntArray3188[i_53_] = stream.method931((byte) 110);
+                                    anIntArray3188[i_53_] = stream.readSignedShort((byte) 110);
                             }
 
                             break while_76_;
                         } while (false);
 
-                        anInt3198 = anInt3187 = stream.method978(122);
+                        anInt3198 = anInt3187 = stream.readByte(122);
 
                         break while_76_;
                     } while (false);
 
-                    anInt3193 = stream.method978(125);
+                    anInt3193 = stream.readByte(125);
 
                     break while_76_;
                 } while (false);
 
-                anInt3198 = stream.method978(122);
+                anInt3198 = stream.readByte(122);
 
                 break while_76_;
             } while (false);
 
-            anInt3187 = stream.method978(119);
+            anInt3187 = stream.readByte(119);
         } while (false);
 
         anInt3184++;

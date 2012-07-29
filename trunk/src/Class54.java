@@ -2188,8 +2188,8 @@ public class Class54 {
         Class37_Sub9_Sub16.anInt3201 = 0;
         Class45.anInt977 = -1;
         Class37_Sub9_Sub21.anInt3321 = 0;
-        Class42.aStream_Sub1_936.currentIndex = 0;
-        Class83.packetStream.currentIndex = 0;
+        Class42.aStream_Sub1_936.bufferLocation = 0;
+        Class83.packetStream.bufferLocation = 0;
         Class58.method1156(8, 0);
 
         for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -101; i_90_++)

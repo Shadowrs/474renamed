@@ -288,8 +288,7 @@ public class Class58 {
 				if (Class36.aFrame797 != null) {
 					Class42.aStream_Sub1_936.method989(-1494101117, 150);
 					Login.anInt778++;
-					Class42.aStream_Sub1_936.method947((byte) -111,
-							1057001181);
+					Class42.aStream_Sub1_936.writeInt(1057001181);
 				}
 				if (!Class37_Sub17.aBoolean2165) {
 					int i_45_ = (-6 + Class37_Sub4_Sub7.anInt2641) / 8;

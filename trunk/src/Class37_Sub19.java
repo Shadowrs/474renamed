@@ -6,12 +6,12 @@ public class Class37_Sub19 extends Class37 {
     public Class13 aClass13_2203;
 
     public Class37_Sub19(Stream stream) {
-        stream.currentIndex = stream.buffer.length - 3;
+        stream.bufferLocation = stream.buffer.length - 3;
 
-        int i = stream.method978(127);
-        int i_16_ = stream.method980(-126);
+        int i = stream.readByte(127);
+        int i_16_ = stream.readShort(-126);
         int i_17_ = 14 + (i * 10);
-        stream.currentIndex = 0;
+        stream.bufferLocation = 0;
 
         int i_18_ = 0;
         int i_19_ = 0;
@@ -26,7 +26,7 @@ while_87_:
             int i_27_ = -1;
 
             for (;;) {
-                int i_28_ = stream.method978(122);
+                int i_28_ = stream.readByte(122);
 
                 if (i_28_ != i_27_) {
                     i_17_++;
@@ -68,16 +68,16 @@ while_87_:
         i_17_ += (2 * (i_20_ + i_21_ + i_19_ + i_22_ + i_24_));
         i_17_ += (i_23_ + i_25_);
 
-        int i_29_ = stream.currentIndex;
+        int i_29_ = stream.bufferLocation;
         int i_30_ = (i + i_18_ + i_19_ + i_20_ + i_21_ + i_22_ + i_23_ + i_24_ +
             i_25_);
 
         for (int i_31_ = 0; i_31_ < i_30_; i_31_++)
             stream.method974((byte) -90);
 
-        i_17_ += (stream.currentIndex - i_29_);
+        i_17_ += (stream.bufferLocation - i_29_);
 
-        int i_32_ = stream.currentIndex;
+        int i_32_ = stream.bufferLocation;
         int i_33_ = 0;
         int i_34_ = 0;
         int i_35_ = 0;
@@ -93,7 +93,7 @@ while_87_:
         int i_45_ = 0;
 
         for (int i_46_ = 0; i_46_ < i_19_; i_46_++) {
-            i_45_ = (i_45_ + stream.method978(120)) & 0x7f;
+            i_45_ = (i_45_ + stream.readByte(120)) & 0x7f;
 
             if ((i_45_ == 0) || (i_45_ == 32)) {
                 i_25_++;
@@ -126,77 +126,77 @@ while_87_:
         }
 
         int i_47_ = 0;
-        int i_48_ = stream.currentIndex;
-        stream.currentIndex += i_43_;
+        int i_48_ = stream.bufferLocation;
+        stream.bufferLocation += i_43_;
 
-        int i_49_ = stream.currentIndex;
-        stream.currentIndex += i_24_;
+        int i_49_ = stream.bufferLocation;
+        stream.bufferLocation += i_24_;
 
-        int i_50_ = stream.currentIndex;
-        stream.currentIndex += i_23_;
+        int i_50_ = stream.bufferLocation;
+        stream.bufferLocation += i_23_;
 
-        int i_51_ = stream.currentIndex;
-        stream.currentIndex += i_22_;
+        int i_51_ = stream.bufferLocation;
+        stream.bufferLocation += i_22_;
 
-        int i_52_ = stream.currentIndex;
-        stream.currentIndex += i_33_;
+        int i_52_ = stream.bufferLocation;
+        stream.bufferLocation += i_33_;
 
-        int i_53_ = stream.currentIndex;
-        stream.currentIndex += i_35_;
+        int i_53_ = stream.bufferLocation;
+        stream.bufferLocation += i_35_;
 
-        int i_54_ = stream.currentIndex;
-        stream.currentIndex += i_37_;
+        int i_54_ = stream.bufferLocation;
+        stream.bufferLocation += i_37_;
 
-        int i_55_ = stream.currentIndex;
-        stream.currentIndex += (i_20_ + i_21_ + i_24_);
+        int i_55_ = stream.bufferLocation;
+        stream.bufferLocation += (i_20_ + i_21_ + i_24_);
 
-        int i_56_ = stream.currentIndex;
-        stream.currentIndex += i_20_;
+        int i_56_ = stream.bufferLocation;
+        stream.bufferLocation += i_20_;
 
-        int i_57_ = stream.currentIndex;
-        stream.currentIndex += i_44_;
+        int i_57_ = stream.bufferLocation;
+        stream.bufferLocation += i_44_;
 
-        int i_58_ = stream.currentIndex;
-        stream.currentIndex += i_21_;
+        int i_58_ = stream.bufferLocation;
+        stream.bufferLocation += i_21_;
 
-        int i_59_ = stream.currentIndex;
-        stream.currentIndex += i_34_;
+        int i_59_ = stream.bufferLocation;
+        stream.bufferLocation += i_34_;
 
-        int i_60_ = stream.currentIndex;
-        stream.currentIndex += i_36_;
+        int i_60_ = stream.bufferLocation;
+        stream.bufferLocation += i_36_;
 
-        int i_61_ = stream.currentIndex;
-        stream.currentIndex += i_38_;
+        int i_61_ = stream.bufferLocation;
+        stream.bufferLocation += i_38_;
 
-        int i_62_ = stream.currentIndex;
-        stream.currentIndex += i_25_;
+        int i_62_ = stream.bufferLocation;
+        stream.bufferLocation += i_25_;
 
-        int i_63_ = stream.currentIndex;
-        stream.currentIndex += i_22_;
+        int i_63_ = stream.bufferLocation;
+        stream.bufferLocation += i_22_;
 
-        int i_64_ = stream.currentIndex;
-        stream.currentIndex += i_39_;
+        int i_64_ = stream.bufferLocation;
+        stream.bufferLocation += i_39_;
 
-        int i_65_ = stream.currentIndex;
-        stream.currentIndex += i_40_;
+        int i_65_ = stream.bufferLocation;
+        stream.bufferLocation += i_40_;
 
-        int i_66_ = stream.currentIndex;
-        stream.currentIndex += i_41_;
+        int i_66_ = stream.bufferLocation;
+        stream.bufferLocation += i_41_;
 
-        int i_67_ = stream.currentIndex;
-        stream.currentIndex += i_42_;
+        int i_67_ = stream.bufferLocation;
+        stream.bufferLocation += i_42_;
 
-        int i_68_ = stream.currentIndex;
-        stream.currentIndex += (i_18_ * 3);
+        int i_68_ = stream.bufferLocation;
+        stream.bufferLocation += (i_18_ * 3);
         aByteArray2202 = new byte[i_17_];
 
         Stream stream_69_ = new Stream(aByteArray2202);
-        stream_69_.method947((byte) -106, 1297377380);
-        stream_69_.method947((byte) -98, 6);
-        stream_69_.method965(848881960, (i > 1) ? 1 : 0);
-        stream_69_.method965(848881960, i);
-        stream_69_.method965(848881960, i_16_);
-        stream.currentIndex = i_29_;
+        stream_69_.writeInt(1297377380);
+        stream_69_.writeInt(6);
+        stream_69_.writeShort(848881960, (i > 1) ? 1 : 0);
+        stream_69_.writeShort(848881960, i);
+        stream_69_.writeShort(848881960, i_16_);
+        stream.bufferLocation = i_29_;
 
         int i_70_ = 0;
         int i_71_ = 0;
@@ -209,10 +209,10 @@ while_87_:
         i_45_ = 0;
 
         for (int i_77_ = 0; i_77_ < i; i_77_++) {
-            stream_69_.method947((byte) -108, 1297379947);
-            stream_69_.currentIndex += 4;
+            stream_69_.writeInt(1297379947);
+            stream_69_.bufferLocation += 4;
 
-            int i_78_ = stream_69_.currentIndex;
+            int i_78_ = stream_69_.bufferLocation;
             int i_79_ = -1;
 while_88_: 
             do {
@@ -226,58 +226,58 @@ while_88_:
 
                     if (i_81_ == 7) {
                         if (bool) {
-                            stream_69_.method964(105, 255);
+                            stream_69_.writeSignedByte(105, 255);
                         }
 
-                        stream_69_.method964(106, 47);
-                        stream_69_.method964(125, 0);
+                        stream_69_.writeSignedByte(106, 47);
+                        stream_69_.writeSignedByte(125, 0);
 
                         break while_88_;
                     }
 
                     if (i_81_ == 23) {
                         if (bool) {
-                            stream_69_.method964(116, 255);
+                            stream_69_.writeSignedByte(116, 255);
                         }
 
-                        stream_69_.method964(117, 81);
-                        stream_69_.method964(97, 3);
-                        stream_69_.method964(123,
+                        stream_69_.writeSignedByte(117, 81);
+                        stream_69_.writeSignedByte(97, 3);
+                        stream_69_.writeSignedByte(123,
                             (stream.buffer[i_68_++]));
-                        stream_69_.method964(120,
+                        stream_69_.writeSignedByte(120,
                             (stream.buffer[i_68_++]));
-                        stream_69_.method964(127,
+                        stream_69_.writeSignedByte(127,
                             (stream.buffer[i_68_++]));
                     } else {
                         i_70_ ^= (i_81_ >> 4);
 
                         if (i_79_ == 0) {
                             if (bool) {
-                                stream_69_.method964(125, 144 + i_70_);
+                                stream_69_.writeSignedByte(125, 144 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_72_ += stream.buffer[i_56_++];
-                            stream_69_.method964(98, i_71_ & 0x7f);
-                            stream_69_.method964(112, i_72_ & 0x7f);
+                            stream_69_.writeSignedByte(98, i_71_ & 0x7f);
+                            stream_69_.writeSignedByte(112, i_72_ & 0x7f);
                         } else if (i_79_ == 1) {
                             if (bool) {
-                                stream_69_.method964(123, 128 + i_70_);
+                                stream_69_.writeSignedByte(123, 128 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_73_ += stream.buffer[i_58_++];
-                            stream_69_.method964(96, i_71_ & 0x7f);
-                            stream_69_.method964(112, i_73_ & 0x7f);
+                            stream_69_.writeSignedByte(96, i_71_ & 0x7f);
+                            stream_69_.writeSignedByte(112, i_73_ & 0x7f);
                         } else if (i_79_ == 2) {
                             if (bool) {
-                                stream_69_.method964(108, 176 + i_70_);
+                                stream_69_.writeSignedByte(108, 176 + i_70_);
                             }
 
                             i_45_ = (i_45_ +
                                 (stream.buffer[i_32_++])) &
                                 0x7f;
-                            stream_69_.method964(113, i_45_);
+                            stream_69_.writeSignedByte(113, i_45_);
 
                             int i_82_;
 
@@ -313,44 +313,44 @@ while_88_:
 
                             i_82_ += is[i_45_];
                             is[i_45_] = i_82_;
-                            stream_69_.method964(102, i_82_ & 0x7f);
+                            stream_69_.writeSignedByte(102, i_82_ & 0x7f);
                         } else if (i_79_ == 3) {
                             if (bool) {
-                                stream_69_.method964(108, 224 + i_70_);
+                                stream_69_.writeSignedByte(108, 224 + i_70_);
                             }
 
                             i_74_ += stream.buffer[i_63_++];
 
                             i_74_ += (stream.buffer[i_51_++] << 7);
-                            stream_69_.method964(120, i_74_ & 0x7f);
-                            stream_69_.method964(96, (i_74_ >> 7) &
+                            stream_69_.writeSignedByte(120, i_74_ & 0x7f);
+                            stream_69_.writeSignedByte(96, (i_74_ >> 7) &
                                 0x7f);
                         } else if (i_79_ == 4) {
                             if (bool) {
-                                stream_69_.method964(113, 208 + i_70_);
+                                stream_69_.writeSignedByte(113, 208 + i_70_);
                             }
 
                             i_75_ += stream.buffer[i_50_++];
-                            stream_69_.method964(118, i_75_ & 0x7f);
+                            stream_69_.writeSignedByte(118, i_75_ & 0x7f);
                         } else if (i_79_ == 5) {
                             if (bool) {
-                                stream_69_.method964(99, 160 + i_70_);
+                                stream_69_.writeSignedByte(99, 160 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_76_ += stream.buffer[i_49_++];
-                            stream_69_.method964(118, i_71_ & 0x7f);
-                            stream_69_.method964(105, i_76_ & 0x7f);
+                            stream_69_.writeSignedByte(118, i_71_ & 0x7f);
+                            stream_69_.writeSignedByte(105, i_76_ & 0x7f);
                         } else {
                             if (i_79_ != 6) {
                                 break;
                             }
 
                             if (bool) {
-                                stream_69_.method964(125, 192 + i_70_);
+                                stream_69_.writeSignedByte(125, 192 + i_70_);
                             }
 
-                            stream_69_.method964(99,
+                            stream_69_.writeSignedByte(99,
                                 (stream.buffer[i_62_++]));
                         }
                     }
@@ -359,8 +359,8 @@ while_88_:
                 throw new RuntimeException();
             } while (false);
 
-            stream_69_.method960((byte) -49,
-                stream_69_.currentIndex - i_78_);
+            stream_69_.insertValueOffset((byte) -49,
+                stream_69_.bufferLocation - i_78_);
         }
     }
 

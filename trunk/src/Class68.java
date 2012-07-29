@@ -243,8 +243,8 @@ public abstract class Class68 {
 
             jstring.aByteArray1669 = new byte[jstring.anInt1650];
 
-            stream.currentIndex += (Class15_Sub1.aClass14_1746.method103(jstring.aByteArray1669,
-                stream.currentIndex, -128, stream.buffer,
+            stream.bufferLocation += (Class15_Sub1.aClass14_1746.method103(jstring.aByteArray1669,
+                stream.bufferLocation, -128, stream.buffer,
                 jstring.anInt1650, 0));
 
 

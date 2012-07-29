@@ -304,16 +304,16 @@ public class Class42 {
                                 0xffffffff) <= -41)) {
                             aStream_Sub1_936.method989(-1494101117, 121);
                             Class10.anInt192++;
-                            aStream_Sub1_936.method964(104, 0);
+                            aStream_Sub1_936.writeSignedByte(104, 0);
 
-                            int i_16_ = aStream_Sub1_936.currentIndex;
+                            int i_16_ = aStream_Sub1_936.bufferLocation;
                             int i_17_ = 0;
 
                             for (int i_18_ = 0;
                                     ((i_18_ ^ 0xffffffff) > (Class37_Sub9_Sub27.aClass55_3417.anInt1079 ^
                                     0xffffffff)); i_18_++) {
                                 if (((-i_16_ +
-                                        aStream_Sub1_936.currentIndex) ^
+                                        aStream_Sub1_936.bufferLocation) ^
                                         0xffffffff) <= -241) {
                                     break;
                                 }
@@ -363,29 +363,28 @@ public class Class42 {
                                             (i_23_ >= -32) && (i_23_ <= 31)) {
                                         i_22_ += 32;
                                         i_23_ += 32;
-                                        aStream_Sub1_936.method965(848881960,
+                                        aStream_Sub1_936.writeShort(848881960,
                                             ((i_22_ << -1251076986) +
                                             ((Class37_Sub9_Sub16.anInt3192 << 988481868) -
                                             -i_23_)));
                                         Class37_Sub9_Sub16.anInt3192 = 0;
                                     } else if (Class37_Sub9_Sub16.anInt3192 < 8) {
-                                        aStream_Sub1_936.method930((i_21_ +
+                                        aStream_Sub1_936.write3Bytes((i_21_ +
                                             8388608 +
                                             (Class37_Sub9_Sub16.anInt3192 << -1247144301)),
                                             i ^ ~0x7c);
                                         Class37_Sub9_Sub16.anInt3192 = 0;
                                     } else {
-                                        aStream_Sub1_936.method947((byte) 53,
-                                            (i_21_ +
-                                            ((Class37_Sub9_Sub16.anInt3192 << -1764545069) +
-                                            -1073741824)));
+                                        aStream_Sub1_936.writeInt((i_21_ +
+										((Class37_Sub9_Sub16.anInt3192 << -1764545069) +
+										-1073741824)));
                                         Class37_Sub9_Sub16.anInt3192 = 0;
                                     }
                                 }
                             }
 
                             aStream_Sub1_936.method948(-i_16_ +
-                                aStream_Sub1_936.currentIndex, i ^ 0x80);
+                                aStream_Sub1_936.bufferLocation, i ^ 0x80);
 
                             if (i_17_ < Class37_Sub9_Sub27.aClass55_3417.anInt1079) {
                                 Class37_Sub9_Sub27.aClass55_3417.anInt1079 -= i_17_;
@@ -447,7 +446,7 @@ public class Class42 {
                     }
 
                     aStream_Sub1_936.method989(-1494101117, 167);
-                    aStream_Sub1_936.method973((i_27_ +
+                    aStream_Sub1_936.writeIntLE((i_27_ +
                         ((i_29_ << -1805390380) - -(i_28_ << 731042931))),
                         i + -1629130328);
                 }
@@ -478,7 +477,7 @@ public class Class42 {
                     Class37_Sub20.aBoolean2217 = true;
                     Class37_Sub9_Sub22.anInt3322++;
                     aStream_Sub1_936.method989(-1494101117, 34);
-                    aStream_Sub1_936.method964(120, 1);
+                    aStream_Sub1_936.writeSignedByte(120, 1);
                 }
 
                 if ((Class78.aBoolean1464 == false) &&
@@ -486,7 +485,7 @@ public class Class42 {
                     Class37_Sub9_Sub22.anInt3322++;
                     Class37_Sub20.aBoolean2217 = false;
                     aStream_Sub1_936.method989(-1494101117, 34);
-                    aStream_Sub1_936.method964(i + 119, 0);
+                    aStream_Sub1_936.writeSignedByte(i + 119, 0);
                 }
 
                 Class37_Sub9_Sub27.method880(0);
@@ -599,11 +598,11 @@ public class Class42 {
 
                                         aStream_Sub1_936.method989(-1494101117,
                                             166);
-                                        aStream_Sub1_936.method957(true,
+                                        aStream_Sub1_936.writeShortLEA(true,
                                             Class37_Sub4_Sub7_Sub7.anInt3850);
-                                        aStream_Sub1_936.method946((byte) -85,
+                                        aStream_Sub1_936.writeByteS((byte) -85,
                                             i_30_);
-                                        aStream_Sub1_936.method966(false,
+                                        aStream_Sub1_936.writeInt2(false,
                                             (Class37_Sub25.aClass18_2285.anInt402));
                                         aStream_Sub1_936.method962(Class37_Sub9.anInt1979,
                                             false);
@@ -884,15 +883,15 @@ public class Class42 {
                         do {
                             try {
                                 if ((Applet_Sub1.aClass19_38 == null) ||
-                                        (aStream_Sub1_936.currentIndex <= 0)) {
+                                        (aStream_Sub1_936.bufferLocation <= 0)) {
                                     break;
                                 }
 
                                 Applet_Sub1.aClass19_38.write(0, (byte) 97,
                                     aStream_Sub1_936.buffer,
-                                    aStream_Sub1_936.currentIndex);
+                                    aStream_Sub1_936.bufferLocation);
                                 Class25.anInt637 = 0;
-                                aStream_Sub1_936.currentIndex = 0;
+                                aStream_Sub1_936.bufferLocation = 0;
                             } catch (IOException ioexception) {
                                 PacketParser.method843(false);
 

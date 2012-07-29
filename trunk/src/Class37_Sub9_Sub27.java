@@ -233,17 +233,17 @@ while_95_:
                         break while_95_;
                     }
                 } else {
-                    aBoolean3397 = (stream.method978(117) ^ 0xffffffff) == -2;
+                    aBoolean3397 = (stream.readByte(117) ^ 0xffffffff) == -2;
 
                     break while_95_;
                 }
 
-                aBoolean3416 = (stream.method978(119) ^ 0xffffffff) == -2;
+                aBoolean3416 = (stream.readByte(119) ^ 0xffffffff) == -2;
 
                 break while_95_;
             } while (false);
 
-            aBoolean1943 = stream.method978(119) == 1;
+            aBoolean1943 = stream.readByte(119) == 1;
         } while (false);
 
         anInt3419++;

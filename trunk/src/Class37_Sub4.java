@@ -356,7 +356,7 @@ public class Class37_Sub4 extends Class37 {
 
             if (i_9_ == 0) {
                 Class42.aStream_Sub1_936.method989(-1494101117, 46);
-                Class42.aStream_Sub1_936.method964(102,
+                Class42.aStream_Sub1_936.writeSignedByte(102,
                     i_22_ - (-i_22_ + -3));
                 Class37_Sub9.anInt1961++;
             }
@@ -364,14 +364,14 @@ public class Class37_Sub4 extends Class37 {
             if (i_9_ == 1) {
                 Class42.aStream_Sub1_936.method989(-1494101117, 11);
                 Class49.anInt1004++;
-                Class42.aStream_Sub1_936.method964(i_14_ ^ 0x6e,
+                Class42.aStream_Sub1_936.writeSignedByte(i_14_ ^ 0x6e,
                     (i_22_ + i_22_) - -17);
             }
 
             if (i_9_ == 2) {
                 Class24.anInt598++;
                 Class42.aStream_Sub1_936.method989(-1494101117, 59);
-                Class42.aStream_Sub1_936.method964(99,
+                Class42.aStream_Sub1_936.writeSignedByte(99,
                     3 + (i_22_ + i_22_));
             }
 
@@ -380,19 +380,19 @@ public class Class37_Sub4 extends Class37 {
 
             for (int i_37_ = 1; i_22_ > i_37_; i_37_++) {
                 i_20_--;
-                Class42.aStream_Sub1_936.method964(97,
+                Class42.aStream_Sub1_936.writeSignedByte(97,
                     (Class37_Sub4_Sub7_Sub1_Sub2.anIntArray3984[i_20_] - i_35_));
-                Class42.aStream_Sub1_936.method946((byte) -85,
+                Class42.aStream_Sub1_936.writeByteS((byte) -85,
                     (Class37_Sub9_Sub36.anIntArray3572[i_20_]) + -i_36_);
 
 
             }
 
-            Class42.aStream_Sub1_936.method945(19058,
+            Class42.aStream_Sub1_936.writeShortA(19058,
                 i_35_ + Class37_Sub18.anInt2200);
             Class42.aStream_Sub1_936.method962(i_36_ +
                 Class15_Sub1.anInt1738, false);
-            Class42.aStream_Sub1_936.method964(i_14_ + 126,
+            Class42.aStream_Sub1_936.writeSignedByte(i_14_ + 126,
                 (!RSSocket.aBooleanArray484[82]) ? 0 : 1);
             return true;
         }
@@ -451,8 +451,8 @@ public class Class37_Sub4 extends Class37 {
             if (Class43.aClass19_950 != null) {
                 try {
                     Stream stream = new Stream(4);
-                    stream.method964(100, (!bool) ? 3 : 2);
-                    stream.method930(0, -110);
+                    stream.writeSignedByte(100, (!bool) ? 3 : 2);
+                    stream.write3Bytes(0, -110);
                     Class43.aClass19_950.write(0, (byte) 126,
                         (stream.buffer), 4);
                 } catch (java.io.IOException ioexception) {

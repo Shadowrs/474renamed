@@ -85,7 +85,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
         anInt2546++;
 
         for (;;) {
-            int i_1_ = stream.method978(122);
+            int i_1_ = stream.readByte(122);
 
             if ((i_1_ ^ 0xffffffff) == -1) {
                 break;
@@ -186,9 +186,9 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
     public void method464(int i, Stream stream, boolean bool,
         int i_9_) {
         if ((i ^ 0xffffffff) == -2) {
-            anInt2556 = stream.method935(-26256544);
+            anInt2556 = stream.read3Bytes(-26256544);
         } else if ((i ^ 0xffffffff) == -3) {
-            anInt2554 = stream.method980(-125);
+            anInt2554 = stream.readShort(-125);
 
             if (anInt2554 == 65535) {
                 anInt2554 = -1;

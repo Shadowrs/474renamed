@@ -184,17 +184,17 @@ while_96_:
                             break while_96_;
                         }
                     } else {
-                        anInt3425 = stream.method980(2);
+                        anInt3425 = stream.readShort(2);
 
                         return;
                     }
 
-                    anInt3431 = stream.method980(86);
+                    anInt3431 = stream.readShort(86);
 
                     return;
                 } while (false);
 
-                anInt3433 = stream.method980(-121);
+                anInt3433 = stream.readShort(-121);
             } while (false);
         }
     }
