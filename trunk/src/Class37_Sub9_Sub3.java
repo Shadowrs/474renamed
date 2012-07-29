@@ -70,12 +70,12 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
                 string_0_ = string_0_.replace('#', '_');
 
                 if (Class43.aClass51_958.anApplet1045 != null) {
-                    Class23 class23 = (Class43.aClass51_958.method1122((byte) 40,
+                    Class23 class23 = (Class43.aClass51_958.createResource((byte) 40,
                             new URL(Class43.aClass51_958.anApplet1045.getCodeBase(),
                                 ("clienterror.ws?c=" + Class85.anInt1552 +
                                 "&u=" + Class37_Sub9_Sub34.aLong3556 + "&v1=" +
-                                Signlink.aString1039 + "&v2=" +
-                                Signlink.aString1033 + "&e=" + string_0_))));
+                                Signlink.javaVendor + "&v2=" +
+                                Signlink.javaVersion + "&e=" + string_0_))));
 
                     while (class23.anInt591 == 0)
                         Class37_Sub9_Sub20.method846(1L, (byte) 58);

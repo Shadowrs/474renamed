@@ -124,27 +124,27 @@ public class Client extends Applet_Sub1 {
             Class88.anInt1595 = Signlink.anInt1041;
 
             try {
-                if (Class80.aClass51_1508.aClass70_1034 != null) {
-                    Class58.aClass42_1109 = new Class42(Class80.aClass51_1508.aClass70_1034,
+                if (Class80.aClass51_1508.cacheDataFile != null) {
+                    Class58.aClass42_1109 = new Class42(Class80.aClass51_1508.cacheDataFile,
                             5200, 0);
 
                     for (int i_0_ = 0; i_0_ < 16; i_0_++)
-                        Class37_Sub4_Sub7_Sub1.aClass42Array3699[i_0_] = new Class42((Class80.aClass51_1508.aClass70Array1046[i_0_]),
+                        Class37_Sub4_Sub7_Sub1.aClass42Array3699[i_0_] = new Class42((Class80.aClass51_1508.cacheIndexFiles[i_0_]),
                                 6000, 0);
 
-                    Class37_Sub23.aClass42_2224 = new Class42(Class80.aClass51_1508.aClass70_1042,
+                    Class37_Sub23.aClass42_2224 = new Class42(Class80.aClass51_1508.cacheIndex255,
                             6000, 0);
 
                     Class10.aClass69_199 = new Class69(255,
                             Class58.aClass42_1109, Class37_Sub23.aClass42_2224,
                             500000);
 
-                    Class71.aClass42_1363 = new Class42(Class80.aClass51_1508.aClass70_1037,
+                    Class71.aClass42_1363 = new Class42(Class80.aClass51_1508.randomFile,
                             24, 0);
-                    Class80.aClass51_1508.aClass70_1037 = null;
-                    Class80.aClass51_1508.aClass70_1034 = null;
-                    Class80.aClass51_1508.aClass70_1042 = null;
-                    Class80.aClass51_1508.aClass70Array1046 = null;
+                    Class80.aClass51_1508.randomFile = null;
+                    Class80.aClass51_1508.cacheDataFile = null;
+                    Class80.aClass51_1508.cacheIndex255 = null;
+                    Class80.aClass51_1508.cacheIndexFiles = null;
                 }
             } catch (IOException ioexception) {
                 Class71.aClass42_1363 = null;
@@ -403,7 +403,7 @@ public class Client extends Applet_Sub1 {
                 do {
                     try {
                         if (Login.anInt782 == 0) {
-                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.aClass51_1508.method1117(Class37_Sub8.address,
+                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.aClass51_1508.createResource(Class37_Sub8.address,
                                     Class37_Sub4_Sub7_Sub1.anInt3700, true));
                             Login.anInt782++;
                         }

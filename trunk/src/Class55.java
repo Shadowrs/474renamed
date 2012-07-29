@@ -126,7 +126,7 @@ public class Class55 implements Runnable {
                                 var_classes[i_10_] = (Class37_Sub9_Sub6.method783(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                             i, 88), strings[i_10_]));
 
-                            class37_sub20.aClass23Array2206[i_1_] = (class51.method1118((byte) 64,
+                            class37_sub20.aClass23Array2206[i_1_] = (class51.createResource((byte) 64,
                                     string_5_,
                                     Class37_Sub9_Sub6.method783(i + 59, string),
                                     var_classes));

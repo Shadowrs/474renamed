@@ -6,56 +6,56 @@ import java.net.*;
 
 
 public class Signlink implements Runnable {
-    public static String aString1031;
-    public static String aString1033;
+    public static String userHomeLocation;
+    public static String javaVersion;
     public static Method aMethod1035;
-    public static String aString1039;
+    public static String javaVendor;
     public static int anInt1041 = 3;
     public static Method aMethod1044;
     public Interface2 anInterface2_1030;
     public File aFile1032 = null;
-    public Class70 aClass70_1034;
+    public Class70 cacheDataFile;
     public EventQueue anEventQueue1036;
-    public Class70 aClass70_1037 = null;
+    public Class70 randomFile = null;
     public Thread aThread1038;
     public File aFile1040;
-    public Class70 aClass70_1042;
+    public Class70 cacheIndex255;
     public boolean aBoolean1043 = false;
     public Applet anApplet1045;
-    public Class70[] aClass70Array1046;
-    public Class23 aClass23_1047;
+    public Class70[] cacheIndexFiles;
+    public Class23 nextResource;
     public Class23 aClass23_1048;
 
     public Signlink(boolean bool, Applet applet, int i, String string, int i_20_) {
-        aClass70_1034 = null;
+        cacheDataFile = null;
         aFile1040 = null;
         anApplet1045 = null;
-        aClass70_1042 = null;
-        aClass23_1047 = null;
+        cacheIndex255 = null;
+        nextResource = null;
         aClass23_1048 = null;
-        aString1039 = "Unknown";
+        javaVendor = "Unknown";
         anApplet1045 = applet;
-        aString1033 = "1.1";
+        javaVersion = "1.1";
 
         try {
-            aString1039 = System.getProperty("java.vendor");
-            aString1033 = System.getProperty("java.version");
+            javaVendor = System.getProperty("java.vendor");
+            javaVersion = System.getProperty("java.version");
         } catch (Exception exception) {
             /* empty */
         }
 
         try {
-            aString1031 = System.getProperty("user.home");
+            userHomeLocation = System.getProperty("user.home");
 
-            if (aString1031 != null) {
-                aString1031 += "/";
+            if (userHomeLocation != null) {
+                userHomeLocation += "/";
             }
         } catch (Exception exception) {
             /* empty */
         }
 
-        if (aString1031 == null) {
-            aString1031 = "~/";
+        if (userHomeLocation == null) {
+            userHomeLocation = "~/";
         }
 
         try {
@@ -93,7 +93,7 @@ public class Signlink implements Runnable {
         }
 
         if (bool) {
-            method1123(i, i_20_, -19218, string);
+            loadCache(i, i_20_, -19218, string);
         }
 
         aBoolean1043 = false;
@@ -113,11 +113,11 @@ public class Signlink implements Runnable {
                         return;
                     }
 
-                    if (aClass23_1047 != null) {
-                        class23 = aClass23_1047;
-                        aClass23_1047 = aClass23_1047.aClass23_592;
+                    if (nextResource != null) {
+                        class23 = nextResource;
+                        nextResource = nextResource.aClass23_592;
 
-                        if (aClass23_1047 == null) {
+                        if (nextResource == null) {
                             aClass23_1048 = null;
                         }
 
@@ -145,7 +145,7 @@ public class Signlink implements Runnable {
                     thread.start();
                     thread.setPriority(class23.anInt590);
                     class23.anObject595 = thread;
-                } else if ((i ^ 0xffffffff) == -5) {
+                } else if (i == 4) {
                     class23.anObject595 = new DataInputStream(((URL) class23.anObject594).openStream());
                 } else if (i != 8) {
                     if (i != 9) {
@@ -177,43 +177,42 @@ public class Signlink implements Runnable {
         return anInterface2_1030;
     }
 
-    public Class23 method1117(String string, int i, boolean bool) {
+    public Class23 createResource(String string, int i, boolean bool) {
         if (bool != true) {
             return null;
         }
 
-        return method1121(0, string, i, (byte) -112, 1);
+        return createResource(0, string, i, (byte) -112, 1);
     }
 
-    public Class23 method1118(byte i, String string, Class var_class,
+    public Class23 createResource(byte i, String string, Class var_class,
         Class[] var_classes) {
         if (i <= 59) {
             aBoolean1043 = false;
         }
 
-        return method1121(0, new Object[] { var_class, string, var_classes },
+        return createResource(0, new Object[] { var_class, string, var_classes },
             0, (byte) -93, 8);
     }
 
-    public Class23 method1119(Runnable runnable, int i, byte i_0_) {
+    public Class23 createResource(Runnable runnable, int i, byte i_0_) {
         if (i_0_ != 65) {
             aFile1032 = null;
         }
 
-        return method1121(0, runnable, i, (byte) -110, 2);
+        return createResource(0, runnable, i, (byte) -110, 2);
     }
 
-    public Class23 method1120(int i, byte i_1_) {
+    public Class23 createResource(int i, byte i_1_) {
         if (i_1_ < 6) {
-            aString1033 = null;
+            javaVersion = null;
         }
 
-        return method1121(0, null, i, (byte) -108, 3);
+        return createResource(0, null, i, (byte) -108, 3);
     }
 
-    public Class23 method1121(int i, Object object, int i_2_, byte i_3_,
+    public Class23 createResource(int i, Object object, int i_2_, byte i_3_,
         int i_4_) {
-        int i_5_ = -117 / ((-7 - i_3_) / 50);
         Class23 class23 = new Class23();
         class23.anInt593 = i_4_;
         class23.anInt590 = i_2_;
@@ -224,7 +223,7 @@ public class Signlink implements Runnable {
                 aClass23_1048.aClass23_592 = class23;
                 aClass23_1048 = class23;
             } else {
-                aClass23_1048 = aClass23_1047 = class23;
+                aClass23_1048 = nextResource = class23;
             }
 
             this.notify();
@@ -237,13 +236,12 @@ public class Signlink implements Runnable {
 	return "cache/.jagex_cache_32/runescape";
     }
 
-    public Class23 method1122(byte i, URL url) {
-        int i_6_ = -113 / ((-59 - i) / 41);
+    public Class23 createResource(byte i, URL url) {
 
-        return method1121(0, url, 0, (byte) 122, 4);
+        return createResource(0, url, 0, (byte) 122, 4);
     }
 
-    public void method1123(int i, int i_7_, int i_8_, String string) {
+    public void loadCache(int i, int i_7_, int i_8_, String string) {
         if (((i ^ 0xffffffff) > -33) || ((i ^ 0xffffffff) < -35)) {
             i = 32;
         }
@@ -255,9 +253,7 @@ public class Signlink implements Runnable {
 
             for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -3; i_10_++) {
                 for (int i_11_ = 0; strings_9_.length > i_11_; i_11_++) {
-                    for (int i_12_ = 0;
-                            (strings.length ^ 0xffffffff) < (i_12_ ^
-                            0xffffffff); i_12_++) {
+					for (int i_12_ = 0; strings.length > i_12_; i_12_++) {
                         try {
                             String string_13_ = strings[i_12_];
 
@@ -266,10 +262,9 @@ public class Signlink implements Runnable {
                                 continue;
                             }
 
-                            File file = new File(string_13_ +
-                                    strings_9_[i_11_]);
+                            File file = new File(string_13_ + strings_9_[i_11_]);
 
-                            if (((i_10_ ^ 0xffffffff) == -2) && !file.exists()) {
+                            if ((i_10_ == 1) && !file.exists()) {
                                 boolean bool = file.mkdir();
 
                                 if (!bool) {
@@ -277,17 +272,15 @@ public class Signlink implements Runnable {
                                 }
                             }
 
-                            if (aClass70_1037 == null) {
+                            if (randomFile == null) {
                                 try {
-                                    File file_14_ = new File(file, "random.dat");
+                                    File file0 = new File(file, "random.dat");
 
-                                    if (((i_10_ ^ 0xffffffff) == -2) ||
-                                            file_14_.exists()) {
-                                        aClass70_1037 = new Class70(file_14_,
-                                                "rw", 25L);
+                                    if ((i_10_ == 1) || file0.exists()) {
+                                        randomFile = new Class70(file0, "rw", 25L);
                                     }
                                 } catch (Exception exception) {
-                                    aClass70_1037 = null;
+                                    randomFile = null;
                                 }
                             }
 
@@ -303,54 +296,43 @@ public class Signlink implements Runnable {
                                         }
                                     }
 
-                                    File file_15_ = new File(file,
-                                            "main_file_cache.dat2");
+                                    File file_15_ = new File(file, "main_file_cache.dat2");
 
-                                    if (((i_10_ ^ 0xffffffff) == -1) &&
-                                            !file_15_.exists()) {
+                                    if ((i_10_ == 0) && !file_15_.exists()) {
                                         continue;
                                     }
 
-                                    aClass70_1034 = new Class70(file_15_, "rw",
-                                            52428800L);
-                                    aClass70Array1046 = new Class70[i_7_];
+                                    cacheDataFile = new Class70(file_15_, "rw", 52428800L);
+                                    cacheIndexFiles = new Class70[i_7_];
 
-                                    for (int i_16_ = 0; ((i_16_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff)); i_16_++)
-                                        aClass70Array1046[i_16_] = (new Class70(new File(
-                                                    file,
-                                                    ("main_file_cache.idx" +
-                                                    i_16_)), "rw", 1048576L));
+                                    for (int i_16_ = 0; i_16_< i_7_; i_16_++)
+                                        cacheIndexFiles[i_16_] = (new Class70(new File(file, ("main_file_cache.idx" + i_16_)), "rw", 1048576L));
 
-                                    aClass70_1042 = (new Class70(new File(
-                                                file, "main_file_cache.idx255"),
-                                            "rw", 1048576L));
+                                    cacheIndex255 = (new Class70(new File(file, "main_file_cache.idx255"), "rw", 1048576L));
 
                                     aFile1032 = aFile1040 = file;
                                 } catch (Exception exception) {
                                     try {
-                                        aClass70_1034.method1257(12);
+                                        cacheDataFile.method1257(12);
 
-                                        for (int i_17_ = 0;
-                                                ((i_17_ ^ 0xffffffff) > (i_7_ ^
-                                                0xffffffff)); i_17_++)
-                                            aClass70Array1046[i_17_].method1257(i_8_ +
-                                                19282);
+										for (int i_17_ = 0; i_17_ < i_7_; i_17_++)
+                                            cacheIndexFiles[i_17_].method1257(i_8_ + 19282);
 
-                                        aClass70_1042.method1257(-121);
+                                        cacheIndex255.method1257(-121);
                                     } catch (Exception exception_18_) {
                                         /* empty */
                                     }
 
-                                    aClass70Array1046 = null;
+                                    cacheIndexFiles = null;
                                     aFile1032 = aFile1040 = null;
-                                    aClass70_1034 = aClass70_1042 = null;
+                                    cacheDataFile = cacheIndex255 = null;
                                 }
                             }
                         } catch (Exception exception) {
                             /* empty */
                         }
 
-                        if ((aClass70_1037 != null) && (aFile1040 != null)) {
+                        if ((randomFile != null) && (aFile1040 != null)) {
                             return;
                         }
                     }
@@ -368,8 +350,7 @@ public class Signlink implements Runnable {
             aMethod1044 = null;
         }
 
-        return method1121(0, new Object[] { var_class, string }, 0, (byte) 114,
-            9);
+        return createResource(0, new Object[] { var_class, string }, 0, (byte) 114, 9);
     }
 
     public void method1125(byte i) {
@@ -384,30 +365,28 @@ public class Signlink implements Runnable {
             /* empty */
         }
 
-        if (aClass70_1034 != null) {
+        if (cacheDataFile != null) {
             try {
-                aClass70_1034.method1257(111);
+                cacheDataFile.method1257(111);
             } catch (java.io.IOException ioexception) {
                 /* empty */
             }
         }
 
-        if (aClass70_1042 != null) {
+        if (cacheIndex255 != null) {
             try {
-                aClass70_1042.method1257(-123);
+                cacheIndex255.method1257(-123);
             } catch (java.io.IOException ioexception) {
                 /* empty */
             }
         }
 
         if (i == -111) {
-            if (aClass70Array1046 != null) {
-                for (int i_19_ = 0;
-                        ((i_19_ ^ 0xffffffff) > (aClass70Array1046.length ^
-                        0xffffffff)); i_19_++) {
-                    if (aClass70Array1046[i_19_] != null) {
+            if (cacheIndexFiles != null) {
+				for (int i_19_ = 0; i_19_ < cacheIndexFiles.length; i_19_++) {
+                    if (cacheIndexFiles[i_19_] != null) {
                         try {
-                            aClass70Array1046[i_19_].method1257(-118);
+                            cacheIndexFiles[i_19_].method1257(-118);
                         } catch (java.io.IOException ioexception) {
                             /* empty */
                         }
@@ -416,9 +395,9 @@ public class Signlink implements Runnable {
             }
 
             do {
-                if (aClass70_1037 != null) {
+                if (randomFile != null) {
                     try {
-                        aClass70_1037.method1257(52);
+                        randomFile.method1257(52);
                     } catch (java.io.IOException ioexception) {
                         break;
                     }

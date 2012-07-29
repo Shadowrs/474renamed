@@ -75,7 +75,7 @@ public class Class37_Sub10 extends Class37 {
 
         synchronized (Class37_Sub4_Sub10.anObject2686) {
             if (Class37_Sub9_Sub22.anInt3327 == 0) {
-                Class80.aClass51_1508.method1119(new Class8(), 5, (byte) 65);
+                Class80.aClass51_1508.createResource(new Class8(), 5, (byte) 65);
             }
 
             Class37_Sub9_Sub22.anInt3327 = 600;

@@ -462,7 +462,7 @@ public class Class43 {
                 }
             } else if ((Client.anInt1719 ^ 0xffffffff) == -111) {
                 Class37_Sub9_Sub27.aClass55_3417 = new Class55();
-                Class80.aClass51_1508.method1119((Class37_Sub9_Sub27.aClass55_3417),
+                Class80.aClass51_1508.createResource((Class37_Sub9_Sub27.aClass55_3417),
                     10, (byte) 65);
                 Class37_Sub9_Sub27.anInt3400 = 94;
 

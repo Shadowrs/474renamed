@@ -468,7 +468,7 @@ public class Class17 {
                         (Class2.aClass47_77 == null)) {
                     Class2.aClass47_77 = new Class47();
                     Class2.aClass47_77.aClass51_991 = class51;
-                    class51.method1119(Class2.aClass47_77,
+                    class51.createResource(Class2.aClass47_77,
                         Class37_Sub4_Sub6.anInt2622, (byte) 65);
                 }
 
@@ -496,7 +496,7 @@ public class Class17 {
                             (Class2.aClass47_77 == null)) {
                         Class2.aClass47_77 = new Class47();
                         Class2.aClass47_77.aClass51_991 = class51;
-                        class51.method1119(Class2.aClass47_77,
+                        class51.createResource(Class2.aClass47_77,
                             Class37_Sub4_Sub6.anInt2622, (byte) 65);
                     }
 
