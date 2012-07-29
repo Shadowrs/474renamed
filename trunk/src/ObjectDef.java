@@ -579,7 +579,7 @@ public class ObjectDef extends Class37_Sub4 {
                     anIntArray2732 = new int[i_36_];
 
                     for (int i_37_ = 0; (i_37_ ^ 0xffffffff) > (i_36_ ^ 0xffffffff); i_37_++) {
-                        anIntArray2701[i_37_] = (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(19276, 19265)));
+                        anIntArray2701[i_37_] = (stream.readShort());
                         anIntArray2732[i_37_] = stream.readByte(120);
                     }
                 }
@@ -596,7 +596,7 @@ public class ObjectDef extends Class37_Sub4 {
                         anIntArray2701 = new int[i_38_];
 
                         for (int i_39_ = 0; i_39_ < i_38_; i_39_++)
-                            anIntArray2701[i_39_] = stream.readShort(-123);
+                            anIntArray2701[i_39_] = stream.readShort();
                     }
                 }
             } else if (objectProperties != 14) {
@@ -623,7 +623,7 @@ public class ObjectDef extends Class37_Sub4 {
                                         if (objectProperties != 40) {
                                             if (objectProperties != 41) {
                                                 if (objectProperties == 60) {
-                                                    anInt2699 = stream.readShort(-124);
+                                                    anInt2699 = stream.readShort();
                                                 } else if (objectProperties == 62) {
                                                     aBoolean2750 = true;
                                                 } else if (objectProperties == 64) {
@@ -631,7 +631,7 @@ public class ObjectDef extends Class37_Sub4 {
                                                 } else if (objectProperties != 65) {
                                                     if (objectProperties != 66) {
                                                         if (objectProperties == 67) {
-                                                            scaleFactor_X = (stream.readShort(-127));
+                                                            scaleFactor_X = (stream.readShort());
                                                         } else if (objectProperties != 68) {
                                                             if (objectProperties == 69) {
                                                                 anInt2708 = (stream.readByte(19276 - 19150));
@@ -647,29 +647,29 @@ public class ObjectDef extends Class37_Sub4 {
                                                                         anInt2719 = stream.readByte(119);
                                                                     } else if (objectProperties != 77) {
                                                                         if (objectProperties == 78) {
-                                                                            soundId = stream.readShort(19276 - 19401);
+                                                                            soundId = stream.readShort();
                                                                             soundRange = stream.readByte(119);
                                                                         } else if (objectProperties == 79) {
-                                                                            anInt2727 = stream.readShort(88);
-                                                                            anInt2692 = stream.readShort(19276 ^ ~0x4b53);
+                                                                            anInt2727 = stream.readShort();
+                                                                            anInt2692 = stream.readShort();
                                                                             soundRange = stream.readByte(126);
 
                                                                             int i_40_ = stream.readByte(19276 ^ 0x4b34);
                                                                             anIntArray2714 = new int[i_40_];
 
                                                                             for (int i_41_ = 0; (i_40_ ^ 0xffffffff) < (i_41_ ^ 0xffffffff); i_41_++)
-                                                                                anIntArray2714[i_41_] = stream.readShort(-123);
+                                                                                anIntArray2714[i_41_] = stream.readShort();
                                                                         } else if (objectProperties == 81) {
                                                                             anInt2698 = 256 * stream.readByte(121);
                                                                         }
                                                                     } else {
-                                                                        anInt2707 = stream.readShort(-121);
+                                                                        anInt2707 = stream.readShort();
 
                                                                         if (anInt2707 == 65535) {
                                                                             anInt2707 = -1;
                                                                         }
 
-                                                                        anInt2693 = stream.readShort(-124);
+                                                                        anInt2693 = stream.readShort();
 
                                                                         if (anInt2693 == 65535) {
                                                                             anInt2693 = -1;
@@ -680,7 +680,7 @@ public class ObjectDef extends Class37_Sub4 {
                                                                         anIntArray2702 = new int[i_42_ + 1];
 
                                                                         for (int i_43_ = 0; (i_42_ ^ 0xffffffff) <= (i_43_ ^ 0xffffffff); i_43_++) {
-                                                                            anIntArray2702[i_43_] = stream.readShort(9);
+                                                                            anIntArray2702[i_43_] = stream.readShort();
 
                                                                             if ((anIntArray2702[i_43_] ^
                                                                                     0xffffffff) == -65536) {
@@ -695,14 +695,13 @@ public class ObjectDef extends Class37_Sub4 {
                                                                 anInt2738 = (stream.readSignedShort((byte) -52));
                                                             }
                                                         } else {
-                                                            anInt2706 = (stream.readShort(-124));
+                                                            anInt2706 = (stream.readShort());
                                                         }
                                                     } else {
-                                                        scaleFactor_Z = (stream.readShort(19276 +
-                                                                -19305));
+                                                        scaleFactor_Z = (stream.readShort());
                                                     }
                                                 } else {
-                                                    scaleFactor_Y = stream.readShort(-127);
+                                                    scaleFactor_Y = stream.readShort();
                                                 }
                                             } else {
                                                 int i_44_ = stream.readByte(119);
@@ -712,10 +711,9 @@ public class ObjectDef extends Class37_Sub4 {
                                                 aShortArray2741 = new short[i_44_];
 
                                                 for (int i_45_ = 0; ((i_44_ ^ 0xffffffff) < (i_45_ ^ 0xffffffff)); i_45_++) {
-                                                    aShortArray2741[i_45_] = (short) (stream.readShort(-120));
+                                                    aShortArray2741[i_45_] = (short) (stream.readShort());
 
-                                                    aShortArray2711[i_45_] = (short) (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(
-                                                                19276, -19276)));
+                                                    aShortArray2711[i_45_] = (short) (stream.readShort());
                                                 }
                                             }
                                         } else {
@@ -724,8 +722,8 @@ public class ObjectDef extends Class37_Sub4 {
                                             aShortArray2718 = new short[i_46_];
 
                                             for (int i_47_ = 0; ((i_47_ ^ 0xffffffff) > (i_46_ ^ 0xffffffff)); i_47_++) {
-                                                aShortArray2718[i_47_] = (short) (stream.readShort(-125));
-                                                aShortArray2715[i_47_] = (short) (stream.readShort(14));
+                                                aShortArray2718[i_47_] = (short) (stream.readShort());
+                                                aShortArray2715[i_47_] = (short) (stream.readShort());
                                             }
                                         }
                                     } else {
@@ -739,7 +737,7 @@ public class ObjectDef extends Class37_Sub4 {
                                     anInt2739 = 5 * stream.readSignedByte((byte) 100);
                                 }
                             } else {
-                                animation = stream.readShort(-128);
+                                animation = stream.readShort();
 
                                 if ((animation ^ 0xffffffff) == -65536) {
                                     animation = -1;

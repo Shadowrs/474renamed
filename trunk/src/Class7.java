@@ -56,8 +56,8 @@ public class Class7 {
         aStream_148.buffer = is;
         aStream_148.bufferLocation = 10;
 
-        int i = aStream_148.readShort(-121);
-        anInt150 = aStream_148.readShort(12);
+        int i = aStream_148.readShort();
+        anInt150 = aStream_148.readShort();
         anInt152 = 500000;
         anIntArray155 = new int[i];
 

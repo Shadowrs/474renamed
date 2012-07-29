@@ -613,10 +613,10 @@ while_85_:
 
         int i_44_ = stream.readInt(-64);
         int i_45_ = 0;
-        class37_sub4_sub6.anInt2614 = stream.readShort(-127);
-        class37_sub4_sub6.anInt2616 = stream.readShort(-16);
-        class37_sub4_sub6.anInt2623 = stream.readShort(-128);
-        class37_sub4_sub6.anInt2618 = stream.readShort(84);
+        class37_sub4_sub6.anInt2614 = stream.readShort();
+        class37_sub4_sub6.anInt2616 = stream.readShort();
+        class37_sub4_sub6.anInt2623 = stream.readShort();
+        class37_sub4_sub6.anInt2618 = stream.readShort();
         stream.bufferLocation = 0;
         class37_sub4_sub6.aJString_2620 = stream.tryReadString(255);
         class37_sub4_sub6.aJStringArray2617 = new JString[i_44_];
@@ -625,7 +625,7 @@ while_85_:
 
         while (((-12 + stream.buffer.length) ^ 0xffffffff) < (stream.bufferLocation ^
                 0xffffffff)) {
-            int i_46_ = stream.readShort(24);
+            int i_46_ = stream.readShort();
 
             if (i_46_ == 3) {
                 class37_sub4_sub6.aJStringArray2617[i_45_] = stream.readString();

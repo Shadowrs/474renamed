@@ -36,7 +36,7 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
         aBoolean2540 = ((0x2 & i) ^ 0xffffffff) != -1;
         aBoolean2536 = (0x1 & i) != 0;
         anInt2531 = stream.readByte(124);
-        anInt2519 = stream.readShort(79);
+        anInt2519 = stream.readShort();
         anInt2523 = stream.readByte(121);
 
         if (anInt2523 == 255) {

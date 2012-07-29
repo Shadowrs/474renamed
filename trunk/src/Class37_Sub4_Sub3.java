@@ -188,7 +188,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
         if ((i ^ 0xffffffff) == -2) {
             anInt2556 = stream.read3Bytes(-26256544);
         } else if ((i ^ 0xffffffff) == -3) {
-            anInt2554 = stream.readShort(-125);
+            anInt2554 = stream.readShort();
 
             if (anInt2554 == 65535) {
                 anInt2554 = -1;

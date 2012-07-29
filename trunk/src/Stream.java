@@ -231,7 +231,7 @@ public class Stream extends Class37 {
 		} else {
 			int i_25_ = Class83.packetStream.readShortLEA(2);
 			int i_26_ = Class83.packetStream.readByte(i + 117);
-			int i_27_ = Class83.packetStream.readShort(17);
+			int i_27_ = Class83.packetStream.readShort();
 			int i_28_ = ((-Class83.packetStream.bufferLocation + Class37_Sub4.packetSize) / 16);
 			Class37_Sub9_Sub36.anIntArrayArray3573 = new int[i_28_][4];
 
@@ -242,7 +242,7 @@ public class Stream extends Class37 {
 			}
 
 			int i_31_ = Class83.packetStream.readShortA(-1739943584);
-			int i_32_ = Class83.packetStream.readShort(22);
+			int i_32_ = Class83.packetStream.readShort();
 			Class49.aByteArrayArray1005 = new byte[i_28_][];
 			ObjectDef.anIntArray2712 = new int[i_28_];
 			Class37_Sub9_Sub8.anIntArray3061 = new int[i_28_];
@@ -582,13 +582,13 @@ public class Stream extends Class37 {
 		}
 	}
 
-	public int method959(int i) {
+	public int readShortOrByte(int i) { //I have to make it more descriptive later as there are modifications.
 		anInt2073++;
 
 		int i_64_ = buffer[bufferLocation] & 0xff;
 
 		if ((i_64_ ^ 0xffffffff) <= -129) {
-			return -49152 + readShort(-125);
+			return -49152 + readShort();
 		}
 
 		return readByte(120) - 64;
@@ -607,12 +607,12 @@ public class Stream extends Class37 {
 		buffer[-1 + bufferLocation + -i_65_] = (byte) i_65_;
 	}
 
-	public int method961(int i) {
+	public int readSignedShortOrByte(int i) {
 		int i_66_ = i & buffer[bufferLocation];
 		anInt2050++;
 
 		if (i_66_ >= 128) {
-			return -32768 + readShort(-123);
+			return -32768 + readShort();
 		}
 
 		return readByte(i ^ 0x81);
@@ -829,7 +829,7 @@ public class Stream extends Class37 {
 		return (((buffer[-1 + bufferLocation] << 24) & ~0xffffff) - -((buffer[-2 + bufferLocation] & 0xff) << 16) + (((buffer[bufferLocation + -3] << 8) & 0xff00) - -(buffer[bufferLocation + -4] & 0xff)));
 	}
 
-	public int readShort(int i) {
+	public int readShort() {
 		bufferLocation += 2;
 
 		anInt2068++;

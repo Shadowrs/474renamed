@@ -31,7 +31,7 @@ public class Class62 {
 
     public Class62(Stream stream) {
         aByte1179 = stream.readSignedByte((byte) 97);
-        anInt1182 = stream.readShort(103);
+        anInt1182 = stream.readShort();
         anInt1173 = stream.readInt(-27);
         anInt1186 = stream.readInt(-59);
         anInt1184 = stream.readInt(-115);

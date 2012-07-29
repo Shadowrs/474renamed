@@ -3432,32 +3432,32 @@ while_8_:
                                     break while_13_;
                                 } while (false);
 
-                                anInt2958 = stream.readShort(-119);
+                                anInt2958 = stream.readShort();
 
                                 break while_13_;
                             } while (false);
 
-                            anInt2966 = stream.readShort(-125);
+                            anInt2966 = stream.readShort();
 
                             break while_13_;
                         } while (false);
 
-                        anInt2977 = stream.readShort(73);
+                        anInt2977 = stream.readShort();
 
                         break while_13_;
                     } while (false);
 
-                    anInt2978 = stream.readShort(-21);
+                    anInt2978 = stream.readShort();
 
                     break while_13_;
                 } while (false);
 
-                anInt2972 = stream.readShort(-122);
+                anInt2972 = stream.readShort();
 
                 break while_13_;
             } while (false);
 
-            anInt2979 = stream.readShort(-123);
+            anInt2979 = stream.readShort();
         } while (false);
 
         if (bool != true) {

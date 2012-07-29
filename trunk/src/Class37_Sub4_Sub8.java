@@ -132,7 +132,7 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
                     aBoolean2658 = false;
                 }
             } else {
-                anInt2645 = stream.readShort(117);
+                anInt2645 = stream.readShort();
 
                 if ((anInt2645 ^ 0xffffffff) == -65536) {
                     anInt2645 = -1;

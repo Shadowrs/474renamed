@@ -66,7 +66,7 @@ while_63_:
                             break while_65_;
                         }
 
-                        anInt3112 = stream.readShort(112);
+                        anInt3112 = stream.readShort();
 
                         break while_65_;
                     } while (false);
@@ -76,12 +76,12 @@ while_63_:
                     break while_65_;
                 } while (false);
 
-                anInt3110 = stream.readShort(125);
+                anInt3110 = stream.readShort();
 
                 break while_65_;
             } while (false);
 
-            anInt3111 = stream.readShort(-122);
+            anInt3111 = stream.readShort();
         } while (false);
 
         if (bool != true) {

@@ -235,7 +235,7 @@ public abstract class Class68 {
             }
 
             JString jstring = new JString();
-            jstring.anInt1650 = stream.method961(255);
+            jstring.anInt1650 = stream.readSignedShortOrByte(255);
 
             if (i < jstring.anInt1650) {
                 jstring.anInt1650 = i;

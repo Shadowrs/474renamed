@@ -19,8 +19,8 @@ public class Class11 {
             }
         }
 
-        anInt202 = stream.readShort(-19);
-        anInt203 = stream.readShort(105);
+        anInt202 = stream.readShort();
+        anInt203 = stream.readShort();
     }
 
     public Class11() {

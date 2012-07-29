@@ -9,7 +9,7 @@ public class Class37_Sub19 extends Class37 {
         stream.bufferLocation = stream.buffer.length - 3;
 
         int i = stream.readByte(127);
-        int i_16_ = stream.readShort(-126);
+        int i_16_ = stream.readShort();
         int i_17_ = 14 + (i * 10);
         stream.bufferLocation = 0;
 

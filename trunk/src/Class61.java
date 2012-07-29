@@ -61,19 +61,19 @@ public class Class61 {
                 }
 
                 if ((i_4_ & 0x1) != 0) {
-                    anIntArray1164[i_2_] = stream_0_.method959(-128);
+                    anIntArray1164[i_2_] = stream_0_.readShortOrByte(-128);
                 } else {
                     anIntArray1164[i_2_] = i_6_;
                 }
 
                 if ((i_4_ & 0x2) != 0) {
-                    anIntArray1160[i_2_] = stream_0_.method959(105);
+                    anIntArray1160[i_2_] = stream_0_.readShortOrByte(105);
                 } else {
                     anIntArray1160[i_2_] = i_6_;
                 }
 
                 if ((i_4_ & 0x4) != 0) {
-                    anIntArray1162[i_2_] = stream_0_.method959(-24);
+                    anIntArray1162[i_2_] = stream_0_.readShortOrByte(-24);
                 } else {
                     anIntArray1162[i_2_] = i_6_;
                 }

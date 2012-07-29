@@ -98,25 +98,25 @@ public class Class34 {
         anIntArray774[1] = i & 0xf;
 
         if (i != 0) {
-            anIntArray775[0] = stream.readShort(-121);
-            anIntArray775[1] = stream.readShort(-123);
+            anIntArray775[0] = stream.readShort();
+            anIntArray775[1] = stream.readShort();
 
             int i_13_ = stream.readByte(119);
 
             for (int i_14_ = 0; i_14_ < 2; i_14_++) {
                 for (int i_15_ = 0; i_15_ < anIntArray774[i_14_]; i_15_++) {
-                    anIntArrayArrayArray770[i_14_][0][i_15_] = stream.readShort(-127);
+                    anIntArrayArrayArray770[i_14_][0][i_15_] = stream.readShort();
 
-                    anIntArrayArrayArray768[i_14_][0][i_15_] = stream.readShort(-1);
+                    anIntArrayArrayArray768[i_14_][0][i_15_] = stream.readShort();
                 }
             }
 
             for (int i_16_ = 0; i_16_ < 2; i_16_++) {
                 for (int i_17_ = 0; i_17_ < anIntArray774[i_16_]; i_17_++) {
                     if ((i_13_ & (1 << (i_16_ * 4) << i_17_)) != 0) {
-                        anIntArrayArrayArray770[i_16_][1][i_17_] = stream.readShort(9);
+                        anIntArrayArrayArray770[i_16_][1][i_17_] = stream.readShort();
 
-                        anIntArrayArrayArray768[i_16_][1][i_17_] = stream.readShort(-128);
+                        anIntArrayArrayArray768[i_16_][1][i_17_] = stream.readShort();
                     } else {
                         anIntArrayArrayArray770[i_16_][1][i_17_] = anIntArrayArrayArray770[i_16_][0][i_17_];
 

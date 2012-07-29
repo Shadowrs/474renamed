@@ -102,13 +102,12 @@ public class Class37_Sub4_Sub4 extends Class37_Sub4 {
                         aShortArray2585 = new short[i_2_];
 
                         for (int i_3_ = 0; i_3_ < i_2_; i_3_++) {
-                            aShortArray2564[i_3_] = (short) stream.readShort(-121);
+                            aShortArray2564[i_3_] = (short) stream.readShort();
 
-                            aShortArray2585[i_3_] = (short) stream.readShort(7);
+                            aShortArray2585[i_3_] = (short) stream.readShort();
                         }
                     } else if (((i_1_ ^ 0xffffffff) <= -61) && (i_1_ < 70)) {
-                        anIntArray2572[-60 + i_1_] = stream.readShort(i +
-                                -4344);
+                        anIntArray2572[-60 + i_1_] = stream.readShort();
                     }
                 } else {
                     int i_4_ = stream.readByte(121);
@@ -118,10 +117,9 @@ public class Class37_Sub4_Sub4 extends Class37_Sub4 {
                     for (int i_5_ = 0;
                             (i_5_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff);
                             i_5_++) {
-                        aShortArray2576[i_5_] = (short) stream.readShort(44);
+                        aShortArray2576[i_5_] = (short) stream.readShort();
 
-                        aShortArray2581[i_5_] = (short) stream.readShort(i +
-                                -4350);
+                        aShortArray2581[i_5_] = (short) stream.readShort();
                     }
                 }
             } else {
@@ -130,7 +128,7 @@ public class Class37_Sub4_Sub4 extends Class37_Sub4 {
 
                 for (int i_7_ = 0; (i_6_ ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
                         i_7_++)
-                    anIntArray2571[i_7_] = stream.readShort(-128);
+                    anIntArray2571[i_7_] = stream.readShort();
             }
         } else {
             anInt2584 = stream.readByte(i + -4099);

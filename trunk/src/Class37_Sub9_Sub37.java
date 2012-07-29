@@ -182,7 +182,7 @@ public class Class37_Sub9_Sub37 extends Class37_Sub9 {
 
         if (bool == true) {
             if (i == 0) {
-                anInt3594 = stream.readShort(-128);
+                anInt3594 = stream.readShort();
             }
         }
     }

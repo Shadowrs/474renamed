@@ -42,7 +42,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
             Stream stream = new Stream(is);
 
             for (;;) {
-                int i_4_ = stream.method961(255);
+                int i_4_ = stream.readSignedShortOrByte(255);
 
                 if ((i_4_ ^ 0xffffffff) == -1) {
                     break;
@@ -52,7 +52,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
                 i_3_ += i_4_;
 
                 for (;;) {
-                    int i_6_ = stream.method961(255);
+                    int i_6_ = stream.readSignedShortOrByte(255);
 
                     if ((i_6_ ^ 0xffffffff) == -1) {
                         break;
@@ -148,7 +148,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
         }
 
         if (i == 0) {
-            anInt3351 = stream.readShort(-127);
+            anInt3351 = stream.readShort();
         }
 
         anInt3352++;

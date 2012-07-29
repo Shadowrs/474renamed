@@ -191,14 +191,14 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
         int i_6_ = -83 % ((28 - i) / 58);
 
         if (i_5_ == 1) {
-            anInt2901 = stream.readShort(-120);
+            anInt2901 = stream.readShort();
         } else if ((i_5_ ^ 0xffffffff) == -3) {
-            anInt2897 = stream.readShort(-128);
+            anInt2897 = stream.readShort();
         } else if ((i_5_ ^ 0xffffffff) != -5) {
             if ((i_5_ ^ 0xffffffff) == -6) {
-                anInt2893 = stream.readShort(-119);
+                anInt2893 = stream.readShort();
             } else if ((i_5_ ^ 0xffffffff) == -7) {
-                anInt2885 = stream.readShort(63);
+                anInt2885 = stream.readShort();
             } else if (i_5_ != 7) {
                 if (i_5_ != 8) {
                     if (i_5_ != 40) {
@@ -210,9 +210,9 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
                             for (int i_8_ = 0;
                                     (i_7_ ^ 0xffffffff) < (i_8_ ^ 0xffffffff);
                                     i_8_++) {
-                                aShortArray2890[i_8_] = (short) stream.readShort(-125);
+                                aShortArray2890[i_8_] = (short) stream.readShort();
 
-                                aShortArray2889[i_8_] = (short) stream.readShort(99);
+                                aShortArray2889[i_8_] = (short) stream.readShort();
                             }
                         }
                     } else {
@@ -221,9 +221,9 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
                         aShortArray2903 = new short[i_9_];
 
                         for (int i_10_ = 0; i_10_ < i_9_; i_10_++) {
-                            aShortArray2904[i_10_] = (short) stream.readShort(112);
+                            aShortArray2904[i_10_] = (short) stream.readShort();
 
-                            aShortArray2903[i_10_] = (short) stream.readShort(-128);
+                            aShortArray2903[i_10_] = (short) stream.readShort();
                         }
                     }
                 } else {
@@ -233,7 +233,7 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
                 anInt2900 = stream.readByte(125);
             }
         } else {
-            anInt2895 = stream.readShort(88);
+            anInt2895 = stream.readShort();
         }
 
         anInt2898++;

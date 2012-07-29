@@ -43,7 +43,7 @@ public class Class37_Sub4_Sub5 extends Class37_Sub4 {
 
         if (i == -24527) {
             if (i_0_ == 1) {
-                anInt2596 = stream.readShort(-26);
+                anInt2596 = stream.readShort();
                 anInt2598 = stream.readByte(123);
                 anInt2594 = stream.readByte(125);
             }

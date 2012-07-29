@@ -431,18 +431,18 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         Stream stream_14_ = new Stream(is);
         stream.bufferLocation = is.length - 18;
 
-        int i = stream.readShort(117);
-        int i_15_ = stream.readShort(-124);
+        int i = stream.readShort();
+        int i_15_ = stream.readShort();
         int i_16_ = stream.readByte(122);
         int i_17_ = stream.readByte(126);
         int i_18_ = stream.readByte(123);
         int i_19_ = stream.readByte(124);
         int i_20_ = stream.readByte(125);
         int i_21_ = stream.readByte(125);
-        int i_22_ = stream.readShort(26);
-        int i_23_ = stream.readShort(109);
-        int i_24_ = stream.readShort(-119);
-        int i_25_ = stream.readShort(-123);
+        int i_22_ = stream.readShort();
+        int i_23_ = stream.readShort();
+        int i_24_ = stream.readShort();
+        int i_25_ = stream.readShort();
         int i_26_ = 0;
         int i_27_ = i_26_;
         i_26_ += i;
@@ -554,19 +554,19 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             int i_45_ = 0;
 
             if ((i_44_ & 0x1) != 0) {
-                i_45_ = stream_11_.method959(25);
+                i_45_ = stream_11_.readShortOrByte(25);
             }
 
             int i_46_ = 0;
 
             if ((i_44_ & 0x2) != 0) {
-                i_46_ = stream_12_.method959(-119);
+                i_46_ = stream_12_.readShortOrByte(-119);
             }
 
             int i_47_ = 0;
 
             if ((i_44_ & 0x4) != 0) {
-                i_47_ = stream_13_.method959(-102);
+                i_47_ = stream_13_.readShortOrByte(-102);
             }
 
             anIntArray3772[i_43_] = i_40_ + i_45_;
@@ -588,7 +588,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         stream_14_.bufferLocation = i_30_;
 
         for (int i_48_ = 0; i_48_ < i_15_; i_48_++) {
-            aShortArray3773[i_48_] = (short) stream.readShort(-128);
+            aShortArray3773[i_48_] = (short) stream.readShort();
 
             if (i_17_ == 1) {
                 int i_49_ = stream_11_.readByte(118);
@@ -639,11 +639,11 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             int i_55_ = stream_11_.readByte(119);
 
             if (i_55_ == 1) {
-                i_50_ = stream.method959(19) + i_53_;
+                i_50_ = stream.readShortOrByte(19) + i_53_;
                 i_53_ = i_50_;
-                i_51_ = stream.method959(-123) + i_53_;
+                i_51_ = stream.readShortOrByte(-123) + i_53_;
                 i_53_ = i_51_;
-                i_52_ = stream.method959(-100) + i_53_;
+                i_52_ = stream.readShortOrByte(-100) + i_53_;
                 i_53_ = i_52_;
                 anIntArray3763[i_54_] = i_50_;
                 anIntArray3794[i_54_] = i_51_;
@@ -652,7 +652,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
             if (i_55_ == 2) {
                 i_51_ = i_52_;
-                i_52_ = stream.method959(-101) + i_53_;
+                i_52_ = stream.readShortOrByte(-101) + i_53_;
                 i_53_ = i_52_;
                 anIntArray3763[i_54_] = i_50_;
                 anIntArray3794[i_54_] = i_51_;
@@ -661,7 +661,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
             if (i_55_ == 3) {
                 i_50_ = i_52_;
-                i_52_ = stream.method959(77) + i_53_;
+                i_52_ = stream.readShortOrByte(77) + i_53_;
                 i_53_ = i_52_;
                 anIntArray3763[i_54_] = i_50_;
                 anIntArray3794[i_54_] = i_51_;
@@ -672,7 +672,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
                 int i_56_ = i_50_;
                 i_50_ = i_51_;
                 i_51_ = i_56_;
-                i_52_ = stream.method959(53) + i_53_;
+                i_52_ = stream.readShortOrByte(53) + i_53_;
                 i_53_ = i_52_;
                 anIntArray3763[i_54_] = i_50_;
                 anIntArray3794[i_54_] = i_51_;
@@ -684,9 +684,9 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
         for (int i_57_ = 0; i_57_ < i_16_; i_57_++) {
             aByteArray3783[i_57_] = (byte) 0;
-            aShortArray3791[i_57_] = (short) stream.readShort(-121);
-            aShortArray3768[i_57_] = (short) stream.readShort(112);
-            aShortArray3757[i_57_] = (short) stream.readShort(-128);
+            aShortArray3791[i_57_] = (short) stream.readShort();
+            aShortArray3768[i_57_] = (short) stream.readShort();
+            aShortArray3757[i_57_] = (short) stream.readShort();
         }
 
         if (aByteArray3771 != null) {
@@ -1152,8 +1152,8 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         Stream stream_132_ = new Stream(is);
         stream.bufferLocation = is.length - 23;
 
-        int i = stream.readShort(61);
-        int i_133_ = stream.readShort(-126);
+        int i = stream.readShort();
+        int i_133_ = stream.readShort();
         int i_134_ = stream.readByte(122);
         int i_135_ = stream.readByte(124);
         int i_136_ = stream.readByte(122);
@@ -1161,11 +1161,11 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         int i_138_ = stream.readByte(125);
         int i_139_ = stream.readByte(124);
         int i_140_ = stream.readByte(124);
-        int i_141_ = stream.readShort(-128);
-        int i_142_ = stream.readShort(44);
-        int i_143_ = stream.readShort(-122);
-        int i_144_ = stream.readShort(72);
-        int i_145_ = stream.readShort(92);
+        int i_141_ = stream.readShort();
+        int i_142_ = stream.readShort();
+        int i_143_ = stream.readShort();
+        int i_144_ = stream.readShort();
+        int i_145_ = stream.readShort();
         int i_146_ = 0;
         int i_147_ = 0;
         int i_148_ = 0;
@@ -1348,19 +1348,19 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             int i_178_ = 0;
 
             if ((i_177_ & 0x1) != 0) {
-                i_178_ = stream_127_.method959(38);
+                i_178_ = stream_127_.readShortOrByte(38);
             }
 
             int i_179_ = 0;
 
             if ((i_177_ & 0x2) != 0) {
-                i_179_ = stream_128_.method959(26);
+                i_179_ = stream_128_.readShortOrByte(26);
             }
 
             int i_180_ = 0;
 
             if ((i_177_ & 0x4) != 0) {
-                i_180_ = stream_129_.method959(115);
+                i_180_ = stream_129_.readShortOrByte(115);
             }
 
             anIntArray3772[i_176_] = i_173_ + i_178_;
@@ -1384,7 +1384,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         stream_132_.bufferLocation = i_161_;
 
         for (int i_181_ = 0; i_181_ < i_133_; i_181_++) {
-            aShortArray3773[i_181_] = (short) stream.readShort(-35);
+            aShortArray3773[i_181_] = (short) stream.readShort();
 
             if (i_135_ == 1) {
                 aByteArray3782[i_181_] = stream_127_.readSignedByte((byte) 101);
@@ -1403,7 +1403,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             }
 
             if (i_139_ == 1) {
-                aShortArray3767[i_181_] = (short) (stream_131_.readShort(-120) -
+                aShortArray3767[i_181_] = (short) (stream_131_.readShort() -
                     1);
             }
 
@@ -1429,11 +1429,11 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             int i_187_ = stream_127_.readByte(127);
 
             if (i_187_ == 1) {
-                i_182_ = stream.method959(-101) + i_185_;
+                i_182_ = stream.readShortOrByte(-101) + i_185_;
                 i_185_ = i_182_;
-                i_183_ = stream.method959(-128) + i_185_;
+                i_183_ = stream.readShortOrByte(-128) + i_185_;
                 i_185_ = i_183_;
-                i_184_ = stream.method959(-126) + i_185_;
+                i_184_ = stream.readShortOrByte(-126) + i_185_;
                 i_185_ = i_184_;
                 anIntArray3763[i_186_] = i_182_;
                 anIntArray3794[i_186_] = i_183_;
@@ -1442,7 +1442,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
             if (i_187_ == 2) {
                 i_183_ = i_184_;
-                i_184_ = stream.method959(-109) + i_185_;
+                i_184_ = stream.readShortOrByte(-109) + i_185_;
                 i_185_ = i_184_;
                 anIntArray3763[i_186_] = i_182_;
                 anIntArray3794[i_186_] = i_183_;
@@ -1451,7 +1451,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
             if (i_187_ == 3) {
                 i_182_ = i_184_;
-                i_184_ = stream.method959(58) + i_185_;
+                i_184_ = stream.readShortOrByte(58) + i_185_;
                 i_185_ = i_184_;
                 anIntArray3763[i_186_] = i_182_;
                 anIntArray3794[i_186_] = i_183_;
@@ -1462,7 +1462,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
                 int i_188_ = i_182_;
                 i_182_ = i_183_;
                 i_183_ = i_188_;
-                i_184_ = stream.method959(-127) + i_185_;
+                i_184_ = stream.readShortOrByte(-127) + i_185_;
                 i_185_ = i_184_;
                 anIntArray3763[i_186_] = i_182_;
                 anIntArray3794[i_186_] = i_183_;
@@ -1481,25 +1481,25 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             int i_190_ = aByteArray3783[i_189_] & 0xff;
 
             if (i_190_ == 0) {
-                aShortArray3791[i_189_] = (short) stream.readShort(-127);
+                aShortArray3791[i_189_] = (short) stream.readShort();
 
-                aShortArray3768[i_189_] = (short) stream.readShort(-127);
+                aShortArray3768[i_189_] = (short) stream.readShort();
 
-                aShortArray3757[i_189_] = (short) stream.readShort(-120);
+                aShortArray3757[i_189_] = (short) stream.readShort();
             }
 
             if (i_190_ == 1) {
-                aShortArray3791[i_189_] = (short) stream_127_.readShort(-119);
+                aShortArray3791[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3768[i_189_] = (short) stream_127_.readShort(-1);
+                aShortArray3768[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3757[i_189_] = (short) stream_127_.readShort(-128);
+                aShortArray3757[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3762[i_189_] = (short) stream_128_.readShort(-122);
+                aShortArray3762[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3770[i_189_] = (short) stream_128_.readShort(-30);
+                aShortArray3770[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3787[i_189_] = (short) stream_128_.readShort(-34);
+                aShortArray3787[i_189_] = (short) stream_128_.readShort();
 
                 aByteArray3764[i_189_] = stream_129_.readSignedByte((byte) 100);
 
@@ -1509,17 +1509,17 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             }
 
             if (i_190_ == 2) {
-                aShortArray3791[i_189_] = (short) stream_127_.readShort(59);
+                aShortArray3791[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3768[i_189_] = (short) stream_127_.readShort(7);
+                aShortArray3768[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3757[i_189_] = (short) stream_127_.readShort(-125);
+                aShortArray3757[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3762[i_189_] = (short) stream_128_.readShort(-124);
+                aShortArray3762[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3770[i_189_] = (short) stream_128_.readShort(76);
+                aShortArray3770[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3787[i_189_] = (short) stream_128_.readShort(118);
+                aShortArray3787[i_189_] = (short) stream_128_.readShort();
 
                 aByteArray3764[i_189_] = stream_129_.readSignedByte((byte) 114);
 
@@ -1533,17 +1533,17 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             }
 
             if (i_190_ == 3) {
-                aShortArray3791[i_189_] = (short) stream_127_.readShort(-119);
+                aShortArray3791[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3768[i_189_] = (short) stream_127_.readShort(-119);
+                aShortArray3768[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3757[i_189_] = (short) stream_127_.readShort(66);
+                aShortArray3757[i_189_] = (short) stream_127_.readShort();
 
-                aShortArray3762[i_189_] = (short) stream_128_.readShort(88);
+                aShortArray3762[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3770[i_189_] = (short) stream_128_.readShort(-128);
+                aShortArray3770[i_189_] = (short) stream_128_.readShort();
 
-                aShortArray3787[i_189_] = (short) stream_128_.readShort(-121);
+                aShortArray3787[i_189_] = (short) stream_128_.readShort();
 
                 aByteArray3764[i_189_] = stream_129_.readSignedByte((byte) 90);
 
@@ -1559,9 +1559,9 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
 
         if (i_191_ != 0) {
             new Class10();
-            stream.readShort(-122);
-            stream.readShort(-123);
-            stream.readShort(-10);
+            stream.readShort();
+            stream.readShort();
+            stream.readShort();
             stream.readInt(-119);
         }
     }

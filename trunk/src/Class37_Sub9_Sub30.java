@@ -97,37 +97,37 @@ while_107_:
                                             break while_107_;
                                         }
                                     } else {
-                                        anInt3459 = stream.readShort(71);
+                                        anInt3459 = stream.readShort();
 
                                         return;
                                     }
 
-                                    anInt3468 = stream.readShort(8);
+                                    anInt3468 = stream.readShort();
 
                                     return;
                                 } while (false);
 
-                                anInt3470 = stream.readShort(-126);
+                                anInt3470 = stream.readShort();
 
                                 return;
                             } while (false);
 
-                            anInt3461 = stream.readShort(26);
+                            anInt3461 = stream.readShort();
 
                             return;
                         } while (false);
 
-                        anInt3465 = stream.readShort(-125);
+                        anInt3465 = stream.readShort();
 
                         return;
                     } while (false);
 
-                    anInt3464 = stream.readShort(-127);
+                    anInt3464 = stream.readShort();
 
                     return;
                 } while (false);
 
-                anInt3460 = stream.readShort(-123);
+                anInt3460 = stream.readShort();
             } while (false);
         }
     }

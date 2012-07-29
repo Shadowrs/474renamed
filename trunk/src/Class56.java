@@ -77,7 +77,7 @@ public class Class56 {
             }
 
             if (((0x4 & i_2_) ^ 0xffffffff) != -1) {
-                class37_sub4_sub7_sub1_sub1.anInt3653 = Class83.packetStream.readShort(18);
+                class37_sub4_sub7_sub1_sub1.anInt3653 = Class83.packetStream.readShort();
 
                 if (class37_sub4_sub7_sub1_sub1.anInt3653 == 65535) {
                     class37_sub4_sub7_sub1_sub1.anInt3653 = -1;

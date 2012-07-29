@@ -38,7 +38,7 @@ public class Class37_Sub4_Sub14 extends Class37_Sub4 {
 
     public void method710(Stream stream, int i, int i_1_) {
         if ((i ^ 0xffffffff) == -6) {
-            anInt2808 = stream.readShort(-2);
+            anInt2808 = stream.readShort();
         }
 
         anInt2807++;

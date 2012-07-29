@@ -368,8 +368,7 @@ public class Login {
                     Applet_Sub1.aClass19_38.read(2, 0, i + 21604,
                         Class83.packetStream.buffer);
                     Class83.packetStream.bufferLocation = 0;
-                    Class37_Sub4.packetSize = Class83.packetStream.readShort(i +
-                            21363);
+                    Class37_Sub4.packetSize = Class83.packetStream.readShort();
                     Class22.anInt580 = 10;
                 }
 

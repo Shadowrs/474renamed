@@ -436,22 +436,22 @@ while_6_:
                             break while_6_;
                         }
                     } else {
-                        anInt2944 = stream.readShort(121);
+                        anInt2944 = stream.readShort();
 
                         break while_7_;
                     }
 
-                    anInt2941 = stream.readShort(-123);
+                    anInt2941 = stream.readShort();
 
                     break while_7_;
                 } while (false);
 
-                anInt2943 = stream.readShort(59);
+                anInt2943 = stream.readShort();
 
                 break while_7_;
             } while (false);
 
-            anInt2942 = stream.readShort(75);
+            anInt2942 = stream.readShort();
         } while (false);
 
         if (bool != true) {
