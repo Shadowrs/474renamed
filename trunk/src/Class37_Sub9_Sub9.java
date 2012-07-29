@@ -409,7 +409,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             for (;
                     (((Class45.anInt974 ^ 0xffffffff) > -21) &&
                     (Class37_Sub9_Sub26.anInt3396 > 0)); Class45.anInt974++) {
-                Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class4.aClass77_92.method1291((byte) 108));
+                Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) ISAAC.aClass77_92.method1291((byte) 108));
                 Stream stream = new Stream(4);
                 stream.writeSignedByte(100, 0);
                 stream.write3Bytes((int) class37_sub4_sub13.aLong818, -121);

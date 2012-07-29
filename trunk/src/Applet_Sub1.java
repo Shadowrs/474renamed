@@ -593,7 +593,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         if ((this == Stream.anApplet_Sub1_2023) &&
                 !Class37_Sub4_Sub7_Sub3.aBoolean3738) {
-            Class4.aBoolean93 = true;
+            ISAAC.aBoolean93 = true;
 
             if ((Signlink.javaVersion != null) &&
                     Signlink.javaVersion.startsWith("1.5") &&
@@ -613,7 +613,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
     public void focusGained(FocusEvent focusevent) {
         anInt23++;
         Class37_Sub9_Sub36.aBoolean3576 = true;
-        Class4.aBoolean93 = true;
+        ISAAC.aBoolean93 = true;
     }
 
     public void windowClosing(WindowEvent windowevent) {
@@ -692,7 +692,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         Class37_Sub9.aCanvas1967.addFocusListener(this);
         Class37_Sub9.aCanvas1967.requestFocus();
-        Class4.aBoolean93 = true;
+        ISAAC.aBoolean93 = true;
 
         int i_23_ = 114 / ((7 - i) / 37);
         Class37_Sub9_Sub24.aBoolean3376 = false;
@@ -722,7 +722,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
         }
 
         if ((Class37_Sub1.anInt1806++ ^ 0xffffffff) < -51) {
-            Class4.aBoolean93 = true;
+            ISAAC.aBoolean93 = true;
             Class37_Sub1.anInt1806 -= 50;
             Class37_Sub9.aCanvas1967.setSize(Class73.anInt1393, Class46.anInt980);
             Class37_Sub9.aCanvas1967.setVisible(true);

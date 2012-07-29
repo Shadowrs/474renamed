@@ -61,7 +61,7 @@ public class Class64 {
                 break;
             }
 
-            Class4.aClass77_92.method1288(-1454, class37_sub4_sub13);
+            ISAAC.aClass77_92.method1288(-1454, class37_sub4_sub13);
             Class37_Sub4_Sub18.aClass13_2905.method101(class37_sub4_sub13,
                 false, (class37_sub4_sub13.aLong818));
             Class37_Sub9_Sub26.anInt3396++;

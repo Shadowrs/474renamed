@@ -217,7 +217,7 @@ public class Class77 {
                             (class37_sub4_sub7_sub1_sub1.anInt3642 / 32));
                         int i_25_ = ((class37_sub4_sub7_sub1_sub1.anInt3666 / 32) +
                             -((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3666) / 32));
-                        Class4.method52(i_4_, i_25_, false, i_3_, i_24_,
+                        ISAAC.method52(i_4_, i_25_, false, i_3_, i_24_,
                             (PacketParser.aClass37_Sub4_Sub9_Sub3Array3262[1]));
                     }
                 }
@@ -229,7 +229,7 @@ public class Class77 {
                     int i_27_ = (-((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3642) / 32) +
                         ((4 * (-Class15_Sub1.anInt1738 + Class71.anInt1362)) +
                         2));
-                    Class4.method52(i_4_, i_26_, false, i_3_, i_27_,
+                    ISAAC.method52(i_4_, i_26_, false, i_3_, i_27_,
                         (PacketParser.aClass37_Sub4_Sub9_Sub3Array3262[1]));
                 }
 
@@ -244,7 +244,7 @@ public class Class77 {
                             ((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3666) / 32));
                         int i_29_ = ((class37_sub4_sub7_sub1_sub2.anInt3642 / 32) +
                             -((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3642) / 32));
-                        Class4.method52(i_4_, i_28_, false, i_3_, i_29_,
+                        ISAAC.method52(i_4_, i_28_, false, i_3_, i_29_,
                             (PacketParser.aClass37_Sub4_Sub9_Sub3Array3262[1]));
                     }
                 }

@@ -719,7 +719,7 @@ public class Class37_Sub5 extends Class37 {
             }
 
             if ((i_19_ ^ 0xffffffff) == -18) {
-                Class4.anInt100++;
+                ISAAC.anInt100++;
                 Class37_Sub4_Sub10.method676(i_20_, i_17_, i_18_, 0);
                 Class42.aStream_Sub1_936.writePacket(-1494101117, 145);
                 Class42.aStream_Sub1_936.writeShort(848881960,

@@ -97,8 +97,8 @@ public class Class72 {
                     Class88.aFontMetrics1598 = Class37_Sub9.aCanvas1967.getFontMetrics(Class37_Sub9_Sub37.aFont3606);
                 }
 
-                if (Class4.aBoolean93) {
-                    Class4.aBoolean93 = false;
+                if (ISAAC.aBoolean93) {
+                    ISAAC.aBoolean93 = false;
                     graphics.setColor(Color.black);
                     graphics.fillRect(0, 0, Class73.anInt1393, Class46.anInt980);
                 }

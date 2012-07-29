@@ -530,7 +530,7 @@ while_85_:
                 i_42_++;
             }
 
-            if (class15_41_.method130(Class4.aJString_105,
+            if (class15_41_.method130(ISAAC.aJString_105,
                         Class37_Sub9_Sub33.aJString_3524, -104)) {
                 i_42_++;
             }

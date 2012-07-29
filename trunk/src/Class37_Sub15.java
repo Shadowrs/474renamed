@@ -766,7 +766,7 @@ public class Class37_Sub15 extends Class37 {
                             i + -1094014879, Class50.aJString_1013, class15);
 
                     Class42.aClass37_Sub4_Sub9_Sub1_925 = Class30.method277(Class37_Sub9_Sub33.aJString_3524,
-                            -1094018352, Class4.aJString_105, class15);
+                            -1094018352, ISAAC.aJString_105, class15);
 
                     Class46.aClass37_Sub4_Sub9_Sub1_987 = Class30.method277(Class37_Sub9_Sub33.aJString_3524,
                             -1094018352, PacketParser.aJString_3269,

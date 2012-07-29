@@ -33,7 +33,7 @@ public class PacketStream extends Stream {
 	}
 
 	public int bitPosition;
-	public Class4 aClass4_3628;
+	public ISAAC aClass4_3628;
 
 	public PacketStream(int i) {
 		super(i);
@@ -45,7 +45,7 @@ public class PacketStream extends Stream {
 		}
 
 		anInt3612++;
-		return ((buffer[bufferLocation++] - aClass4_3628.method50(true)) & 0xff);
+		return ((buffer[bufferLocation++] - aClass4_3628.getNextKey(true)) & 0xff);
 	}
 
 	public static void method987(int i, int i_0_, int i_1_, int i_2_) {
@@ -85,7 +85,7 @@ public class PacketStream extends Stream {
 			initISAAC(false, null);
 		}
 
-		buffer[bufferLocation++] = (byte) (i_3_ + aClass4_3628.method50(true));
+		buffer[bufferLocation++] = (byte) (i_3_ + aClass4_3628.getNextKey(true));
 		anInt3621++;
 	}
 
@@ -93,7 +93,7 @@ public class PacketStream extends Stream {
 		anInt3622++;
 
 		if (bool == false) {
-			aClass4_3628 = new Class4(is);
+			aClass4_3628 = new ISAAC(is);
 		}
 	}
 

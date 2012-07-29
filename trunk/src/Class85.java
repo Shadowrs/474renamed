@@ -146,7 +146,7 @@ public class Class85 {
                     l));
 
             if (class37_sub4_sub13 != null) {
-                Class4.aClass77_92.method1288(-1454, class37_sub4_sub13);
+                ISAAC.aClass77_92.method1288(-1454, class37_sub4_sub13);
             }
         }
     }
