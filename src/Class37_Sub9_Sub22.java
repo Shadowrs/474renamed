@@ -91,7 +91,7 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             i_7_ = i_16_;
         }
 
-        Class19.anInt483 = -i_7_ + i_1_;
+        RSSocket.anInt483 = -i_7_ + i_1_;
         Class37_Sub17.anInt2188 = i_5_;
         Class37_Sub6.anInt1888 = -i_9_ + i_2_;
 
@@ -260,7 +260,7 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
                 anInt3333 = 65;
             }
 
-            Class19.aClass58_481.method1154(64);
+            RSSocket.aClass58_481.method1154(64);
             Class37_Sub9_Sub5.aClass58_2994.method1154(64);
         }
     }

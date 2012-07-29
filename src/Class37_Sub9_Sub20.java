@@ -16,7 +16,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3294;
     public static Class58 aClass58_3296 = new Class58();
     public static Class13 aClass13_3297;
-    public static Class19 aClass19_3298;
+    public static RSSocket aClass19_3298;
     public static JString aJString_3299 = Class37_Sub2.method332((byte) 102,
             "Ihr Charakter)2Profil wird in:");
     public static int[] anIntArray3300 = new int[500];

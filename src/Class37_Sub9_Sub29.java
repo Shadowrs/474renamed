@@ -297,9 +297,9 @@ while_97_:
     public static void method891(byte i) {
         anInt3441++;
 
-        for (Class37_Sub4_Sub7_Sub7 class37_sub4_sub7_sub7 = (Class37_Sub4_Sub7_Sub7) Class19.aClass58_481.method1155(
+        for (Class37_Sub4_Sub7_Sub7 class37_sub4_sub7_sub7 = (Class37_Sub4_Sub7_Sub7) RSSocket.aClass58_481.method1155(
                     0); class37_sub4_sub7_sub7 != null;
-                class37_sub4_sub7_sub7 = ((Class37_Sub4_Sub7_Sub7) Class19.aClass58_481.method1162(
+                class37_sub4_sub7_sub7 = ((Class37_Sub4_Sub7_Sub7) RSSocket.aClass58_481.method1162(
                         (byte) 91))) {
             if ((class37_sub4_sub7_sub7.anInt3855 != Class37_Sub9_Sub1.anInt2916) ||
                     class37_sub4_sub7_sub7.aBoolean3840) {

@@ -65,12 +65,12 @@ public class Class37_Sub7 extends Class37 {
     public static void method741(int i, int i_5_, int i_6_, int i_7_, int i_8_) {
         anInt1911++;
 
-        if ((Class19.anInt490 ^ 0xffffffff) == -2) {
+        if ((RSSocket.anInt490 ^ 0xffffffff) == -2) {
             Class76.aClass37_Sub4_Sub9_Sub3Array1435[Class37_Sub9_Sub8.anInt3057 / 100].method653(Applet_Sub1.anInt8 -
                 8, -8 + Class27.anInt676);
         }
 
-        if (Class19.anInt490 == 2) {
+        if (RSSocket.anInt490 == 2) {
             Class76.aClass37_Sub4_Sub9_Sub3Array1435[4 -
             -(Class37_Sub9_Sub8.anInt3057 / 100)].method653(-8 +
                 Applet_Sub1.anInt8, Class27.anInt676 - 8);

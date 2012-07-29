@@ -1629,7 +1629,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                 } else if (i_24_ == 4115) {
                                                                                     int i_113_ =
                                                                                         Class14.anIntArray248[--i_20_];
-                                                                                    Class14.anIntArray248[i_20_++] = (!Class19.method202(i_113_,
+                                                                                    Class14.anIntArray248[i_20_++] = (!RSSocket.withinRange(i_113_,
                                                                                             65))
                                                                                         ? 0
                                                                                         : 1;

@@ -248,7 +248,7 @@ public class Signlink implements Runnable {
             i = 32;
         }
 
-        String[] strings = {"./cache/"};
+        String[] strings = {"./bin/cache/"};
 
         if (i_8_ == -19218) {
             String[] strings_9_ = { ".jagex_cache_" + i, ".file_store_" + i };

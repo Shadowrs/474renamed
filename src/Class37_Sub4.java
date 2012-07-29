@@ -393,7 +393,7 @@ public class Class37_Sub4 extends Class37 {
             Class42.aStream_Sub1_936.method962(i_36_ +
                 Class15_Sub1.anInt1738, false);
             Class42.aStream_Sub1_936.method964(i_14_ + 126,
-                (!Class19.aBooleanArray484[82]) ? 0 : 1);
+                (!RSSocket.aBooleanArray484[82]) ? 0 : 1);
             return true;
         }
 
@@ -453,11 +453,11 @@ public class Class37_Sub4 extends Class37 {
                     Stream stream = new Stream(4);
                     stream.method964(100, (!bool) ? 3 : 2);
                     stream.method930(0, -110);
-                    Class43.aClass19_950.method204(0, (byte) 126,
+                    Class43.aClass19_950.write(0, (byte) 126,
                         (stream.buffer), 4);
                 } catch (java.io.IOException ioexception) {
                     try {
-                        Class43.aClass19_950.method209((byte) -128);
+                        Class43.aClass19_950.killThread((byte) -128);
                     } catch (Exception exception) {
                         /* empty */
                     }

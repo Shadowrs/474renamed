@@ -638,7 +638,7 @@ public class Class37_Sub15 extends Class37 {
             i_11_ = Class37_Sub9_Sub21.method854((byte) 52);
         }
 
-        int i_12_ = Class19.anInt483;
+        int i_12_ = RSSocket.anInt483;
         int i_13_ = Class37_Sub4_Sub7_Sub1_Sub2.anInt3969;
         int i_14_ = Class37_Sub6.anInt1888;
         int i_15_ = Class37_Sub17.anInt2188;
@@ -652,7 +652,7 @@ public class Class37_Sub15 extends Class37 {
                     (Math.sin((double) Class58.anIntArray1126[i_17_] * ((double) (Class65.anIntArray1229[i_17_]) / 100.0)) * (double) Class82.anIntArray1702[i_17_]));
 
                 if (i_17_ == 0) {
-                    Class19.anInt483 += i_18_;
+                    RSSocket.anInt483 += i_18_;
                 }
 
                 if ((i_17_ ^ 0xffffffff) == -5) {
@@ -705,7 +705,7 @@ public class Class37_Sub15 extends Class37 {
         Class72.method1267(2);
         Class37_Sub4_Sub9.method578(i_8_, i_7_, i_6_, i, 0);
         Class72.method1267(i_5_ ^ 0x1158);
-        Class38.aClass67_847.method1208(Class19.anInt483,
+        Class38.aClass67_847.method1208(RSSocket.anInt483,
             Class37_Sub25.anInt2286, Class37_Sub6.anInt1888,
             Class37_Sub4_Sub7_Sub1_Sub2.anInt3969, Class37_Sub17.anInt2188,
             i_11_);
@@ -719,7 +719,7 @@ public class Class37_Sub15 extends Class37 {
         Class37_Sub6.anInt1888 = i_14_;
         Class37_Sub25.anInt2286 = i_16_;
         Class37_Sub17.anInt2188 = i_15_;
-        Class19.anInt483 = i_12_;
+        RSSocket.anInt483 = i_12_;
         Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 = i_13_;
 
         if (Class10.aBoolean197 &&

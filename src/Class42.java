@@ -456,10 +456,10 @@ public class Class42 {
                     Class43.anInt956--;
                 }
 
-                if (Class19.aBooleanArray484[96] ||
-                        Class19.aBooleanArray484[97] ||
-                        Class19.aBooleanArray484[98] ||
-                        Class19.aBooleanArray484[99]) {
+                if (RSSocket.aBooleanArray484[96] ||
+                        RSSocket.aBooleanArray484[97] ||
+                        RSSocket.aBooleanArray484[98] ||
+                        RSSocket.aBooleanArray484[99]) {
                     Class37_Sub9_Sub28.aBoolean3422 = true;
                 }
 
@@ -503,11 +503,11 @@ public class Class42 {
                         Class37_Sub4_Sub7_Sub1_Sub2.method506(false);
                         Class37_Sub9_Sub12.method810(i ^ 0x1000);
 
-                        if ((Class19.anInt490 ^ 0xffffffff) != -1) {
+                        if ((RSSocket.anInt490 ^ 0xffffffff) != -1) {
                             Class37_Sub9_Sub8.anInt3057 += 20;
 
                             if (Class37_Sub9_Sub8.anInt3057 >= 400) {
-                                Class19.anInt490 = 0;
+                                RSSocket.anInt490 = 0;
                             }
                         }
 
@@ -631,10 +631,10 @@ public class Class42 {
                         Class32.aBoolean746 = false;
 
                         Class18 class18 = aClass18_942;
-                        Class18 class18_35_ = Class19.aClass18_491;
+                        Class18 class18_35_ = RSSocket.aClass18_491;
                         aClass18_942 = null;
                         Class24.aBoolean609 = false;
-                        Class19.aClass18_491 = null;
+                        RSSocket.aClass18_491 = null;
 
                         for (;
                                 Class46.method1106(0) &&
@@ -738,7 +738,7 @@ public class Class42 {
                             if (bool) {
                                 Class37_Sub9_Sub8.anInt3057 = 0;
                                 Applet_Sub1.anInt8 = Class33.anInt764;
-                                Class19.anInt490 = 1;
+                                RSSocket.anInt490 = 1;
                                 Class27.anInt676 = Class37_Sub13.anInt2113;
                             }
                         }
@@ -755,24 +755,24 @@ public class Class42 {
                             }
                         }
 
-                        if ((class18_35_ != Class19.aClass18_491) &&
+                        if ((class18_35_ != RSSocket.aClass18_491) &&
                                 (Class65.anInt1241 == Class37_Sub9_Sub2.anInt2935)) {
                             if (class18_35_ != null) {
                                 Class73.method1274(class18_35_, -1);
                             }
 
-                            if (Class19.aClass18_491 != null) {
-                                Class73.method1274(Class19.aClass18_491, -1);
+                            if (RSSocket.aClass18_491 != null) {
+                                Class73.method1274(RSSocket.aClass18_491, -1);
                             }
                         }
 
-                        if (Class19.aClass18_491 != null) {
+                        if (RSSocket.aClass18_491 != null) {
                             if (Class65.anInt1241 > Class37_Sub9_Sub2.anInt2935) {
                                 Class37_Sub9_Sub2.anInt2935++;
 
                                 if ((Class37_Sub9_Sub2.anInt2935 ^ 0xffffffff) == (Class65.anInt1241 ^
                                         0xffffffff)) {
-                                    Class73.method1274(Class19.aClass18_491, -1);
+                                    Class73.method1274(RSSocket.aClass18_491, -1);
                                 }
                             }
                         } else if ((Class37_Sub9_Sub2.anInt2935 ^ 0xffffffff) < -1) {
@@ -888,7 +888,7 @@ public class Class42 {
                                     break;
                                 }
 
-                                Applet_Sub1.aClass19_38.method204(0, (byte) 97,
+                                Applet_Sub1.aClass19_38.write(0, (byte) 97,
                                     aStream_Sub1_936.buffer,
                                     aStream_Sub1_936.currentIndex);
                                 Class25.anInt637 = 0;
