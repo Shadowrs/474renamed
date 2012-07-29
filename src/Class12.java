@@ -28,8 +28,8 @@ public class Class12 {
         anIntArray205 = new int[anInt207];
 
         for (int i = 0; i < anInt207; i++) {
-            anIntArray208[i] = stream.readShort(37);
-            anIntArray205[i] = stream.readShort(78);
+            anIntArray208[i] = stream.readShort();
+            anIntArray205[i] = stream.readShort();
         }
     }
 

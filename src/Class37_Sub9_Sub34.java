@@ -100,7 +100,7 @@ while_113_:
                                 break while_117_;
                             } while (false);
 
-                            anInt3539 = stream.readShort(-127);
+                            anInt3539 = stream.readShort();
 
                             break while_117_;
                         } while (false);

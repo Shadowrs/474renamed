@@ -156,7 +156,7 @@ public class Class29 {
         int i_10_ = -1;
 
         for (;;) {
-            int i_11_ = stream.method961(255);
+            int i_11_ = stream.readSignedShortOrByte(255);
 
             if (i_11_ == 0) {
                 break;
@@ -169,7 +169,7 @@ public class Class29 {
 
             for (;;) {
                 if (!bool_13_) {
-                    int i_14_ = stream.method961(255);
+                    int i_14_ = stream.readSignedShortOrByte(255);
 
                     if (i_14_ == 0) {
                         break;
@@ -201,7 +201,7 @@ public class Class29 {
                         }
                     }
                 } else {
-                    int i_20_ = stream.method961(255);
+                    int i_20_ = stream.readSignedShortOrByte(255);
 
                     if ((i_20_ ^ 0xffffffff) == -1) {
                         break;

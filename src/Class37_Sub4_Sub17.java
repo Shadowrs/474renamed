@@ -195,7 +195,7 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
         }
 
         if ((i_9_ ^ 0xffffffff) == -3) {
-            anInt2874 = stream.readShort(-124);
+            anInt2874 = stream.readShort();
         }
     }
 

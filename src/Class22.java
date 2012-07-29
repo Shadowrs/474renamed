@@ -281,7 +281,7 @@ public class Class22 {
         }
 
         if ((i_6_ & 0x2) != 0) { // i_6_ >=2
-            class37_sub4_sub7_sub1_sub2.anInt3653 = Class83.packetStream.readShort(-124);
+            class37_sub4_sub7_sub1_sub2.anInt3653 = Class83.packetStream.readShort();
             if (class37_sub4_sub7_sub1_sub2.anInt3653 == 65535) {
                 class37_sub4_sub7_sub1_sub2.anInt3653 = -1;
             }
@@ -398,7 +398,7 @@ public class Class22 {
 
                 class37_sub4_sub7_sub1_sub2.anInt3643 = Class83.packetStream.readByteC((byte) 101);
 
-                class37_sub4_sub7_sub1_sub2.anInt3648 = (Class83.packetStream.readShort(-37) -
+                class37_sub4_sub7_sub1_sub2.anInt3648 = (Class83.packetStream.readShort() -
                     -Class37_Sub7.anInt1898);
 
                 class37_sub4_sub7_sub1_sub2.anInt3667 = (Class83.packetStream.readShortA(-1739943584) +

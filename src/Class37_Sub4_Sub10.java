@@ -194,7 +194,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                     anInt2680 = stream.readInt(-56);
                 } else if (i != 5) {
                     if (i == 6) {
-                        anInt2676 = stream.readShort(54);
+                        anInt2676 = stream.readShort();
                         anIntArray2683 = new int[anInt2676];
                         anIntArray2684 = new int[anInt2676];
 
@@ -207,7 +207,7 @@ public class Class37_Sub4_Sub10 extends Class37_Sub4 {
                         }
                     }
                 } else {
-                    anInt2676 = stream.readShort(-123);
+                    anInt2676 = stream.readShort();
                     anIntArray2683 = new int[anInt2676];
                     aJStringArray2675 = new JString[anInt2676];
 

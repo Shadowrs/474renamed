@@ -91,7 +91,7 @@ while_59_:
                     return;
                 }
 
-                anInt3064 = stream.readShort(-119);
+                anInt3064 = stream.readShort();
 
                 return;
             } while (false);

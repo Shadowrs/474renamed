@@ -136,10 +136,10 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                 aJString_2852 = stream.readString();
             } else if ((i_1_ ^ 0xffffffff) != -13) {
                 if (i_1_ == 13) {
-                    anInt2814 = stream.readShort(-122);
+                    anInt2814 = stream.readShort();
                 } else if ((i_1_ ^ 0xffffffff) != -15) {
                     if (i_1_ == 15) {
-                        anInt2837 = stream.readShort(-128);
+                        anInt2837 = stream.readShort();
                     } else if (i_1_ != 16) {
                         if (i_1_ != 17) {
                             if (((i_1_ ^ 0xffffffff) <= -31) && (i_1_ < 35)) {
@@ -155,9 +155,9 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                     if (i_1_ != 60) {
                                         if ((i_1_ ^ 0xffffffff) != -94) {
                                             if (i_1_ == 95) {
-                                                anInt2819 = stream.readShort(115);
+                                                anInt2819 = stream.readShort();
                                             } else if ((i_1_ ^ 0xffffffff) == -98) {
-                                                anInt2854 = stream.readShort(-123);
+                                                anInt2854 = stream.readShort();
                                             } else if (i_1_ != 98) {
                                                 if (i_1_ != 99) {
                                                     if (i_1_ == 100) {
@@ -166,15 +166,15 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                                         anInt2853 = ((stream.readSignedByte((byte) 105)) * 5);
                                                     } else if (i_1_ != 102) {
                                                         if (i_1_ == 103) {
-                                                            anInt2834 = (stream.readShort(-119));
+                                                            anInt2834 = (stream.readShort());
                                                         } else if (i_1_ == 106) {
-                                                            anInt2846 = (stream.readShort(-122));
+                                                            anInt2846 = (stream.readShort());
 
                                                             if (anInt2846 == 65535) {
                                                                 anInt2846 = -1;
                                                             }
 
-                                                            anInt2825 = (stream.readShort(-128));
+                                                            anInt2825 = (stream.readShort());
 
                                                             if (anInt2825 == 65535) {
                                                                 anInt2825 = -1;
@@ -190,7 +190,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                                                     0xffffffff) >= (i_2_ ^
                                                                     0xffffffff));
                                                                     i_3_++) {
-                                                                anIntArray2824[i_3_] = (stream.readShort(44));
+                                                                anIntArray2824[i_3_] = (stream.readShort());
 
                                                                 if (((anIntArray2824[i_3_]) ^
                                                                         0xffffffff) == -65536) {
@@ -204,13 +204,13 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                                             aBoolean2847 = false;
                                                         }
                                                     } else {
-                                                        anInt2829 = (stream.readShort(47));
+                                                        anInt2829 = (stream.readShort());
                                                     }
                                                 } else {
                                                     aBoolean2863 = true;
                                                 }
                                             } else {
-                                                anInt2855 = stream.readShort(120);
+                                                anInt2855 = stream.readShort();
                                             }
                                         } else {
                                             aBoolean2823 = false;
@@ -221,7 +221,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
 
                                         for (int i_5_ = 0; i_5_ < i_4_;
                                                 i_5_++)
-                                            anIntArray2856[i_5_] = stream.readShort(-122);
+                                            anIntArray2856[i_5_] = stream.readShort();
                                     }
                                 } else {
                                     int i_6_ = stream.readByte(116);
@@ -231,9 +231,9 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                     for (int i_7_ = 0;
                                             ((i_6_ ^ 0xffffffff) < (i_7_ ^
                                             0xffffffff)); i_7_++) {
-                                        aShortArray2862[i_7_] = (short) stream.readShort(40);
+                                        aShortArray2862[i_7_] = (short) stream.readShort();
 
-                                        aShortArray2830[i_7_] = (short) stream.readShort(-128);
+                                        aShortArray2830[i_7_] = (short) stream.readShort();
                                     }
                                 }
                             } else {
@@ -242,22 +242,22 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                                 aShortArray2821 = new short[i_8_];
 
                                 for (int i_9_ = 0; i_8_ > i_9_; i_9_++) {
-                                    aShortArray2821[i_9_] = (short) stream.readShort(-125);
+                                    aShortArray2821[i_9_] = (short) stream.readShort();
 
-                                    aShortArray2836[i_9_] = (short) stream.readShort(-124);
+                                    aShortArray2836[i_9_] = (short) stream.readShort();
                                 }
                             }
                         } else {
-                            anInt2815 = stream.readShort(-121);
-                            anInt2822 = stream.readShort(79);
-                            anInt2860 = stream.readShort(-27);
-                            anInt2844 = stream.readShort(-10);
+                            anInt2815 = stream.readShort();
+                            anInt2822 = stream.readShort();
+                            anInt2860 = stream.readShort();
+                            anInt2844 = stream.readShort();
                         }
                     } else {
-                        anInt2828 = stream.readShort(-124);
+                        anInt2828 = stream.readShort();
                     }
                 } else {
-                    anInt2815 = stream.readShort(28);
+                    anInt2815 = stream.readShort();
                 }
             } else {
                 anInt2858 = stream.readByte(124);
@@ -267,7 +267,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
             anIntArray2820 = new int[i_10_];
 
             for (int i_11_ = 0; i_11_ < i_10_; i_11_++)
-                anIntArray2820[i_11_] = stream.readShort(108);
+                anIntArray2820[i_11_] = stream.readShort();
         }
 
         if (i <= 126) {

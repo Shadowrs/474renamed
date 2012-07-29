@@ -104,22 +104,22 @@ while_77_:
                                 break while_77_;
                             }
                         } else {
-                            anInt3217 = stream.readShort(-121);
+                            anInt3217 = stream.readShort();
 
                             return;
                         }
 
-                        anInt3211 = stream.readShort(-123);
+                        anInt3211 = stream.readShort();
 
                         return;
                     } while (false);
 
-                    anInt3222 = stream.readShort(102);
+                    anInt3222 = stream.readShort();
 
                     return;
                 } while (false);
 
-                anInt3216 = stream.readShort(-123);
+                anInt3216 = stream.readShort();
 
                 return;
             } while (false);

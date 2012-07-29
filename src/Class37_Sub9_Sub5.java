@@ -105,12 +105,12 @@ while_18_:
                         break while_18_;
                     }
                 } else {
-                    anInt2986 = stream.readShort(-120);
+                    anInt2986 = stream.readShort();
 
                     break while_18_;
                 }
 
-                anInt2988 = stream.readShort(-125);
+                anInt2988 = stream.readShort();
 
                 break while_18_;
             } while (false);

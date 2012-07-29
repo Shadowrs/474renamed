@@ -189,7 +189,7 @@ public class Class33 {
                 int i_20_ = -1;
 
                 for (;;) {
-                    int i_21_ = stream.method961(255);
+                    int i_21_ = stream.readSignedShortOrByte(255);
 
                     if (i_21_ == 0) {
                         break;
@@ -200,7 +200,7 @@ public class Class33 {
                     int i_22_ = 0;
 
                     for (;;) {
-                        int i_23_ = stream.method961(255);
+                        int i_23_ = stream.readSignedShortOrByte(255);
 
                         if (i_23_ == 0) {
                             break;

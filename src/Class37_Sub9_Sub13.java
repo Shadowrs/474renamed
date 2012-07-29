@@ -124,7 +124,7 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
                 for (int i_17_ = 0;
                         ((anIntArrayArray3135.length ^ 0xffffffff) < (i_17_ ^
                         0xffffffff)); i_17_++) {
-                    anIntArrayArray3135[i_17_][0] = stream.readShort(-120);
+                    anIntArrayArray3135[i_17_][0] = stream.readShort();
 
                     anIntArrayArray3135[i_17_][1] = stream.readByte(127) << -1731286492;
 

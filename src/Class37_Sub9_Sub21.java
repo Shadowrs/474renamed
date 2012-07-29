@@ -83,7 +83,7 @@ public class Class37_Sub9_Sub21 extends Class37_Sub9 {
 
     public void method750(Stream stream, int i, boolean bool) {
         if ((i ^ 0xffffffff) == -1) {
-            anInt3315 = stream.readShort(-124);
+            anInt3315 = stream.readShort();
         }
 
         if (bool != true) {

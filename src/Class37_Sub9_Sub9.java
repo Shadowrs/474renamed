@@ -299,8 +299,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                 if (is != null) {
                     Stream stream = new Stream(is);
 
-                    Class37_Sub14.anInt2129 = stream.readShort(i +
-                            -4535);
+                    Class37_Sub14.anInt2129 = stream.readShort();
 
                     Class37_Sub8.aClass56Array1933 = new Class56[Class37_Sub14.anInt2129];
 
@@ -308,7 +307,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                             ((i_44_ ^ 0xffffffff) > (Class37_Sub14.anInt2129 ^
                             0xffffffff)); i_44_++) {
                         Class56 class56 = (Class37_Sub8.aClass56Array1933[i_44_] = new Class56());
-                        int i_45_ = stream.readShort(-120);
+                        int i_45_ = stream.readShort();
                         class56.aBoolean1082 = (i_45_ & 0x8000) != 0;
                         class56.anInt1089 = 0x7fff & i_45_;
 
@@ -579,7 +578,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         Class37_Sub9_Sub17.aStream_3224.bufferLocation = 0;
 
                         int i_59_ = Class37_Sub9_Sub17.aStream_3224.readByte(122);
-                        int i_60_ = Class37_Sub9_Sub17.aStream_3224.readShort(111);
+                        int i_60_ = Class37_Sub9_Sub17.aStream_3224.readShort();
                         int i_61_ = Class37_Sub9_Sub17.aStream_3224.readByte(i ^
                                 0x6187);
                         long l_62_ = (long) ((i_59_ << 1962296592) + i_60_);

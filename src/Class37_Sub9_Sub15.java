@@ -519,8 +519,8 @@ while_71_:
             anIntArrayArray3157 = new int[stream.readByte(125)][2];
 
             for (int i_55_ = 0; anIntArrayArray3157.length > i_55_; i_55_++) {
-                anIntArrayArray3157[i_55_][0] = stream.readShort(-125);
-                anIntArrayArray3157[i_55_][1] = stream.readShort(-119);
+                anIntArrayArray3157[i_55_][0] = stream.readShort();
+                anIntArrayArray3157[i_55_][1] = stream.readShort();
             }
         }
 

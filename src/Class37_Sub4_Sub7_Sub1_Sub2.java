@@ -246,7 +246,7 @@ public class Class37_Sub4_Sub7_Sub1_Sub2 extends Class37_Sub4_Sub7_Sub1 {
                 is[i_17_] = (i_18_ << 856606760) + i_19_;
 
                 if (((i_17_ ^ 0xffffffff) == -1) && (is[0] == 65535)) {
-                    i_15_ = stream.readShort(37);
+                    i_15_ = stream.readShort();
 
                     break;
                 }
@@ -274,44 +274,44 @@ public class Class37_Sub4_Sub7_Sub1_Sub2 extends Class37_Sub4_Sub7_Sub1 {
             is_21_[i_22_] = i_23_;
         }
 
-        anInt3701 = stream.readShort(-119);
+        anInt3701 = stream.readShort();
 
         if ((anInt3701 ^ 0xffffffff) == -65536) {
             anInt3701 = -1;
         }
 
-        anInt3686 = stream.readShort(-123);
+        anInt3686 = stream.readShort();
 
         if ((anInt3686 ^ 0xffffffff) == -65536) {
             anInt3686 = -1;
         }
 
         anInt3696 = anInt3686;
-        anInt3657 = stream.readShort(-120);
+        anInt3657 = stream.readShort();
 
         if (anInt3657 == 65535) {
             anInt3657 = -1;
         }
 
-        anInt3660 = stream.readShort(34);
+        anInt3660 = stream.readShort();
 
         if (anInt3660 == 65535) {
             anInt3660 = -1;
         }
 
-        anInt3676 = stream.readShort(-125);
+        anInt3676 = stream.readShort();
 
         if (i == anInt3676) {
             anInt3676 = -1;
         }
 
-        anInt3678 = stream.readShort(43);
+        anInt3678 = stream.readShort();
 
         if ((anInt3678 ^ 0xffffffff) == -65536) {
             anInt3678 = -1;
         }
 
-        anInt3698 = stream.readShort(67);
+        anInt3698 = stream.readShort();
 
         if (anInt3698 == 65535) {
             anInt3698 = -1;
@@ -320,7 +320,7 @@ public class Class37_Sub4_Sub7_Sub1_Sub2 extends Class37_Sub4_Sub7_Sub1 {
         aJString_3993 = Class37_Sub4_Sub13.method708(i + -65498,
                 stream.readLongDuplicate(false)).method164(70);
         anInt3978 = stream.readByte(126);
-        anInt3961 = stream.readShort(-22);
+        anInt3961 = stream.readShort();
 
         if (aClass29_3985 == null) {
             aClass29_3985 = new Class29();

@@ -350,21 +350,21 @@ public class Class5 {
         }
 
         for (int i_42_ = 0; i_42_ < 10; i_42_++) {
-            int i_43_ = stream.method961(255);
+            int i_43_ = stream.readSignedShortOrByte(255);
 
             if (i_43_ == 0) {
                 break;
             }
 
             anIntArray125[i_42_] = i_43_;
-            anIntArray117[i_42_] = stream.method959(39);
-            anIntArray120[i_42_] = stream.method961(255);
+            anIntArray117[i_42_] = stream.readShortOrByte(39);
+            anIntArray120[i_42_] = stream.readSignedShortOrByte(255);
         }
 
-        anInt119 = stream.method961(255);
-        anInt110 = stream.method961(255);
-        anInt111 = stream.readShort(-122);
-        anInt112 = stream.readShort(104);
+        anInt119 = stream.readSignedShortOrByte(255);
+        anInt110 = stream.readSignedShortOrByte(255);
+        anInt111 = stream.readShort();
+        anInt112 = stream.readShort();
         aClass34_114 = new Class34();
         aClass12_109 = new Class12();
         aClass34_114.method311(stream, aClass12_109);

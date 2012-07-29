@@ -77,7 +77,7 @@ public abstract class Class15 {
         }
 
         int i_2_ = stream.readByte(i ^ 0x746a);
-        anInt254 = stream.readShort(-126);
+        anInt254 = stream.readShort();
 
         int i_3_ = 0;
         int i_4_ = -1;
@@ -85,7 +85,7 @@ public abstract class Class15 {
 
         for (int i_5_ = 0; (anInt254 ^ 0xffffffff) < (i_5_ ^ 0xffffffff);
                 i_5_++) {
-            anIntArray290[i_5_] = i_3_ += stream.readShort(-124);
+            anIntArray290[i_5_] = i_3_ += stream.readShort();
 
             if (i_4_ < anIntArray290[i_5_]) {
                 i_4_ = anIntArray290[i_5_];
@@ -126,7 +126,7 @@ public abstract class Class15 {
 
             for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > (anInt254 ^ 0xffffffff);
                     i_10_++)
-                anIntArray256[anIntArray290[i_10_]] = stream.readShort(67);
+                anIntArray256[anIntArray290[i_10_]] = stream.readShort();
 
             for (int i_11_ = 0; (anInt254 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
                     i_11_++) {
@@ -139,8 +139,7 @@ public abstract class Class15 {
 
                 for (int i_15_ = 0;
                         (i_15_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff); i_15_++) {
-                    int i_16_ = (anIntArrayArray270[i_12_][i_15_] = i_3_ += (stream.readShort(Class37_Sub4_Sub7_Sub1_Sub1.method502(
-                                    i, -29798))));
+                    int i_16_ = (anIntArrayArray270[i_12_][i_15_] = i_3_ += (stream.readShort()));
 
                     if (i_16_ > i_14_) {
                         i_14_ = i_16_;
