@@ -193,7 +193,7 @@ public class PacketParser extends Class37_Sub9 {
                         JString jstring = (Class37_Sub9_Sub27.method881(i ^
                                 ~0x3534,
                                 (new JString[] {
-                                    Class19.aJString_488, class56.aJString_1081,
+                                    RSSocket.aJString_488, class56.aJString_1081,
                                     Class37_Sub4_Sub7_Sub1_Sub2.aJString_3971,
                                     Class37_Sub9_Sub8.aJString_3056,
                                     Class73.aJString_1384,
@@ -254,7 +254,7 @@ public class PacketParser extends Class37_Sub9 {
         }
 
         try {
-            int i_4_ = Applet_Sub1.aClass19_38.method206(-106);
+            int i_4_ = Applet_Sub1.aClass19_38.available(-106);
 
             if ((i_4_ ^ 0xffffffff) == -1) {
                 return false;
@@ -262,7 +262,7 @@ public class PacketParser extends Class37_Sub9 {
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == 0) {
                 i_4_--;
-                Applet_Sub1.aClass19_38.method208(1, 0, 122,
+                Applet_Sub1.aClass19_38.read(1, 0, 122,
                     (Class83.packetStream.buffer));
                 Class83.packetStream.currentIndex = 0;
 
@@ -273,7 +273,7 @@ public class PacketParser extends Class37_Sub9 {
             if (i == Class37_Sub4.packetSize) {
                 if ((i_4_ ^ 0xffffffff) < -1) {
                     i_4_--;
-                    Applet_Sub1.aClass19_38.method208(1, 0, 122,
+                    Applet_Sub1.aClass19_38.read(1, 0, 122,
                         Class83.packetStream.buffer);
 
                     Class37_Sub4.packetSize = (Class83.packetStream.buffer[0] &
@@ -288,7 +288,7 @@ public class PacketParser extends Class37_Sub9 {
                     return false;
                 }
 
-                Applet_Sub1.aClass19_38.method208(2, 0, i + 123,
+                Applet_Sub1.aClass19_38.read(2, 0, i + 123,
                     (Class83.packetStream.buffer));
                 i_4_ -= 2;
                 Class83.packetStream.currentIndex = 0;
@@ -301,7 +301,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             Class83.packetStream.currentIndex = 0;
-            Applet_Sub1.aClass19_38.method208(Class37_Sub4.packetSize, 0, 122,
+            Applet_Sub1.aClass19_38.read(Class37_Sub4.packetSize, 0, 122,
                 (Class83.packetStream.buffer));
             Class37_Sub9_Sub27.anInt3418 = Class37_Sub16.anInt2151;
             Class37_Sub9_Sub30.anInt3480 = 0;
@@ -762,10 +762,10 @@ public class PacketParser extends Class37_Sub9 {
                 if (Class76.anInt1438 >= 100) {
                     Class37_Sub6.anInt1888 = (ObjectDef.anInt2697 * 128) +
                         64;
-                    Class19.anInt483 = (128 * Class37_Sub9.anInt1948) + 64;
+                    RSSocket.anInt483 = (128 * Class37_Sub9.anInt1948) + 64;
 
                     Class37_Sub25.anInt2286 = (JString.method153(Class37_Sub9_Sub1.anInt2916,
-                            -169496123, Class37_Sub6.anInt1888, Class19.anInt483) -
+                            -169496123, Class37_Sub6.anInt1888, RSSocket.anInt483) -
                         Class37_Sub9_Sub11.anInt3106);
                 }
 
@@ -1346,7 +1346,7 @@ public class PacketParser extends Class37_Sub9 {
                     int i_93_ = (JString.method153(Class37_Sub9_Sub1.anInt2916,
                             -169496123, i_91_, i_92_) -
                         Class37_Sub9_Sub22.anInt3333);
-                    int i_94_ = i_92_ + -Class19.anInt483;
+                    int i_94_ = i_92_ + -RSSocket.anInt483;
                     int i_95_ = i_91_ - Class37_Sub6.anInt1888;
                     int i_96_ = i_93_ + -Class37_Sub25.anInt2286;
                     int i_97_ = (int) Math.sqrt((double) ((i_94_ * i_94_) +

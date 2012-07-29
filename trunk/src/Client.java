@@ -423,13 +423,13 @@ public class Client extends Applet_Sub1 {
                             }
 
                             if (Login.anInt782 == 2) {
-                                Class37_Sub9_Sub20.aClass19_3298 = new Class19((Socket) (Class37_Sub9_Sub20.aClass23_3281.anObject595),
+                                Class37_Sub9_Sub20.aClass19_3298 = new RSSocket((Socket) (Class37_Sub9_Sub20.aClass23_3281.anObject595),
                                         Class80.aClass51_1508);
 
                                 Stream stream = new Stream(5);
                                 stream.method964(110, 15);
                                 stream.method947((byte) -123, 474);
-                                Class37_Sub9_Sub20.aClass19_3298.method204(0,
+                                Class37_Sub9_Sub20.aClass19_3298.write(0,
                                     (byte) 99, stream.buffer, 5);
                                 Login.anInt782++;
 
@@ -438,9 +438,9 @@ public class Client extends Applet_Sub1 {
 
                             if ((Login.anInt782 ^ 0xffffffff) == -4) {
                                 if ((Class32.anInt740 <= 5) ||
-                                        ((Class37_Sub9_Sub20.aClass19_3298.method206(
+                                        ((Class37_Sub9_Sub20.aClass19_3298.available(
                                             -107) ^ 0xffffffff) < -1)) {
-                                    int i_5_ = Class37_Sub9_Sub20.aClass19_3298.method205(false);
+                                    int i_5_ = Class37_Sub9_Sub20.aClass19_3298.read(false);
 
                                     if ((i_5_ ^ 0xffffffff) != -1) {
                                         method31(i_5_, true);
@@ -495,7 +495,7 @@ public class Client extends Applet_Sub1 {
         Class37_Sub9_Sub27.aClass55_3417 = null;
 
         if (Applet_Sub1.aClass19_38 != null) {
-            Applet_Sub1.aClass19_38.method209((byte) -128);
+            Applet_Sub1.aClass19_38.killThread((byte) -128);
             Applet_Sub1.aClass19_38 = null;
         }
 
@@ -556,7 +556,7 @@ public class Client extends Applet_Sub1 {
         anInt1730++;
         Class55.method1142((byte) -67);
         Stream.method985(false);
-        Class19.method207(-3);
+        RSSocket.resetStaticVariables(-3);
         Class15_Sub1.method138(11729);
         Class42.method1086((byte) -120);
         Class69.method1251(false);

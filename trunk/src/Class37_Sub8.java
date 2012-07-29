@@ -39,14 +39,14 @@ public class Class37_Sub8 extends Class37 {
         Class22.anInt579 = 0;
 
         for (int i_4_ = -1;
-                (((Class19.anInt487 - -Class76.anInt1436) ^ 0xffffffff) < (i_4_ ^
+                (((RSSocket.anInt487 - -Class76.anInt1436) ^ 0xffffffff) < (i_4_ ^
                 0xffffffff)); i_4_++) {
             Class37_Sub4_Sub7_Sub1 class37_sub4_sub7_sub1;
 
             if ((i_4_ ^ 0xffffffff) != 0) {
-                if ((i_4_ ^ 0xffffffff) <= (Class19.anInt487 ^ 0xffffffff)) {
+                if ((i_4_ ^ 0xffffffff) <= (RSSocket.anInt487 ^ 0xffffffff)) {
                     class37_sub4_sub7_sub1 = (Class37_Sub13.aClass37_Sub4_Sub7_Sub1_Sub1Array2111[(Class37_Sub4_Sub16.anIntArray2869[i_4_ -
-                        Class19.anInt487])]);
+                        RSSocket.anInt487])]);
                 } else {
                     class37_sub4_sub7_sub1 = (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_4_]]);
                 }
@@ -68,7 +68,7 @@ public class Class37_Sub8 extends Class37 {
                     }
                 }
 
-                if (i_4_ < Class19.anInt487) {
+                if (i_4_ < RSSocket.anInt487) {
                     int i_5_ = 30;
                     Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = (Class37_Sub4_Sub7_Sub1_Sub2) class37_sub4_sub7_sub1;
 
@@ -129,7 +129,7 @@ public class Class37_Sub8 extends Class37 {
                     }
 
                     if ((Class37_Sub9_Sub21.anInt3321 == 1) &&
-                            ((Class37_Sub4_Sub16.anIntArray2869[-Class19.anInt487 +
+                            ((Class37_Sub4_Sub16.anIntArray2869[-RSSocket.anInt487 +
                             i_4_]) == Class50.anInt1016) &&
                             ((Class37_Sub7.anInt1898 % 20) < 10)) {
                         Class37_Sub9_Sub28.method885(class37_sub4_sub7_sub1,
@@ -144,7 +144,7 @@ public class Class37_Sub8 extends Class37 {
                 }
 
                 if ((class37_sub4_sub7_sub1.aJString_3694 != null) &&
-                        (((i_4_ ^ 0xffffffff) <= (Class19.anInt487 ^
+                        (((i_4_ ^ 0xffffffff) <= (RSSocket.anInt487 ^
                         0xffffffff)) || (Class37_Sub9_Sub24.anInt3361 == 0) ||
                         ((Class37_Sub9_Sub24.anInt3361 ^ 0xffffffff) == -4) ||
                         (((Class37_Sub9_Sub24.anInt3361 ^ 0xffffffff) == -2) &&

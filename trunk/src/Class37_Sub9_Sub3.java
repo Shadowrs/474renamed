@@ -195,7 +195,7 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
 
         int i = stream.method978(121);
         int i_5_ = stream.method978(117);
-        Class var_class = Class19.method203(i_5_, !bool);
+        Class var_class = RSSocket.classFromInt(i_5_, !bool);
 
         try {
             Class37_Sub9 class37_sub9 = (Class37_Sub9) var_class.newInstance();

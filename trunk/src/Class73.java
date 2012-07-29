@@ -110,12 +110,12 @@ public class Class73 {
         int i_6_ = (JString.method153(Class37_Sub9_Sub1.anInt2916, -169496123,
                 i_5_, i_4_) - Class37_Sub9_Sub11.anInt3106);
 
-        if (Class19.anInt483 < i_4_) {
-            Class19.anInt483 += ((((i_4_ + -Class19.anInt483) * Class76.anInt1438) / 1000) +
+        if (RSSocket.anInt483 < i_4_) {
+            RSSocket.anInt483 += ((((i_4_ + -RSSocket.anInt483) * Class76.anInt1438) / 1000) +
             Class37_Sub8.anInt1932);
 
-            if (i_4_ < Class19.anInt483) {
-                Class19.anInt483 = i_4_;
+            if (i_4_ < RSSocket.anInt483) {
+                RSSocket.anInt483 = i_4_;
             }
         }
 
@@ -146,12 +146,12 @@ public class Class73 {
             }
         }
 
-        if (Class19.anInt483 > i_4_) {
-            Class19.anInt483 -= (Class37_Sub8.anInt1932 +
-            ((Class76.anInt1438 * (-i_4_ + Class19.anInt483)) / 1000));
+        if (RSSocket.anInt483 > i_4_) {
+            RSSocket.anInt483 -= (Class37_Sub8.anInt1932 +
+            ((Class76.anInt1438 * (-i_4_ + RSSocket.anInt483)) / 1000));
 
-            if ((Class19.anInt483 ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
-                Class19.anInt483 = i_4_;
+            if ((RSSocket.anInt483 ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
+                RSSocket.anInt483 = i_4_;
             }
         }
 
@@ -170,7 +170,7 @@ public class Class73 {
         i_6_ = JString.method153(Class37_Sub9_Sub1.anInt2916, -169496123, i_5_,
                 i_4_) - Class37_Sub9_Sub22.anInt3333;
 
-        int i_7_ = i_4_ - Class19.anInt483;
+        int i_7_ = i_4_ - RSSocket.anInt483;
         int i_8_ = i_5_ - Class37_Sub6.anInt1888;
         int i_9_ = -Class37_Sub25.anInt2286 + i_6_;
         int i_10_ = (int) Math.sqrt((double) ((i_7_ * i_7_) + (i_8_ * i_8_)));

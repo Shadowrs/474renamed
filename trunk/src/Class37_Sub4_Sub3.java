@@ -52,7 +52,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
 
             if ((i != 20) && (i != 40) &&
                     (PacketStream.aClass19_3613 != null)) {
-                PacketStream.aClass19_3613.method209((byte) -128);
+                PacketStream.aClass19_3613.killThread((byte) -128);
                 PacketStream.aClass19_3613 = null;
             }
 

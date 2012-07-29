@@ -121,7 +121,7 @@ public class Class38 {
         }
 
         aBoolean850 = aClass37_Sub16Array836[i] == null;
-        aClass37_Sub16Array836[i] = Class19.aClass37_Sub16_472;
+        aClass37_Sub16Array836[i] = RSSocket.aClass37_Sub16_472;
 
         return anIntArrayArray844[i];
     }
@@ -380,7 +380,7 @@ public class Class38 {
         }
 
         for (int i_24_ = 0; anInt838 > i_24_; i_24_++)
-            aClass37_Sub16Array836[i_24_] = Class19.aClass37_Sub16_472;
+            aClass37_Sub16Array836[i_24_] = RSSocket.aClass37_Sub16_472;
 
         return anIntArrayArray844;
     }

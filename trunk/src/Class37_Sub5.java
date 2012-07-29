@@ -250,7 +250,7 @@ public class Class37_Sub5 extends Class37 {
                         class37_sub4_sub7_sub1_sub1.anIntArray3669[0], 0, 1);
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Applet_Sub1.anInt8 = Class33.anInt764;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class42.aStream_Sub1_936.method989(-1494101117, 160);
                     Class42.aStream_Sub1_936.method962(i_20_, false);
@@ -340,7 +340,7 @@ public class Class37_Sub5 extends Class37 {
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class37_Sub9_Sub8.anInt3057 = 0;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 157);
                     Class42.aStream_Sub1_936.method965(848881960,
                         Class21.anInt558);
@@ -361,7 +361,7 @@ public class Class37_Sub5 extends Class37 {
                         class37_sub4_sub7_sub1_sub2.anIntArray3669[0], 0, 1);
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class62.anInt1174++;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class42.aStream_Sub1_936.method989(-1494101117, 244);
@@ -379,7 +379,7 @@ public class Class37_Sub5 extends Class37 {
                         (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anIntArray3651[0]),
                         false, 2, 0, 1, 0,
                         class37_sub4_sub7_sub1_sub2.anIntArray3669[0], 0, 1);
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Applet_Sub1.anInt8 = Class33.anInt764;
@@ -414,7 +414,7 @@ public class Class37_Sub5 extends Class37 {
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 214);
                     Class42.aStream_Sub1_936.method957(true, i_20_);
                 }
@@ -436,7 +436,7 @@ public class Class37_Sub5 extends Class37 {
 
                 Class37_Sub9_Sub8.anInt3057 = 0;
                 Applet_Sub1.anInt8 = Class33.anInt764;
-                Class19.anInt490 = 2;
+                RSSocket.anInt490 = 2;
                 Class27.anInt676 = Class37_Sub13.anInt2113;
                 Class42.aStream_Sub1_936.method989(-1494101117, 105);
                 Class42.aStream_Sub1_936.method945(19058, i_20_);
@@ -463,7 +463,7 @@ public class Class37_Sub5 extends Class37 {
 
                 Applet_Sub1.anInt8 = Class33.anInt764;
                 Class27.anInt676 = Class37_Sub13.anInt2113;
-                Class19.anInt490 = 2;
+                RSSocket.anInt490 = 2;
                 Class37_Sub9_Sub8.anInt3057 = 0;
                 Class42.aStream_Sub1_936.method989(-1494101117, 230);
                 Class42.aStream_Sub1_936.method945(19058, i_20_);
@@ -486,7 +486,7 @@ public class Class37_Sub5 extends Class37 {
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class37_Sub9_Sub8.anInt3057 = 0;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 35);
                     Class42.aStream_Sub1_936.method947((byte) 46,
                         Class32.anInt737);
@@ -530,7 +530,7 @@ public class Class37_Sub5 extends Class37 {
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class37_Sub9_Sub29.anInt3445++;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 24);
                     Class42.aStream_Sub1_936.method945(19058, i_20_);
                 }
@@ -579,7 +579,7 @@ public class Class37_Sub5 extends Class37 {
                         class37_sub4_sub7_sub1_sub2.anIntArray3669[0], 0, 1);
                     Class37_Sub9_Sub4.anInt2960++;
                     Class37_Sub9_Sub8.anInt3057 = 0;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class42.aStream_Sub1_936.method989(-1494101117, 211);
@@ -602,7 +602,7 @@ public class Class37_Sub5 extends Class37 {
             if (i_19_ == 1007) {
                 Class37_Sub9_Sub8.anInt3057 = 0;
                 Class27.anInt676 = Class37_Sub13.anInt2113;
-                Class19.anInt490 = 2;
+                RSSocket.anInt490 = 2;
                 Applet_Sub1.anInt8 = Class33.anInt764;
 
                 Class37_Sub4_Sub7_Sub1_Sub1 class37_sub4_sub7_sub1_sub1 = (Class37_Sub13.aClass37_Sub4_Sub7_Sub1_Sub1Array2111[i_20_]);
@@ -637,7 +637,7 @@ public class Class37_Sub5 extends Class37 {
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 116);
                     Class42.aStream_Sub1_936.method965(848881960, i_20_);
                 }
@@ -656,7 +656,7 @@ public class Class37_Sub5 extends Class37 {
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Applet_Sub1.anInt8 = Class33.anInt764;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 185);
                     Class42.aStream_Sub1_936.method957(true, i_20_);
                 }
@@ -706,7 +706,7 @@ public class Class37_Sub5 extends Class37 {
                 Class27.anInt676 = Class37_Sub13.anInt2113;
                 Applet_Sub1.anInt8 = Class33.anInt764;
                 Class37_Sub9_Sub8.anInt3057 = 0;
-                Class19.anInt490 = 2;
+                RSSocket.anInt490 = 2;
                 Class42.aStream_Sub1_936.method989(-1494101117, 208);
                 Class42.aStream_Sub1_936.method965(848881960,
                     RSApplet.anInt174);
@@ -771,7 +771,7 @@ public class Class37_Sub5 extends Class37 {
 
                 if (i_19_ == 1002) {
                     Class37_Sub9_Sub22.anInt3339++;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Applet_Sub1.anInt8 = Class33.anInt764;
@@ -802,7 +802,7 @@ public class Class37_Sub5 extends Class37 {
                 }
 
                 if ((i_19_ ^ 0xffffffff) == -40) {
-                    Class19.anInt473++;
+                    RSSocket.anInt473++;
                     Class42.aStream_Sub1_936.method989(-1494101117, 107);
                     Class42.aStream_Sub1_936.method945(19058, i_17_);
                     Class42.aStream_Sub1_936.method947((byte) 68, i_18_);
@@ -856,7 +856,7 @@ public class Class37_Sub5 extends Class37 {
                         Class37_Sub9_Sub8.anInt3057 = 0;
                         Class27.anInt676 = Class37_Sub13.anInt2113;
                         Class37_Sub9_Sub25.anInt3384++;
-                        Class19.anInt490 = 2;
+                        RSSocket.anInt490 = 2;
                         Applet_Sub1.anInt8 = Class33.anInt764;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             196);
@@ -929,7 +929,7 @@ public class Class37_Sub5 extends Class37 {
                             class37_sub4_sub7_sub1_sub1.anIntArray3669[0], 0, 1);
                         Class37_Sub9_Sub8.anInt3057 = 0;
                         Class27.anInt676 = Class37_Sub13.anInt2113;
-                        Class19.anInt490 = 2;
+                        RSSocket.anInt490 = 2;
                         Applet_Sub1.anInt8 = Class33.anInt764;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             56);
@@ -965,7 +965,7 @@ public class Class37_Sub5 extends Class37 {
                             class37_sub4_sub7_sub1_sub2.anIntArray3669[0], 0, 1);
                         RSApplet.anInt184++;
                         Class27.anInt676 = Class37_Sub13.anInt2113;
-                        Class19.anInt490 = 2;
+                        RSSocket.anInt490 = 2;
                         Class37_Sub9_Sub8.anInt3057 = 0;
                         Applet_Sub1.anInt8 = Class33.anInt764;
                         Class42.aStream_Sub1_936.method989(-1494101117,
@@ -1000,7 +1000,7 @@ public class Class37_Sub5 extends Class37 {
 
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Applet_Sub1.anInt8 = Class33.anInt764;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class42.aStream_Sub1_936.method989(-1494101117, 254);
                     Class42.aStream_Sub1_936.method945(19058,
@@ -1035,7 +1035,7 @@ public class Class37_Sub5 extends Class37 {
                     Class37_Sub9_Sub8.anInt3057 = 0;
                     Class27.anInt676 = Class37_Sub13.anInt2113;
                     Applet_Sub1.anInt8 = Class33.anInt764;
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Class42.aStream_Sub1_936.method989(-1494101117, 8);
                     Class42.aStream_Sub1_936.method962(i_20_, false);
                     Class42.aStream_Sub1_936.method962(i_18_ -
@@ -1045,7 +1045,7 @@ public class Class37_Sub5 extends Class37 {
                 }
 
                 if ((i_19_ ^ 0xffffffff) == -1004) {
-                    Class19.anInt490 = 2;
+                    RSSocket.anInt490 = 2;
                     Applet_Sub1.anInt8 = Class33.anInt764;
                     Class37_Sub2.anInt1814++;
                     Class37_Sub9_Sub8.anInt3057 = 0;
@@ -1090,7 +1090,7 @@ public class Class37_Sub5 extends Class37 {
                                 0, 1);
                             Applet_Sub1.anInt8 = Class33.anInt764;
                             Class37_Sub9_Sub8.anInt3057 = 0;
-                            Class19.anInt490 = 2;
+                            RSSocket.anInt490 = 2;
                             Class27.anInt676 = Class37_Sub13.anInt2113;
                             Class42.aStream_Sub1_936.method989(-1494101117,
                                 13);
@@ -1141,7 +1141,7 @@ public class Class37_Sub5 extends Class37 {
                                 0, 1);
                             Class27.anInt676 = Class37_Sub13.anInt2113;
                             Class37_Sub9_Sub8.anInt3057 = 0;
-                            Class19.anInt490 = 2;
+                            RSSocket.anInt490 = 2;
                             Applet_Sub1.anInt8 = Class33.anInt764;
                             Class42.aStream_Sub1_936.method989(-1494101117,
                                 204);
@@ -1168,7 +1168,7 @@ public class Class37_Sub5 extends Class37 {
                                 class37_sub4_sub7_sub1_sub1.anIntArray3669[0],
                                 0, 1);
                             Class37_Sub7.anInt1915++;
-                            Class19.anInt490 = 2;
+                            RSSocket.anInt490 = 2;
                             Applet_Sub1.anInt8 = Class33.anInt764;
                             Class27.anInt676 = Class37_Sub13.anInt2113;
                             Class37_Sub9_Sub8.anInt3057 = 0;
@@ -1194,7 +1194,7 @@ public class Class37_Sub5 extends Class37 {
                                     false, 2, 0, 1, 0, i_18_, 0, 1));
                         }
 
-                        Class19.anInt490 = 2;
+                        RSSocket.anInt490 = 2;
                         Class37_Sub9_Sub8.anInt3057 = 0;
                         Class27.anInt676 = Class37_Sub13.anInt2113;
                         Applet_Sub1.anInt8 = Class33.anInt764;
@@ -1219,7 +1219,7 @@ public class Class37_Sub5 extends Class37 {
                                 false, 2, 0, 1, 0,
                                 class37_sub4_sub7_sub1_sub2.anIntArray3669[0],
                                 0, 1);
-                            Class19.anInt490 = 2;
+                            RSSocket.anInt490 = 2;
                             Applet_Sub1.anInt8 = Class33.anInt764;
                             Class27.anInt676 = Class37_Sub13.anInt2113;
                             Class37_Sub9_Sub8.anInt3057 = 0;
@@ -1259,7 +1259,7 @@ public class Class37_Sub5 extends Class37 {
 
                         Class37_Sub9_Sub8.anInt3057 = 0;
                         Applet_Sub1.anInt8 = Class33.anInt764;
-                        Class19.anInt490 = 2;
+                        RSSocket.anInt490 = 2;
                         Class27.anInt676 = Class37_Sub13.anInt2113;
                         Class42.aStream_Sub1_936.method989(-1494101117,
                             190);
