@@ -47,7 +47,7 @@ public class Class42 {
     public long aLong913 = -1L;
     public byte[] aByteArray921;
     public byte[] aByteArray926;
-    public Class70 aClass70_927;
+    public RSFile aClass70_927;
     public int anInt928 = 0;
     public long aLong929 = -1L;
     public long aLong932;
@@ -56,9 +56,9 @@ public class Class42 {
     public long aLong940;
     public long aLong943;
 
-    public Class42(Class70 class70, int i, int i_56_) throws IOException {
+    public Class42(RSFile class70, int i, int i_56_) throws IOException {
         aClass70_927 = class70;
-        aLong940 = aLong932 = class70.method1256(1);
+        aLong940 = aLong932 = class70.getLength(1);
         aByteArray926 = new byte[i_56_];
         aByteArray921 = new byte[i];
         aLong943 = 0L;
@@ -142,11 +142,11 @@ public class Class42 {
                     i += i_7_;
                 }
             } else {
-                aClass70_927.method1254((byte) 17, aLong943);
+                aClass70_927.seek((byte) 17, aLong943);
                 aLong938 = aLong943;
 
                 while ((i_3_ ^ 0xffffffff) < -1) {
-                    int i_8_ = aClass70_927.method1255(i, i_3_, (byte) -4, is);
+                    int i_8_ = aClass70_927.method1255(i, i_3_, is);
 
                     if (i_8_ == -1) {
                         break;
@@ -228,7 +228,7 @@ public class Class42 {
 
         if ((aLong943 ^ 0xffffffffffffffffL) != (aLong938 ^
                 0xffffffffffffffffL)) {
-            aClass70_927.method1254((byte) 17, aLong943);
+            aClass70_927.seek((byte) 17, aLong943);
             aLong938 = aLong943;
         }
 
@@ -239,7 +239,7 @@ public class Class42 {
         for (; (aByteArray921.length ^ 0xffffffff) < (anInt934 ^ 0xffffffff);
                 anInt934 += i_13_) {
             i_13_ = aClass70_927.method1255(anInt934,
-                    -anInt934 + aByteArray921.length, (byte) 25, aByteArray921);
+                    -anInt934 + aByteArray921.length, aByteArray921);
 
             if ((i_13_ ^ 0xffffffff) == 0) {
                 break;
@@ -270,7 +270,7 @@ public class Class42 {
 
         anInt914++;
         method1088(3994);
-        aClass70_927.method1257(i ^ ~0x7b);
+        aClass70_927.close(i ^ ~0x7b);
     }
 
     public static void method1080(int i) {
@@ -961,11 +961,11 @@ public class Class42 {
 
             if ((aByteArray926.length ^ 0xffffffff) > (i_50_ ^ 0xffffffff)) {
                 if (aLong943 != aLong938) {
-                    aClass70_927.method1254((byte) 17, aLong943);
+                    aClass70_927.seek((byte) 17, aLong943);
                     aLong938 = aLong943;
                 }
 
-                aClass70_927.method1259(is, (byte) -91, i, i_50_);
+                aClass70_927.write(is, i, i_50_);
 
                 long l = -1L;
 
@@ -1077,7 +1077,7 @@ public class Class42 {
             method1083((byte) 2);
         }
 
-        return aClass70_927.method1258(0);
+        return aClass70_927.getBaseFile();
     }
 
     public void method1088(int i) throws IOException {
@@ -1086,11 +1086,11 @@ public class Class42 {
         if (i == 3994) {
             if (aLong913 != -1L) {
                 if (aLong938 != aLong913) {
-                    aClass70_927.method1254((byte) 17, aLong913);
+                    aClass70_927.seek((byte) 17, aLong913);
                     aLong938 = aLong913;
                 }
 
-                aClass70_927.method1259(aByteArray926, (byte) -91, 0, anInt928);
+                aClass70_927.write(aByteArray926, 0, anInt928);
                 aLong938 += (long) anInt928;
 
                 long l = -1L;
