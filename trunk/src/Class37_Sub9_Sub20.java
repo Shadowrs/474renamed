@@ -6,7 +6,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
     public static int anInt3276;
     public static int anInt3277;
     public static int anInt3280;
-    public static Class23 aClass23_3281;
+    public static Resource aClass23_3281;
     public static int anInt3284;
     public static int anInt3288;
     public static int anInt3289;

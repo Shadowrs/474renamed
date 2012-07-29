@@ -33,7 +33,7 @@ public class Class22 {
     public int anInt572;
     public int anInt573;
     public byte[] aByteArray574;
-    public Class23 aClass23_577;
+    public Resource aClass23_577;
     public byte[] aByteArray582 = new byte[4];
     public int anInt584;
     public DataInputStream aDataInputStream587;
@@ -118,12 +118,12 @@ public class Class22 {
         }
 
         if ((anInt584 ^ 0xffffffff) == -1) {
-            if (aClass23_577.anInt591 == 2) {
+            if (aClass23_577.state == 2) {
                 throw new IOException("fds");
             }
 
-            if (aClass23_577.anInt591 == 1) {
-                aDataInputStream587 = (DataInputStream) aClass23_577.anObject595;
+            if (aClass23_577.state == 1) {
+                aDataInputStream587 = (DataInputStream) aClass23_577.resource;
                 anInt584 = 1;
             }
         }

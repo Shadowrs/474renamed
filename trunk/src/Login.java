@@ -153,12 +153,12 @@ public class Login {
                             Class37_Sub4_Sub7_Sub1.anInt3700, true));
                 }
 
-                if ((Class55.aClass23_1076.anInt591 ^ 0xffffffff) == -3) {
+                if ((Class55.aClass23_1076.state ^ 0xffffffff) == -3) {
                     throw new IOException();
                 }
 
-                if (Class55.aClass23_1076.anInt591 == 1) {
-                    Applet_Sub1.aClass19_38 = new RSSocket(((Socket) Class55.aClass23_1076.anObject595),
+                if (Class55.aClass23_1076.state == 1) {
+                    Applet_Sub1.aClass19_38 = new RSSocket(((Socket) Class55.aClass23_1076.resource),
                             Class80.aClass51_1508);
                     Class22.anInt580 = 2;
                     Class55.aClass23_1076 = null;

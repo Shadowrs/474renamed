@@ -126,11 +126,11 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     if (Class37_Sub9_Sub33.aClass23_3527 != null) {
                         jstring_6_ = Class36.method318(-21952,
-                                (Class37_Sub9_Sub33.aClass23_3527.anInt590));
+                                (Class37_Sub9_Sub33.aClass23_3527.value));
 
                         try {
-                            if (Class37_Sub9_Sub33.aClass23_3527.anObject595 != null) {
-                                byte[] is = ((String) (Class37_Sub9_Sub33.aClass23_3527.anObject595)).getBytes(
+                            if (Class37_Sub9_Sub33.aClass23_3527.resource != null) {
+                                byte[] is = ((String) (Class37_Sub9_Sub33.aClass23_3527.resource)).getBytes(
                                         "ISO-8859-1");
 
                                 jstring_6_ = Class37_Sub12.method998((byte) -17,

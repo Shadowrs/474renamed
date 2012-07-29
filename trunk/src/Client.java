@@ -410,20 +410,20 @@ public class Client extends Applet_Sub1 {
 
                         if (i < -76) {
                             if (Login.anInt782 == 1) {
-                                if (Class37_Sub9_Sub20.aClass23_3281.anInt591 == 2) {
+                                if (Class37_Sub9_Sub20.aClass23_3281.state == 2) {
                                     method31(-1, true);
 
                                     break;
                                 }
 
-                                if ((Class37_Sub9_Sub20.aClass23_3281.anInt591 ^
+                                if ((Class37_Sub9_Sub20.aClass23_3281.state ^
                                         0xffffffff) == -2) {
                                     Login.anInt782++;
                                 }
                             }
 
                             if (Login.anInt782 == 2) {
-                                Class37_Sub9_Sub20.aClass19_3298 = new RSSocket((Socket) (Class37_Sub9_Sub20.aClass23_3281.anObject595),
+                                Class37_Sub9_Sub20.aClass19_3298 = new RSSocket((Socket) (Class37_Sub9_Sub20.aClass23_3281.resource),
                                         Class80.aClass51_1508);
 
                                 Stream stream = new Stream(5);
