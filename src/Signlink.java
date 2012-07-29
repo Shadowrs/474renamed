@@ -23,8 +23,8 @@ public class Signlink implements Runnable {
     public boolean aBoolean1043 = false;
     public Applet anApplet1045;
     public RSFile[] cacheIndexFiles;
-    public Class23 nextResource;
-    public Class23 aClass23_1048;
+    public Resource nextResource;
+    public Resource aClass23_1048;
 
     public Signlink(boolean bool, Applet applet, int i, String string, int i_20_) {
         cacheDataFile = null;
@@ -105,7 +105,7 @@ public class Signlink implements Runnable {
 
     public void run() {
         for (;;) {
-            Class23 class23;
+            Resource class23;
 
             synchronized (this) {
                 for (;;) {
@@ -115,7 +115,7 @@ public class Signlink implements Runnable {
 
                     if (nextResource != null) {
                         class23 = nextResource;
-                        nextResource = nextResource.aClass23_592;
+                        nextResource = nextResource.linkedResource;
 
                         if (nextResource == null) {
                             aClass23_1048 = null;
@@ -133,38 +133,38 @@ public class Signlink implements Runnable {
             }
 
             try {
-                int i = class23.anInt593;
+                int i = class23.type;
 
                 if (i == 1) {
-                    class23.anObject595 = new Socket(InetAddress.getByName(
-                                (String) (class23.anObject594)),
-                            class23.anInt590);
+                    class23.resource = new Socket(InetAddress.getByName(
+                                (String) (class23.base)),
+                            class23.value);
                 } else if (i == 2) {
-                    Thread thread = new Thread((Runnable) class23.anObject594);
+                    Thread thread = new Thread((Runnable) class23.base);
                     thread.setDaemon(true);
                     thread.start();
-                    thread.setPriority(class23.anInt590);
-                    class23.anObject595 = thread;
+                    thread.setPriority(class23.value);
+                    class23.resource = thread;
                 } else if (i == 4) {
-                    class23.anObject595 = new DataInputStream(((URL) class23.anObject594).openStream());
+                    class23.resource = new DataInputStream(((URL) class23.base).openStream());
                 } else if (i != 8) {
                     if (i != 9) {
                         throw new Exception();
                     }
 
-                    Object[] objects = (Object[]) class23.anObject594;
+                    Object[] objects = (Object[]) class23.base;
 
-                    class23.anObject595 = ((Class) objects[0]).getDeclaredField((String) objects[1]);
+                    class23.resource = ((Class) objects[0]).getDeclaredField((String) objects[1]);
                 } else {
-                    Object[] objects = (Object[]) class23.anObject594;
+                    Object[] objects = (Object[]) class23.base;
 
-                    class23.anObject595 = ((Class) objects[0]).getDeclaredMethod(((String) objects[1]),
+                    class23.resource = ((Class) objects[0]).getDeclaredMethod(((String) objects[1]),
                             ((Class[]) objects[2]));
                 }
 
-                class23.anInt591 = 1;
+                class23.state = 1;
             } catch (Throwable throwable) {
-                class23.anInt591 = 2;
+                class23.state = 2;
             }
         }
     }
@@ -177,7 +177,7 @@ public class Signlink implements Runnable {
         return anInterface2_1030;
     }
 
-    public Class23 createResource(String string, int i, boolean bool) {
+    public Resource createResource(String string, int i, boolean bool) {
         if (bool != true) {
             return null;
         }
@@ -185,7 +185,7 @@ public class Signlink implements Runnable {
         return createResource(0, string, i, (byte) -112, 1);
     }
 
-    public Class23 createResource(byte i, String string, Class var_class,
+    public Resource createResource(byte i, String string, Class var_class,
         Class[] var_classes) {
         if (i <= 59) {
             aBoolean1043 = false;
@@ -195,7 +195,7 @@ public class Signlink implements Runnable {
             0, (byte) -93, 8);
     }
 
-    public Class23 createResource(Runnable runnable, int i, byte i_0_) {
+    public Resource createResource(Runnable runnable, int i, byte i_0_) {
         if (i_0_ != 65) {
             aFile1032 = null;
         }
@@ -203,7 +203,7 @@ public class Signlink implements Runnable {
         return createResource(0, runnable, i, (byte) -110, 2);
     }
 
-    public Class23 createResource(int i, byte i_1_) {
+    public Resource createResource(int i, byte i_1_) {
         if (i_1_ < 6) {
             javaVersion = null;
         }
@@ -211,16 +211,16 @@ public class Signlink implements Runnable {
         return createResource(0, null, i, (byte) -108, 3);
     }
 
-    public Class23 createResource(int i, Object object, int i_2_, byte i_3_,
+    public Resource createResource(int i, Object object, int i_2_, byte i_3_,
         int i_4_) {
-        Class23 class23 = new Class23();
-        class23.anInt593 = i_4_;
-        class23.anInt590 = i_2_;
-        class23.anObject594 = object;
+        Resource class23 = new Resource();
+        class23.type = i_4_;
+        class23.value = i_2_;
+        class23.base = object;
 
         synchronized (this) {
             if (aClass23_1048 != null) {
-                aClass23_1048.aClass23_592 = class23;
+                aClass23_1048.linkedResource = class23;
                 aClass23_1048 = class23;
             } else {
                 aClass23_1048 = nextResource = class23;
@@ -236,7 +236,7 @@ public class Signlink implements Runnable {
 	return "cache/.jagex_cache_32/runescape";
     }
 
-    public Class23 createResource(byte i, URL url) {
+    public Resource createResource(byte i, URL url) {
 
         return createResource(0, url, 0, (byte) 122, 4);
     }
@@ -345,7 +345,7 @@ public class Signlink implements Runnable {
         }
     }
 
-    public Class23 method1124(Class var_class, int i, String string) {
+    public Resource method1124(Class var_class, int i, String string) {
         if (i >= -71) {
             aMethod1044 = null;
         }

@@ -125,7 +125,7 @@ public class RSSocket implements Runnable {
     public boolean threadDead = false;
     public int bufferLocation = 0;
     public boolean close = false;
-    public Class23 activeThread;
+    public Resource activeThread;
 
     public RSSocket(Socket socket, Signlink class51) throws IOException {
         try {
@@ -884,12 +884,12 @@ ex.printStackTrace();
                 }
 
                 if (activeThread != null) {
-                    while (activeThread.anInt591 == 0)
+                    while (activeThread.state == 0)
                         Class37_Sub9_Sub20.method846(1L, (byte) 58);
 
-                    if (activeThread.anInt591 == 1) {
+                    if (activeThread.state == 1) {
                         try {
-                            ((Thread) activeThread.anObject595).join();
+                            ((Thread) activeThread.resource).join();
                         } catch (InterruptedException interruptedexception) {
                             /* empty */
                         }
