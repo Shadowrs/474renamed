@@ -149,7 +149,7 @@ public class Login {
 
             if (Class22.anInt580 == 1) {
                 if (Class55.aClass23_1076 == null) {
-                    Class55.aClass23_1076 = (Class80.aClass51_1508.method1117(Class37_Sub8.address,
+                    Class55.aClass23_1076 = (Class80.aClass51_1508.createResource(Class37_Sub8.address,
                             Class37_Sub4_Sub7_Sub1.anInt3700, true));
                 }
 

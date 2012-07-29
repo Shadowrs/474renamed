@@ -376,7 +376,7 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -237) {
                 int i_7_ = Class83.packetStream.method933(-56);
 
-                Class37_Sub9_Sub33.aClass23_3527 = Class80.aClass51_1508.method1120(i_7_,
+                Class37_Sub9_Sub33.aClass23_3527 = Class80.aClass51_1508.createResource(i_7_,
                         (byte) 111);
                 Class37_Sub9_Sub17.packetId = -1;
 

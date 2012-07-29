@@ -40,7 +40,7 @@ public class Class22 {
 
     public Class22(Signlink class51, URL url) {
         try {
-            aClass23_577 = class51.method1122((byte) -110, url);
+            aClass23_577 = class51.createResource((byte) -110, url);
             anInt584 = 0;
             aLong571 = 30000L + Class71.method1263((byte) -80);
         } catch (RuntimeException runtimeexception) {

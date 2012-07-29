@@ -496,7 +496,7 @@ public class Class38 {
 
         anInt829++;
 
-        if (Signlink.aString1039.toLowerCase().indexOf("microsoft") != -1) {
+        if (Signlink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
             Class37_Sub5.anIntArray1879[188] = 71;
             Class37_Sub5.anIntArray1879[186] = 57;
             Class37_Sub5.anIntArray1879[189] = 26;

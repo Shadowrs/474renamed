@@ -258,7 +258,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         this, i_2_, "runescape", 16);
-            Class80.aClass51_1508.method1119(this, 1, (byte) 65);              
+            Class80.aClass51_1508.createResource(this, 1, (byte) 65);              
                 
                 /*if (Class80.aClass51_1508 == null) {
                     Class43.aClass51_958 = Class80.aClass51_1508 = new Class51(false,
@@ -296,20 +296,20 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
         anInt16++;
 
         try {
-            if (Signlink.aString1039 != null) {
-                String string = Signlink.aString1039.toLowerCase();
+            if (Signlink.javaVendor != null) {
+                String string = Signlink.javaVendor.toLowerCase();
 
                 if ((string.indexOf("sun") == -1) &&
                         ((string.indexOf("apple") ^ 0xffffffff) == 0)) {
                     if (((string.indexOf("ibm") ^ 0xffffffff) != 0) &&
-                            ((Signlink.aString1033 == null) ||
-                            Signlink.aString1033.equals("1.4.2"))) {
+                            ((Signlink.javaVersion == null) ||
+                            Signlink.javaVersion.equals("1.4.2"))) {
                         method16("wrongjava", 1);
 
                         return;
                     }
                 } else {
-                    String string_5_ = Signlink.aString1033;
+                    String string_5_ = Signlink.javaVersion;
 
                     if (string_5_.equals("1.1") ||
                             string_5_.startsWith("1.1.") ||
@@ -408,7 +408,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                 insets.bottom + insets.top + i);
             Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
                         null, i_7_, string, i_6_);
-            Class80.aClass51_1508.method1119(this, 1, (byte) 65);
+            Class80.aClass51_1508.createResource(this, 1, (byte) 65);
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-92, null, exception);
         }
@@ -595,8 +595,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                 !Class37_Sub4_Sub7_Sub3.aBoolean3738) {
             Class4.aBoolean93 = true;
 
-            if ((Signlink.aString1033 != null) &&
-                    Signlink.aString1033.startsWith("1.5") &&
+            if ((Signlink.javaVersion != null) &&
+                    Signlink.javaVersion.startsWith("1.5") &&
                     ((-Class49.aLong1003 + Class71.method1263((byte) -80)) > 1000L)) {
                 Rectangle rectangle = graphics.getClipBounds();
 
