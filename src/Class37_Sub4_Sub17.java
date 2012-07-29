@@ -84,7 +84,7 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
                 break;
             }
 
-            stream_sub1.method989(-1494101117, i);
+            stream_sub1.writePacket(-1494101117, i);
             stream_sub1.writeSignedByte(119, 0);
 
             int i_2_ = stream_sub1.bufferLocation;

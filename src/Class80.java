@@ -70,7 +70,7 @@ public class Class80 {
                         Class18.aJStringArray332[Class18.anInt340++] = (Class37_Sub4_Sub13.method708(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                     i, 37), l));
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
-                        Class42.aStream_Sub1_936.method989(-1494101117,
+                        Class42.aStream_Sub1_936.writePacket(-1494101117,
                             152);
                         Class42.aStream_Sub1_936.writeLong(l);
                     }

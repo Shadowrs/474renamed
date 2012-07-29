@@ -188,8 +188,6 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
                 return;
             }
         }
-
-        int i_8_ = -89 / ((50 - i_5_) / 51);
     }
 
     public boolean method497(int i) {
@@ -203,9 +201,9 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
     }
 
     public static void method498(boolean bool) {
-        while (Class83.packetStream.method991(
+        while (Class83.packetStream.availableBits(
                     Class37_Sub4.packetSize, -1337) >= 11) {
-            int i = Class83.packetStream.method996(11, 56);
+            int i = Class83.packetStream.readBits(11, 56);
 
             if ((i ^ 0xffffffff) == -2048) {
                 break;
@@ -229,27 +227,27 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[i];
             class37_sub4_sub7_sub1_sub2.anInt3641 = Class37_Sub7.anInt1898;
 
-            int i_10_ = Class83.packetStream.method996(1, 23);
+            int i_10_ = Class83.packetStream.readBits(1, 23);
 
             if (i_10_ == 1) {
                 Class36.anIntArray809[Class37_Sub9_Sub11.anInt3098++] = i;
             }
 
-            int i_11_ = (Class37_Sub9_Sub18.anIntArray3233[Class83.packetStream.method996(3,
+            int i_11_ = (Class37_Sub9_Sub18.anIntArray3233[Class83.packetStream.readBits(3,
                     77)]);
 
             if (bool_9_) {
                 class37_sub4_sub7_sub1_sub2.anInt3681 = class37_sub4_sub7_sub1_sub2.anInt3663 = i_11_;
             }
 
-            int i_12_ = Class83.packetStream.method996(5, 32);
+            int i_12_ = Class83.packetStream.readBits(5, 32);
 
             if (i_12_ > 15) {
                 i_12_ -= 32;
             }
 
-            int i_13_ = Class83.packetStream.method996(1, 74);
-            int i_14_ = Class83.packetStream.method996(5, 104);
+            int i_13_ = Class83.packetStream.readBits(1, 74);
+            int i_14_ = Class83.packetStream.readBits(5, 104);
 
             if ((i_14_ ^ 0xffffffff) < -16) {
                 i_14_ -= 32;
@@ -266,7 +264,7 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
             aShortArrayArray3702 = null;
         }
 
-        Class83.packetStream.method988(true);
+        Class83.packetStream.finishBitAccess(true);
         anInt3695++;
     }
 

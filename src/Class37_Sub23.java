@@ -55,7 +55,7 @@ public class Class37_Sub23 extends Class37 {
                 if (((i_0_ ^ 0xffffffff) > (Class14.aClass37_Sub18Array240.length ^
                         0xffffffff)) &&
                         (Class14.aClass37_Sub18Array240[i_0_] != null)) {
-                    Class42.aStream_Sub1_936.method989(-1494101117, 22);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 22);
                     Class68.anInt1321++;
                     Class42.aStream_Sub1_936.writeLong(Class14.aClass37_Sub18Array240[i_0_].aLong818);
                 }

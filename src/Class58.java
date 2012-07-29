@@ -286,7 +286,7 @@ public class Class58 {
 				ItemDef.method454(128);
 				method1151((byte) 75);
 				if (Class36.aFrame797 != null) {
-					Class42.aStream_Sub1_936.method989(-1494101117, 150);
+					Class42.aStream_Sub1_936.writePacket(-1494101117, 150);
 					Login.anInt778++;
 					Class42.aStream_Sub1_936.writeInt(1057001181);
 				}
@@ -342,7 +342,7 @@ public class Class58 {
 				Class37_Sub4_Sub3.method461(30, 27931);
 				Class72.method1267(2);
 				Class37_Sub9_Sub32.method899((byte) 94);
-				Class42.aStream_Sub1_936.method989(-1494101117, 176);
+				Class42.aStream_Sub1_936.writePacket(-1494101117, 176);
 				Class37_Sub1.method329(-7242);
 			}
 		}

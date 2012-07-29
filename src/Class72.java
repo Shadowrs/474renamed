@@ -61,7 +61,7 @@ public class Class72 {
 
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
                         Class37_Sub4_Sub7_Sub1_Sub1.anInt3958++;
-                        Class42.aStream_Sub1_936.method989(i +
+                        Class42.aStream_Sub1_936.writePacket(i +
                             -1494101239, 122);
                         Class42.aStream_Sub1_936.writeLong(l);
 

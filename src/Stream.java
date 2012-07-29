@@ -154,15 +154,15 @@ public class Stream extends Class37 {
 		Class37_Sub17.aBoolean2165 = bool;
 
 		if (Class37_Sub17.aBoolean2165) {
-			Class83.packetStream.method993(false);
+			Class83.packetStream.initBitAccess(false);
 
 			for (int i_3_ = 0; i_3_ < 4; i_3_++) {
 				for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -14; i_4_++) {
 					for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > -14; i_5_++) {
-						int i_6_ = Class83.packetStream.method996(1, 73);
+						int i_6_ = Class83.packetStream.readBits(1, 73);
 
 						if (i_6_ == 1) {
-							Class37_Sub9_Sub27.anIntArrayArrayArray3407[i_3_][i_4_][i_5_] = Class83.packetStream.method996(26, 86);
+							Class37_Sub9_Sub27.anIntArrayArrayArray3407[i_3_][i_4_][i_5_] = Class83.packetStream.readBits(26, 86);
 						} else {
 							Class37_Sub9_Sub27.anIntArrayArrayArray3407[i_3_][i_4_][i_5_] = -1;
 						}
@@ -170,7 +170,7 @@ public class Stream extends Class37 {
 				}
 			}
 
-			Class83.packetStream.method988(true);
+			Class83.packetStream.finishBitAccess(true);
 
 			int i_7_ = ((-Class83.packetStream.bufferLocation + Class37_Sub4.packetSize) / 16);
 			Class37_Sub9_Sub36.anIntArrayArray3573 = new int[i_7_][4];

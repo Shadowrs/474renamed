@@ -152,7 +152,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
     public static void method808(boolean bool, int i, int i_8_) {
         Class37_Sub4_Sub7_Sub7.anInt3841++;
         anInt3096++;
-        Class42.aStream_Sub1_936.method989(-1494101117, 64);
+        Class42.aStream_Sub1_936.writePacket(-1494101117, 64);
         Class42.aStream_Sub1_936.writeShortLE(i, false);
         Class42.aStream_Sub1_936.writeInt2(bool, i_8_);
     }

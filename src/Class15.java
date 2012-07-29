@@ -426,7 +426,7 @@ public abstract class Class15 {
                         if ((Class37_Sub4_Sub12.aClass18_2773 != null) &&
                                 (Class37_Sub9_Sub17.method834(
                                     (Class37_Sub7.aClass18_1894), false) != null)) {
-                            Class42.aStream_Sub1_936.method989(-1494101117,
+                            Class42.aStream_Sub1_936.writePacket(-1494101117,
                                 78);
                             Class78.anInt1461++;
                             Class42.aStream_Sub1_936.writeInt2(false,
@@ -527,7 +527,7 @@ public abstract class Class15 {
                 if (!Class37_Sub18.aBoolean2201 &&
                         (Applet_Sub1.aClass19_38 != null)) {
                     Class37_Sub16.anInt2153++;
-                    Class42.aStream_Sub1_936.method989(-1494101117, 186);
+                    Class42.aStream_Sub1_936.writePacket(-1494101117, 186);
 
                     try {
                         Applet_Sub1.aClass19_38.write(0, (byte) 116,
