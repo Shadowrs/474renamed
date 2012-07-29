@@ -237,7 +237,7 @@ public class Stream extends Class37 {
 
 			for (int i_29_ = 0; (i_29_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff); i_29_++) {
 				for (int i_30_ = 0; i_30_ < 4; i_30_++) {
-					Class37_Sub9_Sub36.anIntArrayArray3573[i_29_][i_30_] = (Class83.packetStream.method979(Class37_Sub4_Sub7_Sub1_Sub1.method502(i, -52131576)));
+					Class37_Sub9_Sub36.anIntArrayArray3573[i_29_][i_30_] = (Class83.packetStream.readIntLE(Class37_Sub4_Sub7_Sub1_Sub1.method502(i, -52131576)));
 				}
 			}
 
@@ -471,7 +471,7 @@ public class Stream extends Class37 {
 		return i_52_;
 	}
 
-	public void method951(byte i, int i_53_) {
+	public void writeSignedByteOrShort(byte i, int i_53_) {
 		anInt2060++;
 
 		if ((i_53_ >= 0) && (i_53_ < 128)) {
@@ -618,7 +618,7 @@ public class Stream extends Class37 {
 		return readByte(i ^ 0x81);
 	}
 
-	public void method962(int i, boolean bool) {
+	public void writeShortLE(int i, boolean bool) {
 		buffer[bufferLocation++] = (byte) i;
 		buffer[bufferLocation++] = (byte) (i >> -197350840);
 
@@ -818,7 +818,7 @@ public class Stream extends Class37 {
 		return 0xff & buffer[bufferLocation++];
 	}
 
-	public int method979(int i) {
+	public int readIntLE(int i) {
 		if (i != -52131576) {
 			readByteA();
 		}
@@ -907,7 +907,7 @@ public class Stream extends Class37 {
 		return (((buffer[-2 + bufferLocation] << 8) & 0xff00) + (0xff & (buffer[bufferLocation + -1] + -128)));
 	}
 
-	public static void method985(boolean bool) {
+	public static void resetStaticVariables(boolean bool) {
 		aJString_2001 = null;
 		aClass15_2025 = null;
 		aJString_2059 = null;
