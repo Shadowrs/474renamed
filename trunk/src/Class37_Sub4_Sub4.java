@@ -139,7 +139,7 @@ public class Class37_Sub4_Sub4 extends Class37_Sub4 {
         }
     }
 
-    public static void method476(int i, Class15 class15, int i_8_, int i_9_,
+    public static void method476(int i, JS5 class15, int i_8_, int i_9_,
         boolean bool, boolean bool_10_, int i_11_) {
         Class37_Sub13.anInt2118 = i_9_;
         Class37_Sub5.anInt1877 = i;
@@ -272,8 +272,8 @@ public class Class37_Sub4_Sub4 extends Class37_Sub4 {
         return bool;
     }
 
-    public static boolean method481(Class15 class15, Class15 class15_22_,
-        Class37_Sub3_Sub3 class37_sub3_sub3, int i, Class15 class15_23_) {
+    public static boolean method481(JS5 class15, JS5 class15_22_,
+        Class37_Sub3_Sub3 class37_sub3_sub3, int i, JS5 class15_23_) {
         try {
             Class37_Sub4_Sub7.aClass37_Sub3_Sub3_2635 = class37_sub3_sub3;
             PacketParser.aClass15_3263 = class15_23_;

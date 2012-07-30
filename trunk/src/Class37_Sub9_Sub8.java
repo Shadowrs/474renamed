@@ -136,9 +136,9 @@ while_59_:
         return objectdef;
     }
 
-    public static void method795(boolean bool, Class15 class15, byte i,
+    public static void method795(boolean bool, JS5 class15, byte i,
         Class37_Sub4_Sub9_Sub2_Sub1 class37_sub4_sub9_sub2_sub1,
-        Class15 class15_6_) {
+        JS5 class15_6_) {
         try {
             Class52.aClass15_1056 = class15_6_;
 
@@ -191,10 +191,10 @@ while_59_:
                     }
                 }
 
-                ArrayOperations.setArray(is, 0, Class32.anInt743, i_9_);
+                ArrayOperations.setArray(is, 0, AbstractDrawingArea.anInt743, i_9_);
             } else {
                 for (int i_11_ = 0;
-                        (Class32.anInt743 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
+                        (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
                         i_11_++) {
                     int i_12_ = 0;
                     int i_13_ = 0;
@@ -331,15 +331,15 @@ while_60_:
                             (Class37_Sub2.aJString_1819), (byte) -104);
                     } else {
                         Class37_Sub4_Sub10.anInt2685++;
-                        Class69.aJStringArray1342[RSApplet.anInt173] = jstring;
+                        CacheIO.aJStringArray1342[RSApplet.anInt173] = jstring;
                         Class71.aLongArray1360[RSApplet.anInt173] = l;
                         RSApplet.anIntArray176[RSApplet.anInt173] = 0;
                         Class37_Sub9_Sub31.anIntArray3484[RSApplet.anInt173] = 0;
                         RSApplet.anInt173++;
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
-                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                        Class42.outputStream.writePacket(-1494101117,
                             131);
-                        Class42.aStream_Sub1_936.writeLong(l);
+                        Class42.outputStream.writeLong(l);
                     }
                 }
             }

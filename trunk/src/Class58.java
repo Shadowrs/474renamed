@@ -5,7 +5,7 @@ public class Class58 {
     public static int anInt1103;
     public static JString aJString_1104;
     public static int anInt1105;
-    public static PacketStream aStream_Sub1_1106 = new PacketStream(5000);
+    public static PacketStream loginOutputStream = new PacketStream(5000);
     public static int anInt1107;
     public static int anInt1108;
     public static Class42 aClass42_1109;
@@ -39,7 +39,7 @@ public class Class58 {
         aJString_1104 = aJString_1114;
 
         aJString_1110 = Class37_Sub2.method332((byte) 120, "Lade Wordpack )2 ");
-        aStream_Sub1_1106 = new PacketStream(5000);
+        loginOutputStream = new PacketStream(5000);
         anIntArray1126 = new int[5];
         aClass65_1125 = new Class65(64);
         anIntArray1128 = new int[500];
@@ -55,7 +55,7 @@ public class Class58 {
 
 	public static void method1148(byte i) {
 		anInt1103++;
-		Class15.method122(false, (byte) -103);
+		JS5.method122(false, (byte) -103);
 		Client.anInt1734 = 0;
 		boolean bool = true;
 		for (int i_0_ = 0; ((i_0_ ^ 0xffffffff) > (Class22.aByteArrayArray569.length ^ 0xffffffff)); i_0_++) {
@@ -124,7 +124,7 @@ public class Class58 {
 				Class37.method326(true);
 				int i_8_ = Class22.aByteArrayArray569.length;
 				Class38.method1048(-15581);
-				Class15.method122(true, (byte) -103);
+				JS5.method122(true, (byte) -103);
 				if (!Class37_Sub17.aBoolean2165) {
 					for (int i_9_ = 0; i_8_ > i_9_; i_9_++) {
 						int i_10_ = (-Class37_Sub18.anInt2200 + (Class66.anIntArray1261[i_9_] >> -964192152) * 64);
@@ -151,7 +151,7 @@ public class Class58 {
 							PacketParser.method841(i_13_, 64, 64, (byte) 71, i_14_);
 						}
 					}
-					Class15.method122(true, (byte) -103);
+					JS5.method122(true, (byte) -103);
 					for (int i_15_ = 0; i_8_ > i_15_; i_15_++) {
 						
 						
@@ -226,7 +226,7 @@ public class Class58 {
 										(byte) 71, i_30_ * 8);
 						}
 					}
-					Class15.method122(true, (byte) -103);
+					JS5.method122(true, (byte) -103);
 					for (int i_32_ = 0; i_32_ < 4; i_32_++) {
 						Class72.method1267(2);
 						for (int i_33_ = 0; i_33_ < 13; i_33_++) {
@@ -261,12 +261,12 @@ public class Class58 {
 						}
 					}
 				}
-				Class15.method122(true, (byte) -103);
+				JS5.method122(true, (byte) -103);
 				method1151((byte) 75);
 				Class72.method1267(2);
 				Class3.method46(Class68.aClass20Array1322,
 						Class38.aClass67_847, -101);
-				Class15.method122(true, (byte) -103);
+				JS5.method122(true, (byte) -103);
 				int i_42_ = Class42.anInt944;
 				if ((Class37_Sub9_Sub1.anInt2916 ^ 0xffffffff) > (i_42_ ^ 0xffffffff))
 					i_42_ = Class37_Sub9_Sub1.anInt2916;
@@ -286,9 +286,9 @@ public class Class58 {
 				ItemDef.method454(128);
 				method1151((byte) 75);
 				if (Class36.aFrame797 != null) {
-					Class42.aStream_Sub1_936.writePacket(-1494101117, 150);
+					Class42.outputStream.writePacket(-1494101117, 150);
 					Login.anInt778++;
-					Class42.aStream_Sub1_936.writeInt(1057001181);
+					Class42.outputStream.writeInt(1057001181);
 				}
 				if (!Class37_Sub17.aBoolean2165) {
 					int i_45_ = (-6 + Class37_Sub4_Sub7.anInt2641) / 8;
@@ -342,7 +342,7 @@ public class Class58 {
 				Class37_Sub4_Sub3.method461(30, 27931);
 				Class72.method1267(2);
 				Class37_Sub9_Sub32.method899((byte) 94);
-				Class42.aStream_Sub1_936.writePacket(-1494101117, 176);
+				Class42.outputStream.writePacket(-1494101117, 176);
 				Class37_Sub1.method329(-7242);
 			}
 		}
@@ -389,8 +389,8 @@ public class Class58 {
 		((Class82) Class37_Sub4_Sub9_Sub4.anInterface3_3926)
 				.method1304(i + 19843);
 		RuntimeException_Sub1.aClass65_1632.method1186(i + 2981);
-		Class69.aClass15_Sub1_1335.method127(false);
-		Class69.aClass15_Sub1_1330.method127(false);
+		CacheIO.aClass15_Sub1_1335.method127(false);
+		CacheIO.aClass15_Sub1_1330.method127(false);
 		Canvas_Sub1.aClass15_Sub1_46.method127(false);
 		Class37_Sub4.aClass15_Sub1_1862.method127(false);
 		Class37_Sub4_Sub7_Sub3.aClass15_Sub1_3740.method127(false);
@@ -424,7 +424,7 @@ public class Class58 {
 		}
 	}
 
-	public static void method1153(Class15 class15, int i) {
+	public static void method1153(JS5 class15, int i) {
 		anInt1113++;
 		Class37_Sub9_Sub24.aClass15_3364 = class15;
 		Class1.anInt65 = Class37_Sub9_Sub24.aClass15_3364.method129(10000, 16);
@@ -518,7 +518,7 @@ public class Class58 {
 		aJString_1115 = null;
 		aClass65_1125 = null;
 		anIntArray1126 = null;
-		aStream_Sub1_1106 = null;
+		loginOutputStream = null;
 	}
 
 	public Class37 method1161(byte i) {
@@ -553,7 +553,7 @@ public class Class58 {
 		aJString_1115 = aJString_1114;
 		aJString_1104 = aJString_1114;
 		aJString_1110 = Class37_Sub2.method332((byte) 120, "Lade Wordpack )2 ");
-		aStream_Sub1_1106 = new PacketStream(5000);
+		loginOutputStream = new PacketStream(5000);
 		anIntArray1126 = new int[5];
 		aClass65_1125 = new Class65(64);
 		anIntArray1128 = new int[500];

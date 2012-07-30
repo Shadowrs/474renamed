@@ -150,7 +150,7 @@ public class Class37_Sub4_Sub8 extends Class37_Sub4 {
 
         if (((Class37_Sub9_Sub17.anInt3223 ^ 0xffffffff) != -1) &&
                 ((i_10_ ^ 0xffffffff) != 0)) {
-            Class15.method120(Class37_Sub9_Sub17.anInt3223, 0, false, -15793,
+            JS5.method120(Class37_Sub9_Sub17.anInt3223, 0, false, -15793,
                 Class36.aClass15_Sub1_796, i_10_);
             Class55.aBoolean1071 = true;
         }

@@ -48,9 +48,9 @@ public class Class76 {
     }
 
     public static void method1284(byte i) {
-        if (Applet_Sub1.aClass19_38 != null) {
-            Applet_Sub1.aClass19_38.killThread((byte) -128);
-            Applet_Sub1.aClass19_38 = null;
+        if (Applet_Sub1.activeSocket != null) {
+            Applet_Sub1.activeSocket.killThread((byte) -128);
+            Applet_Sub1.activeSocket = null;
         }
 
         anInt1426++;

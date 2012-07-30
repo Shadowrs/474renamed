@@ -12,8 +12,8 @@ public class Class80 {
     public static long[] aLongArray1504 = new long[100];
     public static long aLong1505;
     public static int anInt1506;
-    public static Class15 aClass15_1507;
-    public static Signlink aClass51_1508;
+    public static JS5 aClass15_1507;
+    public static Signlink signlink;
 
     public static void method1299(int i, long l) {
         try {
@@ -70,9 +70,9 @@ public class Class80 {
                         Class18.aJStringArray332[Class18.anInt340++] = (Class37_Sub4_Sub13.method708(Class37_Sub4_Sub7_Sub1_Sub1.method502(
                                     i, 37), l));
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
-                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                        Class42.outputStream.writePacket(-1494101117,
                             152);
-                        Class42.aStream_Sub1_936.writeLong(l);
+                        Class42.outputStream.writeLong(l);
                     }
                 }
             }
@@ -104,7 +104,7 @@ public class Class80 {
 
     public static void method1301(int i) {
         if (i >= 32) {
-            aClass51_1508 = null;
+            signlink = null;
             aLongArray1504 = null;
             aJString_1501 = null;
             aClass15_1507 = null;

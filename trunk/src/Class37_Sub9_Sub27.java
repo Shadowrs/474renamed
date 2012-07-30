@@ -66,13 +66,13 @@ public class Class37_Sub9_Sub27 extends Class37_Sub9 {
             int[] is_7_ = is[2];
 
             if (!aBoolean3397) {
-                for (int i_8_ = 0; i_8_ < Class32.anInt743; i_8_++) {
+                for (int i_8_ = 0; i_8_ < AbstractDrawingArea.anInt743; i_8_++) {
                     is_3_[i_8_] = is_4_[i_8_];
                     is_6_[i_8_] = is_5_[i_8_];
                     is_7_[i_8_] = is_2_[i_8_];
                 }
             } else {
-                for (int i_9_ = 0; Class32.anInt743 > i_9_; i_9_++) {
+                for (int i_9_ = 0; AbstractDrawingArea.anInt743 > i_9_; i_9_++) {
                     is_3_[i_9_] = is_4_[-i_9_ + Applet_Sub1.anInt12];
                     is_6_[i_9_] = is_5_[-i_9_ + Applet_Sub1.anInt12];
                     is_7_[i_9_] = is_2_[-i_9_ + Applet_Sub1.anInt12];
@@ -268,10 +268,10 @@ while_95_:
                     Class37_Sub4_Sub7_Sub1_Sub2.anInt3989)), 0, -101);
 
             if (!aBoolean3397) {
-                ArrayOperations.copyArray(is_14_, 0, is, 0, Class32.anInt743);
+                ArrayOperations.copyArray(is_14_, 0, is, 0, AbstractDrawingArea.anInt743);
             } else {
                 for (int i_15_ = 0;
-                        (Class32.anInt743 ^ 0xffffffff) < (i_15_ ^ 0xffffffff);
+                        (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_15_ ^ 0xffffffff);
                         i_15_++)
                     is[i_15_] = is_14_[-i_15_ + Applet_Sub1.anInt12];
             }
@@ -287,6 +287,6 @@ while_95_:
             aJString_3411 = null;
         }
 
-        return Class32.method289(i_16_ ^ 0x72, 10, i, bool);
+        return AbstractDrawingArea.method289(i_16_ ^ 0x72, 10, i, bool);
     }
 }

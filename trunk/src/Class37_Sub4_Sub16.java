@@ -16,7 +16,7 @@ public class Class37_Sub4_Sub16 extends Class37_Sub4 {
 
     public Class61[] aClass61Array2870;
 
-    public Class37_Sub4_Sub16(Class15 class15, Class15 class15_3_, int i,
+    public Class37_Sub4_Sub16(JS5 class15, JS5 class15_3_, int i,
         boolean bool) {
         try {
             Class58 class58 = new Class58();
@@ -120,8 +120,8 @@ public class Class37_Sub4_Sub16 extends Class37_Sub4 {
             Class37_Sub4_Sub13.anInt2794, Class15_Sub1.anInt1753,
             Class37_Sub5.anInt1878, i_2_ ^ ~0xff440c);
 
-        if (Class32.anInt733 != -1) {
-            Class26.method259(Class32.anInt733, 1, -125);
+        if (AbstractDrawingArea.anInt733 != -1) {
+            Class26.method259(AbstractDrawingArea.anInt733, 1, -125);
         }
 
         return class37_sub6;

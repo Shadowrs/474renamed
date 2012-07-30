@@ -17,7 +17,7 @@ public class Class26 {
     public static int[] anIntArray657;
     public static JString aJString_658 = (Class37_Sub2.method332((byte) 120,
             "Press (Wchange your password(W on front page)3"));
-    public static long aLong659;
+    public static long serverSessionKey;
     public static JString aJString_660;
     public static JString aJString_661;
     public static JString aJString_662;
@@ -35,7 +35,7 @@ public class Class26 {
 
         aJString_661 = Class37_Sub2.method332((byte) 103,
                 "Suche nach Updates )2 ");
-        aLong659 = 0L;
+        serverSessionKey = 0L;
         aJString_665 = aJString_658;
         anIntArray664 = new int[5];
         aJString_666 = Class37_Sub2.method332((byte) 126, "gleiten:");
@@ -53,7 +53,7 @@ public class Class26 {
         aJString_649 = null;
 
         if (i != 28345) {
-            aLong659 = 99L;
+            serverSessionKey = 99L;
         }
 
         aBigInteger652 = null;
@@ -251,7 +251,7 @@ public class Class26 {
 
                             if (Class77.aClass18_1452 == class18) {
                                 Class37_Sub4_Sub7_Sub1_Sub2.anInt3977 = i_9_;
-                                Class32.aBoolean746 = true;
+                                AbstractDrawingArea.aBoolean746 = true;
                                 Class59.anInt1134 = i_10_;
                             }
 

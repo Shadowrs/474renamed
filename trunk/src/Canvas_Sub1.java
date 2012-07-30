@@ -78,8 +78,8 @@ public class Canvas_Sub1 extends Canvas {
         }
     }
 
-    public static Class37_Sub4_Sub16 method38(Class15 class15, int i,
-        byte i_1_, boolean bool, Class15 class15_2_) {
+    public static Class37_Sub4_Sub16 method38(JS5 class15, int i,
+        byte i_1_, boolean bool, JS5 class15_2_) {
         try {
             anInt49++;
 

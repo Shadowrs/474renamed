@@ -72,7 +72,7 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
                     i_4_++) {
                 int[] is_5_ = this.method760((Class37_Sub4_Sub7_Sub1_Sub2.anInt3989 &
                         i_4_), 0, -90);
-                int[] is_6_ = new int[Class32.anInt743];
+                int[] is_6_ = new int[AbstractDrawingArea.anInt743];
                 int i_7_ = 0;
 
                 for (int i_8_ = -anInt3244;
@@ -82,7 +82,7 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
 
                 int i_9_ = 0;
 
-                while ((Class32.anInt743 ^ 0xffffffff) < (i_9_ ^ 0xffffffff)) {
+                while ((AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_9_ ^ 0xffffffff)) {
                     is_6_[i_9_] = i_7_ / i_2_;
                     i_7_ -= is_5_[(-anInt3244 + i_9_) & Applet_Sub1.anInt12];
                     i_9_++;
@@ -92,7 +92,7 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
                 is_3_[-i_0_ + (i_4_ - -anInt3228)] = is_6_;
             }
 
-            for (int i_10_ = 0; Class32.anInt743 > i_10_; i_10_++) {
+            for (int i_10_ = 0; AbstractDrawingArea.anInt743 > i_10_; i_10_++) {
                 int i_11_ = 0;
 
                 for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff);
@@ -205,7 +205,7 @@ while_80_:
                 int[][] is_22_ = this.method762(0,
                         i_21_ & (Class37_Sub4_Sub7_Sub1_Sub2.anInt3989),
                         (byte) -116);
-                int[][] is_23_ = new int[3][Class32.anInt743];
+                int[][] is_23_ = new int[3][AbstractDrawingArea.anInt743];
                 int i_24_ = 0;
                 int i_25_ = 0;
                 int i_26_ = 0;
@@ -225,7 +225,7 @@ while_80_:
                 int[] is_34_ = is_23_[2];
                 int i_35_ = 0;
 
-                while (Class32.anInt743 > i_35_) {
+                while (AbstractDrawingArea.anInt743 > i_35_) {
                     is_32_[i_35_] = i_24_ / i_19_;
                     is_33_[i_35_] = i_26_ / i_19_;
                     is_34_[i_35_] = i_25_ / i_19_;
@@ -248,7 +248,7 @@ while_80_:
             int[] is_38_ = is[1];
             int[] is_39_ = is[2];
 
-            for (int i_40_ = 0; i_40_ < Class32.anInt743; i_40_++) {
+            for (int i_40_ = 0; i_40_ < AbstractDrawingArea.anInt743; i_40_++) {
                 int i_41_ = 0;
                 int i_42_ = 0;
                 int i_43_ = 0;

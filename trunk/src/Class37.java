@@ -112,7 +112,7 @@ public class Class37 {
         Class37_Sub9_Sub1.anIntArrayArrayArray2924 = new int[4][105][105];
         Class37_Sub4_Sub17.anIntArray2872 = new int[104];
         Class81.anIntArray1510 = new int[104];
-        Class15.aByteArrayArrayArray283 = new byte[4][104][104];
+        JS5.aByteArrayArrayArray283 = new byte[4][104][104];
 
         if (bool != true) {
             method324(-62, 36, null, 38);

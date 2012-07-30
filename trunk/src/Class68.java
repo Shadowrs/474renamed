@@ -61,7 +61,7 @@ public abstract class Class68 {
                         JString[] jstrings = class37_sub4_sub15.aJStringArray2861;
                         Class37_Sub4_Sub16.anInt2866++;
 
-                        if (Class32.aBoolean744) {
+                        if (AbstractDrawingArea.aBoolean744) {
                             jstrings = Class37_Sub18.method1017(jstrings, 5);
                         }
 

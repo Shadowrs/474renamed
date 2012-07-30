@@ -226,58 +226,55 @@ while_88_:
 
                     if (i_81_ == 7) {
                         if (bool) {
-                            stream_69_.writeSignedByte(105, 255);
+                            stream_69_.writeByte(255);
                         }
 
-                        stream_69_.writeSignedByte(106, 47);
-                        stream_69_.writeSignedByte(125, 0);
+                        stream_69_.writeByte(47);
+                        stream_69_.writeByte(0);
 
                         break while_88_;
                     }
 
                     if (i_81_ == 23) {
                         if (bool) {
-                            stream_69_.writeSignedByte(116, 255);
+                            stream_69_.writeByte(255);
                         }
 
-                        stream_69_.writeSignedByte(117, 81);
-                        stream_69_.writeSignedByte(97, 3);
-                        stream_69_.writeSignedByte(123,
-                            (stream.buffer[i_68_++]));
-                        stream_69_.writeSignedByte(120,
-                            (stream.buffer[i_68_++]));
-                        stream_69_.writeSignedByte(127,
-                            (stream.buffer[i_68_++]));
+                        stream_69_.writeByte(81);
+                        stream_69_.writeByte(3);
+                        stream_69_.writeByte((stream.buffer[i_68_++]));
+                        stream_69_.writeByte((stream.buffer[i_68_++]));
+                        stream_69_.writeByte((stream.buffer[i_68_++]));
                     } else {
                         i_70_ ^= (i_81_ >> 4);
 
                         if (i_79_ == 0) {
                             if (bool) {
-                                stream_69_.writeSignedByte(125, 144 + i_70_);
+                                stream_69_.writeByte(144 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_72_ += stream.buffer[i_56_++];
-                            stream_69_.writeSignedByte(98, i_71_ & 0x7f);
-                            stream_69_.writeSignedByte(112, i_72_ & 0x7f);
+                            stream_69_.writeByte(i_71_ & 0x7f);
+                            stream_69_.writeByte(i_72_ & 0x7f);
                         } else if (i_79_ == 1) {
                             if (bool) {
-                                stream_69_.writeSignedByte(123, 128 + i_70_);
+                                stream_69_.writeByte(128 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_73_ += stream.buffer[i_58_++];
-                            stream_69_.writeSignedByte(96, i_71_ & 0x7f);
-                            stream_69_.writeSignedByte(112, i_73_ & 0x7f);
+                            stream_69_.writeByte(i_71_ & 0x7f);
+                            stream_69_.writeByte(i_73_ & 0x7f);
                         } else if (i_79_ == 2) {
                             if (bool) {
-                                stream_69_.writeSignedByte(108, 176 + i_70_);
+                                stream_69_.writeByte(176 + i_70_);
                             }
 
                             i_45_ = (i_45_ +
                                 (stream.buffer[i_32_++])) &
                                 0x7f;
-                            stream_69_.writeSignedByte(113, i_45_);
+                            stream_69_.writeByte(i_45_);
 
                             int i_82_;
 
@@ -313,45 +310,44 @@ while_88_:
 
                             i_82_ += is[i_45_];
                             is[i_45_] = i_82_;
-                            stream_69_.writeSignedByte(102, i_82_ & 0x7f);
+                            stream_69_.writeByte(i_82_ & 0x7f);
                         } else if (i_79_ == 3) {
                             if (bool) {
-                                stream_69_.writeSignedByte(108, 224 + i_70_);
+                                stream_69_.writeByte(224 + i_70_);
                             }
 
                             i_74_ += stream.buffer[i_63_++];
 
                             i_74_ += (stream.buffer[i_51_++] << 7);
-                            stream_69_.writeSignedByte(120, i_74_ & 0x7f);
-                            stream_69_.writeSignedByte(96, (i_74_ >> 7) &
+                            stream_69_.writeByte(i_74_ & 0x7f);
+                            stream_69_.writeByte((i_74_ >> 7) &
                                 0x7f);
                         } else if (i_79_ == 4) {
                             if (bool) {
-                                stream_69_.writeSignedByte(113, 208 + i_70_);
+                                stream_69_.writeByte(208 + i_70_);
                             }
 
                             i_75_ += stream.buffer[i_50_++];
-                            stream_69_.writeSignedByte(118, i_75_ & 0x7f);
+                            stream_69_.writeByte(i_75_ & 0x7f);
                         } else if (i_79_ == 5) {
                             if (bool) {
-                                stream_69_.writeSignedByte(99, 160 + i_70_);
+                                stream_69_.writeByte(160 + i_70_);
                             }
 
                             i_71_ += stream.buffer[i_55_++];
                             i_76_ += stream.buffer[i_49_++];
-                            stream_69_.writeSignedByte(118, i_71_ & 0x7f);
-                            stream_69_.writeSignedByte(105, i_76_ & 0x7f);
+                            stream_69_.writeByte(i_71_ & 0x7f);
+                            stream_69_.writeByte(i_76_ & 0x7f);
                         } else {
                             if (i_79_ != 6) {
                                 break;
                             }
 
                             if (bool) {
-                                stream_69_.writeSignedByte(125, 192 + i_70_);
+                                stream_69_.writeByte(192 + i_70_);
                             }
 
-                            stream_69_.writeSignedByte(99,
-                                (stream.buffer[i_62_++]));
+                            stream_69_.writeByte((stream.buffer[i_62_++]));
                         }
                     }
                 }
@@ -368,7 +364,7 @@ while_88_:
         aClass13_2203 = null;
     }
 
-    public static Class37_Sub19 method1019(Class15 class15, int i, int i_0_) {
+    public static Class37_Sub19 method1019(JS5 class15, int i, int i_0_) {
         byte[] is = class15.method131(i_0_, i, 1);
 
         if (is == null) {

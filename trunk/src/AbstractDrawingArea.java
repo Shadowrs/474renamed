@@ -1,4 +1,4 @@
-/* Class32 - Decompiled by JODE
+/* AbstractDrawingArea - Decompiled by JODE
  * Visit http://jode.sourceforge.net
  */
 import java.awt.Component;
@@ -6,7 +6,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 
 
-public abstract class Class32 {
+public abstract class AbstractDrawingArea {
     public static JString aJString_729;
     public static JString aJString_730;
     public static int anInt731;
@@ -38,13 +38,13 @@ public abstract class Class32 {
 
     public int anInt732;
     public int anInt734;
-    public Image anImage735;
+    public Image image;
     public int[] anIntArray745;
 
     public abstract void method287(Component component, int i, int i_0_,
         byte i_1_);
 
-    public static void method288(int i) {
+    public static void resetStaticVariables(int i) {
         if (i >= 1) {
             aJString_738 = null;
             aJString_736 = null;
@@ -114,10 +114,10 @@ public abstract class Class32 {
         Class37_Sub4_Sub9.method587(anIntArray745, anInt734, anInt732);
 
         if (i != -10) {
-            method288(5);
+            resetStaticVariables(5);
         }
     }
 
-    public abstract void method292(int i, int i_10_, int i_11_, int i_12_,
-        int i_13_, Graphics graphics);
+    public abstract void draw(int srcX, int i, int srcHeight, int srcWidth,
+        int srcY, Graphics graphics);
 }

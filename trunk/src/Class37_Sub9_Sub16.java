@@ -67,7 +67,7 @@ public class Class37_Sub9_Sub16 extends Class37_Sub9 {
             int i_3_ = Class37_Sub4_Sub16.anIntArray2871[i_0_] * anInt3187;
 
             for (int i_4_ = 0;
-                    (i_4_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                    (i_4_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_4_++) {
                 int i_5_ = Class84.anIntArray1528[i_4_] * anInt3198;
                 int i_6_ = 0;
@@ -116,9 +116,9 @@ public class Class37_Sub9_Sub16 extends Class37_Sub9 {
         }
 
         anInt3196++;
-        Class42.aStream_Sub1_936.writePacket(-1494101117, 163);
+        Class42.outputStream.writePacket(-1494101117, 163);
         Class37_Sub9_Sub15.anInt3177++;
-        Class42.aStream_Sub1_936.writeLong(0L);
+        Class42.outputStream.writeLong(0L);
     }
 
     public static void method828(int i, int i_11_, int i_12_, int i_13_,

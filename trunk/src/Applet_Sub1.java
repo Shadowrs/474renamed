@@ -59,7 +59,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
     public static JString aJString_35;
     public static Class37_Sub4_Sub7_Sub4[] aClass37_Sub4_Sub7_Sub4Array36;
     public static int anInt37;
-    public static RSSocket aClass19_38;
+    public static RSSocket activeSocket;
     public static int anInt39;
     public static int anInt40;
     public static int anInt41;
@@ -126,9 +126,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
             return null;
         }
 
-        if ((Class80.aClass51_1508 != null) &&
-                (Class80.aClass51_1508.anApplet1045 != this)) {
-            return Class80.aClass51_1508.anApplet1045.getDocumentBase();
+        if ((Class80.signlink != null) &&
+                (Class80.signlink.anApplet1045 != this)) {
+            return Class80.signlink.anApplet1045.getDocumentBase();
         }
 
         return super.getDocumentBase();
@@ -180,9 +180,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
             return null;
         }
 
-        if ((Class80.aClass51_1508 != null) &&
-                (this != Class80.aClass51_1508.anApplet1045)) {
-            return Class80.aClass51_1508.anApplet1045.getParameter(string);
+        if ((Class80.signlink != null) &&
+                (this != Class80.signlink.anApplet1045)) {
+            return Class80.signlink.anApplet1045.getParameter(string);
         }
 
         return super.getParameter(string);
@@ -204,9 +204,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
             return null;
         }
 
-        if ((Class80.aClass51_1508 != null) &&
-                (this != Class80.aClass51_1508.anApplet1045)) {
-            return Class80.aClass51_1508.anApplet1045.getAppletContext();
+        if ((Class80.signlink != null) &&
+                (this != Class80.signlink.anApplet1045)) {
+            return Class80.signlink.anApplet1045.getAppletContext();
         }
 
         return super.getAppletContext();
@@ -256,16 +256,16 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 Stream.anApplet_Sub1_2023 = this;
 
-                Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
+                Class43.aClass51_958 = Class80.signlink = new Signlink(true,
                         this, i_2_, "runescape", 16);
-            Class80.aClass51_1508.createResource(this, 1, (byte) 65);              
+            Class80.signlink.createResource(this, 1, (byte) 65);              
                 
-                /*if (Class80.aClass51_1508 == null) {
-                    Class43.aClass51_958 = Class80.aClass51_1508 = new Class51(false,
+                /*if (Class80.signlink == null) {
+                    Class43.aClass51_958 = Class80.signlink = new Class51(false,
                                 this, i_2_, null, 0);
                 }
 
-                Class80.aClass51_1508.method1119(this, 1, (byte) 65);*/              
+                Class80.signlink.method1119(this, 1, (byte) 65);*/              
             }
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(i_4_ ^ 0x63, null, exception);
@@ -280,9 +280,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
             return null;
         }
 
-        if ((Class80.aClass51_1508 != null) &&
-                (Class80.aClass51_1508.anApplet1045 != this)) {
-            return Class80.aClass51_1508.anApplet1045.getCodeBase();
+        if ((Class80.signlink != null) &&
+                (Class80.signlink.anApplet1045 != this)) {
+            return Class80.signlink.anApplet1045.getCodeBase();
         }
 
         return super.getCodeBase();
@@ -324,12 +324,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                 }
             }
 
-            if (Class80.aClass51_1508.anApplet1045 != null) {
+            if (Class80.signlink.anApplet1045 != null) {
                 Method method = Signlink.aMethod1044;
 
                 if (method != null) {
                     try {
-                        method.invoke(Class80.aClass51_1508.anApplet1045,
+                        method.invoke(Class80.signlink.anApplet1045,
                             new Object[] { Boolean.TRUE });
                     } catch (Throwable throwable) {
                         /* empty */
@@ -357,7 +357,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 method30(-10949);
                 Class88.method1333((byte) -86, Class37_Sub9.aCanvas1967,
-                    Class80.aClass51_1508);
+                    Class80.signlink);
             }
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-113, null, exception);
@@ -406,9 +406,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
             Insets insets = Class36.aFrame797.getInsets();
             Class36.aFrame797.setSize(insets.right + insets.left + i_9_,
                 insets.bottom + insets.top + i);
-            Class43.aClass51_958 = Class80.aClass51_1508 = new Signlink(true,
+            Class43.aClass51_958 = Class80.signlink = new Signlink(true,
                         null, i_7_, string, i_6_);
-            Class80.aClass51_1508.createResource(this, 1, (byte) 65);
+            Class80.signlink.createResource(this, 1, (byte) 65);
         } catch (Exception exception) {
             Class37_Sub9_Sub3.method768(-92, null, exception);
         }
@@ -418,7 +418,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
     public static void method21(Signlink class51) {
         anInt22++;
-        Class43.aClass51_958 = Class80.aClass51_1508 = class51;
+        Class43.aClass51_958 = Class80.signlink = class51;
     }
 
     public void destroy() {
@@ -433,7 +433,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
         }
     }
 
-    public static void method22(Class15 class15, byte i, Class15 class15_11_) {
+    public static void method22(JS5 class15, byte i, JS5 class15_11_) {
         try {
             if (i != 93) {
                 method22(null, (byte) -4, null);
@@ -457,7 +457,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
         int i_12_ = 39 % ((-51 - i) / 49);
         aJString_35 = null;
-        aClass19_38 = null;
+        activeSocket = null;
         aJString_24 = null;
         anIntArray30 = null;
         aJString_4 = null;
@@ -650,9 +650,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
                     }
                 }
 
-                if (Class80.aClass51_1508 != null) {
+                if (Class80.signlink != null) {
                     try {
-                        Class80.aClass51_1508.close((byte) -111);
+                        Class80.signlink.close((byte) -111);
                     } catch (Exception exception) {
                         /* empty */
                     }
@@ -669,7 +669,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
         if (Class36.aFrame797 != null) {
             container = Class36.aFrame797;
         } else {
-            container = Class80.aClass51_1508.anApplet1045;
+            container = Class80.signlink.anApplet1045;
         }
 
         if (Class37_Sub9.aCanvas1967 != null) {

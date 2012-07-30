@@ -46,7 +46,7 @@ public class Class72 {
                         for (int i_1_ = i_0_;
                                 ((RSApplet.anInt173 ^ 0xffffffff) < (i_1_ ^
                                 0xffffffff)); i_1_++) {
-                            Class69.aJStringArray1342[i_1_] = Class69.aJStringArray1342[i_1_ -
+                            CacheIO.aJStringArray1342[i_1_] = CacheIO.aJStringArray1342[i_1_ -
                                 -1];
 
                             RSApplet.anIntArray176[i_1_] = RSApplet.anIntArray176[i_1_ -
@@ -61,9 +61,9 @@ public class Class72 {
 
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
                         Class37_Sub4_Sub7_Sub1_Sub1.anInt3958++;
-                        Class42.aStream_Sub1_936.writePacket(i +
+                        Class42.outputStream.writePacket(i +
                             -1494101239, 122);
-                        Class42.aStream_Sub1_936.writeLong(l);
+                        Class42.outputStream.writeLong(l);
 
                         break;
                     }

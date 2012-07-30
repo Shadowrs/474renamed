@@ -4,7 +4,7 @@
 import java.util.zip.CRC32;
 
 
-public class Class15_Sub1 extends Class15 {
+public class Class15_Sub1 extends JS5 {
     public static int anInt1736;
     public static int anInt1738;
     public static int anInt1739;
@@ -26,9 +26,9 @@ public class Class15_Sub1 extends Class15 {
     public static int anInt1762 = 0;
     public static JString aJString_1763 = Class37_Sub2.method332((byte) 118,
             "Clientscript error in: ");
-    public Class69 aClass69_1737;
+    public CacheIO aClass69_1737;
     public volatile boolean[] aBooleanArray1742;
-    public Class69 aClass69_1743;
+    public CacheIO aClass69_1743;
     public int anInt1747;
     public boolean aBoolean1750 = false;
     public volatile boolean aBoolean1751 = false;
@@ -36,7 +36,7 @@ public class Class15_Sub1 extends Class15 {
     public int anInt1760;
     public int anInt1761 = -1;
 
-    public Class15_Sub1(Class69 class69, Class69 class69_3_, int i,
+    public Class15_Sub1(CacheIO class69, CacheIO class69_3_, int i,
         boolean bool, boolean bool_4_, boolean bool_5_) {
         super(bool, bool_4_);
 
@@ -209,7 +209,7 @@ public class Class15_Sub1 extends Class15 {
     }
 
     public static Class37_Sub4_Sub9_Sub1[] method140(int i, int i_15_,
-        byte i_16_, Class15 class15) {
+        byte i_16_, JS5 class15) {
         if (i_16_ != 0) {
             return null;
         }
@@ -255,7 +255,7 @@ public class Class15_Sub1 extends Class15 {
         }
     }
 
-    public void method142(int i, boolean bool, int i_19_, Class69 class69,
+    public void method142(int i, boolean bool, int i_19_, CacheIO class69,
         byte[] is) {
         do {
             try {
@@ -288,7 +288,7 @@ public class Class15_Sub1 extends Class15 {
                         int i_23_ = 0;
 
                         if (i_22_ >= 6) {
-                            i_23_ = stream.readInt(-32);
+                            i_23_ = stream.readInt();
                         }
 
                         if (((anInt1758 ^ 0xffffffff) != (i_21_ ^ 0xffffffff)) ||

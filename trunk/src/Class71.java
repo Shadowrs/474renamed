@@ -10,7 +10,7 @@ public class Class71 {
     public static long[] aLongArray1360;
     public static int anInt1361;
     public static int anInt1362 = 0;
-    public static Class42 aClass42_1363;
+    public static Class42 randomFile;
     public static int[] anIntArray1364;
     public static JString aJString_1365;
     public static int anInt1366;
@@ -64,7 +64,7 @@ public class Class71 {
         anIntArray1364 = null;
         aJString_1369 = null;
         aJString_1358 = null;
-        aClass42_1363 = null;
+        randomFile = null;
         aJString_1365 = null;
     }
 

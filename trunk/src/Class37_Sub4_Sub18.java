@@ -13,7 +13,7 @@ public class Class37_Sub4_Sub18 extends Class37_Sub4 {
     public static JString aJString_2899;
     public static Class13 aClass13_2905;
     public static JString aJString_2906;
-    public static Class15 aClass15_2907;
+    public static JS5 aClass15_2907;
     public static JString aJString_2908;
     public static JString aJString_2909;
     public static JString aJString_2910;

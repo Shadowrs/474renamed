@@ -17,17 +17,17 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
     public static JString aJString_3522;
     public static Class37_Sub4_Sub9_Sub1[] aClass37_Sub4_Sub9_Sub1Array3523;
     public static JString aJString_3524;
-    public static JString aJString_3525;
-    public static JString aJString_3526;
+    public static JString playerPassword;
+    public static JString playerName;
     public static Resource aClass23_3527;
     public static JString aJString_3528;
 
     static {
         aClass65_3512 = new Class65(200);
         aJString_3524 = Class37_Sub2.method332((byte) 126, "");
-        aJString_3526 = aJString_3524;
+        playerName = aJString_3524;
         aJString_3522 = aJString_3524;
-        aJString_3525 = aJString_3524;
+        playerPassword = aJString_3524;
         aJString_3520 = aJString_3524;
         aJString_3521 = aJString_3524;
         aJString_3528 = aJString_3524;
@@ -37,7 +37,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
         super(0, true);
     }
 
-    public static void method901(Class69 class69, int i,
+    public static void method901(CacheIO class69, int i,
         Class15_Sub1 class15_sub1, boolean bool) {
         try {
             anInt3516++;
@@ -81,7 +81,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
         anInt3513++;
 
         if (bool != true) {
-            aJString_3525 = null;
+            playerPassword = null;
         }
 
         if (((i & 0x24bd23) >> 196304373) == 0) {
@@ -123,7 +123,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
     }
 
     public static void method904(int i) {
-        aJString_3525 = null;
+        playerPassword = null;
         anIntArray3518 = null;
         aClass37_Sub4_Sub9_Sub1Array3523 = null;
         aJString_3522 = null;
@@ -137,7 +137,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
         }
 
         aClass65_3512 = null;
-        aJString_3526 = null;
+        playerName = null;
         aJString_3520 = null;
         aJString_3528 = null;
     }
@@ -153,7 +153,7 @@ public class Class37_Sub9_Sub33 extends Class37_Sub9 {
         if (aClass38_1966.aBoolean850) {
             int i_9_ = Class37_Sub4_Sub16.anIntArray2871[i_8_];
 
-            for (int i_10_ = 0; i_10_ < Class32.anInt743; i_10_++)
+            for (int i_10_ = 0; i_10_ < AbstractDrawingArea.anInt743; i_10_++)
                 is[i_10_] = method906(-126, i_9_, Class84.anIntArray1528[i_10_]) % 4096;
         }
 

@@ -32,10 +32,10 @@ public class Class62 {
     public Class62(Stream stream) {
         aByte1179 = stream.readSignedByte((byte) 97);
         anInt1182 = stream.readShort();
-        anInt1173 = stream.readInt(-27);
-        anInt1186 = stream.readInt(-59);
-        anInt1184 = stream.readInt(-115);
-        anInt1178 = stream.readInt(-69);
+        anInt1173 = stream.readInt();
+        anInt1186 = stream.readInt();
+        anInt1184 = stream.readInt();
+        anInt1178 = stream.readInt();
     }
 
     public static void method1170(int i) {
@@ -76,7 +76,7 @@ public class Class62 {
     }
 
     public static void method1173(int i) {
-        Class42.aStream_Sub1_936.writePacket(-1494101117, 151);
+        Class42.outputStream.writePacket(-1494101117, 151);
         Class37_Sub9_Sub34.anInt3542++;
 
         if (i != -9) {

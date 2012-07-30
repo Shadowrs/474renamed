@@ -71,7 +71,7 @@ public class Class37_Sub9_Sub20 extends Class37_Sub9 {
             int[] is_8_ = is[2];
 
             for (int i_9_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_9_ ^ 0xffffffff);
                     i_9_++) {
                 method851(is_4_[i_9_], is_5_[i_9_], (byte) 125, is_3_[i_9_]);
 
@@ -514,7 +514,7 @@ while_85_:
         }
     }
 
-    public static int method848(Class15 class15, int i, Class15 class15_41_) {
+    public static int method848(JS5 class15, int i, JS5 class15_41_) {
         try {
             anInt3275++;
 
@@ -542,7 +542,7 @@ while_85_:
 
             int i_43_ = 94 % ((i - -67) / 43);
 
-            if (class15_41_.method130(Class32.aJString_730,
+            if (class15_41_.method130(AbstractDrawingArea.aJString_730,
                         Class37_Sub9_Sub33.aJString_3524, -110)) {
                 i_42_++;
             }
@@ -611,7 +611,7 @@ while_85_:
         Stream stream = new Stream(is);
         stream.bufferLocation = stream.buffer.length - 12;
 
-        int i_44_ = stream.readInt(-64);
+        int i_44_ = stream.readInt();
         int i_45_ = 0;
         class37_sub4_sub6.anInt2614 = stream.readShort();
         class37_sub4_sub6.anInt2616 = stream.readShort();
@@ -632,7 +632,7 @@ while_85_:
             } else if ((i_46_ < 100) && (i_46_ != 21) &&
                     ((i_46_ ^ 0xffffffff) != -39) &&
                     ((i_46_ ^ 0xffffffff) != -40)) {
-                class37_sub4_sub6.anIntArray2611[i_45_] = stream.readInt(-73);
+                class37_sub4_sub6.anIntArray2611[i_45_] = stream.readInt();
             } else {
                 class37_sub4_sub6.anIntArray2611[i_45_] = stream.readByte(123);
             }

@@ -71,7 +71,7 @@ public class Class41 {
         aJString_910 = null;
     }
 
-    public static void method1074(Class15 class15, int i, boolean bool,
+    public static void method1074(JS5 class15, int i, boolean bool,
         JString jstring, JString jstring_0_, int i_1_, int i_2_) {
         try {
             anInt888++;

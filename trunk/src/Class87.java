@@ -58,7 +58,7 @@ public class Class87 {
                 }
 
                 if (i_6_ <= 49) {
-                    Class15.aByteArrayArrayArray283[i_3_][i_2_][i_5_] = stream.readSignedByte((byte) 110);//grindys, vanduo, takai ir stuff :)
+                    JS5.aByteArrayArrayArray283[i_3_][i_2_][i_5_] = stream.readSignedByte((byte) 110);//grindys, vanduo, takai ir stuff :)
 
                     Class52_Sub1.aByteArrayArrayArray2306[i_3_][i_2_][i_5_] = (byte) ((-2 + i_6_) / 4);//kazkas su grindu kvadrateliu karpymu (kad neislystu is sienu)
 
@@ -117,7 +117,7 @@ public class Class87 {
         for (int i_10_ = 0;
                 (RSApplet.anInt173 ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
                 i_10_++) {
-            if (jstring.equalsIgnoreCase(Class69.aJStringArray1342[i_10_], (byte) 124)) {
+            if (jstring.equalsIgnoreCase(CacheIO.aJStringArray1342[i_10_], (byte) 124)) {
                 return true;
             }
         }

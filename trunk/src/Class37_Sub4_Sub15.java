@@ -13,7 +13,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
     public static JString aJString_2831 = (Class37_Sub2.method332((byte) 110,
             "Spieler)3 Bitte w-=hlen Sie eine andere Welt)3"));
     public static JString aJString_2833;
-    public static Class15 aClass15_2835;
+    public static JS5 aClass15_2835;
     public static int anInt2838;
     public static int anInt2839;
     public static int anInt2840;
@@ -26,7 +26,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
     public static JString aJString_2851 = Class37_Sub2.method332((byte) 103,
             "wave:");
     public static JString aJString_2857;
-    public static Class15 aClass15_2859;
+    public static JS5 aClass15_2859;
 
     static {
         aJString_2827 = aJString_2851;

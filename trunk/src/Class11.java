@@ -75,7 +75,7 @@ public class Class11 {
         return is;
     }
 
-    public static Class11 method88(Class15 class15, int i, int i_9_) {
+    public static Class11 method88(JS5 class15, int i, int i_9_) {
         byte[] is = class15.method131(i_9_, i, 1);
 
         if (is == null) {

@@ -272,7 +272,7 @@ while_118_:
                             break;
                         }
                     } else {
-                        for (i_23_ = 0; Class32.anInt743 > i_23_; i_23_++) {
+                        for (i_23_ = 0; AbstractDrawingArea.anInt743 > i_23_; i_23_++) {
                             int i_24_ = Class84.anIntArray1528[i_23_];
                             int[] is_25_ = method910(i_24_, true, i_22_, 2);
                             is[i_23_] = is_25_[1] + -is_25_[0];
@@ -282,7 +282,7 @@ while_118_:
                     }
 
                     for (i_23_ = 0;
-                            ((i_23_ ^ 0xffffffff) > (Class32.anInt743 ^
+                            ((i_23_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^
                             0xffffffff)); i_23_++) {
                         int i_26_ = Class84.anIntArray1528[i_23_];
                         is[i_23_] = method910(i_26_, true, i_22_, 2)[1];
@@ -292,7 +292,7 @@ while_118_:
                 } while (false);
 
                 for (i_23_ = 0;
-                        (i_23_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                        (i_23_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                         i_23_++) {
                     int i_27_ = Class84.anIntArray1528[i_23_];
                     is[i_23_] = method910(i_27_, true, i_22_, 1)[0];

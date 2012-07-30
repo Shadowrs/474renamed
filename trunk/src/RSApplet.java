@@ -18,7 +18,7 @@ public class RSApplet implements MouseListener, MouseMotionListener,
     public static int anInt175;
     public static int[] anIntArray176 = new int[200];
     public static JString aJString_177;
-    public static int anInt178 = 0;
+    public static int loginSeconds = 0;
     public static int anInt179;
     public static JString aJString_180;
     public static int anInt181;

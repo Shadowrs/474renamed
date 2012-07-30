@@ -82,7 +82,7 @@ public class Class37_Sub9_Sub28 extends Class37_Sub9 {
             int[] is_11_ = is_5_[2];
 
             for (int i_12_ = 0;
-                    (i_12_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                    (i_12_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_12_++) {
                 int i_13_ = is_6_[i_12_];
                 int i_14_ = is_11_[i_12_];

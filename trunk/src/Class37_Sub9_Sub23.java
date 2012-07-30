@@ -109,7 +109,7 @@ public class Class37_Sub9_Sub23 extends Class37_Sub9 {
             int[] is_19_ = this.method760(((1 + i_16_) &
                     Class37_Sub4_Sub7_Sub1_Sub2.anInt3989), 0, -95);
 
-            for (int i_20_ = 0; i_20_ < Class32.anInt743; i_20_++) {
+            for (int i_20_ = 0; i_20_ < AbstractDrawingArea.anInt743; i_20_++) {
                 int i_21_ = anInt3351 * (is_19_[i_20_] + -is_17_[i_20_]);
                 int i_22_ = ((-is_18_[Applet_Sub1.anInt12 & (-1 + i_20_)] +
                     is_18_[(1 + i_20_) & Applet_Sub1.anInt12]) * anInt3351);

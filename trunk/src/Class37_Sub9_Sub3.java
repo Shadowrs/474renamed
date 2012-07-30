@@ -113,8 +113,8 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
         aJString_2955 = null;
     }
 
-    public static Class37_Sub4_Sub9_Sub2_Sub1 method770(Class15 class15, int i,
-        byte i_1_, Class15 class15_2_, int i_3_) {
+    public static Class37_Sub4_Sub9_Sub2_Sub1 method770(JS5 class15, int i,
+        byte i_1_, JS5 class15_2_, int i_3_) {
         try {
             if (i_1_ != 119) {
                 return null;
@@ -381,7 +381,7 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
         int[] is = aClass38_1966.method1049(i_21_, true);
 
         if (aClass38_1966.aBoolean850) {
-            for (int i_22_ = 0; i_22_ < Class32.anInt743; i_22_++) {
+            for (int i_22_ = 0; i_22_ < AbstractDrawingArea.anInt743; i_22_++) {
                 int i_23_ = anInt2943 +
                     ((Class84.anIntArray1528[i_22_] << -88696180) / anInt2944);
                 int i_24_ = i_23_;

@@ -170,7 +170,7 @@ while_63_:
                     -Class20.method216(anInt3111, random, (byte) -76) - i_7_));
                 i_10_ = (i_10_ & 0xff4) >> -1274525148;
 
-                int i_11_ = Class20.method216(Class32.anInt743, random,
+                int i_11_ = Class20.method216(AbstractDrawingArea.anInt743, random,
                         (byte) -101);
                 int i_12_ = Class20.method216(Class37_Sub14.anInt2121, random,
                         (byte) -90);

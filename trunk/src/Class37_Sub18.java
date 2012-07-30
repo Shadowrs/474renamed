@@ -46,9 +46,9 @@ public class Class37_Sub18 extends Class37 {
         Class24.aJString_596 = Class52_Sub1.aJString_2304;
         Class37_Sub9_Sub28.aJString_3436 = Class26.aJString_651;
         Class65.aJString_1235 = RuntimeException_Sub1.aJString_1634;
-        Class73.aJString_1391 = Class32.aJString_738;
+        Class73.aJString_1391 = AbstractDrawingArea.aJString_738;
         Class68.aJString_1323 = Class79.aJString_1481;
-        Class69.aJString_1339 = Class37_Sub9_Sub28.aJString_3420;
+        CacheIO.aJString_1339 = Class37_Sub9_Sub28.aJString_3420;
         Class37_Sub9_Sub14.aJString_3143 = Class37_Sub7.aJString_1902;
         Class18.aJString_330 = Class37_Sub9_Sub16.aJString_3197;
         Class38.aJString_835 = Class37_Sub4_Sub7_Sub1_Sub2.aJString_3990;
@@ -57,7 +57,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub6.aJString_1891 = Class37_Sub9_Sub8.aJString_3059;
         ItemDef.aJString_2437 = Class37_Sub9_Sub25.aJString_3385;
         Class37_Sub20.aJString_2218 = Canvas_Sub1.aJString_54;
-        Class69.aJString_1346 = Class37_Sub9_Sub12.aJString_3123;
+        CacheIO.aJString_1346 = Class37_Sub9_Sub12.aJString_3123;
         ItemDef.aJString_2441 = Class44.aJString_967;
         Class41.aJString_909 = Class56.aJString_1088;
         Class8.aJString_166 = Class37_Sub7.aJString_1912;
@@ -82,7 +82,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub10.aJString_1997 = Class37_Sub9_Sub14.aJString_3144;
         Class2.aJString_83 = Class58.aJString_1110;
         Class32_Sub1.aJString_1790 = Class37_Sub9_Sub13.aJString_3142;
-        Class89.aJString_1610 = Class32.aJString_736;
+        Class89.aJString_1610 = AbstractDrawingArea.aJString_736;
         Class37_Sub4_Sub15.aJString_2818 = Class37_Sub4_Sub15.aJString_2831;
         Class37_Sub9_Sub15.aJString_3178 = ObjectDef.aJString_2723;
         ItemDef.aJString_2483 = Class17.aJString_317;
@@ -103,7 +103,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub9_Sub27.aJString_3404 = Class37_Sub15.aJString_2141;
         ItemDef.aJString_2460 = Class17.aJString_317;
         Class73.aJString_1392 = Class79.aJString_1494;
-        Class69.aJString_1333 = Class37_Sub4_Sub17.aJString_2880;
+        CacheIO.aJString_1333 = Class37_Sub4_Sub17.aJString_2880;
         Class84.aJString_1527 = Class81.aJString_1511;
         ItemDef.aJString_2501 = Class37_Sub15.aJString_2134;
         Class18.aJString_440 = Class37_Sub9_Sub15.aJString_3170;
@@ -121,7 +121,7 @@ public class Class37_Sub18 extends Class37 {
         Class37_Sub10.aJString_1994 = Class37_Sub4_Sub7_Sub5.aJString_3813;
         Class20.aJString_543 = Class37_Sub9_Sub1.aJString_2917;
         Class37_Sub9_Sub28.aJString_3439 = Class50.aJString_1014;
-        Class37_Sub9_Sub13.aJString_3131 = Class69.aJString_1347;
+        Class37_Sub9_Sub13.aJString_3131 = CacheIO.aJString_1347;
         Class88.aJString_1607 = RSSocket.aJString_480;
 
         ObjectDef.aJString_2704 = Class37_Sub4_Sub7_Sub3.aJString_3754;
@@ -252,7 +252,7 @@ public class Class37_Sub18 extends Class37 {
             jstrings_0_[i_1_] = (Class37_Sub9_Sub27.method881(120,
                     new JString[] {
                         Class37_Sub9_Sub24.method870(i_1_, (byte) -114),
-                        Class69.aJString_1336
+                        CacheIO.aJString_1336
                     }));
 
             if ((jstrings != null) && (jstrings[i_1_] != null)) {

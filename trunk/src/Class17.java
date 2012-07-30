@@ -203,7 +203,7 @@ public class Class17 {
     }
 
     public int[] method183(int i, float f, int i_0_, boolean bool,
-        Class15 class15, boolean bool_1_, Interface3 interface3) {
+        JS5 class15, boolean bool_1_, Interface3 interface3) {
         try {
             Class37_Sub4_Sub15.aClass15_2859 = class15;
 
@@ -385,7 +385,7 @@ public class Class17 {
         return class37_sub4_sub17;
     }
 
-    public boolean method186(Interface3 interface3, Class15 class15, byte i) {
+    public boolean method186(Interface3 interface3, JS5 class15, byte i) {
         try {
             anInt296++;
 
@@ -449,7 +449,7 @@ public class Class17 {
             }
 
             try {
-                Class24 class24 = (Class24) Class.forName("Class24_Sub2")
+                Class24 class24 = (Class24) Class.forName("MusicPlayer")
                                                  .newInstance();
                 class24.anInt624 = i;
 
@@ -463,6 +463,7 @@ public class Class17 {
                 }
 
                 class24.method246(class24.anInt623);
+                System.out.println("Music ID: " + class24.anInt623);
 
                 if (((Class37_Sub4_Sub6.anInt2622 ^ 0xffffffff) < -1) &&
                         (Class2.aClass47_77 == null)) {

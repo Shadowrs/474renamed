@@ -386,7 +386,7 @@ public class Class38 {
     }
 
     public static void method1054(JString jstring, int i, byte i_25_,
-        boolean bool, Class15 class15, JString jstring_26_) {
+        boolean bool, JS5 class15, JString jstring_26_) {
         try {
             anInt834++;
 
@@ -397,7 +397,7 @@ public class Class38 {
             }
 
             int i_28_ = class15.method128(jstring_26_, -91, i_27_);
-            Class15.method120(i, i_28_, bool, -15793, class15, i_27_);
+            JS5.method120(i, i_28_, bool, -15793, class15, i_27_);
         } catch (RuntimeException runtimeexception) {
             throw Class37_Sub4_Sub7_Sub3.method516(runtimeexception,
                 ("lc.I(" + ((jstring != null) ? "{...}" : "null") + ',' + i +

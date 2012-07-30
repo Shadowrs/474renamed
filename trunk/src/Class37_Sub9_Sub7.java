@@ -6,7 +6,7 @@ public class Class37_Sub9_Sub7 extends Class37_Sub9 {
     public static JString aJString_3029 = Class37_Sub2.method332((byte) 109,
             "mapscene");
     public static JString aJString_3030;
-    public static Class15 aClass15_3031;
+    public static JS5 aClass15_3031;
     public static JString aJString_3032;
     public static JString aJString_3033;
     public static JString aJString_3034 = Class37_Sub2.method332((byte) 117,
@@ -141,7 +141,7 @@ public class Class37_Sub9_Sub7 extends Class37_Sub9 {
             int[] is_10_ = is[2];
             int[] is_11_ = is[1];
 
-            for (int i_12_ = 0; Class32.anInt743 > i_12_; i_12_++) {
+            for (int i_12_ = 0; AbstractDrawingArea.anInt743 > i_12_; i_12_++) {
                 is_9_[i_12_] = anInt3027;
                 is_11_[i_12_] = anInt3037;
                 is_10_[i_12_] = anInt3041;

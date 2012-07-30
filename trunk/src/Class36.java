@@ -10,7 +10,7 @@ public class Class36 {
     public static Frame aFrame797;
     public static int anInt798;
     public static JString aJString_799;
-    public static Class15 aClass15_800;
+    public static JS5 aClass15_800;
     public static int anInt801;
     public static int anInt802;
     public static JString aJString_803 = Class37_Sub2.method332((byte) 119,

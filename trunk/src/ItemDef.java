@@ -324,7 +324,7 @@ public class ItemDef extends Class37_Sub4 {
                         }
                     } else if (i != 11) {
                         if (i == 12) {
-                            anInt2447 = stream.readInt(-73);
+                            anInt2447 = stream.readInt();
                         } else if ((i ^ 0xffffffff) != -17) {
                             if ((i ^ 0xffffffff) != -24) {
                                 if ((i ^ 0xffffffff) == -25) {

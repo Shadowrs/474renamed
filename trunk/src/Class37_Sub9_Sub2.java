@@ -58,7 +58,7 @@ public class Class37_Sub9_Sub2 extends Class37_Sub9 {
             int[] is_6_ = is[1];
 
             for (int i_7_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_7_ ^ 0xffffffff);
                     i_7_++) {
                 int i_8_ = anInt2931 * (is_2_[Applet_Sub1.anInt12 & (1 + i_7_)] +
                     -is_2_[Applet_Sub1.anInt12 & (-1 + i_7_)]);

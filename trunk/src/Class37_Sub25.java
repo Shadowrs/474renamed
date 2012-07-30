@@ -90,8 +90,8 @@ public class Class37_Sub25 extends Class37 {
         }
 
         if (i_0_ == 326) {
-            Class42.aStream_Sub1_936.writePacket(-1494101117, 27);
-            Class57.aClass29_1098.method264(Class42.aStream_Sub1_936, -1);
+            Class42.outputStream.writePacket(-1494101117, 27);
+            Class57.aClass29_1098.method264(Class42.outputStream, -1);
             Class37.anInt811++;
 
             return true;

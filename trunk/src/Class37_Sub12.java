@@ -153,7 +153,7 @@ public class Class37_Sub12 extends Class37 {
         anInt2075++;
     }
 
-    public static boolean method1001(int i, Class15 class15, byte i_15_,
+    public static boolean method1001(int i, JS5 class15, byte i_15_,
         int i_16_) {
         if (i_15_ != 124) {
             anIntArray2104 = null;

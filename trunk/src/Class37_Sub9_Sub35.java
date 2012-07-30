@@ -59,7 +59,7 @@ public class Class37_Sub9_Sub35 extends Class37_Sub9 {
         int[] is = aClass38_1966.method1049(i_3_, true);
 
         if (aClass38_1966.aBoolean850) {
-            ArrayOperations.setArray(is, 0, Class32.anInt743,
+            ArrayOperations.setArray(is, 0, AbstractDrawingArea.anInt743,
                 Class37_Sub4_Sub16.anIntArray2871[i_3_]);
         }
 

@@ -119,7 +119,7 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             int[] is_21_ = is_18_[0];
 
             for (int i_22_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_22_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_22_ ^ 0xffffffff);
                     i_22_++)
                 is[i_22_] = (is_21_[i_22_] - (-is_19_[i_22_] - is_20_[i_22_])) / 3;
         }
@@ -318,10 +318,9 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
             }
         }
 
-        Class42.aStream_Sub1_936.writePacket(-1494101117, 202);
-        Class42.aStream_Sub1_936.writeSignedByte(99,
-            jstring.length((byte) 38) + -1);
-        Class42.aStream_Sub1_936.writeString(jstring.substring(2), 0);
+        Class42.outputStream.writePacket(-1494101117, 202);
+        Class42.outputStream.writeByte(jstring.length((byte) 38) + -1);
+        Class42.outputStream.writeString(jstring.substring(2), 0);
         Class62.anInt1172++;
 
         if (bool != false) {

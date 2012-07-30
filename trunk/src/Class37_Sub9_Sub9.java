@@ -172,11 +172,11 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                     0, -110);
 
             for (int i_23_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_23_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_23_ ^ 0xffffffff);
                     i_23_++) {
-                int i_24_ = Class32.anInt743 / anInt3076;
+                int i_24_ = AbstractDrawingArea.anInt743 / anInt3076;
                 int i_25_ = i_23_ % i_24_;
-                is[i_23_] = is_22_[(Class32.anInt743 * i_25_) / i_24_];
+                is[i_23_] = is_22_[(AbstractDrawingArea.anInt743 * i_25_) / i_24_];
             }
         }
 
@@ -209,11 +209,11 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             int[] is_35_ = is[2];
 
             for (int i_36_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_36_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_36_ ^ 0xffffffff);
                     i_36_++) {
-                int i_37_ = Class32.anInt743 / anInt3076;
+                int i_37_ = AbstractDrawingArea.anInt743 / anInt3076;
                 int i_38_ = i_36_ % i_37_;
-                int i_39_ = (Class32.anInt743 * i_38_) / i_37_;
+                int i_39_ = (AbstractDrawingArea.anInt743 * i_38_) / i_37_;
                 is_31_[i_36_] = is_32_[i_39_];
                 is_34_[i_36_] = is_30_[i_39_];
                 is_35_[i_36_] = is_33_[i_39_];
@@ -247,7 +247,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
         }
     }
 
-    public static void method799(int i) {
+    public static void resetPlayerIO(int i) {
         anInt3071++;
         Class37_Sub9_Sub13.anInt3134 = 0;
         Class37_Sub9_Sub27.anInt3418 = -1;
@@ -259,7 +259,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             Class37_Sub9_Sub16.anInt3201 = 0;
             Class37_Sub4.packetSize = 0;
             Class37_Sub9_Sub30.anInt3480 = 0;
-            Class42.aStream_Sub1_936.bufferLocation = 0;
+            Class42.outputStream.bufferLocation = 0;
             Class83.packetStream.bufferLocation = 0;
             Class37_Sub9_Sub36.anInt3584 = 0;
             Class37_Sub20.aBoolean2220 = false;
@@ -328,7 +328,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                     Class37_Sub4_Sub13.aBoolean2799 = true;
                 }
             } else {
-                Class37_Sub9.aClass22_1954 = new Class22(Class80.aClass51_1508,
+                Class37_Sub9.aClass22_1954 = new Class22(Class80.signlink,
                         Class37_Sub9_Sub27.method881(-57,
                             (new JString[] {
                                 Class41.aJString_910,
@@ -397,7 +397,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
 
                 Class37_Sub4_Sub13 class37_sub4_sub13 = (Class37_Sub4_Sub13) Class6.aClass13_139.method94(127);
                 Stream stream = new Stream(4);
-                stream.writeSignedByte(i ^ 0x619f, 1);
+                stream.writeByte(1);
                 stream.write3Bytes((int) class37_sub4_sub13.aLong818, -114);
                 Class43.aClass19_950.write(0, (byte) 115,
                     stream.buffer, 4);
@@ -411,7 +411,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                     (Class37_Sub9_Sub26.anInt3396 > 0)); Class45.anInt974++) {
                 Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) ISAAC.aClass77_92.method1291((byte) 108));
                 Stream stream = new Stream(4);
-                stream.writeSignedByte(100, 0);
+                stream.writeByte(0);
                 stream.write3Bytes((int) class37_sub4_sub13.aLong818, -121);
                 Class43.aClass19_950.write(0, (byte) 110,
                     stream.buffer, 4);
@@ -422,7 +422,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
             }
 
             for (int i_47_ = 0; (i_47_ ^ 0xffffffff) > -101; i_47_++) {
-                int i_48_ = Class43.aClass19_950.available(-116);
+                int i_48_ = Class43.aClass19_950.available();
 
                 if ((i_48_ ^ 0xffffffff) > -1) {
                     throw new IOException();
@@ -486,9 +486,8 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                                     Class37_Sub9_Sub27.aStream_3399.bufferLocation = 5 +
                                         (i_53_ * 8);
 
-                                    int i_54_ = Class37_Sub9_Sub27.aStream_3399.readInt(i +
-                                            -25190);
-                                    int i_55_ = Class37_Sub9_Sub27.aStream_3399.readInt(-23);
+                                    int i_54_ = Class37_Sub9_Sub27.aStream_3399.readInt();
+                                    int i_55_ = Class37_Sub9_Sub27.aStream_3399.readInt();
                                     class15_sub1.method139((byte) -122, i_54_,
                                         i_55_);
                                 }
@@ -582,7 +581,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                         int i_61_ = Class37_Sub9_Sub17.aStream_3224.readByte(i ^
                                 0x6187);
                         long l_62_ = (long) ((i_59_ << 1962296592) + i_60_);
-                        int i_63_ = Class37_Sub9_Sub17.aStream_3224.readInt(-57);
+                        int i_63_ = Class37_Sub9_Sub17.aStream_3224.readInt();
                         Class37_Sub4_Sub13 class37_sub4_sub13 = ((Class37_Sub4_Sub13) Class17.aClass13_316.method100((byte) 52,
                                 l_62_));
                         RSSocket.aBoolean474 = true;
@@ -603,7 +602,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
 
                         Class49.aStream_1006 = new Stream((Class60.aClass37_Sub4_Sub13_1152.aByte2788) +
                                 (i_63_ - -i_64_));
-                        Class49.aStream_1006.writeSignedByte(i ^ 0x6193, i_61_);
+                        Class49.aStream_1006.writeByte(i_61_);
                         Class49.aStream_1006.writeInt(i_63_);
                         Class37_Sub9.anInt1956 = 8;
                         Class37_Sub9_Sub17.aStream_3224.bufferLocation = 0;

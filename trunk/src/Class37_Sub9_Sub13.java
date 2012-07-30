@@ -56,7 +56,7 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
             int[] is_5_ = is[2];
 
             if (i_1_ > 0) {
-                for (int i_6_ = 0; Class32.anInt743 > i_6_; i_6_++) {
+                for (int i_6_ = 0; AbstractDrawingArea.anInt743 > i_6_; i_6_++) {
                     int i_7_ = 0;
                     int i_8_ = is_2_[i_6_];
 
@@ -101,7 +101,7 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
                     }
                 }
             } else {
-                for (int i_15_ = 0; Class32.anInt743 > i_15_; i_15_++) {
+                for (int i_15_ = 0; AbstractDrawingArea.anInt743 > i_15_; i_15_++) {
                     is_3_[i_15_] = 0;
                     is_4_[i_15_] = 0;
                     is_5_[i_15_] = 0;
@@ -250,7 +250,7 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
         if (Class55.aBoolean1071 && !Class37_Sub9.method756(i + 125)) {
             if ((Class37_Sub9_Sub17.anInt3223 != 0) &&
                     (Class77.anInt1442 != -1)) {
-                Class15.method120(Class37_Sub9_Sub17.anInt3223, 0, false,
+                JS5.method120(Class37_Sub9_Sub17.anInt3223, 0, false,
                     -15793, Class54.aClass15_Sub1_1060, Class77.anInt1442);
             }
 
@@ -283,8 +283,8 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
             Class37_Sub9_Sub37.aJStringArray3593[0] = Class37_Sub9_Sub8.aJString_3045;
         }
 
-        if ((Class32.anInt733 ^ 0xffffffff) != 0) {
-            Class37_Sub4_Sub15.method712((byte) 61, Class32.anInt733);
+        if ((AbstractDrawingArea.anInt733 ^ 0xffffffff) != 0) {
+            Class37_Sub4_Sub15.method712((byte) 61, AbstractDrawingArea.anInt733);
         }
 
         if (i != 2) {
@@ -307,9 +307,9 @@ public class Class37_Sub9_Sub13 extends Class37_Sub9 {
         Class60.anInt1154 = -1;
         Class13.anInt216 = Class37_Sub7.anInt1898;
 
-        if (Class32.anInt733 != -1) {
+        if (AbstractDrawingArea.anInt733 != -1) {
             Class37_Sub9_Sub37.anInt3597 = 0;
-            Class37_Sub23.method1030(0, Class32.anInt733, 765, 0, (byte) 111,
+            Class37_Sub23.method1030(0, AbstractDrawingArea.anInt733, 765, 0, (byte) 111,
                 0, -1, 503, 0);
         }
 

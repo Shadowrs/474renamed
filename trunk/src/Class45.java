@@ -24,7 +24,7 @@ public abstract class Class45 {
     }
 
     public static Class37_Sub4_Sub9_Sub3 method1095(boolean bool,
-        Class15 class15, JString jstring, JString jstring_0_) {
+        JS5 class15, JString jstring, JString jstring_0_) {
         try {
             if (bool != false) {
                 aJString_972 = null;

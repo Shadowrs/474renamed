@@ -55,11 +55,11 @@ public class Client extends Applet_Sub1 {
         anInt1726++;
         Class72.anInt1376++;
 
-        if ((Class37_Sub4_Sub7_Sub1.anInt3700 ^ 0xffffffff) != (Class37_Sub9_Sub31.anInt3490 ^
+        if ((Class37_Sub4_Sub7_Sub1.port ^ 0xffffffff) != (Class37_Sub9_Sub31.anInt3490 ^
                 0xffffffff)) {
-            Class37_Sub4_Sub7_Sub1.anInt3700 = Class37_Sub9_Sub31.anInt3490;
+            Class37_Sub4_Sub7_Sub1.port = Class37_Sub9_Sub31.anInt3490;
         } else {
-            Class37_Sub4_Sub7_Sub1.anInt3700 = Class22.anInt581;
+            Class37_Sub4_Sub7_Sub1.port = Class22.anInt581;
         }
 
         Class37_Sub9_Sub20.aClass23_3281 = null;
@@ -68,20 +68,20 @@ public class Client extends Applet_Sub1 {
         if ((Class72.anInt1376 < 2) || ((i != 7) && (i != 9))) {
             if ((Class72.anInt1376 >= 2) && (i == 6)) {
                 this.method16("js5connect_outofdate", 1);
-                Class32.anInt740 = 1000;
+                AbstractDrawingArea.anInt740 = 1000;
             } else if (Class72.anInt1376 >= 4) {
-                if (Class32.anInt740 > 5) {
+                if (AbstractDrawingArea.anInt740 > 5) {
                     Class37_Sub12.anInt2087 = 3000;
                 } else {
                     this.method16("js5connect", 1);
-                    Class32.anInt740 = 1000;
+                    AbstractDrawingArea.anInt740 = 1000;
                 }
             }
-        } else if ((Class32.anInt740 ^ 0xffffffff) < -6) {
+        } else if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) < -6) {
             Class37_Sub12.anInt2087 = 3000;
         } else {
             this.method16("js5connect_full", 1);
-            Class32.anInt740 = 1000;
+            AbstractDrawingArea.anInt740 = 1000;
         }
     }
 
@@ -108,7 +108,7 @@ public class Client extends Applet_Sub1 {
         Class22.anInt581 = ((Class37_Sub9_Sub17.anInt3219 == 0) ? 443
                                                                 : (PacketParser.world +
             50000));
-        Class37_Sub4_Sub7_Sub1.anInt3700 = Class37_Sub9_Sub31.anInt3490;
+        Class37_Sub4_Sub7_Sub1.port = Class37_Sub9_Sub31.anInt3490;
         Class38.method1056(true);
         Class37_Sub9_Sub32.method898(i ^ ~0x58, Class37_Sub9.aCanvas1967);
         Class14.method107(89, Class37_Sub9.aCanvas1967);
@@ -124,30 +124,29 @@ public class Client extends Applet_Sub1 {
             Class88.anInt1595 = Signlink.anInt1041;
 
             try {
-                if (Class80.aClass51_1508.cacheDataFile != null) {
-                    Class58.aClass42_1109 = new Class42(Class80.aClass51_1508.cacheDataFile,
+                if (Class80.signlink.cacheDataFile != null) {
+                    Class58.aClass42_1109 = new Class42(Class80.signlink.cacheDataFile,
                             5200, 0);
 
                     for (int i_0_ = 0; i_0_ < 16; i_0_++)
-                        Class37_Sub4_Sub7_Sub1.aClass42Array3699[i_0_] = new Class42((Class80.aClass51_1508.cacheIndexFiles[i_0_]),
+                        Class37_Sub4_Sub7_Sub1.aClass42Array3699[i_0_] = new Class42((Class80.signlink.cacheIndexFiles[i_0_]),
                                 6000, 0);
 
-                    Class37_Sub23.aClass42_2224 = new Class42(Class80.aClass51_1508.cacheIndex255,
+                    Class37_Sub23.aClass42_2224 = new Class42(Class80.signlink.cacheIndex255,
                             6000, 0);
 
-                    Class10.aClass69_199 = new Class69(255,
+                    Class10.aClass69_199 = new CacheIO(255,
                             Class58.aClass42_1109, Class37_Sub23.aClass42_2224,
                             500000);
 
-                    Class71.aClass42_1363 = new Class42(Class80.aClass51_1508.randomFile,
-                            24, 0);
-                    Class80.aClass51_1508.randomFile = null;
-                    Class80.aClass51_1508.cacheDataFile = null;
-                    Class80.aClass51_1508.cacheIndex255 = null;
-                    Class80.aClass51_1508.cacheIndexFiles = null;
+                    Class71.randomFile = new Class42(Class80.signlink.randomFile, 24, 0);
+                    Class80.signlink.randomFile = null;
+                    Class80.signlink.cacheDataFile = null;
+                    Class80.signlink.cacheIndex255 = null;
+                    Class80.signlink.cacheIndexFiles = null;
                 }
             } catch (IOException ioexception) {
-                Class71.aClass42_1363 = null;
+                Class71.randomFile = null;
                 Class58.aClass42_1109 = null;
                 Class10.aClass69_199 = null;
                 Class37_Sub23.aClass42_2224 = null;
@@ -187,29 +186,29 @@ public class Client extends Applet_Sub1 {
             Class37_Sub4_Sub7_Sub1_Sub1.anInt3945 = i_1_;
         }
 
-        if ((Class32.anInt740 ^ 0xffffffff) != -1) {
-            if ((Class32.anInt740 ^ 0xffffffff) == -6) {
+        if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) != -1) {
+            if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -6) {
                 Class37_Sub9_Sub15.method823(this, 0);
                 Class43.method1089(600);
                 Class37_Sub1.method329(i ^ 0x1c28);
-            } else if (Class32.anInt740 == 10) {
+            } else if (AbstractDrawingArea.anInt740 == 10) {
                 Class37_Sub9_Sub15.method823(this, 0);
-            } else if (Class32.anInt740 != 20) {
-                if (Class32.anInt740 == 25) {
+            } else if (AbstractDrawingArea.anInt740 != 20) {
+                if (AbstractDrawingArea.anInt740 == 25) {
                     Class58.method1148((byte) 114);
                 }
             } else {
                 Class37_Sub9_Sub15.method823(this, 0);
-                Login.method315(-21482);
+                Login.performLogin(-21482);
             }
         } else {
             Class43.method1089(600);
             Class37_Sub1.method329(i + -7144);
         }
 
-        if (Class32.anInt740 != 30) {
-            if (Class32.anInt740 == 40) {
-                Login.method315(i + -21384);
+        if (AbstractDrawingArea.anInt740 != 30) {
+            if (AbstractDrawingArea.anInt740 == 40) {
+                Login.performLogin(i + -21384);
             }
         } else {
             Class42.method1080(0);
@@ -313,7 +312,7 @@ public class Client extends Applet_Sub1 {
     public void method33(int i) {
         anInt1723++;
 
-        if (Class32.anInt740 != i) {
+        if (AbstractDrawingArea.anInt740 != i) {
             boolean bool = Class37_Sub9_Sub9.method802(i ^ 0x621b);
 
             if (!bool) {
@@ -385,12 +384,12 @@ public class Client extends Applet_Sub1 {
 
         if (Class37_Sub25.anInt2290 >= 4) {
             this.method16("js5crc", 1);
-            Class32.anInt740 = 1000;
+            AbstractDrawingArea.anInt740 = 1000;
         } else {
             if (Class37_Sub4_Sub12.anInt2785 >= 4) {
-                if (Class32.anInt740 <= 5) {
+                if (AbstractDrawingArea.anInt740 <= 5) {
                     this.method16("js5io", 1);
-                    Class32.anInt740 = 1000;
+                    AbstractDrawingArea.anInt740 = 1000;
 
                     return;
                 }
@@ -403,8 +402,8 @@ public class Client extends Applet_Sub1 {
                 do {
                     try {
                         if (Login.anInt782 == 0) {
-                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.aClass51_1508.createResource(Class37_Sub8.address,
-                                    Class37_Sub4_Sub7_Sub1.anInt3700, true));
+                            Class37_Sub9_Sub20.aClass23_3281 = (Class80.signlink.createResource(Class37_Sub8.address,
+                                    Class37_Sub4_Sub7_Sub1.port, true));
                             Login.anInt782++;
                         }
 
@@ -424,10 +423,10 @@ public class Client extends Applet_Sub1 {
 
                             if (Login.anInt782 == 2) {
                                 Class37_Sub9_Sub20.aClass19_3298 = new RSSocket((Socket) (Class37_Sub9_Sub20.aClass23_3281.resource),
-                                        Class80.aClass51_1508);
+                                        Class80.signlink);
 
                                 Stream stream = new Stream(5);
-                                stream.writeSignedByte(110, 15);
+                                stream.writeByte(15);
                                 stream.writeInt(474);
                                 Class37_Sub9_Sub20.aClass19_3298.write(0,
                                     (byte) 99, stream.buffer, 5);
@@ -437,9 +436,8 @@ public class Client extends Applet_Sub1 {
                             }
 
                             if ((Login.anInt782 ^ 0xffffffff) == -4) {
-                                if ((Class32.anInt740 <= 5) ||
-                                        ((Class37_Sub9_Sub20.aClass19_3298.available(
-                                            -107) ^ 0xffffffff) < -1)) {
+                                if ((AbstractDrawingArea.anInt740 <= 5) ||
+                                        ((Class37_Sub9_Sub20.aClass19_3298.available() ^ 0xffffffff) < -1)) {
                                     int i_5_ = Class37_Sub9_Sub20.aClass19_3298.read(false);
 
                                     if ((i_5_ ^ 0xffffffff) != -1) {
@@ -463,7 +461,7 @@ public class Client extends Applet_Sub1 {
                             }
 
                             Class64.method1175((Class37_Sub9_Sub20.aClass19_3298),
-                                0, ((Class32.anInt740 ^ 0xffffffff) < -21));
+                                0, ((AbstractDrawingArea.anInt740 ^ 0xffffffff) < -21));
                             Login.anInt782 = 0;
                             Class37_Sub9_Sub20.aClass23_3281 = null;
                             Class72.anInt1376 = 0;
@@ -494,9 +492,9 @@ public class Client extends Applet_Sub1 {
 
         Class37_Sub9_Sub27.aClass55_3417 = null;
 
-        if (Applet_Sub1.aClass19_38 != null) {
-            Applet_Sub1.aClass19_38.killThread((byte) -128);
-            Applet_Sub1.aClass19_38 = null;
+        if (Applet_Sub1.activeSocket != null) {
+            Applet_Sub1.activeSocket.killThread((byte) -128);
+            Applet_Sub1.activeSocket = null;
         }
 
         Class33.method305(true);
@@ -534,11 +532,11 @@ public class Client extends Applet_Sub1 {
                     Class37_Sub23.aClass42_2224.method1079(0);
                 }
 
-                if (Class71.aClass42_1363 == null) {
+                if (Class71.randomFile == null) {
                     break;
                 }
 
-                Class71.aClass42_1363.method1079(0);
+                Class71.randomFile.method1079(0);
             } catch (IOException ioexception) {
                 break;
             }
@@ -552,14 +550,14 @@ public class Client extends Applet_Sub1 {
         JString.resetStaticVariables((byte) 74);
         Applet_Sub1.method24(-110);
         Class52.method1128(-71);
-        Class32.method288(20);
+        AbstractDrawingArea.resetStaticVariables(20);
         anInt1730++;
         Class55.method1142((byte) -67);
         Stream.resetStaticVariables(false);
         RSSocket.resetStaticVariables(-3);
         Class15_Sub1.method138(11729);
         Class42.method1086((byte) -120);
-        Class69.method1251(false);
+        CacheIO.method1251(false);
         Class37_Sub4_Sub7_Sub1_Sub1.method504(1954378439);
         PacketStream.setStaticVariables(-128);
         Class67.method1237();
@@ -604,7 +602,7 @@ public class Client extends Applet_Sub1 {
         Class71.method1261(-19);
         Class8.method80(-55);
         Class2.method44(0);
-        Class15.method133(107);
+        JS5.method133(107);
         Class37_Sub3_Sub3.method367(23171);
         Class73.method1271(true);
         Class57.method1147(-10);
@@ -647,7 +645,7 @@ public class Client extends Applet_Sub1 {
         Class37_Sub13.method1002(-108);
         Class37_Sub7.method743((byte) -117);
         Class37_Sub4_Sub6.method487(true);
-        Class25.method254(-84);
+        Class25.resetStaticVariables(-84);
         Class72.method1269(78);
         Class37_Sub8.method748(-1);
         Login.method314(-9);
@@ -825,19 +823,19 @@ public class Client extends Applet_Sub1 {
             }
         }
 
-        if (Class32.anInt740 == 0) {
+        if (AbstractDrawingArea.anInt740 == 0) {
             Class72.method1270(Class37_Sub9_Sub33.aJString_3522, null,
                 i + -22000, Class37_Sub9_Sub27.anInt3400);
-        } else if ((Class32.anInt740 ^ 0xffffffff) == -6) {
+        } else if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -6) {
             Class37_Sub9_Sub6.method786((Class37_Sub4.aClass37_Sub4_Sub9_Sub2_Sub1_1848),
                 (Class37_Sub4_Sub7_Sub2.aClass37_Sub4_Sub9_Sub2_Sub1_3724),
                 (byte) 69);
-        } else if (Class32.anInt740 != 10) {
-            if ((Class32.anInt740 ^ 0xffffffff) == -21) {
+        } else if (AbstractDrawingArea.anInt740 != 10) {
+            if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -21) {
                 Class37_Sub9_Sub6.method786(Class37_Sub4.aClass37_Sub4_Sub9_Sub2_Sub1_1848,
                     Class37_Sub4_Sub7_Sub2.aClass37_Sub4_Sub9_Sub2_Sub1_3724,
                     (byte) 69);
-            } else if ((Class32.anInt740 ^ 0xffffffff) == -26) {
+            } else if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -26) {
                 if ((Class37_Sub9_Sub31.anInt3487 ^ 0xffffffff) != -2) {
                     if (Class37_Sub9_Sub31.anInt3487 == 2) {
                         if (Class76.anInt1437 > Class37_Sub4_Sub7_Sub1_Sub1.anInt3942) {
@@ -873,9 +871,9 @@ public class Client extends Applet_Sub1 {
                                 Class50.aJString_1011
                             }))), false, 1);
                 }
-            } else if ((Class32.anInt740 ^ 0xffffffff) == -31) {
+            } else if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -31) {
                 Class37_Sub9_Sub13.method814(i + -21999);
-            } else if ((Class32.anInt740 ^ 0xffffffff) == -41) {
+            } else if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -41) {
                 Class79.method1298((Class37_Sub9_Sub27.method881(-8,
                         (new JString[] {
                             Login.aJString_791,
@@ -889,7 +887,7 @@ public class Client extends Applet_Sub1 {
                 (byte) 69);
         }
 
-        if ((Class32.anInt740 == 30) && (Class37_Sub4_Sub13.anInt2793 == 0) &&
+        if ((AbstractDrawingArea.anInt740 == 30) && (Class37_Sub4_Sub13.anInt2793 == 0) &&
                 !ISAAC.aBoolean93) {
             try {
                 Graphics graphics = Class37_Sub9.aCanvas1967.getGraphics();
@@ -898,7 +896,7 @@ public class Client extends Applet_Sub1 {
                         ((i_17_ ^ 0xffffffff) > (Class37_Sub9_Sub37.anInt3597 ^
                         0xffffffff)); i_17_++) {
                     if (Class37_Sub9_Sub1.aBooleanArray2920[i_17_]) {
-                        Class21.aClass32_568.method292(Class71.anIntArray1364[i_17_],
+                        Class21.aClass32_568.draw(Class71.anIntArray1364[i_17_],
                             64, Class37_Sub4_Sub7_Sub7.anIntArray3842[i_17_],
                             PacketStream.anIntArray3611[i_17_],
                             Class43.anIntArray961[i_17_], graphics);
@@ -910,7 +908,7 @@ public class Client extends Applet_Sub1 {
             }
         } else {
             do {
-                if (Class32.anInt740 > 0) {
+                if (AbstractDrawingArea.anInt740 > 0) {
                     try {
                         Graphics graphics = Class37_Sub9.aCanvas1967.getGraphics();
                         Class21.aClass32_568.method290(0, graphics, 0, false);

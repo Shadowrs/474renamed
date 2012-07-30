@@ -157,7 +157,7 @@ public class Class33 {
     }
 
     public static Class37_Sub4_Sub9_Sub3[] method302(int i, JString jstring,
-        JString jstring_10_, Class15 class15) {
+        JString jstring_10_, JS5 class15) {
         try {
             if (i <= 108) {
                 method305(false);

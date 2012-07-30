@@ -4,7 +4,7 @@
 public class Class37_Sub17 extends Class37 {
     public static Class37_Sub4_Sub9_Sub1[] aClass37_Sub4_Sub9_Sub1Array2158;
     public static short[][] aShortArrayArray2159;
-    public static Class15 aClass15_2160;
+    public static JS5 aClass15_2160;
     public static JString aJString_2161 = Class37_Sub2.method332((byte) 112,
             "gr-Un:");
     public static int anInt2162;

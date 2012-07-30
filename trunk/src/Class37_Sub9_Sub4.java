@@ -102,9 +102,9 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
             if (!(((float) anInt2970 + f_3_) < (float) i_1_) ||
                     !((f - (float) anInt2970) > (float) i_1_)) {
-                ArrayOperations.setArray(is, 0, Class32.anInt743, 0);
+                ArrayOperations.setArray(is, 0, AbstractDrawingArea.anInt743, 0);
             } else {
-                for (int i_4_ = 0; i_4_ < Class32.anInt743; i_4_++) {
+                for (int i_4_ = 0; i_4_ < AbstractDrawingArea.anInt743; i_4_++) {
                     int i_5_ = 0;
                     int i_6_ = ((i_2_ % 2) != 0) ? (-anInt2977) : anInt2977;
                     int i_7_;
@@ -235,7 +235,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                             if (objects[i_27_] instanceof JString) {
                                 JString jstring = (JString) objects[i_27_];
 
-                                if (jstring.equals(-79, Class32.aJString_729)) {
+                                if (jstring.equals(-79, AbstractDrawingArea.aJString_729)) {
                                     jstring = class37_sub8.aJString_1937;
                                 }
 
@@ -967,30 +967,29 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             i_57_ = jstring.method175(8109);
                                                                         }
 
-                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                        Class42.outputStream.writePacket(-1494101117,
                                                                             249);
-                                                                        Class42.aStream_Sub1_936.writeInt(i_57_);
+                                                                        Class42.outputStream.writeInt(i_57_);
                                                                     } else if (i_24_ == 3105) {
                                                                         Class83.anInt1516++;
 
                                                                         JString jstring =
                                                                             Class60.aJStringArray1148[--i_21_];
-                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                        Class42.outputStream.writePacket(-1494101117,
                                                                             82);
-                                                                        Class42.aStream_Sub1_936.writeLong(jstring.toInt64(
+                                                                        Class42.outputStream.writeLong(jstring.toInt64(
                                                                                 -69));
                                                                     } else if (i_24_ == 3106) {
                                                                         Class82.anInt1709++;
 
                                                                         JString jstring =
                                                                             Class60.aJStringArray1148[--i_21_];
-                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                        Class42.outputStream.writePacket(-1494101117,
                                                                             88);
-                                                                        Class42.aStream_Sub1_936.writeSignedByte(126,
-                                                                            jstring.length(
-                                                                                (byte) 38) -
-                                                                            -1);
-                                                                        Class42.aStream_Sub1_936.writeString(jstring,
+                                                                        Class42.outputStream.writeByte(jstring.length(
+																		    (byte) 38) -
+																		-1);
+                                                                        Class42.outputStream.writeString(jstring,
                                                                             0);
                                                                     } else if ((i_24_ ^
                                                                             0xffffffff) == -3108) {
@@ -1047,9 +1046,9 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                         int i_64_ =
                                                                             Class14.anIntArray248[--i_20_];
-                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                        Class42.outputStream.writePacket(-1494101117,
                                                                             171);
-                                                                        Class42.aStream_Sub1_936.writeShort(848881960,
+                                                                        Class42.outputStream.writeShort(848881960,
                                                                             i_64_);
                                                                     }
                                                                 } else if (i_24_ >= 3300) {
@@ -1171,7 +1170,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         (RSApplet.anInt173 <= i_73_)) {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class3.aJString_87;
                                                                                 } else {
-                                                                                    Class60.aJStringArray1148[i_21_++] = Class69.aJStringArray1342[i_73_];
+                                                                                    Class60.aJStringArray1148[i_21_++] = CacheIO.aJStringArray1342[i_73_];
                                                                                 }
                                                                             } else if ((i_24_ ^
                                                                                     0xffffffff) == -3603) {
@@ -1870,15 +1869,12 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         i_20_];
                                                                                     Class37_Sub9_Sub15.anInt3169 = Class14.anIntArray248[i_20_ +
                                                                                         2];
-                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                                    Class42.outputStream.writePacket(-1494101117,
                                                                                         251);
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(119,
-                                                                                        Class37_Sub9_Sub24.anInt3361);
+                                                                                    Class42.outputStream.writeByte(Class37_Sub9_Sub24.anInt3361);
                                                                                     Class2.anInt73++;
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(105,
-                                                                                        Class8.anInt165);
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(108,
-                                                                                        Class37_Sub9_Sub15.anInt3169);
+                                                                                    Class42.outputStream.writeByte(Class8.anInt165);
+                                                                                    Class42.outputStream.writeByte(Class37_Sub9_Sub15.anInt3169);
                                                                                 } else if (i_24_ == 5002) {
                                                                                     i_20_ -= 2;
 
@@ -1891,15 +1887,13 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                                     int i_137_ =
                                                                                         Class14.anIntArray248[i_20_];
-                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                                    Class42.outputStream.writePacket(-1494101117,
                                                                                         198);
-                                                                                    Class42.aStream_Sub1_936.writeLong(jstring.toInt64(
+                                                                                    Class42.outputStream.writeLong(jstring.toInt64(
                                                                                             -96));
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(124,
-                                                                                        i_137_ -
-                                                                                        1);
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(108,
-                                                                                        i_136_);
+                                                                                    Class42.outputStream.writeByte(i_137_ -
+																					1);
+                                                                                    Class42.outputStream.writeByte(i_136_);
                                                                                 } else if ((i_24_ ^
                                                                                         0xffffffff) == -5004) {
                                                                                     int i_138_ =
@@ -2195,22 +2189,19 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                                         (byte) 38));
                                                                                         }
 
-                                                                                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                                        Class42.outputStream.writePacket(-1494101117,
                                                                                             52);
-                                                                                        Class42.aStream_Sub1_936.writeSignedByte(124,
-                                                                                            0);
+                                                                                        Class42.outputStream.writeByte(0);
 
                                                                                         int i_144_ =
-                                                                                            Class42.aStream_Sub1_936.bufferLocation;
-                                                                                        Class42.aStream_Sub1_936.writeSignedByte(103,
-                                                                                            i_142_);
-                                                                                        Class42.aStream_Sub1_936.writeSignedByte(120,
-                                                                                            i_143_);
-                                                                                        Class37_Sub9_Sub18.method837(Class42.aStream_Sub1_936,
+                                                                                            Class42.outputStream.bufferLocation;
+                                                                                        Class42.outputStream.writeByte(i_142_);
+                                                                                        Class42.outputStream.writeByte(i_143_);
+                                                                                        Class37_Sub9_Sub18.method837(Class42.outputStream,
                                                                                             1,
                                                                                             jstring);
-                                                                                        Class42.aStream_Sub1_936.method948(-i_144_ +
-                                                                                            Class42.aStream_Sub1_936.bufferLocation,
+                                                                                        Class42.outputStream.method948(-i_144_ +
+                                                                                            Class42.outputStream.bufferLocation,
                                                                                             128);
                                                                                     }
                                                                                 } else if ((i_24_ ^
@@ -2223,20 +2214,19 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     JString jstring_145_ =
                                                                                         Class60.aJStringArray1148[i_21_];
                                                                                     Class37_Sub9_Sub36.anInt3581++;
-                                                                                    Class42.aStream_Sub1_936.writePacket(-1494101117,
+                                                                                    Class42.outputStream.writePacket(-1494101117,
                                                                                         252);
-                                                                                    Class42.aStream_Sub1_936.writeSignedByte(101,
-                                                                                        0);
+                                                                                    Class42.outputStream.writeByte(0);
 
                                                                                     int i_146_ =
-                                                                                        Class42.aStream_Sub1_936.bufferLocation;
-                                                                                    Class42.aStream_Sub1_936.writeLong(jstring_145_.toInt64(
+                                                                                        Class42.outputStream.bufferLocation;
+                                                                                    Class42.outputStream.writeLong(jstring_145_.toInt64(
                                                                                             -89));
-                                                                                    Class37_Sub9_Sub18.method837(Class42.aStream_Sub1_936,
+                                                                                    Class37_Sub9_Sub18.method837(Class42.outputStream,
                                                                                         1,
                                                                                         jstring);
-                                                                                    Class42.aStream_Sub1_936.method948(-i_146_ +
-                                                                                        Class42.aStream_Sub1_936.bufferLocation,
+                                                                                    Class42.outputStream.method948(-i_146_ +
+                                                                                        Class42.outputStream.bufferLocation,
                                                                                         128);
                                                                                 } else if (i_24_ == 5010) {
                                                                                     int i_147_ =
@@ -2276,7 +2266,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                             (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993 != null)) {
                                                                                         jstring = Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993;
                                                                                     } else {
-                                                                                        jstring = Class37_Sub9_Sub33.aJString_3526;
+                                                                                        jstring = Class37_Sub9_Sub33.playerName;
                                                                                     }
 
                                                                                     Class60.aJStringArray1148[i_21_++] = jstring;

@@ -6,7 +6,7 @@ public class Class37_Sub4_Sub14 extends Class37_Sub4 {
             "<col=ffffff>");
     public static int anInt2803;
     public static JString aJString_2804;
-    public static Class15 aClass15_2805;
+    public static JS5 aClass15_2805;
     public static JString aJString_2806 = (Class37_Sub2.method332((byte) 103,
             "Clientscript error )2 check log for details"));
     public static int anInt2807;

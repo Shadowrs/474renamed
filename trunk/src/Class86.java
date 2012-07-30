@@ -4,7 +4,7 @@
 public class Class86 {
     public static JString aJString_1576;
     public static int[] anIntArray1577;
-    public static Class15 aClass15_1578;
+    public static JS5 aClass15_1578;
     public static Class30 aClass30_1579;
     public static int anInt1580;
     public static JString aJString_1581 = Class37_Sub2.method332((byte) 114,

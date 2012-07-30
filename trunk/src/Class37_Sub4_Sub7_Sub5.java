@@ -74,10 +74,10 @@ public class Class37_Sub4_Sub7_Sub5 extends Class37_Sub4_Sub7 {
         byte i_1_, boolean bool_2_) {
         anInt3815++;
 
-        Class69 class69 = null;
+        CacheIO class69 = null;
 
         if (Class58.aClass42_1109 != null) {
-            class69 = new Class69(i, Class58.aClass42_1109,
+            class69 = new CacheIO(i, Class58.aClass42_1109,
                     Class37_Sub4_Sub7_Sub1.aClass42Array3699[i], 1000000);
         }
 

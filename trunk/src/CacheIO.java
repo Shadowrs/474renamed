@@ -1,7 +1,7 @@
-/* Class69 - Decompiled by JODE
+/* CacheIO - Decompiled by JODE
  * Visit http://jode.sourceforge.net
  */
-public class Class69 {
+public class CacheIO {
     public static Class15_Sub1 aClass15_Sub1_1330;
     public static JString aJString_1332 = Class37_Sub2.method332((byte) 101,
             "Your account has been disabled)3");
@@ -38,7 +38,7 @@ public class Class69 {
     public int anInt1345;
     public Class42 aClass42_1350 = null;
 
-    public Class69(int i, Class42 class42, Class42 class42_22_, int i_23_) {
+    public CacheIO(int i, Class42 class42, Class42 class42_22_, int i_23_) {
         try {
             anInt1341 = i_23_;
             aClass42_1331 = class42_22_;
@@ -75,8 +75,8 @@ public class Class69 {
                         return false;
                     }
 
-                    aClass42_1331.method1081((long) (i_1_ * 6), 0);
-                    aClass42_1331.method1076(0, (byte) 99, 6,
+                    aClass42_1331.seek((long) (i_1_ * 6), 0);
+                    aClass42_1331.read(0, (byte) 99, 6,
                         Login.aByteArray779);
                     i_2_ = (((Login.aByteArray779[5] & 0xff) +
                         ((Login.aByteArray779[3] & 0xff) << 1435711184)) -
@@ -104,7 +104,7 @@ public class Class69 {
                 Login.aByteArray779[1] = (byte) (i >> 1797883368);
                 Login.aByteArray779[0] = (byte) (i >> 26733136);
                 Login.aByteArray779[5] = (byte) i_2_;
-                aClass42_1331.method1081((long) (6 * i_1_), i_0_ + -20356);
+                aClass42_1331.seek((long) (6 * i_1_), i_0_ + -20356);
                 aClass42_1331.method1082(Login.aByteArray779, 0, -128, 6);
 
                 int i_4_ = 0;
@@ -114,10 +114,10 @@ public class Class69 {
                     int i_6_ = 0;
 
                     if (bool) {
-                        aClass42_1350.method1081((long) (520 * i_2_), 0);
+                        aClass42_1350.seek((long) (520 * i_2_), 0);
 
                         try {
-                            aClass42_1350.method1076(0, (byte) 99, 8,
+                            aClass42_1350.read(0, (byte) 99, 8,
                                 Login.aByteArray779);
                         } catch (java.io.EOFException eofexception) {
                             break;
@@ -184,7 +184,7 @@ public class Class69 {
 
                     Login.aByteArray779[5] = (byte) (i_6_ >> -1323405176);
                     i_4_++;
-                    aClass42_1350.method1081((long) (i_2_ * 520), 0);
+                    aClass42_1350.seek((long) (i_2_ * 520), 0);
                     aClass42_1350.method1082(Login.aByteArray779, 0, -119, 8);
                     i_2_ = i_6_;
                     aClass42_1350.method1082(is, i_3_, -128, i_5_);
@@ -228,8 +228,8 @@ public class Class69 {
                     return null;
                 }
 
-                aClass42_1331.method1081((long) (6 * i), 0);
-                aClass42_1331.method1076(0, (byte) 99, 6, Login.aByteArray779);
+                aClass42_1331.seek((long) (6 * i), 0);
+                aClass42_1331.read(0, (byte) 99, 6, Login.aByteArray779);
 
                 if (i_9_ > -99) {
                     method1251(false);
@@ -262,7 +262,7 @@ public class Class69 {
                         return null;
                     }
 
-                    aClass42_1350.method1081((long) (520 * i_11_), 0);
+                    aClass42_1350.seek((long) (520 * i_11_), 0);
 
                     int i_14_ = i_10_ - i_12_;
 
@@ -270,7 +270,7 @@ public class Class69 {
                         i_14_ = 512;
                     }
 
-                    aClass42_1350.method1076(0, (byte) 99, i_14_ - -8,
+                    aClass42_1350.read(0, (byte) 99, i_14_ - -8,
                         Login.aByteArray779);
 
                     int i_15_ = ((0xff00 &

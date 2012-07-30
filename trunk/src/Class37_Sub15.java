@@ -744,8 +744,8 @@ public class Class37_Sub15 extends Class37 {
         }
     }
 
-    public static void method1009(Class15 class15, Component component, int i,
-        Class15 class15_21_) {
+    public static void method1009(JS5 class15, Component component, int i,
+        JS5 class15_21_) {
         try {
             anInt2131++;
 
@@ -774,7 +774,7 @@ public class Class37_Sub15 extends Class37 {
 
                     Class37_Sub9_Sub33.aClass37_Sub4_Sub9_Sub1Array3523 = Class46.method1104(class15,
                             Class37_Sub9_Sub33.aJString_3524, i + 1000003472,
-                            Class32.aJString_730);
+                            AbstractDrawingArea.aJString_730);
 
                     Class37_Sub4_Sub7_Sub7.aClass37_Sub4_Sub9_Sub1Array3853 = Class46.method1104(class15,
                             Class37_Sub9_Sub33.aJString_3524, 999999999,
@@ -832,7 +832,7 @@ public class Class37_Sub15 extends Class37 {
                     Class37_Sub9_Sub16.anIntArray3199 = new int[32768];
                     Class47.method1109(-4999, null);
 
-                    Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3524;
+                    Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.aJString_3524;
                     Class37_Sub4_Sub13.aBoolean2799 = false;
 
                     if ((Class37_Sub9_Sub17.anInt3223 ^ 0xffffffff) != -1) {
@@ -844,7 +844,7 @@ public class Class37_Sub15 extends Class37 {
                     Class52_Sub1.anIntArray2298 = new int[32768];
                     Class18.anInt339 = 0;
 
-                    Class37_Sub9_Sub33.aJString_3525 = Class37_Sub9_Sub33.aJString_3524;
+                    Class37_Sub9_Sub33.playerPassword = Class37_Sub9_Sub33.aJString_3524;
                     Class33.anIntArray754 = new int[32768];
 
                     if (Class52.aBoolean1050) {

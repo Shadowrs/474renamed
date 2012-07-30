@@ -7,10 +7,10 @@ public abstract class Class52 {
     public static JString aJString_1051 = Class37_Sub2.method332((byte) 119,
             "This world is full)3");
     public static int anInt1052;
-    public static Class15 aClass15_1053;
-    public static Class15 aClass15_1054;
+    public static JS5 aClass15_1053;
+    public static JS5 aClass15_1054;
     public static JString aJString_1055;
-    public static Class15 aClass15_1056;
+    public static JS5 aClass15_1056;
     public static JString aJString_1057 = aJString_1051;
 
     static {

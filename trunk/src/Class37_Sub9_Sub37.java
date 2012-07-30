@@ -199,8 +199,8 @@ public class Class37_Sub9_Sub37 extends Class37_Sub9 {
             int[] is_8_ = is[2];
             int[] is_9_ = is[1];
 
-            if (anInt3599 == Class32.anInt743) {
-                for (int i_10_ = 0; Class32.anInt743 > i_10_; i_10_++) {
+            if (anInt3599 == AbstractDrawingArea.anInt743) {
+                for (int i_10_ = 0; AbstractDrawingArea.anInt743 > i_10_; i_10_++) {
                     int i_11_ = anIntArray3604[i_6_++];
                     is_8_[i_10_] = (Class37_Sub4_Sub7.method490(255, i_11_) << -858600444);
                     is_9_[i_10_] = (Class37_Sub4_Sub7.method490(65280, i_11_) >> 1892842148);
@@ -209,8 +209,8 @@ public class Class37_Sub9_Sub37 extends Class37_Sub9 {
                             4080);
                 }
             } else {
-                for (int i_12_ = 0; Class32.anInt743 > i_12_; i_12_++) {
-                    int i_13_ = (anInt3599 * i_12_) / Class32.anInt743;
+                for (int i_12_ = 0; AbstractDrawingArea.anInt743 > i_12_; i_12_++) {
+                    int i_13_ = (anInt3599 * i_12_) / AbstractDrawingArea.anInt743;
                     int i_14_ = anIntArray3604[i_13_ + i_6_];
                     is_8_[i_12_] = (Class37_Sub4_Sub7.method490(255, i_14_) << 1548203268);
 

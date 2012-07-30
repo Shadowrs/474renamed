@@ -62,12 +62,11 @@ public class Class39 {
     }
 
     public static void method1060(byte i, Stream stream) {
-        int i_2_ = 125 / ((i - -12) / 61);
 
-        if (Class71.aClass42_1363 != null) {
+        if (Class71.randomFile != null) {
             try {
-                Class71.aClass42_1363.method1081(0L, 0);
-                Class71.aClass42_1363.method1082(stream.buffer,
+                Class71.randomFile.seek(0L, 0);
+                Class71.randomFile.method1082(stream.buffer,
                     stream.bufferLocation, -119, 24);
             } catch (Exception exception) {
                 /* empty */
@@ -184,11 +183,11 @@ public class Class39 {
                                         Class37_Sub15.anInt2143++;
                                     }
                                 } else {
-                                    Class69.anInt1337++;
+                                    CacheIO.anInt1337++;
 
                                     JString[] jstrings = itemdef.aJStringArray2435;
 
-                                    if (Class32.aBoolean744) {
+                                    if (AbstractDrawingArea.aBoolean744) {
                                         jstrings = Class37_Sub18.method1017(jstrings,
                                                 5);
                                     }
@@ -295,7 +294,7 @@ public class Class39 {
 
                                     jstrings = class18.aJStringArray383;
 
-                                    if (Class32.aBoolean744) {
+                                    if (AbstractDrawingArea.aBoolean744) {
                                         jstrings = Class37_Sub18.method1017(jstrings,
                                                 5);
                                     }
@@ -488,7 +487,7 @@ public class Class39 {
                         JString[] jstrings = objectdef.contextMenu;
                         Class37_Sub9_Sub5.anInt2990++;
 
-                        if (Class32.aBoolean744) {
+                        if (AbstractDrawingArea.aBoolean744) {
                             jstrings = Class37_Sub18.method1017(jstrings, 5);
                         }
 
@@ -523,7 +522,7 @@ public class Class39 {
                                         jstrings[i_29_], i_28_, true,
                                         (Class37_Sub9_Sub27.method881(106,
                                             (new JString[] {
-                                                Class69.aJString_1338,
+                                                CacheIO.aJString_1338,
                                                 (objectdef.name)
                                             }))), i_24_);
                                 }
@@ -534,7 +533,7 @@ public class Class39 {
                             Class37_Sub4_Sub7_Sub7.aJString_3844, i_28_, true,
                             (Class37_Sub9_Sub27.method881(-47,
                                 (new JString[] {
-                                    Class69.aJString_1338,
+                                    CacheIO.aJString_1338,
                                     objectdef.name
                                 }))),
                             objectdef.id << -1419023058);
@@ -679,7 +678,7 @@ public class Class39 {
 
                                 JString[] jstrings = itemdef.aJStringArray2459;
 
-                                if (Class32.aBoolean744) {
+                                if (AbstractDrawingArea.aBoolean744) {
                                     jstrings = Class37_Sub18.method1017(jstrings,
                                             (i_19_ ^ 0x5));
                                 }

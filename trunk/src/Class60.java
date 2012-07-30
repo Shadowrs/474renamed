@@ -73,7 +73,7 @@ public class Class60 {
         }
     }
 
-    public static void method1165(int i, Class15 class15) {
+    public static void method1165(int i, JS5 class15) {
         Class86.aClass15_1578 = class15;
 
         if (i != 24434) {

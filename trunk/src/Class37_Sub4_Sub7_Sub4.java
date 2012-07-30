@@ -827,7 +827,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
         aBoolean3780 = false;
     }
 
-    public static Class37_Sub4_Sub7_Sub4 method529(Class15 class15, int i,
+    public static Class37_Sub4_Sub7_Sub4 method529(JS5 class15, int i,
         int i_76_) {
         byte[] is = class15.method131(i_76_, i, 1);
 
@@ -1562,7 +1562,7 @@ public class Class37_Sub4_Sub7_Sub4 extends Class37_Sub4_Sub7 {
             stream.readShort();
             stream.readShort();
             stream.readShort();
-            stream.readInt(-119);
+            stream.readInt();
         }
     }
 

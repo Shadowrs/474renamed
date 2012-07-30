@@ -43,7 +43,7 @@ public class Class37_Sub9_Sub6 extends Class37_Sub9 {
     }
 
     public static Class37_Sub4_Sub9_Sub3 method781(int i, int i_0_,
-        Class15 class15) {
+        JS5 class15) {
         if (i_0_ < 62) {
             aJString_3025 = null;
         }
@@ -335,7 +335,7 @@ while_54_:
                         class37_sub4_sub9_sub2_sub1_9_,
                         class37_sub4_sub9_sub2_sub1);
                 } else if (i == 69) {
-                    if ((Class32.anInt740 == 0) || (Class32.anInt740 == 5)) {
+                    if ((AbstractDrawingArea.anInt740 == 0) || (AbstractDrawingArea.anInt740 == 5)) {
                         int i_10_ = 20;
                         class37_sub4_sub9_sub2_sub1_9_.method606(Class37_Sub13.aJString_2114,
                             382, 245 - i_10_, 16777215, -1);
@@ -352,7 +352,7 @@ while_54_:
                             382, 276 - i_10_, 16777215, -1);
                     }
 
-                    if ((Class32.anInt740 ^ 0xffffffff) == -21) {
+                    if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -21) {
                         int i_12_ = 211;
                         Class42.aClass37_Sub4_Sub9_Sub1_925.method597(382 -
                             ((Class42.aClass37_Sub4_Sub9_Sub1_925.anInt3865) / 2),
@@ -373,19 +373,19 @@ while_54_:
                                 (new JString[] {
                                     aJString_3009,
                                     (Class37_Sub4_Sub9_Sub2.method605(
-                                        Class37_Sub9_Sub33.aJString_3526))
+                                        Class37_Sub9_Sub33.playerName))
                                 }))), 272, i_12_, 16777215, 0);
                         i_12_ += 15;
                         class37_sub4_sub9_sub2_sub1_9_.method607((Class37_Sub9_Sub27.method881(
                                 -28,
                                 (new JString[] {
                                     Class37_Sub4_Sub12.aJString_2786,
-                                    Class37_Sub9_Sub33.aJString_3525.censor()
+                                    Class37_Sub9_Sub33.playerPassword.censor()
                                 }))), 274, i_12_, 16777215, 0);
                         i_12_ += 15;
                     }
 
-                    if (Class32.anInt740 == 10) {
+                    if (AbstractDrawingArea.anInt740 == 10) {
                         Class42.aClass37_Sub4_Sub9_Sub1_925.method597(202, 171);
 
                         if ((Class18.anInt339 ^ 0xffffffff) == -1) {
@@ -462,7 +462,7 @@ while_54_:
                                     (new JString[] {
                                         aJString_3009,
                                         (Class37_Sub4_Sub9_Sub2.method605(
-                                            Class37_Sub9_Sub33.aJString_3526)),
+                                            Class37_Sub9_Sub33.playerName)),
                                         ((!bool)
                                         ? Class37_Sub9_Sub33.aJString_3524
                                         : Class25.aJString_647)
@@ -481,7 +481,7 @@ while_54_:
                                     -60,
                                     (new JString[] {
                                         Class37_Sub4_Sub12.aJString_2786,
-                                        Class37_Sub9_Sub33.aJString_3525.censor(),
+                                        Class37_Sub9_Sub33.playerPassword.censor(),
                                         (bool ? Class25.aJString_647
                                               : (Class37_Sub9_Sub33.aJString_3524))
                                     }))), 274, i_19_, 16777215, 0);
@@ -511,7 +511,7 @@ while_54_:
                     Class37_Sub4_Sub7_Sub7.aClass37_Sub4_Sub9_Sub1Array3853[Class52.aBoolean1050
                     ? 1 : 0].method597(725, 463);
 
-                    if ((Class32.anInt740 <= 5) || (Class10.anInt193 == 2) ||
+                    if ((AbstractDrawingArea.anInt740 <= 5) || (Class10.anInt193 == 2) ||
                             ((Class37_Sub9_Sub25.anInt3382 ^ 0xffffffff) != -1)) {
                         break;
                     }
@@ -581,7 +581,7 @@ while_54_:
                     Class37_Sub4_Sub7_Sub1_Sub2.anInt3989), 0, -32);
 
             for (int i_30_ = 0;
-                    (i_30_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                    (i_30_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_30_++) {
                 int i_31_ = anInt3020 * (is_29_[i_30_] - is_27_[i_30_]);
                 int i_32_ = ((-is_28_[Applet_Sub1.anInt12 & (i_30_ - 1)] +
@@ -625,7 +625,7 @@ while_54_:
     }
 
     public static Class37_Sub4_Sub9_Sub2_Sub1 method787(JString jstring,
-        Class15 class15, JString jstring_41_, byte i, Class15 class15_42_) {
+        JS5 class15, JString jstring_41_, byte i, JS5 class15_42_) {
         try {
             anInt3019++;
 
