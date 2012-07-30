@@ -40,7 +40,7 @@ public class Class37_Sub3_Sub3 extends Class37_Sub3 {
     public static byte[][][] aByteArrayArrayArray2391;
     public static int anInt2392;
     public static int anInt2393;
-    public static Class15 aClass15_2394;
+    public static JS5 aClass15_2394;
     public static JString aJString_2395 = Class37_Sub2.method332((byte) 114,
             "(U2");
     public static int anInt2397;
@@ -1121,7 +1121,7 @@ public class Class37_Sub3_Sub3 extends Class37_Sub3 {
     }
 
     public synchronized boolean method386(Class73 class73,
-        Class37_Sub19 class37_sub19, Class15 class15, boolean bool, int i) {
+        Class37_Sub19 class37_sub19, JS5 class15, boolean bool, int i) {
         try {
             class37_sub19.method1020();
             anInt2356++;

@@ -64,7 +64,7 @@ public class Class37_Sub4_Sub7_Sub3 extends Class37_Sub4_Sub7 {
                       .method451((byte) -115, anInt3737);
     }
 
-    public static void method515(Class15 class15, Class15 class15_0_, int i) {
+    public static void method515(JS5 class15, JS5 class15_0_, int i) {
         try {
             anInt3753++;
             Class36.aClass15_800 = class15_0_;

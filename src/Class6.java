@@ -20,7 +20,7 @@ public class Class6 {
     public static JString aJString_144;
     public static JString aJString_145;
     public static int anInt146;
-    public static Class15 aClass15_147;
+    public static JS5 aClass15_147;
 
     static {
         aJString_141 = Class37_Sub2.method332((byte) 120, "scroll:");
@@ -109,7 +109,7 @@ public class Class6 {
     }
 
     public static Class37_Sub4_Sub9_Sub3 method61(int i, int i_2_, int i_3_,
-        Class15 class15) {
+        JS5 class15) {
         anInt137++;
 
         if (!Class37_Sub12.method1001(i_3_, class15, (byte) 124, i_2_)) {

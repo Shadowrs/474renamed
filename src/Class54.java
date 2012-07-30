@@ -71,7 +71,7 @@ public class Class54 {
 
                     if (class18 == Class37_Sub7.aClass18_1894) {
                         if ((i_7_ != -1412584499) && !class18.aBoolean372) {
-                            Class32.anInt742 = i_5_;
+                            AbstractDrawingArea.anInt742 = i_5_;
                             Class78.aClass18Array1456 = class18s;
                             Class37_Sub4_Sub4.anInt2588 = i;
 
@@ -83,7 +83,7 @@ public class Class54 {
                         }
 
                         if (Class37_Sub9_Sub37.aBoolean3591 &&
-                                Class32.aBoolean746) {
+                                AbstractDrawingArea.aBoolean746) {
                             int i_13_ = Class37_Sub4_Sub7_Sub7.anInt3851;
                             i_13_ -= Class37_Sub4_Sub7_Sub1_Sub1.anInt3957;
 
@@ -1145,7 +1145,7 @@ public class Class54 {
         Class68.anInt1326 = 0;
         JString.anInt1673 = 0;
         Applet_Sub1.anInt23 = 0;
-        Class15.anInt295 = 0;
+        JS5.anInt295 = 0;
         Class37_Sub4_Sub4.anInt2589 = 0;
         Class37_Sub4_Sub12.anInt2764 = 0;
         Class37_Sub12.anInt2094 = 0;
@@ -1159,17 +1159,17 @@ public class Class54 {
         Class66.anInt1248 = 0;
         Class37_Sub25.anInt2276 = 0;
         Client.anInt1733 = 0;
-        Class15.anInt289 = 0;
+        JS5.anInt289 = 0;
         Class18.anInt384 = 0;
         Stream.anInt2060 = 0;
         Class32_Sub1.anInt1776 = 0;
-        Class15.anInt258 = 0;
+        JS5.anInt258 = 0;
         Class37_Sub9_Sub8.anInt3049 = 0;
         Client.anInt1729 = 0;
         Class65.anInt1239 = 0;
         Class37_Sub17.anInt2166 = 0;
         Class37_Sub3_Sub3.anInt2356 = 0;
-        Class15.anInt268 = 0;
+        JS5.anInt268 = 0;
         Class37_Sub3_Sub3.anInt2349 = 0;
         ItemDef.anInt2456 = 0;
         Class42.anInt937 = 0;
@@ -1202,10 +1202,10 @@ public class Class54 {
         Class37_Sub9_Sub8.anInt3047 = 0;
         Class37_Sub9_Sub1.anInt2922 = 0;
         Stream.anInt2058 = 0;
-        Class32.anInt731 = 0;
+        AbstractDrawingArea.anInt731 = 0;
         ObjectDef.anInt2695 = 0;
         ItemDef.anInt2486 = 0;
-        Class15.anInt281 = 0;
+        JS5.anInt281 = 0;
         Stream.anInt2034 = 0;
         Class37_Sub4_Sub2.anInt2518 = 0;
         Class37_Sub4.anInt1860 = 0;
@@ -1253,7 +1253,7 @@ public class Class54 {
         Class37_Sub9.anInt1977 = 0;
         Applet_Sub1.anInt27 = 0;
         Stream.anInt2045 = 0;
-        Class15.anInt292 = 0;
+        JS5.anInt292 = 0;
         Class8.anInt167 = 0;
         Class37_Sub9_Sub3.anInt2945 = 0;
         Class87.anInt1589 = 0;
@@ -1314,7 +1314,7 @@ public class Class54 {
         Class37_Sub4.anInt1850 = 0;
         Class37_Sub9_Sub6.anInt3014 = 0;
         JString.anInt1656 = 0;
-        Class69.anInt1340 = 0;
+        CacheIO.anInt1340 = 0;
         Class39.anInt853 = 0;
         Class72.anInt1374 = 0;
         PacketParser.anInt3270 = 0;
@@ -1326,9 +1326,9 @@ public class Class54 {
         Class37_Sub12.anInt2075 = 0;
         Class37_Sub4.anInt1846 = 0;
         Applet_Sub1.anInt7 = 0;
-        Class69.anInt1337 = 0;
+        CacheIO.anInt1337 = 0;
         Canvas_Sub1.anInt52 = 0;
-        Class15.anInt275 = 0;
+        JS5.anInt275 = 0;
         Stream.anInt2042 = 0;
         RSApplet.anInt179 = 0;
         Class79.anInt1485 = 0;
@@ -1349,7 +1349,7 @@ public class Class54 {
         Class38.anInt829 = 0;
         Class43.anInt952 = 0;
         Class37_Sub3_Sub3.anInt2368 = 0;
-        Class15.anInt280 = 0;
+        JS5.anInt280 = 0;
         Class32_Sub1.anInt1771 = 0;
         Class37_Sub4.anInt1847 = 0;
         Class37_Sub4_Sub10.anInt2671 = 0;
@@ -1370,13 +1370,13 @@ public class Class54 {
         Class77.anInt1441 = 0;
         Class37_Sub9_Sub36.anInt3570 = 0;
         Class37_Sub3_Sub3.anInt2361 = 0;
-        Class15.anInt288 = 0;
+        JS5.anInt288 = 0;
         Class37_Sub4_Sub8.anInt2653 = 0;
         Class37_Sub8.anInt1930 = 0;
         Stream.anInt2057 = 0;
         Class20.anInt549 = 0;
         Class37_Sub9_Sub20.anInt3290 = 0;
-        Class15.anInt264 = 0;
+        JS5.anInt264 = 0;
         Class37_Sub4_Sub7.anInt2630 = 0;
         Class78.anInt1461 = 0;
         Class37_Sub4_Sub7_Sub7.anInt3841 = 0;
@@ -1384,7 +1384,7 @@ public class Class54 {
         Class37_Sub9_Sub32.anInt3498 = 0;
         Class37_Sub4_Sub13.anInt2795 = 0;
         Class37_Sub9_Sub15.anInt3180 = 0;
-        Class15.anInt267 = 0;
+        JS5.anInt267 = 0;
         Class37_Sub3_Sub3.anInt2360 = 0;
         Client.anInt1717 = 0;
         Stream.anInt2003 = 0;
@@ -1410,7 +1410,7 @@ public class Class54 {
         PacketParser.anInt3256 = 0;
         Class37_Sub9_Sub7.anInt3036 = 0;
         Class37_Sub4_Sub7_Sub7.anInt3845 = 0;
-        Class69.anInt1348 = 0;
+        CacheIO.anInt1348 = 0;
         Class37_Sub9_Sub17.anInt3210 = 0;
         Class46.anInt979 = 0;
         Class37_Sub9_Sub13.anInt3127 = 0;
@@ -1425,7 +1425,7 @@ public class Class54 {
         Class37_Sub4.anInt1858 = 0;
         Class37_Sub9_Sub23.anInt3349 = 0;
         Stream.anInt2027 = 0;
-        Class15.anInt285 = 0;
+        JS5.anInt285 = 0;
         Class38.anInt848 = 0;
         JString.anInt1670 = 0;
         Class37_Sub9_Sub27.anInt3398 = 0;
@@ -1535,7 +1535,7 @@ public class Class54 {
         Class37_Sub25.anInt2281 = 0;
         Class42.anInt930 = 0;
         Canvas_Sub1.anInt51 = 0;
-        Class69.anInt1334 = 0;
+        CacheIO.anInt1334 = 0;
         Class37_Sub4_Sub12.anInt2765 = 0;
         JString.anInt1649 = 0;
         Class37_Sub9_Sub10.anInt3086 = 0;
@@ -1559,7 +1559,7 @@ public class Class54 {
         Class37_Sub4_Sub7_Sub1.anInt3644 = 0;
         Class62.anInt1174 = 0;
         Class52.anInt1052 = 0;
-        Class32.anInt739 = 0;
+        AbstractDrawingArea.anInt739 = 0;
         Class83.anInt1514 = 0;
         Class37_Sub9_Sub3.anInt2947 = 0;
         Stream.anInt2048 = 0;
@@ -1591,8 +1591,8 @@ public class Class54 {
         Class37_Sub9_Sub3.anInt2953 = 0;
         RSSocket.anInt467 = 0;
         Class37_Sub4_Sub5.anInt2600 = 0;
-        Class15.anInt279 = 0;
-        Class15.anInt291 = 0;
+        JS5.anInt279 = 0;
+        JS5.anInt291 = 0;
         Class37_Sub9_Sub25.anInt3383 = 0;
         Class33.anInt763 = 0;
         Class37_Sub23.anInt2226 = 0;
@@ -1653,7 +1653,7 @@ public class Class54 {
         Class37_Sub9_Sub1.anInt2921 = 0;
         Class52.anInt1049 = 0;
         Class37_Sub15.anInt2142 = 0;
-        Class15.anInt287 = 0;
+        JS5.anInt287 = 0;
         Class24.anInt610 = 0;
         Class18.anInt392 = 0;
         Class58.anInt1107 = 0;
@@ -1726,7 +1726,7 @@ public class Class54 {
         Class37_Sub9_Sub17.anInt3221 = 0;
         Class29.anInt698 = 0;
         Class37_Sub9_Sub27.anInt3413 = 0;
-        Class15.anInt265 = 0;
+        JS5.anInt265 = 0;
         Class45.anInt975 = 0;
         Class1.anInt58 = 0;
         Stream.anInt2053 = 0;
@@ -1747,7 +1747,7 @@ public class Class54 {
         JString.anInt1653 = 0;
         Class24.anInt598 = 0;
         Class37_Sub9_Sub28.anInt3421 = 0;
-        Class15.anInt274 = 0;
+        JS5.anInt274 = 0;
         JString.anInt1665 = 0;
         Class37_Sub9.anInt1950 = 0;
         Class82.anInt1697 = 0;
@@ -1759,7 +1759,7 @@ public class Class54 {
         Class37_Sub9_Sub29.anInt3458 = 0;
         Class65.anInt1224 = 0;
         Class86.anInt1580 = 0;
-        Class15.anInt282 = 0;
+        JS5.anInt282 = 0;
         Class37_Sub10.anInt1991 = 0;
         Class13.anInt219 = 0;
         Class37_Sub4_Sub7_Sub1_Sub1.anInt3939 = 0;
@@ -1793,7 +1793,7 @@ public class Class54 {
         PacketParser.anInt3266 = 0;
         Class37.anInt822 = 0;
         Stream.anInt2007 = 0;
-        Class15.anInt261 = 0;
+        JS5.anInt261 = 0;
         Class37_Sub10.anInt1992 = 0;
         Applet_Sub1.anInt22 = 0;
         Class13.anInt227 = 0;
@@ -1829,10 +1829,10 @@ public class Class54 {
         Class37_Sub4_Sub2.anInt2530 = 0;
         Class37_Sub3_Sub1.anInt2325 = 0;
         Class37_Sub9_Sub6.anInt3008 = 0;
-        Class15.anInt257 = 0;
+        JS5.anInt257 = 0;
         Class37_Sub9_Sub3.anInt2951 = 0;
         Class38.anInt845 = 0;
-        Class15.anInt293 = 0;
+        JS5.anInt293 = 0;
         Class37_Sub9_Sub8.anInt3062 = 0;
         JString.anInt1674 = 0;
         Class37_Sub9.anInt1963 = 0;
@@ -1851,7 +1851,7 @@ public class Class54 {
         Class42.anInt935 = 0;
         Login.anInt792 = 0;
         Class37_Sub9_Sub20.anInt3275 = 0;
-        Class15.anInt272 = 0;
+        JS5.anInt272 = 0;
         Class37_Sub1.anInt1800 = 0;
         Class37_Sub9_Sub13.anInt3136 = 0;
         RSSocket.anInt476 = 0;
@@ -1966,7 +1966,7 @@ public class Class54 {
         Class10.anInt192 = 0;
         Class73.anInt1382 = 0;
         Stream.anInt2008 = 0;
-        Class15.anInt286 = 0;
+        JS5.anInt286 = 0;
         Class20.anInt538 = 0;
         Class37_Sub4_Sub3.anInt2547 = 0;
         Class26.anInt650 = 0;
@@ -2055,7 +2055,7 @@ public class Class54 {
         Class68.anInt1325 = 0;
         Class37_Sub9_Sub32.anInt3497 = 0;
         Applet_Sub1.anInt40 = 0;
-        Class15.anInt266 = 0;
+        JS5.anInt266 = 0;
         Class37_Sub9_Sub36.anInt3578 = 0;
         Class36.anInt805 = 0;
         Class50.anInt1019 = 0;
@@ -2096,8 +2096,8 @@ public class Class54 {
         anInt1059 = 0;
         Stream.anInt2030 = 0;
         Class52_Sub1.anInt2294 = 0;
-        Class15.anInt262 = 0;
-        Class15.anInt269 = 0;
+        JS5.anInt262 = 0;
+        JS5.anInt269 = 0;
         Class37_Sub9_Sub34.anInt3553 = 0;
         ObjectDef.anInt2720 = 0;
         Class37_Sub9_Sub21.anInt3303 = 0;
@@ -2179,14 +2179,14 @@ public class Class54 {
         Applet_Sub1.anInt16 = 0;
         Class37_Sub9_Sub12.anInt3118 = 0;
         Class37_Sub9_Sub35.anInt3565 = 0;
-        Class69.anInt1344 = 0;
+        CacheIO.anInt1344 = 0;
         ObjectDef.anInt2748 = 0;
         Class37_Sub9_Sub27.anInt3418 = -1;
         ObjectDef.anInt2734 = 0;
         Class37_Sub9_Sub16.anInt3201 = 0;
         Class45.anInt977 = -1;
         Class37_Sub9_Sub21.anInt3321 = 0;
-        Class42.aStream_Sub1_936.bufferLocation = 0;
+        Class42.outputStream.bufferLocation = 0;
         Class83.packetStream.bufferLocation = 0;
         Class58.method1156(8, 0);
 
@@ -2249,8 +2249,8 @@ public class Class54 {
                 0xffffffff)); i_97_++)
             Class37_Sub8.anIntArray1939[i_97_] = -1;
 
-        if ((Class32.anInt733 ^ 0xffffffff) != 0) {
-            Class37_Sub9_Sub24.method871(Class32.anInt733, false);
+        if ((AbstractDrawingArea.anInt733 ^ 0xffffffff) != 0) {
+            Class37_Sub9_Sub24.method871(AbstractDrawingArea.anInt733, false);
         }
 
         for (Class37_Sub6 class37_sub6 = (Class37_Sub6) Class76.aClass13_1423.method94(
@@ -2259,7 +2259,7 @@ public class Class54 {
                         (byte) 25))
             PacketStream.method992(-1494101117, class37_sub6, true);
 
-        Class32.anInt733 = -1;
+        AbstractDrawingArea.anInt733 = -1;
         Class76.aClass13_1423 = new Class13(8);
         Class37_Sub9_Sub13.anInt3134 = 0;
         Class79.aClass18_1489 = null;

@@ -355,24 +355,21 @@ public class Class37_Sub4 extends Class37 {
             int i_36_ = Class37_Sub9_Sub36.anIntArray3572[i_20_];
 
             if (i_9_ == 0) {
-                Class42.aStream_Sub1_936.writePacket(-1494101117, 46);
-                Class42.aStream_Sub1_936.writeSignedByte(102,
-                    i_22_ - (-i_22_ + -3));
+                Class42.outputStream.writePacket(-1494101117, 46);
+                Class42.outputStream.writeByte(i_22_ - (-i_22_ + -3));
                 Class37_Sub9.anInt1961++;
             }
 
             if (i_9_ == 1) {
-                Class42.aStream_Sub1_936.writePacket(-1494101117, 11);
+                Class42.outputStream.writePacket(-1494101117, 11);
                 Class49.anInt1004++;
-                Class42.aStream_Sub1_936.writeSignedByte(i_14_ ^ 0x6e,
-                    (i_22_ + i_22_) - -17);
+                Class42.outputStream.writeByte((i_22_ + i_22_) - -17);
             }
 
             if (i_9_ == 2) {
                 Class24.anInt598++;
-                Class42.aStream_Sub1_936.writePacket(-1494101117, 59);
-                Class42.aStream_Sub1_936.writeSignedByte(99,
-                    3 + (i_22_ + i_22_));
+                Class42.outputStream.writePacket(-1494101117, 59);
+                Class42.outputStream.writeByte(3 + (i_22_ + i_22_));
             }
 
             Class79.anInt1474 = Class37_Sub4_Sub7_Sub1_Sub2.anIntArray3984[0];
@@ -380,20 +377,18 @@ public class Class37_Sub4 extends Class37 {
 
             for (int i_37_ = 1; i_22_ > i_37_; i_37_++) {
                 i_20_--;
-                Class42.aStream_Sub1_936.writeSignedByte(97,
-                    (Class37_Sub4_Sub7_Sub1_Sub2.anIntArray3984[i_20_] - i_35_));
-                Class42.aStream_Sub1_936.writeByteS((byte) -85,
+                Class42.outputStream.writeByte((Class37_Sub4_Sub7_Sub1_Sub2.anIntArray3984[i_20_] - i_35_));
+                Class42.outputStream.writeByteS((byte) -85,
                     (Class37_Sub9_Sub36.anIntArray3572[i_20_]) + -i_36_);
 
 
             }
 
-            Class42.aStream_Sub1_936.writeShortA(19058,
+            Class42.outputStream.writeShortA(19058,
                 i_35_ + Class37_Sub18.anInt2200);
-            Class42.aStream_Sub1_936.writeShortLE(i_36_ +
+            Class42.outputStream.writeShortLE(i_36_ +
                 Class15_Sub1.anInt1738, false);
-            Class42.aStream_Sub1_936.writeSignedByte(i_14_ + 126,
-                (!RSSocket.aBooleanArray484[82]) ? 0 : 1);
+            Class42.outputStream.writeByte((!RSSocket.aBooleanArray484[82]) ? 0 : 1);
             return true;
         }
 
@@ -424,7 +419,7 @@ public class Class37_Sub4 extends Class37 {
         anInt1858++;
 
         if (Class37_Sub4_Sub5.aBoolean2595) {
-            Class18 class18 = Class37_Sub9_Sub35.method914(Class32.anInt737,
+            Class18 class18 = Class37_Sub9_Sub35.method914(AbstractDrawingArea.anInt737,
                     (byte) -39, Class21.anInt558);
 
             if ((class18 != null) && (class18.anObjectArray358 != null)) {
@@ -451,7 +446,7 @@ public class Class37_Sub4 extends Class37 {
             if (Class43.aClass19_950 != null) {
                 try {
                     Stream stream = new Stream(4);
-                    stream.writeSignedByte(100, (!bool) ? 3 : 2);
+                    stream.writeByte((!bool) ? 3 : 2);
                     stream.write3Bytes(0, -110);
                     Class43.aClass19_950.write(0, (byte) 126,
                         (stream.buffer), 4);
@@ -484,7 +479,7 @@ public class Class37_Sub4 extends Class37 {
         }
     }
 
-    public static void method439(int i, Class15 class15) {
+    public static void method439(int i, JS5 class15) {
         anInt1861++;
 
         int i_38_ = -36 / ((-37 - i) / 53);

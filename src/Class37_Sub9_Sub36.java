@@ -133,7 +133,7 @@ public class Class37_Sub9_Sub36 extends Class37_Sub9 {
         if (aClass38_1966.aBoolean850) {
             int[] is_15_ = this.method760(i_14_, 0, -48);
 
-            for (int i_16_ = 0; i_16_ < Class32.anInt743; i_16_++) {
+            for (int i_16_ = 0; i_16_ < AbstractDrawingArea.anInt743; i_16_++) {
                 int i_17_ = is_15_[i_16_];
 
                 is[i_16_] = ((((i_17_ ^ 0xffffffff) <= (anInt3583 ^ 0xffffffff)) &&
@@ -165,8 +165,8 @@ public class Class37_Sub9_Sub36 extends Class37_Sub9 {
         return class37_sub13.anIntArray2116[i];
     }
 
-    public static void method920(int i, Class15 class15, Class15 class15_20_,
-        Class15 class15_21_, Class15 class15_22_) {
+    public static void method920(int i, JS5 class15, JS5 class15_20_,
+        JS5 class15_21_, JS5 class15_22_) {
         try {
             Class37_Sub4_Sub14.aClass15_2805 = class15_21_;
             anInt3586++;

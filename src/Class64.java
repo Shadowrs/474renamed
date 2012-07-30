@@ -71,8 +71,8 @@ public class Class64 {
         if (Class75.aByte1409 != 0) {
             try {
                 Stream stream = new Stream(4);
-                stream.writeSignedByte(124, 4);
-                stream.writeSignedByte(126, Class75.aByte1409);
+                stream.writeByte(4);
+                stream.writeByte(Class75.aByte1409);
                 stream.writeShort(848881960, 0);
                 Class43.aClass19_950.write(0, (byte) 126,
                     stream.buffer, 4);

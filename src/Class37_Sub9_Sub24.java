@@ -5,8 +5,8 @@ public class Class37_Sub9_Sub24 extends Class37_Sub9 {
     public static int anInt3361 = 0;
     public static int anInt3362;
     public static int anInt3363;
-    public static Class15 aClass15_3364;
-    public static Class15 aClass15_3365;
+    public static JS5 aClass15_3364;
+    public static JS5 aClass15_3365;
     public static int anInt3366;
     public static int anInt3368;
     public static JString aJString_3370;
@@ -115,7 +115,7 @@ public class Class37_Sub9_Sub24 extends Class37_Sub9 {
             return null;
         }
 
-        return Class32.method289(127, 10, i, false);
+        return AbstractDrawingArea.method289(127, 10, i, false);
     }
 
     public static void method871(int i, boolean bool) {
@@ -191,7 +191,7 @@ while_90_:
         if (aClass38_1966.aBoolean850) {
             int i_12_ = 0;
 
-            for (; (i_12_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+            for (; (i_12_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_12_++) {
                 int i_13_ = Class37_Sub4_Sub16.anIntArray2871[i_11_];
                 int i_14_ = Class84.anIntArray1528[i_12_];

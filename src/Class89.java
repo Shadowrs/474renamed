@@ -51,7 +51,7 @@ public class Class89 {
         }
     }
 
-    public static boolean method1336(Class15 class15, int i, int i_0_) {
+    public static boolean method1336(JS5 class15, int i, int i_0_) {
         anInt1620++;
 
         byte[] is = class15.method111(i_0_, (byte) 94);

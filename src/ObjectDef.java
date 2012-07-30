@@ -979,14 +979,6 @@ public class ObjectDef extends Class37_Sub4 {
     }
 
     public void dump() {
-	System.out.print("ID: " + id + " NAME: " + new String((name.getCharArray())) + " Array: [");
-	if (anIntArray2732 == null) {
-		System.out.println("]: NULL");
-	} else {
-		for (int i = 0; i < anIntArray2732.length; i++)
-			System.out.print(", " + anIntArray2732[i]);
-		System.out.println(" ].");
-	}
     }
 
     public void method691(Stream stream) {

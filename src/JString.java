@@ -17,7 +17,7 @@ public class JString implements Interface1 {
 	public static int anInt1642;
 	public static int anInt1643;
 	public static int anInt1644;
-	public static Class15 aClass15_1645;
+	public static JS5 aClass15_1645;
 	public static JString aJString_1646 = Class37_Sub2.method332((byte) 106, "Connecting to update server");
 	public static int anInt1647;
 	public static int anInt1648;

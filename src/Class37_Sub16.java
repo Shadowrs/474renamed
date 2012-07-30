@@ -5,7 +5,7 @@ public class Class37_Sub16 extends Class37 {
     public static int anInt2149;
     public static JString aJString_2150;
     public static int anInt2151 = 0;
-    public static Class15 aClass15_2152;
+    public static JS5 aClass15_2152;
     public static int anInt2153;
     public static int anInt2154;
     public static Class65 aClass65_2155;
@@ -36,7 +36,7 @@ public class Class37_Sub16 extends Class37 {
     }
 
     public static Class37_Sub4_Sub9_Sub1 method1011(int i, int i_1_, int i_2_,
-        Class15 class15) {
+        JS5 class15) {
         anInt2149++;
 
         if (i_2_ < 96) {

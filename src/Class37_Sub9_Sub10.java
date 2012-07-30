@@ -51,14 +51,14 @@ public class Class37_Sub9_Sub10 extends Class37_Sub9 {
     }
 
     public static void method803(int i, int i_1_, int i_2_) {
-        if (i_2_ != Class32.anInt743) {
+        if (i_2_ != AbstractDrawingArea.anInt743) {
             Class84.anIntArray1528 = new int[i_2_];
 
             for (int i_3_ = 0; i_2_ > i_3_; i_3_++)
                 Class84.anIntArray1528[i_3_] = (i_3_ << -288502516) / i_2_;
 
             Applet_Sub1.anInt12 = -1 + i_2_;
-            Class32.anInt743 = i_2_;
+            AbstractDrawingArea.anInt743 = i_2_;
         }
 
         if ((Class37_Sub14.anInt2121 ^ 0xffffffff) != (i ^ 0xffffffff)) {
@@ -122,7 +122,7 @@ public class Class37_Sub9_Sub10 extends Class37_Sub9 {
             int[] is_7_ = this.method760(i_6_, 1, -81);
             int[] is_8_ = this.method760(i_6_, 2, -85);
 
-            for (int i_9_ = 0; Class32.anInt743 > i_9_; i_9_++) {
+            for (int i_9_ = 0; AbstractDrawingArea.anInt743 > i_9_; i_9_++) {
                 int i_10_ = (is_7_[i_9_] >> -1746462396) & 0xff;
                 int i_11_ = (anInt3092 * is_8_[i_9_]) >> 155846028;
                 int i_12_ = (i_11_ * Class13.anIntArray226[i_10_]) >> 1674936012;
@@ -155,7 +155,7 @@ public class Class37_Sub9_Sub10 extends Class37_Sub9 {
             int[] is_21_ = is[0];
             int[] is_22_ = is[1];
 
-            for (int i_23_ = 0; i_23_ < Class32.anInt743; i_23_++) {
+            for (int i_23_ = 0; i_23_ < AbstractDrawingArea.anInt743; i_23_++) {
                 int i_24_ = ((is_18_[i_23_] * 255) >> -943391508) & 0xff;
                 int i_25_ = (anInt3092 * is_19_[i_23_]) >> 834769292;
                 int i_26_ = ((Class37_Sub4_Sub7_Sub2.anIntArray3711[i_24_] * i_25_) >> 1807020);

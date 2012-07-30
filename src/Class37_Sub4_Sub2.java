@@ -58,7 +58,7 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
         anInt2531 = 1;
     }
 
-    public boolean method455(Class15 class15, Interface3 interface3,
+    public boolean method455(JS5 class15, Interface3 interface3,
         boolean bool) {
         try {
             anInt2538++;
@@ -76,7 +76,7 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
     }
 
     public static Class37_Sub4_Sub9_Sub3[] method456(int i, int i_0_,
-        Class15 class15, byte i_1_) {
+        JS5 class15, byte i_1_) {
         anInt2530++;
 
         if (i_1_ <= 44) {
@@ -90,7 +90,7 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
         return Class37_Sub4_Sub7.method492(124);
     }
 
-    public int[] method457(int i, Interface3 interface3, Class15 class15,
+    public int[] method457(int i, Interface3 interface3, JS5 class15,
         int i_2_) {
         try {
             anInt2518++;
@@ -197,7 +197,7 @@ public class Class37_Sub4_Sub2 extends Class37_Sub4 {
     }
 
     public int[] method459(int i, float f, Interface3 interface3,
-        Class15 class15, int i_20_) {
+        JS5 class15, int i_20_) {
         try {
             anInt2529++;
 

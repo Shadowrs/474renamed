@@ -11,7 +11,7 @@ public class Class10 {
     public static int[] anIntArray196;
     public static boolean aBoolean197 = true;
     public static byte[][] aByteArrayArray198;
-    public static Class69 aClass69_199;
+    public static CacheIO aClass69_199;
     public static int anInt200;
     public static JString aJString_201 = Class37_Sub2.method332((byte) 111,
             "p12_full");

@@ -39,14 +39,14 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
     public static void method461(int i, int i_0_) {
         anInt2559++;
 
-        if ((i ^ 0xffffffff) != (Class32.anInt740 ^ 0xffffffff)) {
-            if (Class32.anInt740 == 0) {
+        if ((i ^ 0xffffffff) != (AbstractDrawingArea.anInt740 ^ 0xffffffff)) {
+            if (AbstractDrawingArea.anInt740 == 0) {
                 Class37_Sub3_Sub1.method349((byte) -99);
             }
 
             if ((i == 20) || (i == 40)) {
                 Class37_Sub9_Sub23.anInt3355 = 0;
-                Class22.anInt580 = 0;
+                Class22.loginStage = 0;
                 Login.anInt781 = 0;
             }
 
@@ -56,7 +56,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
                 PacketStream.aClass19_3613 = null;
             }
 
-            if (Class32.anInt740 == 25) {
+            if (AbstractDrawingArea.anInt740 == 25) {
                 Class37_Sub9_Sub31.anInt3487 = 0;
                 Class37_Sub4_Sub7_Sub1_Sub1.anInt3942 = 1;
                 Class76.anInt1437 = 0;
@@ -73,7 +73,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
                     Class52_Sub1.aClass15_Sub1_2309);
             }
 
-            Class32.anInt740 = i;
+            AbstractDrawingArea.anInt740 = i;
 
             if (i_0_ != 27931) {
                 method469(null, null, -66);
@@ -250,7 +250,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
         method463(anInt2556, bool);
     }
 
-    public static void method469(Class15 class15, Class15 class15_13_, int i) {
+    public static void method469(JS5 class15, JS5 class15_13_, int i) {
         try {
             if (i > 113) {
                 JString.aClass15_1645 = class15_13_;
@@ -301,7 +301,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
         return true;
     }
 
-    public static void method471(boolean bool, byte[] is, int i, Class69 class69) {
+    public static void method471(boolean bool, byte[] is, int i, CacheIO class69) {
         try {
             Class37_Sub5 class37_sub5 = new Class37_Sub5();
             anInt2551++;

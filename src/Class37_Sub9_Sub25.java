@@ -167,7 +167,7 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
         if (aClass38_1966.aBoolean850) {
             for (int i_8_ = 0;
-                    (i_8_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                    (i_8_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_8_++)
                 is[i_8_] = Class84.anIntArray1528[i_8_];
         }

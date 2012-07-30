@@ -149,7 +149,7 @@ while_77_:
             int[] is_9_ = is[1];
             int[] is_10_ = is[2];
 
-            for (int i_11_ = 0; Class32.anInt743 > i_11_; i_11_++) {
+            for (int i_11_ = 0; AbstractDrawingArea.anInt743 > i_11_; i_11_++) {
                 int i_12_ = is_5_[i_11_];
                 int i_13_ = i_12_ + -anIntArray3212[0];
 

@@ -21,7 +21,7 @@ public class Class24_Sub1 extends Class24 {
         anInterface2_1764.method5(-31114, anInt1765, i);
     }
 
-    public void method240() {
+    public void close() {
         anInterface2_1764.method3(anInt1765, (byte) 126);
     }
 

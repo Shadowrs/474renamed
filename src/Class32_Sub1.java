@@ -12,7 +12,7 @@ import java.awt.image.ImageObserver;
 import java.awt.image.ImageProducer;
 
 
-public class Class32_Sub1 extends Class32 implements ImageProducer,
+public class Class32_Sub1 extends AbstractDrawingArea implements ImageProducer,
     ImageObserver {
     public static int anInt1771;
     public static int anInt1772;
@@ -52,15 +52,14 @@ public class Class32_Sub1 extends Class32 implements ImageProducer,
     public ImageConsumer anImageConsumer1782;
     public ColorModel aColorModel1786;
 
-    public void method292(int i, int i_0_, int i_1_, int i_2_, int i_3_,
+    public void draw(int srcX, int i_0_, int srcHeight, int srcWidth, int srcY,
         Graphics graphics) {
         anInt1776++;
-        method294(i, (byte) -61, i_2_, i_3_, i_1_);
+        method294(srcX, (byte) -61, srcWidth, srcY, srcHeight);
 
-        int i_4_ = -38 % ((-64 - i_0_) / 42);
         Shape shape = graphics.getClip();
-        graphics.clipRect(i, i_3_, i_2_, i_1_);
-        graphics.drawImage(anImage735, 0, 0, this);
+        graphics.clipRect(srcX, srcY, srcWidth, srcHeight);
+        graphics.drawImage(image, 0, 0, this);
         graphics.setClip(shape);
     }
 
@@ -117,13 +116,13 @@ public class Class32_Sub1 extends Class32 implements ImageProducer,
         anInt734 = i;
         anInt732 = i_11_;
         aColorModel1786 = new DirectColorModel(32, 16711680, 65280, 255);
-        anImage735 = component.createImage(this);
+        image = component.createImage(this);
         method295(2);
-        component.prepareImage(anImage735, this);
+        component.prepareImage(image, this);
         method295(2);
-        component.prepareImage(anImage735, this);
+        component.prepareImage(image, this);
         method295(2);
-        component.prepareImage(anImage735, this);
+        component.prepareImage(image, this);
         this.method291((byte) -10);
     }
 
@@ -216,7 +215,7 @@ public class Class32_Sub1 extends Class32 implements ImageProducer,
     public void method290(int i, Graphics graphics, int i_24_, boolean bool) {
         method295(2);
         anInt1773++;
-        graphics.drawImage(anImage735, i, i_24_, this);
+        graphics.drawImage(image, i, i_24_, this);
 
         if (bool != false) {
             aJString_1790 = null;

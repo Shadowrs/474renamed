@@ -120,15 +120,15 @@ public class Class29 {
     }
 
     public void method264(Stream stream, int i) {
-        stream.writeSignedByte(98, aBoolean700 ? 1 : 0);
+        stream.writeByte(aBoolean700 ? 1 : 0);
 
         for (int i_5_ = 0; i_5_ < 7; i_5_++) {
             int i_6_ = anIntArray702[Class83.anIntArray1521[i_5_]];
 
             if ((i_6_ ^ 0xffffffff) != -1) {
-                stream.writeSignedByte(i ^ ~0x7c, -256 + i_6_);
+                stream.writeByte(-256 + i_6_);
             } else {
-                stream.writeSignedByte(107, -1);
+                stream.writeByte(-1);
             }
         }
 
@@ -139,7 +139,7 @@ public class Class29 {
         }
 
         for (; (i_7_ ^ 0xffffffff) > -6; i_7_++)
-            stream.writeSignedByte(i + 101, anIntArray697[i_7_]);
+            stream.writeByte(anIntArray697[i_7_]);
 
         anInt715++;
     }

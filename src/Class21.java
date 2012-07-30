@@ -20,7 +20,7 @@ public class Class21 implements KeyListener, FocusListener {
     public static int anInt565;
     public static int anInt566;
     public static int anInt567;
-    public static Class32 aClass32_568;
+    public static AbstractDrawingArea aClass32_568;
 
     static {
         aJString_560 = (Class37_Sub2.method332((byte) 113,

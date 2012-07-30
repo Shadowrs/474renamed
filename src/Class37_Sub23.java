@@ -55,9 +55,9 @@ public class Class37_Sub23 extends Class37 {
                 if (((i_0_ ^ 0xffffffff) > (Class14.aClass37_Sub18Array240.length ^
                         0xffffffff)) &&
                         (Class14.aClass37_Sub18Array240[i_0_] != null)) {
-                    Class42.aStream_Sub1_936.writePacket(-1494101117, 22);
+                    Class42.outputStream.writePacket(-1494101117, 22);
                     Class68.anInt1321++;
-                    Class42.aStream_Sub1_936.writeLong(Class14.aClass37_Sub18Array240[i_0_].aLong818);
+                    Class42.outputStream.writeLong(Class14.aClass37_Sub18Array240[i_0_].aLong818);
                 }
             }
         }
@@ -110,7 +110,7 @@ public class Class37_Sub23 extends Class37 {
                 if (Class78.aClass18Array1456 != null) {
                     Class54.method1139(Class37_Sub4_Sub4.anInt2588, i_6_,
                         Class78.aClass18Array1456, i_3_, i_7_, i_8_,
-                        i_4_ ^ ~0x68cd, Class32.anInt742, i_2_, -1412584499);
+                        i_4_ ^ ~0x68cd, AbstractDrawingArea.anInt742, i_2_, -1412584499);
                     Class78.aClass18Array1456 = null;
                 }
             }

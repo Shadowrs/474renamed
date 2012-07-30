@@ -66,10 +66,10 @@ public class Class43 {
             }
 
             if (Client.anInt1719 == 30) {
-                Class69.aClass15_Sub1_1335 = Class37_Sub4_Sub7_Sub5.method540(true,
+                CacheIO.aClass15_Sub1_1335 = Class37_Sub4_Sub7_Sub5.method540(true,
                         true, 0, (byte) 121, false);
 
-                Class69.aClass15_Sub1_1330 = Class37_Sub4_Sub7_Sub5.method540(true,
+                CacheIO.aClass15_Sub1_1330 = Class37_Sub4_Sub7_Sub5.method540(true,
                         true, 1, (byte) 20, false);
 
                 Class14.aClass15_Sub1_242 = Class37_Sub4_Sub7_Sub5.method540(false,
@@ -118,8 +118,8 @@ public class Class43 {
                 Class37_Sub9_Sub33.aJString_3522 = JString.aJString_1682;
             } else if (Client.anInt1719 == 40) {
                 int i_5_ = 0;
-                i_5_ += ((Class69.aClass15_Sub1_1335.method135((byte) 85) * 4) / 100);
-                i_5_ += ((Class69.aClass15_Sub1_1330.method135((byte) 60) * 4) / 100);
+                i_5_ += ((CacheIO.aClass15_Sub1_1335.method135((byte) 85) * 4) / 100);
+                i_5_ += ((CacheIO.aClass15_Sub1_1330.method135((byte) 60) * 4) / 100);
                 i_5_ += ((Class14.aClass15_Sub1_242.method135((byte) 51) * 2) / 100);
                 i_5_ += ((2 * Canvas_Sub1.aClass15_Sub1_46.method135((byte) 118)) / 100);
                 i_5_ += ((Class37_Sub4.aClass15_Sub1_1862.method135((byte) 112) * 6) / 100);
@@ -160,14 +160,14 @@ public class Class43 {
                 class37_sub3_sub3.method370(9, 128, 109);
 
                 Class88.aClass24_1605 = Class17.method188(Class37_Sub9.aCanvas1967,
-                        Class80.aClass51_1508, 22050, -1, 0);
+                        Class80.signlink, 22050, -1, 0);
                 Class88.aClass24_1605.method245(0, class37_sub3_sub3);
                 Class37_Sub4_Sub4.method481(Class37_Sub4.aClass15_Sub1_1862,
                     Class37_Sub20.aClass15_Sub1_2216, class37_sub3_sub3, 7201,
                     Class37_Sub17.aClass15_Sub1_2164);
 
                 Class37_Sub4_Sub7.aClass24_2638 = Class17.method188(Class37_Sub9.aCanvas1967,
-                        Class80.aClass51_1508, 2048, -1, 1);
+                        Class80.signlink, 2048, -1, 1);
                 Class1.aClass37_Sub3_Sub2_59 = new Class37_Sub3_Sub2();
                 Class37_Sub4_Sub7.aClass24_2638.method245(0,
                     Class1.aClass37_Sub3_Sub2_59);
@@ -265,8 +265,8 @@ public class Class43 {
                         Class14.aClass15_Sub1_242, (byte) 102,
                         Class37_Sub4.aClass37_Sub4_Sub9_Sub2_Sub1_1848,
                         Class29.aClass15_Sub1_711);
-                    Class3.method45(i ^ 0x25a, Class69.aClass15_Sub1_1335,
-                        Class69.aClass15_Sub1_1330, Class14.aClass15_Sub1_242);
+                    Class3.method45(i ^ 0x25a, CacheIO.aClass15_Sub1_1335,
+                        CacheIO.aClass15_Sub1_1330, Class14.aClass15_Sub1_242);
                     Applet_Sub1.method22(Class29.aClass15_Sub1_711, (byte) 93,
                         Class14.aClass15_Sub1_242);
                     Class84.method1318(Class14.aClass15_Sub1_242, 0);
@@ -462,7 +462,7 @@ public class Class43 {
                 }
             } else if ((Client.anInt1719 ^ 0xffffffff) == -111) {
                 Class37_Sub9_Sub27.aClass55_3417 = new Class55();
-                Class80.aClass51_1508.createResource((Class37_Sub9_Sub27.aClass55_3417),
+                Class80.signlink.createResource((Class37_Sub9_Sub27.aClass55_3417),
                     10, (byte) 65);
                 Class37_Sub9_Sub27.anInt3400 = 94;
 
@@ -520,7 +520,7 @@ public class Class43 {
                     Class37_Sub9_Sub27.anInt3400 = 100;
                 } else {
                     Client.anInt1719 = 140;
-                    Class37_Sub9_Sub33.aJString_3522 = Class69.aJString_1346;
+                    Class37_Sub9_Sub33.aJString_3522 = CacheIO.aJString_1346;
                     Class37_Sub9_Sub27.anInt3400 = 100;
                 }
             } else if ((Client.anInt1719 ^ 0xffffffff) == -141) {

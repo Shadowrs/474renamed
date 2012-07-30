@@ -63,7 +63,7 @@ public class PacketStream extends Stream {
 		Class37_Sub4_Sub12.anInt2759 = i_1_;
 		Class21.anInt558 = i;
 		Class37_Sub4_Sub5.aBoolean2595 = true;
-		Class32.anInt737 = i_0_;
+		AbstractDrawingArea.anInt737 = i_0_;
 		Class73.method1274(class18, -1);
 
 		if (i_2_ != 18193) {
@@ -134,8 +134,8 @@ public class PacketStream extends Stream {
 		Class37_Sub9_Sub13.anInt3134 = 0;
 		Class37_Sub7.method740(Class37_Sub9_Sub24.anInt3377, Class37_Sub4_Sub13.anInt2794, Class15_Sub1.anInt1753, Class37_Sub5.anInt1878, i ^ ~0x59f12c7c);
 
-		if (Class32.anInt733 != -1) {
-			Class26.method259(Class32.anInt733, 1, -127);
+		if (AbstractDrawingArea.anInt733 != -1) {
+			Class26.method259(AbstractDrawingArea.anInt733, 1, -127);
 		}
 	}
 

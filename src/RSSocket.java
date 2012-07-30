@@ -818,13 +818,9 @@ while_19_:
         anInt465++;
     }
 
-    public int available(int dummy) throws IOException {
+    public int available() throws IOException {
         anInt482++;
-
-        if (dummy > -104) {
-            finalize();
-        }
-
+        
         if (threadDead) {
             return 0;
         }

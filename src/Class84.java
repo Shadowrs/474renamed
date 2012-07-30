@@ -14,7 +14,7 @@ public class Class84 {
     public static int anInt1531;
     public static JString[] aJStringArray1532;
     public static int anInt1533;
-    public static Class15 aClass15_1534;
+    public static JS5 aClass15_1534;
     public static int anInt1535;
 
     static {
@@ -167,7 +167,7 @@ public class Class84 {
         return class37_sub4_sub10;
     }
 
-    public static void method1318(Class15 class15, int i) {
+    public static void method1318(JS5 class15, int i) {
         if (i != 0) {
             aJStringArray1532 = null;
         }

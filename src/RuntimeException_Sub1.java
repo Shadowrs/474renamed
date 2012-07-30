@@ -42,7 +42,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
         }
     }
 
-    public static void method1338(int i, byte i_0_) {
+    public static void handleBadLogin(int i, byte i_0_) {
         anInt1631++;
 
         if (i_0_ != 59) {
@@ -62,7 +62,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
                         (Class37_Sub4_Sub7_Sub3.aJString_3751));
                 } else if (i == 4) {
                     Class32_Sub1.method293((byte) -124,
-                        ItemDef.aJString_2476, Class69.aJString_1333,
+                        ItemDef.aJString_2476, CacheIO.aJString_1333,
                         Class37_Sub9.aJString_1945);
                 } else if ((i ^ 0xffffffff) == -6) {
                     Class32_Sub1.method293((byte) -126,
@@ -139,7 +139,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
                                                     } else {
                                                         Class32_Sub1.method293((byte) -126,
                                                             (ItemDef.aJString_2471),
-                                                            (Class69.aJString_1339),
+                                                            (CacheIO.aJString_1339),
                                                             (Class37_Sub4_Sub14.aJString_2804));
                                                     }
                                                 } else {
@@ -232,7 +232,7 @@ public class RuntimeException_Sub1 extends RuntimeException {
         anInt1622++;
 
         if (bool != true) {
-            method1338(-44, (byte) -85);
+            handleBadLogin(-44, (byte) -85);
         }
 
         return ((i * i_1_) + ((4096 - i_1_) * i_2_)) >> 917564396;
@@ -248,14 +248,14 @@ public class RuntimeException_Sub1 extends RuntimeException {
         }
     }
 
-    public static Class32 method1342(int i, int i_3_, byte i_4_,
+    public static AbstractDrawingArea method1342(int i, int i_3_, byte i_4_,
         Component component) {
         anInt1629++;
 
         try {
             Class var_class = Class.forName("Class32_Sub2");
             int i_5_ = 78 % ((i_4_ - -42) / 59);
-            Class32 class32 = (Class32) var_class.newInstance();
+            AbstractDrawingArea class32 = (AbstractDrawingArea) var_class.newInstance();
             class32.method287(component, i, i_3_, (byte) 120);
 
             return class32;

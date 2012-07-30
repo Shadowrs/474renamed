@@ -40,13 +40,13 @@ public class Class82 implements Interface3 {
         aClass65_1713 = new Class65(64);
     }
 
-    public Class15 aClass15_1691;
+    public JS5 aClass15_1691;
     public Class65 aClass65_1701;
     public int anInt1710 = 50;
-    public Class15 aClass15_1714;
+    public JS5 aClass15_1714;
     public int anInt1715 = 128;
 
-    public Class82(Class15 class15, Class15 class15_18_, int i, int i_19_) {
+    public Class82(JS5 class15, JS5 class15_18_, int i, int i_19_) {
         try {
             aClass15_1714 = class15_18_;
             anInt1715 = i_19_;

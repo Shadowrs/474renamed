@@ -73,7 +73,7 @@ public class Class46 {
         }
     }
 
-    public static Class37_Sub4_Sub9_Sub1[] method1104(Class15 class15,
+    public static Class37_Sub4_Sub9_Sub1[] method1104(JS5 class15,
         JString jstring, int i, JString jstring_1_) {
         try {
             int i_2_ = class15.method123((byte) 32, jstring_1_);

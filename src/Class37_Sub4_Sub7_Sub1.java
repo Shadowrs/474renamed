@@ -12,7 +12,7 @@ public abstract class Class37_Sub4_Sub7_Sub1 extends Class37_Sub4_Sub7 {
     public static int anInt3685;
     public static int anInt3695;
     public static Class42[] aClass42Array3699 = new Class42[16];
-    public static int anInt3700;
+    public static int port;
     public static short[][] aShortArrayArray3702;
     public boolean aBoolean3635 = false;
     public int anInt3636;

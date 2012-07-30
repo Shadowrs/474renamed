@@ -91,7 +91,7 @@ public class Class24 {
             }
         }
 
-        method240();
+        close();
         anIntArray606 = null;
 
         int i_1_ = -87 % ((-44 - i) / 53);
@@ -127,7 +127,7 @@ public class Class24 {
         anInt622++;
     }
 
-    public void method240() {
+    public void close() {
         anInt620++;
     }
 
@@ -148,7 +148,7 @@ public class Class24 {
 
             method236();
         } catch (Exception exception) {
-            method240();
+            close();
             aLong629 = Class71.method1263((byte) -80) - -2000L;
         }
     }
@@ -359,7 +359,7 @@ while_55_:
                         anInt623 = 16384;
                     }
 
-                    method240();
+                    close();
                     method246(anInt623);
                     aBoolean633 = true;
 
@@ -379,7 +379,7 @@ while_55_:
                     if (!aBoolean633) {
                         if (((anInt632 ^ 0xffffffff) == -1) &&
                                 ((anInt628 ^ 0xffffffff) == -1)) {
-                            method240();
+                            close();
                             aLong629 = 2000L + l;
 
                             return;
@@ -397,7 +397,7 @@ while_55_:
 
                 anInt627 = i_18_;
             } catch (Exception exception) {
-                method240();
+                close();
                 aLong629 = 2000L + l;
             }
 

@@ -1,4 +1,4 @@
-/* Class24_Sub2 - Decompiled by JODE
+/* MusicPlayer - Decompiled by JODE
  * Visit http://jode.sourceforge.net
  */
 import java.awt.Component;
@@ -10,7 +10,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 
 
-public class Class24_Sub2 extends Class24 {
+public class MusicPlayer extends Class24 {
     public static Class aClass1770;
     public SourceDataLine aSourceDataLine1766;
     public int anInt1767;
@@ -44,7 +44,7 @@ public class Class24_Sub2 extends Class24 {
         ? 2 : 1));
     }
 
-    public void method240() {
+    public void close() {
         if (aSourceDataLine1766 != null) {
             aSourceDataLine1766.close();
             aSourceDataLine1766 = null;

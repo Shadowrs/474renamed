@@ -143,7 +143,7 @@ public class Class30 {
     }
 
     public static Class37_Sub4_Sub9_Sub1 method277(JString jstring, int i,
-        JString jstring_15_, Class15 class15) {
+        JString jstring_15_, JS5 class15) {
         try {
             anInt723++;
 

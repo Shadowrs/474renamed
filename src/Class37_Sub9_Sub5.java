@@ -74,7 +74,7 @@ public class Class37_Sub9_Sub5 extends Class37_Sub9 {
             int[] is_6_ = is[2];
             int[] is_7_ = is[0];
 
-            for (int i_8_ = 0; i_8_ < Class32.anInt743; i_8_++) {
+            for (int i_8_ = 0; i_8_ < AbstractDrawingArea.anInt743; i_8_++) {
                 is_7_[i_8_] = ((is_2_[i_8_] * anInt2991) >> -1197808500) +
                     anInt2986;
 
@@ -136,7 +136,7 @@ while_18_:
             int[] is_11_ = this.method760(i_10_, 0, -81);
 
             for (int i_12_ = 0;
-                    (i_12_ ^ 0xffffffff) > (Class32.anInt743 ^ 0xffffffff);
+                    (i_12_ ^ 0xffffffff) > (AbstractDrawingArea.anInt743 ^ 0xffffffff);
                     i_12_++)
                 is[i_12_] = anInt2986 -
                     -((anInt2991 * is_11_[i_12_]) >> 1292537740);

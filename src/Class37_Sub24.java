@@ -41,7 +41,7 @@ public class Class37_Sub24 extends Class37 {
         method1038(is);
     }
 
-    public static boolean method1031(Class15 class15) {
+    public static boolean method1031(JS5 class15) {
         if (!aBoolean2248) {
             byte[] is = class15.method131(0, 0, 1);
 
@@ -68,7 +68,7 @@ public class Class37_Sub24 extends Class37 {
         return (float) ((double) i_0_ * Math.pow(2.0, (double) (i_2_ - 788)));
     }
 
-    public static Class37_Sub24 method1033(Class15 class15, int i, int i_3_) {
+    public static Class37_Sub24 method1033(JS5 class15, int i, int i_3_) {
         if (!method1031(class15)) {
             class15.method115(-9350, i, i_3_);
 
@@ -420,17 +420,17 @@ public class Class37_Sub24 extends Class37 {
 
     public void method1038(byte[] is) {
         Stream stream = new Stream(is);
-        anInt2246 = stream.readInt(-107);
-        anInt2254 = stream.readInt(-124);
-        anInt2250 = stream.readInt(-97);
-        anInt2247 = stream.readInt(-96);
+        anInt2246 = stream.readInt();
+        anInt2254 = stream.readInt();
+        anInt2250 = stream.readInt();
+        anInt2247 = stream.readInt();
 
         if (anInt2247 < 0) {
             anInt2247 = anInt2247 ^ 0xffffffff;
             aBoolean2257 = true;
         }
 
-        int i = stream.readInt(-88);
+        int i = stream.readInt();
         aByteArrayArray2263 = new byte[i][];
 
         for (int i_85_ = 0; i_85_ < i; i_85_++) {

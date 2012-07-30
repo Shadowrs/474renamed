@@ -48,7 +48,7 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
         int[] is_3_ = is[2];
 
         if (aClass33_1946.aBoolean767) {
-            for (int i_4_ = 0; Class32.anInt743 > i_4_; i_4_++) {
+            for (int i_4_ = 0; AbstractDrawingArea.anInt743 > i_4_; i_4_++) {
                 method900(-111, i_4_, i_0_);
 
                 int[][] is_5_ = this.method762(0, Class37_Sub9_Sub9.anInt3072,
@@ -100,7 +100,7 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
         Class81.anIntArray1510 = null;
         Class37_Sub9_Sub12.anIntArray3113 = null;
         Class52_Sub1.aByteArrayArrayArray2306 = null;
-        Class15.aByteArrayArrayArray283 = null;
+        JS5.aByteArrayArrayArray283 = null;
         anInt3499++;
         Class55.anIntArray1064 = null;
         Class84.aByteArrayArrayArray1526 = null;
@@ -139,7 +139,7 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
                                 if (((double) f >= 2.356194490192345) &&
                                         ((double) f <= 3.141592653589793)) {
                                     Class37_Sub6.anInt1880 = -i_7_ +
-                                        Class32.anInt743;
+                                        AbstractDrawingArea.anInt743;
                                     Class37_Sub9_Sub9.anInt3072 = i_8_;
                                 }
                             } else {
@@ -149,13 +149,13 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
                                     Class37_Sub14.anInt2121;
                             }
                         } else {
-                            Class37_Sub6.anInt1880 = Class32.anInt743 + -i_8_;
+                            Class37_Sub6.anInt1880 = AbstractDrawingArea.anInt743 + -i_8_;
 
                             Class37_Sub9_Sub9.anInt3072 = -i_7_ +
                                 Class37_Sub14.anInt2121;
                         }
                     } else {
-                        Class37_Sub6.anInt1880 = -i_7_ + Class32.anInt743;
+                        Class37_Sub6.anInt1880 = -i_7_ + AbstractDrawingArea.anInt743;
 
                         Class37_Sub9_Sub9.anInt3072 = -i_8_ +
                             Class37_Sub14.anInt2121;
@@ -166,7 +166,7 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
                     Class37_Sub6.anInt1880 = i_7_;
                 }
             } else {
-                Class37_Sub6.anInt1880 = -i_8_ + Class32.anInt743;
+                Class37_Sub6.anInt1880 = -i_8_ + AbstractDrawingArea.anInt743;
                 Class37_Sub9_Sub9.anInt3072 = i_7_;
             }
         } else {
@@ -189,7 +189,7 @@ public class Class37_Sub9_Sub32 extends Class37_Sub9 {
 
         if (aClass38_1966.aBoolean850) {
             for (int i_13_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_13_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_13_ ^ 0xffffffff);
                     i_13_++) {
                 method900(56, i_13_, i_12_);
 

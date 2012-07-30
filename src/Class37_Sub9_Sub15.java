@@ -4,7 +4,7 @@
 public class Class37_Sub9_Sub15 extends Class37_Sub9 {
     public static JString aJString_3158 = Class37_Sub2.method332((byte) 105,
             "Loaded sprites");
-    public static Class15 aClass15_3159;
+    public static JS5 aClass15_3159;
     public static JString aJString_3160;
     public static JString aJString_3162;
     public static int anInt3163;
@@ -109,7 +109,7 @@ while_71_:
                         }
                     } else {
                         for (i_5_ = 0;
-                                ((Class32.anInt743 ^ 0xffffffff) < (i_5_ ^
+                                ((AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_5_ ^
                                 0xffffffff)); i_5_++) {
                             int i_6_ = is_4_[i_5_];
                             int i_7_;
@@ -146,7 +146,7 @@ while_71_:
                     }
 
                     for (i_5_ = 0;
-                            (Class32.anInt743 ^ 0xffffffff) < (i_5_ ^
+                            (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_5_ ^
                             0xffffffff); i_5_++) {
                         int i_23_ = is_4_[i_5_];
                         int i_24_;
@@ -174,7 +174,7 @@ while_71_:
                 } while (false);
 
                 for (i_5_ = 0;
-                        (Class32.anInt743 ^ 0xffffffff) < (i_5_ ^ 0xffffffff);
+                        (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_5_ ^ 0xffffffff);
                         i_5_++) {
                     int i_30_ = is_4_[i_5_];
                     int i_31_;
@@ -224,10 +224,10 @@ while_71_:
                 }
             }
 
-            if (Class32.anInt740 != 5) {
+            if (AbstractDrawingArea.anInt740 != 5) {
                 Class37_Sub9_Sub34.anInt3558++;
 
-                if ((Class32.anInt740 ^ 0xffffffff) == -11) {
+                if ((AbstractDrawingArea.anInt740 ^ 0xffffffff) == -11) {
                     if (((Class10.anInt193 ^ 0xffffffff) != -3) &&
                             (Class37_Sub9_Sub25.anInt3382 == 0)) {
                         if ((Class37_Sub9_Sub28.anInt3440 ^ 0xffffffff) == -2) {
@@ -334,16 +334,16 @@ while_71_:
                                 0xffffffff)) &&
                                 ((i_41_ ^ 0xffffffff) >= ((20 + i_47_) ^
                                 0xffffffff))) {
-                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.formatUsername(-1)
+                            Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.playerName.formatUsername(-1)
                                                                                                .capitalizeAfterQuestion(70);
 
-                            if ((Class37_Sub9_Sub33.aJString_3526.length(
+                            if ((Class37_Sub9_Sub33.playerName.length(
                                         (byte) 38) ^ 0xffffffff) == -1) {
                                 Class32_Sub1.method293((byte) -126,
                                     (ItemDef.aJString_2438),
                                     (ItemDef.aJString_2516),
                                     Login.aJString_787);
-                            } else if ((Class37_Sub9_Sub33.aJString_3525.length(
+                            } else if ((Class37_Sub9_Sub33.playerPassword.length(
                                         (byte) 38) ^ 0xffffffff) == -1) {
                                 Class32_Sub1.method293((byte) -125,
                                     ItemDef.aJString_2461,
@@ -367,10 +367,10 @@ while_71_:
                                     0xffffffff)) &&
                                     (((20 + i_47_) ^ 0xffffffff) <= (i_41_ ^
                                     0xffffffff))) {
-                                Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3524;
+                                Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.aJString_3524;
                                 Class18.anInt339 = 0;
 
-                                Class37_Sub9_Sub33.aJString_3525 = Class37_Sub9_Sub33.aJString_3524;
+                                Class37_Sub9_Sub33.playerPassword = Class37_Sub9_Sub33.aJString_3524;
                             }
 
                             while (Class46.method1106(i)) {
@@ -392,12 +392,12 @@ while_71_:
                                     if (Class37_Sub9_Sub31.anInt3495 == 1) {
                                         if (((Class37_Sub4_Sub3.anInt2560 ^
                                                 0xffffffff) == -86) &&
-                                                ((Class37_Sub9_Sub33.aJString_3525.length(
+                                                ((Class37_Sub9_Sub33.playerPassword.length(
                                                     (byte) 38) ^ 0xffffffff) < -1)) {
-                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.substring(0,
+                                            Class37_Sub9_Sub33.playerPassword = (Class37_Sub9_Sub33.playerPassword.substring(0,
                                                     0,
                                                     -1 +
-                                                    (Class37_Sub9_Sub33.aJString_3525.length(
+                                                    (Class37_Sub9_Sub33.playerPassword.length(
                                                         (byte) 38))));
                                         }
 
@@ -411,17 +411,17 @@ while_71_:
                                                 0xffffffff) != -1) &&
                                                 ((Class37_Sub4_Sub3.anInt2560 ^
                                                 0xffffffff) == -85)) {
-                                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.formatUsername(i ^
+                                            Class37_Sub9_Sub33.playerName = Class37_Sub9_Sub33.playerName.formatUsername(i ^
                                                     0xffffffff).capitalizeAfterQuestion(70);
 
-                                            if (Class37_Sub9_Sub33.aJString_3526.length(
+                                            if (Class37_Sub9_Sub33.playerName.length(
                                                         (byte) 38) == 0) {
                                                 Class32_Sub1.method293((byte) -125,
                                                     (ItemDef.aJString_2438),
                                                     (ItemDef.aJString_2516),
                                                     Login.aJString_787);
                                             } else {
-                                                if ((Class37_Sub9_Sub33.aJString_3525.length(
+                                                if ((Class37_Sub9_Sub33.playerPassword.length(
                                                             (byte) 38) ^
                                                         0xffffffff) == -1) {
                                                     Class32_Sub1.method293((byte) -125,
@@ -446,20 +446,20 @@ while_71_:
                                         }
 
                                         if (bool &&
-                                                (Class37_Sub9_Sub33.aJString_3525.length(
+                                                (Class37_Sub9_Sub33.playerPassword.length(
                                                     (byte) 38) < 20)) {
-                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.concatChar(Class88.anInt1600,
+                                            Class37_Sub9_Sub33.playerPassword = (Class37_Sub9_Sub33.playerPassword.concatChar(Class88.anInt1600,
                                                     false));
                                         }
                                     }
                                 } else {
                                     if (((Class37_Sub4_Sub3.anInt2560 ^
                                             0xffffffff) == -86) &&
-                                            (Class37_Sub9_Sub33.aJString_3526.length(
+                                            (Class37_Sub9_Sub33.playerName.length(
                                                 (byte) 38) > 0)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.substring(0,
+                                        Class37_Sub9_Sub33.playerName = (Class37_Sub9_Sub33.playerName.substring(0,
                                                 0,
-                                                (Class37_Sub9_Sub33.aJString_3526.length(
+                                                (Class37_Sub9_Sub33.playerName.length(
                                                     (byte) 38) - 1)));
                                     }
 
@@ -470,9 +470,9 @@ while_71_:
                                     }
 
                                     if (bool &&
-                                            ((Class37_Sub9_Sub33.aJString_3526.length(
+                                            ((Class37_Sub9_Sub33.playerName.length(
                                                 (byte) 38) ^ 0xffffffff) > -13)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.concatChar(Class88.anInt1600,
+                                        Class37_Sub9_Sub33.playerName = (Class37_Sub9_Sub33.playerName.concatChar(Class88.anInt1600,
                                                 false));
                                     }
                                 }

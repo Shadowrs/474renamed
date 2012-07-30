@@ -202,7 +202,7 @@ while_107_:
             int i_10_ = Class37_Sub4_Sub16.anIntArray2871[i_9_] + -2048;
 
             for (int i_11_ = 0;
-                    (Class32.anInt743 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
+                    (AbstractDrawingArea.anInt743 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
                     i_11_++) {
                 int i_12_ = Class84.anIntArray1528[i_11_] - 2048;
                 int i_13_ = i_12_ + anInt3459;
@@ -253,8 +253,8 @@ while_107_:
                         }
 
                         Class37_Sub9_Sub32.anInt3509 = Class83.anInt1515;
-                        Class42.aStream_Sub1_936.writePacket(-1494101117, 1);
-                        Class42.aStream_Sub1_936.writeLong(l);
+                        Class42.outputStream.writePacket(-1494101117, 1);
+                        Class42.outputStream.writeLong(l);
 
                         break;
                     }

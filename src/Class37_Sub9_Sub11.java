@@ -7,7 +7,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
     public static int anInt3096;
     public static int anInt3097;
     public static int anInt3098 = 0;
-    public static Class15 aClass15_3099;
+    public static JS5 aClass15_3099;
     public static JString aJString_3100;
     public static int anInt3102;
     public static JString aJString_3103;
@@ -43,7 +43,7 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
             int i_1_ = Class37_Sub4_Sub16.anIntArray2871[i_0_];
             int i_2_ = (-2048 + i_1_) >> 1985766177;
 
-            for (int i_3_ = 0; i_3_ < Class32.anInt743; i_3_++) {
+            for (int i_3_ = 0; i_3_ < AbstractDrawingArea.anInt743; i_3_++) {
                 int i_4_ = Class84.anIntArray1528[i_3_];
                 int i_5_ = (i_4_ - 2048) >> -1177950015;
                 int i_6_;
@@ -152,9 +152,9 @@ public class Class37_Sub9_Sub11 extends Class37_Sub9 {
     public static void method808(boolean bool, int i, int i_8_) {
         Class37_Sub4_Sub7_Sub7.anInt3841++;
         anInt3096++;
-        Class42.aStream_Sub1_936.writePacket(-1494101117, 64);
-        Class42.aStream_Sub1_936.writeShortLE(i, false);
-        Class42.aStream_Sub1_936.writeInt2(bool, i_8_);
+        Class42.outputStream.writePacket(-1494101117, 64);
+        Class42.outputStream.writeShortLE(i, false);
+        Class42.outputStream.writeInt2(bool, i_8_);
     }
 
     public static void method809(int i) {

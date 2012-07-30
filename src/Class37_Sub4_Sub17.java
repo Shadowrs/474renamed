@@ -85,15 +85,14 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
             }
 
             stream_sub1.writePacket(-1494101117, i);
-            stream_sub1.writeSignedByte(119, 0);
+            stream_sub1.writeByte(0);
 
             int i_2_ = stream_sub1.bufferLocation;
             stream_sub1.writeInt(class37_sub20.anInt2207);
 
             for (int i_3_ = 0; class37_sub20.anInt2205 > i_3_; i_3_++) {
                 if (class37_sub20.anIntArray2212[i_3_] != 0) {
-                    stream_sub1.writeSignedByte(115,
-                        class37_sub20.anIntArray2212[i_3_]);
+                    stream_sub1.writeByte(class37_sub20.anIntArray2212[i_3_]);
                 } else {
                     try {
                         int i_4_ = class37_sub20.anIntArray2214[i_3_];
@@ -103,17 +102,17 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
                                 Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                                 field.setInt(null,
                                     (class37_sub20.anIntArray2204[i_3_]));
-                                stream_sub1.writeSignedByte(i_0_ ^ ~0x68, 0);
+                                stream_sub1.writeByte(0);
                             } else if ((i_4_ ^ 0xffffffff) == -3) {
                                 Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                                 int i_5_ = field.getModifiers();
-                                stream_sub1.writeSignedByte(100, 0);
+                                stream_sub1.writeByte(0);
                                 stream_sub1.writeInt(i_5_);
                             }
                         } else {
                             Field field = (Field) (class37_sub20.aClass23Array2209[i_3_].resource);
                             int i_6_ = field.getInt(null);
-                            stream_sub1.writeSignedByte(116, 0);
+                            stream_sub1.writeByte(0);
                             stream_sub1.writeInt(i_6_);
                         }
 
@@ -121,7 +120,7 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
                             if ((i_4_ ^ 0xffffffff) == -5) {
                                 Method method = (Method) (class37_sub20.aClass23Array2206[i_3_].resource);
                                 int i_7_ = method.getModifiers();
-                                stream_sub1.writeSignedByte(111, 0);
+                                stream_sub1.writeByte(0);
                                 stream_sub1.writeInt(i_7_);
                             }
                         } else {
@@ -139,43 +138,43 @@ public class Class37_Sub4_Sub17 extends Class37_Sub4 {
 
                             if (object != null) {
                                 if (object instanceof Number) {
-                                    stream_sub1.writeSignedByte(i_0_ ^ ~0x6c, 1);
+                                    stream_sub1.writeByte(1);
                                     stream_sub1.writeLong(((Number) object).longValue());
                                 } else if (!(object instanceof JString)) {
-                                    stream_sub1.writeSignedByte(108, 4);
+                                    stream_sub1.writeByte(4);
                                 } else {
-                                    stream_sub1.writeSignedByte(i_0_ + 137, 2);
+                                    stream_sub1.writeByte(2);
                                     stream_sub1.writeString(((JString) object),
                                         i_0_ ^ ~0x14);
                                 }
                             } else {
-                                stream_sub1.writeSignedByte(103, 0);
+                                stream_sub1.writeByte(0);
                             }
                         }
                     } catch (ClassNotFoundException classnotfoundexception) {
-                        stream_sub1.writeSignedByte(121, -10);
+                        stream_sub1.writeByte(-10);
                     } catch (java.io.InvalidClassException invalidclassexception) {
-                        stream_sub1.writeSignedByte(112, -11);
+                        stream_sub1.writeByte(-11);
                     } catch (java.io.StreamCorruptedException streamcorruptedexception) {
-                        stream_sub1.writeSignedByte(108, -12);
+                        stream_sub1.writeByte(-12);
                     } catch (java.io.OptionalDataException optionaldataexception) {
-                        stream_sub1.writeSignedByte(i_0_ ^ ~0x75, -13);
+                        stream_sub1.writeByte(-13);
                     } catch (IllegalAccessException illegalaccessexception) {
-                        stream_sub1.writeSignedByte(120, -14);
+                        stream_sub1.writeByte(-14);
                     } catch (IllegalArgumentException illegalargumentexception) {
-                        stream_sub1.writeSignedByte(104, -15);
+                        stream_sub1.writeByte(-15);
                     } catch (java.lang.reflect.InvocationTargetException invocationtargetexception) {
-                        stream_sub1.writeSignedByte(102, -16);
+                        stream_sub1.writeByte(-16);
                     } catch (SecurityException securityexception) {
-                        stream_sub1.writeSignedByte(i_0_ ^ ~0x61, -17);
+                        stream_sub1.writeByte(-17);
                     } catch (java.io.IOException ioexception) {
-                        stream_sub1.writeSignedByte(118, -18);
+                        stream_sub1.writeByte(-18);
                     } catch (NullPointerException nullpointerexception) {
-                        stream_sub1.writeSignedByte(101, -19);
+                        stream_sub1.writeByte(-19);
                     } catch (Exception exception) {
-                        stream_sub1.writeSignedByte(127, -20);
+                        stream_sub1.writeByte(-20);
                     } catch (Throwable throwable) {
-                        stream_sub1.writeSignedByte(110, -21);
+                        stream_sub1.writeByte(-21);
                     }
                 }
             }

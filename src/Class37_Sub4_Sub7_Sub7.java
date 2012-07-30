@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net
  */
 public class Class37_Sub4_Sub7_Sub7 extends Class37_Sub4_Sub7 {
-    public static Class15 aClass15_3837;
+    public static JS5 aClass15_3837;
     public static int anInt3841;
     public static int[] anIntArray3842 = new int[100];
     public static JString aJString_3844;

@@ -46,7 +46,7 @@ public class Class1 {
         }
     }
 
-    public static Class37_Sub15 method40(Class15 class15, int i, byte i_7_) {
+    public static Class37_Sub15 method40(JS5 class15, int i, byte i_7_) {
         anInt64++;
 
         if (i_7_ >= -20) {

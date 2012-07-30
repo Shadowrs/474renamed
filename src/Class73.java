@@ -12,7 +12,7 @@ public class Class73 {
     public static JString aJString_1386;
     public static int anInt1387;
     public static int anInt1388;
-    public static Class15 aClass15_1389;
+    public static JS5 aClass15_1389;
     public static int anInt1390;
     public static JString aJString_1391 = aJString_1378;
     public static JString aJString_1392;
@@ -27,12 +27,12 @@ public class Class73 {
         aJString_1392 = aJString_1385;
     }
 
-    public Class15 aClass15_1379;
+    public JS5 aClass15_1379;
     public Class13 aClass13_1380 = new Class13(256);
-    public Class15 aClass15_1395;
+    public JS5 aClass15_1395;
     public Class13 aClass13_1396 = new Class13(256);
 
-    public Class73(Class15 class15, Class15 class15_20_) {
+    public Class73(JS5 class15, JS5 class15_20_) {
         try {
             aClass15_1395 = class15_20_;
             aClass15_1379 = class15;
@@ -191,7 +191,7 @@ public class Class73 {
         if (Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 < i_11_) {
             Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 += (((Class6.anInt146 * (i_11_ +
             -Class37_Sub4_Sub7_Sub1_Sub2.anInt3969)) / 1000) +
-            Class15.anInt259);
+            JS5.anInt259);
 
             if ((Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 ^ 0xffffffff) < (i_11_ ^
                     0xffffffff)) {
@@ -209,7 +209,7 @@ public class Class73 {
 
         if ((Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 ^ 0xffffffff) < (i_11_ ^
                 0xffffffff)) {
-            Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 -= (Class15.anInt259 -
+            Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 -= (JS5.anInt259 -
             -(((-i_11_ + Class37_Sub4_Sub7_Sub1_Sub2.anInt3969) * Class6.anInt146) / 1000));
 
             if (Class37_Sub4_Sub7_Sub1_Sub2.anInt3969 < i_11_) {
@@ -218,14 +218,14 @@ public class Class73 {
         }
 
         if (i_13_ > 0) {
-            Class37_Sub17.anInt2188 += (Class15.anInt259 -
+            Class37_Sub17.anInt2188 += (JS5.anInt259 -
             -((i_13_ * Class6.anInt146) / 1000));
             Class37_Sub17.anInt2188 &= 0x7ff;
         }
 
         if (i_13_ < 0) {
             Class37_Sub17.anInt2188 -= (((-i_13_ * Class6.anInt146) / 1000) +
-            Class15.anInt259);
+            JS5.anInt259);
             Class37_Sub17.anInt2188 &= 0x7ff;
         }
 

@@ -64,8 +64,8 @@ public class Class7 {
         int i_2_ = 0;
 
         while (i_2_ < i) {
-            int i_3_ = aStream_148.readInt(-89);
-            int i_4_ = aStream_148.readInt(-40);
+            int i_3_ = aStream_148.readInt();
+            int i_4_ = aStream_148.readInt();
 
             if (i_3_ == 1297379947) {
                 anIntArray155[i_2_] = aStream_148.bufferLocation;

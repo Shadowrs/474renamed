@@ -4,7 +4,7 @@
 public class Class37_Sub9_Sub14 extends Class37_Sub9 {
     public static JString aJString_3143;
     public static JString aJString_3144;
-    public static Class15 aClass15_3145;
+    public static JS5 aClass15_3145;
     public static int anInt3146;
     public static int anInt3147;
     public static JString aJString_3148 = (Class37_Sub2.method332((byte) 116,
@@ -103,7 +103,7 @@ public class Class37_Sub9_Sub14 extends Class37_Sub9 {
         int[] is = aClass38_1966.method1049(i_3_, true);
 
         if (aClass38_1966.aBoolean850) {
-            ArrayOperations.setArray(is, 0, Class32.anInt743, anInt3154);
+            ArrayOperations.setArray(is, 0, AbstractDrawingArea.anInt743, anInt3154);
         }
 
         anInt3146++;

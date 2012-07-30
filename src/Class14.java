@@ -7,7 +7,7 @@ import java.awt.Component;
 public class Class14 {
     public static JString aJString_234;
     public static int anInt236;
-    public static Class15 aClass15_237;
+    public static JS5 aClass15_237;
     public static Class37_Sub4_Sub9_Sub3 aClass37_Sub4_Sub9_Sub3_238;
     public static int anInt239;
     public static Class37_Sub18[] aClass37_Sub18Array240;

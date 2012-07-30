@@ -34,21 +34,20 @@ public class Class25 {
         aJString_644 = Class37_Sub2.method332((byte) 123, "(Y");
     }
 
-    public static void method253(Stream stream, int i) {
-        int i_0_ = 64 % ((-62 - i) / 36);
+    public static void writeFromRandom(Stream stream, int i) {
         anInt643++;
 
         byte[] is = new byte[24];
 
-        if (Class71.aClass42_1363 != null) {
+        if (Class71.randomFile != null) {
             try {
-                Class71.aClass42_1363.method1081(0L, 0);
-                Class71.aClass42_1363.method1085(is, (byte) 118);
+                Class71.randomFile.seek(0L, 0);
+                Class71.randomFile.read(is, (byte) 118);
 
                 int i_1_;
 
-                for (i_1_ = 0; (i_1_ ^ 0xffffffff) > -25; i_1_++) {
-                    if ((is[i_1_] ^ 0xffffffff) != -1) {
+                for (i_1_ = 0; i_1_ < 24; i_1_++) {
+                    if (is[i_1_] != 0) {
                         break;
                     }
                 }
@@ -65,9 +64,9 @@ public class Class25 {
         stream.writeBytes(24, 0, 4, is);
     }
 
-    public static void method254(int i) {
+    public static void resetStaticVariables(int i) {
         if (i > -55) {
-            method253(null, 56);
+            writeFromRandom(null, 56);
         }
 
         aJString_638 = null;

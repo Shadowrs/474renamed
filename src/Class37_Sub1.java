@@ -75,7 +75,7 @@ public class Class37_Sub1 extends Class37 {
         Class52_Sub1.anInt2305 = 0;
     }
 
-    public static void method330(Class15 class15, int i) {
+    public static void method330(JS5 class15, int i) {
         int i_3_ = -96 / ((27 - i) / 44);
         Class37_Sub3_Sub3.aClass15_2394 = class15;
         anInt1799++;

@@ -25,7 +25,7 @@ public class Stream extends Class37 {
 	public static int anInt2022;
 	public static Applet_Sub1 anApplet_Sub1_2023;
 	public static int anInt2024;
-	public static Class15 aClass15_2025;
+	public static JS5 aClass15_2025;
 	public static int anInt2026;
 	public static int anInt2027;
 	public static int anInt2028;
@@ -139,13 +139,9 @@ public class Stream extends Class37 {
 		return 0xff & -buffer[bufferLocation++];
 	}
 
-	public int readInt(int i) {
+	public int readInt() {
 		bufferLocation += 4;
 		anInt2010++;
-
-		if (i >= -22) {
-			return 102;
-		}
 
 		return ((buffer[-1 + bufferLocation] & 0xff) + ((0xff00 & (buffer[bufferLocation - 2] << 8)) + ((0xff & buffer[bufferLocation + -4]) << 24) + ((buffer[-3 + bufferLocation] << 16) & 0xff0000)));
 	}
@@ -475,7 +471,7 @@ public class Stream extends Class37 {
 		anInt2060++;
 
 		if ((i_53_ >= 0) && (i_53_ < 128)) {
-			writeSignedByte(104, i_53_);
+			writeByte(i_53_);
 		} else if ((i_53_ >= 0) && ((i_53_ ^ 0xffffffff) > -32769)) {
 			writeShort(i + 848881923, i_53_ + 32768);
 		} else {
@@ -575,7 +571,7 @@ public class Stream extends Class37 {
 			BigInteger biginteger_61_ = biginteger_60_.modPow(biginteger, biginteger_58_);
 			byte[] is_62_ = biginteger_61_.toByteArray();
 			bufferLocation = 0;
-			writeSignedByte(113, is_62_.length);
+			writeByte(is_62_.length);
 			writeBytes(is_62_.length, 0, 4, is_62_);
 		} catch (RuntimeException runtimeexception) {
 			throw Class37_Sub4_Sub7_Sub3.method516(runtimeexception, ("hc.GB(" + i + ',' + ((biginteger != null) ? "{...}" : "null") + ',' + ((biginteger_58_ != null) ? "{...}" : "null") + ')'));
@@ -642,11 +638,7 @@ public class Stream extends Class37 {
 			dest[i_69_] = buffer[bufferLocation++];
 	}
 
-	public void writeSignedByte(int dummy, int value) {
-		if (dummy < 94) {
-			writeShortLEA(false, 1);
-		}
-
+	public void writeByte(int value) {
 		buffer[bufferLocation++] = (byte) value;
 		anInt2053++;
 	}
@@ -694,7 +686,7 @@ public class Stream extends Class37 {
 
 	public int readInt2(int i) {
 		if (i <= 69) {
-			writeSignedByte(100, -110);
+			writeByte(-110);
 		}
 
 		bufferLocation += 4;
@@ -723,8 +715,8 @@ public class Stream extends Class37 {
 	public long readLongDuplicate(boolean bool) { //This looks to be the exact same method as the regular readLong, so I'm not sure what's going on...
 		anInt2066++;
 
-		long l = 0xffffffffL & (long) readInt(-59);
-		long l_76_ = 0xffffffffL & (long) readInt(-30);
+		long l = 0xffffffffL & (long) readInt();
+		long l_76_ = 0xffffffffL & (long) readInt();
 
 		if (bool != false) {
 			return 29L;
@@ -786,19 +778,19 @@ public class Stream extends Class37 {
 				if ((i & ~0x3fff) != 0) {
 					if (((~0x1fffff & i) ^ 0xffffffff) != -1) {
 						if ((~0xfffffff & i) != 0) {
-							writeSignedByte(102, 0x80 | i >>> -1205282660);
+							writeByte(0x80 | i >>> -1205282660);
 						}
 
-						writeSignedByte(i_81_ + 79, 0x80 | i >>> 341586613);
+						writeByte(0x80 | i >>> 341586613);
 					}
 
-					writeSignedByte(127, i >>> 1607471566 | 0x80);
+					writeByte(i >>> 1607471566 | 0x80);
 				}
 
-				writeSignedByte(97, (0x400d | i) >>> 946412423);
+				writeByte((0x400d | i) >>> 946412423);
 			}
 
-			writeSignedByte(i_81_ ^ 0x76, 0x7f & i);
+			writeByte(0x7f & i);
 		}
 	}
 
@@ -845,8 +837,8 @@ public class Stream extends Class37 {
 		bufferLocation = i_83_;
 
 		for (int i_87_ = 0; i_86_ > i_87_; i_87_++) {
-			int i_88_ = readInt(-112);
-			int i_89_ = readInt(-86);
+			int i_88_ = readInt();
+			int i_89_ = readInt();
 			int i_90_ = -957401312;
 			int i_91_ = -1640531527;
 			int i_92_ = 32;
@@ -871,7 +863,7 @@ public class Stream extends Class37 {
 
 	public byte readSignedByte(byte i) {
 		if (i < 89) {
-			writeSignedByte(-94, 1);
+			writeByte(1);
 		}
 
 		anInt2012++;

@@ -11,8 +11,8 @@ public class Class3 {
     public static int anInt89;
     public static int anInt90;
 
-    public static void method45(int i, Class15 class15, Class15 class15_0_,
-        Class15 class15_1_) {
+    public static void method45(int i, JS5 class15, JS5 class15_0_,
+        JS5 class15_1_) {
         try {
             anInt88++;
             Class52.aClass15_1053 = class15_1_;
@@ -207,7 +207,7 @@ public class Class3 {
                                 int i_34_ = 0xff &
                                     (Class84.aByteArrayArrayArray1526[i_6_][i_20_][i_31_]);
                                 int i_35_ = 0xff &
-                                    (Class15.aByteArrayArrayArray283[i_6_][i_20_][i_31_]);
+                                    (JS5.aByteArrayArrayArray283[i_6_][i_20_][i_31_]);
 
                                 if ((i_34_ > 0) || (i_35_ > 0)) {
                                     int i_36_ = (Class64.anIntArrayArrayArray1217[i_6_][i_20_][i_31_]);
@@ -404,7 +404,7 @@ public class Class3 {
                 }
 
                 Class84.aByteArrayArrayArray1526[i_6_] = null;
-                Class15.aByteArrayArrayArray283[i_6_] = null;
+                JS5.aByteArrayArrayArray283[i_6_] = null;
                 Class52_Sub1.aByteArrayArrayArray2306[i_6_] = null;
                 Class37_Sub3_Sub3.aByteArrayArrayArray2391[i_6_] = null;
                 Class37_Sub9_Sub26.aByteArrayArrayArray3391[i_6_] = null;
@@ -680,8 +680,8 @@ while_5_:
             anInt85++;
 
             if (l != 0L) {
-                Class42.aStream_Sub1_936.writePacket(-1494101117, 163);
-                Class42.aStream_Sub1_936.writeLong(l);
+                Class42.outputStream.writePacket(-1494101117, 163);
+                Class42.outputStream.writeLong(l);
                 Class37_Sub9_Sub15.anInt3177++;
             }
         } catch (RuntimeException runtimeexception) {

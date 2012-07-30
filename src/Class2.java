@@ -52,29 +52,29 @@ public class Class2 {
                 if (i != 1) {
                     if ((i ^ 0xffffffff) == -5) {
                         Class37_Sub9_Sub13.anInt3127++;
-                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                        Class42.outputStream.writePacket(-1494101117,
                             247);
-                        Class42.aStream_Sub1_936.writeShortA(19058,
+                        Class42.outputStream.writeShortA(19058,
                             Class26.anIntArray657[i_2_]);
                     } else if ((i ^ 0xffffffff) != -7) {
                         if (i == 7) {
-                            Class42.aStream_Sub1_936.writePacket(-1494101117,
+                            Class42.outputStream.writePacket(-1494101117,
                                 211);
-                            Class42.aStream_Sub1_936.writeShortLEA(true,
+                            Class42.outputStream.writeShortLEA(true,
                                 Class26.anIntArray657[i_2_]);
                             Class37_Sub9_Sub4.anInt2960++;
                         }
                     } else {
-                        Class42.aStream_Sub1_936.writePacket(-1494101117,
+                        Class42.outputStream.writePacket(-1494101117,
                             244);
                         Class62.anInt1174++;
-                        Class42.aStream_Sub1_936.writeShortA(19058,
+                        Class42.outputStream.writeShortA(19058,
                             Class26.anIntArray657[i_2_]);
                     }
                 } else {
                     RSApplet.anInt184++;
-                    Class42.aStream_Sub1_936.writePacket(-1494101117, 96);
-                    Class42.aStream_Sub1_936.writeShortLEA(true,
+                    Class42.outputStream.writePacket(-1494101117, 96);
+                    Class42.outputStream.writeShortLEA(true,
                         Class26.anIntArray657[i_2_]);
                 }
 

@@ -69,7 +69,7 @@ public class RSFile {
         return i_2_;
     }
 
-    public long getLength(int dummy) throws IOException {
+    public long length(int dummy) throws IOException {
         if (dummy != 1) {
             return -98L;
         }

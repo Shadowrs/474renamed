@@ -15,7 +15,7 @@ public class Class22 {
     public static int anInt576;
     public static int anInt578;
     public static int anInt579 = 0;
-    public static int anInt580;
+    public static int loginStage;
     public static int anInt581;
     public static JString aJString_583 = Class37_Sub2.method332((byte) 125,
             "Loading title screen )2 ");
@@ -26,7 +26,7 @@ public class Class22 {
 
     static {
         aJString_575 = aJString_583;
-        anInt580 = 0;
+        loginStage = 0;
     }
 
     public long aLong571;
@@ -144,7 +144,7 @@ public class Class22 {
                     i_2_);
 
                 if (anInt573 == 4) {
-                    int i_3_ = new Stream(aByteArray582).readInt(-45);
+                    int i_3_ = new Stream(aByteArray582).readInt();
                     anInt584 = 2;
                     aByteArray574 = new byte[i_3_];
                 }
@@ -171,8 +171,8 @@ public class Class22 {
         return null;
     }
 
-    public static void method232(int i, Class15 class15, boolean bool,
-        Class15 class15_5_) {
+    public static void method232(int i, JS5 class15, boolean bool,
+        JS5 class15_5_) {
         try {
             Class37_Sub4_Sub18.aClass15_2907 = class15;
             Class37_Sub9_Sub24.aClass15_3365 = class15_5_;
@@ -354,7 +354,7 @@ public class Class22 {
                                 Class37_Sub4_Sub7_Sub1_Sub1.method505((Class37_Sub9_Sub27.method881(
                                         -51,
                                         (new JString[] {
-                                            Class32.aJString_741,
+                                            AbstractDrawingArea.aJString_741,
                                             (class37_sub4_sub7_sub1_sub2.aJString_3993)
                                         }))), 1, jstring, (byte) 111);
                             }

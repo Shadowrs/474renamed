@@ -240,7 +240,7 @@ public class Class65 {
                             Class55.aBoolean1071 = false;
                         }
                     } else {
-                        Class15.method120(i_5_, 0, false, -15793,
+                        JS5.method120(i_5_, 0, false, -15793,
                             Class54.aClass15_Sub1_1060, Class77.anInt1442);
                         Class55.aBoolean1071 = false;
                     }

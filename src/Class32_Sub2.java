@@ -13,20 +13,20 @@ import java.awt.image.WritableRaster;
 import java.util.Hashtable;
 
 
-public class Class32_Sub2 extends Class32 {
+public class Class32_Sub2 extends AbstractDrawingArea {
     public Component aComponent1795;
 
     public void method290(int i, Graphics graphics, int i_0_, boolean bool) {
         if (!bool) {
-            graphics.drawImage(anImage735, i, i_0_, aComponent1795);
+            graphics.drawImage(image, i, i_0_, aComponent1795);
         }
     }
 
-    public void method292(int i, int i_1_, int i_2_, int i_3_, int i_4_,
+    public void draw(int i, int i_1_, int i_2_, int i_3_, int i_4_,
         Graphics graphics) {
         Shape shape = graphics.getClip();
         graphics.clipRect(i, i_4_, i_3_, i_2_);
-        graphics.drawImage(anImage735, 0, 0, aComponent1795);
+        graphics.drawImage(image, 0, 0, aComponent1795);
 
         int i_5_ = 54 / ((i_1_ - -64) / 42);
         graphics.setClip(shape);
@@ -44,7 +44,7 @@ public class Class32_Sub2 extends Class32 {
         WritableRaster writableraster = (Raster.createWritableRaster(directcolormodel.createCompatibleSampleModel(
                     anInt734, anInt732), databufferint, null));
         int i_8_ = 6 % ((53 - i_7_) / 32);
-        anImage735 = new BufferedImage(directcolormodel, writableraster, false,
+        image = new BufferedImage(directcolormodel, writableraster, false,
                 new Hashtable());
         aComponent1795 = component;
         method291((byte) -10);
