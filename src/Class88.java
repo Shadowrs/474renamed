@@ -97,14 +97,14 @@ public class Class88 {
             try {
                 anInt1604++;
 
-                if (class51.anEventQueue1036 != null) {
+                if (class51.systemEventQueue != null) {
                     if (i > -69) {
                         anInt1599 = 87;
                     }
 
                     for (int i_2_ = 0;
                             (((i_2_ ^ 0xffffffff) > -51) &&
-                            (class51.anEventQueue1036.peekEvent() != null));
+                            (class51.systemEventQueue.peekEvent() != null));
                             i_2_++)
                         Class37_Sub9_Sub20.method846(1L, (byte) 58);
 
@@ -112,7 +112,7 @@ public class Class88 {
                         break;
                     }
 
-                    class51.anEventQueue1036.postEvent(new ActionEvent(object,
+                    class51.systemEventQueue.postEvent(new ActionEvent(object,
                             1001, "dummy"));
                 }
             } catch (RuntimeException runtimeexception) {

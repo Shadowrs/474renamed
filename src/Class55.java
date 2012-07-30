@@ -86,7 +86,7 @@ public class Class55 implements Runnable {
                             class37_sub20.anIntArray2214[i_1_] = i_2_;
                             class37_sub20.anIntArray2204[i_1_] = i_4_;
 
-                            class37_sub20.aClass23Array2209[i_1_] = (class51.method1124(Class37_Sub9_Sub6.method783(
+                            class37_sub20.aClass23Array2209[i_1_] = (class51.createResource(Class37_Sub9_Sub6.method783(
                                         95, string), -89, string_3_));
                         } else if (((i_2_ ^ 0xffffffff) == -4) ||
                                 ((i_2_ ^ 0xffffffff) == -5)) {

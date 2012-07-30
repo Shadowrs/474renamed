@@ -652,7 +652,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable,
 
                 if (Class80.aClass51_1508 != null) {
                     try {
-                        Class80.aClass51_1508.method1125((byte) -111);
+                        Class80.aClass51_1508.close((byte) -111);
                     } catch (Exception exception) {
                         /* empty */
                     }
