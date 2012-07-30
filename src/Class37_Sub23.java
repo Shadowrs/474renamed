@@ -41,7 +41,7 @@ public class Class37_Sub23 extends Class37 {
 
         if (Class14.aClass37_Sub18Array240 != null) {
             int i_0_ = i;
-            long l = jstring.method152(i ^ ~0x42);
+            long l = jstring.toInt64(i ^ ~0x42);
 
             if ((l ^ 0xffffffffffffffffL) != -1L) {
                 for (;

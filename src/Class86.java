@@ -18,7 +18,7 @@ public class Class86 {
     }
 
     public static void method1323(byte i, JString jstring, boolean bool) {
-        jstring = jstring.method147(12131);
+        jstring = jstring.toLowerCase(12131);
 
         if (i < 88) {
             anIntArray1577 = null;
@@ -34,8 +34,8 @@ public class Class86 {
                     (byte) 127);
 
             if ((!bool || itemdef.aBoolean2421) &&
-                    (itemdef.aJString_2458.method147(12131)
-                                                        .method156(-126, jstring) != -1)) {
+                    (itemdef.aJString_2458.toLowerCase(12131)
+                                                        .indexOf(jstring) != -1)) {
                 if ((i_0_ ^ 0xffffffff) <= -101) {
                     Class37_Sub10.anInt1980 = -1;
                     Class78.aShortArray1459 = null;
@@ -72,7 +72,7 @@ public class Class86 {
                 ItemDef itemdef_7_ = Class46.method1108(is[i_6_ -
                         -1], (byte) 81);
 
-                if (itemdef.aJString_2458.method143(
+                if (itemdef.aJString_2458.compareString(
                             itemdef_7_.aJString_2458, 10303) > 0) {
                     bool_5_ = false;
 

@@ -57,11 +57,11 @@ public class Class36 {
             return 7;
         }
 
-        if (jstring.method165(Class52.aJString_1055, i ^ 0x33)) {
+        if (jstring.startsWith(Class52.aJString_1055, i ^ 0x33)) {
             return 1;
         }
 
-        if (jstring.method165(Class37_Sub9_Sub4.aJString_2984, 52)) {
+        if (jstring.startsWith(Class37_Sub9_Sub4.aJString_2984, 52)) {
             return 1;
         }
 
@@ -69,31 +69,31 @@ public class Class36 {
             aJString_807 = null;
         }
 
-        if (jstring.method165(Client.aJString_1721, 52)) {
+        if (jstring.startsWith(Client.aJString_1721, 52)) {
             return 2;
         }
 
-        if (jstring.method165(Class37_Sub9_Sub26.aJString_3389, 52)) {
+        if (jstring.startsWith(Class37_Sub9_Sub26.aJString_3389, 52)) {
             return 2;
         }
 
-        if (jstring.method165(Class37_Sub4_Sub4.aJString_2578, i + 45)) {
+        if (jstring.startsWith(Class37_Sub4_Sub4.aJString_2578, i + 45)) {
             return 3;
         }
 
-        if (jstring.method165(Class29.aJString_707, 52)) {
+        if (jstring.startsWith(Class29.aJString_707, 52)) {
             return 4;
         }
 
-        if (jstring.method165(Class50.aJString_1022, 52)) {
+        if (jstring.startsWith(Class50.aJString_1022, 52)) {
             return 4;
         }
 
-        if (jstring.method165(Class84.aJString_1530, 52)) {
+        if (jstring.startsWith(Class84.aJString_1530, 52)) {
             return 5;
         }
 
-        if (jstring.method165(Class1.aJString_70, 52)) {
+        if (jstring.startsWith(Class1.aJString_70, 52)) {
             return 6;
         }
 

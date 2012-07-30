@@ -723,7 +723,7 @@ public class Class18 {
             for (int i_31_ = 0; i_31_ < 5; i_31_++) {
                 JString jstring = stream.readString();
 
-                if (jstring.method172((byte) 38) > 0) {
+                if (jstring.length((byte) 38) > 0) {
                     aJStringArray383[i_31_] = jstring;
                     anInt322 |= (1 << (i_31_ + 23));
                 }
@@ -826,7 +826,7 @@ public class Class18 {
             for (int i_33_ = 0; i_33_ < 5; i_33_++) {
                 JString jstring = stream.readString();
 
-                if (jstring.method172((byte) 38) > 0) {
+                if (jstring.length((byte) 38) > 0) {
                     aJStringArray383[i_33_] = jstring;
                     anInt322 |= (1 << (23 + i_33_));
                 }
@@ -851,7 +851,7 @@ public class Class18 {
                     ((anInt381 ^ 0xffffffff) == -7)) {
                 aJString_421 = stream.readString();
 
-                if (aJString_421.method172((byte) 38) == 0) {
+                if (aJString_421.length((byte) 38) == 0) {
                     if ((anInt381 ^ 0xffffffff) == -2) {
                         aJString_421 = Class37_Sub9_Sub5.aJString_3005;
                     }

@@ -102,7 +102,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
             if (!(((float) anInt2970 + f_3_) < (float) i_1_) ||
                     !((f - (float) anInt2970) > (float) i_1_)) {
-                Class53.method1134(is, 0, Class32.anInt743, 0);
+                ArrayOperations.setArray(is, 0, Class32.anInt743, 0);
             } else {
                 for (int i_4_ = 0; i_4_ < Class32.anInt743; i_4_++) {
                     int i_5_ = 0;
@@ -235,7 +235,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                             if (objects[i_27_] instanceof JString) {
                                 JString jstring = (JString) objects[i_27_];
 
-                                if (jstring.method148(-79, Class32.aJString_729)) {
+                                if (jstring.equals(-79, Class32.aJString_729)) {
                                     jstring = class37_sub8.aJString_1937;
                                 }
 
@@ -709,10 +709,10 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                             JString jstring = (Class60.aJStringArray1148[--i_21_]);
                                             int[] is_51_ = null;
 
-                                            if ((jstring.method172((byte) 38) > 0) &&
-                                                    (((jstring.method161(-1 +
-                                                        (jstring.method172(
-                                                            (byte) 38)), 125)) ^
+                                            if ((jstring.length((byte) 38) > 0) &&
+                                                    (((jstring.charAt(-1 +
+                                                        (jstring.length(
+                                                            (byte) 38)))) ^
                                                     0xffffffff) == -90)) {
                                                 int i_52_ = (Class14.anIntArray248[--i_20_]);
 
@@ -724,21 +724,21 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                         is_51_[i_52_] = (Class14.anIntArray248[--i_20_]);
                                                 }
 
-                                                jstring = (jstring.method169(0,
+                                                jstring = (jstring.substring(0,
                                                         0,
                                                         -1 +
-                                                        (jstring.method172(
+                                                        (jstring.length(
                                                             (byte) 38))));
                                             }
 
-                                            Object[] objects_53_ = (new Object[(jstring.method172((byte) 38) +
+                                            Object[] objects_53_ = (new Object[(jstring.length((byte) 38) +
                                                 1)]);
 
                                             for (int i_54_ = -1 +
                                                     objects_53_.length;
                                                     i_54_ >= 1; i_54_--) {
-                                                if (((jstring.method161(-1 +
-                                                            i_54_, 49)) ^
+                                                if (((jstring.charAt(-1 +
+                                                            i_54_)) ^
                                                         0xffffffff) != -116) {
                                                     objects_53_[i_54_] = (new Integer(Class14.anIntArray248[--i_20_]));
                                                 } else {
@@ -963,8 +963,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                         int i_57_ =
                                                                             0;
 
-                                                                        if (jstring.method145(
-                                                                                    -63)) {
+                                                                        if (jstring.isNumber()) {
                                                                             i_57_ = jstring.method175(8109);
                                                                         }
 
@@ -978,7 +977,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                             Class60.aJStringArray1148[--i_21_];
                                                                         Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             82);
-                                                                        Class42.aStream_Sub1_936.writeLong(jstring.method152(
+                                                                        Class42.aStream_Sub1_936.writeLong(jstring.toInt64(
                                                                                 -69));
                                                                     } else if (i_24_ == 3106) {
                                                                         Class82.anInt1709++;
@@ -988,7 +987,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                         Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                             88);
                                                                         Class42.aStream_Sub1_936.writeSignedByte(126,
-                                                                            jstring.method172(
+                                                                            jstring.length(
                                                                                 (byte) 38) -
                                                                             -1);
                                                                         Class42.aStream_Sub1_936.writeString(jstring,
@@ -1211,40 +1210,39 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     0xffffffff) == -3606) {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
-                                                                                Class37_Sub9_Sub8.method797(jstring.method152(
+                                                                                Class37_Sub9_Sub8.method797(jstring.toInt64(
                                                                                         -62),
                                                                                     false);
                                                                             } else if ((i_24_ ^
                                                                                     0xffffffff) == -3607) {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
-                                                                                Class72.method1268(jstring.method152(
+                                                                                Class72.method1268(jstring.toInt64(
                                                                                         -78),
                                                                                     122);
                                                                             } else if (i_24_ == 3607) {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
                                                                                 Class80.method1299(0,
-                                                                                    jstring.method152(
+                                                                                    jstring.toInt64(
                                                                                         -105));
                                                                             } else if (i_24_ == 3608) {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
                                                                                 Class37_Sub9_Sub30.method895(-108,
-                                                                                    jstring.method152(
+                                                                                    jstring.toInt64(
                                                                                         -41));
                                                                             } else if (i_24_ == 3609) {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
 
-                                                                                if (jstring.method165(
+                                                                                if (jstring.startsWith(
                                                                                             Class37_Sub7.aJString_1906,
                                                                                             52) ||
-                                                                                        jstring.method165(
+                                                                                        jstring.startsWith(
                                                                                             Class42.aJString_945,
                                                                                             52)) {
-                                                                                    jstring = jstring.method158(7,
-                                                                                            -1);
+                                                                                    jstring = jstring.substring(7);
                                                                                 }
 
                                                                                 Class14.anIntArray248[i_20_++] = (!Class87.method1327(jstring,
@@ -1255,7 +1253,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                 if (Class14.aJString_252 == null) {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class3.aJString_87;
                                                                                 } else {
-                                                                                    Class60.aJStringArray1148[i_21_++] = Class14.aJString_252.method164(70);
+                                                                                    Class60.aJStringArray1148[i_21_++] = Class14.aJString_252.capitalizeAfterQuestion(70);
                                                                                 }
                                                                             } else if (i_24_ == 3612) {
                                                                                 if (Class14.aJString_252 == null) {
@@ -1274,7 +1272,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         0xffffffff))) {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class3.aJString_87;
                                                                                 } else {
-                                                                                    Class60.aJStringArray1148[i_21_++] = Class14.aClass37_Sub18Array240[i_77_].aJString_2197.method164(70);
+                                                                                    Class60.aJStringArray1148[i_21_++] = Class14.aClass37_Sub18Array240[i_77_].aJString_2197.capitalizeAfterQuestion(70);
                                                                                 }
                                                                             } else if ((i_24_ ^
                                                                                     0xffffffff) == -3615) {
@@ -1315,7 +1313,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
                                                                                 Class3.method48((byte) 117,
-                                                                                    jstring.method152(
+                                                                                    jstring.toInt64(
                                                                                         -118));
                                                                             } else if (i_24_ == 3620) {
                                                                                 Class37_Sub9_Sub16.method827(true);
@@ -1334,7 +1332,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         (Class18.anInt340 > i_80_)) {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class37_Sub4_Sub13.method708(37,
                                                                                             Class80.aLongArray1504[i_80_])
-                                                                                                                                           .method164(70);
+                                                                                                                                           .capitalizeAfterQuestion(70);
                                                                                 } else {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class3.aJString_87;
                                                                                 }
@@ -1342,14 +1340,13 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                 JString jstring =
                                                                                     Class60.aJStringArray1148[--i_21_];
 
-                                                                                if (jstring.method165(
+                                                                                if (jstring.startsWith(
                                                                                             Class37_Sub7.aJString_1906,
                                                                                             52) ||
-                                                                                        jstring.method165(
+                                                                                        jstring.startsWith(
                                                                                             Class42.aJString_945,
                                                                                             52)) {
-                                                                                    jstring = jstring.method158(7,
-                                                                                            -1);
+                                                                                    jstring = jstring.substring(7);
                                                                                 }
 
                                                                                 Class14.anIntArray248[i_20_++] = (!Class37_Sub4_Sub3.method467((byte) -35,
@@ -1362,7 +1359,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                                 if ((Class14.aClass37_Sub18Array240 == null) ||
                                                                                         (i_81_ >= Login.anInt783) ||
-                                                                                        !Class14.aClass37_Sub18Array240[i_81_].aJString_2197.method159(
+                                                                                        !Class14.aClass37_Sub18Array240[i_81_].aJString_2197.equalsIgnoreCase(
                                                                                             Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993,
                                                                                             (byte) 125)) {
                                                                                     Class14.anIntArray248[i_20_++] = 0;
@@ -1378,7 +1375,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                 if (Class37_Sub9_Sub1.aJString_2911 == null) {
                                                                                     Class60.aJStringArray1148[i_21_++] = Class3.aJString_87;
                                                                                 } else {
-                                                                                    Class60.aJStringArray1148[i_21_++] = Class37_Sub9_Sub1.aJString_2911.method164(70);
+                                                                                    Class60.aJStringArray1148[i_21_++] = Class37_Sub9_Sub1.aJString_2911.capitalizeAfterQuestion(70);
                                                                                 }
                                                                             }
                                                                         } else if ((i_24_ ^
@@ -1492,7 +1489,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         0xffffffff) == -4104) {
                                                                                     JString jstring =
                                                                                         Class60.aJStringArray1148[--i_21_];
-                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.method147(12131);
+                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.toLowerCase(12131);
                                                                                 } else if (i_24_ == 4104) {
                                                                                     int i_97_ =
                                                                                         Class14.anIntArray248[--i_20_];
@@ -1607,7 +1604,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         Class14.anIntArray248[--i_20_];
                                                                                     JString jstring =
                                                                                         Class60.aJStringArray1148[--i_21_];
-                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.method144(i_110_,
+                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.concatChar(i_110_,
                                                                                             false);
                                                                                 } else if (i_24_ == 4113) {
                                                                                     int i_111_ =
@@ -1645,7 +1642,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     if (jstring == null) {
                                                                                         Class14.anIntArray248[i_20_++] = 0;
                                                                                     } else {
-                                                                                        Class14.anIntArray248[i_20_++] = jstring.method172((byte) 38);
+                                                                                        Class14.anIntArray248[i_20_++] = jstring.length((byte) 38);
                                                                                     }
                                                                                 } else if ((i_24_ ^
                                                                                         0xffffffff) == -4119) {
@@ -1658,7 +1655,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     int i_116_ =
                                                                                         Class14.anIntArray248[1 +
                                                                                         i_20_];
-                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.method169(0,
+                                                                                    Class60.aJStringArray1148[i_21_++] = jstring.substring(0,
                                                                                             i_115_,
                                                                                             i_116_);
                                                                                 } else if ((i_24_ ^
@@ -1666,7 +1663,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     JString jstring =
                                                                                         Class60.aJStringArray1148[--i_21_];
                                                                                     JString jstring_117_ =
-                                                                                        Class37_Sub4_Sub7.method491(jstring.method172(
+                                                                                        Class37_Sub4_Sub7.method491(jstring.length(
                                                                                                 (byte) 38),
                                                                                             0);
                                                                                     boolean bool_118_ =
@@ -1675,19 +1672,18 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     for (int i_119_ =
                                                                                             0;
                                                                                             (i_119_ ^
-                                                                                            0xffffffff) > (jstring.method172(
+                                                                                            0xffffffff) > (jstring.length(
                                                                                                 (byte) 38) ^
                                                                                             0xffffffff);
                                                                                             i_119_++) {
                                                                                         int i_120_ =
-                                                                                            jstring.method161(i_119_,
-                                                                                                119);
+                                                                                            jstring.charAt(i_119_);
 
                                                                                         if (i_120_ != 60) {
                                                                                             if (i_120_ == 62) {
                                                                                                 bool_118_ = false;
                                                                                             } else if (!bool_118_) {
-                                                                                                jstring_117_.method154(0,
+                                                                                                jstring_117_.appendChar(0,
                                                                                                     i_120_);
                                                                                             }
                                                                                         } else {
@@ -1695,7 +1691,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         }
                                                                                     }
 
-                                                                                    jstring_117_.method173((byte) 125);
+                                                                                    jstring_117_.fixLength();
                                                                                     Class60.aJStringArray1148[i_21_++] = jstring_117_;
                                                                                 } else if (i_24_ == 4120) {
                                                                                     i_20_ -= 2;
@@ -1707,7 +1703,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     int i_122_ =
                                                                                         Class14.anIntArray248[i_20_ +
                                                                                         1];
-                                                                                    Class14.anIntArray248[i_20_++] = jstring.method160(i_122_,
+                                                                                    Class14.anIntArray248[i_20_++] = jstring.indexOf(i_122_,
                                                                                             i_121_,
                                                                                             25356);
                                                                                 } else {
@@ -1725,8 +1721,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     JString jstring_124_ =
                                                                                         Class60.aJStringArray1148[1 +
                                                                                         i_21_];
-                                                                                    Class14.anIntArray248[i_20_++] = jstring.method168((byte) 58,
-                                                                                            jstring_124_,
+                                                                                    Class14.anIntArray248[i_20_++] = jstring.indexOf(jstring_124_,
                                                                                             i_123_);
                                                                                 }
                                                                             } else if ((i_24_ ^
@@ -1898,7 +1893,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         Class14.anIntArray248[i_20_];
                                                                                     Class42.aStream_Sub1_936.writePacket(-1494101117,
                                                                                         198);
-                                                                                    Class42.aStream_Sub1_936.writeLong(jstring.method152(
+                                                                                    Class42.aStream_Sub1_936.writeLong(jstring.toInt64(
                                                                                             -96));
                                                                                     Class42.aStream_Sub1_936.writeSignedByte(124,
                                                                                         i_137_ -
@@ -1940,7 +1935,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                     JString jstring =
                                                                                         Class60.aJStringArray1148[--i_21_];
 
-                                                                                    if (jstring.method165(
+                                                                                    if (jstring.startsWith(
                                                                                                 Class89.aJString_1612,
                                                                                                 52)) {
                                                                                         Class37_Sub9_Sub22.method860(jstring,
@@ -1949,289 +1944,255 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                                                                         Class78.anInt1460++;
 
                                                                                         JString jstring_141_ =
-                                                                                            jstring.method147(12131);
+                                                                                            jstring.toLowerCase(12131);
                                                                                         int i_142_ =
                                                                                             0;
                                                                                         int i_143_ =
                                                                                             0;
 
-                                                                                        if (!jstring_141_.method165(
+                                                                                        if (!jstring_141_.startsWith(
                                                                                                     Class37_Sub9_Sub15.aJString_3181,
                                                                                                     52)) {
-                                                                                            if (!jstring_141_.method165(
+                                                                                            if (!jstring_141_.startsWith(
                                                                                                         Class37_Sub4_Sub17.aJString_2878,
                                                                                                         52)) {
-                                                                                                if (!jstring_141_.method165(
+                                                                                                if (!jstring_141_.startsWith(
                                                                                                             Class37_Sub9_Sub18.aJString_3235,
                                                                                                             52)) {
-                                                                                                    if (!jstring_141_.method165(
+                                                                                                    if (!jstring_141_.startsWith(
                                                                                                                 Class37_Sub5.aJString_1873,
                                                                                                                 52)) {
-                                                                                                        if (jstring_141_.method165(
+                                                                                                        if (jstring_141_.startsWith(
                                                                                                                     Class37_Sub9_Sub18.aJString_3243,
                                                                                                                     52)) {
                                                                                                             i_142_ = 4;
-                                                                                                            jstring = jstring.method158(Class37_Sub9_Sub18.aJString_3243.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
-                                                                                                        } else if (jstring_141_.method165(
+                                                                                                            jstring = jstring.substring(Class37_Sub9_Sub18.aJString_3243.length(
+                                                                                                                        (byte) 38));
+                                                                                                        } else if (jstring_141_.startsWith(
                                                                                                                     Class20.aJString_539,
                                                                                                                     52)) {
-                                                                                                            jstring = jstring.method158(Class20.aJString_539.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
+                                                                                                            jstring = jstring.substring(Class20.aJString_539.length(
+                                                                                                                        (byte) 38));
                                                                                                             i_142_ = 5;
-                                                                                                        } else if (jstring_141_.method165(
+                                                                                                        } else if (jstring_141_.startsWith(
                                                                                                                     Class37_Sub9_Sub37.aJString_3592,
                                                                                                                     52)) {
                                                                                                             i_142_ = 6;
-                                                                                                            jstring = jstring.method158(Class37_Sub9_Sub37.aJString_3592.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
-                                                                                                        } else if (jstring_141_.method165(
+                                                                                                            jstring = jstring.substring(Class37_Sub9_Sub37.aJString_3592.length(
+                                                                                                                        (byte) 38));
+                                                                                                        } else if (jstring_141_.startsWith(
                                                                                                                     Applet_Sub1.aJString_35,
                                                                                                                     52)) {
-                                                                                                            jstring = jstring.method158(Applet_Sub1.aJString_35.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
+                                                                                                            jstring = jstring.substring(Applet_Sub1.aJString_35.length(
+                                                                                                                        (byte) 38));
                                                                                                             i_142_ = 7;
-                                                                                                        } else if (jstring_141_.method165(
+                                                                                                        } else if (jstring_141_.startsWith(
                                                                                                                     Class73.aJString_1386,
                                                                                                                     52)) {
                                                                                                             i_142_ = 8;
-                                                                                                            jstring = jstring.method158(Class73.aJString_1386.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
-                                                                                                        } else if (!jstring_141_.method165(
+                                                                                                            jstring = jstring.substring(Class73.aJString_1386.length(
+                                                                                                                        (byte) 38));
+                                                                                                        } else if (!jstring_141_.startsWith(
                                                                                                                     Class37_Sub9_Sub7.aJString_3030,
                                                                                                                     52)) {
-                                                                                                            if (!jstring_141_.method165(
+                                                                                                            if (!jstring_141_.startsWith(
                                                                                                                         Class17.aJString_310,
                                                                                                                         52)) {
-                                                                                                                if (!jstring_141_.method165(
+                                                                                                                if (!jstring_141_.startsWith(
                                                                                                                             Class58.aJString_1115,
                                                                                                                             52)) {
                                                                                                                     if (Class37_Sub9_Sub25.anInt3382 != 0) {
-                                                                                                                        if (jstring_141_.method165(
+                                                                                                                        if (jstring_141_.startsWith(
                                                                                                                                     Class37_Sub9_Sub15.aJString_3178,
                                                                                                                                     52)) {
-                                                                                                                            jstring = jstring.method158(Class37_Sub9_Sub15.aJString_3178.method172(
-                                                                                                                                        (byte) 38),
-                                                                                                                                    -1);
+                                                                                                                            jstring = jstring.substring(Class37_Sub9_Sub15.aJString_3178.length(
+                                                                                                                                        (byte) 38));
                                                                                                                             i_142_ = 0;
-                                                                                                                        } else if (!jstring_141_.method165(
+                                                                                                                        } else if (!jstring_141_.startsWith(
                                                                                                                                     Class37_Sub4_Sub17.aJString_2882,
                                                                                                                                     52)) {
-                                                                                                                            if (jstring_141_.method165(
+                                                                                                                            if (jstring_141_.startsWith(
                                                                                                                                         Class37_Sub9_Sub18.aJString_3230,
                                                                                                                                         52)) {
                                                                                                                                 i_142_ = 2;
-                                                                                                                                jstring = jstring.method158(Class37_Sub9_Sub18.aJString_3230.method172(
-                                                                                                                                            (byte) 38),
-                                                                                                                                        -1);
-                                                                                                                            } else if (jstring_141_.method165(
+                                                                                                                                jstring = jstring.substring(Class37_Sub9_Sub18.aJString_3230.length(
+                                                                                                                                            (byte) 38));
+                                                                                                                            } else if (jstring_141_.startsWith(
                                                                                                                                         Class37_Sub5.aJString_1872,
                                                                                                                                         52)) {
                                                                                                                                 i_142_ = 3;
-                                                                                                                                jstring = jstring.method158(Class37_Sub5.aJString_1872.method172(
-                                                                                                                                            (byte) 38),
-                                                                                                                                        -1);
-                                                                                                                            } else if (!jstring_141_.method165(
+                                                                                                                                jstring = jstring.substring(Class37_Sub5.aJString_1872.length(
+                                                                                                                                            (byte) 38));
+                                                                                                                            } else if (!jstring_141_.startsWith(
                                                                                                                                         Class37_Sub9_Sub18.aJString_3234,
                                                                                                                                         52)) {
-                                                                                                                                if (!jstring_141_.method165(
+                                                                                                                                if (!jstring_141_.startsWith(
                                                                                                                                             Class20.aJString_557,
                                                                                                                                             52)) {
-                                                                                                                                    if (!jstring_141_.method165(
+                                                                                                                                    if (!jstring_141_.startsWith(
                                                                                                                                                 Class37_Sub9_Sub37.aJString_3588,
                                                                                                                                                 52)) {
-                                                                                                                                        if (jstring_141_.method165(
+                                                                                                                                        if (jstring_141_.startsWith(
                                                                                                                                                     Applet_Sub1.aJString_4,
                                                                                                                                                     52)) {
                                                                                                                                             i_142_ = 7;
-                                                                                                                                            jstring = jstring.method158(Applet_Sub1.aJString_4.method172(
-                                                                                                                                                        (byte) 38),
-                                                                                                                                                    -1);
-                                                                                                                                        } else if (jstring_141_.method165(
+                                                                                                                                            jstring = jstring.substring(Applet_Sub1.aJString_4.length(
+                                                                                                                                                        (byte) 38));
+                                                                                                                                        } else if (jstring_141_.startsWith(
                                                                                                                                                     Class73.aJString_1392,
                                                                                                                                                     52)) {
-                                                                                                                                            jstring = jstring.method158(Class73.aJString_1392.method172(
-                                                                                                                                                        (byte) 38),
-                                                                                                                                                    -1);
+                                                                                                                                            jstring = jstring.substring(Class73.aJString_1392.length(
+                                                                                                                                                        (byte) 38));
                                                                                                                                             i_142_ = 8;
-                                                                                                                                        } else if (!jstring_141_.method165(
+                                                                                                                                        } else if (!jstring_141_.startsWith(
                                                                                                                                                     Class37_Sub9_Sub7.aJString_3042,
                                                                                                                                                     52)) {
-                                                                                                                                            if (jstring_141_.method165(
+                                                                                                                                            if (jstring_141_.startsWith(
                                                                                                                                                         Class17.aJString_311,
                                                                                                                                                         52)) {
-                                                                                                                                                jstring = jstring.method158(Class17.aJString_311.method172(
-                                                                                                                                                            (byte) 38),
-                                                                                                                                                        -1);
+                                                                                                                                                jstring = jstring.substring(Class17.aJString_311.length(
+                                                                                                                                                            (byte) 38));
                                                                                                                                                 i_142_ = 10;
-                                                                                                                                            } else if (jstring_141_.method165(
+                                                                                                                                            } else if (jstring_141_.startsWith(
                                                                                                                                                         Class58.aJString_1104,
                                                                                                                                                         52)) {
                                                                                                                                                 i_142_ = 11;
-                                                                                                                                                jstring = jstring.method158(Class58.aJString_1104.method172(
-                                                                                                                                                            (byte) 38),
-                                                                                                                                                        -1);
+                                                                                                                                                jstring = jstring.substring(Class58.aJString_1104.length(
+                                                                                                                                                            (byte) 38));
                                                                                                                                             }
                                                                                                                                         } else {
-                                                                                                                                            jstring = jstring.method158(Class37_Sub9_Sub7.aJString_3042.method172(
-                                                                                                                                                        (byte) 38),
-                                                                                                                                                    -1);
+                                                                                                                                            jstring = jstring.substring(Class37_Sub9_Sub7.aJString_3042.length(
+                                                                                                                                                        (byte) 38));
                                                                                                                                             i_142_ = 9;
                                                                                                                                         }
                                                                                                                                     } else {
-                                                                                                                                        jstring = jstring.method158(Class37_Sub9_Sub37.aJString_3588.method172(
-                                                                                                                                                    (byte) 38),
-                                                                                                                                                -1);
+                                                                                                                                        jstring = jstring.substring(Class37_Sub9_Sub37.aJString_3588.length(
+                                                                                                                                                    (byte) 38));
                                                                                                                                         i_142_ = 6;
                                                                                                                                     }
                                                                                                                                 } else {
-                                                                                                                                    jstring = jstring.method158(Class20.aJString_557.method172(
-                                                                                                                                                (byte) 38),
-                                                                                                                                            -1);
+                                                                                                                                    jstring = jstring.substring(Class20.aJString_557.length(
+                                                                                                                                                (byte) 38));
                                                                                                                                     i_142_ = 5;
                                                                                                                                 }
                                                                                                                             } else {
                                                                                                                                 i_142_ = 4;
-                                                                                                                                jstring = jstring.method158(Class37_Sub9_Sub18.aJString_3234.method172(
-                                                                                                                                            (byte) 38),
-                                                                                                                                        -1);
+                                                                                                                                jstring = jstring.substring(Class37_Sub9_Sub18.aJString_3234.length(
+                                                                                                                                            (byte) 38));
                                                                                                                             }
                                                                                                                         } else {
                                                                                                                             i_142_ = 1;
-                                                                                                                            jstring = jstring.method158(Class37_Sub4_Sub17.aJString_2882.method172(
-                                                                                                                                        (byte) 38),
-                                                                                                                                    -1);
+                                                                                                                            jstring = jstring.substring(Class37_Sub4_Sub17.aJString_2882.length(
+                                                                                                                                        (byte) 38));
                                                                                                                         }
                                                                                                                     }
                                                                                                                 } else {
                                                                                                                     i_142_ = 11;
-                                                                                                                    jstring = jstring.method158(Class58.aJString_1115.method172(
-                                                                                                                                (byte) 38),
-                                                                                                                            -1);
+                                                                                                                    jstring = jstring.substring(Class58.aJString_1115.length(
+                                                                                                                                (byte) 38));
                                                                                                                 }
                                                                                                             } else {
                                                                                                                 i_142_ = 10;
-                                                                                                                jstring = jstring.method158(Class17.aJString_310.method172(
-                                                                                                                            (byte) 38),
-                                                                                                                        -1);
+                                                                                                                jstring = jstring.substring(Class17.aJString_310.length(
+                                                                                                                            (byte) 38));
                                                                                                             }
                                                                                                         } else {
-                                                                                                            jstring = jstring.method158(Class37_Sub9_Sub7.aJString_3030.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
+                                                                                                            jstring = jstring.substring(Class37_Sub9_Sub7.aJString_3030.length(
+                                                                                                                        (byte) 38));
                                                                                                             i_142_ = 9;
                                                                                                         }
                                                                                                     } else {
                                                                                                         i_142_ = 3;
-                                                                                                        jstring = jstring.method158(Class37_Sub5.aJString_1873.method172(
-                                                                                                                    (byte) 38),
-                                                                                                                -1);
+                                                                                                        jstring = jstring.substring(Class37_Sub5.aJString_1873.length(
+                                                                                                                    (byte) 38));
                                                                                                     }
                                                                                                 } else {
-                                                                                                    jstring = jstring.method158(Class37_Sub9_Sub18.aJString_3235.method172(
-                                                                                                                (byte) 38),
-                                                                                                            -1);
+                                                                                                    jstring = jstring.substring(Class37_Sub9_Sub18.aJString_3235.length(
+                                                                                                                (byte) 38));
                                                                                                     i_142_ = 2;
                                                                                                 }
                                                                                             } else {
-                                                                                                jstring = jstring.method158(Class37_Sub4_Sub17.aJString_2878.method172(
-                                                                                                            (byte) 38),
-                                                                                                        -1);
+                                                                                                jstring = jstring.substring(Class37_Sub4_Sub17.aJString_2878.length(
+                                                                                                            (byte) 38));
                                                                                                 i_142_ = 1;
                                                                                             }
                                                                                         } else {
-                                                                                            jstring = jstring.method158(Class37_Sub9_Sub15.aJString_3181.method172(
-                                                                                                        (byte) 38),
-                                                                                                    -1);
+                                                                                            jstring = jstring.substring(Class37_Sub9_Sub15.aJString_3181.length(
+                                                                                                        (byte) 38));
                                                                                             i_142_ = 0;
                                                                                         }
 
-                                                                                        jstring_141_ = jstring.method147(12131);
+                                                                                        jstring_141_ = jstring.toLowerCase(12131);
 
-                                                                                        if (!jstring_141_.method165(
+                                                                                        if (!jstring_141_.startsWith(
                                                                                                     Class37_Sub4_Sub15.aJString_2827,
                                                                                                     52)) {
-                                                                                            if (jstring_141_.method165(
+                                                                                            if (jstring_141_.startsWith(
                                                                                                         Class60.aJString_1159,
                                                                                                         52)) {
                                                                                                 i_143_ = 2;
-                                                                                                jstring = jstring.method158(Class60.aJString_1159.method172(
-                                                                                                            (byte) 38),
-                                                                                                        -1);
-                                                                                            } else if (jstring_141_.method165(
+                                                                                                jstring = jstring.substring(Class60.aJString_1159.length(
+                                                                                                            (byte) 38));
+                                                                                            } else if (jstring_141_.startsWith(
                                                                                                         Class37_Sub9_Sub6.aJString_3017,
                                                                                                         52)) {
                                                                                                 i_143_ = 3;
-                                                                                                jstring = jstring.method158(Class37_Sub9_Sub6.aJString_3017.method172(
-                                                                                                            (byte) 38),
-                                                                                                        -1);
-                                                                                            } else if (jstring_141_.method165(
+                                                                                                jstring = jstring.substring(Class37_Sub9_Sub6.aJString_3017.length(
+                                                                                                            (byte) 38));
+                                                                                            } else if (jstring_141_.startsWith(
                                                                                                         Class6.aJString_140,
                                                                                                         52)) {
                                                                                                 i_143_ = 4;
-                                                                                                jstring = jstring.method158(Class6.aJString_140.method172(
-                                                                                                            (byte) 38),
-                                                                                                        -1);
-                                                                                            } else if (jstring_141_.method165(
+                                                                                                jstring = jstring.substring(Class6.aJString_140.length(
+                                                                                                            (byte) 38));
+                                                                                            } else if (jstring_141_.startsWith(
                                                                                                         Class37_Sub10.aJString_1983,
                                                                                                         52)) {
                                                                                                 i_143_ = 5;
-                                                                                                jstring = jstring.method158(Class37_Sub10.aJString_1983.method172(
-                                                                                                            (byte) 38),
-                                                                                                        -1);
+                                                                                                jstring = jstring.substring(Class37_Sub10.aJString_1983.length(
+                                                                                                            (byte) 38));
                                                                                             } else if ((Class37_Sub9_Sub25.anInt3382 ^
                                                                                                     0xffffffff) != -1) {
-                                                                                                if (jstring_141_.method165(
+                                                                                                if (jstring_141_.startsWith(
                                                                                                             Class37_Sub4_Sub15.aJString_2816,
                                                                                                             52)) {
                                                                                                     i_143_ = 1;
-                                                                                                    jstring = jstring.method158(Class37_Sub4_Sub15.aJString_2816.method172(
-                                                                                                                (byte) 38),
-                                                                                                            -1);
-                                                                                                } else if (!jstring_141_.method165(
+                                                                                                    jstring = jstring.substring(Class37_Sub4_Sub15.aJString_2816.length(
+                                                                                                                (byte) 38));
+                                                                                                } else if (!jstring_141_.startsWith(
                                                                                                             Class60.aJString_1147,
                                                                                                             52)) {
-                                                                                                    if (jstring_141_.method165(
+                                                                                                    if (jstring_141_.startsWith(
                                                                                                                 Class37_Sub9_Sub6.aJString_3024,
                                                                                                                 52)) {
-                                                                                                        jstring = jstring.method158(Class37_Sub9_Sub6.aJString_3024.method172(
-                                                                                                                    (byte) 38),
-                                                                                                                -1);
+                                                                                                        jstring = jstring.substring(Class37_Sub9_Sub6.aJString_3024.length(
+                                                                                                                    (byte) 38));
                                                                                                         i_143_ = 3;
-                                                                                                    } else if (!jstring_141_.method165(
+                                                                                                    } else if (!jstring_141_.startsWith(
                                                                                                                 Class6.aJString_134,
                                                                                                                 52)) {
-                                                                                                        if (jstring_141_.method165(
+                                                                                                        if (jstring_141_.startsWith(
                                                                                                                     Class37_Sub10.aJString_1999,
                                                                                                                     52)) {
-                                                                                                            jstring = jstring.method158(Class37_Sub10.aJString_1999.method172(
-                                                                                                                        (byte) 38),
-                                                                                                                    -1);
+                                                                                                            jstring = jstring.substring(Class37_Sub10.aJString_1999.length(
+                                                                                                                        (byte) 38));
                                                                                                             i_143_ = 5;
                                                                                                         }
                                                                                                     } else {
                                                                                                         i_143_ = 4;
-                                                                                                        jstring = jstring.method158(Class6.aJString_134.method172(
-                                                                                                                    (byte) 38),
-                                                                                                                -1);
+                                                                                                        jstring = jstring.substring(Class6.aJString_134.length(
+                                                                                                                    (byte) 38));
                                                                                                     }
                                                                                                 } else {
                                                                                                     i_143_ = 2;
-                                                                                                    jstring = jstring.method158(Class60.aJString_1147.method172(
-                                                                                                                (byte) 38),
-                                                                                                            -1);
+                                                                                                    jstring = jstring.substring(Class60.aJString_1147.length(
+                                                                                                                (byte) 38));
                                                                                                 }
                                                                                             }
                                                                                         } else {
                                                                                             i_143_ = 1;
-                                                                                            jstring = jstring.method158(Class37_Sub4_Sub15.aJString_2827.method172(
-                                                                                                        (byte) 38),
-                                                                                                    -1);
+                                                                                            jstring = jstring.substring(Class37_Sub4_Sub15.aJString_2827.length(
+                                                                                                        (byte) 38));
                                                                                         }
 
                                                                                         Class42.aStream_Sub1_936.writePacket(-1494101117,
@@ -2269,7 +2230,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
 
                                                                                     int i_146_ =
                                                                                         Class42.aStream_Sub1_936.bufferLocation;
-                                                                                    Class42.aStream_Sub1_936.writeLong(jstring_145_.method152(
+                                                                                    Class42.aStream_Sub1_936.writeLong(jstring_145_.toInt64(
                                                                                             -89));
                                                                                     Class37_Sub9_Sub18.method837(Class42.aStream_Sub1_936,
                                                                                         1,
@@ -3108,7 +3069,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                                     } else if (i_24_ == 1112) {
                                         JString jstring = (Class60.aJStringArray1148[--i_21_]);
 
-                                        if (!jstring.method148(-112,
+                                        if (!jstring.equals(-112,
                                                     class18.aJString_411)) {
                                             class18.aJString_411 = jstring;
                                             Class73.method1274(class18, -1);
@@ -3302,20 +3263,20 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                             " op:" + i_24_), exception);
                     } else {
                         JString jstring = Class37_Sub4_Sub7.method491(30, 0);
-                        jstring.method157(Class37_Sub16.aJString_2150, -20035)
-                               .method157(class37_sub4_sub6.aJString_2620,
+                        jstring.append(Class37_Sub16.aJString_2150, -20035)
+                               .append(class37_sub4_sub6.aJString_2620,
                             -20035);
 
                         for (int i_227_ = Class37_Sub9_Sub29.anInt3457 - 1;
                                 i_227_ >= 0; i_227_--)
-                            jstring.method157(Class25.aJString_638, -20035)
-                                   .method157((Class37_Sub1.aClass78Array1807[i_227_].aClass37_Sub4_Sub6_1455.aJString_2620),
+                            jstring.append(Class25.aJString_638, -20035)
+                                   .append((Class37_Sub1.aClass78Array1807[i_227_].aClass37_Sub4_Sub6_1455.aJString_2620),
                                 -20035);
 
                         if ((i_24_ ^ 0xffffffff) == -41) {
                             int i_228_ = is_23_[i_22_];
-                            jstring.method157(Class76.aJString_1421, -20035)
-                                   .method157(Class37_Sub9_Sub24.method870(
+                            jstring.append(Class76.aJString_1421, -20035)
+                                   .append(Class37_Sub9_Sub24.method870(
                                     i_228_, (byte) -114), -20035);
                         }
 
@@ -3332,7 +3293,7 @@ public class Class37_Sub9_Sub4 extends Class37_Sub9 {
                         Class37_Sub9_Sub3.method768(-52,
                             ("CS2 - scr:" + class37_sub4_sub6.aLong818 +
                             " op:" + i_24_ +
-                            new String(jstring.getString())),
+                            new String(jstring.getCharArray())),
                             exception);
                     }
                 }

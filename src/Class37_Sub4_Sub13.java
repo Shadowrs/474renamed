@@ -126,8 +126,8 @@ public class Class37_Sub4_Sub13 extends Class37_Sub4 {
             }
 
             JString jstring = new JString();
-            jstring.aByteArray1669 = is;
-            jstring.anInt1650 = is.length;
+            jstring.charArray = is;
+            jstring.length = is.length;
 
             return jstring;
         } catch (RuntimeException runtimeexception) {

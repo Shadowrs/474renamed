@@ -172,7 +172,7 @@ public class PacketParser extends Class37_Sub9 {
                                 new JString[] {
                                     class56.aJString_1081,
                                     (Class37_Sub4_Sub7_Sub1_Sub2.aJString_3971)
-				}).getString();
+				}).getCharArray();
 
                         Class37_Sub8.address = new String(is, 0, is.length);
 
@@ -210,8 +210,7 @@ public class PacketParser extends Class37_Sub9 {
 
                         try {
                             applet_sub1.getAppletContext()
-                                       .showDocument(jstring.method178(
-                                    (byte) -88), "_self");
+                                       .showDocument(jstring.toURL(), "_self");
                         } catch (Exception exception) {
                             break;
                         }
@@ -331,11 +330,11 @@ public class PacketParser extends Class37_Sub9 {
 
             if (Class37_Sub9_Sub17.packetId == 237) {
                 JString jstring = Class83.packetStream.readString();
-                Object[] objects = new Object[1 + jstring.method172((byte) 38)];
+                Object[] objects = new Object[1 + jstring.length((byte) 38)];
 
-                for (int i_5_ = -1 + jstring.method172((byte) 38); i_5_ >= 0;
+                for (int i_5_ = -1 + jstring.length((byte) 38); i_5_ >= 0;
                         i_5_--) {
-                    if (jstring.method161(i_5_, 56) == 115) {
+                    if (jstring.charAt(i_5_) == 115) {
                         objects[1 + i_5_] = Class83.packetStream.readString();
                     } else {
                         objects[1 + i_5_] = new Integer(Class83.packetStream.readInt(
@@ -402,10 +401,10 @@ public class PacketParser extends Class37_Sub9 {
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -210) {
                 JString jstring = Class83.packetStream.readString();
 
-                if (jstring.method176(Class36.aJString_807, (byte) -124)) {
-                    JString jstring_8_ = (jstring.method169(0, 0,
-                            jstring.method156(-128, Class50.aJString_1023)));
-                    long l = jstring_8_.method152(-73);
+                if (jstring.endsWith(Class36.aJString_807, (byte) -124)) {
+                    JString jstring_8_ = (jstring.substring(0, 0,
+                            jstring.indexOf(Class50.aJString_1023)));
+                    long l = jstring_8_.toInt64(-73);
                     boolean bool = false;
 
                     for (int i_9_ = 0; i_9_ < Class18.anInt340; i_9_++) {
@@ -421,10 +420,10 @@ public class PacketParser extends Class37_Sub9 {
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(jstring_8_, 4,
                             (Class88.aJString_1607), (byte) 120);
                     }
-                } else if (jstring.method176(Class38.aJString_843, (byte) -124)) {
-                    JString jstring_10_ = (jstring.method169(0, 0,
-                            jstring.method156(i ^ ~0x40, Class50.aJString_1023)));
-                    long l = jstring_10_.method152(-118);
+                } else if (jstring.endsWith(Class38.aJString_843, (byte) -124)) {
+                    JString jstring_10_ = (jstring.substring(0, 0,
+                            jstring.indexOf(Class50.aJString_1023)));
+                    long l = jstring_10_.toInt64(-118);
                     boolean bool = false;
 
                     for (int i_11_ = 0;
@@ -443,11 +442,11 @@ public class PacketParser extends Class37_Sub9 {
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(jstring_10_, 8,
                             (Class89.aJString_1610), (byte) 123);
                     }
-                } else if (jstring.method176(
+                } else if (jstring.endsWith(
                             (Class37_Sub4_Sub7_Sub1.aJString_3649), (byte) -124)) {
-                    JString jstring_12_ = (jstring.method169(0, 0,
-                            jstring.method156(-119, Class50.aJString_1023)));
-                    long l = jstring_12_.method152(-71);
+                    JString jstring_12_ = (jstring.substring(0, 0,
+                            jstring.indexOf(Class50.aJString_1023)));
+                    long l = jstring_12_.toInt64(-71);
                     boolean bool = false;
 
                     for (int i_13_ = 0; Class18.anInt340 > i_13_; i_13_++) {
@@ -459,26 +458,25 @@ public class PacketParser extends Class37_Sub9 {
                     }
 
                     if (!bool && (Class52_Sub1.anInt2303 == 0)) {
-                        JString jstring_14_ = (jstring.method169(0,
+                        JString jstring_14_ = (jstring.substring(0,
                                 1 +
-                                jstring.method156(i + 42, Class50.aJString_1023),
-                                jstring.method172((byte) 38) + -9));
+                                jstring.indexOf(Class50.aJString_1023),
+                                jstring.length((byte) 38) + -9));
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(jstring_12_, 8,
                             jstring_14_, (byte) 70);
                     }
-                } else if (!jstring.method176(Class79.aJString_1497, (byte) -124)) {
-                    if (!jstring.method176(aJString_3253, (byte) -124)) {
-                        if (!jstring.method176(
+                } else if (!jstring.endsWith(Class79.aJString_1497, (byte) -124)) {
+                    if (!jstring.endsWith(aJString_3253, (byte) -124)) {
+                        if (!jstring.endsWith(
                                     (Class37_Sub4_Sub7_Sub3.aJString_3750),
                                     (byte) -124)) {
-                            if (!jstring.method176(Class82.aJString_1693,
+                            if (!jstring.endsWith(Class82.aJString_1693,
                                         (byte) -124)) {
                                 Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub9_Sub8.aJString_3045,
                                     0, jstring, (byte) -117);
                             } else {
-                                JString jstring_15_ = (jstring.method169(0, 0,
-                                        jstring.method156(i + 99,
-                                            (Class82.aJString_1693))));
+                                JString jstring_15_ = (jstring.substring(0, 0,
+                                        jstring.indexOf((Class82.aJString_1693))));
 
                                 if ((Class52_Sub1.anInt2303 ^ 0xffffffff) == -1) {
                                     Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub9_Sub8.aJString_3045,
@@ -486,9 +484,8 @@ public class PacketParser extends Class37_Sub9 {
                                 }
                             }
                         } else {
-                            JString jstring_16_ = (jstring.method169(0, 0,
-                                    jstring.method156(83,
-                                        (Class37_Sub4_Sub7_Sub3.aJString_3750))));
+                            JString jstring_16_ = (jstring.substring(0, 0,
+                                    jstring.indexOf((Class37_Sub4_Sub7_Sub3.aJString_3750))));
 
                             if (Class52_Sub1.anInt2303 == 0) {
                                 Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub9_Sub8.aJString_3045,
@@ -496,15 +493,15 @@ public class PacketParser extends Class37_Sub9 {
                             }
                         }
                     } else {
-                        JString jstring_17_ = (jstring.method169(0, 0,
-                                jstring.method156(40, aJString_3253)));
+                        JString jstring_17_ = (jstring.substring(0, 0,
+                                jstring.indexOf(aJString_3253)));
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub9_Sub8.aJString_3045,
                             11, jstring_17_, (byte) -32);
                     }
                 } else {
-                    JString jstring_18_ = (jstring.method169(0, 0,
-                            jstring.method156(-125, Class50.aJString_1023)));
-                    long l = jstring_18_.method152(-64);
+                    JString jstring_18_ = (jstring.substring(0, 0,
+                            jstring.indexOf(Class50.aJString_1023)));
+                    long l = jstring_18_.toInt64(-64);
                     boolean bool = false;
 
                     for (int i_19_ = 0;
@@ -604,7 +601,7 @@ public class PacketParser extends Class37_Sub9 {
 
                     JString jstring = (Class37_Sub4_Sub9_Sub2.method605(Class36.method319(
                                 Class83.packetStream, -57)
-                                                                               .method150(i +
+                                                                               .formatCapitalization(i +
                                 2)));
 
                     if ((i_27_ == 2) || ((i_27_ ^ 0xffffffff) == -4)) {
@@ -613,24 +610,24 @@ public class PacketParser extends Class37_Sub9 {
                                 (new JString[] {
                                     Class42.aJString_917,
                                     Class37_Sub4_Sub13.method708(37, l)
-                                                      .method164(70)
+                                                      .capitalizeAfterQuestion(70)
                                 }))), 9, 98, jstring,
                             Class37_Sub4_Sub13.method708(37, l_24_)
-                                              .method164(i + 71));
+                                              .capitalizeAfterQuestion(i + 71));
                     } else if ((i_27_ ^ 0xffffffff) != -2) {
                         Class38.method1052(Class37_Sub4_Sub13.method708(37, l)
-                                                             .method164(i + 71),
+                                                             .capitalizeAfterQuestion(i + 71),
                             9, 87, jstring,
-                            Class37_Sub4_Sub13.method708(37, l_24_).method164(70));
+                            Class37_Sub4_Sub13.method708(37, l_24_).capitalizeAfterQuestion(70));
                     } else {
                         Class38.method1052((Class37_Sub9_Sub27.method881(i +
                                 111,
                                 (new JString[] {
                                     Class32.aJString_741,
                                     Class37_Sub4_Sub13.method708(37, l)
-                                                      .method164(70)
+                                                      .capitalizeAfterQuestion(70)
                                 }))), 9, 109, jstring,
-                            Class37_Sub4_Sub13.method708(37, l_24_).method164(70));
+                            Class37_Sub4_Sub13.method708(37, l_24_).capitalizeAfterQuestion(70));
                     }
                 }
 
@@ -998,7 +995,7 @@ public class PacketParser extends Class37_Sub9 {
 
                     JString jstring = (Class37_Sub4_Sub9_Sub2.method605(Class36.method319(
                                 Class83.packetStream, -68)
-                                                                               .method150(1)));
+                                                                               .formatCapitalization(1)));
 
                     if (((i_65_ ^ 0xffffffff) != -3) &&
                             ((i_65_ ^ 0xffffffff) != -4)) {
@@ -1008,11 +1005,11 @@ public class PacketParser extends Class37_Sub9 {
                                     new JString[] {
                                         Class32.aJString_741,
                                         Class37_Sub4_Sub13.method708(37, l)
-                                                          .method164(70)
+                                                          .capitalizeAfterQuestion(70)
                                     })), 7, jstring, (byte) 85);
                         } else {
                             Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub4_Sub13.method708(i ^
-                                    ~0x25, l).method164(70), 3, jstring,
+                                    ~0x25, l).capitalizeAfterQuestion(70), 3, jstring,
                                 (byte) 111);
                         }
                     } else {
@@ -1021,7 +1018,7 @@ public class PacketParser extends Class37_Sub9 {
                                 new JString[] {
                                     Class42.aJString_917,
                                     Class37_Sub4_Sub13.method708(37, l)
-                                                      .method164(70)
+                                                      .capitalizeAfterQuestion(70)
                                 })), 7, jstring, (byte) -107);
                     }
                 }
@@ -1302,7 +1299,7 @@ public class PacketParser extends Class37_Sub9 {
                     bool = true;
 
                     for (int i_90_ = 0; i_90_ < i_89_; i_90_++) {
-                        if (((class37_sub18s[i_90_].aJString_2197.method143(
+                        if (((class37_sub18s[i_90_].aJString_2197.compareString(
                                     class37_sub18s[i_90_ + 1].aJString_2197,
                                     10303)) ^ 0xffffffff) < -1) {
                             Class37_Sub18 class37_sub18 = class37_sub18s[i_90_];
@@ -1453,7 +1450,7 @@ public class PacketParser extends Class37_Sub9 {
                 int i_103_ = Class83.packetStream.readByte(i ^
                         ~0x76);
                 JString jstring = Class37_Sub4_Sub13.method708(37, l)
-                                                    .method164(i + 71);
+                                                    .capitalizeAfterQuestion(i + 71);
 
                 for (int i_104_ = 0;
                         (RSApplet.anInt173 ^ 0xffffffff) < (i_104_ ^ 0xffffffff);
@@ -1801,7 +1798,7 @@ public class PacketParser extends Class37_Sub9 {
 
                     for (i_136_ = Login.anInt783 - 1; i_136_ >= 0;
                             i_136_--) {
-                        int i_137_ = (Class14.aClass37_Sub18Array240[i_136_].aJString_2197.method143(class37_sub18.aJString_2197,
+                        int i_137_ = (Class14.aClass37_Sub18Array240[i_136_].aJString_2197.compareString(class37_sub18.aJString_2197,
                                 10303));
 
                         if ((i_137_ ^ 0xffffffff) == -1) {
@@ -1916,7 +1913,7 @@ public class PacketParser extends Class37_Sub9 {
 
                 if (((i_151_ ^ 0xffffffff) <= -2) &&
                         ((i_151_ ^ 0xffffffff) >= -9)) {
-                    if (jstring.method159(Class37_Sub9_Sub17.aJString_3226,
+                    if (jstring.equalsIgnoreCase(Class37_Sub9_Sub17.aJString_3226,
                                 (byte) 71)) {
                         jstring = null;
                     }
@@ -1978,7 +1975,7 @@ public class PacketParser extends Class37_Sub9 {
                 Class18 class18 = Class37_Sub9_Sub14.method820(i_154_,
                         i ^ ~0x1000);
 
-                if (!jstring.method148(-107, class18.aJString_411)) {
+                if (!jstring.equals(-107, class18.aJString_411)) {
                     class18.aJString_411 = jstring;
                     Class73.method1274(class18, -1);
                 }
@@ -2013,9 +2010,9 @@ public class PacketParser extends Class37_Sub9 {
             if (Class37_Sub9_Sub17.packetId == 57) {
                 long l = Class83.packetStream.readLongDuplicate(false);
                 JString jstring = (Class37_Sub4_Sub9_Sub2.method605(Class36.method319(
-                            Class83.packetStream, -58).method150(1)));
+                            Class83.packetStream, -58).formatCapitalization(1)));
                 Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub4_Sub13.method708(
-                        37, l).method164(70), 6, jstring, (byte) -87);
+                        37, l).capitalizeAfterQuestion(70), 6, jstring, (byte) -87);
                 Class37_Sub9_Sub17.packetId = -1;
 
                 return true;

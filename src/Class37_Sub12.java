@@ -118,8 +118,8 @@ public class Class37_Sub12 extends Class37 {
         anInt2094++;
 
         JString jstring = new JString();
-        jstring.anInt1650 = 0;
-        jstring.aByteArray1669 = new byte[i_11_];
+        jstring.length = 0;
+        jstring.charArray = new byte[i_11_];
 
         if (i != -17) {
             return null;
@@ -127,7 +127,7 @@ public class Class37_Sub12 extends Class37 {
 
         for (int i_13_ = i_12_; i_13_ < (i_11_ + i_12_); i_13_++) {
             if ((is[i_13_] ^ 0xffffffff) != -1) {
-                jstring.aByteArray1669[jstring.anInt1650++] = is[i_13_];
+                jstring.charArray[jstring.length++] = is[i_13_];
             }
         }
 

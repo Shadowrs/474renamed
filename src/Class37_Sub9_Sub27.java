@@ -268,7 +268,7 @@ while_95_:
                     Class37_Sub4_Sub7_Sub1_Sub2.anInt3989)), 0, -101);
 
             if (!aBoolean3397) {
-                Class53.method1137(is_14_, 0, is, 0, Class32.anInt743);
+                ArrayOperations.copyArray(is_14_, 0, is, 0, Class32.anInt743);
             } else {
                 for (int i_15_ = 0;
                         (Class32.anInt743 ^ 0xffffffff) < (i_15_ ^ 0xffffffff);

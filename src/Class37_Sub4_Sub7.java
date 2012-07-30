@@ -91,8 +91,8 @@ public abstract class Class37_Sub4_Sub7 extends Class37_Sub4 {
         anInt2629++;
 
         JString jstring = new JString();
-        jstring.anInt1650 = i_7_;
-        jstring.aByteArray1669 = new byte[i];
+        jstring.length = i_7_;
+        jstring.charArray = new byte[i];
 
         return jstring;
     }

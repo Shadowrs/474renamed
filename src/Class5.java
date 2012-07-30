@@ -96,7 +96,7 @@ public class Class5 {
     }
 
     public int[] method56(int i, int i_2_) {
-        Class53.method1136(anIntArray128, 0, i);
+        ArrayOperations.clearArray(anIntArray128, 0, i);
 
         if (i_2_ < 10) {
             return anIntArray128;

@@ -157,15 +157,15 @@ public class PacketStream extends Stream {
 
 		JString jstring = Class37_Sub9_Sub24.method870(i, (byte) -114);
 
-		for (int i_8_ = jstring.method172((byte) 38) + -3; i_8_ > 0; i_8_ -= 3)
-			jstring = (Class37_Sub9_Sub27.method881(-29, new JString[] { jstring.method169(0, 0, i_8_), Class37_Sub4_Sub6.aJString_2621, jstring.method158(i_8_, -1) }));
+		for (int i_8_ = jstring.length((byte) 38) + -3; i_8_ > 0; i_8_ -= 3)
+			jstring = (Class37_Sub9_Sub27.method881(-29, new JString[] { jstring.substring(0, 0, i_8_), Class37_Sub4_Sub6.aJString_2621, jstring.substring(i_8_) }));
 
-		if (jstring.method172((byte) 38) > 9) {
-			return (Class37_Sub9_Sub27.method881(119, (new JString[] { Class75.aJString_1410, jstring.method169(0, 0, jstring.method172((byte) 38) + -8), Class65.aJString_1228, Class37_Sub9_Sub24.aJString_3370, jstring, Class2.aJString_80 })));
+		if (jstring.length((byte) 38) > 9) {
+			return (Class37_Sub9_Sub27.method881(119, (new JString[] { Class75.aJString_1410, jstring.substring(0, 0, jstring.length((byte) 38) + -8), Class65.aJString_1228, Class37_Sub9_Sub24.aJString_3370, jstring, Class2.aJString_80 })));
 		}
 
-		if ((jstring.method172((byte) 38) ^ 0xffffffff) < -7) {
-			return (Class37_Sub9_Sub27.method881(115, (new JString[] { Class37_Sub23.aJString_2235, jstring.method169(0, 0, jstring.method172((byte) 38) + -4), Class27.aJString_667, Class37_Sub9_Sub24.aJString_3370, jstring, Class2.aJString_80 })));
+		if ((jstring.length((byte) 38) ^ 0xffffffff) < -7) {
+			return (Class37_Sub9_Sub27.method881(115, (new JString[] { Class37_Sub23.aJString_2235, jstring.substring(0, 0, jstring.length((byte) 38) + -4), Class27.aJString_667, Class37_Sub9_Sub24.aJString_3370, jstring, Class2.aJString_80 })));
 		}
 
 		return Class37_Sub9_Sub27.method881(-63, (new JString[] { RSSocket.aJString_471, jstring, (Class37_Sub9_Sub22.aJString_3332) }));

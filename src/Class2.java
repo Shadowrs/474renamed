@@ -33,14 +33,14 @@ public class Class2 {
         }
 
         boolean bool = false;
-        JString jstring_1_ = jstring.method167(-1).method164(70);
+        JString jstring_1_ = jstring.formatUsername(-1).capitalizeAfterQuestion(70);
 
         for (int i_2_ = 0; i_2_ < RSSocket.anInt487; i_2_++) {
             Class37_Sub4_Sub7_Sub1_Sub2 class37_sub4_sub7_sub1_sub2 = (Class75.aClass37_Sub4_Sub7_Sub1_Sub2Array1414[Class26.anIntArray657[i_2_]]);
 
             if ((class37_sub4_sub7_sub1_sub2 != null) &&
                     (class37_sub4_sub7_sub1_sub2.aJString_3993 != null) &&
-                    class37_sub4_sub7_sub1_sub2.aJString_3993.method159(
+                    class37_sub4_sub7_sub1_sub2.aJString_3993.equalsIgnoreCase(
                         jstring_1_, (byte) 108)) {
                 Class37_Sub4.method434((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anIntArray3669[0]),
                     0, class37_sub4_sub7_sub1_sub2.anIntArray3651[0],

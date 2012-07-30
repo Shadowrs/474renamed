@@ -334,16 +334,16 @@ while_71_:
                                 0xffffffff)) &&
                                 ((i_41_ ^ 0xffffffff) >= ((20 + i_47_) ^
                                 0xffffffff))) {
-                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.method167(-1)
-                                                                                               .method164(70);
+                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.formatUsername(-1)
+                                                                                               .capitalizeAfterQuestion(70);
 
-                            if ((Class37_Sub9_Sub33.aJString_3526.method172(
+                            if ((Class37_Sub9_Sub33.aJString_3526.length(
                                         (byte) 38) ^ 0xffffffff) == -1) {
                                 Class32_Sub1.method293((byte) -126,
                                     (ItemDef.aJString_2438),
                                     (ItemDef.aJString_2516),
                                     Login.aJString_787);
-                            } else if ((Class37_Sub9_Sub33.aJString_3525.method172(
+                            } else if ((Class37_Sub9_Sub33.aJString_3525.length(
                                         (byte) 38) ^ 0xffffffff) == -1) {
                                 Class32_Sub1.method293((byte) -125,
                                     ItemDef.aJString_2461,
@@ -377,11 +377,11 @@ while_71_:
                                 boolean bool = false;
 
                                 for (int i_48_ = 0;
-                                        ((i_48_ ^ 0xffffffff) > (Class45.aJString_972.method172(
+                                        ((i_48_ ^ 0xffffffff) > (Class45.aJString_972.length(
                                             (byte) 38) ^ 0xffffffff));
                                         i_48_++) {
-                                    if ((Class88.anInt1600 ^ 0xffffffff) == (Class45.aJString_972.method161(
-                                                i_48_, 115) ^ 0xffffffff)) {
+                                    if ((Class88.anInt1600 ^ 0xffffffff) == (Class45.aJString_972.charAt(
+                                                i_48_) ^ 0xffffffff)) {
                                         bool = true;
 
                                         break;
@@ -392,12 +392,12 @@ while_71_:
                                     if (Class37_Sub9_Sub31.anInt3495 == 1) {
                                         if (((Class37_Sub4_Sub3.anInt2560 ^
                                                 0xffffffff) == -86) &&
-                                                ((Class37_Sub9_Sub33.aJString_3525.method172(
+                                                ((Class37_Sub9_Sub33.aJString_3525.length(
                                                     (byte) 38) ^ 0xffffffff) < -1)) {
-                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.method169(0,
+                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.substring(0,
                                                     0,
                                                     -1 +
-                                                    (Class37_Sub9_Sub33.aJString_3525.method172(
+                                                    (Class37_Sub9_Sub33.aJString_3525.length(
                                                         (byte) 38))));
                                         }
 
@@ -411,17 +411,17 @@ while_71_:
                                                 0xffffffff) != -1) &&
                                                 ((Class37_Sub4_Sub3.anInt2560 ^
                                                 0xffffffff) == -85)) {
-                                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.method167(i ^
-                                                    0xffffffff).method164(70);
+                                            Class37_Sub9_Sub33.aJString_3526 = Class37_Sub9_Sub33.aJString_3526.formatUsername(i ^
+                                                    0xffffffff).capitalizeAfterQuestion(70);
 
-                                            if (Class37_Sub9_Sub33.aJString_3526.method172(
+                                            if (Class37_Sub9_Sub33.aJString_3526.length(
                                                         (byte) 38) == 0) {
                                                 Class32_Sub1.method293((byte) -125,
                                                     (ItemDef.aJString_2438),
                                                     (ItemDef.aJString_2516),
                                                     Login.aJString_787);
                                             } else {
-                                                if ((Class37_Sub9_Sub33.aJString_3525.method172(
+                                                if ((Class37_Sub9_Sub33.aJString_3525.length(
                                                             (byte) 38) ^
                                                         0xffffffff) == -1) {
                                                     Class32_Sub1.method293((byte) -125,
@@ -446,20 +446,20 @@ while_71_:
                                         }
 
                                         if (bool &&
-                                                (Class37_Sub9_Sub33.aJString_3525.method172(
+                                                (Class37_Sub9_Sub33.aJString_3525.length(
                                                     (byte) 38) < 20)) {
-                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.method144(Class88.anInt1600,
+                                            Class37_Sub9_Sub33.aJString_3525 = (Class37_Sub9_Sub33.aJString_3525.concatChar(Class88.anInt1600,
                                                     false));
                                         }
                                     }
                                 } else {
                                     if (((Class37_Sub4_Sub3.anInt2560 ^
                                             0xffffffff) == -86) &&
-                                            (Class37_Sub9_Sub33.aJString_3526.method172(
+                                            (Class37_Sub9_Sub33.aJString_3526.length(
                                                 (byte) 38) > 0)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.method169(0,
+                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.substring(0,
                                                 0,
-                                                (Class37_Sub9_Sub33.aJString_3526.method172(
+                                                (Class37_Sub9_Sub33.aJString_3526.length(
                                                     (byte) 38) - 1)));
                                     }
 
@@ -470,9 +470,9 @@ while_71_:
                                     }
 
                                     if (bool &&
-                                            ((Class37_Sub9_Sub33.aJString_3526.method172(
+                                            ((Class37_Sub9_Sub33.aJString_3526.length(
                                                 (byte) 38) ^ 0xffffffff) > -13)) {
-                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.method144(Class88.anInt1600,
+                                        Class37_Sub9_Sub33.aJString_3526 = (Class37_Sub9_Sub33.aJString_3526.concatChar(Class88.anInt1600,
                                                 false));
                                     }
                                 }

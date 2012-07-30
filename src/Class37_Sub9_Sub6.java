@@ -380,8 +380,7 @@ while_54_:
                                 -28,
                                 (new JString[] {
                                     Class37_Sub4_Sub12.aJString_2786,
-                                    Class37_Sub9_Sub33.aJString_3525.method163(
-                                        -40)
+                                    Class37_Sub9_Sub33.aJString_3525.censor()
                                 }))), 274, i_12_, 16777215, 0);
                         i_12_ += 15;
                     }
@@ -482,8 +481,7 @@ while_54_:
                                     -60,
                                     (new JString[] {
                                         Class37_Sub4_Sub12.aJString_2786,
-                                        Class37_Sub9_Sub33.aJString_3525.method163(
-                                            -123),
+                                        Class37_Sub9_Sub33.aJString_3525.censor(),
                                         (bool ? Class25.aJString_647
                                               : (Class37_Sub9_Sub33.aJString_3524))
                                     }))), 274, i_19_, 16777215, 0);

@@ -25,7 +25,7 @@ public class Class80 {
                         0, Class24.aJString_596, (byte) 87);
                 } else {
                     JString jstring = Class37_Sub4_Sub13.method708(37, l)
-                                                        .method164(70);
+                                                        .capitalizeAfterQuestion(70);
 
                     for (int i_0_ = i;
                             (Class18.anInt340 ^ 0xffffffff) < (i_0_ ^
@@ -59,7 +59,7 @@ public class Class80 {
                         }
                     }
 
-                    if (jstring.method148(-94,
+                    if (jstring.equals(-94,
                                 (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993))) {
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(Class37_Sub9_Sub8.aJString_3045,
                             0, Class37_Sub23.aJString_2239, (byte) 71);

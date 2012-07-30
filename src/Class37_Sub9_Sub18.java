@@ -138,11 +138,11 @@ public class Class37_Sub9_Sub18 extends Class37_Sub9 {
             }
 
             int i_15_ = stream.bufferLocation;
-            stream.writeSignedByteOrShort((byte) 37, jstring.anInt1650);
+            stream.writeSignedByteOrShort((byte) 37, jstring.length);
 
             stream.bufferLocation += (Class15_Sub1.aClass14_1746.method105(32,
                 stream.buffer, 0, stream.bufferLocation,
-                jstring.anInt1650, jstring.aByteArray1669));
+                jstring.length, jstring.charArray));
 
             return stream.bufferLocation + -i_15_;
         } catch (RuntimeException runtimeexception) {

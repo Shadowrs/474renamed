@@ -191,7 +191,7 @@ while_59_:
                     }
                 }
 
-                Class53.method1134(is, 0, Class32.anInt743, i_9_);
+                ArrayOperations.setArray(is, 0, Class32.anInt743, i_9_);
             } else {
                 for (int i_11_ = 0;
                         (Class32.anInt743 ^ 0xffffffff) < (i_11_ ^ 0xffffffff);
@@ -286,7 +286,7 @@ while_60_:
                         (Class37_Sub4_Sub6.aJString_2624), (byte) 124);
                 } else {
                     JString jstring = Class37_Sub4_Sub13.method708(37, l)
-                                                        .method164(70);
+                                                        .capitalizeAfterQuestion(70);
 
                     for (int i = 0;
                             (RSApplet.anInt173 ^ 0xffffffff) < (i ^ 0xffffffff);
@@ -325,7 +325,7 @@ while_60_:
                         anInt3063 = -105;
                     }
 
-                    if (jstring.method148(-83,
+                    if (jstring.equals(-83,
                                 (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993))) {
                         Class37_Sub4_Sub7_Sub1_Sub1.method505(aJString_3045, 0,
                             (Class37_Sub2.aJString_1819), (byte) -104);

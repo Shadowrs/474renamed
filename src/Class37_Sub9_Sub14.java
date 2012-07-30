@@ -103,7 +103,7 @@ public class Class37_Sub9_Sub14 extends Class37_Sub9 {
         int[] is = aClass38_1966.method1049(i_3_, true);
 
         if (aClass38_1966.aBoolean850) {
-            Class53.method1134(is, 0, Class32.anInt743, anInt3154);
+            ArrayOperations.setArray(is, 0, Class32.anInt743, anInt3154);
         }
 
         anInt3146++;

@@ -123,9 +123,9 @@ public class Class72 {
                         30);
                     graphics_3_.setFont(Class37_Sub9_Sub37.aFont3606);
                     graphics_3_.setColor(Color.white);
-                    jstring.method180(graphics_3_, i + 47,
-                        (-jstring.method174((Class88.aFontMetrics1598), 123) +
-                        304) / 2, 22);
+                    jstring.draw(graphics_3_, (-jstring.getWidth((Class88.aFontMetrics1598), 123) +
+					304) / 2,
+                        22);
                     graphics.drawImage(Class37_Sub6.anImage1885,
                         (Class73.anInt1393 / 2) + -152,
                         -18 + (Class46.anInt980 / 2), null);
@@ -141,10 +141,10 @@ public class Class72 {
                         -(3 * i_2_) + 300, 30);
                     graphics.setFont(Class37_Sub9_Sub37.aFont3606);
                     graphics.setColor(Color.white);
-                    jstring.method180(graphics, i + 47,
-                        ((304 +
-                        -jstring.method174(Class88.aFontMetrics1598, 113)) / 2) +
-                        i_4_, 22 + i_5_);
+                    jstring.draw(graphics, ((304 +
+					-jstring.getWidth(Class88.aFontMetrics1598, 113)) / 2) +
+					i_4_,
+                        22 + i_5_);
                 }
             } catch (Exception exception) {
                 Class37_Sub9.aCanvas1967.repaint();

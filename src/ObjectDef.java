@@ -729,7 +729,7 @@ public class ObjectDef extends Class37_Sub4 {
                                     } else {
                                         contextMenu[objectProperties - 30] = stream.readString();
 
-                                        if (contextMenu[objectProperties - 30].method159(Stream.aJString_2059,(byte) 113)) {
+                                        if (contextMenu[objectProperties - 30].equalsIgnoreCase(Stream.aJString_2059,(byte) 113)) {
                                             contextMenu[objectProperties - 30] = null;
                                         }
                                     }
@@ -763,7 +763,7 @@ public class ObjectDef extends Class37_Sub4 {
     }
 
     public void dump(BufferedWriter writer) throws Exception {
-	String name_ = (new String(name.getString()));
+	String name_ = (new String(name.getCharArray()));
 	if (name_ != null) {
 		writer.write("ObjectId " + id + " Name: " + name_);
 		writer.newLine();
@@ -777,7 +777,7 @@ public class ObjectDef extends Class37_Sub4 {
 	} else {
 		for (int i = 0; i < contextMenu.length; ++i) {
 			try {
-				String context_ = (new String(contextMenu[i].getString()));
+				String context_ = (new String(contextMenu[i].getCharArray()));
 				writer.write("ContextMenu[" + i + "]: " + context_);
 			} catch (Exception e) {
 				writer.write("ContextMenu[" + i + "]: NULL");
@@ -979,7 +979,7 @@ public class ObjectDef extends Class37_Sub4 {
     }
 
     public void dump() {
-	System.out.print("ID: " + id + " NAME: " + new String((name.getString())) + " Array: [");
+	System.out.print("ID: " + id + " NAME: " + new String((name.getCharArray())) + " Array: [");
 	if (anIntArray2732 == null) {
 		System.out.println("]: NULL");
 	} else {

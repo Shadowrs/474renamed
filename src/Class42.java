@@ -100,7 +100,7 @@ public class Class42 {
             if ((aLong913 != -1L) && (aLong913 <= aLong943) &&
                     (((aLong943 + (long) i_3_) ^ 0xffffffffffffffffL) >= ((aLong913 -
                     -(long) anInt928) ^ 0xffffffffffffffffL))) {
-                Class53.method1135(aByteArray926, (int) (-aLong913 + aLong943),
+                ArrayOperations.copyArray(aByteArray926, (int) (-aLong913 + aLong943),
                     is, i, i_3_);
                 aLong943 += (long) i_3_;
 
@@ -120,7 +120,7 @@ public class Class42 {
                 }
 
                 i_3_ -= i_6_;
-                Class53.method1135(aByteArray921, (int) (-aLong929 + aLong943),
+                ArrayOperations.copyArray(aByteArray921, (int) (-aLong929 + aLong943),
                     is, i, i_6_);
                 i += i_6_;
                 aLong943 += (long) i_6_;
@@ -137,7 +137,7 @@ public class Class42 {
                     }
 
                     i_3_ -= i_7_;
-                    Class53.method1135(aByteArray921, 0, is, i, i_7_);
+                    ArrayOperations.copyArray(aByteArray921, 0, is, i, i_7_);
                     aLong943 += (long) i_7_;
                     i += i_7_;
                 }
@@ -201,7 +201,7 @@ public class Class42 {
                         ((l_11_ ^ 0xffffffffffffffffL) < (l_10_ ^
                         0xffffffffffffffffL))) {
                     int i_12_ = (int) (-l_10_ + l_11_);
-                    Class53.method1135(aByteArray926,
+                    ArrayOperations.copyArray(aByteArray926,
                         (int) (-aLong913 + l_10_), is,
                         (int) (l_10_ - l) + i_4_, i_12_);
 
@@ -950,7 +950,7 @@ public class Class42 {
                 int i_51_ = (int) ((long) aByteArray926.length -
                     (aLong943 - aLong913));
                 i_50_ -= i_51_;
-                Class53.method1135(is, i, aByteArray926,
+                ArrayOperations.copyArray(is, i, aByteArray926,
                     (int) (aLong943 - aLong913), i_51_);
                 aLong943 += (long) i_51_;
                 i += i_51_;
@@ -1000,7 +1000,7 @@ public class Class42 {
 
                 if (((l ^ 0xffffffffffffffffL) < 0L) && (l_52_ > l)) {
                     int i_53_ = (int) (-l + l_52_);
-                    Class53.method1135(is, (int) (-aLong943 + ((long) i + l)),
+                    ArrayOperations.copyArray(is, (int) (-aLong943 + ((long) i + l)),
                         aByteArray921, (int) (-aLong929 + l), i_53_);
                 }
 
@@ -1010,7 +1010,7 @@ public class Class42 {
                     aLong913 = aLong943;
                 }
 
-                Class53.method1135(is, i, aByteArray926,
+                ArrayOperations.copyArray(is, i, aByteArray926,
                     (int) (-aLong913 + aLong943), i_50_);
                 aLong943 += (long) i_50_;
 
@@ -1128,7 +1128,7 @@ public class Class42 {
                         ((l ^ 0xffffffffffffffffL) < (l_57_ ^
                         0xffffffffffffffffL))) {
                     int i_58_ = (int) (-l_57_ + l);
-                    Class53.method1135(aByteArray926, (int) (l_57_ - aLong913),
+                    ArrayOperations.copyArray(aByteArray926, (int) (l_57_ - aLong913),
                         aByteArray921, (int) (l_57_ + -aLong929), i_58_);
                 }
 
