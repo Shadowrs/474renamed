@@ -56,7 +56,7 @@ public class Class39 {
         }
 
         byte[] is_1_ = new byte[i_0_];
-        Class53.method1135(is, 0, is_1_, 0, i_0_);
+        ArrayOperations.copyArray(is, 0, is_1_, 0, i_0_);
 
         return is_1_;
     }

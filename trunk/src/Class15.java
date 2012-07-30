@@ -497,9 +497,9 @@ public abstract class Class15 {
 
     public void method121(JString jstring, byte i) {
         anInt292++;
-        jstring = jstring.method147(12131);
+        jstring = jstring.toLowerCase(12131);
 
-        int i_47_ = aClass60_284.method1168(-1, jstring.method162((byte) -106));
+        int i_47_ = aClass60_284.method1168(-1, jstring.getHashCode((byte) -106));
 
         if (i < 25) {
             method127(false);
@@ -553,9 +553,9 @@ public abstract class Class15 {
             method108((byte) 10);
         }
 
-        jstring = jstring.method147(12131);
+        jstring = jstring.toLowerCase(12131);
 
-        return aClass60_284.method1168(-1, jstring.method162((byte) -126));
+        return aClass60_284.method1168(-1, jstring.getHashCode((byte) -126));
     }
 
     public void method124(int i, int i_48_) {
@@ -591,15 +591,15 @@ public abstract class Class15 {
 
     public byte[] method126(byte i, JString jstring, JString jstring_51_) {
         try {
-            jstring = jstring.method147(12131);
-            jstring_51_ = jstring_51_.method147(12131);
+            jstring = jstring.toLowerCase(12131);
+            jstring_51_ = jstring_51_.toLowerCase(12131);
             anInt264++;
 
             int i_52_ = aClass60_284.method1168(-1,
-                    jstring.method162((byte) -109));
+                    jstring.getHashCode((byte) -109));
             int i_53_ = 53 / ((36 - i) / 62);
             int i_54_ = aClass60Array276[i_52_].method1168(-1,
-                    jstring_51_.method162((byte) -128));
+                    jstring_51_.getHashCode((byte) -128));
 
             return method131(i_54_, i_52_, 1);
         } catch (RuntimeException runtimeexception) {
@@ -630,11 +630,11 @@ public abstract class Class15 {
             method115(91, 91, -126);
         }
 
-        jstring = jstring.method147(12131);
+        jstring = jstring.toLowerCase(12131);
         anInt274++;
 
         return aClass60Array276[i_56_].method1168(-1,
-            jstring.method162((byte) -118));
+            jstring.getHashCode((byte) -118));
     }
 
     public int method129(int i, int i_57_) {
@@ -649,19 +649,19 @@ public abstract class Class15 {
 
     public boolean method130(JString jstring, JString jstring_58_, int i) {
         try {
-            jstring = jstring.method147(12131);
+            jstring = jstring.toLowerCase(12131);
 
             if (i > -66) {
                 anObjectArrayArray253 = null;
             }
 
             anInt261++;
-            jstring_58_ = jstring_58_.method147(12131);
+            jstring_58_ = jstring_58_.toLowerCase(12131);
 
             int i_59_ = aClass60_284.method1168(-1,
-                    jstring.method162((byte) -117));
+                    jstring.getHashCode((byte) -117));
             int i_60_ = aClass60Array276[i_59_].method1168(-1,
-                    jstring_58_.method162((byte) -125));
+                    jstring_58_.getHashCode((byte) -125));
 
             return method115(-9350, i_59_, i_60_);
         } catch (RuntimeException runtimeexception) {
@@ -774,7 +774,7 @@ public abstract class Class15 {
 
                 for (int i_80_ = 0; i_80_ < i_65_; i_80_++) {
                     i_79_ += stream.readInt(-74);
-                    Class53.method1135(is_68_, i_77_, is_75_[i_80_],
+                    ArrayOperations.copyArray(is_68_, i_77_, is_75_[i_80_],
                         is_71_[i_80_], i_79_);
                     i_77_ += i_79_;
                     is_71_[i_80_] += i_79_;

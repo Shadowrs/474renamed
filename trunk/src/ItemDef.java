@@ -337,7 +337,7 @@ public class ItemDef extends Class37_Sub4 {
                                             ((i ^ 0xffffffff) > -36)) {
                                         aJStringArray2459[i - 30] = stream.readString();
 
-                                        if (aJStringArray2459[i + -30].method159(
+                                        if (aJStringArray2459[i + -30].equalsIgnoreCase(
                                                     Stream.aJString_2059,
                                                     (byte) 78)) {
                                             aJStringArray2459[i - 30] = null;

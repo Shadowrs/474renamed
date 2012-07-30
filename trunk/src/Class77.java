@@ -163,7 +163,7 @@ public class Class77 {
                     int i_21_ = (-((Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.anInt3666) / 32) +
                         (class37_sub4_sub7_sub1_sub2.anInt3666 / 32));
                     boolean bool = false;
-                    long l = class37_sub4_sub7_sub1_sub2.aJString_3993.method152(-86);
+                    long l = class37_sub4_sub7_sub1_sub2.aJString_3993.toInt64(-86);
 
                     for (int i_22_ = 0;
                             (i_22_ ^ 0xffffffff) > (RSApplet.anInt173 ^

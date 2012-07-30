@@ -170,7 +170,7 @@ public class Login {
             }
 
             if (Class22.anInt580 == 2) {
-                long l = (Class37_Sub9_Sub34.aLong3556 = Class37_Sub9_Sub33.aJString_3526.method152(-53));
+                long l = (Class37_Sub9_Sub34.aLong3556 = Class37_Sub9_Sub33.aJString_3526.toInt64(-53));
                 int i_6_ = (int) (0x1fL & (l >> -356845744));
                 Class42.aStream_Sub1_936.bufferLocation = 0;
                 Class42.aStream_Sub1_936.writeSignedByte(101, 14);
@@ -248,7 +248,7 @@ public class Login {
                 Class42.aStream_Sub1_936.writeInt(is[1]);
                 Class42.aStream_Sub1_936.writeInt(is[2]);
                 Class42.aStream_Sub1_936.writeInt(is[3]);
-                Class42.aStream_Sub1_936.writeLong(Class37_Sub9_Sub33.aJString_3526.method152(i ^
+                Class42.aStream_Sub1_936.writeLong(Class37_Sub9_Sub33.aJString_3526.toInt64(i ^
                         0x53be));
                 Class42.aStream_Sub1_936.writeString(Class37_Sub9_Sub33.aJString_3525, 0);
                 //Class42.aStream_Sub1_936.method958((byte) -91,

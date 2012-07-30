@@ -145,7 +145,7 @@ public class Class37_Sub4_Sub15 extends Class37_Sub4 {
                             if (((i_1_ ^ 0xffffffff) <= -31) && (i_1_ < 35)) {
                                 aJStringArray2861[-30 + i_1_] = stream.readString();
 
-                                if (aJStringArray2861[-30 + i_1_].method159(
+                                if (aJStringArray2861[-30 + i_1_].equalsIgnoreCase(
                                             Stream.aJString_2059,
                                             (byte) 125)) {
                                     aJStringArray2861[-30 + i_1_] = null;

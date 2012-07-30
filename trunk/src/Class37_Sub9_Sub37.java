@@ -163,7 +163,7 @@ public class Class37_Sub9_Sub37 extends Class37_Sub9 {
         }
 
         if ((class18.aJString_360 == null) ||
-                ((class18.aJString_360.method151((byte) -99).method172((byte) 38) ^
+                ((class18.aJString_360.trim((byte) -99).length((byte) 38) ^
                 0xffffffff) == -1)) {
             if (Class37_Sub3_Sub1.aBoolean2328) {
                 return Class37_Sub9_Sub11.aJString_3095;

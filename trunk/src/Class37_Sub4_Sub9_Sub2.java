@@ -121,29 +121,29 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         int i_5_ = -1;
         int i_6_ = -1;
         int i_7_ = 0;
-        int i_8_ = jstring.method172((byte) 38);
+        int i_8_ = jstring.length((byte) 38);
 
         for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
-            int i_10_ = jstring.method161(i_9_, 24);
+            int i_10_ = jstring.charAt(i_9_);
 
             if (i_10_ == 60) {
                 i_5_ = i_9_;
             } else {
                 if ((i_10_ == 62) && (i_5_ != -1)) {
-                    JString jstring_11_ = jstring.method169(0, i_5_ + 1, i_9_);
+                    JString jstring_11_ = jstring.substring(0, i_5_ + 1, i_9_);
                     i_5_ = -1;
-                    jstring_1_.method154(0, 60);
-                    jstring_1_.method157(jstring_11_, -20035);
-                    jstring_1_.method154(0, 62);
+                    jstring_1_.appendChar(0, 60);
+                    jstring_1_.append(jstring_11_, -20035);
+                    jstring_1_.appendChar(0, 62);
 
-                    if (jstring_11_.method148(-127, aJString_3872)) {
-                        jstrings[i_7_++] = jstring_1_.method169(0, i_0_,
-                                jstring_1_.method172((byte) 38));
-                        i_0_ = jstring_1_.method172((byte) 38);
+                    if (jstring_11_.equals(-127, aJString_3872)) {
+                        jstrings[i_7_++] = jstring_1_.substring(0, i_0_,
+                                jstring_1_.length((byte) 38));
+                        i_0_ = jstring_1_.length((byte) 38);
                         i = 0;
                         i_2_ = -1;
                         i_6_ = -1;
-                    } else if (jstring_11_.method148(-107, aJString_3893)) {
+                    } else if (jstring_11_.equals(-107, aJString_3893)) {
                         i += method615(60);
 
                         if ((aByteArray3901 != null) && (i_6_ != -1)) {
@@ -151,7 +151,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                         }
 
                         i_6_ = 60;
-                    } else if (jstring_11_.method148(-106, aJString_3873)) {
+                    } else if (jstring_11_.equals(-106, aJString_3873)) {
                         i += method615(62);
 
                         if ((aByteArray3901 != null) && (i_6_ != -1)) {
@@ -159,9 +159,9 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                         }
 
                         i_6_ = 62;
-                    } else if (jstring_11_.method165(aJString_3879, 52)) {
+                    } else if (jstring_11_.startsWith(aJString_3879, 52)) {
                         try {
-                            int i_12_ = jstring_11_.method158(4, -1)
+                            int i_12_ = jstring_11_.substring(4)
                                                    .method175(8109);
                             i += (aClass37_Sub4_Sub9_Sub1Array3875[i_12_].anInt3864);
                             i_6_ = -1;
@@ -175,7 +175,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
 
                 if (i_5_ == -1) {
                     if (i_10_ != -1) {
-                        jstring_1_.method154(0, i_10_);
+                        jstring_1_.appendChar(0, i_10_);
                         i += method615(i_10_);
 
                         if ((aByteArray3901 != null) && (i_6_ != -1)) {
@@ -186,7 +186,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                     }
 
                     if (i_10_ == 32) {
-                        i_2_ = jstring_1_.method172((byte) 38);
+                        i_2_ = jstring_1_.length((byte) 38);
                         i_3_ = i;
                         i_4_ = 1;
                     }
@@ -194,7 +194,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                     if ((is != null) &&
                             (i > is[(i_7_ < is.length) ? i_7_ : (is.length - 1)]) &&
                             (i_2_ >= 0)) {
-                        jstrings[i_7_++] = jstring_1_.method169(0, i_0_,
+                        jstrings[i_7_++] = jstring_1_.substring(0, i_0_,
                                 i_2_ - i_4_);
                         i_0_ = i_2_;
                         i_2_ = -1;
@@ -203,7 +203,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                     }
 
                     if (i_10_ == 45) {
-                        i_2_ = jstring_1_.method172((byte) 38);
+                        i_2_ = jstring_1_.length((byte) 38);
                         i_3_ = i;
                         i_4_ = 0;
                     }
@@ -211,9 +211,9 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
             }
         }
 
-        if (jstring_1_.method172((byte) 38) > i_0_) {
-            jstrings[i_7_++] = jstring_1_.method169(0, i_0_,
-                    jstring_1_.method172((byte) 38));
+        if (jstring_1_.length((byte) 38) > i_0_) {
+            jstrings[i_7_++] = jstring_1_.substring(0, i_0_,
+                    jstring_1_.length((byte) 38));
         }
 
         return i_7_;
@@ -297,9 +297,9 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
                 d = 0.0;
             }
 
-            int[] is = new int[jstring.anInt1650];
+            int[] is = new int[jstring.length];
 
-            for (int i_33_ = 0; i_33_ < jstring.anInt1650; i_33_++)
+            for (int i_33_ = 0; i_33_ < jstring.length; i_33_++)
                 is[i_33_] = (int) (Math.sin(((double) i_33_ / 1.5) +
                         (double) i_31_) * d);
 
@@ -330,9 +330,9 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         if (jstring != null) {
             method602(i_39_, i_40_);
 
-            int[] is = new int[jstring.anInt1650];
+            int[] is = new int[jstring.length];
 
-            for (int i_42_ = 0; i_42_ < jstring.anInt1650; i_42_++)
+            for (int i_42_ = 0; i_42_ < jstring.length; i_42_++)
                 is[i_42_] = (int) (Math.sin(((double) i_42_ / 2.0) +
                         ((double) i_41_ / 5.0)) * 5.0);
 
@@ -341,11 +341,11 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
     }
 
     public static JString method605(JString jstring) {
-        int i = jstring.method172((byte) 38);
+        int i = jstring.length((byte) 38);
         int i_43_ = 0;
 
         for (int i_44_ = 0; i_44_ < i; i_44_++) {
-            byte i_45_ = jstring.aByteArray1669[i_44_];
+            byte i_45_ = jstring.charArray[i_44_];
 
             if ((i_45_ == 60) || (i_45_ == 62)) {
                 i_43_ += 3;
@@ -353,26 +353,26 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         }
 
         JString jstring_46_ = new JString();
-        jstring_46_.anInt1650 = i + i_43_;
-        jstring_46_.aByteArray1669 = new byte[jstring_46_.anInt1650];
+        jstring_46_.length = i + i_43_;
+        jstring_46_.charArray = new byte[jstring_46_.length];
 
         int i_47_ = 0;
 
         for (int i_48_ = 0; i_48_ < i; i_48_++) {
-            byte i_49_ = jstring.aByteArray1669[i_48_];
+            byte i_49_ = jstring.charArray[i_48_];
 
             if (i_49_ == 60) {
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 60;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 108;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 116;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 62;
+                jstring_46_.charArray[i_47_++] = (byte) 60;
+                jstring_46_.charArray[i_47_++] = (byte) 108;
+                jstring_46_.charArray[i_47_++] = (byte) 116;
+                jstring_46_.charArray[i_47_++] = (byte) 62;
             } else if (i_49_ == 62) {
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 60;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 103;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 116;
-                jstring_46_.aByteArray1669[i_47_++] = (byte) 62;
+                jstring_46_.charArray[i_47_++] = (byte) 60;
+                jstring_46_.charArray[i_47_++] = (byte) 103;
+                jstring_46_.charArray[i_47_++] = (byte) 116;
+                jstring_46_.charArray[i_47_++] = (byte) 62;
             } else {
-                jstring_46_.aByteArray1669[i_47_++] = i_49_;
+                jstring_46_.charArray[i_47_++] = i_49_;
             }
         }
 
@@ -399,8 +399,8 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         int i_56_ = 0;
         boolean bool = false;
 
-        for (int i_57_ = 0; i_57_ < jstring.method172((byte) 38); i_57_++) {
-            int i_58_ = jstring.method161(i_57_, -127);
+        for (int i_57_ = 0; i_57_ < jstring.length((byte) 38); i_57_++) {
+            int i_58_ = jstring.charAt(i_57_);
 
             if (i_58_ == 60) {
                 bool = true;
@@ -421,10 +421,10 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         if (jstring != null) {
             method602(i_60_, i_61_);
 
-            int[] is = new int[jstring.anInt1650];
-            int[] is_63_ = new int[jstring.anInt1650];
+            int[] is = new int[jstring.length];
+            int[] is_63_ = new int[jstring.length];
 
-            for (int i_64_ = 0; i_64_ < jstring.anInt1650; i_64_++) {
+            for (int i_64_ = 0; i_64_ < jstring.length; i_64_++) {
                 is[i_64_] = (int) (Math.sin(((double) i_64_ / 5.0) +
                         ((double) i_62_ / 5.0)) * 5.0);
                 is_63_[i_64_] = (int) (Math.sin(((double) i_64_ / 3.0) +
@@ -444,10 +444,10 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         random.setSeed((long) i_68_);
         method624(i_66_, i_67_, 192 + (random.nextInt() & 0x1f));
 
-        int[] is = new int[jstring.anInt1650];
+        int[] is = new int[jstring.length];
         int i_69_ = 0;
 
-        for (int i_70_ = 0; i_70_ < jstring.anInt1650; i_70_++) {
+        for (int i_70_ = 0; i_70_ < jstring.length; i_70_++) {
             is[i_70_] = i_69_;
 
             if ((random.nextInt() & 0x3) == 0) {
@@ -466,24 +466,24 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         int i_72_ = -1;
         int i_73_ = -1;
 
-        for (int i_74_ = 0; i_74_ < jstring.anInt1650; i_74_++) {
-            int i_75_ = jstring.aByteArray1669[i_74_] & 0xff;
+        for (int i_74_ = 0; i_74_ < jstring.length; i_74_++) {
+            int i_75_ = jstring.charArray[i_74_] & 0xff;
 
             if (i_75_ == 60) {
                 i_72_ = i_74_;
             } else {
                 if ((i_75_ == 62) && (i_72_ != -1)) {
-                    JString jstring_76_ = jstring.method169(0, i_72_ + 1, i_74_);
+                    JString jstring_76_ = jstring.substring(0, i_72_ + 1, i_74_);
                     i_72_ = -1;
 
-                    if (jstring_76_.method148(-98, aJString_3893)) {
+                    if (jstring_76_.equals(-98, aJString_3893)) {
                         i_75_ = 60;
-                    } else if (jstring_76_.method148(-89, aJString_3873)) {
+                    } else if (jstring_76_.equals(-89, aJString_3873)) {
                         i_75_ = 62;
                     } else {
-                        if (jstring_76_.method165(aJString_3879, 52)) {
+                        if (jstring_76_.startsWith(aJString_3879, 52)) {
                             try {
-                                int i_77_ = jstring_76_.method158(4, -1)
+                                int i_77_ = jstring_76_.substring(4)
                                                        .method175(8109);
                                 Class37_Sub4_Sub9_Sub1 class37_sub4_sub9_sub1 = aClass37_Sub4_Sub9_Sub1Array3875[i_77_];
                                 class37_sub4_sub9_sub1.method597(i,
@@ -640,24 +640,24 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         int i_98_ = -1;
         int i_99_ = 0;
 
-        for (int i_100_ = 0; i_100_ < jstring.anInt1650; i_100_++) {
-            int i_101_ = jstring.aByteArray1669[i_100_] & 0xff;
+        for (int i_100_ = 0; i_100_ < jstring.length; i_100_++) {
+            int i_101_ = jstring.charArray[i_100_] & 0xff;
 
             if (i_101_ == 60) {
                 i = i_100_;
             } else {
                 if ((i_101_ == 62) && (i != -1)) {
-                    JString jstring_102_ = jstring.method169(0, i + 1, i_100_);
+                    JString jstring_102_ = jstring.substring(0, i + 1, i_100_);
                     i = -1;
 
-                    if (jstring_102_.method148(-77, aJString_3893)) {
+                    if (jstring_102_.equals(-77, aJString_3893)) {
                         i_101_ = 60;
-                    } else if (jstring_102_.method148(-98, aJString_3873)) {
+                    } else if (jstring_102_.equals(-98, aJString_3873)) {
                         i_101_ = 62;
                     } else {
-                        if (jstring_102_.method165(aJString_3879, 52)) {
+                        if (jstring_102_.startsWith(aJString_3879, 52)) {
                             try {
-                                int i_103_ = jstring_102_.method158(4, -1)
+                                int i_103_ = jstring_102_.substring(4)
                                                          .method175(8109);
                                 i_99_ += (aClass37_Sub4_Sub9_Sub1Array3875[i_103_].anInt3864);
                                 i_98_ = -1;
@@ -693,23 +693,23 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
         int i_107_ = -1;
         int i_108_ = 0;
 
-        for (int i_109_ = 0; i_109_ < jstring.anInt1650; i_109_++) {
-            int i_110_ = jstring.aByteArray1669[i_109_] & 0xff;
+        for (int i_109_ = 0; i_109_ < jstring.length; i_109_++) {
+            int i_110_ = jstring.charArray[i_109_] & 0xff;
 
             if (i_110_ == 60) {
                 i_106_ = i_109_;
             } else {
                 if ((i_110_ == 62) && (i_106_ != -1)) {
-                    JString jstring_111_ = jstring.method169(0, i_106_ + 1,
+                    JString jstring_111_ = jstring.substring(0, i_106_ + 1,
                             i_109_);
                     i_106_ = -1;
 
-                    if (jstring_111_.method148(-118, aJString_3893)) {
+                    if (jstring_111_.equals(-118, aJString_3893)) {
                         i_110_ = 60;
-                    } else if (jstring_111_.method148(-89, aJString_3873)) {
+                    } else if (jstring_111_.equals(-89, aJString_3873)) {
                         i_110_ = 62;
                     } else {
-                        if (jstring_111_.method165(aJString_3879, 52)) {
+                        if (jstring_111_.startsWith(aJString_3879, 52)) {
                             try {
                                 int i_112_;
 
@@ -729,7 +729,7 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
 
                                 i_108_++;
 
-                                int i_114_ = jstring_111_.method158(4, -1)
+                                int i_114_ = jstring_111_.substring(4)
                                                          .method175(8109);
                                 Class37_Sub4_Sub9_Sub1 class37_sub4_sub9_sub1 = aClass37_Sub4_Sub9_Sub1Array3875[i_114_];
                                 class37_sub4_sub9_sub1.method597(i + i_112_,
@@ -1069,30 +1069,30 @@ public abstract class Class37_Sub4_Sub9_Sub2 extends Class37_Sub4_Sub9 {
     public void method627(JString jstring) {
         do {
             try {
-                if (jstring.method165(aJString_3880, 52)) {
-                    anInt3883 = jstring.method158(4, -1).method155(1037, 16);
-                } else if (jstring.method148(-88, aJString_3890)) {
+                if (jstring.startsWith(aJString_3880, 52)) {
+                    anInt3883 = jstring.substring(4).parseInt(1037, 16);
+                } else if (jstring.equals(-88, aJString_3890)) {
                     anInt3883 = anInt3874;
-                } else if (jstring.method165(aJString_3896, 52)) {
-                    anInt3876 = jstring.method158(4, -1).method155(1037, 16);
-                } else if (jstring.method148(-79, aJString_3900)) {
+                } else if (jstring.startsWith(aJString_3896, 52)) {
+                    anInt3876 = jstring.substring(4).parseInt(1037, 16);
+                } else if (jstring.equals(-79, aJString_3900)) {
                     anInt3876 = 8388608;
-                } else if (jstring.method148(-99, aJString_3885)) {
+                } else if (jstring.equals(-99, aJString_3885)) {
                     anInt3876 = -1;
-                } else if (jstring.method165(aJString_3870, 52)) {
-                    anInt3902 = jstring.method158(2, -1).method155(1037, 16);
-                } else if (jstring.method148(-99, aJString_3877)) {
+                } else if (jstring.startsWith(aJString_3870, 52)) {
+                    anInt3902 = jstring.substring(2).parseInt(1037, 16);
+                } else if (jstring.equals(-99, aJString_3877)) {
                     anInt3902 = 0;
-                } else if (jstring.method148(-128, aJString_3868)) {
+                } else if (jstring.equals(-128, aJString_3868)) {
                     anInt3902 = -1;
-                } else if (jstring.method165(aJString_3898, 52)) {
-                    anInt3881 = jstring.method158(5, -1).method155(1037, 16);
-                } else if (jstring.method148(-122, aJString_3897)) {
+                } else if (jstring.startsWith(aJString_3898, 52)) {
+                    anInt3881 = jstring.substring(5).parseInt(1037, 16);
+                } else if (jstring.equals(-122, aJString_3897)) {
                     anInt3881 = 0;
-                } else if (jstring.method148(-101, aJString_3867)) {
+                } else if (jstring.equals(-101, aJString_3867)) {
                     anInt3881 = anInt3884;
                 } else {
-                    if (!jstring.method148(-89, aJString_3872)) {
+                    if (!jstring.equals(-89, aJString_3872)) {
                         break;
                     }
 

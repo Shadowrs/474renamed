@@ -334,7 +334,7 @@ public class Class37_Sub9_Sub9 extends Class37_Sub9 {
                                 Class41.aJString_910,
                                 Class37_Sub9_Sub8.aJString_3056,
                                 Class37_Sub6.aJString_1887
-                            })).method178((byte) -107));
+                            })).toURL());
             }
         } catch (Exception exception) {
             exception.printStackTrace();

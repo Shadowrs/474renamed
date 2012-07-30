@@ -183,14 +183,14 @@ public class Class37_Sub2 extends Class37 {
         }
 
         int i_1_ = 0;
-        jstring.aByteArray1669 = new byte[i_0_];
+        jstring.charArray = new byte[i_0_];
 
         while ((i_1_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff)) {
             int i_2_ = 0xff & is[i_1_++];
 
             if (((i_2_ ^ 0xffffffff) < -46) || ((i_2_ ^ 0xffffffff) > -41)) {
                 if (i_2_ != 0) {
-                    jstring.aByteArray1669[jstring.anInt1650++] = (byte) i_2_;
+                    jstring.charArray[jstring.length++] = (byte) i_2_;
                 }
             } else {
                 if ((i_0_ ^ 0xffffffff) >= (i_1_ ^ 0xffffffff)) {
@@ -199,12 +199,12 @@ public class Class37_Sub2 extends Class37 {
 
                 int i_3_ = is[i_1_++] & 0xff;
 
-                jstring.aByteArray1669[jstring.anInt1650++] = (byte) (-1720 +
+                jstring.charArray[jstring.length++] = (byte) (-1720 +
                     (i_2_ * 43) + (-48 + i_3_));
             }
         }
 
-        jstring.method173((byte) 67);
+        jstring.fixLength();
 
         return jstring.method166(-110);
     }
@@ -310,6 +310,6 @@ public class Class37_Sub2 extends Class37 {
         anInt1820++;
         Class42.aStream_Sub1_936.writeByteC(8, i_14_);
         Class42.aStream_Sub1_936.writeLong1(1132103072,
-            jstring.method152(i + -31672));
+            jstring.toInt64(i + -31672));
     }
 }

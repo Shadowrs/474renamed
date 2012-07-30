@@ -75,8 +75,8 @@ public class Class55 implements Runnable {
 
                         if (((i_2_ ^ 0xffffffff) == -1) ||
                                 ((i_2_ ^ 0xffffffff) == -2) || (i_2_ == 2)) {
-                            String string = new String(stream.readString().getString());
-                            String string_3_ = new String(stream.readString().getString());
+                            String string = new String(stream.readString().getCharArray());
+                            String string_3_ = new String(stream.readString().getCharArray());
                             int i_4_ = 0;
 
                             if (i_2_ == 1) {
@@ -90,15 +90,15 @@ public class Class55 implements Runnable {
                                         95, string), -89, string_3_));
                         } else if (((i_2_ ^ 0xffffffff) == -4) ||
                                 ((i_2_ ^ 0xffffffff) == -5)) {
-                            String string = new String(stream.readString().getString());
-                            String string_5_ = new String(stream.readString().getString());
+                            String string = new String(stream.readString().getCharArray());
+                            String string_5_ = new String(stream.readString().getCharArray());
                             int i_6_ = stream.readByte(123);
                             String[] strings = new String[i_6_];
 
                             for (int i_7_ = 0;
                                     (i_7_ ^ 0xffffffff) > (i_6_ ^ 0xffffffff);
                                     i_7_++)
-                                strings[i_7_] = new String(stream.readString().getString());
+                                strings[i_7_] = new String(stream.readString().getCharArray());
 
                             byte[][] is = new byte[i_6_][];
 

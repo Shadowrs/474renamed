@@ -100,8 +100,8 @@ public abstract class Class32 {
         }
 
         JString jstring = new JString();
-        jstring.aByteArray1669 = is;
-        jstring.anInt1650 = i_6_;
+        jstring.charArray = is;
+        jstring.length = i_6_;
 
         return jstring;
     }

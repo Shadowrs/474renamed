@@ -237,7 +237,7 @@ public class Class37_Sub4_Sub3 extends Class37_Sub4 {
         }
 
         for (int i_12_ = 0; Class18.anInt340 > i_12_; i_12_++) {
-            if (jstring.method159(Class18.aJStringArray332[i_12_], (byte) 84)) {
+            if (jstring.equalsIgnoreCase(Class18.aJStringArray332[i_12_], (byte) 84)) {
                 return true;
             }
         }

@@ -69,7 +69,7 @@ public abstract class Class68 {
                             for (int i_2_ = 4; (i_2_ ^ 0xffffffff) <= -1;
                                     i_2_--) {
                                 if ((jstrings[i_2_] != null) &&
-                                        !(jstrings[i_2_].method159(
+                                        !(jstrings[i_2_].equalsIgnoreCase(
                                             Class18.aJString_330, (byte) 89))) {
                                     Class86.anInt1582++;
 
@@ -109,7 +109,7 @@ public abstract class Class68 {
                         if (jstrings != null) {
                             for (int i_4_ = 4; i_4_ >= 0; i_4_--) {
                                 if ((jstrings[i_4_] != null) &&
-                                        (jstrings[i_4_].method159(
+                                        (jstrings[i_4_].equalsIgnoreCase(
                                             Class18.aJString_330, (byte) 53))) {
                                     int i_5_ = 0;
 
@@ -235,17 +235,17 @@ public abstract class Class68 {
             }
 
             JString jstring = new JString();
-            jstring.anInt1650 = stream.readSignedShortOrByte(255);
+            jstring.length = stream.readSignedShortOrByte(255);
 
-            if (i < jstring.anInt1650) {
-                jstring.anInt1650 = i;
+            if (i < jstring.length) {
+                jstring.length = i;
             }
 
-            jstring.aByteArray1669 = new byte[jstring.anInt1650];
+            jstring.charArray = new byte[jstring.length];
 
-            stream.bufferLocation += (Class15_Sub1.aClass14_1746.method103(jstring.aByteArray1669,
+            stream.bufferLocation += (Class15_Sub1.aClass14_1746.method103(jstring.charArray,
                 stream.bufferLocation, -128, stream.buffer,
-                jstring.anInt1650, 0));
+                jstring.length, 0));
 
 
             return jstring;

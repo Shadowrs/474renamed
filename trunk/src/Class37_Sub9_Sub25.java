@@ -30,10 +30,10 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
     public static JString method873(byte i, Class18 class18, JString jstring) {
         try {
-            if ((jstring.method156(-119, Class37_Sub4_Sub4.aJString_2582) ^
+            if ((jstring.indexOf(Class37_Sub4_Sub4.aJString_2582) ^
                     0xffffffff) != 0) {
                 for (;;) {
-                    int i_0_ = jstring.method156(125, Class79.aJString_1473);
+                    int i_0_ = jstring.indexOf(Class79.aJString_1473);
 
                     if ((i_0_ ^ 0xffffffff) == 0) {
                         break;
@@ -41,16 +41,15 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(-119,
                             (new JString[] {
-                                jstring.method169(0, 0, i_0_),
+                                jstring.substring(0, 0, i_0_),
                                 Class46.method1105(Class38.method1050(-29842,
                                         0, class18), (byte) -117),
-                                jstring.method158(2 + i_0_, -1)
+                                jstring.substring(2 + i_0_)
                             })));
                 }
 
                 for (;;) {
-                    int i_1_ = jstring.method156(-106,
-                            Class37_Sub3_Sub3.aJString_2395);
+                    int i_1_ = jstring.indexOf(Class37_Sub3_Sub3.aJString_2395);
 
                     if (i_1_ == -1) {
                         break;
@@ -58,16 +57,15 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(-27,
                             (new JString[] {
-                                jstring.method169(0, 0, i_1_),
+                                jstring.substring(0, 0, i_1_),
                                 Class46.method1105(Class38.method1050(-29842,
                                         1, class18), (byte) -120),
-                                jstring.method158(i_1_ - -2, -1)
+                                jstring.substring(i_1_ - -2)
                             })));
                 }
 
                 for (;;) {
-                    int i_2_ = jstring.method156(103,
-                            Class37_Sub9_Sub34.aJString_3537);
+                    int i_2_ = jstring.indexOf(Class37_Sub9_Sub34.aJString_3537);
 
                     if ((i_2_ ^ 0xffffffff) == 0) {
                         break;
@@ -75,15 +73,15 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(19,
                             (new JString[] {
-                                jstring.method169(0, 0, i_2_),
+                                jstring.substring(0, 0, i_2_),
                                 Class46.method1105(Class38.method1050(-29842,
                                         2, class18), (byte) -125),
-                                jstring.method158(i_2_ + 2, -1)
+                                jstring.substring(i_2_ + 2)
                             })));
                 }
 
                 for (;;) {
-                    int i_3_ = jstring.method156(-105, Class30.aJString_721);
+                    int i_3_ = jstring.indexOf(Class30.aJString_721);
 
                     if (i_3_ == -1) {
                         break;
@@ -91,15 +89,15 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(-28,
                             (new JString[] {
-                                jstring.method169(0, 0, i_3_),
+                                jstring.substring(0, 0, i_3_),
                                 Class46.method1105(Class38.method1050(-29842,
                                         3, class18), (byte) -128),
-                                jstring.method158(i_3_ - -2, -1)
+                                jstring.substring(i_3_ - -2)
                             })));
                 }
 
                 for (;;) {
-                    int i_4_ = jstring.method156(42, Class37_Sub13.aJString_2110);
+                    int i_4_ = jstring.indexOf(Class37_Sub13.aJString_2110);
 
                     if ((i_4_ ^ 0xffffffff) == 0) {
                         break;
@@ -107,16 +105,15 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(25,
                             (new JString[] {
-                                jstring.method169(0, 0, i_4_),
+                                jstring.substring(0, 0, i_4_),
                                 Class46.method1105(Class38.method1050(-29842,
                                         4, class18), (byte) -123),
-                                jstring.method158(i_4_ - -2, -1)
+                                jstring.substring(i_4_ - -2)
                             })));
                 }
 
                 for (;;) {
-                    int i_5_ = jstring.method156(-111,
-                            PacketParser.aJString_3257);
+                    int i_5_ = jstring.indexOf(PacketParser.aJString_3257);
 
                     if ((i_5_ ^ 0xffffffff) == 0) {
                         break;
@@ -143,8 +140,8 @@ public class Class37_Sub9_Sub25 extends Class37_Sub9 {
 
                     jstring = (Class37_Sub9_Sub27.method881(123,
                             (new JString[] {
-                                jstring.method169(0, 0, i_5_), jstring_6_,
-                                jstring.method158(4 + i_5_, -1)
+                                jstring.substring(0, 0, i_5_), jstring_6_,
+                                jstring.substring(4 + i_5_)
                             })));
                 }
             }

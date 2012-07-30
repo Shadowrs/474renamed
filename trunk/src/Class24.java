@@ -201,7 +201,7 @@ public class Class24 {
             i_4_ <<= 1;
         }
 
-        Class53.method1136(is, 0, i_4_);
+        ArrayOperations.clearArray(is, 0, i_4_);
         anInt625 -= i;
 
         if ((aClass37_Sub3_617 != null) && (anInt625 <= 0)) {

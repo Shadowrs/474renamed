@@ -540,7 +540,7 @@ public class Class43 {
                 jstrings[i_15_ - -i_18_] = Class37_Sub13.aJString_2115;
             }
 
-            i_17_ += jstrings[i_18_ + i_15_].anInt1650;
+            i_17_ += jstrings[i_18_ + i_15_].length;
         }
 
         int i_19_ = -82 / ((-27 - i_16_) / 45);
@@ -549,14 +549,14 @@ public class Class43 {
 
         for (int i_21_ = 0; (i_21_ ^ 0xffffffff) > (i ^ 0xffffffff); i_21_++) {
             JString jstring = jstrings[i_15_ - -i_21_];
-            Class53.method1135(jstring.aByteArray1669, 0, is, i_20_,
-                jstring.anInt1650);
-            i_20_ += jstring.anInt1650;
+            ArrayOperations.copyArray(jstring.charArray, 0, is, i_20_,
+                jstring.length);
+            i_20_ += jstring.length;
         }
 
         JString jstring = new JString();
-        jstring.anInt1650 = i_17_;
-        jstring.aByteArray1669 = is;
+        jstring.length = i_17_;
+        jstring.charArray = is;
 
         return jstring;
     }

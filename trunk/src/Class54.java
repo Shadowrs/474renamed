@@ -537,7 +537,7 @@ public class Class54 {
                                                 i_44_ = class18.anInt417;
                                             }
 
-                                            if (class18.aJString_377.method172(
+                                            if (class18.aJString_377.length(
                                                         (byte) 38) > 0) {
                                                 jstring = class18.aJString_377;
                                             }
@@ -908,16 +908,15 @@ public class Class54 {
 
                                         int i_62_ = 0;
 
-                                        while (jstring.method172((byte) 38) > 0) {
-                                            int i_63_ = (jstring.method156(-122,
-                                                    (Class37_Sub9_Sub11.aJString_3107)));
+                                        while (jstring.length((byte) 38) > 0) {
+                                            int i_63_ = (jstring.indexOf((Class37_Sub9_Sub11.aJString_3107)));
                                             JString jstring_64_;
 
                                             if (i_63_ != -1) {
-                                                jstring_64_ = jstring.method169(0,
+                                                jstring_64_ = jstring.substring(0,
                                                         0, i_63_);
-                                                jstring = (jstring.method158(i_63_ +
-                                                        4, i_4_ + 26786));
+                                                jstring = (jstring.substring(i_63_ +
+                                                        4));
                                             } else {
                                                 jstring_64_ = jstring;
                                                 jstring = (Class37_Sub9_Sub8.aJString_3045);
@@ -970,20 +969,19 @@ public class Class54 {
                                         jstring = (Class37_Sub9_Sub25.method873((byte) -46,
                                                 class18, jstring));
 
-                                        while ((jstring.method172((byte) 38) ^
+                                        while ((jstring.length((byte) 38) ^
                                                 0xffffffff) < -1) {
-                                            int i_69_ = (jstring.method156(106,
-                                                    (Class37_Sub9_Sub11.aJString_3107)));
+                                            int i_69_ = (jstring.indexOf((Class37_Sub9_Sub11.aJString_3107)));
                                             JString jstring_70_;
 
                                             if (i_69_ == -1) {
                                                 jstring_70_ = jstring;
                                                 jstring = (Class37_Sub9_Sub8.aJString_3045);
                                             } else {
-                                                jstring_70_ = jstring.method169(0,
+                                                jstring_70_ = jstring.substring(0,
                                                         0, i_69_);
-                                                jstring = (jstring.method158(i_69_ -
-                                                        -4, i_4_ ^ 0x68a2));
+                                                jstring = (jstring.substring(i_69_ -
+                                                        -4));
                                             }
 
                                             class37_sub4_sub9_sub2_sub1.method607(jstring_70_,

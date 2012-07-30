@@ -250,15 +250,14 @@ public class Class22 {
 
             class37_sub4_sub7_sub1_sub2.aJString_3694 = Class83.packetStream.readString();
 
-            if ((class37_sub4_sub7_sub1_sub2.aJString_3694.method161(0, -103) ^
+            if ((class37_sub4_sub7_sub1_sub2.aJString_3694.charAt(0) ^
                     0xffffffff) != -127) {
                 if (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234 == class37_sub4_sub7_sub1_sub2) {
                     Class37_Sub4_Sub7_Sub1_Sub1.method505(class37_sub4_sub7_sub1_sub2.aJString_3993,
                         2, class37_sub4_sub7_sub1_sub2.aJString_3694, (byte) -56);
                 }
             } else {
-                class37_sub4_sub7_sub1_sub2.aJString_3694 = class37_sub4_sub7_sub1_sub2.aJString_3694.method158(1,
-                        -1);
+                class37_sub4_sub7_sub1_sub2.aJString_3694 = class37_sub4_sub7_sub1_sub2.aJString_3694.substring(1);
                 Class37_Sub4_Sub7_Sub1_Sub1.method505(class37_sub4_sub7_sub1_sub2.aJString_3993,
                     2, class37_sub4_sub7_sub1_sub2.aJString_3694, (byte) 72);
             }
@@ -314,7 +313,7 @@ public class Class22 {
                         (class37_sub4_sub7_sub1_sub2.aClass29_3985 != null)) {
 
                     boolean bool = false;
-                    long l = class37_sub4_sub7_sub1_sub2.aJString_3993.method152(-100);
+                    long l = class37_sub4_sub7_sub1_sub2.aJString_3993.toInt64(-100);
 
                     if (i_15_ <= 1) {
                         for (int i_18_ = 0; Class18.anInt340 > i_18_;
@@ -338,9 +337,9 @@ public class Class22 {
 
                         JString jstring = (Class37_Sub4_Sub9_Sub2.method605(Class36.method319(
                                     Class37_Sub9_Sub13.aStream_3140, -53)
-                                                                                   .method150(1)));
+                                                                                   .formatCapitalization(1)));
 
-                        class37_sub4_sub7_sub1_sub2.aJString_3694 = jstring.method151((byte) -111);
+                        class37_sub4_sub7_sub1_sub2.aJString_3694 = jstring.trim((byte) -111);
 
                         class37_sub4_sub7_sub1_sub2.anInt3658 = i_14_ >> 841995400;
                         class37_sub4_sub7_sub1_sub2.anInt3673 = 0xff & i_14_;

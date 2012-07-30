@@ -117,12 +117,12 @@ public class Class87 {
         for (int i_10_ = 0;
                 (RSApplet.anInt173 ^ 0xffffffff) < (i_10_ ^ 0xffffffff);
                 i_10_++) {
-            if (jstring.method159(Class69.aJStringArray1342[i_10_], (byte) 124)) {
+            if (jstring.equalsIgnoreCase(Class69.aJStringArray1342[i_10_], (byte) 124)) {
                 return true;
             }
         }
 
-        if (jstring.method159(
+        if (jstring.equalsIgnoreCase(
                     (Class37_Sub23.aClass37_Sub4_Sub7_Sub1_Sub2_2234.aJString_3993),
                     (byte) 95)) {
             return true;

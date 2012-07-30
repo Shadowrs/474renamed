@@ -269,23 +269,23 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
         anInt3335++;
 
         if (Class37_Sub9_Sub20.anInt3301 >= 2) {
-            if (jstring.method159(Class37_Sub9_Sub21.aJString_3305, (byte) 56)) {
+            if (jstring.equalsIgnoreCase(Class37_Sub9_Sub21.aJString_3305, (byte) 56)) {
                 System.gc();
             }
 
-            if (jstring.method159(Class37_Sub4_Sub18.aJString_2909, (byte) 65)) {
+            if (jstring.equalsIgnoreCase(Class37_Sub4_Sub18.aJString_2909, (byte) 65)) {
                 PacketParser.method843(false);
             }
 
-            if (jstring.method159(Class50.aJString_1020, (byte) 53)) {
+            if (jstring.equalsIgnoreCase(Class50.aJString_1020, (byte) 53)) {
                 Class64.aBoolean1216 = true;
             }
 
-            if (jstring.method159(Class37_Sub9_Sub1.aJString_2923, (byte) 63)) {
+            if (jstring.equalsIgnoreCase(Class37_Sub9_Sub1.aJString_2923, (byte) 63)) {
                 Class64.aBoolean1216 = false;
             }
 
-            if (jstring.method159(Class37_Sub25.aJString_2274, (byte) 127)) {
+            if (jstring.equalsIgnoreCase(Class37_Sub25.aJString_2274, (byte) 127)) {
                 for (int i = 0; (i ^ 0xffffffff) > -5; i++) {
                     for (int i_47_ = 1; i_47_ < 103; i_47_++) {
                         for (int i_48_ = 1; (i_48_ ^ 0xffffffff) > -104;
@@ -295,14 +295,14 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
                 }
             }
 
-            if (jstring.method159(Class37_Sub13.aJString_2106, (byte) 68) &&
+            if (jstring.equalsIgnoreCase(Class37_Sub13.aJString_2106, (byte) 68) &&
                     ((Class37_Sub9_Sub17.anInt3219 ^ 0xffffffff) == -3)) {
                 throw new RuntimeException();
             }
 
-            if (jstring.method165(Class37_Sub8.aJString_1920, 52)) {
-                Class37_Sub4_Sub13.anInt2793 = jstring.method158(12, -1)
-                                                      .method151((byte) -101)
+            if (jstring.startsWith(Class37_Sub8.aJString_1920, 52)) {
+                Class37_Sub4_Sub13.anInt2793 = jstring.substring(12)
+                                                      .trim((byte) -101)
                                                       .method175(8109);
                 Class37_Sub4_Sub7_Sub1_Sub1.method505(null, 0,
                     (Class37_Sub9_Sub27.method881(111,
@@ -313,15 +313,15 @@ public class Class37_Sub9_Sub22 extends Class37_Sub9 {
                         }))), (byte) -123);
             }
 
-            if (jstring.method159(Class17.aJString_313, (byte) 98)) {
+            if (jstring.equalsIgnoreCase(Class17.aJString_313, (byte) 98)) {
                 Class37_Sub3_Sub1.aBoolean2328 = true;
             }
         }
 
         Class42.aStream_Sub1_936.writePacket(-1494101117, 202);
         Class42.aStream_Sub1_936.writeSignedByte(99,
-            jstring.method172((byte) 38) + -1);
-        Class42.aStream_Sub1_936.writeString(jstring.method158(2, -1), 0);
+            jstring.length((byte) 38) + -1);
+        Class42.aStream_Sub1_936.writeString(jstring.substring(2), 0);
         Class62.anInt1172++;
 
         if (bool != false) {

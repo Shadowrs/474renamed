@@ -318,7 +318,7 @@ public class Class37_Sub4_Sub7_Sub1_Sub2 extends Class37_Sub4_Sub7_Sub1 {
         }
 
         aJString_3993 = Class37_Sub4_Sub13.method708(i + -65498,
-                stream.readLongDuplicate(false)).method164(70);
+                stream.readLongDuplicate(false)).capitalizeAfterQuestion(70);
         anInt3978 = stream.readByte(126);
         anInt3961 = stream.readShort();
 
@@ -436,7 +436,7 @@ public class Class37_Sub4_Sub7_Sub1_Sub2 extends Class37_Sub4_Sub7_Sub1 {
             method508((byte) -86);
         }
 
-        if ((Class37_Sub9_Sub37.aJStringArray3593[i].method172((byte) 38) ^
+        if ((Class37_Sub9_Sub37.aJStringArray3593[i].length((byte) 38) ^
                 0xffffffff) < -1) {
             return Class37_Sub9_Sub27.method881(-4,
                 (new JString[] {

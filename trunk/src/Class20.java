@@ -90,8 +90,8 @@ public class Class20 {
         if ((class18.aJStringArray453 == null) ||
                 ((class18.aJStringArray453.length ^ 0xffffffff) >= (i ^
                 0xffffffff)) || (class18.aJStringArray453[i] == null) ||
-                ((class18.aJStringArray453[i].method151((byte) -69)
-                                                 .method172((byte) 38) ^
+                ((class18.aJStringArray453[i].trim((byte) -69)
+                                                 .length((byte) 38) ^
                 0xffffffff) == -1)) {
             if (Class37_Sub3_Sub1.aBoolean2328) {
                 return (Class37_Sub9_Sub27.method881(i_2_ ^ ~0x4b,

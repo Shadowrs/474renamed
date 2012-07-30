@@ -804,7 +804,7 @@ public class Stream extends Class37 {
 
 	public void writeString(JString jstring, int i) {
 		anInt2040++;
-		bufferLocation += jstring.method177(jstring.method172((byte) 38), bufferLocation, buffer, i ^ ~0x5a, i);
+		bufferLocation += jstring.copy(jstring.length((byte) 38), bufferLocation, buffer, i ^ ~0x5a, i);
 		buffer[bufferLocation++] = (byte) 0;
 	}
 

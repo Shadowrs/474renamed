@@ -549,7 +549,7 @@ public class Client extends Applet_Sub1 {
 
     public void method25(int i) {
         method32((byte) 103);
-        JString.method146((byte) 74);
+        JString.resetStaticVariables((byte) 74);
         Applet_Sub1.method24(-110);
         Class52.method1128(-71);
         Class32.method288(20);

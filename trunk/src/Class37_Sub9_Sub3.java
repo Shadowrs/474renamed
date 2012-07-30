@@ -269,7 +269,7 @@ public class Class37_Sub9_Sub3 extends Class37_Sub9 {
                             int i_13_ = 0;
                             boolean bool = false;
 
-                            if (!Class75.aJStringArray1413[i_12_].method159(
+                            if (!Class75.aJStringArray1413[i_12_].equalsIgnoreCase(
                                         Class18.aJString_330, (byte) 116)) {
                                 if (Class54.aBooleanArray1058[i_12_]) {
                                     i_13_ = 2000;
