@@ -535,7 +535,6 @@ public abstract class JS5 {
 			anInt264++;
 
 			int i_52_ = aClass60_284.method1168(-1, jstring.getHashCode((byte) -109));
-			int i_53_ = 53 / ((36 - i) / 62);
 			int i_54_ = aClass60Array276[i_52_].method1168(-1, jstring_51_.getHashCode((byte) -128));
 
 			return method131(i_54_, i_52_, 1);

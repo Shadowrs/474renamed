@@ -1079,7 +1079,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if (Class37_Sub9_Sub17.packetId == 175) {
-                Stream.method934(0, true);
+                Stream.loadMap(0, true);
                 Class37_Sub9_Sub17.packetId = -1;
 
                 return true;
@@ -1435,7 +1435,7 @@ public class PacketParser extends Class37_Sub9 {
             }
 
             if ((Class37_Sub9_Sub17.packetId ^ 0xffffffff) == -62) {
-                Stream.method934(0, false);
+                Stream.loadMap(0, false);
                 Class37_Sub9_Sub17.packetId = -1;
 
                 return true;
