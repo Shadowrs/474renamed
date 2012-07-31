@@ -215,7 +215,7 @@ public class Login {
 				int[] sessionKeys = new int[4];
 				sessionKeys[0] = (int) (Math.random() * 9.9999999E7);
 				sessionKeys[3] = (int) Class26.serverSessionKey;
-				sessionKeys[2] = (int) (Class26.serverSessionKey >> -311437664);
+				sessionKeys[2] = (int) (Class26.serverSessionKey >> 32);
 				Class42.outputStream.bufferLocation = 0;
 				sessionKeys[1] = (int) (9.9999999E7 * Math.random());
 				Class42.outputStream.writeByte(10);
@@ -329,19 +329,19 @@ public class Login {
 
 				if (Class22.loginStage == 10) {
 
-					if ((Applet_Sub1.activeSocket.available() ^ 0xffffffff) <= (Class37_Sub4.packetSize ^ 0xffffffff)) {
+					if (Applet_Sub1.activeSocket.available() >= Class37_Sub4.packetSize) {
 						Class83.packetStream.bufferLocation = 0;
 						Applet_Sub1.activeSocket.read(Class37_Sub4.packetSize, 0, 122, Class83.packetStream.buffer);
 
 						Class54.method1140(0);// reset ALL the data
 						Class37_Sub10.anInt1985 = -1;
-						Stream.method934(0, false);
+						Stream.loadMap(0, false);
 						Class37_Sub9_Sub17.packetId = -1;
 					}
 				} else {
 					anInt781++;
 					if (anInt781 > 2000) {
-						if ((Class37_Sub9_Sub23.anInt3355 ^ 0xffffffff) > -2) {
+						if (Class37_Sub9_Sub23.anInt3355 < 1) {
 							if (Class37_Sub4_Sub7_Sub1.port == Class37_Sub9_Sub31.anInt3490) {
 								Class37_Sub4_Sub7_Sub1.port = Class22.anInt581;
 							} else {

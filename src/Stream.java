@@ -146,7 +146,7 @@ public class Stream extends Class37 {
 		return ((buffer[-1 + bufferLocation] & 0xff) + ((0xff00 & (buffer[bufferLocation - 2] << 8)) + ((0xff & buffer[bufferLocation + -4]) << 24) + ((buffer[-3 + bufferLocation] << 16) & 0xff0000)));
 	}
 
-	public static void method934(int i, boolean bool) {
+	public static void loadMap(int i, boolean bool) {
 		Class37_Sub17.aBoolean2165 = bool;
 
 		if (Class37_Sub17.aBoolean2165) {
@@ -231,7 +231,7 @@ public class Stream extends Class37 {
 			int i_28_ = ((-Class83.packetStream.bufferLocation + Class37_Sub4.packetSize) / 16);
 			Class37_Sub9_Sub36.anIntArrayArray3573 = new int[i_28_][4];
 
-			for (int i_29_ = 0; (i_29_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff); i_29_++) {
+			for (int i_29_ = 0; i_29_ < i_28_; i_29_++) {
 				for (int i_30_ = 0; i_30_ < 4; i_30_++) {
 					Class37_Sub9_Sub36.anIntArrayArray3573[i_29_][i_30_] = (Class83.packetStream.readIntLE(Class37_Sub4_Sub7_Sub1_Sub1.method502(i, -52131576)));
 				}
@@ -247,19 +247,19 @@ public class Stream extends Class37 {
 
 			boolean bool_33_ = false;
 
-			if (((((i_27_ / 8) ^ 0xffffffff) == -49) || (((i_27_ / 8) ^ 0xffffffff) == -50)) && ((i_32_ / 8) == 48)) {
+			if (((i_27_ / 8) == 48 || (i_27_ / 8) == 49) && ((i_32_ / 8) == 48)) {
 				bool_33_ = true;
 			}
 
-			if ((((i_27_ / 8) ^ 0xffffffff) == -49) && (((i_32_ / 8) ^ 0xffffffff) == -149)) {
+			if ((i_27_ / 8) == 48 && (i_32_ / 8) == 148) {
 				bool_33_ = true;
 			}
 
 			i_28_ = 0;
 
-			for (int i_34_ = (i_27_ - 6) / 8; i_34_ <= ((i_27_ - -6) / 8); i_34_++) {
-				for (int i_35_ = (i_32_ + -6) / 8; (((i_32_ - -6) / 8) ^ 0xffffffff) <= (i_35_ ^ 0xffffffff); i_35_++) {
-					int i_36_ = i_35_ + (i_34_ << -398689144);
+			for (int i_34_ = (i_27_ - 6) / 8; i_34_ <= ((i_27_ + 6) / 8); i_34_++) {
+				for (int i_35_ = (i_32_ - 6) / 8; ((i_32_ + 6) / 8) >= i_35_; i_35_++) {
+					int i_36_ = i_35_ + (i_34_ << 8);
 
 					if (!bool_33_ || (((i_35_ ^ 0xffffffff) != -50) && ((i_35_ ^ 0xffffffff) != -150) && (i_35_ != 147) && ((i_34_ ^ 0xffffffff) != -51) && ((i_34_ != 49) || ((i_35_ ^ 0xffffffff) != -48)))) {
 						Class66.anIntArray1261[i_28_] = i_36_;
